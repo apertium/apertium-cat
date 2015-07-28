@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+dir=@libdir@/apertium/apertium-cat
+srcdir=@datarootdir@/apertium/apertium-cat
+
+Name: apertium-cat
+Description: Finite-state morphological transducer and constraint grammar for Catalan 
+Version: @VERSION@
+
