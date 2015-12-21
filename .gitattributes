@@ -8,9 +8,11 @@
 /apertium-cat.cat.acx -text
 /apertium-cat.cat.dix -text
 /apertium-cat.cat.rlx -text
+/apertium-cat.cat.tsx -text
 /apertium-cat.pc.in -text
 /apertium-cat.post-cat.dix -text
 /autogen.sh -text
 /cat.prob -text svneol=unset#unset
 /configure.ac -text
 /modes.xml -text
+texts/miscellaneous.tagged.txt -text
