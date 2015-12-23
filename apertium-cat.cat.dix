@@ -2565,7 +2565,7 @@
 
 </pardef>
 <pardef n="on__adv">
-  <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
+  <!--<e>       <p><l></l>          <r><s n="adv"/></r></p></e>-->
 
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 
@@ -32111,7 +32111,7 @@
 <e lm="Noriega">         <i>Noriega</i><par n="Abad__np"/></e>
 <e lm="Noruega">         <i>Noruega</i><par n="Afganistan__np"/></e>
 <e lm="Nuria">           <i>Nuria</i><par n="Abad__np"/></e>
-<e lm="Núria">           <i>Núria</i><par n="Pau__np"/></e>
+<e lm="Núria">           <i>Núria</i><par n="Abad__np"/></e>
 <e lm="Nàpols">          <i>Nàpols</i><par n="Afganistan__np"/></e>
 <e lm="Núñez">           <i>Núñez</i><par n="Abad__np"/></e>
 <e lm="ONG">             <i>ONG</i><par n="ABC__np"/></e>
