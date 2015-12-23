@@ -24637,6 +24637,7 @@
 <e lm="vergonyós">       <i>vergony</i><par n="afectu/ós__adj"/></e>
 <e lm="veritable">       <i>veritable</i><par n="abdominal__adj"/></e>
 <e lm="vermell" v="cat"> <i>vermell</i><par n="alt__adj"/></e>
+<e lm="vermell" v="cat"> <i>vermell</i><par n="abric__n"/></e>
 <e lm="vermellós">       <i>vermell</i><par n="aliment/ós__adj"/></e>
 <e lm="bondadós">        <i>bondad</i><par n="aliment/ós__adj"/></e>
 <e lm="versàtil">        <i>versàtil</i><par n="abdominal__adj"/></e>
@@ -25842,7 +25843,7 @@
 <e lm="arbre">           <i>arbre</i><par n="abric__n"/></e>
 <e lm="arc">             <i>arc</i><par n="abric__n"/></e>
 <e lm="arca">            <i>ar</i><par n="acústi/ca__n"/></e>
-<e lm="arena" v="val">   <i>aren</i><par n="abell/a__n"/></e>
+<e lm="arena">   <i>aren</i><par n="abell/a__n"/></e> 
 <e lm="argentí">         <i>argent</i><par n="alacant/í__n"/></e>
 <e lm="argot">           <i>argot</i><par n="abric__n"/></e>
 <e lm="argument">        <i>argument</i><par n="abric__n"/></e>
@@ -27961,6 +27962,7 @@
 <e lm="formigó">         <i>formig</i><par n="aband/ó__n"/></e>
 <e lm="formulari">       <i>formulari</i><par n="abric__n"/></e>
 <e lm="forn">            <i>forn</i><par n="abric__n"/></e>
+    <e lm="forn de pa">                     <i>forn</i><par n="abric__n"/><p><l><b/>de<b/>pa</l><r><g><b/>de<b/>pa</g></r></p></e>
 <e lm="forner">          <i>forner</i><par n="senyor__n"/></e>
 <e lm="forqueta" v="val"><i>forquet</i><par n="abell/a__n"/></e>
 <e lm="forqueta">        <i>forquet</i><par n="abell/a__n"/></e>
@@ -30184,6 +30186,8 @@
 <e lm="roca">            <i>ro</i><par n="acústi/ca__n"/></e>
 <e lm="rock">            <i>rock</i><par n="atletisme__n"/></e>
 <e lm="roda">            <i>rod</i><par n="abell/a__n"/></e>
+    <e lm="roda de premsa" a="gema">        <i>rod</i><par n="abell/a__n"/><p><l><b/>de<b/>premsa</l><r><g><b/>de<b/>premsa</g></r></p></e>
+
 <e lm="rodalia">         <i>rodali</i><par n="abell/a__n"/></e>
 <e lm="rodatge">         <i>rodatge</i><par n="abric__n"/></e>
 <e lm="rogle">           <i>rogle</i><par n="abric__n"/></e>
@@ -30736,6 +30740,8 @@
 <e lm="transeünt">       <i>transeünt</i><par n="acompanyant__n"/></e>
 <e lm="transferència">   <i>transferènci</i><par n="abell/a__n"/></e>
 <e lm="transformació">   <i>transformaci</i><par n="acci/ó__n"/></e>
+    <e lm="formació de grups">              <i>formaci</i><par n="acci/ó__n"/><p><l><b/>de<b/>grups</l><r><g><b/>de<b/>grups</g></r></p></e>
+
 <e lm="transfusió">      <i>transfusi</i><par n="acci/ó__n"/></e>
 <e lm="transició">       <i>transici</i><par n="acci/ó__n"/></e>
 <e lm="transmissió">     <i>transmissi</i><par n="acci/ó__n"/></e>
@@ -39826,7 +39832,8 @@
 <e lm="porto-riqueny" a="prompsit2adn"><i>porto-riqueny</i><par n="senyor__n"/></e>
 <e lm="porto-riqueny" a="prompsit2adn"><i>porto-riqueny</i><par n="absolut__adj"/></e>
 <e lm="porno" a="prompsit2adn"><i>porno</i><par n="multimèdia__adj"/></e>
-<e lm="porno" a="prompsit2adn"><i>porno</i><par n="atletisme__n"/></e>
+<e lm="porno" a="prompsit2adn"><i>porno</i><par n="abric__n"/></e>
+<e lm="particular" a="gema">            <i>particular</i><par n="acompanyant__n"/></e>
 <e lm="plusmarca" a="prompsit2adn"><i>plusmar</i><par n="acústi/ca__n"/></e>
 <e lm="plusmarquista" a="prompsit2adn"><i>plusmarquist</i><par n="accionist/a__n"/></e>
 <e lm="plusmarquista" a="prompsit2adn"><i>plusmarquist</i><par n="agrícol/a__adj"/></e>
@@ -47331,6 +47338,8 @@
 <e lm="polpa" a="prompsit2uoc"><i>polp</i><par n="abell/a__n"/></e>
 <e lm="resina" a="prompsit2uoc"><i>resin</i><par n="abell/a__n"/></e>
 <e lm="dacsa" a="prompsit2uoc" v="val"><i>dacs</i><par n="abell/a__n"/></e>
+    <e lm="mil milions" a="gema">           <i>mil<b/>milions</i><par n="campus__n"/></e>
+
 <e lm="contraofensiva" a="prompsit2uoc"><i>contraofensiv</i><par n="abell/a__n"/></e>
 <e lm="roseta" a="prompsit2uoc"><i>roset</i><par n="abell/a__n"/></e>
 <e lm="mitra" a="prompsit2uoc"><i>mitr</i><par n="abell/a__n"/></e>
@@ -56691,6 +56700,9 @@
 <e lm="menorquí">        <i>menorqu</i><par n="alacant/í__n"/></e>
 <e r="RL" lm="menyscabament"><i>menyscabament</i><par n="abric__n"/></e>
 <e lm="menyscapte de diners"><i>menyscapte</i><par n="abric__n"/><p><l><b/>de<b/>diners</l><r><g><b/>de<b/>diners</g></r></p></e>
+    <e lm="diners" a="gema">                <i>diners</i><par n="afores__n"/></e>
+    <e lm="voltant">                        <i>voltant</i><par n="abric__n"/></e>
+
 <e lm="mereixement">     <i>mereixement</i><par n="abric__n"/></e>
 <e lm="meridià">         <i>meridi</i><par n="bacall/à__n"/></e>
 <e lm="meritació">       <i>meritaci</i><par n="acci/ó__n"/></e>
@@ -63798,6 +63810,53 @@
     <e lm="Yves" a="gema">                  <i>Yves</i><par n="Abad__np"/></e>
     <e lm="Zinédine" a="gema">              <i>Zinédine</i><par n="Abad__np"/></e>
     <e lm="Zobéide" a="gema">               <i>Zobéide</i><par n="Abad__np"/></e>
+
+    <e lm="admès">                          <p><l>adm</l><r>adm</r></p><par n="angl/ès__n"/></e>
+    <e lm="agut">                           <i>agut</i><par n="abric__n"/></e>
+    <e lm="alcohòlic">                      <i>alcohòli</i><par n="asiàti/c__n"/></e>
+    <e lm="anals">                          <i>anals</i><par n="afores__n"/></e>
+    <e lm="benvinguda" a="gema">            <i>benvingud</i><par n="abell/a__n"/></e>
+    <e lm="borda">                          <p><l>bord</l><r>bord</r></p><par n="abell/a__n"/></e>
+ <e lm="cec" a="joan"><i>ce</i><par n="ami/c__n"/></e>
+    <e lm="clar">                           <i>clar</i><par n="abric__n"/></e>
+    <e lm="comerciant">                     <i>comerciant</i><par n="senyor__n"/></e>
+    <e lm="considerant">                    <i>considerant</i><par n="abric__n"/></e>
+    <e lm="considerat">                     <i>considera</i><par n="advoca/t__n"/></e>
+    <e lm="cosmopolita">                    <i>cosmopolit</i><par n="accionist/a__n"/></e>
+    <e lm="dacsa">                          <p><l>dacs</l><r>dacs</r></p><par n="abell/a__n"/></e>
+    <e lm="deixeble">                       <i>deixeble</i><par n="acompanyant__n"/></e>
+    <e lm="deriva" a="gema">                <i>deriv</i><par n="abell/a__n"/></e>
+    <e lm="escarlata">                      <p><l>escarlat</l><r>escarlat</r></p><par n="abell/a__n"/></e>
+    <e lm="estadística">                    <i>estadísti</i><par n="acústi/ca__n"/></e>
+    <e lm="estimat">                        <p><l>estima</l><r>estima</r></p><par n="advoca/t__n"/></e>
+    <e lm="farsant">                        <i>farsant</i><par n="acompanyant__n"/></e>
+    <e lm="femení">                         <i>femen</i><par n="boc/í__n"/></e>
+    <e lm="fertilitzant" a="ariel">         <i>fertilitzant</i><par n="abric__n"/></e>
+    <e lm="gris">                           <i>gris</i><par n="as__n"/></e>
+    <e lm="guarda" a="gema">                <i>guarda</i><par n="acompanyant__n"/></e>
+    <e lm="hipòcrita">                      <i>hipòcrit</i><par n="abell/a__n"/></e>
+    <e lm="intermediari" a="gema">          <i>intermedi</i><par n="adjudicat/ari__n"/></e>
+    <e lm="jueu">                           <i>jue</i><par n="administrati/u__n"/></e>
+    <e lm="liberal">                        <i>liberal</i><par n="acompanyant__n"/></e>
+    <e lm="màxim">                          <i>màxim</i><par n="abric__n"/></e>
+    <e lm="mig" a="gema">                   <i>mi</i><par n="desi/g__n"/></e>
+    <e lm="mínim">                          <i>mínim</i><par n="abric__n"/></e>
+    <e lm="mínima" a="gema">                <i>mínim</i><par n="abell/a__n"/></e>
+    <e lm="missioner">                      <i>missioner</i><par n="senyor__n"/></e>
+    <e lm="negociador" a="gema">            <i>negociador</i><par n="senyor__n"/></e>
+    <e lm="nòrdic">                         <i>nòrdi</i><par n="bas/c__n"/></e>
+    <e lm="occidental">                     <i>occidental</i><par n="acompanyant__n"/></e>
+    <e lm="populista" a="gema">             <i>populist</i><par n="accionist/a__n"/></e>
+    <e lm="ros">                            <i>ros</i><par n="senyor__n"/></e>
+    <e lm="solter">                         <i>solter</i><par n="senyor__n"/></e>
+    <e lm="soviètic" a="gema">              <i>soviètic</i><par n="senyor__n"/></e>
+    <e lm="susdit">                         <i>susdit</i><par n="senyor__n"/></e>
+    <e lm="tria">                           <i>tri</i><par n="abell/a__n"/></e>
+    <e lm="útil">                           <i>útil</i><par n="abric__n"/></e>
+    <e lm="vell">                           <i>vell</i><par n="senyor__n"/></e>
+    <e lm="vençut">                         <p><l>vençu</l><r>vençu</r></p><par n="advoca/t__n"/></e>
+    <e lm="zero" a="u21941">                <i>zero</i><par n="abric__n"/></e>
+
 
   </section>
   <section id="apostrophes" type="postblank">
