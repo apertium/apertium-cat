@@ -22209,7 +22209,8 @@ _^contra/contra<n><f><sg>$
 ^./.<sent>$
 
 ^La/El<det><def><f><sg>$
-^qüestió/qüestió<n><f><sg>$ ^era/ser<vbser><pii><p3><sg>$
+^qüestió/qüestió<n><f><sg>$ 
+^era/ser<vbser><pii><p3><sg>$
 ^molt més/molt més<adv>$
 ^medieval/medieval<adj><mf><sg>$
 ^./.<sent>$
