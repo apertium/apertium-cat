@@ -26066,7 +26066,7 @@
 <e lm="barraca">         <i>barra</i><par n="acústi/ca__n"/></e>
 <e lm="barracot">        <i>barracot</i><par n="abric__n"/></e>
 <e lm="barranc">         <i>barranc</i><par n="abric__n"/></e>
-<e lm="barreja" r="LR">         <i>barre</i><par n="barre/ja__n"/></e>
+<e lm="barreja">         <i>barre</i><par n="barre/ja__n"/></e>
 <e lm="mescla">         <i>mescl</i><par n="abell/a__n"/></e>
 <e lm="barrera">         <i>barrer</i><par n="abell/a__n"/></e>
 <e lm="barret">          <i>barret</i><par n="abric__n"/></e>
@@ -36026,7 +36026,7 @@
 <e lm="extremitat" a=" alseoane@gmail.com"><i>extremitat</i><par n="accessibilitat__n"/></e>
 <e lm="episiotomia" a=" alseoane@gmail.com"><i>episiotomi</i><par n="abell/a__n"/></e>
 <e lm="endovenós" a=" alseoane@gmail.com"><i>endoven</i><par n="aliment/ós__adj"/></e>
-<e r="LR" lm="deteriorament" a=" alseoane@gmail.com"><i>deteriorament</i><par n="abric__n"/></e>
+<e lm="deteriorament" a=" alseoane@gmail.com"><i>deteriorament</i><par n="abric__n"/></e>
 <e lm="descremat" a=" alseoane@gmail.com"><i>descrema</i><par n="afortuna/t__adj"/></e>
 <e lm="desapercebut" a=" alseoane@gmail.com"><i>desapercebu</i><par n="afortuna/t__adj"/></e>
 <e lm="cremor" a=" alseoane@gmail.com"><i>cremor</i><par n="accessibilitat__n"/></e>
@@ -36059,7 +36059,7 @@
 <e lm="nutritiu" a=" alseoane@gmail.com"><i>nutriti</i><par n="abusi/u__adj"/></e>
 <e lm="fermentat" a=" alseoane@gmail.com"><i>fermenta</i><par n="afortuna/t__adj"/></e>
 <e lm="edema" a=" alseoane@gmail.com"><i>edem</i><par n="carism/a__n"/></e>
-<e r="LR" lm="vas" a=" alseoane@gmail.com"><i>vas</i><par n="abast__n"/></e>
+<e lm="vas" a=" alseoane@gmail.com"><i>vas</i><par n="abast__n"/></e>
 <e lm="llevador" a="mikel"><i>llevador</i><par n="senyor__n"/></e>
 <e lm="fermentar" a="mikel"><i>ferment</i><par n="abander/ar__vblex"/></e>
 <e r="LR" lm="rodejar" a="mikel"><i>rode</i><par n="agreu/jar__vblex"/></e>
@@ -36383,7 +36383,7 @@
 <e lm="traïdoria" a="prompsit2adn"><i>traïdori</i><par n="abell/a__n"/></e>
 <e lm="àlgid" a="prompsit2adn"><i>àlgid</i><par n="absolut__adj"/></e>
 <e lm="algorisme" a="prompsit2adn"><i>algorisme</i><par n="abric__n"/></e>
-<e r="LR" lm="algoritme" a="prompsit2adn"><i>algoritme</i><par n="abric__n"/></e>
+<e lm="algoritme" a="prompsit2adn"><i>algoritme</i><par n="abric__n"/></e>
 <e lm="alineació" a="prompsit2adn"><i>alineaci</i><par n="acci/ó__n"/></e>
 <e lm="aplanar" a="prompsit2adn"><i>aplan</i><par n="abander/ar__vblex"/></e>
 <e lm="magatzematge" a="prompsit2adn"><i>magatzematge</i><par n="abric__n"/></e>
@@ -54594,7 +54594,7 @@
 <e lm="Excm.">           <i>Excm.</i><par n="atletisme__n"/></e>
 <e lm="Excma.">          <i>Excma.</i><par n="q__n"/></e>
 <e lm="Hz">              <i>Hz</i><par n="campus__n"/></e>
-<e r="LR" lm="timus">    <i>timus</i><par n="campus__n"/></e>
+<e lm="timus">    <i>timus</i><par n="campus__n"/></e>
 <e lm="Il·lm.">          <i>Il·lm.</i><par n="atletisme__n"/></e>
 <e r="LR" lm="Il·lm.">   <p><l>Iŀlm.</l>     <r>Il·lm.</r></p><par n="atletisme__n"/></e>
 <e lm="Il·lma.">         <i>Il·lma.</i><par n="q__n"/></e>
@@ -54700,7 +54700,7 @@
 <e lm="afer interior">   <p><l>afers<b/>interiors</l><r>afer<b/>interior<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="aferrament">      <i>aferrament</i><par n="abric__n"/></e>
 <e lm="afganès">         <i>afgan</i><par n="angl/ès__n"/></e>
-<e r="LR" lm="afgà">     <i>afg</i><par n="americ/à__n"/></e>
+<e lm="afgà">     <i>afg</i><par n="americ/à__n"/></e>
 <e lm="aficionat">       <i>aficiona</i><par n="advoca/t__n"/></e>
 <e lm="afix">            <i>afix</i><par n="abast__n"/></e>
 <e lm="afluixament">     <i>afluixament</i><par n="abric__n"/></e>
@@ -55513,7 +55513,7 @@
 <e lm="cànid">           <i>cànid</i><par n="abric__n"/></e>
 <e lm="cànter">          <i>cànter</i><par n="abric__n"/></e>
 <e lm="cèrid">           <i>cèrid</i><par n="abric__n"/></e>
-<e r="LR" lm="còmoda">   <i>còmod</i><par n="abell/a__n"/></e>
+<e lm="còmoda">   <i>còmod</i><par n="abell/a__n"/></e>
 <e lm="còrtex">          <i>còrtex</i><par n="campus__n"/></e>
 <e lm="còtila">          <i>còtil</i><par n="abell/a__n"/></e>
 <e lm="dació">           <i>daci</i><par n="acci/ó__n"/></e>
@@ -55903,7 +55903,7 @@
 <e lm="escata">          <i>escat</i><par n="abell/a__n"/></e>
 <e lm="escirre">         <i>escirre</i><par n="abric__n"/></e>
 <e lm="esclafit">        <i>esclafit</i><par n="abric__n"/></e>
-<e r="LR" lm="esclavatge"><i>esclavatge</i><par n="abric__n"/></e>
+<e lm="esclavatge"><i>esclavatge</i><par n="abric__n"/></e>
 <e lm="escola de direcció"><i>escol</i><par n="abell/a__n"/><p><l><b/>de<b/>direcció</l><r><g><b/>de<b/>direcció</g></r></p></e>
 <e lm="escolapi">        <i>escol</i><par n="escol/api__n"/></e>
 <e lm="escolta">         <i>escolt</i><par n="accionist/a__n"/></e>
@@ -56659,7 +56659,7 @@
 <e lm="marsopa">         <i>marsop</i><par n="abell/a__n"/></e>
 <e lm="martirologi">     <i>martirologi</i><par n="abric__n"/></e>
 <e lm="marxista">        <i>marxist</i><par n="accionist/a__n"/></e>
-<e r="LR" lm="mascarot"> <i>mascarot</i><par n="abric__n"/></e>
+<e lm="mascarot"> <i>mascarot</i><par n="abric__n"/></e>
 <e lm="mascaró">         <i>mascar</i><par n="aband/ó__n"/></e>
 <e lm="mass media">      <i>mass<b/>media</i><par n="afores__n"/></e>
 <e lm="massís">          <i>mass</i><par n="passad/ís__n"/></e>
@@ -57603,7 +57603,7 @@
 <e lm="tocadiscs">       <i>tocadiscs</i><par n="campus__n"/></e>
 <e lm="tolla">           <i>toll</i><par n="abell/a__n"/></e>
 <e lm="tomaca" v="val">   <i>toma</i><par n="acústi/ca__n"/></e>
-<e r="LR" lm="tomata">   <i>tomat</i><par n="abell/a__n"/></e>
+<e lm="tomata">   <i>tomat</i><par n="abell/a__n"/></e>
 <e lm="tomb">            <i>tomb</i><par n="abric__n"/></e>
 <e r="LR" lm="tomàtiga"> <i>tomàtig</i><par n="alg/a__n"/></e>
 <e lm="top secret">      <i>top<b/>secret</i><par n="atletisme__n"/></e>
@@ -57960,12 +57960,12 @@
 <e lm="creacionista">    <i>creacionist</i><par n="accionist/a__n"/></e>
 <e lm="darwinista">      <i>darwinist</i><par n="accionist/a__n"/></e>
 <e lm="darwinisme">      <i>darwinisme</i><par n="abric__n"/></e>
-<e r="LR" lm="atlas">    <i>atlas</i><par n="campus__n"/></e>
+<e lm="atlas">    <i>atlas</i><par n="campus__n"/></e>
 <e lm="tovallonera">     <i>tovalloner</i><par n="abell/a__n"/></e>
-<e r="LR" lm="portatovallons"><i>portatovallons</i><par n="campus__n"/></e>
+<e lm="portatovallons"><i>portatovallons</i><par n="campus__n"/></e>
 <e lm="sotagot">         <i>sotagot</i><par n="abric__n"/></e>
 <e lm="rodal">           <i>rodal</i><par n="abric__n"/></e>
-<e r="LR" lm="ensarronada"><i>ensarronad</i><par n="abell/a__n"/></e>
+<e lm="ensarronada"><i>ensarronad</i><par n="abell/a__n"/></e>
 <e lm="francofonia">     <i>francofoni</i><par n="abell/a__n"/></e>
 <e lm="dessalació">      <i>dessalaci</i><par n="acci/ó__n"/></e>
 <e lm="pesticida">       <i>pesticid</i><par n="carism/a__n"/></e>
