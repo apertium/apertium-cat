@@ -10374,6 +10374,28 @@
   <e v="cat"><p><l>gui</l>      <r>er<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
 
   <e v="val"><p><l>ga</l>       <r>er<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
+  
+  <e v="cat"><p><l>gués</l>		<r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>guera</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+  
+  <e v="cat"><p><l>guessis</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>gueres</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>guesses</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+
+  <e v="cat"><p><l>gués</l>		<r>er<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>guera</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  
+  <e v="cat"><p><l>guéssim</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e v="val"><p><l>guérem</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>guéssem</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  
+  <e v="cat"><p><l>guéssiu</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e v="val"><p><l>guéreu</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>guésseu</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  
+  <e v="cat"><p><l>guessin</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e v="val"><p><l>gueren</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>guessen</l>	<r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
 
 </pardef>
 <pardef n="concórr/er__vblex">
