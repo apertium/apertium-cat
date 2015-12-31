@@ -10393,9 +10393,9 @@
   <e v="val"><p><l>guéreu</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
   <e r="LR"><p><l>guésseu</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
   
-  <e v="cat"><p><l>guessin</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
-  <e v="val"><p><l>gueren</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
-  <e r="LR"><p><l>guessen</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e v="cat"><p><l>guessin</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e v="val"><p><l>gueren</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>guessen</l>	<r>er<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e><p><l>dria</l>				<r>er<s n="vblex"/><s n="cni"/><s n="p1"/><s n="sg"/></r></p></e>
   <e><p><l>dries</l>			<r>er<s n="vblex"/><s n="cni"/><s n="p2"/><s n="sg"/></r></p></e>
