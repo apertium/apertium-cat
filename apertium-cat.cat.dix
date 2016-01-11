@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Dictionary:
 	Sections: 4
@@ -29153,7 +29153,7 @@
 <e lm="narrador">        <i>narrador</i><par n="senyor__n"/></e>
 <e lm="narrativa">       <i>narrativ</i><par n="abell/a__n"/></e>
 <e lm="nas">             <i>nas</i><par n="cos__n"/></e>
-<e lm="natació">         <i>natació</i><par n="càries__n"/></e>
+<e lm="natació">         <i>natació</i><par n="acci/ó__n"/></e>
 <e lm="natalici">        <i>natalici</i><par n="abric__n"/></e>
 <e lm="natalitat">       <i>natalitat</i><par n="accessibilitat__n"/></e>
 <e lm="natja">           <i>nat</i><par n="barre/ja__n"/></e>
