@@ -32747,7 +32747,7 @@
 <e lm="a exclusió de">   <i>a<b/>exclusió<b/></i><par n="contde__pr"/></e>
 <e lm="a falta de">      <i>a<b/>falta<b/></i><par n="contde__pr"/></e>
 <e lm="a fi de">         <i>a<b/>fi<b/></i><par n="contde__pr"/></e>
-<e r="LR" lm="a finals de"><i>a<b/>finals<b/></i><par n="contde__pr"/></e>
+<e lm="a finals de"><i>a<b/>finals<b/></i><par n="contde__pr"/></e>
 <e lm="a força de">      <i>a<b/>força<b/></i><par n="contde__pr"/></e>
 <e lm="a l'efecte de">   <i>a<b/>l'efecte<b/></i><par n="contde__pr"/></e>
 <e lm="a l'encalç de">   <i>a<b/>l'encalç<b/></i><par n="contde__pr"/></e>
@@ -32769,8 +32769,8 @@
 <e r="RL" lm="des de mitjan"><p><l>des<b/>de<b/><a/>mitjan</l><r>des<b/>de<b/>mitjan</r></p><par n="a__pr"/></e>
 <e r="RL" lm="cap a mitjan"><p><l>cap<b/>a<b/><a/>mitjan</l><r>cap<b/>a<b/>mitjan</r></p><par n="a__pr"/></e>
 <e r="RL" lm="fins a mitjan"><p><l>fins<b/>a<b/><a/>mitjan</l><r>fins<b/>a<b/>mitjan</r></p><par n="a__pr"/></e>
-<e r="LR" lm="a mitjan de"><i>a<b/>mitjan<b/></i><par n="contde__pr"/></e>
-<e r="LR" lm="a mitjans de"><i>a<b/>mitjans<b/></i><par n="contde__pr"/></e>
+<e lm="a mitjan de"><i>a<b/>mitjan<b/></i><par n="contde__pr"/></e>
+<e lm="a mitjans de"><i>a<b/>mitjans<b/></i><par n="contde__pr"/></e>
 <e r="LR" lm="a muntó de"><i>a<b/>muntó<b/>de</i><par n="a__pr"/></e>
 <e lm="a més de">        <i>a<b/>més<b/></i><par n="contde__pr"/></e>
 <e lm="a partir de">     <i>a<b/>partir<b/></i><par n="contde__pr"/></e>
@@ -32833,8 +32833,8 @@
 <e lm="de connivència amb"><i>de<b/>connivència<b/>amb</i><par n="a__pr"/></e>
 <e lm="de llarg a llarg de"><i>de<b/>llarg<b/>a<b/>llarg<b/></i><par n="contde__pr"/></e>
 <e lm="de mitjan">       <i>de<b/>mitjan</i><par n="a__pr"/></e>
-<e r="LR" lm="de mitjan de"><i>de<b/>mitjan<b/></i><par n="contde__pr"/></e>
-<e r="LR" lm="de mitjans de"><i>de<b/>mitjans<b/></i><par n="contde__pr"/></e>
+<e lm="de mitjan de"><i>de<b/>mitjan<b/></i><par n="contde__pr"/></e>
+<e lm="de mitjans de"><i>de<b/>mitjans<b/></i><par n="contde__pr"/></e>
 <e lm="per por de">      <i>per<b/>por<b/></i><par n="contde__pr"/></e>
 <e lm="des de">          <i>des<b/></i><par n="contde__pr"/></e>
 <e r="LR" lm="d'ençà de"><i>d'ençà<b/></i><par n="contde__pr"/></e>
@@ -43524,7 +43524,7 @@
 <e lm="EPSV" a="prompsit"><i>EPSV</i><par n="BBVA__n"/></e>
 <e lm="de fin" a="prompsit"><i>de<b/>finalització</i><par n="multimèdia__adj"/></e>
 <e lm="mestressa de casa"><i>mestress</i><par n="abell/a__n"/><p><l><b/>de<b/>casa</l><r><g><b/>de<b/>casa</g></r></p></e>
-<e r="LR" lm="per causa de" a="prompsit"><i>per<b/>causa<b/></i><par n="contde__pr"/></e>
+<e lm="per causa de" a="prompsit"><i>per<b/>causa<b/></i><par n="contde__pr"/></e>
 <e lm="a instàncies de" a="prompsit"><i>a<b/>instàncies<b/></i><par n="contde__pr"/></e>
 <e lm="al final de" a="prompsit"><i>al<b/>final<b/></i><par n="contde__pr"/></e>
 <e r="LR" lm="a proposició de" a="prompsit"><i>a<b/>proposició<b/></i><par n="contde__pr"/></e>
@@ -43654,7 +43654,7 @@
 <e lm="col·laborador" a="prompsit2ecl"><i>col·laborador</i><par n="absolut__adj"/></e>
 <e r="LR" lm="col·laborador"><p><l>coŀlaborador</l><r>col·laborador</r></p><par n="absolut__adj"/></e>
 <e lm="elaborador">       <i>elaborador</i><par n="absolut__adj"/></e>
-<e r="LR" lm="per tal de" a="prompsit2ecl"><i>per<b/>tal<b/></i><par n="contde__pr"/></e>
+<e lm="per tal de" a="prompsit2ecl"><i>per<b/>tal<b/></i><par n="contde__pr"/></e>
 <e lm="impartició" a="prompsit2ecl"><i>impartici</i><par n="acci/ó__n"/></e>
 <e lm="butlleta" a="prompsit2ecl"><i>butllet</i><par n="abell/a__n"/></e>
 <e lm="assalariat" a="prompsit2adn"><i>assalaria</i><par n="triparti/t__adj"/></e>
@@ -63952,7 +63952,7 @@
    
 <e r="LR" lm="a fi de">  <p><l>a<b/>fi<b/>d'</l><r>a<b/>fi<b/>de</r></p><par n="a__pr"/></e>
    
-<e r="LR" lm="a finals de"><p><l>a<b/>finals<b/>d'</l><r>a<b/>finals<b/>de</r></p><par n="a__pr"/></e>
+<e lm="a finals de"><p><l>a<b/>finals<b/>d'</l><r>a<b/>finals<b/>de</r></p><par n="a__pr"/></e>
    
 <e r="LR" lm="a força de"><p><l>a<b/>força<b/>d'</l><r>a<b/>força<b/>de</r></p><par n="a__pr"/></e>
    
