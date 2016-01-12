@@ -33264,8 +33264,8 @@
 <e lm="amarrar">         <i>amarr</i><par n="abander/ar__vblex"/></e>
 <e lm="ambientar">       <i>ambient</i><par n="abander/ar__vblex"/></e>
 <e lm="amenaçar">        <i>amena</i><par n="abalan/çar__vblex"/></e>
-<e r="LR" lm="amerar">   <i>amer</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="amollar">  <i>amoll</i><par n="abander/ar__vblex"/></e>
+<e lm="amerar">   <i>amer</i><par n="abander/ar__vblex"/></e>
+<e lm="amollar">  <i>amoll</i><par n="abander/ar__vblex"/></e>
 <e lm="amonestar">       <i>amonest</i><par n="abander/ar__vblex"/></e>
 <e lm="ampliar">         <i>ampli</i><par n="acarici/ar__vblex"/></e>
 <e lm="amuntegar">       <i>amunteg</i><par n="afalag/ar__vblex"/></e>
@@ -33326,7 +33326,7 @@
 <e lm="argumentar">      <i>argument</i><par n="abander/ar__vblex"/></e>
 <e lm="armar">           <i>arm</i><par n="abander/ar__vblex"/></e>
 <e lm="arrancar" v="val"><i>arran</i><par n="abo/car__vblex"/></e>
-<e r="LR" lm="arranjar"> <i>arran</i><par n="agreu/jar__vblex"/></e>
+<e lm="arranjar"> <i>arran</i><par n="agreu/jar__vblex"/></e>
 <e lm="arrasar">         <i>arras</i><par n="abander/ar__vblex"/></e>
 <e lm="arreglar">        <i>arregl</i><par n="abander/ar__vblex"/></e>
 <e lm="arrelar">         <i>arrel</i><par n="abander/ar__vblex"/></e>
@@ -33747,7 +33747,7 @@
 <e lm="decretar">        <i>decret</i><par n="abander/ar__vblex"/></e>
 <e lm="dedicar">         <i>dedi</i><par n="abo/car__vblex"/></e>
 <e lm="deduir">          <i>dedu</i><par n="addu/ir__vblex"/></e>
-<e r="LR" lm="defendre"> <i>def</i><par n="dep/endre__vblex"/></e>
+<e lm="defendre"> <i>def</i><par n="dep/endre__vblex"/></e>
 <e lm="defensar">        <i>defens</i><par n="abander/ar__vblex"/></e>
 <e lm="definir">         <i>defin</i><par n="abarat/ir__vblex"/></e>
 <e lm="predefinir" a="prompsit2uoc"><i>predefin</i><par n="abarat/ir__vblex"/></e>
@@ -33985,7 +33985,7 @@
 <e lm="emparar">         <i>empar</i><par n="abander/ar__vblex"/></e>
 <e lm="empassar" v="cat"><i>empass</i><par n="abander/ar__vblex"/></e>
 <e lm="empatar">         <i>empat</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="empentar"> <i>empent</i><par n="abander/ar__vblex"/></e>
+<e lm="empentar"> <i>empent</i><par n="abander/ar__vblex"/></e>
 <e lm="empinar">         <i>empin</i><par n="abander/ar__vblex"/></e>
 <e lm="empipar">         <i>empip</i><par n="abander/ar__vblex"/></e>
 <e lm="empitjorar">      <i>empitjor</i><par n="abander/ar__vblex"/></e>
@@ -34141,8 +34141,8 @@
 <e lm="esgrimir">        <i>esgrim</i><par n="abarat/ir__vblex"/></e>
 <e lm="esmenar">         <i>esmen</i><par n="abander/ar__vblex"/></e>
 <e lm="esmentar">        <i>esment</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="esmerçar"> <i>esmer</i><par n="abalan/çar__vblex"/></e>
-<e r="LR" lm="esmolar">  <i>esmol</i><par n="abander/ar__vblex"/></e>
+<e lm="esmerçar"> <i>esmer</i><par n="abalan/çar__vblex"/></e>
+<e lm="esmolar">  <i>esmol</i><par n="abander/ar__vblex"/></e>
 <e lm="esmorzar">        <i>esmorz</i><par n="abander/ar__vblex"/></e>
 <e lm="espaiar">         <i>espai</i><par n="acarici/ar__vblex"/></e>
 <e lm="espantar">        <i>espant</i><par n="abander/ar__vblex"/></e>
@@ -34517,7 +34517,7 @@
 <e lm="mentir">          <i>ment</i><par n="abarat/ir__vblex"/></e>
 <e lm="menysprear">      <i>menyspre</i><par n="acarici/ar__vblex"/></e>
 <e lm="merèixer">        <i>mer</i><par n="desmer/èixer__vblex"/></e>
-<e r="LR" lm="mesclar">  <i>mescl</i><par n="abander/ar__vblex"/></e>
+<e lm="mesclar">  <i>mescl</i><par n="abander/ar__vblex"/></e>
 <e lm="mesurar">         <i>mesur</i><par n="abander/ar__vblex"/></e>
 <e lm="militar">         <i>milit</i><par n="abander/ar__vblex"/></e>
 <e lm="millorar">        <i>millor</i><par n="abander/ar__vblex"/></e>
@@ -35140,7 +35140,7 @@
 <e lm="tolerar">         <i>toler</i><par n="abander/ar__vblex"/></e>
 <e lm="tombar">          <i>tomb</i><par n="abander/ar__vblex"/></e>
 <e lm="topar">           <i>top</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="torcar">   <i>tor</i><par n="abo/car__vblex"/></e>
+<e lm="torcar">   <i>tor</i><par n="abo/car__vblex"/></e>
 <e lm="tornar">          <i>torn</i><par n="abander/ar__vblex"/></e>
 <e lm="torrar">          <i>torr</i><par n="abander/ar__vblex"/></e>
 <e lm="torturar">        <i>tortur</i><par n="abander/ar__vblex"/></e>
@@ -35598,7 +35598,7 @@
 
 <!--="EUA"><i>EUA</i><par n="EUA__n"/></e>-->
 
-<e r="LR" lm="endur">    <i>end</i><par n="end/ur__vblex"/></e>
+<e lm="endur">    <i>end</i><par n="end/ur__vblex"/></e>
 <e lm="disciplinari">    <i>disciplin</i><par n="adjudicat/ari__adj"/></e>
 <e lm="directiu">        <i>directi</i><par n="abusi/u__adj"/></e>
 <e lm="dialogant">       <i>dialogant</i><par n="abdominal__adj"/></e>
@@ -35631,7 +35631,7 @@
 <e lm="utilitari">       <i>utilit</i><par n="adjudicat/ari__adj"/></e>
 <e lm="unànimement">     <i>unànimement</i><par n="ahir__adv"/></e>
 <e lm="ultrapassar">     <i>ultrapass</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="ubicar">   <i>ubi</i><par n="abo/car__vblex"/></e>
+<e lm="ubicar">   <i>ubi</i><par n="abo/car__vblex"/></e>
 <e lm="trompeta">        <i>trompet</i><par n="abell/a__n"/></e>
 <e lm="trinitat">        <i>trinitat</i><par n="accessibilitat__n"/></e>
 <e lm="progressivitat">  <i>progressivitat</i><par n="accessibilitat__n"/></e>
@@ -36260,7 +36260,7 @@
 <e lm="golfa">           <i>golf</i><par n="abell/a__n"/></e>
 <e lm="estructurar">     <i>estructur</i><par n="abander/ar__vblex"/></e>
 <e lm="estètica">        <i>estèti</i><par n="acústi/ca__n"/></e>
-<e r="LR" lm="encetar">  <i>encet</i><par n="abander/ar__vblex"/></e>
+<e lm="encetar">  <i>encet</i><par n="abander/ar__vblex"/></e>
 <e lm="Déu">             <i>Déu</i><par n="Abad__np"/></e>
 <e lm="deixar">          <i>deix</i><par n="abander/ar__vblex"/></e>
 <e lm="Climent">         <i>Climent</i><par n="Abad__np"/></e>
@@ -36413,7 +36413,7 @@
 <e lm="agudesa" a="prompsit2adn"><i>agudes</i><par n="abell/a__n"/></e>
 <e lm="aguditzar" a="prompsit2adn"><i>aguditz</i><par n="abander/ar__vblex"/></e>
 <e lm="arruixar" a="prompsit2adn"><i>arruix</i><par n="abander/ar__vblex"/></e>
-<e r="LR" lm="ahuixar" a="prompsit2adn"><i>ahuix</i><par n="abander/ar__vblex"/></e>
+<e lm="ahuixar" a="prompsit2adn"><i>ahuix</i><par n="abander/ar__vblex"/></e>
 <e lm="airejar" a="prompsit2adn"><i>aire</i><par n="agreu/jar__vblex"/></e>
 <e lm="airós" a="prompsit2adn"><i>air</i><par n="afectu/ós__adj"/></e>
 <e lm="aixovar" a="prompsit2adn"><i>aixovar</i><par n="abric__n"/></e>
@@ -36487,7 +36487,7 @@
 <e lm="antropològic" a="prompsit2adn"><i>antropològi</i><par n="acadèmi/c__adj"/></e>
 <e lm="antropòleg" a="prompsit2adn"><i>antropòl</i><par n="biòl/eg__n"/></e>
 <e lm="nuar" a="prompsit2adn"><i>nu</i><par n="acarici/ar__vblex"/></e>
-<e r="LR" lm="nugar" a="prompsit2adn"><i>nug</i><par n="afalag/ar__vblex"/></e>
+<e lm="nugar" a="prompsit2adn"><i>nug</i><par n="afalag/ar__vblex"/></e>
 <e lm="anuència" a="prompsit2adn"><i>anuènci</i><par n="abell/a__n"/></e>
 <e lm="anunciant" a="prompsit2adn"><i>anunciant</i><par n="acompanyant__n"/></e>
 <e lm="ham" a="prompsit2adn"><i>ham</i><par n="abric__n"/></e>
@@ -54346,7 +54346,7 @@
 <e lm="soltar">          <i>solt</i><par n="abander/ar__vblex"/></e>
 <e lm="sovintejar">      <i>sovinte</i><par n="agreu/jar__vblex"/></e>
 <e lm="subdividir">      <i>subdivid</i><par n="abarat/ir__vblex"/></e>
-<e r="LR" lm="subsanar"> <i>subsan</i><par n="abander/ar__vblex"/></e>
+<e lm="subsanar"> <i>subsan</i><par n="abander/ar__vblex"/></e>
 <e lm="subseguir">       <i>subsegu</i><par n="abarat/ir__vblex"/></e>
 <e lm="substanciar">     <i>substanci</i><par n="acarici/ar__vblex"/></e>
 <e lm="subvenir">        <i>subv</i><par n="conv/enir__vblex"/></e>
