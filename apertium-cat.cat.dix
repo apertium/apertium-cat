@@ -34628,8 +34628,9 @@
 <e lm="papar">           <i>pap</i><par n="abander/ar__vblex"/></e>
 <e lm="paralitzar">      <i>paralitz</i><par n="abander/ar__vblex"/></e>
 <e lm="parar">           <i>par</i><par n="abander/ar__vblex"/></e>
-<e lm="parir">           <i>pari</i><par n="pari/r__vblex"/></e>
-<e lm="parir">           <p><l>parí</l>      <r>pari</r></p><par n="parí/r__vblex"/></e>
+<!--<e lm="parir">           <i>pari</i><par n="pari/r__vblex"/></e>-->
+<!--<e lm="parir">           <p><l>parí</l>      <r>pari</r></p><par n="parí/r__vblex"/></e>-->
+<e lm="parir">           <i>par</i><par n="abarat/ir__vblex"/></e> <!-- non-deffective-->
 <e lm="parlar">          <i>parl</i><par n="abander/ar__vblex"/></e>
 <e lm="trasbalsar">      <i>trasbals</i><par n="abander/ar__vblex"/></e>
 <e lm="parodiar">        <i>parodi</i><par n="acarici/ar__vblex"/></e>
@@ -36355,7 +36356,8 @@
 <e lm="aberració" a="prompsit2adn"><i>aberraci</i><par n="acci/ó__n"/></e>
 <e lm="abismal" a="prompsit2adn"><i>abismal</i><par n="abdominal__adj"/></e>
 <e lm="abolició" a="prompsit2adn"><i>abolici</i><par n="acci/ó__n"/></e>
-<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abol/ir__vblex"/></e>
+<!--<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abol/ir__vblex"/></e>-->
+<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abarat/ir__vblex"/></e>  <!-- non-deffective-->
 <e lm="abreujar" a="prompsit2adn"><i>abreu</i><par n="agreu/jar__vblex"/></e>
 <e lm="abrupte" a="prompsit2adn"><i>abrupt</i><par n="abstract/e__adj"/></e>
 <e lm="absorbent" a="prompsit2adn"><i>absorbent</i><par n="abdominal__adj"/></e>
