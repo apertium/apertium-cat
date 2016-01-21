@@ -48883,7 +48883,7 @@
 <e lm="escruixidor">     <i>escruixidor</i><par n="absolut__adj"/></e>
 <e lm="esdrúixol">       <i>esdrúixol</i><par n="absolut__adj"/></e>
 <e lm="colpidor">        <i>colpidor</i><par n="absolut__adj"/></e>
-<e r="LR" lm="esmaperdut"><i>esmaperdu</i><par n="afortuna/t__adj"/></e>
+<e lm="esmaperdut"><i>esmaperdu</i><par n="afortuna/t__adj"/></e>
 <e lm="esmenable">       <i>esmenable</i><par n="abdominal__adj"/></e>
 <e lm="esmeril">         <i>esmeril</i><par n="abdominal__adj"/></e>
 <e lm="espaiós">         <i>espai</i><par n="afectu/ós__adj"/></e>
@@ -48998,7 +48998,7 @@
 <e lm="fricatiu">        <i>fricati</i><par n="abusi/u__adj"/></e>
 <e lm="fructuós">        <i>fructu</i><par n="afectu/ós__adj"/></e>
 <e lm="frugívor">        <i>frugívor</i><par n="absolut__adj"/></e>
-<e r="LR" lm="frustrador"><i>frustrador</i><par n="absolut__adj"/></e>
+<e lm="frustrador"><i>frustrador</i><par n="absolut__adj"/></e>
 <e lm="frèvol">          <i>frèvol</i><par n="absolut__adj"/></e>
 <e lm="llancívol">       <i>llancívol</i><par n="absolut__adj"/></e>
 <e lm="fugisser">        <i>fugisser</i><par n="absolut__adj"/></e>
@@ -49397,8 +49397,8 @@
 <e lm="pescador">        <i>pescador</i><par n="absolut__adj"/></e>
 <e lm="petri">           <i>p</i><par n="p/etri__adj"/></e>
 <e lm="petrogenètic">    <i>petrogenèti</i><par n="acadèmi/c__adj"/></e>
-<e r="LR" lm="petrós">   <i>petr</i><par n="aliment/ós__adj"/></e>
-<e r="LR" lm="picardiós"><i>picardi</i><par n="aliment/ós__adj"/></e>
+<e lm="petrós">   <i>petr</i><par n="aliment/ós__adj"/></e>
+<e lm="picardiós"><i>picardi</i><par n="aliment/ós__adj"/></e>
 <e lm="pidolaire">       <i>pidolaire</i><par n="abdominal__adj"/></e>
 <e lm="piemontès">       <i>piemont</i><par n="afgan/ès__adj"/></e>
 <e lm="pigós">           <i>pig</i><par n="afectu/ós__adj"/></e>
@@ -49413,9 +49413,9 @@
 <e lm="ple de gom a gom"><i>ple</i><par n="bo__adj"/><p><l><b/>de<b/>gom<b/>a<b/>gom</l><r><g><b/>de<b/>gom<b/>a<b/>gom</g></r></p></e>
 <e lm="pleonàstic">      <i>pleonàsti</i><par n="acadèmi/c__adj"/></e>
 <e lm="pliocè">          <i>plioc</i><par n="ali/è__adj"/></e>
-<e r="LR" lm="pliocènic"><i>pliocèni</i><par n="acadèmi/c__adj"/></e>
+<e lm="pliocènic"><i>pliocèni</i><par n="acadèmi/c__adj"/></e>
 <e lm="plistocè">        <i>plistoc</i><par n="ali/è__adj"/></e>
-<e r="LR" lm="plistocènic"><i>plistocèni</i><par n="acadèmi/c__adj"/></e>
+<e lm="plistocènic"><i>plistocèni</i><par n="acadèmi/c__adj"/></e>
 <e lm="plomís">          <i>plom</i><par n="cast/ís__adj"/></e>
 <e lm="plorós">          <i>plor</i><par n="afectu/ós__adj"/></e>
 <e lm="plurifuncional">  <i>plurifuncional</i><par n="abdominal__adj"/></e>
@@ -49578,7 +49578,7 @@
 <e lm="simplista">       <i>simplist</i><par n="agrícol/a__adj"/></e>
 <e lm="sincrònic">       <i>sincròni</i><par n="acadèmi/c__adj"/></e>
 <e lm="sinòptic">        <i>sinòpti</i><par n="acadèmi/c__adj"/></e>
-<e r="LR" lm="siti">     <i>s</i><par n="s/iti__adj"/></e>
+<e lm="siti">     <i>s</i><par n="s/iti__adj"/></e>
 <!--<e lm="situat" r="RL"><i>situa</i><par n="triparti/t__adj"/></e>-->
 <e lm="sobresaturat">    <i>sobresatura</i><par n="afortuna/t__adj"/></e>
 <e lm="socialitzant">    <i>socialitzant</i><par n="abdominal__adj"/></e>
@@ -49590,7 +49590,7 @@
 <e r="LR" lm="somiatruites"><i>somiatruites</i><par n="multimèdia__adj"/></e>
 <e lm="somnàmbul">       <i>somnàmbul</i><par n="absolut__adj"/></e>
 <e lm="somort">          <i>somort</i><par n="absolut__adj"/></e>
-<e r="LR" lm="sonso">    <i>sons</i><par n="guarr/o__adj"/></e>
+<e lm="sonso">    <i>sons</i><par n="guarr/o__adj"/></e>
 <e lm="sorneguer">       <i>sorneguer</i><par n="absolut__adj"/></e>
 <e lm="subaltern">       <i>subaltern</i><par n="absolut__adj"/></e>
 <e lm="subcomandant">    <i>subcomandant</i><par n="abdominal__adj"/></e>
@@ -49704,7 +49704,7 @@
 <e lm="venal">           <i>venal</i><par n="abdominal__adj"/></e>
 <e lm="venjador">        <i>venjador</i><par n="absolut__adj"/></e>
 <e lm="venjatiu">        <i>venjati</i><par n="abusi/u__adj"/></e>
-<e r="LR" lm="verdosenc"><i>verdosen</i><par n="acadèmi/c__adj"/></e>
+<e lm="verdosenc"><i>verdosen</i><par n="acadèmi/c__adj"/></e>
 <e lm="verdós">          <i>verd</i><par n="aliment/ós__adj"/></e>
 <e lm="verificador">     <i>verificador</i><par n="absolut__adj"/></e>
 <e lm="verídic">         <i>verídi</i><par n="acadèmi/c__adj"/></e>
