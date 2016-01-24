@@ -4378,6 +4378,16 @@
   <e>       <p><l><b/>altre</l> <r><b/>altre<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
+
+<pardef n="altri__prn">
+    <e>
+      <p>
+        <l></l>
+        <r><s n="prn"/><s n="tn"/><s n="mf"/><s n="sp"/></r>
+      </p>
+    </e>
+</pardef>
+
 <pardef n="un/_altre__det">
   <e>       <p><l>es<b/>altres</l><r><b/>altre<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
 
@@ -22264,6 +22274,8 @@
   <e r="LR"><p><l>gué</l>       <r>dre<s n="vbmod"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
 
   <e r="RL"><p><l>dre</l>       <r>dre<s n="vbmod"/><s n="inf"/></r></p></e>
+  
+  <e r="RL">       <p><l>ent</l>     <r>dre<s n="vbmod"/><s n="ger"/></r></p></e>
 
   <e>       <p><l>ien</l>       <r>dre<s n="vbmod"/><s n="pii"/><s n="p3"/><s n="pl"/></r></p></e>
 
@@ -33072,6 +33084,9 @@
 <e lm="un">              <i>un</i><par n="algun__prn"/></e>
 <e lm="un altre">        <i>un</i><par n="un/_altre__prn"/></e>
 <e lm="un altre">        <i>un</i><par n="un/_altre__det"/></e>
+<e lm="algun altre">        <i>algun</i><par n="un/_altre__prn"/></e>
+<e lm="algun altre">        <i>algun</i><par n="un/_altre__det"/></e>
+<e lm="altri">        <i>altri</i><par n="altri__prn"/></e>
 <e r="LR" lm="un de sol"><i>un<b/>de<b/>sol</i><par n="algú__prn"/></e>
 <e r="LR" lm="us">       <i>us</i><par n="us__prn"/></e>
 <e r="LR" lm="vos" v="val"><i>vos</i><par n="us__prn"/></e>
