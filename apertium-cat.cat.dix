@@ -4743,9 +4743,13 @@
 
   <e>       <p><l>la<b/>qui</l> <r>el<b/>qui<s n="rel"/><s n="nn"/><s n="f"/><s n="sg"/></r></p></e>
 
-  <e>       <p><l>els<b/>qui</l><r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>els<b/>qui</l><r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>el<b/>qui</l> <r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>el<b/>qui</l> <r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
+
+  <e r="RL"><p><l><a/>els<b/>qui</l><r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e r="RL"><p><l><a/>el<b/>qui</l> <r>el<b/>qui<s n="rel"/><s n="nn"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="que_/el_seu__rel">
