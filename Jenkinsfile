@@ -3,7 +3,7 @@ node {
    checkout scm
 
    stage 'Build'
-   sh "./autogen.sh && make"
+   sh "./autogen.sh && ./configure && make"
 
    stage 'Validate Dictionary (dix)'
    sh "apertium-validate-dictionary apertium-cat-cat.dix"
