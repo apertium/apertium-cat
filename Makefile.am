@@ -7,14 +7,19 @@ VERSION=1.0.0
 LANG1=cat
 BASENAME=apertium-$(LANG1)
 
-TARGETS_COMMON =			\
-	$(LANG1).automorf.bin		\
-	$(LANG1).automorf.att.gz	\
-	$(LANG1).autogen.bin		\
-	$(LANG1).autogen.att.gz		\
-	$(LANG1).autopgen.bin		\
-	$(LANG1).rlx.bin
+VAR1=#deixar en blanc
+VAR2=_valencia
 
+TARGETS_COMMON =			\
+	$(LANG1)$(VAR1).automorf.bin		\
+	$(LANG1)$(VAR1).automorf.att.gz	\
+	$(LANG1)$(VAR1).autogen.bin		\
+	$(LANG1)$(VAR2).autogen.bin		\
+	$(LANG1)$(VAR1).autogen.att.gz		\
+	$(LANG1)$(VAR1).autopgen.bin		\
+	$(LANG1)$(VAR2).autopgen.bin		\
+	$(LANG1)$(VAR1).rlx.bin
+	
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
 
@@ -22,22 +27,29 @@ TARGETS_COMMON =			\
 ## Catalan transducer
 ###############################################################################
 
-$(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
-	apertium-validate-dictionary $<
-	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix
+$(LANG1)$(VAR1).automorf.bin: $(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@ $(BASENAME).$(LANG1).acx
 
-$(LANG1).autogen.att.gz: $(LANG1).autogen.bin
+$(LANG1)$(VAR1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
+	apertium-validate-dictionary $<
+	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
+
+$(LANG1)$(VAR2).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
+	apertium-validate-dictionary $<
+	lt-comp -v val rl $< $@ $(BASENAME).$(LANG1).acx
+
+$(LANG1)$(VAR1).autogen.att.gz: $(LANG1).autogen.bin
 	lt-print $< | gzip -9 -c -n > $@
 
-$(LANG1).automorf.att.gz: $(LANG1).automorf.bin
+$(LANG1)$(VAR1).automorf.att.gz: $(LANG1).automorf.bin
 	lt-print $< | gzip -9 -c -n > $@
 
-$(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
-	lt-comp lr $< $@
+$(LANG1)$(VAR1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp -a cat lr $< $@
+
+$(LANG1)$(VAR2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp -a val lr $< $@
 
 ###############################################################################
 ## Disambiguation rules
