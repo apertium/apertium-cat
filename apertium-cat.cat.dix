@@ -31588,7 +31588,7 @@
 <e lm="Càrcer">          <i>Càrcer</i><par n="Afganistan__np"/></e>
 <e lm="Càrites">         <i>Càrites</i><par n="ABC__np"/></e>
 <e lm="Cárdenas">        <i>Cárdenas</i><par n="Afganistan__np"/></e>
-<e lm="César">           <i>César</i><par n="ABC__np"/></e>
+<e lm="César">           <i>César</i><par n="Abad__np"/></e>
 <e lm="Còrdova">         <i>Còrdova</i><par n="Afganistan__np"/></e>
 <e lm="Còria">           <i>Còria</i><par n="Afganistan__np"/></e>
 <e lm="Còrsega">         <i>Còrsega</i><par n="Afganistan__np"/></e>
@@ -33042,7 +33042,7 @@
 <e r="LR" lm="li'ls">    <p><l>li'ls</l>     <r>li<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sg"/><j/>el<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e r="LR" lm="li'n">     <p><l>li'n</l>      <r>li<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sg"/><j/>en<s n="prn"/><s n="pro"/><s n="adv"/></r></p></e>
 <e r="LR" lm="hi">       <i>hi</i><par n="en__prn"/></e>
-<e lm="ho">       <i>ho</i><par n="ho__prn"/></e>
+<e r="LR" lm="ho">       <i>ho</i><par n="ho__prn"/></e>
 <e lm="hom">      <i>hom</i><par n="hom__prn"/></e>
 <e lm="jo">              <i>jo</i><par n="amb_mi__prn"/></e>
 <e lm="jo que ell">      <i>jo<b/>que<b/>ell</i><par n="amb_mi__prn"/></e>
