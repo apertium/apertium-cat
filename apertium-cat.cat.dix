@@ -29062,7 +29062,7 @@
 <e lm="moneda">          <i>moned</i><par n="abell/a__n"/></e>
 <e lm="moneder">         <i>moneder</i><par n="abric__n"/></e>
 <e lm="monestir">        <i>monestir</i><par n="abric__n"/></e>
-<e lm="monitor">         <i>monitor</i><par n="abric__n"/></e>
+<e lm="monitor">         <i>monitor</i><par n="senyor__n"/></e>
 <e lm="monjo">           <i>mon</i><par n="mon/jo__n"/></e>
 <e lm="monopoli">        <i>monopoli</i><par n="abric__n"/></e>
 <e lm="monstre">         <i>monstre</i><par n="abric__n"/></e>
@@ -31161,7 +31161,7 @@
 <e lm="àrea">            <i>àre</i><par n="abell/a__n"/></e>
 <e lm="àtic">            <i>àtic</i><par n="abric__n"/></e>
 <e lm="àtom">            <i>àtom</i><par n="abric__n"/></e>
-<e lm="àudio">           <i>àudio</i><par n="acompanyant__n"/></e>
+<e lm="àudio">           <i>àudio</i><par n="abric__n"/></e>
 <e lm="èmfasi">          <i>èmfasi</i><par n="accessibilitat__n"/></e>
 <e lm="èpica">           <i>èpi</i><par n="acústi/ca__n"/></e>
 <e lm="època">           <i>èpo</i><par n="acústi/ca__n"/></e>
@@ -41168,7 +41168,7 @@
 <e lm="idealista" a="prompsit2adn"><i>idealist</i><par n="accionist/a__n"/></e>
 <e lm="imperialista" a="prompsit2adn"><i>imperialist</i><par n="accionist/a__n"/></e>
 <e lm="impressionista" a="prompsit2adn"><i>impressionist</i><par n="accionist/a__n"/></e>
-<e lm="imprevista" a="prompsit2adn"><i>imprevist</i><par n="accionist/a__n"/></e>
+<e lm="imprevista" a="prompsit2adn"><i>imprevist</i><par n="abell/a__n"/></e>
 <e lm="inconformista" a="prompsit2adn"><i>inconformist</i><par n="accionist/a__n"/></e>
 <e lm="indigenista" a="prompsit2adn"><i>indigenist</i><par n="accionist/a__n"/></e>
 <e lm="immobilista" a="prompsit2adn"><i>immobilist</i><par n="accionist/a__n"/></e>
@@ -42986,7 +42986,7 @@
 <e lm="gaudiment" a="prompsit"><i>gaudiment</i><par n="abric__n"/></e>
 <e lm="generalització" a="prompsit"><i>generalitzaci</i><par n="acci/ó__n"/></e>
 <e lm="gradació" a="prompsit"><i>gradaci</i><par n="acci/ó__n"/></e>
-<e lm="grafema" a="prompsit"><i>grafem</i><par n="abell/a__n"/></e>
+<e lm="grafema" a="prompsit"><i>grafem</i><par n="carism/a__n"/></e>
 <e lm="habituació" a="prompsit"><i>habituaci</i><par n="acci/ó__n"/></e>
 <e lm="heliport" a="prompsit"><i>heliport</i><par n="abric__n"/></e>
 <e lm="iglú" a="prompsit"><i>iglú</i><par n="abric__n"/></e>
@@ -63458,7 +63458,7 @@
 
 <!-- Softcatalà -->
 <e lm="Hume">            <i>Hume</i><par n="Abad__np"/></e>
-<e lm="cacau">           <i>cacau</i><par n="atletisme__n"/></e>
+<e lm="cacau">           <i>cacau</i><par n="abric__n"/></e>
 <e lm="Jehová">          <i>Jehová</i><par n="Abad__np"/></e>
 <e lm="estirament">      <i>estirament</i><par n="abric__n"/></e>
 <e lm="Cambridge">       <i>Cambridge</i><par n="Afganistan__np"/></e>
@@ -63494,7 +63494,7 @@
 <e lm="guaitar">         <i>guait</i><par n="abander/ar__vblex"/></e>
 <e lm="companyonia"><i>companyoni</i><par n="abell/a__n"/></e>
 <e lm="escalabilitat">      <i>escalabilitat</i><par n="accessibilitat__n"/></e>
-
+<e lm="graffiti"><i>grafitti</i><par n="abric__n"/></e>
 
 <!-- fra~cat-->
 
