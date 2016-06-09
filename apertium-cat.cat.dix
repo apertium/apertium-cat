@@ -22844,7 +22844,7 @@
 <e lm="aventurer">       <i>aventurer</i><par n="absolut__adj"/></e>
 <e lm="aïllant">         <i>aïllant</i><par n="abdominal__adj"/></e>
 <e lm="babau">           <i>babau</i><par n="abdominal__adj"/></e>
-<e lm="baix">            <i>baix</i><par n="annex__adj"/></e>
+<e lm="baix">            <i>baix</i><par n="complex__adj"/></e>
 <e lm="baixet">          <i>baixet</i><par n="absolut__adj"/></e>
 <e lm="balear">          <i>balear</i><par n="abdominal__adj"/></e>
 <e lm="bancari">         <i>banc</i><par n="adjudicat/ari__adj"/></e>
@@ -32811,7 +32811,7 @@
 <e lm="als peus de">     <i>als<b/>peus<b/></i><par n="contde__pr"/></e>
 <e lm="amb">             <i>amb</i><par n="a__pr"/></e>
 <e lm="amb el risc de">  <i>amb<b/>el<b/>risc<b/></i><par n="contde__pr"/></e>
-<e lm="amb la finalitat de"><i>amb<b/>la<b/>finalitat<b/></i><par n="contde__pr"/></e>
+<e lm="amb finalitats">	 <i>amb<b/>finalitats<b/></i><par n="a__pr"/></e>
 <e lm="amb vista a">     <i>amb<b/>vista<b/></i><par n="conta__pr"/></e>
 <e lm="arran de">        <i>arran<b/></i><par n="contde__pr"/></e>
 <e lm="arreu de">        <i>arreu<b/></i><par n="contde__pr"/></e>
@@ -33180,7 +33180,7 @@
 <e lm="acontentar">      <i>acontent</i><par n="abander/ar__vblex"/></e>
 <e lm="acordar">         <i>acord</i><par n="abander/ar__vblex"/></e>
 <e lm="acorralar">       <i>acorral</i><par n="abander/ar__vblex"/></e>
-<e lm="acostar" v="val"> <i>acost</i><par n="abander/ar__vblex"/></e>
+<e lm="acostar"> 		 <i>acost</i><par n="abander/ar__vblex"/></e>
 <e lm="acostumar">       <i>acostum</i><par n="abander/ar__vblex"/></e>
 <e lm="acovardir">       <i>acovard</i><par n="abarat/ir__vblex"/></e>
 <e lm="acreditar">       <i>acredit</i><par n="abander/ar__vblex"/></e>
