@@ -23908,7 +23908,7 @@
 <e lm="mallorquí">       <i>mallorqu</i><par n="alacant/í__adj"/></e>
 <e lm="malsonant">       <i>malsonant</i><par n="abdominal__adj"/></e>
 <e lm="malvat">          <i>malva</i><par n="afortuna/t__adj"/></e>
-<e lm="mamífer">         <i>mamífer</i><par n="abdominal__adj"/></e>
+<e lm="mamífer">         <i>mamífer</i><par n="absolut__adj"/></e>
 <e lm="mandrós">         <i>mandr</i><par n="afectu/ós__adj"/></e>
 <e lm="manipulador">     <i>manipulador</i><par n="absolut__adj"/></e>
 <e lm="manuscrit">       <i>manuscrit</i><par n="absolut__adj"/></e>
@@ -28842,7 +28842,7 @@
 <e lm="mama">            <i>mam</i><par n="abell/a__n"/></e>
 <e lm="mampara">         <i>mampar</i><par n="abell/a__n"/></e>
 <e lm="mamà">            <i>mamà</i><par n="accessibilitat__n"/></e>
-<e lm="mamífer">         <i>mamífer</i><par n="abric__n"/></e>
+<e lm="mamífer">         <i>mamífer</i><par n="senyor__n"/></e>
 <e lm="manament">        <i>manament</i><par n="abric__n"/></e>
 <e lm="manca">           <i>man</i><par n="acústi/ca__n"/></e>
 <e lm="mancança">        <i>mancan</i><par n="adre/ça__n"/></e>
@@ -31575,7 +31575,7 @@
 <e lm="Coyote">          <i>Coyote</i><par n="ABC__np"/></e>
 <e lm="Cremades">        <i>Cremades</i><par n="Abad__np"/></e>
 <e lm="Crespo">          <i>Crespo</i><par n="Abad__np"/></e>
-<e lm="Crist">           <i>Crist</i><par n="ABC__np"/></e>
+<e lm="Crist">           <i>Crist</i><par n="Ferrari__np"/></e>
 <e lm="Cristian">        <i>Cristian</i><par n="Abad__np"/></e>
 <e lm="Cristina">        <i>Cristina</i><par n="Abad__np"/></e>
 <e lm="Cristóbal">       <i>Cristóbal</i><par n="Abad__np"/></e>
@@ -31708,7 +31708,7 @@
 <e lm="Font">            <i>Font</i><par n="Afganistan__np"/></e>
 <e lm="Fonteta">         <i>Fonteta</i><par n="Afganistan__np"/></e>
 <e lm="Forcada">         <i>Forcada</i><par n="Afganistan__np"/></e>
-<e lm="Ford">            <i>Ford</i><par n="ABC__np"/></e>
+<e lm="Ford">            <i>Ford</i><par n="Ferrari__np"/></e>
 <e lm="Forn">            <i>Forn</i><par n="ABC__np"/></e>
 <e lm="Fort">            <i>Fort</i><par n="Afganistan__np"/></e>
 <e lm="Fortea">          <i>Fortea</i><par n="Afganistan__np"/></e>
@@ -47385,6 +47385,8 @@
 <e lm="nebulosa" a="prompsit2uoc"><i>nebulos</i><par n="abell/a__n"/></e>
 <e lm="beta" a="prompsit2uoc"><i>bet</i><par n="abell/a__n"/></e>
 <e lm="alfa" a="prompsit2uoc"><i>alf</i><par n="abell/a__n"/></e>
+<e lm="alfa" a="prompsit2uoc"><i>delt</i><par n="abell/a__n"/></e>
+<e lm="alfa" a="prompsit2uoc"><i>gamm</i><par n="abell/a__n"/></e>
 <e lm="pedalada" a="prompsit2uoc"><i>pedalad</i><par n="abell/a__n"/></e>
 <e lm="sonata" a="prompsit2uoc"><i>sonat</i><par n="abell/a__n"/></e>
 <e lm="curvatura" a="prompsit2uoc"><i>curvatur</i><par n="abell/a__n"/></e>
@@ -55998,7 +56000,7 @@
 <e lm="escorç">          <i>escorç</i><par n="as__n"/></e>
 <e lm="escotoma">        <i>escotoma</i><par n="abric__n"/></e>
 <e lm="escrivania">      <i>escrivani</i><par n="abell/a__n"/></e>
-<e lm="escudella">       <i>escudell</i><par n="accionist/a__n"/></e>
+<e lm="escudella">       <i>escudell</i><par n="abell/a__n"/></e>
 <e lm="escullera">       <i>esculler</i><par n="abell/a__n"/></e>
 <e lm="escòria">         <i>escòri</i><par n="abell/a__n"/></e>
 <e lm="escórpora">       <i>escórpor</i><par n="abell/a__n"/></e>
@@ -63495,7 +63497,8 @@
 <e lm="guaitar">         <i>guait</i><par n="abander/ar__vblex"/></e>
 <e lm="companyonia"><i>companyoni</i><par n="abell/a__n"/></e>
 <e lm="escalabilitat">      <i>escalabilitat</i><par n="accessibilitat__n"/></e>
-<e lm="graffiti"><i>grafitti</i><par n="abric__n"/></e>
+<e lm="grafiti"><i>grafiti</i><par n="abric__n"/></e>
+<e r="LR" lm="graffiti"><i>graffiti</i><par n="abric__n"/></e>
 
 <!-- fra~cat-->
 
