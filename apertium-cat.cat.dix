@@ -31583,6 +31583,7 @@
 <e lm="Cruise">          <i>Cruise</i><par n="Abad__np"/></e>
 <e lm="Cuba">            <i>Cuba</i><par n="Afganistan__np"/></e>
 <e lm="Cuevas">          <i>Cuevas</i><par n="Afganistan__np"/></e>
+<e r="RL" lm="Cupido">   <i>Cupido</i><par n="Abad__np"/></e>
 <e lm="Cupido">          <i>Cupido</i><par n="ABC__np"/></e>
 <e lm="Càceres">         <i>Càceres</i><par n="Afganistan__np"/></e>
 <e lm="Càrcer">          <i>Càrcer</i><par n="Afganistan__np"/></e>
@@ -31708,6 +31709,7 @@
 <e lm="Font">            <i>Font</i><par n="Afganistan__np"/></e>
 <e lm="Fonteta">         <i>Fonteta</i><par n="Afganistan__np"/></e>
 <e lm="Forcada">         <i>Forcada</i><par n="Afganistan__np"/></e>
+<e r="RL" lm="Forcada">  <i>Forcada</i><par n="Abad__np"/></e>
 <e lm="Ford">            <i>Ford</i><par n="Ferrari__np"/></e>
 <e lm="Forn">            <i>Forn</i><par n="ABC__np"/></e>
 <e lm="Fort">            <i>Fort</i><par n="Afganistan__np"/></e>
@@ -31742,6 +31744,7 @@
 <e lm="Garcilaso">       <i>Garcilaso</i><par n="Abad__np"/></e>
 <e lm="Garcés">          <i>Garcés</i><par n="Abad__np"/></e>
 <e lm="García">          <i>García</i><par n="Abad__np"/></e>
+<e r="RL" lm="Garcia">   <i>Garcia</i><par n="Abad__np"/></e>
 <e lm="Garfield">        <i>Garfield</i><par n="Abad__np"/></e>
 <e lm="Gargallo">        <i>Gargallo</i><par n="Afganistan__np"/></e>
 <e lm="Garrido">         <i>Garrido</i><par n="ABC__np"/></e>
@@ -31750,6 +31753,7 @@
 <e lm="Garrotxa">        <i>Garrotxa</i><par n="Afganistan__np"/></e>
 <e lm="Garzón">          <i>Garzón</i><par n="Abad__np"/></e>
 <e lm="Gascón">          <i>Gascón</i><par n="ABC__np"/></e>
+<e r="RL" lm="Gascón">          <i>Gascón</i><par n="Abad__np"/></e>
 <e lm="Gaspar">          <i>Gaspar</i><par n="Abad__np"/></e>
 <e lm="Gasset">          <i>Gasset</i><par n="Abad__np"/></e>
 <e lm="Gates">           <i>Gates</i><par n="Abad__np"/></e>
@@ -32117,6 +32121,7 @@
 <e lm="Montenegro">      <i>Montenegro</i><par n="Afganistan__np"/></e>
 <e lm="Montero">         <i>Montero</i><par n="ABC__np"/></e>
 <e lm="Montesinos">      <i>Montesinos</i><par n="Afganistan__np"/></e>
+<e r="RL" lm="Montesinos"><i>Montesinos</i><par n="Abad__np"/></e>
 <e lm="Montevideo">      <i>Montevideo</i><par n="Afganistan__np"/></e>
 <e lm="Montiel">         <i>Montiel</i><par n="ABC__np"/></e>
 <e lm="Montilla">        <i>Montilla</i><par n="Abad__np"/></e>
@@ -32257,6 +32262,7 @@
 <e lm="Picasso">         <i>Picasso</i><par n="Abad__np"/></e>
 <e lm="Picazo">          <i>Picazo</i><par n="Abad__np"/></e>
 <e lm="Piera">           <i>Piera</i><par n="Afganistan__np"/></e>
+<e r="RL" lm="Piera">	 <i>Piera</i><par n="Abad__np"/></e>
 <e lm="Pilar">           <i>Pilar</i><par n="Abad__np"/></e>
 <e lm="Pili">            <i>Pili</i><par n="Abad__np"/></e>
 <e lm="Pineda">          <i>Pineda</i><par n="Afganistan__np"/></e>
@@ -36507,6 +36513,7 @@
 <e lm="antimíssil" a="prompsit2adn"><i>antimíssil</i><par n="abdominal__adj"/></e>
 <e lm="antipatia" a="prompsit2adn"><i>antipati</i><par n="abell/a__n"/></e>
 <e lm="antípoda" a="prompsit2adn"><i>antípod</i><par n="accionist/a__n"/></e>
+<e lm="antípoda"><i>antípod</i><par n="agrícol/a__adj"/></e>
 <e lm="antítesi" a="prompsit2adn"><i>antítesi</i><par n="accessibilitat__n"/></e>
 <e lm="oasi" a="prompsit2adn"><i>oasi</i><par n="abric__n"/></e>
 <e lm="metàstasi" a="prompsit2adn"><i>metàstasi</i><par n="accessibilitat__n"/></e>
@@ -40682,7 +40689,9 @@
 <e lm="Al Qaeda" a="prompsit2adn"><i>Al<b/>Qaeda</i><par n="ABC__np"/></e>
 <e lm="Mediapro" a="prompsit2adn"><i>Mediapro</i><par n="ABC__np"/></e>
 <e lm="Tour" a="prompsit2adn"><i>Tour</i><par n="ABC__np"/></e>
+<e lm="Tour" r="RL"><i>Tour</i><par n="Abad__np"/></e>
 <e lm="McLaren" a="prompsit2adn"><i>McLaren</i><par n="ABC__np"/></e>
+<e r="RL" lm="McLaren"><i>McLaren</i><par n="Abad__np"/></e>
 <e lm="Reuters" a="prompsit2adn"><i>Reuters</i><par n="ABC__np"/></e>
 <e lm="Sogecable" a="prompsit2adn"><i>Sogecable</i><par n="ABC__np"/></e>
 <e lm="Aprilia" a="prompsit2adn"><i>Aprilia</i><par n="ABC__np"/></e>
@@ -40730,6 +40739,7 @@
 <e lm="Life" a="prompsit2adn"><i>Life</i><par n="ABC__np"/></e>
 <e lm="Euskaltel" a="prompsit2adn"><i>Euskaltel</i><par n="ABC__np"/></e>
 <e lm="Erkoreka" a="prompsit2adn"><i>Erkoreka</i><par n="ABC__np"/></e>
+<e lm="Erkoreka" r="RL"><i>Erkoreka</i><par n="Abad__np"/></e>
 <e lm="Champions" a="prompsit2adn"><i>Champions</i><par n="ABC__np"/></e>
 <e lm="Skype" a="prompsit2adn"><i>Skype</i><par n="ABC__np"/></e>
 <e lm="Ducati" a="prompsit2adn"><i>Ducati</i><par n="ABC__np"/></e>
@@ -40838,6 +40848,7 @@
 <e lm="l'Havana" a="prompsit2adn"><i>l'Havana</i><par n="Afganistan__np"/></e>
 <e lm="Congonhas" a="prompsit2adn"><i>Congonhas</i><par n="Afganistan__np"/></e>
 <e lm="Egibar" a="prompsit2adn"><i>Egibar</i><par n="Afganistan__np"/></e>
+<e lm="Egibar" r="RL"><i>Egibar</i><par n="Abad__np"/></e>
 <e lm="Nova Zelanda" a="prompsit2adn"><i>Nova<b/>Zelanda</i><par n="Afganistan__np"/></e>
 <e lm="Kyoto" a="prompsit2adn"><i>Kyoto</i><par n="Afganistan__np"/></e>
 <e lm="Hong Kong" a="prompsit2adn"><i>Hong<b/>Kong</i><par n="Afganistan__np"/></e>
@@ -63153,14 +63164,15 @@
 <e lm="Medes" a="prompsit"><i>Medes</i><par n="ABC__np"/></e>
 <e lm="Primal" a="prompsit"><i>Primal</i><par n="ABC__np"/></e>
 <e lm="Marimón" a="prompsit"><i>Marimón</i><par n="ABC__np"/></e>
-<e lm="Euroliga" a="prompsit"><i>Euroliga</i><par n="ABC__np"/></e>
+<e lm="Eurolliga" a="prompsit"><i>Eurolliga</i><par n="ABC__np"/></e>
+<e lm="Eurolliga" r="RL"><i>Eurolliga</i><par n="Abad__np"/></e>
 <e lm="Eurocup" a="prompsit"><i>Eurocup</i><par n="ABC__np"/></e>
 <e lm="Irestal" a="prompsit"><i>Irestal</i><par n="ABC__np"/></e>
 <e lm="Alcatel" a="prompsit"><i>Alcatel</i><par n="ABC__np"/></e>
 <e lm="Abengoa" a="prompsit"><i>Abengoa</i><par n="ABC__np"/></e>
 <e lm="Arag" a="prompsit"><i>Arag</i><par n="ABC__np"/></e>
 
-  
+ 
 <e lm="Medeiros" a="prompsit"><i>Medeiros</i><par n="Abad__np"/></e>
 <e lm="Saramago" a="prompsit"><i>Saramago</i><par n="Abad__np"/></e>
 <e lm="Gonçalves" a="prompsit"><i>Gonçalves</i><par n="Abad__np"/></e>
