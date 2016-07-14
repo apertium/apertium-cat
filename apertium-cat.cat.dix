@@ -50465,6 +50465,8 @@
 <e lm="cap a fora">      <i>cap<b/>a<b/>fora</i><par n="ahir__adv"/></e>
 <e lm="cap amunt">       <i>cap<b/>amunt</i><par n="ahir__adv"/></e>
 <e lm="cap avall">       <i>cap<b/>avall</i><par n="ahir__adv"/></e>
+<e lm="cap ací" v="val"> <i>cap<b/>ací</i><par n="ahir__adv"/></e>
+<e lm="cap aquí" v="cat"><i>cap<b/>aquí</i><par n="ahir__adv"/></e>
 <e lm="cap enllà">       <i>cap<b/>enllà</i><par n="ahir__adv"/></e>
 <e r="LR" lm="cap per amunt"><i>cap<b/>per<b/>amunt</i><par n="ahir__adv"/></e>
 <e r="LR" lm="cap per avall"><i>cap<b/>per<b/>avall</i><par n="ahir__adv"/></e>
