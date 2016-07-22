@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Dictionary:
 	Sections: 4
@@ -30580,7 +30580,8 @@
 <e lm="suïcidi">         <i>suïcidi</i><par n="abric__n"/></e>
 <e lm="sàtira">          <i>sàtir</i><par n="abell/a__n"/></e>
 <e lm="sègol">           <i>sègol</i><par n="abric__n"/></e>
-<e lm="sèquia">          <i>sèqui</i><par n="abell/a__n"/></e>
+<e r="LR" lm="sèquia">   <i>sèqui</i><par n="abell/a__n"/></e>
+<e lm="séquia">          <i>séqui</i><par n="abell/a__n"/></e>
 <e lm="sèquit">          <i>sèquit</i><par n="abric__n"/></e>
 <e lm="sèrie">           <i>sèrie</i><par n="accessibilitat__n"/></e>
 <e lm="símbol">          <i>símbol</i><par n="abric__n"/></e>
@@ -31190,6 +31191,7 @@
 <e r="LR" lm="el Temps"> <i>el<b/>Temps</i><par n="ABC__np"/></e>
 <e r="RL" lm="el Punt">  <p><l><a/>el<b/>Punt</l><r>el<b/>Punt</r></p><par n="ABC__np"/></e>
 <e r="LR" lm="el Punt">  <i>el<b/>Punt</i><par n="ABC__np"/></e>
+<e r="RL" lm="les Corts"> <p><l><a/>les<b/>Corts</l><r>les<b/>Corts</r></p><par n="ABC__np"/></e>
 <e lm="Almoines">        <i>Almoines</i><par n="Afganistan__np"/></e>
 <e lm="Pedrera">         <i>Pedrera</i><par n="Afganistan__np"/></e>
 <e lm="Varennes">        <i>Varennes</i><par n="Afganistan__np"/></e>
@@ -33547,6 +33549,7 @@
 <e lm="cansar">          <i>cans</i><par n="abander/ar__vblex"/></e>
 <e lm="cantar">          <i>cant</i><par n="abander/ar__vblex"/></e>
 <e lm="canviar">         <i>canvi</i><par n="acarici/ar__vblex"/></e>
+<e lm="canviar">         <i>canvi</i><par n="acarici/ar__vblex"/><p><l><b/>el<b/>nom</l><r><g><b/>el<b/>nom</g></r></p></e>
 <e lm="capacitar">       <i>capacit</i><par n="abander/ar__vblex"/></e>
 <e lm="capar">           <i>cap</i><par n="abander/ar__vblex"/></e>
 <e r="LR" lm="capgirar"> <i>capgir</i><par n="abander/ar__vblex"/></e>
@@ -34278,6 +34281,7 @@
 <e lm="fer">             <i>f</i><par n="f/er__vblex"/></e>
 <e lm="fer front">       <i>f</i><par n="f/er__vblex"/><p><l><b/>front</l><r><g><b/>front</g></r></p></e>
 <e lm="fer fora">        <i>f</i><par n="f/er__vblex"/><p><l><b/>fora</l><r><g><b/>fora</g></r></p></e>
+<e lm="fer una mitjana de"><i>f</i><par n="f/er__vblex"/><p><l><b/>una<b/>mitjana<b/>de</l><r><g><b/>una<b/>mitjana<b/>de</g></r></p></e>
 <e lm="fer escala" a="prompsit2uoc"><i>f</i><par n="f/er__vblex"/><p><l><b/>escala</l><r><g><b/>escala</g></r></p></e>
 <e lm="fer miques">      <i>f</i><par n="f/er__vblex"/><p><l><b/>miques</l><r><g><b/>miques</g></r></p></e>
 <e lm="ferir">           <i>fer</i><par n="abarat/ir__vblex"/></e>
@@ -35064,6 +35068,7 @@
 <e lm="seriar">          <i>seri</i><par n="acarici/ar__vblex"/></e>
 <e lm="serrar">          <i>serr</i><par n="abander/ar__vblex"/></e>
 <e lm="servir">          <i>serv</i><par n="abarat/ir__vblex"/></e>
+<e lm="extradir">        <i>extrad</i><par n="abarat/ir__vblex"/></e>
 <e lm="seure">    <i>s</i><par n="ass/eure__vblex"/></e>
 <e lm="signar">          <i>sign</i><par n="abander/ar__vblex"/></e>
 <e lm="significar">      <i>signifi</i><par n="abo/car__vblex"/></e>
@@ -35233,6 +35238,7 @@
 <e r="LR" lm="vacil·lar"><p><l>vaciŀl</l>    <r>vacil·l</r></p><par n="abander/ar__vblex"/></e>
 <e lm="vacunar">         <i>vacun</i><par n="abander/ar__vblex"/></e>
 <e lm="valer">           <i>val</i><par n="equival/er__vblex"/></e>
+<e lm="valer la pena">   <i>val</i><par n="equival/er__vblex"/><p><l><b/>la<b/>pena</l><r><g><b/>la<b/>pena</g></r></p></e>
 <e lm="vallejar">        <i>valle</i><par n="agreu/jar__vblex"/></e>
 <e lm="valorar">         <i>valor</i><par n="abander/ar__vblex"/></e>
 <e lm="variar">          <i>vari</i><par n="acarici/ar__vblex"/></e>
@@ -43327,7 +43333,7 @@
 <e lm="pontificat" a="prompsit"><i>pontificat</i><par n="abric__n"/></e>
 <e lm="gresca" a="prompsit"><i>gres</i><par n="acústi/ca__n"/></e>
 <e lm="cridòria" a="prompsit"><i>cridòri</i><par n="abell/a__n"/></e>
-<e lm="triumfador" a="prompsit"><i>triumfador</i><par n="senyor__n"/></e>
+<e lm="triomfador" a="prompsit"><i>triomfador</i><par n="senyor__n"/></e>
 <e lm="enormitat" a="prompsit"><i>enormitat</i><par n="accessibilitat__n"/></e>
 <e lm="ornamentació" a="prompsit"><i>ornamentaci</i><par n="acci/ó__n"/></e>
 <e lm="microbiologia" a="prompsit"><i>microbiologi</i><par n="abell/a__n"/></e>
@@ -56140,7 +56146,7 @@
 <e lm="externat">        <i>externat</i><par n="abric__n"/></e>
 <e lm="extranet">        <i>extranet</i><par n="accessibilitat__n"/></e>
 <e lm="extraterritorialitat"><i>extraterritorialitat</i><par n="accessibilitat__n"/></e>
-<e lm="exègesi">         <i>exègesi</i><par n="accessibilitat__n"/></e>
+<e lm="exegesi">         <i>exegesi</i><par n="accessibilitat__n"/></e>
 <e lm="exèquies">        <i>exèquies</i><par n="escombraries__n"/></e>
 <e lm="fac.">            <i>fac.</i><par n="càries__n"/></e>
 <e lm="facs.">           <i>facs.</i><par n="campus__n"/></e>
