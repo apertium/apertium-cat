@@ -4160,10 +4160,10 @@
   <e>       <p><l></l>          <r><s n="np"/><s n="loc"/></r></p></e>
 </pardef>
 
-<pardef n="vint-i-un__num">
-  <e>       <p><l>a</l>         <r><s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+<pardef n="vint-i-un__det">
+  <e>       <p><l>a</l>         <r><s n="det"/><s n="def"/><s n="f"/><s n="sp"/></r></p></e>
 
-  <e>       <p><l></l>          <r><s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="det"/><s n="def"/><s n="m"/><s n="sp"/></r></p></e>
 
 </pardef>
 <pardef n="zero__num">
@@ -4347,6 +4347,10 @@
 
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 
+</pardef>
+<pardef n="cadascun__prn">
+  <e>       <p><l>a</l>         <r><s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="ambdós__prn">
   <e>       <p><l></l>          <r><s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
@@ -32742,7 +32746,8 @@
 <e lm="vint-i-set">      <i>vint-i-set</i><par n="sis__num"/></e>
 <e lm="vint-i-sis">      <i>vint-i-sis</i><par n="sis__num"/></e>
 <e lm="vint-i-tres">     <i>vint-i-tres</i><par n="sis__num"/></e>
-<e lm="vint-i-un">       <i>vint-i-un</i><par n="vint-i-un__num"/></e>
+<e lm="vint-i-un">       <i>vint-i-un</i><par n="vint-i-un__det"/></e>
+<e lm="vint-i-un">       <i>vint-i-un</i><par n="cinquanta-u__num"/></e>
 <e lm="vint-i-vuit">     <i>vint-i-vuit</i><par n="sis__num"/></e>
 <e lm="vuit">            <i>vuit</i><par n="sis__num"/></e>
 <e lm="vuit-cents">      <i>vuit-cent</i><par n="cinc-cent/s__num"/></e>
@@ -32990,7 +32995,7 @@
 <e lm="aquest">          <i>aquest</i><par n="aquest__prn"/></e>
 <e lm="açò" v="val">     <i>açò</i>    <!-- allò__prn' was replaced -->
 <par n="això__prn"/></e>
-<e lm="cadascun">        <i>cadascun</i><par n="algun__prn"/></e>
+<e lm="cadascun">        <i>cadascun</i><par n="cadascun__prn"/></e>
 <e lm="cadascú">         <i>cadascú</i><par n="algú__prn"/></e>
 <e lm="cap">             <i>cap</i><par n="algú__prn"/></e>
 <e r="LR" lm="eixe">     <i>eix</i><par n="eix/e__prn"/></e>
@@ -43605,8 +43610,7 @@
 <e lm="donar la conformitat" a="prompsit"><i>don</i><par n="don/ar__vblex"/><p><l><b/>la<b/>conformitat</l><r><g><b/>la<b/>conformitat</g></r></p></e>
 <e lm="donar la conformitat" a="prompsit"><p><l>dón</l><r>don</r></p><par n="dón/ar__vblex"/><p><l><b/>la<b/>conformitat</l><r><g><b/>la<b/>conformitat</g></r></p></e>
 <e lm="carregar en compte" a="prompsit"><i>carreg</i><par n="afalag/ar__vblex"/><p><l><b/>en<b/>compte</l><r><g><b/>en<b/>compte</g></r></p></e>
-<e lm="fer fallida" a="prompsit" alt="eco"><i>f</i><par n="f/er__vblex"/><p><l><b/>fallida</l><r><g><b/>fallida</g></r></p></e>
-<e lm="fer fallida" a="prompsit" alt="std"><i>f</i><par n="f/er__vblex"/><p><l><b/>fallida</l><r><g><b/>fallida</g></r></p></e>
+<e lm="fer fallida" a="prompsit"><i>f</i><par n="f/er__vblex"/><p><l><b/>fallida</l><r><g><b/>fallida</g></r></p></e>
 <e lm="ser conforme" a="prompsit"><par n="/ser__vbser"/><p><l><b/>conforme</l><r><g><b/>conforme</g></r></p></e>
 <e r="RL" lm="ser aplicable"><par n="/ser__vbser"/><p><l><b/>aplicable</l><r><g><b/>aplicable</g></r></p></e>
 <e lm="ser a punt" a="prompsit"><par n="/ser__vbser"/><p><l><b/>a<b/>punt</l><r><g><b/>a<b/>punt</g></r></p></e>
