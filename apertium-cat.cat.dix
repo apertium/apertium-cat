@@ -39740,7 +39740,6 @@
 <e lm="bicampió" a="prompsit2adn"><i>bicampi</i><par n="amfitri/ó__adj"/></e>
 <e lm="somnífer" a="prompsit2adn"><i>somnífer</i><par n="abric__n"/></e>
 <e lm="prepagament" a="prompsit2adn"><i>prepagament</i><par n="abric__n"/></e>
-<e lm="galerista" a="prompsit2adn"><i>galerist</i><par n="abell/a__n"/></e>
 <e lm="decebedor" a="prompsit2adn"><i>decebedor</i><par n="absolut__adj"/></e>
 <e lm="cronometrar" a="prompsit2adn"><i>cronometr</i><par n="abander/ar__vblex"/></e>
 <e lm="de la Corunya" a="prompsit2adn"><i>de<b/>la<b/>Corunya</i><par n="guardaespatlles__n"/></e>
@@ -39921,7 +39920,7 @@
 <e lm="porto-riqueny" a="prompsit2adn"><i>porto-riqueny</i><par n="senyor__n"/></e>
 <e lm="porto-riqueny" a="prompsit2adn"><i>porto-riqueny</i><par n="absolut__adj"/></e>
 <e lm="porno" a="prompsit2adn"><i>porno</i><par n="multimèdia__adj"/></e>
-<e lm="porno" a="prompsit2adn"><i>porno</i><par n="abric__n"/></e>
+<e lm="porno" a="prompsit2adn"><i>porno</i><par n="atletisme__n"/></e>
 <e lm="particular" a="gema">            <i>particular</i><par n="acompanyant__n"/></e>
 <e lm="plusmarca" a="prompsit2adn"><i>plusmar</i><par n="acústi/ca__n"/></e>
 <e lm="plusmarquista" a="prompsit2adn"><i>plusmarquist</i><par n="accionist/a__n"/></e>
@@ -40758,7 +40757,7 @@
 <e lm="The Sun" a="prompsit2adn"><i>The<b/>Sun</i><par n="ABC__np"/></e>
 <e lm="Masters Series" a="prompsit2adn"><i>Masters<b/>Series</i><par n="ABC__np"/></e>
 <e lm="Disney Channel" a="prompsit2adn"><i>Disney<b/>Channel</i><par n="ABC__np"/></e>
-<e lm="Yihad" a="prompsit2adn"><i>Yihad</i><par n="ABC__np"/></e>
+<e lm="yihad" a="prompsit2adn"><i>yihad</i><par n="ABC__np"/></e>
 <e lm="Euskal" a="prompsit2adn"><i>Euskal</i><par n="ABC__np"/></e>
 <e lm="Daily News" a="prompsit2adn"><i>Daily<b/>News</i><par n="ABC__np"/></e>
 <e lm="Altadis" a="prompsit2adn"><i>Altadis</i><par n="ABC__np"/></e>
