@@ -49507,7 +49507,6 @@
 <e lm="principiant">     <i>principiant</i><par n="abdominal__adj"/></e>
 <e lm="privatitzat">     <i>privatitza</i><par n="afortuna/t__adj"/></e>
 <e lm="privatiu">        <i>privati</i><par n="abusi/u__adj"/></e>
-<e lm="priviliegiat">    <i>priviliegia</i><par n="afortuna/t__adj"/></e>
 <e lm="procariòtic">     <i>procariòti</i><par n="acadèmi/c__adj"/></e>
 <e lm="processador">     <i>processador</i><par n="absolut__adj"/></e>
 <e lm="proclític">       <i>proclíti</i><par n="acadèmi/c__adj"/></e>
@@ -52654,7 +52653,7 @@
 <e lm="prismàticament">  <i>prismàticament</i><par n="ahir__adv"/></e>
 <e lm="privatitzadament"><i>privatitzadament</i><par n="ahir__adv"/></e>
 <e lm="privativament">   <i>privativament</i><par n="ahir__adv"/></e>
-<e lm="priviliegiadament"><i>priviliegiadament</i><par n="ahir__adv"/></e>
+<e lm="privilegiadament"><i>privilegiadament</i><par n="ahir__adv"/></e>
 <e lm="pro diviso">      <i>pro<b/>diviso</i><par n="ahir__adv"/></e>
 <e lm="pro domo sua">    <i>pro<b/>domo<b/>sua</i><par n="ahir__adv"/></e>
 <e lm="pro forma">       <i>pro<b/>forma</i><par n="ahir__adv"/></e>
@@ -55691,7 +55690,7 @@
 <e lm="desgravament">    <i>desgravament</i><par n="abric__n"/></e>
 <e lm="desgreixatge">    <i>desgreixatge</i><par n="abric__n"/></e>
 <e lm="deshabituació">   <i>deshabituaci</i><par n="acci/ó__n"/></e>
-<e lm="deshinibició">    <i>deshinibici</i><par n="acci/ó__n"/></e>
+<e lm="desinhibició">    <i>desinhibici</i><par n="acci/ó__n"/></e>
 <e lm="desincronització"><i>desincronitzaci</i><par n="acci/ó__n"/></e>
 <e lm="desinfectant">    <i>desinfectant</i><par n="abric__n"/></e>
 <e lm="deslligament">    <i>deslligament</i><par n="abric__n"/></e>
@@ -56842,7 +56841,7 @@
 <e lm="mitges">          <i>mitges</i><par n="escombraries__n"/></e>
 <e lm="mitjacanya">      <i>mitjacany</i><par n="abell/a__n"/></e>
 <e lm="mitjà de comunicació"><i>mitj</i><par n="bacall/à__n"/><p><l><b/>de<b/>comunicació</l><r><g><b/>de<b/>comunicació</g></r></p></e>
-<e lm="els mitjans de comunicació"><i>els<b/>mitjans</i><par n="afores__n"/><p><l><b/>de<b/>comunicació</l><r><g><b/>de<b/>comunicació</g></r></p></e>
+<e lm="mitjans de comunicació"><i>mitjans</i><par n="afores__n"/><p><l><b/>de<b/>comunicació</l><r><g><b/>de<b/>comunicació</g></r></p></e>
 <e lm="mitografia">      <i>mitografi</i><par n="abell/a__n"/></e>
 <e lm="mitosi">          <i>mitosi</i><par n="accessibilitat__n"/></e>
 <e lm="mnemotècnia">     <i>mnemotècni</i><par n="abell/a__n"/></e>
