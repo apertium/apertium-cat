@@ -25373,7 +25373,7 @@
 <e r="LR" lm="tot i açò" v="val"><i>tot<b/>i<b/>açò</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="tot i que">       <i>tot<b/>i<b/>que</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="tret que" v="cat"><i>tret<b/>que</i><par n="a_fe_que__cnjadv"/></e>
-<e lm="és a dir">        <i>és<b/>a<b/>dir</i><par n="a_fe_que__cnjadv"/></e>
+<e lm="és a dir">        <i>és<b/>a<b/>dir</i><par n="i__cnjcoo"/></e>
 <e lm="és per això que" v="cat"><i>és<b/>per<b/>això<b/>que</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="és per açò que" v="val"><i>és<b/>per<b/>açò<b/>que</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="i">               <i>i</i><par n="i__cnjcoo"/></e>
@@ -25523,7 +25523,6 @@
 <e lm="passamuntanyes">  <i>passamuntanyes</i><par n="campus__n"/></e>
 <e lm="DGT">             <i>DGT</i><par n="BBC__n"/></e>
 <e lm="DNI">             <i>DNI</i><par n="BBVA__n"/></e>
-<e lm="DVD">             <i>DVD</i><par n="BBVA__n"/></e>
 <e lm="EMT">             <i>EMT</i><par n="BBC__n"/></e>
 <e lm="ETA">             <i>ETA</i><par n="BBC__n"/></e>
 <e lm="Ebre">            <i>Ebre</i><par n="atletisme__n"/></e>
@@ -31767,7 +31766,6 @@
 <e lm="Gavà">            <i>Gavà</i><par n="Afganistan__np"/></e>
 <e lm="Gema">            <i>Gema</i><par n="Abad__np"/></e>
 <e lm="Gemma">           <i>Gemma</i><par n="Abad__np"/></e>
-<e lm="Generalitat">     <i>Generalitat</i><par n="Afganistan__np"/></e>
 <e lm="George">          <i>George</i><par n="Abad__np"/></e>
 <e lm="Gerard">          <i>Gerard</i><par n="Abad__np"/></e>
 <e lm="Gerardo">         <i>Gerardo</i><par n="Abad__np"/></e>
@@ -48406,7 +48404,7 @@
 <e lm="http" a="prompsit2cdl"><i>http</i><par n="BBVA__n"/></e>
 <e lm="https" a="prompsit2cdl"><i>https</i><par n="BBVA__n"/></e>
 <e lm="mp3" a="prompsit2cdl"><i>mp3</i><par n="BBVA__n"/></e>
-<e lm="dvd" a="prompsit2cdl"><i>mp3</i><par n="BBVA__n"/></e>
+<e lm="dvd" a="prompsit2cdl"><i>dvd</i><par n="BBVA__n"/></e>
 <e lm="BBDD" a="prompsit2cdl"><i>BBDD</i><par n="BBC__n"/></e>
 <e lm="gen." a="prompsit2cdl"><i>gen.</i><par n="atletisme__n"/></e>
 <e lm="feb." a="prompsit2cdl"><i>feb.</i><par n="atletisme__n"/></e>
@@ -63474,7 +63472,7 @@
   <e lm="prima d'assegurança" a="prompsit"><i>prim</i><par n="abell/a__n"/><p><l><b/>d'assegurança</l><r><g><b/>d'assegurança</g></r></p></e>
   <e lm="quartet de corda" a="prompsit"><i>quartet</i><par n="abric__n"/><p><l><b/>de<b/>corda</l><r><g><b/>de<b/>corda</g></r></p></e>
   <e lm="sac embrionari" a="prompsit"><i>sac</i><par n="atletisme__n"/><p><l><b/>embrionari</l><r><g><b/>embrionari</g></r></p></e>
-  <e lm="sac embrionari" a="prompsit"><p><l>sacs</l><r>sac</r></p><par n="afores__n"/><p><l><b/>embrionaris</l><r><g><b/>embrionaris</g></r></p></e>
+  <e lm="sac embrionari" a="prompsit"><p><l>sacs</l><r>sac</r></p><par n="afores__n"/><p><l><b/>embrionaris</l><r><g><b/>embrionari</g></r></p></e>
   <e lm="e"><i>e</i><par n="q__n"/></e>
 
 
@@ -63571,7 +63569,6 @@
     <e lm="participant" a="ariel">          <i>participant</i><par n="abdominal__adj"/></e>
     <e lm="perfecte">                       <i>perfect</i><par n="abstract/e__adj"/></e>
     <e lm="perfumat">                       <p><l>perfuma</l><r>perfuma</r></p><par n="afortuna/t__adj"/></e>
-    <e lm="pitjor" a="u21941">              <i>pitjor</i><par n="multimèdia__adj"/></e>
     <e lm="presumpte">                      <i>presumpt</i><par n="abstract/e__adj" /></e>
     <e lm="puntera">                        <p><l>punter</l><r>punter</r></p><par n="agrícol/a__adj"/></e>
     <e lm="rebaixat">                       <p><l>rebaixa</l><r>rebaixa</r></p><par n="afortuna/t__adj"/></e>
@@ -63923,7 +63920,6 @@
     <e lm="borda">                          <p><l>bord</l><r>bord</r></p><par n="abell/a__n"/></e>
  <e lm="cec" a="joan"><i>ce</i><par n="ami/c__n"/></e>
     <e lm="clar">                           <i>clar</i><par n="abric__n"/></e>
-    <e lm="comerciant">                     <i>comerciant</i><par n="senyor__n"/></e>
     <e lm="considerant">                    <i>considerant</i><par n="abric__n"/></e>
     <e lm="considerat">                     <i>considera</i><par n="advoca/t__n"/></e>
     <e lm="cosmopolita">                    <i>cosmopolit</i><par n="accionist/a__n"/></e>
