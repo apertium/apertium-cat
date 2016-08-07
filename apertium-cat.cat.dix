@@ -56245,7 +56245,7 @@
 <e lm="florida">         <i>florid</i><par n="abell/a__n"/></e>
 <e lm="floristeria">     <i>floristeri</i><par n="abell/a__n"/></e>
 <e lm="florí">           <i>flor</i><par n="boc/í__n"/></e>
-<e lm="fluid">           <i>fluid</i><par n="senyor__n"/></e>
+<e lm="fluid">           <i>fluid</i><par n="abric__n"/></e>
 <e lm="fluxograma">      <i>fluxogram</i><par n="carism/a__n"/></e>
 <e lm="fluxòmetre">      <i>fluxòmetre</i><par n="abric__n"/></e>
 <e lm="focalització">    <i>focalitzaci</i><par n="acci/ó__n"/></e>
@@ -63547,7 +63547,6 @@
     <e lm="equilibrat">                     <p><l>equilibra</l><r>equilibra</r></p><par n="afortuna/t__adj"/></e>
     <e lm="estès">                          <p><l>est</l><r>est</r></p><par n="afgan/ès__adj"/></e>
     <e lm="estricte">                       <i>estrict</i><par n="abstract/e__adj"/></e>
-    <e lm="exprés">                         <i>exprés</i><par n="multimèdia__adj"/></e>
     <e lm="extremista" a="gema">            <i>extremist</i><par n="agrícol/a__adj"/></e>
     <e lm="feliç">                          <i>feli</i><par n="preco/ç__adj"/></e>
     <e lm="filogenètic">                    <i>filogenèti</i><par n="acadèmi/c__adj"/></e>
