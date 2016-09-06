@@ -1719,6 +1719,24 @@
   <e>       <p><l>e</l>         <r>e<s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
+<pardef n="po/c__adj">
+  <e>       <p><l>ques</l>      <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>ca</l>        <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
+
+  <e>       <p><l>cs</l>        <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>c</l>         <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+</pardef>
+<pardef n="poquet__adj">
+  <e>       <p><l>es</l>      <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>a</l>        <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
+
+  <e>       <p><l>s</l>        <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l></l>         <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+</pardef>
 <pardef n="t/ebi__adj">
   <e>       <p><l>èbies</l>     <r>ebi<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
 
