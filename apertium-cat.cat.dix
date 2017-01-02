@@ -2346,9 +2346,9 @@
 
   <e>       <p><l>ens</l>       <r>è<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>è</l>         <r>è<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>è</l>         <r>è<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>é</l>         <r>è<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>é</l>         <r>è<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 
@@ -2371,9 +2371,9 @@
 
   <e>       <p><l>essos</l>     <r>ès<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>ès</l>        <r>ès<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>ès</l>        <r>ès<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>és</l>        <r>ès<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>és</l>        <r>ès<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="alacant/í__adj">
@@ -2583,7 +2583,6 @@
 
 </pardef>
 <pardef n="on__adv">
-  <!--<e>       <p><l></l>          <r><s n="adv"/></r></p></e>-->
 
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 
@@ -3809,7 +3808,9 @@
 <pardef n="acetil/è__n">
   <e>       <p><l>ens</l>       <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+
+  <e v="val"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="xil/è__n">
@@ -3819,35 +3820,35 @@
 
   <e>       <p><l>ens</l>       <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="al/è__n">
   <e>       <p><l>ens</l>       <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="caf/è__n">
-  <e>       <p><l>ès</l>        <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+  <e v="cat"><p><l>ès</l>        <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e r="LR"><p><l>és</l>        <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+  <e v="val"><p><l>és</l>        <r>è<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>è</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-
+  <e v="val"><p><l>é</l>         <r>è<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+ 
 </pardef>
 <pardef n="moss/èn__n">
   <e>       <p><l>ens</l>       <r>èn<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>èn</l>        <r>èn<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>èn</l>        <r>èn<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>én</l>        <r>èn<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>én</l>        <r>èn<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="angl/ès__n">
@@ -3857,29 +3858,24 @@
 
   <e>       <p><l>esos</l>      <r>ès<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>és</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>és</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="impr/ès__n">
   <e>       <p><l>esos</l>      <r>ès<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>és</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <!--  <e r="LR"> MG això estava a internostrum, s'hauria de posar com a 'val'?
-      <p>
-        <l>és</l> 
-        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r> 
-      </p>
-    </e> -->
 </pardef>
 <pardef n="desinter/ès__n">
   <e>       <p><l>essos</l>     <r>ès<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="cat">       <p><l>ès</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
-  <e r="LR"><p><l>és</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>és</l>        <r>ès<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="am/én__n">
@@ -7680,14 +7676,6 @@
 
   <e v="cat"><p><l>caiguin</l>  <r>caure<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/><j/></r></p><par n="S__anant"/></e>
 
-  <!--  <e r="LR">
-      <p>
-        <l>caen</l> 
-        <r>caure<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/><j/></r> 
-      </p>
-        <par n="S__anant"/> 
-    </e> -->
-
   <e v="val"><p><l>caiguen</l>  <r>caure<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p></e>
   <e v="val"><p><l>caiguen</l>  <r>caure<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/><j/></r></p><par n="S__anant"/></e>
 
@@ -10132,23 +10120,9 @@
 
   <e v="cat"><p><l>o</l>        <r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
 
-   <!-- <e r="LR"> MG existeix jo concorr?????
-      <p>
-        <l></l> 
-        <r>er<s n="vblex"/><s n="pri"/><s n="p1"/><s n="sg"/></r> 
-      </p>
-    </e> -->
-
   <e>       <p><l>eu</l>        <r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>es</l>        <r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
-
-  <!--  <e r="LR"> MG existeix concorrs???
-      <p>
-        <l>s</l> 
-        <r>er<s n="vblex"/><s n="pri"/><s n="p2"/><s n="sg"/></r> 
-      </p>
-    </e> -->
 
   <e>       <p><l>en</l>        <r>er<s n="vblex"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
 
@@ -23862,8 +23836,7 @@
 <e lm="legislatiu">      <i>legislati</i><par n="abusi/u__adj"/></e>
 <e lm="legítim">         <i>legítim</i><par n="absolut__adj"/></e>
 <e lm="lent">            <i>lent</i><par n="alt__adj"/></e>
-<e lm="lesbiana">        <i>lesbian</i>    <!-- lesbian/a__adj' was replaced -->
-<par n="clariss/a__adj"/></e>
+<e lm="lesbiana">        <i>lesbian</i><par n="clariss/a__adj"/></e>
 <e lm="letal">           <i>letal</i><par n="abdominal__adj"/></e>
 <e lm="libanès">         <i>liban</i><par n="afgan/ès__adj"/></e>
 <e lm="liberal">         <i>liberal</i><par n="abdominal__adj"/></e>
@@ -25646,8 +25619,6 @@
 <e lm="activista">       <i>activist</i><par n="accionist/a__n"/></e>
 <e lm="activitat">       <i>activitat</i><par n="accessibilitat__n"/></e>
 <e lm="actor">           <i>act</i><par n="emperad/or__n"/></e>
-<!--<e lm="actor"><i>actor</i><par n="abric__n"/></e> -->
-<!--<e lm="actriu"><i>actriu</i><par n="accessibilitat__n"/></e> -->
 <e lm="actuació">        <i>actuaci</i><par n="acci/ó__n"/></e>
 <e lm="actualitat">      <i>actualitat</i><par n="accessibilitat__n"/></e>
 <e lm="actualització">   <i>actualitzaci</i><par n="acci/ó__n"/></e>
@@ -27130,9 +27101,7 @@
 <e lm="dedicatòria">     <i>dedicatòri</i><par n="abell/a__n"/></e>
 <e lm="deducció">        <i>deducci</i><par n="acci/ó__n"/></e>
 <e lm="defecte">         <i>defecte</i><par n="abric__n"/></e>
-<!--<e lm="defensa"><i>defens</i><par n="accionist/a__n"/></e> -->
-<e lm="defensa">         <i>defens</i><par n="abell/a__n"/></e>
-<e lm="defensa">         <i>defens</i><par n="carism/a__n"/></e>
+<e lm="defensa">         <i>defens</i><par n="accionist/a__n"/></e>
 <e lm="defensor">        <i>defensor</i><par n="senyor__n"/></e>
 <e lm="deferència">      <i>deferènci</i><par n="abell/a__n"/></e>
 <e lm="deficient">       <i>deficient</i><par n="acompanyant__n"/></e>
@@ -27936,8 +27905,7 @@
 <e lm="femella">         <i>femell</i><par n="abell/a__n"/></e>
 <e lm="feminista">       <i>feminist</i><par n="accionist/a__n"/></e>
 <e lm="femta">           <i>femt</i><par n="abell/a__n"/></e>
-<e lm="fenomen">         <i>fen</i>    <!-- fen/omen__n' was replaced -->
-<par n="abd/omen__n"/></e>
+<e lm="fenomen">         <i>fen</i><par n="abd/omen__n"/></e>
 <e lm="ferida">          <i>ferid</i><par n="abell/a__n"/></e>
 <e lm="ferit">           <i>feri</i><par n="advoca/t__n"/></e>
 <e lm="fermall">         <i>fermall</i><par n="abric__n"/></e>
@@ -29110,10 +29078,6 @@
 <e lm="mosso">           <i>moss</i><par n="gitan/o__n"/></e>
 <e lm="Mosso">           <i>Mosso</i><par n="ABC__np"/></e>
 <e lm="Mossos" c="Quan el tagger estigui reentrenat hauria d'escollir aquest abans que el nom comú"><i>Mossos</i><par n="ABC__np"/></e>
-<!--
-<e lm="mosso d'esquadra"><i>moss</i><par n="gitan/o__n"/><p><l><b/>d'esquadra</l><r><g><b/>d'esquadra</g></r></p></e>
--->   
-
 <e lm="Mosso d'Esquadra"><i>Mosso<b/>d'Esquadra</i><par n="atletisme__n"/></e>
 <e lm="Mossos d'Esquadra"><i>Mossos<b/>d'Esquadra</i><par n="afores__n"/></e>
 
@@ -31319,7 +31283,7 @@
 <e lm="Angulo">          <i>Angulo</i><par n="Abad__np"/></e>
 <e lm="Angélica">        <i>Angélica</i><par n="Abad__np"/></e>
 <e lm="Anita">           <i>Anita</i><par n="Abad__np"/></e>
-<!-- <e lm="Anna"><i>Anna</i><par n="Afganistan__np"/></e> -->
+<e lm="Anna" r="RL">     <i>Anna</i><par n="Afganistan__np"/></e>
 <e lm="Anna" a="mireiafarrus"><i>Anna</i><par n="Abad__np"/></e>
 <e lm="Anoia">           <i>Anoia</i><par n="Afganistan__np"/></e>
 <e lm="Antolín">         <i>Antolín</i><par n="Abad__np"/></e>
@@ -32201,7 +32165,7 @@
 <e lm="Noriega">         <i>Noriega</i><par n="Abad__np"/></e>
 <e lm="Noruega">         <i>Noruega</i><par n="Afganistan__np"/></e>
 <e lm="Nuria">           <i>Nuria</i><par n="Abad__np"/></e>
-<e lm="Núria">           <i>Núria</i><par n="Pau__np"/></e> <!-- nom persona + vall de núria -->
+<e lm="Núria" c="nom persona + vall de núria"><i>Núria</i><par n="Pau__np"/></e>
 <e lm="Nàpols">          <i>Nàpols</i><par n="Afganistan__np"/></e>
 <e lm="Núñez">           <i>Núñez</i><par n="Abad__np"/></e>
 <e lm="ONG">             <i>ONG</i><par n="ABC__np"/></e>
@@ -32907,8 +32871,7 @@
 <e r="LR" lm="posem per cas"><i>posem<b/>per<b/>cas</i><par n="ahir__adv"/></e>
 <e lm="el no-res">       <p><l>el<b/>no-res</l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/><j/>no-res<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="no-res">          <p><l>no-res</l>    <r>no-res<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="no res">          <i>no<b/>res</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="no res">          <i>no<b/>res</i><par n="això__prn"/></e>
 <e lm="en to de pau">    <p><l>en<b/>to<b/>de<b/>pau</l><r>en<b/>to<b/>de<b/>pau</r></p><par n="ahir__adv"/></e>
 <e lm="en to de guerra"> <p><l>en<b/>to<b/>de<b/>guerra</l><r>en<b/>to<b/>de<b/>guerra</r></p><par n="ahir__adv"/></e>
 <e lm="en vista de">     <i>en<b/>vista<b/></i><par n="contde__pr"/></e>
@@ -32986,21 +32949,11 @@
 <e lm="l'una i l'altra"> <p><l>l'una<b/>i<b/>l'altra</l><r>l'un<b/>i<b/>l'altre<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
 <e lm="les unes i les altres"><p><l>les<b/>unes<b/>i<b/>les<b/>altres</l><r>l'un<b/>i<b/>l'altre<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 
-<!--
-<e r="RL" lm="els uns i els altres"><p><l><a/>els<b/>uns<b/>i<b/>els<b/>altres</l><r>un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/><j/>i<s n="cnjcoo"/><j/>un<b/>altre<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-<e r="LR" lm="els uns i els altres"><p><l>els<b/>uns<b/>i<b/>els<b/>altres</l><r>un<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/><j/>i<s n="cnjcoo"/><j/>un<b/>altre<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-<e lm="l'un i l'altre"><p><l>l'un<b/>i<b/>l'altre</l><r>un<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/><j/>i<s n="cnjcoo"/><j/>un<b/>altre<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="l'una i l'altra"><p><l>l'una<b/>i<b/>l'altra</l><r>un<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/><j/>i<s n="cnjcoo"/><j/>un<b/>altre<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="les unes i les altres"><p><l>les<b/>unes<b/>i<b/>les<b/>altres</l><r>un<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/><j/>i<s n="cnjcoo"/><j/>un<b/>altre<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-
--->
-<e lm="això" v="cat">    <p><l>això</l>      <r>això</r></p>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="això" v="cat">    <p><l>això</l>      <r>això</r></p><par n="això__prn"/></e>
 <e lm="algun">           <i>algun</i><par n="algun__prn"/></e>
 <e lm="alguna cosa">     <i>alguna<b/>cosa</i><par n="alguna_cosa__prn"/></e>
 <e lm="algú">            <i>algú</i><par n="algú__prn"/></e>
-<e lm="allò">            <i>allò</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="allò">            <i>allò</i><par n="això__prn"/></e>
 <e lm="amb mi">          <i>amb<b/>mi</i><par n="amb_mi__prn"/></e>
 <e lm="amb si">          <i>amb<b/>si</i><par n="amb_si__prn"/></e>
 <e lm="amb tu">          <i>amb<b/>tu</i><par n="amb_tu__prn"/></e>
@@ -33009,8 +32962,7 @@
 <e lm="aqueix" v="val">  <i>aqueix</i><par n="aqueix__prn"/></e>
 <e lm="aquell">          <i>aquell</i><par n="algun__prn"/></e>
 <e lm="aquest">          <i>aquest</i><par n="aquest__prn"/></e>
-<e lm="açò" v="val">     <i>açò</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="açò" v="val">     <i>açò</i> <par n="això__prn"/></e>
 <e lm="cadascun">        <i>cadascun</i><par n="cadascun__prn"/></e>
 <e lm="cadascú">         <i>cadascú</i><par n="algú__prn"/></e>
 <e lm="cap">             <i>cap</i><par n="algú__prn"/></e>
@@ -33102,16 +33054,13 @@
     <e lm="en què" r="RL">                         <i>en<b/>què</i><par n="que__rel"/></e>
 
 
-<e lm="res">             <i>res</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
-<e r="LR" lm="res no">   <i>res<b/>no</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="res">             <i>res</i> <par n="això__prn"/></e>
+<e r="LR" lm="res no">   <i>res<b/>no</i> <par n="això__prn"/></e>
 <e lm="si">              <i>si</i><par n="si__prn"/></e>
 <e lm="tot">             <i>tot</i><par n="algun__prn"/></e>
 <e lm="tot i res">       <i>tot<b/>i<b/>res</i><par n="alguna_cosa__prn"/></e>
 <e lm="tot i més">       <i>tot<b/>i<b/>més</i><par n="alguna_cosa__prn"/></e>
-<e lm="tot plegat">      <i>tot<b/>plegat</i>    <!-- allò__prn' was replaced -->
-<par n="això__prn"/></e>
+<e lm="tot plegat">      <i>tot<b/>plegat</i> <par n="això__prn"/></e>
 <e r="LR" lm="tots plegats"><p><l>tots<b/>plegats</l><r>tots<b/>plegats<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
 <e r="LR" lm="totes plegades"><p><l>totes<b/>plegades</l><r>tots<b/>plegats<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e lm="tots junts">      <p><l>tots<b/>junts</l><r>tots<b/>junts<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
@@ -34333,7 +34282,6 @@
 <e lm="formar">          <i>form</i><par n="abander/ar__vblex"/></e>
 <e lm="formular">        <i>formul</i><par n="abander/ar__vblex"/></e>
 <e lm="forçar">          <i>for</i><par n="abalan/çar__vblex"/></e>
-<!--<e lm="fosquejar">       <i>fosque</i><par n="fosque/jar__vblex"/></e>-->
 <e lm="fosquejar">       <i>fosque</i><par n="agreu/jar__vblex"/></e>
 <e lm="fotocopiar">      <i>fotocopi</i><par n="acarici/ar__vblex"/></e>
 <e lm="fotografiar">     <i>fotografi</i><par n="acarici/ar__vblex"/></e>
@@ -34685,9 +34633,7 @@
 <e lm="papar">           <i>pap</i><par n="abander/ar__vblex"/></e>
 <e lm="paralitzar">      <i>paralitz</i><par n="abander/ar__vblex"/></e>
 <e lm="parar">           <i>par</i><par n="abander/ar__vblex"/></e>
-<!--<e lm="parir">           <i>pari</i><par n="pari/r__vblex"/></e>-->
-<!--<e lm="parir">           <p><l>parí</l>      <r>pari</r></p><par n="parí/r__vblex"/></e>-->
-<e lm="parir">           <i>par</i><par n="abarat/ir__vblex"/></e> <!-- non-deffective-->
+<e lm="parir">           <i>par</i><par n="abarat/ir__vblex"/></e>
 <e lm="parlar">          <i>parl</i><par n="abander/ar__vblex"/></e>
 <e lm="trasbalsar">      <i>trasbals</i><par n="abander/ar__vblex"/></e>
 <e lm="parodiar">        <i>parodi</i><par n="acarici/ar__vblex"/></e>
@@ -35151,7 +35097,6 @@
 <e lm="subsistir">       <i>subsist</i><par n="abarat/ir__vblex"/></e>
 <e lm="substituir">      <i>substitu</i><par n="addu/ir__vblex"/></e>
 <e lm="subvencionar">    <i>subvencion</i><par n="abander/ar__vblex"/></e>
-<!--<e lm="succeir">         <i>succe</i><par n="succe/ir__vblex"/></e>-->
 <e lm="succeir">         <i>succe</i><par n="addu/ir__vblex"/></e>
 <e lm="sucumbir">        <i>sucumb</i><par n="abarat/ir__vblex"/></e>
 <e lm="sufocar">         <i>sufo</i><par n="abo/car__vblex"/></e>
@@ -35530,7 +35475,6 @@
 
 
 
-<!--Multiparaules amb flexió intercalada -->
 
 <e lm="fer fàstic">      <i>f</i><par n="f/er__vblex"/><p><l><b/>fàstic</l><r><g><b/>fàstic</g></r></p></e>
 <e lm="fer olor">        <i>f</i><par n="f/er__vblex"/><p><l><b/>olor</l><r><g><b/>olor</g></r></p></e>
@@ -35558,7 +35502,6 @@
 <e lm="dur a terme">     <i>d</i><par n="d/ur__vblex"/><p><l><b/>a<b/>terme</l><r><g><b/>a<b/>terme</g></r></p></e>
 <e lm="portar a terme">  <i>port</i><par n="abander/ar__vblex"/><p><l><b/>a<b/>terme</l><r><g><b/>a<b/>terme</g></r></p></e>
 <e lm="arribar i moldre" a="cursestiu"><i>arrib</i><par n="abander/ar__vblex"/><p><l><b/>i<b/>moldre</l><r><g><b/>i<b/>moldre</g></r></p></e>
-<!--fi multiparaules-->
 <e lm="Volkswagen">      <i>Volkswagen</i><par n="ABC__np"/></e>
 <e lm="l'Iraq">          <i>l'Iraq</i><par n="Afganistan__np"/></e>
 <e lm="Gelabert">        <i>Gelabert</i><par n="Abad__np"/></e>
@@ -35656,7 +35599,6 @@
 <e lm="Eulàlia">         <i>Eulàlia</i><par n="Abad__np"/></e>
 
 
-<!--="EUA"><i>EUA</i><par n="EUA__n"/></e>-->
 
 <e lm="endur">    <i>end</i><par n="end/ur__vblex"/></e>
 <e lm="disciplinari">    <i>disciplin</i><par n="adjudicat/ari__adj"/></e>
@@ -36415,8 +36357,7 @@
 <e lm="aberració" a="prompsit2adn"><i>aberraci</i><par n="acci/ó__n"/></e>
 <e lm="abismal" a="prompsit2adn"><i>abismal</i><par n="abdominal__adj"/></e>
 <e lm="abolició" a="prompsit2adn"><i>abolici</i><par n="acci/ó__n"/></e>
-<!--<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abol/ir__vblex"/></e>-->
-<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abarat/ir__vblex"/></e>  <!-- non-deffective-->
+<e lm="abolir" a="prompsit2adn"><i>abol</i><par n="abarat/ir__vblex"/></e>
 <e lm="abreujar" a="prompsit2adn"><i>abreu</i><par n="agreu/jar__vblex"/></e>
 <e lm="abrupte" a="prompsit2adn"><i>abrupt</i><par n="abstract/e__adj"/></e>
 <e lm="absorbent" a="prompsit2adn"><i>absorbent</i><par n="abdominal__adj"/></e>
@@ -43669,7 +43610,6 @@
 <e lm="si el cas així ho requereix" a="prompsit"><i>si<b/>el<b/>cas<b/>així<b/>ho<b/>requereix</i><par n="ahir__adv"/></e>
 <e lm="segons com pertocarà" a="prompsit"><i>segons<b/>com<b/>pertocarà</i><par n="ahir__adv"/></e>
 <e r="RL" lm="segons com"><i>segons<b/>com</i><par n="ahir__adv"/></e>
-<!--<e lm="segons el que es disposa" a="prompsit"><i>segons<b/>el<b/>que<b/>es<b/>disposa</i><par n="ahir__adv"/></e> "inclòs en el següent"-->
 <e r="LR" lm="el que es disposa" a="mireiafarrus"><i>el<b/>que<b/>es<b/>disposa</i><par n="atletisme__n"/></e>
 <e r="RL" lm="el que es disposa" a="mireiafarrus"><p><l><a/>el<b/>que<b/>es<b/>disposa</l><r>el<b/>que<b/>es<b/>disposa</r></p><par n="atletisme__n"/></e>
 <e lm="saldo mitjà" a="prompsit"><i>saldo</i><par n="atletisme__n"/><p><l><b/>mitjà</l><r><g><b/>mitjà</g></r></p></e>
@@ -48405,7 +48345,6 @@
 <e lm="fora mida">       <i>fora<b/>mida</i><par n="multimèdia__adj"/></e>
 
 
-<!--secció especial llibreries-->
 
 
 
@@ -48480,8 +48419,6 @@
 
 
 
-<!--noves entrades tretes d'internostrum -->
-<!-- adjectius -->
 
 
 
@@ -49230,7 +49167,7 @@
 <e lm="integratiu">      <i>integrati</i><par n="abusi/u__adj"/></e>
 <e lm="integèrrim">      <i>integèrrim</i><par n="absolut__adj"/></e>
 <e lm="interadministratiu"><i>interadministrati</i><par n="abusi/u__adj"/></e>
-<!-- <e lm="interdisciplinar"><i>interdisciplinar</i><par n="abdominal__adj"/></e> no és correcte a="mireiafarrus"-->
+<e lm="interdisciplinari"><i>interdisciplinari</i><par n="abdominal__adj"/></e>
 <e lm="interessat">      <i>interessa</i><par n="afortuna/t__adj"/></e>
 <e lm="interestel·lar">  <i>interestel·lar</i><par n="abdominal__adj"/></e>
 <e r="LR" lm="interestel·lar"><p><l>interesteŀlar</l><r>interestel·lar</r></p><par n="abdominal__adj"/></e>
@@ -49642,7 +49579,6 @@
 <e lm="sincrònic">       <i>sincròni</i><par n="acadèmi/c__adj"/></e>
 <e lm="sinòptic">        <i>sinòpti</i><par n="acadèmi/c__adj"/></e>
 <e lm="siti">     <i>s</i><par n="s/iti__adj"/></e>
-<!--<e lm="situat" r="RL"><i>situa</i><par n="triparti/t__adj"/></e>-->
 <e lm="sobresaturat">    <i>sobresatura</i><par n="afortuna/t__adj"/></e>
 <e lm="socialitzant">    <i>socialitzant</i><par n="abdominal__adj"/></e>
 <e lm="socràtic">        <i>socràti</i><par n="acadèmi/c__adj"/></e>
@@ -49851,7 +49787,6 @@
 <e lm="semiautomatitzat" a="mireiafarrus"><i>semiautomatitza</i><par n="afortuna/t__adj"/></e>
 
 
-<!-- adverbis-->
 
 
 <e lm="Deo gratias">     <i>Deo<b/>gratias</i><par n="ahir__adv"/></e>
@@ -53370,7 +53305,6 @@
 <e lm="fins demà">       <i>fins<b/>demà</i><par n="ahir__adv"/></e>
 <e lm="pretensiosament"> <i>pretensiosament</i><par n="ahir__adv"/></e>
 
-<!-- verbs-->
 
 
 
@@ -53443,7 +53377,7 @@
 <e lm="agotnar">         <i>agotn</i><par n="abander/ar__vblex"/></e>
 <e lm="agullonar">       <i>agullon</i><par n="abander/ar__vblex"/></e>
 <e lm="agusar">          <i>agus</i><par n="abander/ar__vblex"/></e>
-<!--<e lm="aigualir"><i>aigual</i><par n="abarat/ir__vblex"/></e>-->
+<e lm="aigualir"><i>aigual</i><par n="abarat/ir__vblex"/></e>
 <e lm="prorratejar">     <i>prorrate</i><par n="agreu/jar__vblex"/></e>
 <e lm="aixoplugar">      <i>aixoplug</i><par n="afalag/ar__vblex"/></e>
 <e lm="alentir">         <i>alent</i><par n="abarat/ir__vblex"/></e>
@@ -54677,7 +54611,6 @@
 <e lm="perseverar">      <i>persever</i><par n="abander/ar__vblex"/></e>
 
 
-<!-- noms -->
 
 <e lm="ensopiment">      <i>ensopiment</i><par n="abric__n"/></e>
 <e lm="pesca litoral">   <p><l>pesca<b/>litoral</l><r>pesca<b/>litoral<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
@@ -58175,7 +58108,6 @@
 <e lm="tret de sortida" v="cat"><i>tret</i><par n="abric__n"/><p><l><b/>de<b/>sortida</l><r><g><b/>de<b/>sortida</g></r></p></e>
 <e lm="tret d'eixida" v="val"><i>tret</i><par n="abric__n"/><p><l><b/>d'eixida</l><r><g><b/>d'eixida</g></r></p></e>
 
-<!--noms propis -->
 
 
 <e lm="APA">             <i>APA</i><par n="ABC__np"/></e>
@@ -62009,9 +61941,6 @@
 <e lm="Adobe Illustrator"><i>Adobe<b/>Illustrator</i><par n="ABC__np"/></e>
 
 
-<!-- noves UOC mireia -->
-
-<!-- noms -->
 <e lm="giny" a="mireiafarrus"><i>giny</i><par n="abric__n"/></e>
 <e lm="exvocal" a="mireiafarrus"><i>exvocal</i><par n="accessibilitat__n"/></e>
 <e lm="copista" a="mireiafarrus"><i>copist</i><par n="accionist/a__n"/></e>
@@ -62019,7 +61948,6 @@
 <e lm="tast" a="mireiafarrus"><i>tast</i><par n="abast__n"/></e>
 <e lm="autocategorització" a="mireiafarrus"><i>autocategoritzaci</i><par n="acci/ó__n"/></e>
 <e lm="fotoblog" a="mireiafarrus"><i>fotoblog</i><par n="abric__n"/></e>
-<!--<e lm="autodidacte" a="mireiafarrus"><i>autodidact</i><par n="addict/e__n"/></e>-->
 <e lm="feedback" a="mireiafarrus"><i>feedback</i><par n="abric__n"/></e>
 <e lm="diagonalització" a="mireiafarrus"><i>diagonalitzaci</i><par n="acci/ó__n"/></e>
 <e lm="hiperrepertori" a="mireiafarrus"><i>hiperrepertori</i><par n="abric__n"/></e>
@@ -62038,7 +61966,6 @@
 <e lm="nanopartícula" a="mireiafarrus"><i>nanopartícul</i><par n="abell/a__n"/></e>
 
 
-<!-- adjectius -->
 <e lm="interbibliotecari" a="mireiafarrus"><i>interbibliotec</i><par n="adjudicat/ari__adj"/></e>
 <e lm="proactiu" a="mireiafarrus"><i>proacti</i><par n="abusi/u__adj"/></e>
 <e lm="extraescolar" a="mireiafarrus"><i>extraescolar</i><par n="abdominal__adj"/></e>
@@ -62057,18 +61984,15 @@
 <e lm="bifàsic" a="mireiafarrus"><i>bifàsi</i><par n="acadèmi/c__adj"/></e>
 
 
-<!-- verbs -->
 <e lm="repensar" a="mireiafarrus"><i>repens</i><par n="abander/ar__vblex"/></e>
 
 
-<!-- adverbis -->
 <e lm="de tot el món" a="mireiafarrus"><i>de<b/>tot<b/>el<b/>món</i><par n="ahir__adv"/></e>
 <e lm="fins avui" a="mireiafarrus"><i>fins<b/>avui</i><par n="ahir__adv"/></e>
 <e r="RL" lm="l'any" a="mireiafarrus"><i>l'any</i><par n="ahir__adv"/></e>
 
 
 
-<!-- multiparaules -->
 <e lm="tecla de retorn" a="mireiafarrus"><i>tecl</i><par n="abell/a__n"/><p><l><b/>de<b/>retorn</l><r><g><b/>de<b/>retorn</g></r></p></e>
 <e lm="vacances de Nadal" a="mireiafarrus"><i>vacances</i><par n="escombraries__n"/><p><l><b/>de<b/>Nadal</l><r><g><b/>de<b/>Nadal</g></r></p></e>
 <e lm="camp professional" a="mireiafarrus"><p><l>camp<b/>professional</l><r>camp<b/>professional<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
@@ -62076,8 +62000,6 @@
 
 
 
-<!-- noms propis -->
-<!-- np variables -->
 <e lm="EcoUniversitat" a="mireiafarrus"><i>EcoUniversitat</i><par n="ABC__np"/></e>
 <e lm="Campus per la Pau" a="mireiafarrus"><i>Campus<b/>per<b/>la<b/>Pau</i><par n="ABC__np"/></e>
 <e lm="Universitats i Recerca" a="mireiafarrus"><i>Universitats<b/>i<b/>Recerca</i><par n="ABC__np"/></e>
@@ -62088,7 +62010,6 @@
 
 
 
-<!-- np invariables -->
 <e lm="SOD" a="mireiafarrus"><i>SOD</i><par n="ABC__np"/></e>
 <e lm="CCUC" a="mireiafarrus"><i>CCUC</i><par n="ABC__np"/></e>
 <e lm="CBUC" a="mireiafarrus"><i>CBUC</i><par n="ABC__np"/></e>
@@ -62133,12 +62054,10 @@
 <e lm="EAPC" a="mireiafarrus"><i>EAPC</i><par n="ABC__np"/></e>
 
 
-<!-- conjuncions adverbials -->
 <e lm="per això" a="mireiafarrus" v="cat"><i>per<b/>això</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="per açò" a="mireiafarrus" v="val"><i>per<b/>açò</i><par n="a_fe_que__cnjadv"/></e>
 
 
-<!-- locucions -->
 <e lm="fer una xerrada" a="mireiafarrus"><i>f</i><par n="f/er__vblex"/><p><l><b/>una<b/>xerrada</l><r><g><b/>una<b/>xerrada</g></r></p></e>
 <e lm="això no obstant" a="mireiafarrus" v="cat"><i>això<b/>no<b/>obstant</i><par n="a_fe_que__cnjadv"/></e>
 <e lm="açò no obstant" a="mireiafarrus" v="val"><i>açò<b/>no<b/>obstant</i><par n="a_fe_que__cnjadv"/></e>
@@ -62147,7 +62066,6 @@
 <e lm="posar a prova" a="mireiafarrus"><i>pos</i><par n="abander/ar__vblex"/><p><l><b/>a<b/>prova</l><r><g><b/>a<b/>prova</g></r></p></e>
 
 
-<!-- abreviatures -->
 <e lm="qualif." a="mireiafarrus"><i>qualif.</i><par n="q__n"/></e>
 <e lm="1r." a="mireiafarrus"><i>1r.</i><par n="q__n"/></e>
 <e lm="2n." a="mireiafarrus"><i>2n.</i><par n="q__n"/></e>
@@ -63331,7 +63249,6 @@
 <e lm="Autom" a="prompsit"><i>Autom</i><par n="ABC__np"/></e>
 <e lm="Forbes" a="prompsit"><i>Forbes</i><par n="ABC__np"/></e>
 
-<!-- Ajuntament de Crevillent -->
 
 <e r="LR" lm="el Fondo" a="prompsit"><i>el<b/>Fondo</i><par n="Afganistan__np"/></e>
 <e r="RL" lm="el Fondo"><p><l><a/>el<b/>Fondo</l><r>el<b/>Fondo</r></p><par n="Afganistan__np"/></e>
@@ -63440,7 +63357,6 @@
 <e lm="templet" a="prompsit"><i>templet</i><par n="abric__n"/></e>
 <e lm="porticat" a="prompsit"><i>portica</i><par n="afortuna/t__adj"/></e>
 
-<!-- Ajuntament de Crevillent -->
 
 <e r="LR" lm="vidret" a="imaxinsoftware"><i>vidret</i><par n="abric__n"/></e>
 
@@ -63466,7 +63382,6 @@
     <par n="abdominal__adj"/>
   </e>
 
-<!-- UPV, UA -->
 
   <e lm="escalar" a="prompsit"><i>escalar</i><par n="abdominal__adj"/></e>
   <e lm="camp escalar" a="prompsit"><i>camp</i><par n="atletisme__n"/><p><l><b/>escalar</l><r><g><b/>escalar</g></r></p></e>
@@ -63495,7 +63410,6 @@
 
 
 
-<!-- Softcatalà -->
 <e lm="Hume">            <i>Hume</i><par n="Abad__np"/></e>
 <e lm="cacau">           <i>cacau</i><par n="abric__n"/></e>
 <e lm="Jehová">          <i>Jehová</i><par n="Abad__np"/></e>
@@ -63536,7 +63450,6 @@
 <e lm="grafiti"><i>grafiti</i><par n="abric__n"/></e>
 <e r="LR" lm="graffiti"><i>graffiti</i><par n="abric__n"/></e>
 
-<!-- fra~cat-->
 
     <e lm="agre">                           <i>agr</i><par n="abstract/e__adj"/></e>
     <e lm="aïllat">                         <p><l>aïlla</l><r>aïlla</r></p><par n="afortuna/t__adj"/></e>
