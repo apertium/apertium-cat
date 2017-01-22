@@ -25040,6 +25040,7 @@
 <e lm="Dalai Lama" a="prompsit2adn"><i>Dalai<b/>Lama</i><par n="Abad__np"/></e>
 <e r="LR" lm="Dalfinat" a="prompsit"><i>Dalfinat</i><par n="Afganistan__np"/></e>
 <e lm="Dallas" a="prompsit2adn"><i>Dallas</i><par n="Abad__np"/></e>
+<e lm="Dallas">          <i>Dallas</i><par n="Afganistan__np"/></e>
 <e lm="Dalmasso">        <i>Dalmasso</i><par n="Abad__np"/></e>
 <e lm="Dalí">            <i>Dalí</i><par n="Abad__np"/></e>
 <e lm="Damasc">          <i>Damasc</i><par n="Afganistan__np"/></e>
@@ -26307,6 +26308,7 @@
 <e lm="Hostafrancs" a="prompsit"><i>Hostafrancs</i><par n="Afganistan__np"/></e>
 <e lm="Hostalric">       <i>Hostalric</i><par n="Afganistan__np"/></e>
 <e lm="Houston" a="prompsit2adn"><i>Houston</i><par n="Abad__np"/></e>
+<e lm="Houston">         <i>Houston</i><par n="Afganistan__np"/></e>
 <e lm="Howard" a="prompsit2adn"><i>Howard</i><par n="Abad__np"/></e>
 <e lm="Hoyo">            <i>Hoyo</i><par n="Abad__np"/></e>
 <e lm="Hubert" a="gema"> <i>Hubert</i><par n="Abad__np"/></e>
@@ -26395,6 +26397,7 @@
 <e lm="Immaculada">      <i>Immaculada</i><par n="Abad__np"/></e>
 <e lm="Inca">            <i>Inca</i><par n="Afganistan__np"/></e>
 <e lm="Indiana">         <i>Indiana</i><par n="Abad__np"/></e>
+<e lm="Indiana">        <i>Indiana</i><par n="Afganistan__np"/></e>
 <e lm="Indiano">         <i>Indiano</i><par n="Abad__np"/></e>
 <e lm="Inditex" a="prompsit2adn"><i>Inditex</i><par n="ABC__np"/></e>
 <e lm="Indonèsia">       <i>Indonèsia</i><par n="Afganistan__np"/></e>
@@ -28181,6 +28184,7 @@
 <e lm="Palasí">          <i>Palasí</i><par n="Abad__np"/></e>
 <e lm="Palau">           <i>Palau</i><par n="ABC__np"/></e>
 <e lm="Palau">           <i>Palau</i><par n="Abad__np"/></e>
+<e lm="Palau">           <i>Palau</i><par n="Afganistan__np"/></e>
 <e lm="Palau-sacosta">   <i>Palau-sacosta</i><par n="Afganistan__np"/></e>
 <e lm="Palau-sator">     <i>Palau-sator</i><par n="Afganistan__np"/></e>
 <e lm="Palau-saverdera"> <i>Palau-saverdera</i><par n="Afganistan__np"/></e>
@@ -29143,6 +29147,7 @@
 <e lm="Salt">            <i>Salt</i><par n="Afganistan__np"/></e>
 <e lm="Salustiano" a="prompsit"><i>Salustiano</i><par n="Abad__np"/></e>
 <e lm="Salvador">        <i>Salvador</i><par n="Abad__np"/></e>
+<e lm="Salvador">        <i>Salvador</i><par n="Afganistan__np"/></e>
 <e lm="Salvadó" a="prompsit"><i>Salvadó</i><par n="Abad__np"/></e>
 <e lm="Salvat">          <i>Salvat</i><par n="Abad__np"/></e>
 <e lm="Salvà">           <i>Salvà</i><par n="Abad__np"/></e>
@@ -46397,7 +46402,7 @@
 <e lm="iod">             <i>iod</i><par n="accessibilitat__n"/></e>
 <e lm="iode" a="prompsit2uoc"><i>iode</i><par n="abric__n"/></e>
 <e lm="iodur" a="prompsit2uoc"><i>iodur</i><par n="abric__n"/></e>
-<e lm="ioga" a="prompsit2adn"><i>iog</i><par n="abell/a__n"/></e>
+<e lm="ioga">			 <i>iog</i><par n="carism/a__n"/></e>
 <e lm="iogurt">          <i>iogurt</i><par n="abric__n"/></e>
 <e r="LR" lm="ionització" a="prompsit"><i>ionitzaci</i><par n="acci/ó__n"/></e>
 <e lm="ionosfera" a="prompsit2uoc"><i>ionosfer</i><par n="abell/a__n"/></e>
@@ -51969,7 +51974,7 @@
 <e lm="solell" a="prompsit2uoc"><i>solell</i><par n="abric__n"/></e>
 <e lm="solemnitat" a="prompsit2adn"><i>solemnitat</i><par n="accessibilitat__n"/></e>
 <e lm="solenoide" a="prompsit2uoc"><i>solenoide</i><par n="abric__n"/></e>
-<e lm="solfeig">         <i>solfeig</i><par n="atletisme__n"/></e>
+<e lm="solfeig">         <i>solfe</i><par n="assa/ig__n"/></e>
 <e lm="solidaritat">     <i>solidaritat</i><par n="accessibilitat__n"/></e>
 <e lm="solidesa">        <i>solides</i><par n="abell/a__n"/></e>
 <e lm="solidificació" a="prompsit2uoc"><i>solidificaci</i><par n="acci/ó__n"/></e>
@@ -53003,7 +53008,7 @@
 <e lm="tren_de_rodalies"><i>tren</i><par n="abric__n"/><p><l><b/>de<b/>rodalies</l><r><g><b/>de<b/>rodalies</g></r></p></e>
 <e lm="trena">           <i>tren</i><par n="abell/a__n"/></e>
 <e lm="trenador">        <i>trenador</i><par n="senyor__n"/></e>
-<e lm="trencaclosques">  <i>trencaclosques</i><par n="afores__n"/></e>
+<e lm="trencaclosques">  <i>trencaclosques</i><par n="campus__n"/></e>
 <e lm="trencadura">      <p><l>trencadur</l> <r>trencadur</r></p><par n="abell/a__n"/></e>
 <e lm="trencall" a="prompsit2uoc"><i>trencall</i><par n="abric__n"/></e>
 <e lm="trencallums">     <i>trencallums</i><par n="campus__n"/></e>
@@ -53944,7 +53949,7 @@
 <e lm="zirconi" a="prompsit2uoc"><i>zirconi</i><par n="abric__n"/></e>
 <e lm="zitzània">        <i>zitzàni</i><par n="abell/a__n"/></e>
 <e lm="zodíac" a="prompsit2uoc"><i>zodíac</i><par n="abric__n"/></e>
-<e lm="zombi" a="prompsit2uoc"><i>zombi</i><par n="abric__n"/></e>
+<e lm="zombi" a="prompsit2uoc"><i>zombi</i><par n="acompanyant__n"/></e>
 <e lm="zona">            <i>zon</i><par n="abell/a__n"/></e>
 <e lm="zona de barreja" a="prompsit"><i>zon</i><par n="abell/a__n"/><p><l><b/>de<b/>barreja</l><r><g><b/>de<b/>barreja</g></r></p></e>
 <e lm="zonació" a="prompsit2uoc"><i>zonaci</i><par n="acci/ó__n"/></e>
