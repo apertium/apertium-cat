@@ -30995,7 +30995,7 @@
 <e lm="son Cervera">     <i>son<b/>Cervera</i><par n="Afganistan__np"/></e>
 <e lm="tv3" a="prompsit"><i>tv3</i><par n="ABC__np"/></e>
 <e lm="via Laietana">    <i>via<b/>Laietana</i><par n="Afganistan__np"/></e>
-<e lm="yihad" a="prompsit2adn"><i>yihad</i><par n="ABC__np"/></e>
+<e lm="yihad"><i>yihad</i><par n="accessibilitat__n"/></e>
 <e lm="Àfrica">          <i>Àfrica</i><par n="Afganistan__np"/></e>
 <e lm="Àger">            <i>Àger</i><par n="Afganistan__np"/></e>
 <e lm="Àlaba">           <i>Àlaba</i><par n="Afganistan__np"/></e>
@@ -33370,7 +33370,7 @@
 <e lm="farmacòleg">      <i>farmacòl</i><par n="arqueòl/eg__adj"/></e>
 <e lm="farsant">         <i>farsant</i><par n="abdominal__adj"/></e>
 <e lm="fart">            <i>fart</i><par n="alt__adj"/></e>
-<e lm="fasciculat">      <i>fascicula</i><par n="afortuna/t__adj"/></e>
+<e lm="fasciculat">      <i>fascicula</i><par n="triparti/t__adj"/></e>
 <e lm="fascicular">      <i>fascicular</i><par n="abdominal__adj"/></e>
 <e lm="fascinant">       <i>fascinant</i><par n="abdominal__adj"/></e>
 <e lm="fastigós">        <i>fastig</i><par n="afectu/ós__adj"/></e>
@@ -34364,7 +34364,6 @@
 <e lm="interdepartamental" a="prompsit"><i>interdepartamental</i><par n="abdominal__adj"/></e>
 <e lm="interdependent" a="prompsit2uoc"><i>interdependent</i><par n="abdominal__adj"/></e>
 <e lm="interdisciplinari" a="prompsit2uoc"><i>interdisciplin</i><par n="adjudicat/ari__adj"/></e>
-<e lm="interdisciplinari"><i>interdisciplinari</i><par n="abdominal__adj"/></e>
 <e lm="interessat">      <i>interessa</i><par n="afortuna/t__adj"/></e>
 <e lm="interessant">     <i>interessant</i><par n="important__adj"/></e>
 <e lm="interestel·lar">  <i>interestel·lar</i><par n="abdominal__adj"/></e>
