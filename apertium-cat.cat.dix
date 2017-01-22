@@ -1728,13 +1728,13 @@
   <e>       <p><l>c</l>         <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="poquet__adj">
-  <e>       <p><l>es</l>        <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+  <e>       <p><l>es</l>        <r><s n="adj"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l>a</l>         <r>c<s n="adj"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
+  <e>       <p><l>a</l>         <r><s n="adj"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
 
-  <e>       <p><l>s</l>         <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+  <e>       <p><l>s</l>         <r><s n="adj"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
 
-  <e>       <p><l></l>          <r>c<s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="adj"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 </pardef>
 <pardef n="t/ebi__adj">
   <e>       <p><l>èbies</l>     <r>ebi<s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
@@ -3427,6 +3427,12 @@
   <e>       <p><l>ques</l>      <r>ca<s n="n"/><s n="mf"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>ca</l>        <r>ca<s n="n"/><s n="mf"/><s n="sg"/></r></p></e>
+
+</pardef>
+<pardef n="patriar/ca__n">
+  <e>       <p><l>ques</l>      <r>ca<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>ca</l>        <r>ca<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="addict/e__n">
@@ -35645,7 +35651,8 @@
 <e lm="plàstic">         <i>plàsti</i><par n="acadèmi/c__adj"/></e>
 <e lm="pneumocòccic" a=" alseoane@gmail.com"><i>pneumocòcci</i><par n="acadèmi/c__adj"/></e>
 <e lm="pneumàtic">       <i>pneumàti</i><par n="acadèmi/c__adj"/></e>
-<e lm="poc">             <i>po</i><par n="acadèmi/c__adj"/></e>
+<e lm="poc">             <i>po</i><par n="po/c__adj"/></e>
+<e lm="poquet">          <i>poquet</i><par n="poquet__adj"/></e>
 <e lm="poblacional">     <i>poblacional</i><par n="abdominal__adj"/></e>
 <e lm="pobre">           <i>pobr</i><par n="abstract/e__adj"/></e>
 <e lm="poc inclinat" a="prompsit2adn"><i>poc<b/>inclina</i><par n="triparti/t__adj"/></e>
@@ -42869,7 +42876,8 @@
 <e lm="duròmetre" a="prompsit2uoc"><i>duròmetre</i><par n="abric__n"/></e>
 <e lm="dutxa">           <i>dutx</i><par n="abell/a__n"/></e>
 <e lm="dv.">             <i>dv.</i><par n="atletisme__n"/></e>
-<e lm="dvd" a="prompsit2cdl"><i>dvd</i><par n="BBVA__n"/></e>
+<e lm="DVD">			 <i>DVD</i><par n="BBVA__n"/></e>
+<e lm="dvd">			 <i>dvd</i><par n="abric__n"/></e>
 <e lm="dàctil" a="prompsit2uoc"><i>dàctil</i><par n="abric__n"/></e>
 <e lm="dàrsena" a="prompsit2adn"><i>dàrsen</i><par n="abell/a__n"/></e>
 <e lm="dèbit">           <i>dèbit</i><par n="abric__n"/></e>
@@ -45089,7 +45097,7 @@
 <e lm="genealogia" a="prompsit2uoc"><i>genealogi</i><par n="abell/a__n"/></e>
 <e lm="gener">           <i>gener</i><par n="abric__n"/></e>
 <e lm="generació">       <i>generaci</i><par n="acci/ó__n"/></e>
-<e lm="generador" a="prompsit2adn"><i>generador</i><par n="abric__n"/></e>
+<e lm="generador"><i>generador</i><par n="senyor__n"/></e>
 <e lm="general">         <i>general</i><par n="acompanyant__n"/></e>
 <e lm="generalista" a="prompsit2adn"><i>generalist</i><par n="accionist/a__n"/></e>
 <e lm="generalitat">     <i>generalitat</i><par n="accessibilitat__n"/></e>
@@ -46299,7 +46307,7 @@
 <e lm="internacionalització" a="prompsit2adn"><i>internacionalitzaci</i><par n="acci/ó__n"/></e>
 <e lm="internament" a="prompsit2adn"><i>internament</i><par n="abric__n"/></e>
 <e lm="internauta">      <i>internaut</i><par n="accionist/a__n"/></e>
-<e lm="internet">        <i>internet</i><par n="càries__n"/></e>
+<e lm="internet">        <i>internet</i><par n="accessibilitat__n"/></e>
 <e lm="interoperabilitat" a="prompsit2adn"><i>interoperabilitat</i><par n="accessibilitat__n"/></e>
 <e lm="interpel·lació" a="prompsit2adn"><i>interpel·laci</i><par n="acci/ó__n"/></e>
 <e r="LR" lm="interpel·lació"><p><l>interpeŀlaci</l><r>interpel·laci</r></p><par n="acci/ó__n"/></e>
@@ -46481,7 +46489,7 @@
 <e lm="jaspi" a="prompsit2uoc"><i>jaspi</i><par n="abric__n"/></e>
 <e lm="javanès">         <i>javan</i><par n="angl/ès__n"/></e>
 <e lm="javelina" a="prompsit2adn"><i>javelin</i><par n="abell/a__n"/></e>
-<e lm="jazz">            <i>jazz</i><par n="atletisme__n"/></e>
+<e lm="jazz">            <i>jazz</i><par n="campus__n"/></e>
 <e lm="jaç">             <i>jaç</i><par n="as__n"/></e>
 <e lm="jeep" a="prompsit2uoc"><i>jeep</i><par n="abric__n"/></e>
 <e lm="jejú">            <i>jejú</i><par n="abric__n"/></e>
@@ -46573,7 +46581,7 @@
 <e lm="kilòmetre" a="prompsit"><i>kilòmetre</i><par n="abric__n"/></e>
 <e lm="kimberlita" a="prompsit2uoc"><i>kimberlit</i><par n="abell/a__n"/></e>
 <e lm="kirchnerista" a="prompsit2adn"><i>kirchnerist</i><par n="accionist/a__n"/></e>
-<e lm="km">              <i>km</i><par n="campus__n"/></e>
+<e lm="km">              <i>km</i><par n="IRPF__n"/></e>
 <e lm="koiné" a="prompsit2uoc"><i>koiné</i><par n="accessibilitat__n"/></e>
 <e lm="krausisme">       <i>krausisme</i><par n="atletisme__n"/></e>
 <e lm="kurd">            <i>kurd</i><par n="senyor__n"/></e>
@@ -47407,7 +47415,7 @@
 <e lm="medalló">         <i>medall</i><par n="aband/ó__n"/></e>
 <e lm="medallista" a="prompsit2adn"><i>medallist</i><par n="accionist/a__n"/></e>
 <e lm="medi" a=" alseoane@gmail.com"><i>medi</i><par n="abric__n"/></e>
-<e lm="medi ambient" a="gema"><i>medi<b/>ambient</i><par n="atletisme__n"/></e>
+<e lm="medi ambient" a="gema"><i>medi<b/>ambient</i><par n="abric__n"/></e>
 <e lm="mediació">        <i>mediaci</i><par n="acci/ó__n"/></e>
 <e lm="mediador">        <i>mediador</i><par n="senyor__n"/></e>
 <e lm="mediana" a="mireiafarrus"><i>median</i><par n="abell/a__n"/></e>
@@ -49154,7 +49162,7 @@
 <e lm="patogènia" a="prompsit2uoc"><i>patogèni</i><par n="abell/a__n"/></e>
 <e lm="patologia">       <i>patologi</i><par n="abell/a__n"/></e>
 <e lm="patró">           <i>patr</i><par n="amfitri/ó__n"/></e>
-<e lm="patriarca">       <i>patriar</i><par n="monar/ca__n"/></e>
+<e lm="patriarca">       <i>patriar</i><par n="patriar/ca__n"/></e>
 <e lm="patriarcat" a="prompsit2uoc"><i>patriarcat</i><par n="abric__n"/></e>
 <e lm="patrimoni">       <i>patrimoni</i><par n="abric__n"/></e>
 <e lm="patriota" a="prompsit2adn"><i>patriot</i><par n="accionist/a__n"/></e>
