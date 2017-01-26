@@ -40190,7 +40190,7 @@
 <e r="LR" lm="cap de servei"><i>cap</i><par n="acompanyant__n"/><p><l><b/>de<b/>servei</l><r><g><b/>de<b/>servei</g></r></p></e>
 <e r="LR" lm="cap d'àrea"><i>cap</i><par n="acompanyant__n"/><p><l><b/>d'àrea</l><r><g><b/>d'àrea</g></r></p></e>
 <e lm="capa de barreja" a="prompsit"><i>cap</i><par n="abell/a__n"/><p><l><b/>de<b/>barreja</l><r><g><b/>de<b/>barreja</g></r></p></e>
-<e lm="cap de setmana">  <i>cap<b/>de<b/>setmana</i><par n="atletisme__n"/></e>
+<e lm="cap de setmana">  <i>cap</i><par n="abric__n"/><p><l><b/>de<b/>setmana</l><r><g><b/>de<b/>setmana</g></r></p></e>
 <e lm="capacitació" a="prompsit2adn"><i>capacitaci</i><par n="acci/ó__n"/></e>
 <e lm="capacitat">       <i>capacitat</i><par n="accessibilitat__n"/></e>
 <e lm="capcímetre">      <i>capacímetre</i><par n="abric__n"/></e>
@@ -40228,7 +40228,6 @@
 <e lm="capricorn" a="prompsit"><i>capricorn</i><par n="guardaespatlles__n"/></e>
 <e lm="capritx">         <i>capritx</i><par n="abast__n"/></e>
 <e r="LR" lm="capsa" a=" alseoane@gmail.com"><i>caps</i><par n="abell/a__n"/></e>
-<e lm="caps de setmana"> <i>caps<b/>de<b/>setmana</i><par n="afores__n"/></e>
 <e lm="caps per lligar"> <i>caps<b/>per<b/>lligar</i><par n="afores__n"/></e>
 <e lm="capseta" a="eleka"><i>capset</i><par n="abell/a__n"/></e>
 <e lm="capsigrany" a="prompsit2uoc"><i>capsigrany</i><par n="abric__n"/></e>
@@ -40540,9 +40539,9 @@
 <e lm="centau" a="prompsit2adn"><i>centau</i><par n="abric__n"/></e>
 <e lm="centelleig">      <i>centelleig</i><par n="abric__n"/></e>
 <e lm="centena" a="prompsit2adn"><i>centen</i><par n="abell/a__n"/></e>
-<e lm="centenar">        <i>centenar</i><par n="abric__n"/></e>
-<e lm="centenari">       <i>centenari</i><par n="abric__n"/></e>
+<e lm="centenar">        <i>centenar</i><par n="zero__num"/></e>
 <e lm="centenars">       <i>centenars</i><par n="afores__n"/></e>
+<e lm="centenari">       <i>centenari</i><par n="abric__n"/></e>
 <e lm="centilitre" a="prompsit2uoc"><i>centilitre</i><par n="abric__n"/></e>
 <e lm="centpeus">        <i>centpeus</i><par n="campus__n"/></e>
 <e lm="centrafricà" a="prompsit2adn"><i>centrafric</i><par n="americ/à__n"/></e>
