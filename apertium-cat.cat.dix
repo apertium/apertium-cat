@@ -10425,7 +10425,7 @@
   <e v="val"><p><l>ga</l>       <r>er<s n="vblex"/><s n="imp"/><s n="p3"/><s n="sg"/></r></p></e>
   <e v="cat"><p><l>gui</l>      <r>er<s n="vblex"/><s n="imp"/><s n="p3"/><s n="sg"/></r></p></e>
   <e>       <p><l>guem</l>      <r>er<s n="vblex"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p></e>
-  <e>       <p><l>u</l>         <r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>eu</l>      <r>er<s n="vblex"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
   <e v="val"><p><l>guen</l>     <r>er<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p></e>
   <e v="cat"><p><l>guin</l>     <r>er<s n="vblex"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p></e>
 </pardef>
@@ -14868,24 +14868,31 @@
   <e v="val"><p><l>ge</l>       <r>jar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
 
 </pardef>
-<pardef n="fosque/jar__vblex">
+<pardef n="vespre/jar__vblex">
   <e>       <p><l>jaria</l>     <r>jar<s n="vblex"/><s n="cni"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>jarien</l>     <r>jar<s n="vblex"/><s n="cni"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>jarà</l>      <r>jar<s n="vblex"/><s n="fti"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>jaran</l>      <r>jar<s n="vblex"/><s n="fti"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e r="RL"><p><l>gés</l>       <r>jar<s n="vblex"/><s n="fts"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l>gessin</l>    <r>jar<s n="vblex"/><s n="fts"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>jant</l>      <r>jar<s n="vblex"/><s n="ger"/></r></p></e>
 
   <e r="LR"><p><l>jà</l>        <r>jar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>jaren</l>     <r>jar<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>jar</l>       <r>jar<s n="vblex"/><s n="inf"/></r></p></e>
 
   <e>       <p><l>java</l>      <r>jar<s n="vblex"/><s n="pii"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>javen</l>      <r>jar<s n="vblex"/><s n="pii"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e v="cat"><p><l>gés</l>      <r>jar<s n="vblex"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>gessin</l>      <r>jar<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e v="val"><p><l>jara</l>     <r>jar<s n="vblex"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>jaren</l>     <r>jar<s n="vblex"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>jades</l>     <r>jar<s n="vblex"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
 
@@ -14896,10 +14903,13 @@
   <e>       <p><l>jat</l>       <r>jar<s n="vblex"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
 
   <e>       <p><l>ja</l>        <r>jar<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>gen</l>        <r>jar<s n="vblex"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e v="cat"><p><l>gi</l>       <r>jar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e v="cat"><p><l>gin</l>      <r>jar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="pl"/></r></p></e>
 
   <e v="val"><p><l>ge</l>       <r>jar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e v="val"><p><l>gen</l>       <r>jar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="pl"/></r></p></e>
 
 </pardef>
 <pardef n="fo/ndre__vblex">
@@ -38572,6 +38582,7 @@
 <e lm="aparença">        <i>aparen</i><par n="adre/ça__n"/></e>
 <e lm="apariat">         <i>apariat</i><par n="abric__n"/></e>
 <e lm="aparició">        <i>aparici</i><par n="acci/ó__n"/></e>
+<e lm="apart">      	 <i>apart</i><par n="abric__n"/></e>
 <e lm="apartament">      <i>apartament</i><par n="abric__n"/></e>
 <e lm="apartat">         <i>apartat</i><par n="abric__n"/></e>
 <e lm="apartheid" a="prompsit2uoc"><i>apartheid</i><par n="abric__n"/></e>
@@ -45405,7 +45416,7 @@
 <e lm="grup" a="prompsit"><i>grup</i><par n="abric__n"/></e>
 <e lm="gruta">           <p><l>grut</l>      <r>grut</r></p><par n="abell/a__n"/></e>
 <e lm="gràcia">          <i>gràci</i><par n="abell/a__n"/></e>
-<e lm="gràfic">          <i>gràfic</i><par n="senyor__n"/></e>
+<e lm="gràfic">          <i>gràfi</i><par n="asiàti/c__n"/></e>
 <e lm="grànul" a="prompsit2uoc"><i>grànul</i><par n="abric__n"/></e>
 <e lm="grèvol">          <i>grèvol</i><par n="abric__n"/></e>
 <e lm="gual">            <i>gual</i><par n="abric__n"/></e>
@@ -47417,7 +47428,7 @@
 <e lm="medalló">         <i>medall</i><par n="aband/ó__n"/></e>
 <e lm="medallista" a="prompsit2adn"><i>medallist</i><par n="accionist/a__n"/></e>
 <e lm="medi" a=" alseoane@gmail.com"><i>medi</i><par n="abric__n"/></e>
-<e lm="medi ambient" a="gema"><i>medi<b/>ambient</i><par n="abric__n"/></e>
+<e lm="medi ambient">    <i>medi<b/>ambient</i><par n="atletisme__n"/></e>
 <e lm="mediació">        <i>mediaci</i><par n="acci/ó__n"/></e>
 <e lm="mediador">        <i>mediador</i><par n="senyor__n"/></e>
 <e lm="mediana" a="mireiafarrus"><i>median</i><par n="abell/a__n"/></e>
@@ -51268,6 +51279,7 @@
 <e lm="roig">            <i>ro</i><par n="pèl-ro/ig__n"/></e>
 <e lm="roba">            <i>rob</i><par n="abell/a__n"/></e>
 <e lm="roba de cambra">  <i>rob</i><par n="abell/a__n"/><p><l><b/>de<b/>cambra</l><r><g><b/>de<b/>cambra</g></r></p></e>
+<e lm="roba de llit">  <i>rob</i><par n="abell/a__n"/><p><l><b/>de<b/>llit</l><r><g><b/>de<b/>llit</g></r></p></e>
 <e lm="robí">            <i>rob</i><par n="boc/í__n"/></e>
 <e lm="robatori">        <i>robatori</i><par n="abric__n"/></e>
 <e lm="robot">           <i>robot</i><par n="abric__n"/></e>
@@ -63864,7 +63876,7 @@
 <e lm="vernissar" v="cat"><p><l>verniss</l>  <r>verniss</r></p><par n="abander/ar__vblex"/></e>
 <e lm="versar">          <i>vers</i><par n="abander/ar__vblex"/></e>
 <e lm="vertebrar" a="prompsit2adn"><i>vertebr</i><par n="abander/ar__vblex"/></e>
-<e lm="vesprejar">       <i>vespre</i><par n="fosque/jar__vblex"/></e>
+<e lm="vesprejar">       <i>vespre</i><par n="vespre/jar__vblex"/></e>
 <e lm="vessar">          <i>vess</i><par n="abander/ar__vblex"/></e>
 <e lm="vestir">          <i>vest</i><par n="abarat/ir__vblex"/></e>
 <e lm="vetar">           <i>vet</i><par n="abander/ar__vblex"/></e>
