@@ -23124,6 +23124,8 @@
 <e lm="Alpont">          <i>Alpont</i><par n="Afganistan__np"/></e>
 <e lm="Alps" a="prompsit"><i>Alps</i><par n="Afganistan__np"/></e>
 <e lm="Alsàcia" a="prompsit"><i>Alsàcia</i><par n="Afganistan__np"/></e>
+<e lm="Franc Comtat">    <i>Franc<b/>Comtat</i><par n="Afganistan__np"/></e>
+<e lm="Borgonya">        <i>Borgonya</i><par n="Afganistan__np"/></e>
 <e lm="Alt Camp">        <i>Alt<b/>Camp</i><par n="Afganistan__np"/></e>
 <e lm="Alt Empordà">     <i>Alt<b/>Empordà</i><par n="Afganistan__np"/></e>
 <e lm="Alt Maestrat">    <i>Alt<b/>Maestrat</i><par n="Afganistan__np"/></e>
@@ -30293,6 +30295,7 @@
 <e lm="Vicenç" a="prompsit2adn"><i>Vicenç</i><par n="Abad__np"/></e>
 <e lm="Vico">            <i>Vico</i><par n="Abad__np"/></e>
 <e lm="Victor" a="gema"> <i>Victor</i><par n="Abad__np"/></e>
+<e lm="Victor Hugo"> <i>Victor<b/>Hugo</i><par n="Abad__np"/></e>
 <e lm="Victoria" a="prompsit"><i>Victoria</i><par n="Abad__np"/></e>
 <e lm="Victoriano">      <i>Victoriano</i><par n="Abad__np"/></e>
 <e lm="Victòria">        <i>Victòria</i><par n="Abad__np"/></e>
@@ -31008,11 +31011,12 @@
 <e lm="tv3" a="prompsit"><i>tv3</i><par n="ABC__np"/></e>
 <e lm="via Laietana">    <i>via<b/>Laietana</i><par n="Afganistan__np"/></e>
 <e lm="yihad"><i>yihad</i><par n="accessibilitat__n"/></e>
-<e lm="Maréchal">           <i>Maréchal</i><par n="Abad__np"/></e>
-<e lm="Le Pen">           <i>Le<b/>Pen</i><par n="Abad__np"/></e>
-<e lm="Mélenchon">           <i>Mélenchon</i><par n="Abad__np"/></e>
-<e lm="Macron">           <i>Macron</i><par n="Abad__np"/></e>
+<e lm="Maréchal">       <i>Maréchal</i><par n="Abad__np"/></e>
+<e lm="Le Pen">          <i>Le<b/>Pen</i><par n="Abad__np"/></e>
+<e lm="Mélenchon">       <i>Mélenchon</i><par n="Abad__np"/></e>
+<e lm="Macron">          <i>Macron</i><par n="Abad__np"/></e>
 <e lm="Hamon">           <i>Hamon</i><par n="Abad__np"/></e>
+<e lm="Moulin">          <i>Moulin</i><par n="Abad__np"/></e>
 <e lm="Àfrica">          <i>Àfrica</i><par n="Afganistan__np"/></e>
 <e lm="Àger">            <i>Àger</i><par n="Afganistan__np"/></e>
 <e lm="Àlaba">           <i>Àlaba</i><par n="Afganistan__np"/></e>
@@ -48874,7 +48878,7 @@
 <e lm="pacient">         <i>pacient</i><par n="acompanyant__n"/></e>
 <e lm="pacificació" a="prompsit2adn"><i>pacificaci</i><par n="acci/ó__n"/></e>
 <e lm="pacifisme">       <i>pacifisme</i><par n="abric__n"/></e>
-<e lm="pacifista">       <i>pacifist</i><par n="accionist/a__n"/></e>
+<e lm="pacifista">      <i>pacifist</i><par n="accionist/a__n"/></e>
 <e lm="paciència">       <i>paciènci</i><par n="abell/a__n"/></e>
 <e lm="pacte">           <i>pacte</i><par n="abric__n"/></e>
 <e lm="padrí">           <i>padr</i><par n="boc/í__n"/></e>
@@ -62875,6 +62879,7 @@
 <e lm="parpellejar">     <i>parpelle</i><par n="agreu/jar__vblex"/></e>
 <e lm="partir">          <i>part</i><par n="abarat/ir__vblex"/></e>
 <e lm="participar">      <i>particip</i><par n="abander/ar__vblex"/></e>
+<e lm="participar en"><i>particip</i><par n="abander/ar__vblex"/><p><l><b/>en</l><r><g><b/>en</g></r></p></e>
 <e lm="partionar" a="prompsit"><i>partion</i><par n="abander/ar__vblex"/></e>
 <e lm="passar">          <i>pass</i><par n="abander/ar__vblex"/></e>
 <e lm="passar a degolla"><i>pass</i><par n="abander/ar__vblex"/><p><l><b/>a<b/>degolla</l><r><g><b/>a<b/>degolla</g></r></p></e>
