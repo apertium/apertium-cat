@@ -1356,6 +1356,16 @@
   <e>       <p><l>níssim</l>    <r><s n="adj"/><s n="sup"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
+<pardef n="cors__adj">
+  <e>       <p><l>es</l>        <r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>a</l>         <r><s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+
+  <e>       <p><l>os</l>        <r><s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l></l>          <r><s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+
+</pardef>
 <pardef n="ros__adj">
   <e>       <p><l>ses</l>       <r><s n="adj"/><s n="f"/><s n="pl"/></r></p></e>
 
@@ -1993,6 +2003,16 @@
   <e>       <p><l>inus</l>      <r>inu<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>inu</l>       <r>inu<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
+
+</pardef>
+<pardef n="eg/ipci__n">
+  <e>       <p><l>ípcies</l>    <r>ipci<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>ípcia</l>     <r>ipci<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+
+  <e>       <p><l>ipcis</l>     <r>ipci<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+
+  <e>       <p><l>ipci</l>      <r>ipci<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 
 </pardef>
 <pardef n="eg/ipci__adj">
@@ -23123,6 +23143,8 @@
 <e lm="Alping Running Meeting" a="prompsit"><i>Alping<b/>Running<b/>Meeting</i><par n="ABC__np"/></e>
 <e lm="Alpont">          <i>Alpont</i><par n="Afganistan__np"/></e>
 <e lm="Alps" a="prompsit"><i>Alps</i><par n="Afganistan__np"/></e>
+<e lm="Alps Marítims"><i>Alps<b/>Marítims</i><par n="Afganistan__np"/></e>
+<e lm="Alps de l'Alta Provença"><i>Alps<b/>de<b/>l'Alta<b/>Provença</i><par n="Afganistan__np"/></e>
 <e lm="Alsàcia" a="prompsit"><i>Alsàcia</i><par n="Afganistan__np"/></e>
 <e lm="Franc Comtat">    <i>Franc<b/>Comtat</i><par n="Afganistan__np"/></e>
 <e lm="Borgonya">        <i>Borgonya</i><par n="Afganistan__np"/></e>
@@ -23359,6 +23381,16 @@
 <e lm="Arcadio">         <i>Arcadio</i><par n="Abad__np"/></e>
 <e lm="Arcavell">        <i>Arcavell</i><par n="Afganistan__np"/></e>
 <e lm="Arce">            <i>Arce</i><par n="Abad__np"/></e>
+<e lm="Roine">         <i>Roine</i><par n="Afganistan__np"/></e>
+<e lm="Saona">         <i>Saona</i><par n="Afganistan__np"/></e>
+<e lm="Alta Saona">     <i>Alta<b/>Saona</i><par n="Afganistan__np"/></e>
+<e lm="Sena">         <i>Sena</i><par n="Afganistan__np"/></e>
+<e lm="Sena Marítim">         <i>Sena<b/>Marítim</i><par n="Afganistan__np"/></e>
+<e lm="Loira">         <i>Loira</i><par n="Afganistan__np"/></e>
+<e lm="Alt Loira">         <i>Alt<b/>Loira</i><par n="Afganistan__np"/></e>
+<e lm="Rin">         <i>Rin</i><par n="Afganistan__np"/></e>
+<e lm="Baix Rin">         <i>Baix<b/>Rin</i><par n="Afganistan__np"/></e>
+<e lm="Alt Rin">         <i>Alt<b/>Rin</i><par n="Afganistan__np"/></e>
 <e lm="Archena">         <i>Archena</i><par n="Afganistan__np"/></e>
 <e lm="Arcàdia" a="prompsit"><i>Arcàdia</i><par n="Afganistan__np"/></e>
 <e lm="Ardecha" a="prompsit"><i>Ardecha</i><par n="Afganistan__np"/></e>
@@ -25037,6 +25069,7 @@
 <e lm="Còrdova">         <i>Còrdova</i><par n="Afganistan__np"/></e>
 <e lm="Còria">           <i>Còria</i><par n="Afganistan__np"/></e>
 <e lm="Còrsega">         <i>Còrsega</i><par n="Afganistan__np"/></e>
+<e lm="Alta Còrsega">    <i>Alta<b/>Còrsega</i><par n="Afganistan__np"/></e>
 <e lm="Cúper" a="prompsit2adn"><i>Cúper</i><par n="Abad__np"/></e>
 <e lm="DAX" a="prompsit"><i>DAX</i><par n="ABC__np"/></e>
 <e lm="DHL" a="prompsit2cdl"><i>DHL</i><par n="ABC__np"/></e>
@@ -25251,6 +25284,8 @@
 <e lm="Egibar" a="prompsit2adn"><i>Egibar</i><par n="Afganistan__np"/></e>
 <e r="RL" lm="Egibar">   <i>Egibar</i><par n="Abad__np"/></e>
 <e lm="Egipte">          <i>Egipte</i><par n="Afganistan__np"/></e>
+<e lm="Alt Egipte">          <i>Alt<b/>Egipte</i><par n="Afganistan__np"/></e>
+<e lm="Baix Egipte">          <i>Baix<b/>Egipte</i><par n="Afganistan__np"/></e>
 <e lm="Egunkaria">       <i>Egunkaria</i><par n="ABC__np"/></e>
 <e lm="Eguren">          <i>Eguren</i><par n="Abad__np"/></e>
 <e lm="Ehud" a="prompsit2adn"><i>Ehud</i><par n="Abad__np"/></e>
@@ -25893,6 +25928,7 @@
 <e lm="Garibaldi">       <i>Garibaldi</i><par n="Abad__np"/></e>
 <e lm="Garnica">         <i>Garnica</i><par n="Abad__np"/></e>
 <e lm="Garona" a="prompsit"><i>Garona</i><par n="Afganistan__np"/></e>
+<e lm="Alta Garona"><i>Alta<b/>Garona</i><par n="Afganistan__np"/></e>
 <e lm="Garraf">          <i>Garraf</i><par n="Afganistan__np"/></e>
 <e lm="Garrido">         <i>Garrido</i><par n="ABC__np"/></e>
 <e lm="Garriga" a="prompsit"><i>Garriga</i><par n="Afganistan__np"/></e>
@@ -28476,6 +28512,9 @@
 <e lm="Pirena" a="prompsit"><i>Pirena</i><par n="ABC__np"/></e>
 <e lm="Pires" a="prompsit2adn"><i>Pires</i><par n="Abad__np"/></e>
 <e lm="Pirineus">        <i>Pirineus</i><par n="Afganistan__np"/></e>
+<e lm="Alts Pirineus">        <i>Alts<b/>Pirineus</i><par n="Afganistan__np"/></e>
+<e lm="Pirineus Orientals">        <i>Pirineus<b/>Orientals</i><par n="Afganistan__np"/></e>
+<e lm="Pirineus Atlàntics">        <i>Pirineus<b/>Atlàntics</i><par n="Afganistan__np"/></e>
 <e lm="Pisa" a="prompsit2uoc"><i>Pisa</i><par n="Afganistan__np"/></e>
 <e lm="Pisco" a="prompsit2adn"><i>Pisco</i><par n="Afganistan__np"/></e>
 <e lm="Pitarch">         <i>Pitarch</i><par n="Abad__np"/></e>
@@ -32890,6 +32929,7 @@
 <e lm="efluent">         <i>efluent</i><par n="abdominal__adj"/></e>
 <e lm="efímer">          <i>efímer</i><par n="absolut__adj"/></e>
 <e lm="egipci">          <i>eg</i><par n="eg/ipci__adj"/></e>
+<e lm="egipci">          <i>eg</i><par n="eg/ipci__n"/></e>
 <e lm="egiptològic" a="prompsit"><i>egiptològi</i><par n="acadèmi/c__adj"/></e>
 <e lm="egocèntric" a="prompsit2uoc"><i>egocèntri</i><par n="acadèmi/c__adj"/></e>
 <e lm="egoista">         <i>egoist</i><par n="agrícol/a__adj"/></e>
@@ -35229,6 +35269,7 @@
 <e lm="normalitzat">     <i>normalitza</i><par n="afortuna/t__adj"/></e>
 <e lm="normalitzador">   <i>normalitzador</i><par n="absolut__adj"/></e>
 <e lm="normand">         <i>normand</i><par n="absolut__adj"/></e>
+<e lm="normand">         <i>normand</i><par n="senyor__n"/></e>
 <e lm="normatiu">        <i>normati</i><par n="abusi/u__adj"/></e>
 <e lm="noruec">          <i>norue</i><par n="ce/c__adj"/></e>
 <e lm="nostre">          <i>nostr</i><par n="nostr/e__adj"/></e>
@@ -39770,6 +39811,7 @@
 <e r="LR" lm="bresquilla"><i>bresquill</i><par n="abell/a__n"/></e>
 <e lm="bressol">         <i>bressol</i><par n="abric__n"/></e>
 <e lm="bretó">           <i>bret</i><par n="amfitri/ó__n"/></e>
+<e lm="bretó">           <i>bret</i><par n="amfitri/ó__adj"/></e>
 <e lm="bretxa">          <i>bretx</i><par n="abell/a__n"/></e>
 <e lm="brevetat">        <i>brevetat</i><par n="accessibilitat__n"/></e>
 <e lm="bri" a="softcatala"><i>bri</i><par n="pa__n"/></e>
@@ -41571,6 +41613,7 @@
 <e lm="corrosió" a="prompsit2uoc"><i>corrosi</i><par n="acci/ó__n"/></e>
 <e lm="corrupció">       <i>corrupci</i><par n="acci/ó__n"/></e>
 <e lm="cors">            <i>cors</i><par n="as__n"/></e>
+<e lm="cors">            <i>cors</i><par n="cors__adj"/></e>
 <e lm="cort">            <i>cort</i><par n="accessibilitat__n"/></e>
 <e lm="cortesà" a="eleka"><i>cortes</i><par n="americ/à__n"/></e>
 <e lm="cortesia">        <i>cortesi</i><par n="abell/a__n"/></e>
