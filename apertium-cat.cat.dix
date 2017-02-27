@@ -23395,6 +23395,7 @@
 <e lm="Arcàdia" a="prompsit"><i>Arcàdia</i><par n="Afganistan__np"/></e>
 <e lm="Ardecha" a="prompsit"><i>Ardecha</i><par n="Afganistan__np"/></e>
 <e lm="Ardenes" a="prompsit"><i>Ardenes</i><par n="Afganistan__np"/></e>
+<e lm="Xampanya">        <i>Xampanya</i><par n="Afganistan__np"/></e>
 <e lm="Ardoz" a="prompsit2adn"><i>Ardoz</i><par n="Abad__np"/></e>
 <e lm="Areces" a="prompsit2adn"><i>Areces</i><par n="Abad__np"/></e>
 <e lm="Arenas">          <i>Arenas</i><par n="Abad__np"/></e>
@@ -28868,6 +28869,8 @@
 <e lm="Remedios">        <i>Remedios</i><par n="Abad__np"/></e>
 <e lm="Remei">           <i>Remei</i><par n="Abad__np"/></e>
 <e lm="Renart">          <i>Renart</i><par n="Abad__np"/></e>
+<e lm="Renat">           <i>Renat</i><par n="Abad__np"/></e>
+<e lm="René">            <i>René</i><par n="Abad__np"/></e>
 <e lm="Renato" a="prompsit2adn"><i>Renato</i><par n="Abad__np"/></e>
 <e lm="Renau">           <i>Renau</i><par n="Afganistan__np"/></e>
 <e lm="Renault" a="prompsit2adn"><i>Renault</i><par n="ABC__np"/></e>
@@ -31948,6 +31951,7 @@
 <e lm="canós">           <i>can</i><par n="aliment/ós__adj"/></e>
 <e lm="caní" a="prompsit"><i>can</i><par n="alacant/í__adj"/></e>
 <e lm="canadenc">        <i>canaden</i><par n="acadèmi/c__adj"/></e>
+<e lm="canadenc">       <i>canaden</i><par n="bas/c__n"/></e>
 <e lm="canalla">         <i>canall</i><par n="agrícol/a__adj"/></e>
 <e lm="cancelleresc">    <i>cancelleres</i><par n="acadèmi/c__adj"/></e>
 <e lm="cancel·lable" a="prompsit2ua"><i>cancel·lable</i><par n="abdominal__adj"/></e>
@@ -33921,6 +33925,7 @@
 <e lm="hondureny" a="prompsit2adn"><i>hondureny</i><par n="absolut__adj"/></e>
 <e lm="honest" a="prompsit2adn"><i>honest</i><par n="absolut__adj"/></e>
 <e lm="hongarès">        <i>hongar</i><par n="afgan/ès__adj"/></e>
+<e lm="hongarès">        <i>hongar</i><par n="angl/ès__n"/></e>
 <e lm="honorable" a="prompsit"><i>honorable</i><par n="abdominal__adj"/></e>
 <e lm="honoris causa">   <i>honoris<b/>causa</i><par n="multimèdia__adj"/></e>
 <e lm="honoris causa" a="prompsit"><i>honoris<b/>causa</i><par n="multimèdia__adj"/></e>
@@ -47665,6 +47670,9 @@
 <e lm="meteorologia" a="prompsit2adn"><i>meteorologi</i><par n="abell/a__n"/></e>
 <e lm="meteoròleg" a="prompsit2adn"><i>meteoròl</i><par n="biòl/eg__n"/></e>
 <e lm="metge">           <i>metge</i><par n="alcalde__n"/></e>
+<e lm="metge de guàrdia"><i>metge</i><par n="alcalde__n"/><p><l><b/>de<b/>guàrdia</l><r><g><b/>de<b/>guàrdia</g></r></p></e>
+<e lm="metge de família"><i>metge</i><par n="alcalde__n"/><p><l><b/>de<b/>família</l><r><g><b/>de<b/>família</g></r></p></e>
+<e lm="metge de capçalera"><i>metge</i><par n="alcalde__n"/><p><l><b/>de<b/>capçalera</l><r><g><b/>de<b/>capçalera</g></r></p></e>
 <e lm="meticulositat" a="prompsit2ua"><i>meticulositat</i><par n="accessibilitat__n"/></e>
 <e lm="metil" a="eleka"> <i>metil</i><par n="abric__n"/></e>
 <e lm="metilè" a="eleka"><i>metil</i><par n="acetil/è__n"/></e>
