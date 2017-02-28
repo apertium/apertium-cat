@@ -28457,6 +28457,7 @@
 <e lm="Peter" a="prompsit2adn"><i>Peter</i><par n="Abad__np"/></e>
 <e lm="Petersburg">      <i>Petersburg</i><par n="Afganistan__np"/></e>
 <e lm="Petit Príncep">   <i>Petit<b/>Príncep</i><par n="Abad__np"/></e>
+<e lm="el Petit Príncep"><i>el<b/>Petit<b/>Príncep</i><par n="Abad__np"/></e>
 <e lm="Petra">           <i>Petra</i><par n="Afganistan__np"/></e>
 <e lm="Petraeus" a="prompsit2adn"><i>Petraeus</i><par n="ABC__np"/></e>
 <e lm="Petrer">          <i>Petrer</i><par n="Afganistan__np"/></e>
@@ -40628,7 +40629,6 @@
 <e lm="centelleig">      <i>centelleig</i><par n="abric__n"/></e>
 <e lm="centena" a="prompsit2adn"><i>centen</i><par n="abell/a__n"/></e>
 <e lm="centenar">        <i>centenar</i><par n="zero__num"/></e>
-<e lm="centenars">       <i>centenars</i><par n="afores__n"/></e>
 <e lm="centenari">       <i>centenari</i><par n="abric__n"/></e>
 <e lm="centilitre" a="prompsit2uoc"><i>centilitre</i><par n="abric__n"/></e>
 <e lm="centpeus">        <i>centpeus</i><par n="campus__n"/></e>
@@ -49996,6 +49996,7 @@
 <e r="LR" lm="pol·lució"><p><l>poŀluci</l>   <r>pol·luci</r></p><par n="acci/ó__n"/></e>
 <e r="LR" lm="pol·lucita"><p><l>poŀlucit</l> <r>pol·lucit</r></p><par n="abell/a__n"/></e>
 <e lm="príncep">         <i>pr</i><par n="pr/íncep__n"/></e>
+<e lm="petit príncep">   <p><l>petit<b/>príncep</l><r>petit<b/>príncep<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="practicant">      <i>practicant</i><par n="acompanyant__n"/></e>
 <e lm="prada" a="prompsit2adn"><i>prad</i><par n="abell/a__n"/></e>
 <e lm="pragmatisme" a="prompsit2adn"><i>pragmatisme</i><par n="abric__n"/></e>
@@ -63827,6 +63828,7 @@
 <e lm="trair">           <i>tra</i><par n="addu/ir__vblex"/></e>
 <e lm="traçar">          <i>tra</i><par n="abalan/çar__vblex"/></e>
 <e lm="tractar">         <i>tract</i><par n="abander/ar__vblex"/></e>
+<e lm="tractar de">      <i>tract</i><par n="abander/ar__vblex"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
 <e lm="traduir">         <i>tradu</i><par n="addu/ir__vblex"/></e>
 <e lm="traficar">        <i>trafi</i><par n="abo/car__vblex"/></e>
 <e lm="tramar">          <i>tram</i><par n="abander/ar__vblex"/></e>
