@@ -21,12 +21,9 @@ LIST Copula = (vbser);
 LIST Pron = (prn) ;
 LIST Prep = (pr) ;
 LIST CnjCoo = (cnjcoo) ;
-# quantes vegades s'executa cada regla?
-# había sido inventado por los griegos mientras que los españoles aseguraban
-# elimina españoles adj, però no griegos adj; si se suprimeix la segona part de la frase, sí se suprimeix griegos adj
 LIST CnjSub = (cnjsub) ;
 LIST CnjAdv = (cnjadv) ;
-LIST Rel = (rel) ;		# PROBLEMA: està malparit en eo-es i eo-ca: prn.rel i rel.adv (es-ca: rel.adv, rel.an, rel.nn, rel.aa)
+LIST Rel = (rel) ;
 LIST Interj = (ij) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
@@ -45,6 +42,8 @@ LIST PP = (pp) ;
 LIST PRS = (prs) ;
 LIST Ger = (ger) ;
 
+LIST P1 = (p1) ;
+LIST P2 = (p2) ;
 LIST P3 = (p3) ;
 
 LIST Def = (def) ;
@@ -93,6 +92,15 @@ SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR 
 SET Barrera_Inicial_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Verb OR Rel ;	# Verb és perillós per la ambigüitat, però en general, prolífic
 SET Barrera_Inicial_Estrict_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Rel ;
 SET Limite_Barrera_Inicial_SN = ("ser") OR ("Ser") OR ("estar") OR ("Estar") OR ("semblar") OR ("Semblar") OR ("haver") OR ("Haver") ;
+
+LIST Anar = "anar" ;
+LIST Vanar = "vanar" ;
+LIST Voler = "voler" ;
+LIST Volar = "volar" ;
+LIST Poder = "poder" ;
+LIST Podar = "podar" ;
+LIST Creure = "creure" ;
+LIST Creuar = "creuar" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -257,10 +265,23 @@ SUBSTITUTE:si_ja_2 ("sí") ("sí_ja") TARGET ("sí") IF (0 ("sí") OR ("Sí")) (
 	# sí comentó
 	# en sí fue
 
-# lenguas (eo)
+# "van" en balear pot ser vanar<vblex><pri><p1><sg>$ (el verb, però, és vanar-se)
+# desfem l'ambigüitat amb anar<vblex><pri><p3><pl>$
+SELECT:van1 Anar IF (0 ("vanar") OR ("anar")) (O P1) (NOT -1 ("em")) ;
+	# si no va precedit per "em" triem "anar"
+SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (O P1) (-1 ("em")) ;
+	# si va precedit per "em" triem "vanar"
 
-SELECT:hablar A IF (-1 ("hablar") OR ("Hablar")) (0 A LINK 0 N) ;
-SELECT:traducir A IF (-2 ("traducir") OR ("Traducir")) (0 A LINK 0 N) ;
+# voler i volar (p.ex. volen)
+SELECT:voler1 Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
+SELECT:voler2 Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
+SELECT:voler3 Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
+
+# poder i podar (p.ex. poden)
+SELECT:poder1 Poder IF (0 ("poder") OR ("podar")) (1 Inf) ;
+
+# creure i creuar (p.ex. creuen)
+SELECT:creure1 Creure IF (0 ("creure") OR ("creuar")) (1 Inf) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
