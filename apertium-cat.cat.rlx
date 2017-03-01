@@ -267,9 +267,9 @@ SUBSTITUTE:si_ja_2 ("sí") ("sí_ja") TARGET ("sí") IF (0 ("sí") OR ("Sí")) (
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg>$ (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>$
-SELECT:van1 Anar IF (0 ("vanar") OR ("anar")) (O P1) (NOT -1 ("em")) ;
+SELECT:van1 Anar IF (0 ("vanar") OR ("anar")) (0 P1) (NOT -1 ("em")) ;
 	# si no va precedit per "em" triem "anar"
-SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (O P1) (-1 ("em")) ;
+SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
 	# si va precedit per "em" triem "vanar"
 
 # voler i volar (p.ex. volen)
@@ -560,7 +560,7 @@ REMOVE:r_na_8_fp_fp A OR PP IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 
 
 # DET NOM, DET NOM
 
-	REMOVE:r_na_9_ms_ms A OR PP IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM) (2 Det + $$MascSg2) (3C N + $$MascSg2) ;
+REMOVE:r_na_9_ms_ms A OR PP IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM) (2 Det + $$MascSg2) (3C N + $$MascSg2) ;
 REMOVE:r_na_9_ms_fs A OR PP IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM) (2 Det + $$FemSg2) (3C N + $$FemSg2) ;
 REMOVE:r_na_9_ms_mp A OR PP IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM) (2 Det + $$MascPl2) (3C N + $$MascPl2) ;
 REMOVE:r_na_9_ms_fp A OR PP IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM) (2 Det + $$FemPl2) (3C N + $$FemPl2) ;
