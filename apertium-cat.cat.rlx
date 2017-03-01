@@ -276,12 +276,22 @@ SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
 SELECT:voler1 Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
 SELECT:voler2 Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
 SELECT:voler3 Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
+SELECT:voler4 Voler IF (0 ("voler") OR ("volar")) (1 ("que")) ;
+SELECT:voler5 Voler IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("que")) ;
+	# No volen pas que, volen sovint que
 
 # poder i podar (p.ex. poden)
 SELECT:poder1 Poder IF (0 ("poder") OR ("podar")) (1 Inf) ;
 
 # creure i creuar (p.ex. creuen)
 SELECT:creure1 Creure IF (0 ("creure") OR ("creuar")) (1 Inf) ;
+SELECT:creure2 Creure IF (0 ("creure") OR ("creuar")) (1 ("que")) ;
+SELECT:creure3 Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("que")) ;
+	# No creuen pas que, creuen sovint que
+SELECT:creure4 Creuar IF (0 ("creure") OR ("creuar")) (1 ("en")) (2 N) (NOT 2 ("déu"));
+SELECT:creure5 Creure IF (0 ("creure") OR ("creuar")) (1 ("en")) ;
+SELECT:creure4b Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) (3 N) (NOT 3 ("déu"));
+SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
