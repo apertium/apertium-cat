@@ -4976,6 +4976,9 @@
   <e r="LR" v="val"><p><l>haguera</l><r>haver<s n="vbhaver"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
 
   <e>       <p><l>hagut</l>     <r>haver<s n="vbhaver"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+  <e>       <p><l>haguda</l>    <r>haver<s n="vbhaver"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+  <e>       <p><l>haguts</l>    <r>haver<s n="vbhaver"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+  <e>       <p><l>hagudes</l>   <r>haver<s n="vbhaver"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
 
   <e>       <p><l>hem</l>       <r>haver<s n="vbhaver"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
 
@@ -21157,10 +21160,12 @@
   <e r="RL"><p><l>gués</l>      <r>ure<s n="vblex"/><s n="fts"/><s n="p3"/><s n="sg"/></r></p></e>
 
   <e>       <p><l>vent</l>      <r>ure<s n="vblex"/><s n="ger"/></r></p></e>
+  <e>       <p><l>vent</l>      <r>ure<s n="vblex"/><s n="ger"/><j/></r></p><par n="S__anant"/></e>
 
   <e r="LR"><p><l>gué</l>       <r>ure<s n="vblex"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
 
   <e>       <p><l>ure</l>       <r>ure<s n="vblex"/><s n="inf"/></r></p></e>
+  <e>       <p><l>ure</l>       <r>ure<s n="vblex"/><s n="inf"/><j/></r></p><par n="S__vagi"/></e>
 
   <e>       <p><l>via</l>       <r>ure<s n="vblex"/><s n="pii"/><s n="p3"/><s n="sg"/></r></p></e>
 
