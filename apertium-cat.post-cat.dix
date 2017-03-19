@@ -2998,6 +2998,24 @@
           <r>mitjan<b/></r>
         </p>
       </e>
+      <e>
+		<p>
+			<l><a/>de<b/>a<b/>dalt</l>
+			<r>de<b/>dalt</r>
+		</p>
+      </e>
+      <e>
+		<p>
+			<l><a/>de<b/>a<b/>baix</l>
+			<r>de<b/>baix</r>
+		</p>
+      </e>
+      <e>
+		<p>
+			<l><a/>de<b/>a<b/>prop</l>
+			<r>de<b/>prop</r>
+		</p>
+      </e>
   </section>
 
 </dictionary>
