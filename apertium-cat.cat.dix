@@ -47504,7 +47504,7 @@
 <e lm="medalló">         <i>medall</i><par n="aband/ó__n"/></e>
 <e lm="medallista" a="prompsit2adn"><i>medallist</i><par n="accionist/a__n"/></e>
 <e lm="medi" a=" alseoane@gmail.com"><i>medi</i><par n="abric__n"/></e>
-<e lm="medi ambient">    <i>medi<b/>ambient</i><par n="atletisme__n"/></e>
+<e lm="medi ambient">    <i>medi<b/>ambient</i><par n="abric__n"/></e>
 <e lm="mediació">        <i>mediaci</i><par n="acci/ó__n"/></e>
 <e lm="mediador">        <i>mediador</i><par n="senyor__n"/></e>
 <e lm="mediana" a="mireiafarrus"><i>median</i><par n="abell/a__n"/></e>
@@ -50008,6 +50008,7 @@
 <e r="LR" lm="pol·lucita"><p><l>poŀlucit</l> <r>pol·lucit</r></p><par n="abell/a__n"/></e>
 <e lm="príncep">         <i>pr</i><par n="pr/íncep__n"/></e>
 <e lm="petit príncep">   <p><l>petit<b/>príncep</l><r>petit<b/>príncep<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="petit príncep">   <p><l>petits<b/>prínceps</l><r>petit<b/>príncep<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="practicant">      <i>practicant</i><par n="acompanyant__n"/></e>
 <e lm="prada" a="prompsit2adn"><i>prad</i><par n="abell/a__n"/></e>
 <e lm="pragmatisme" a="prompsit2adn"><i>pragmatisme</i><par n="abric__n"/></e>
