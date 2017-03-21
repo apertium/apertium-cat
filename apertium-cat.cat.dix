@@ -23239,6 +23239,7 @@
 <e lm="Ander" a="prompsit2adn"><i>Ander</i><par n="Abad__np"/></e>
 <e lm="Anderson" a="prompsit"><i>Anderson</i><par n="Abad__np"/></e>
 <e lm="Andes">           <i>Andes</i><par n="Afganistan__np"/></e>
+<e lm="els Andes">       <i>els<b/>Andes</i><par n="Afganistan__np"/></e>
 <e lm="Andic" a="prompsit"><i>Andic</i><par n="Abad__np"/></e>
 <e lm="Andikoetxea">     <i>Andikoetxea</i><par n="Abad__np"/></e>
 <e lm="Andilla">         <i>Andilla</i><par n="Afganistan__np"/></e>
@@ -23405,6 +23406,7 @@
 <e lm="Arcàdia" a="prompsit"><i>Arcàdia</i><par n="Afganistan__np"/></e>
 <e lm="Ardecha" a="prompsit"><i>Ardecha</i><par n="Afganistan__np"/></e>
 <e lm="Ardenes" a="prompsit"><i>Ardenes</i><par n="Afganistan__np"/></e>
+<e lm="les Ardenes"><i>les<b/>Ardenes</i><par n="Afganistan__np"/></e>
 <e lm="Xampanya">        <i>Xampanya</i><par n="Afganistan__np"/></e>
 <e lm="Ardoz" a="prompsit2adn"><i>Ardoz</i><par n="Abad__np"/></e>
 <e lm="Areces" a="prompsit2adn"><i>Areces</i><par n="Abad__np"/></e>
@@ -25300,6 +25302,7 @@
 <e lm="Egunkaria">       <i>Egunkaria</i><par n="ABC__np"/></e>
 <e lm="Eguren">          <i>Eguren</i><par n="Abad__np"/></e>
 <e lm="Ehud" a="prompsit2adn"><i>Ehud</i><par n="Abad__np"/></e>
+<e lm="Eiffel">           <i>Eiffel</i><par n="Abad__np"/></e>
 <e lm="Einstein" a="prompsit"><i>Einstein</i><par n="Abad__np"/></e>
 <e lm="Eivissa">         <i>Eivissa</i><par n="Afganistan__np"/></e>
 <e lm="Eixample" a="prompsit"><i>Eixample</i><par n="Afganistan__np"/></e>
@@ -30520,6 +30523,8 @@
 <e lm="Volkswagen">      <i>Volkswagen</i><par n="ABC__np"/></e>
 <e lm="Voltaire">        <i>Voltaire</i><par n="Abad__np"/></e>
 <e lm="Vosges" a="prompsit"><i>Vosges</i><par n="Afganistan__np"/></e>
+<e lm="els Vosges"><i>els<b/>Vosges</i><par n="Afganistan__np"/></e>
+<e lm="Jura"><i>Jura</i><par n="Afganistan__np"/></e>
 <e lm="Voynet" a="gema"> <i>Voynet</i><par n="Abad__np"/></e>
 <e lm="Vueling" a="prompsit2adn"><i>Vueling</i><par n="ABC__np"/></e>
 <e lm="Vulcà">           <i>Vulcà</i><par n="Abad__np"/></e>
@@ -54135,6 +54140,7 @@
 
 <e lm="Danubi">          <i>Danubi</i><par n="Afganistan__np"/></e>
 <e lm="Volga">          <i>Volga</i><par n="Afganistan__np"/></e>
+<e lm="el Volga">          <i>el<b/>Volga</i><par n="Afganistan__np"/></e>
 <e lm="Amazones">          <i>Amazones</i><par n="Afganistan__np"/></e>
 <e lm="Limpopo">          <i>Limpopo</i><par n="Afganistan__np"/></e>
 <e lm="Hudson">          <i>Hudson</i><par n="Afganistan__np"/></e>
@@ -54147,8 +54153,34 @@
 <e lm="Surinam">          <i>Surinam</i><par n="Afganistan__np"/></e>
 <e lm="Congo">          <i>Congo</i><par n="Afganistan__np"/></e>
 <e lm="Marne">          <i>Marne</i><par n="Afganistan__np"/></e>
+<e lm="el Marne">          <i>el<b/>Marne</i><par n="Afganistan__np"/></e>
 <e lm="Alt Marne">          <i>Alt<b/>Marne</i><par n="Afganistan__np"/></e>
+<e lm="l'Alt Marne">          <i>l'Alt<b/>Marne</i><par n="Afganistan__np"/></e>
 <e lm="Danubi">          <i>Danubi</i><par n="Afganistan__np"/></e>
+
+<e lm="els Alps"><i>els<b/>Alps</i><par n="Afganistan__np"/></e>
+<e lm="els Alps Marítims"><i>els<b/>Alps<b/>Marítims</i><par n="Afganistan__np"/></e>
+<e lm="els Alps de l'Alta Provença"><i>els<b/>Alps<b/>de<b/>l'Alta<b/>Provença</i><par n="Afganistan__np"/></e>
+<e lm="els Alps Australians"><i>els<b/>Alps<b/>Australians</i><par n="Afganistan__np"/></e>
+<e lm="els Alps Escandinaus"><i>els<b/>Alps<b/>Escandinaus</i><par n="Afganistan__np"/></e>
+<e lm="els Alps austríacs"><i>els<b/>Alps<b/>austríacs</i><par n="Afganistan__np"/></e>
+<e lm="els Alps suïssos"><i>els<b/>Alps<b/>suïssos</i><par n="Afganistan__np"/></e>
+<e lm="els Alps de Savoia"><i>els<b/>Alps<b/>de<b/>Savoia</i><par n="Afganistan__np"/></e>
+<e lm="els Alps italians"><i>els<b/>Alps<b/>italians</i><par n="Afganistan__np"/></e>
+<e lm="els Alps eslovens"><i>els<b/>Alps<b/>eslovens</i><par n="Afganistan__np"/></e>
+<e lm="els Alts Pirineus"><i>els<b/>Alts<b/>Pirineus</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus Orientals"><i>els<b/>Pirineus<b/>Orientals</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus Atlàntics"><i>els<b/>Pirineus<b/>Atlàntics</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus francesos"><i>els<b/>Pirineus<b/>francesos</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus espanyols"><i>els<b/>Pirineus<b/>espanyols</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus aragonesos"><i>els<b/>Pirineus<b/>aragonesos</i><par n="Afganistan__np"/></e>
+<e lm="els Pirineus catalans"><i>els<b/>Pirineus<b/>catalans</i><par n="Afganistan__np"/></e>
+<e lm="el Sena"> <i>el<b/>Sena</i><par n="Afganistan__np"/></e>
+<e lm="el Sena Marítim"><i>el<b/>Sena<b/>Marítim</i><par n="Afganistan__np"/></e>
+<e lm="el Loira"><i>el<b/>Loira</i><par n="Afganistan__np"/></e>
+<e lm="el Loira Atlàntic"><i>el<b/>Loira<b/>Atlàntic</i><par n="Afganistan__np"/></e>
+<e lm="l'Alt Loira"><i>l'Alt<b/>Loira</i><par n="Afganistan__np"/></e>
+
 
     <!-- ******************************
           group det_symbol
