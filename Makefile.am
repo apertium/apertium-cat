@@ -2,8 +2,8 @@
 ## Makefile for apertium-cat
 ###############################################################################
 
-RELEASE=1.0
-VERSION=1.0.0
+RELEASE=2.0
+VERSION=2.0.0
 LANG1=cat
 BASENAME=apertium-$(LANG1)
 
