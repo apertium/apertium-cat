@@ -60009,6 +60009,7 @@
 <e lm="acostar">         <i>acost</i><par n="abander/ar__vblex"/></e>
 <e lm="acostumar">       <i>acostum</i><par n="abander/ar__vblex"/></e>
 <e lm="acovardir">       <i>acovard</i><par n="abarat/ir__vblex"/></e>
+<e lm="reverdir">        <i>reverd</i><par n="abarat/ir__vblex"/></e>
 <e lm="acréixer">        <p><l>acre</l>      <r>acré</r></p><par n="acre/ixer__vblex"/></e>
 <e lm="acreditar">       <i>acredit</i><par n="abander/ar__vblex"/></e>
 <e lm="acromatitzar">    <i>acromatitz</i><par n="abander/ar__vblex"/></e>
@@ -60548,6 +60549,7 @@
 <e lm="canviar">         <i>canvi</i><par n="acarici/ar__vblex"/><p><l><b/>el<b/>nom</l><r><g><b/>el<b/>nom</g></r></p></e>
 <e lm="capar">           <i>cap</i><par n="abander/ar__vblex"/></e>
 <e lm="capacitar">       <i>capacit</i><par n="abander/ar__vblex"/></e>
+<e lm="publicitar">      <i>publicit</i><par n="abander/ar__vblex"/></e>
 <e lm="capbussar">       <i>capbuss</i><par n="abander/ar__vblex"/></e>
 <e lm="capejar" a="prompsit2adn"><i>cape</i><par n="agreu/jar__vblex"/></e>
 <e r="LR" lm="capgirar"> <i>capgir</i><par n="abander/ar__vblex"/></e>
@@ -62843,6 +62845,7 @@
 <e lm="militar">         <i>milit</i><par n="abander/ar__vblex"/></e>
 <e lm="militaritzar" a="prompsit2adn"><i>militaritz</i><par n="abander/ar__vblex"/></e>
 <e lm="millorar">        <i>millor</i><par n="abander/ar__vblex"/></e>
+<e lm="minorar">         <i>minor</i><par n="abander/ar__vblex"/></e>
 <e lm="mil·limetrar">    <i>mil·limetr</i><par n="abander/ar__vblex"/></e>
 <e lm="mimetitzar">      <i>mimetitz</i><par n="abander/ar__vblex"/></e>
 <e lm="minar" a="prompsit2adn"><i>min</i><par n="abander/ar__vblex"/></e>
