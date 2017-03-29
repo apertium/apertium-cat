@@ -15,5 +15,6 @@
 /autogen.sh -text
 /cat.prob -text svneol=unset#unset
 /configure.ac -text
+/genvdix.py -text
 /modes.xml -text
 texts/miscellaneous.tagged.txt -text

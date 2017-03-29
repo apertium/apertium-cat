@@ -8,16 +8,19 @@ LANG1=cat
 BASENAME=apertium-$(LANG1)
 
 VAR1=#deixar en blanc
-VAR2=_valencia
+VAR2=_valencia_gva
+VAR3=_valencia_uni
 
 TARGETS_COMMON =			\
 	$(LANG1)$(VAR1).automorf.bin		\
 	$(LANG1)$(VAR1).automorf.att.gz	\
 	$(LANG1)$(VAR1).autogen.bin		\
 	$(LANG1)$(VAR2).autogen.bin		\
+	$(LANG1)$(VAR3).autogen.bin		\
 	$(LANG1)$(VAR1).autogen.att.gz		\
 	$(LANG1)$(VAR1).autopgen.bin		\
 	$(LANG1)$(VAR2).autopgen.bin		\
+	$(LANG1)$(VAR3).autopgen.bin		\
 	$(LANG1)$(VAR1).rlx.bin
 	
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
@@ -30,14 +33,31 @@ TARGETS_COMMON =			\
 $(LANG1)$(VAR1).automorf.bin: $(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@ $(BASENAME).$(LANG1).acx
+	
+.deps/$(BASENAME).$(LANG1).cat.dix: $(BASENAME).$(LANG1).dix .deps/.d
+	apertium-validate-dictionary $<
+	python genvdix.py cat $< >$@
 
-$(LANG1)$(VAR1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
+.deps/$(BASENAME).$(LANG1).val_gva.dix: $(BASENAME).$(LANG1).dix .deps/.d
+	apertium-validate-dictionary $<
+	python genvdix.py val_gva $< >$@
+
+.deps/$(BASENAME).$(LANG1).val_uni.dix: $(BASENAME).$(LANG1).dix .deps/.d
+	apertium-validate-dictionary $<
+	python genvdix.py val_uni $< >$@
+
+
+$(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).cat.dix
 	apertium-validate-dictionary $<
 	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
 
-$(LANG1)$(VAR2).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
+$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val_gva.dix 
 	apertium-validate-dictionary $<
-	lt-comp -v val rl $< $@ $(BASENAME).$(LANG1).acx
+	lt-comp -v val_gva rl $< $@ $(BASENAME).$(LANG1).acx
+
+$(LANG1)$(VAR3).autogen.bin: .deps/$(BASENAME).$(LANG1).val_uni.dix
+	apertium-validate-dictionary $<
+	lt-comp -v val_uni rl $< $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1)$(VAR1).autogen.att.gz: $(LANG1).autogen.bin
 	lt-print $< | gzip -9 -c -n > $@
@@ -49,7 +69,10 @@ $(LANG1)$(VAR1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	lt-comp -a cat lr $< $@
 
 $(LANG1)$(VAR2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
-	lt-comp -a val lr $< $@
+	lt-comp -a val_gva lr $< $@
+
+$(LANG1)$(VAR3).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp -a val_uni lr $< $@
 
 ###############################################################################
 ## Disambiguation rules

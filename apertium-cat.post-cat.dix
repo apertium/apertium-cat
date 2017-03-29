@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
   <alphabet/>
   <sdefs>
@@ -6,6 +6,7 @@
   </sdefs>
 
   <pardefs>
+
     <pardef n="caracter_general">
       <e>
         <i>;</i>
@@ -41,7 +42,7 @@
         <i>@</i>
       </e>
       <e>
-        <i>«</i>
+        <i>Â«</i>
       </e>
       <e>
         <i>-</i>
@@ -59,10 +60,10 @@
         <i>`</i>
       </e>
       <e>
-        <i>±</i>
+        <i>Â±</i>
       </e>
       <e>
-        <i>­</i>
+        <i>Â­</i>
       </e>
       <e>
         <i>$</i>
@@ -77,6 +78,21 @@
         <i>.</i>
       </e>
     </pardef>
+
+<pardef n="quotes">
+
+    <e><i>"</i></e>
+    <e><i>'</i></e>
+    <e><i>Â«</i></e>
+
+</pardef>
+
+<pardef n="inicia-s">
+
+    <e><i>sn</i></e>
+    <e><i>st</i></e>
+    <e><i>sp</i></e>
+</pardef>
 
     <pardef n="numeros">
       <e>
@@ -146,7 +162,7 @@
         <i>b</i>
       </e>
       <e>
-        <i>ç</i>
+        <i>Ã§</i>
       </e>
       <e>
         <i>f</i>
@@ -250,8 +266,21 @@
       <e>
         <i>Hollywood</i>
       </e>
-
+      <e>
+        <i>hooligan</i>
+      </e>
+      <e>
+        <i>hacker</i>
+      </e>
+      <e>
+        <i>Houston</i>
+      </e>
+      <e>
+        <i>HÃ¤ndel</i>
+      </e>
     </pardef>
+
+
 
     <pardef n="vocals">
       <e>
@@ -270,28 +299,28 @@
         <i>u</i>
       </e>
       <e>
-        <i>é</i>
+        <i>Ã©</i>
       </e>
       <e>
-        <i>í</i>
+        <i>Ã­</i>
       </e>
       <e>
-        <i>ó</i>
+        <i>Ã³</i>
       </e>
       <e>
-        <i>ú</i>
+        <i>Ãº</i>
       </e>
       <e>
-        <i>à</i>
+        <i>Ã </i>
       </e>
       <e>
-        <i>á</i>
+        <i>Ã¡</i>
       </e>
       <e>
-        <i>è</i>
+        <i>Ã¨</i>
       </e>
       <e>
-        <i>ò</i>
+        <i>Ã²</i>
       </e>
     </pardef>
 
@@ -302,7 +331,7 @@
       <e>
         <i>h</i>
       </e>
-      <e>
+<!-- GRS: REVISAR SI TÃ‰ SENTIT    <e>
         <i>@</i>
 	<par n="consonant"/>
       </e>
@@ -310,11 +339,44 @@
         <i>@</i>
 	<par n="vocals"/>
       </e>
+-->
       <e>
         <i>1<b/></i>
       </e>
       <e>
         <i>11<b/></i>
+      </e>
+      <e>
+        <i>I<b/></i>
+      </e>
+      <e>
+        <i>XI<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>8<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>80<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>800<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>VIII<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>LXXX<b/></i>
+      </e>
+      <e alt="val_gva">
+        <i>DCCC<b/></i>
+      </e>
+      <e>
+        <i>I</i>
+        <par n="caracter_general"/>
+      </e>
+      <e>
+        <i>XI</i>
+        <par n="caracter_general"/>
       </e>
       <e>
         <i>1</i>
@@ -324,7 +386,65 @@
         <i>11</i>
         <par n="caracter_general"/>
       </e>
+      <e alt="val_gva">
+        <i>8<b/></i>
+        <par n="caracter_general"/>
+      </e>
+      <e alt="val_gva">
+        <i>80<b/></i>
+        <par n="caracter_general"/>
+      </e>
+      <e alt="val_gva">
+        <i>800<b/></i>
+        <par n="caracter_general"/>
+      </e>
+      <e alt="val_gva">
+        <i>VIII<b/></i>
+        <par n="caracter_general"/>
+      </e>
+      <e alt="val_gva">
+        <i>LXXX<b/></i>
+        <par n="caracter_general"/>
+      </e>
+      <e alt="val_gva">
+        <i>DCCC<b/></i>
+        <par n="caracter_general"/>
+      </e>
+
     </pardef>
+
+<pardef n="sigles">
+<!--consonants que comencen per vocal i s'han d'apostrofar si sÃ³n la primera d'una sigla tipus d'FM-->
+      <e>
+        <i>F</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>H</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>L</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>M</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>N</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>R</i>
+        <par n="consonant"/>
+      </e>
+      <e>
+        <i>S</i>
+        <par n="consonant"/>
+      </e>
+</pardef>
+
 
     <pardef n="no_apostrofa">
       <e>
@@ -451,19 +571,19 @@
         <i>u</i>
       </e>
       <e>
-        <i>ó</i>
+        <i>Ã³</i>
       </e>
       <e>
-        <i>ú</i>
+        <i>Ãº</i>
       </e>
       <e>
-        <i>à</i>
+        <i>Ã </i>
       </e>
       <e>
-        <i>á</i>
+        <i>Ã¡</i>
       </e>
       <e>
-        <i>ò</i>
+        <i>Ã²</i>
       </e>
     </pardef>
 
@@ -472,31 +592,31 @@
         <i>a</i>
       </e>
       <e>
-        <i>à</i>
+        <i>Ã </i>
       </e>
       <e>
-        <i>á</i>
+        <i>Ã¡</i>
       </e>
       <e>
         <i>e</i>
       </e>
       <e>
-        <i>é</i>
+        <i>Ã©</i>
       </e>
       <e>
-        <i>è</i>
+        <i>Ã¨</i>
       </e>
       <e>
         <i>o</i>
       </e>
       <e>
-        <i>ó</i>
+        <i>Ã³</i>
       </e>
       <e>
-        <i>ò</i>
+        <i>Ã²</i>
       </e>
       <e>
-        <i>í</i>
+        <i>Ã­</i>
       </e>
       <e>
         <i>ha</i>
@@ -508,67 +628,67 @@
         <i>ho</i>
       </e>
       <e>
-        <i>hà</i>
+        <i>hÃ </i>
       </e>
       <e>
-        <i>há</i>
+        <i>hÃ¡</i>
       </e>
       <e>
-        <i>hè</i>
+        <i>hÃ¨</i>
       </e>
       <e>
-        <i>hò</i>
+        <i>hÃ²</i>
       </e>
       <e>
-        <i>hé</i>
+        <i>hÃ©</i>
       </e>
       <e>
-        <i>hí</i>
+        <i>hÃ­</i>
       </e>
       <e>
-        <i>hó</i>
+        <i>hÃ³</i>
       </e>
       <e>
-        <i>hú</i>
+        <i>hÃº</i>
       </e>
       <e>
-        <i>ú</i>
+        <i>Ãº</i>
       </e>
     </pardef>
 
     <pardef n="vocal_general_menys_ae">
       <e>
-        <i>à</i>
+        <i>Ã </i>
       </e>
       <e>
-        <i>á</i>
+        <i>Ã¡</i>
       </e>
       <e>
-        <i>è</i>
+        <i>Ã¨</i>
       </e>
       <e>
-        <i>é</i>
+        <i>Ã©</i>
       </e>
       <e>
         <i>i</i>
       </e>
       <e>
-        <i>í</i>
+        <i>Ã­</i>
       </e>
       <e>
         <i>o</i>
       </e>
       <e>
-        <i>ò</i>
+        <i>Ã²</i>
       </e>
       <e>
-        <i>ó</i>
+        <i>Ã³</i>
       </e>
       <e>
         <i>u</i>
       </e>
       <e>
-        <i>ú</i>
+        <i>Ãº</i>
       </e>
       <e>
         <i>h</i>
@@ -580,37 +700,37 @@
         <i>a</i>
       </e>
       <e>
-        <i>à</i>
+        <i>Ã </i>
       </e>
       <e>
-        <i>á</i>
+        <i>Ã¡</i>
       </e>
       <e>
-        <i>è</i>
+        <i>Ã¨</i>
       </e>
       <e>
-        <i>é</i>
+        <i>Ã©</i>
       </e>
       <e>
         <i>i</i>
       </e>
       <e>
-        <i>í</i>
+        <i>Ã­</i>
       </e>
       <e>
         <i>o</i>
       </e>
       <e>
-        <i>ò</i>
+        <i>Ã²</i>
       </e>
       <e>
-        <i>ó</i>
+        <i>Ã³</i>
       </e>
       <e>
         <i>u</i>
       </e>
       <e>
-        <i>ú</i>
+        <i>Ãº</i>
       </e>
       <e>
         <i>h</i>
@@ -648,6 +768,22 @@
       <e>
         <i>h</i>
         <par n="consonantic"/>
+      </e>
+ 
+      <e>
+        <i>Hollywood</i>
+      </e>
+      <e>
+        <i>hooligan</i>
+      </e>
+      <e>
+        <i>hacker</i>
+      </e>
+      <e>
+        <i>Houston</i>
+      </e>
+      <e>
+        <i>HÃ¤ndel</i>
       </e>
     </pardef>
 
@@ -1117,50 +1253,50 @@
       </e>
       <e>
         <p>
-          <l>à</l>
-          <r><b/>à</r>
+          <l>Ã </l>
+          <r><b/>Ã </r>
         </p>
       </e>
       <e>
         <p>
-          <l>á</l>
-          <r><b/>á</r>
+          <l>Ã¡</l>
+          <r><b/>Ã¡</r>
         </p>
       </e>
       <e>
         <p>
-          <l>í</l>
-          <r><b/>í</r>
+          <l>Ã­</l>
+          <r><b/>Ã­</r>
         </p>
       </e>
       <e>
         <p>
-          <l>ú</l>
-          <r><b/>ú</r>
+          <l>Ãº</l>
+          <r><b/>Ãº</r>
         </p>
       </e>
       <e>
         <p>
-          <l>ó</l>
-          <r><b/>ó</r>
+          <l>Ã³</l>
+          <r><b/>Ã³</r>
         </p>
       </e>
       <e>
         <p>
-          <l>ò</l>
-          <r><b/>ò</r>
+          <l>Ã²</l>
+          <r><b/>Ã²</r>
         </p>
       </e>
       <e>
         <p>
-          <l>è</l>
-          <r><b/>è</r>
+          <l>Ã¨</l>
+          <r><b/>Ã¨</r>
         </p>
       </e>
       <e>
         <p>
-          <l>é</l>
-          <r><b/>é</r>
+          <l>Ã©</l>
+          <r><b/>Ã©</r>
         </p>
       </e>
       <e>
@@ -1177,8 +1313,8 @@
       </e>
       <e>
         <p>
-          <l>ç</l>
-          <r><b/>ç</r>
+          <l>Ã§</l>
+          <r><b/>Ã§</r>
         </p>
       </e>
       <e>
@@ -1412,8 +1548,8 @@
       </e>
       <e>
         <p>
-          <l>«</l>
-          <r><b/>«</r>
+          <l>Â«</l>
+          <r><b/>Â«</r>
         </p>
       </e>
       <e>
@@ -1442,14 +1578,14 @@
       </e>
       <e>
         <p>
-          <l>±</l>
-          <r><b/>±</r>
+          <l>Â±</l>
+          <r><b/>Â±</r>
         </p>
       </e>
       <e>
         <p>
-          <l>­</l>
-          <r><b/>­</r>
+          <l>Â­</l>
+          <r><b/>Â­</r>
         </p>
       </e>
       <e>
@@ -1729,7 +1865,7 @@
           <l/>
           <r>l</r>
         </p>
-        <par n="consonant"/>
+        <par n="caracter_general"/>  <!-- GRS era consonant, generava contraccions impossibles tipus ~a ~elia:alia-->
       </e>
       <e>
         <p>
@@ -1957,13 +2093,21 @@
         </p>
         <par n="vocal_general_menys_ae"/>
       </e>
-     <e>
+      <e>
+        <p>
+          <l><b/><a/></l>
+          <r>d'</r>
+        </p>
+        <par n="sigles"/>
+      </e>
+      <e>
         <p>
           <l><b/><a/>a</l>
           <r/>
         </p>
         <par n="duplica_de"/>
       </e>
+
       <e>
         <p>
           <l><b/><a/></l>
@@ -1984,6 +2128,12 @@
           <r>de<b/></r>
         </p>
         <par n="consonant"/>
+      </e>
+      <e>
+        <p>
+          <l><b/>entre<b/></l>
+          <r>de<b/></r>
+        </p>
       </e>
       <e>
         <p>
@@ -2042,6 +2192,13 @@
       </e>
       <e>
         <p>
+          <l><b/><a/></l>
+          <r>l'</r>
+        </p>
+        <par n="sigles"/>
+      </e>
+      <e>
+        <p>
           <l><b/><a/>de</l>
           <r>el<b/></r>
         </p>
@@ -2061,6 +2218,34 @@
         </p>
         <par n="vocal_general"/>
       </e>
+
+      <e>
+        <p>
+          <l><b/></l>
+          <r>l'</r>
+        </p>
+        <par n="quotes"/>
+        <par n="vocal_general"/>
+      </e>
+
+      <e>
+        <p>
+          <l><b/></l>
+          <r>l'</r>
+        </p>
+       <par n="inicia-s"/>
+      </e>
+
+      <e>
+        <p>
+          <l><b/></l>
+          <r>l'</r>
+        </p>
+        <par n="quotes"/>
+       <par n="inicia-s"/>
+      </e>
+
+
       <e>
         <p>
           <l/>
@@ -2084,6 +2269,14 @@
           <r>l'</r>
         </p>
         <par n="vocals_per_a_la"/>
+      </e>
+
+      <e>
+        <p>
+          <l><b/><a/></l>
+          <r>l'</r>
+        </p>
+        <par n="sigles"/>
       </e>
       <e>
         <p>
@@ -2118,6 +2311,17 @@
         </p>
         <par n="vocals_per_a_la"/>
       </e>
+
+      <e>
+        <p>
+          <l><b/></l>
+          <r>l'</r>
+        </p>
+        <par n="quotes"/>
+        <par n="vocals_per_a_la"/>
+      </e>
+
+
       <e>
         <p>
           <l><b/></l>
@@ -2461,20 +2665,20 @@
       </e>
       <e>
         <p>
-          <l><b/>cé</l>
-          <r>se<b/>cé</r>
+          <l><b/>cÃ©</l>
+          <r>se<b/>cÃ©</r>
         </p>
       </e>
       <e>
         <p>
-          <l><b/>cí</l>
-          <r>se<b/>cí</r>
+          <l><b/>cÃ­</l>
+          <r>se<b/>cÃ­</r>
         </p>
       </e>
       <e>
         <p>
-          <l><b/>cè</l>
-          <r>se<b/>cè</r>
+          <l><b/>cÃ¨</l>
+          <r>se<b/>cÃ¨</r>
         </p>
       </e>
       <e>
@@ -2858,6 +3062,13 @@
       </e>
       <e>
         <p>
+          <l><a/>a<b/><a/>per</l>
+          <r></r>
+        </p>
+        <par n="per"/>
+      </e>
+      <e>
+        <p>
           <l><a/>per</l>
           <r/>
         </p>
@@ -2998,6 +3209,21 @@
           <r>mitjan<b/></r>
         </p>
       </e>
+ 
+     <e>
+        <p>
+          <l><a/>e<b/>i</l>
+          <r>i<b/>i</r>
+        </p>
+      </e>
+ 
+     <e>
+        <p>
+          <l><a/>u<b/>o</l>
+          <r>o<b/>o</r>
+        </p>
+      </e>
+ 
       <e>
 		<p>
 			<l><a/>de<b/>a<b/>dalt</l>
@@ -3016,6 +3242,8 @@
 			<r>de<b/>prop</r>
 		</p>
       </e>
-  </section>
+
+ </section>
+
 
 </dictionary>
