@@ -77,6 +77,10 @@
       <e>
         <i>.</i>
       </e>
+      <e>
+        <i><b/></i>
+      </e>
+
     </pardef>
 
 <pardef n="quotes">
@@ -264,6 +268,12 @@
         <i>hiu</i>
       </e> 
       <e>
+        <i>hui</i>
+      </e> 
+      <e>
+        <i>Huévar</i>
+      </e> 
+      <e>
         <i>Hollywood</i>
       </e>
       <e>
@@ -352,24 +362,6 @@
       <e>
         <i>XI<b/></i>
       </e>
-      <e alt="val_gva">
-        <i>8<b/></i>
-      </e>
-      <e alt="val_gva">
-        <i>80<b/></i>
-      </e>
-      <e alt="val_gva">
-        <i>800<b/></i>
-      </e>
-      <e alt="val_gva">
-        <i>VIII<b/></i>
-      </e>
-      <e alt="val_gva">
-        <i>LXXX<b/></i>
-      </e>
-      <e alt="val_gva">
-        <i>DCCC<b/></i>
-      </e>
       <e>
         <i>I</i>
         <par n="caracter_general"/>
@@ -377,40 +369,55 @@
       <e>
         <i>XI</i>
         <par n="caracter_general"/>
-      </e>
-      <e>
-        <i>1</i>
+      </e> 
+      <e c="d'1.2 metres">
+        <i>1.</i>
+        <par n="numeros"/>
         <par n="caracter_general"/>
       </e>
-      <e>
-        <i>11</i>
+      <e c="d'11.2 metres">
+        <i>11.</i>
+        <par n="numeros"/>
         <par n="caracter_general"/>
       </e>
-      <e alt="val_gva">
-        <i>8<b/></i>
+      <e c="d'1.34 metres">
+        <i>1.</i>
+        <par n="numeros"/>
+        <par n="numeros"/>
         <par n="caracter_general"/>
       </e>
-      <e alt="val_gva">
-        <i>80<b/></i>
+      <e c="d'1.000.000 d'euros">
+        <i>1.</i>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <i>.</i>
+        <par n="numeros"/>
         <par n="caracter_general"/>
       </e>
-      <e alt="val_gva">
-        <i>800<b/></i>
-        <par n="caracter_general"/>
-      </e>
-      <e alt="val_gva">
-        <i>VIII<b/></i>
-        <par n="caracter_general"/>
-      </e>
-      <e alt="val_gva">
-        <i>LXXX<b/></i>
-        <par n="caracter_general"/>
-      </e>
-      <e alt="val_gva">
-        <i>DCCC<b/></i>
+      <e c="d'11.34 metres">
+        <i>11.</i>
+        <par n="numeros"/>
+        <par n="numeros"/>
         <par n="caracter_general"/>
       </e>
 
+      <e c="d'1.000.000 d'euros">
+        <i>1.</i>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <i>.</i>
+        <par n="numeros"/>
+      </e>
+      <e c="d'11.000.000 d'euros">
+        <i>11.</i>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <par n="numeros"/>
+        <i>.</i>
+        <par n="numeros"/>
+      </e>
     </pardef>
 
 <pardef n="sigles">
@@ -2055,6 +2062,15 @@
         </p>
         <par n="contrac"/>
       </e>
+      <e>
+        <p>
+          <l><b/><a/>de</l>
+          <r>a<b/></r>
+        </p>
+        <par n="de2"/>
+      </e>
+
+
       <e>
         <p>
           <l><b/><a/></l>
