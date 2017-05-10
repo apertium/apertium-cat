@@ -101,6 +101,7 @@ LIST Poder = "poder" ;
 LIST Podar = "podar" ;
 LIST Creure = "creure" ;
 LIST Creuar = "creuar" ;
+LIST Segons = "segons" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -604,3 +605,7 @@ REMOVE:r_na_9_fp_fp A OR PP IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 
 	# adj_pp: "un trípode pesado con miras"
 
 # REMOVE:r_na_20 A OR PP IF (-1 Barrera_Inicial_SN LINK NOT 0 N) (NOT -1 Limite_Barrera_Inicial_SN) (0 Noun_Adj_PP LINK 0 N OR NP) (1 Barrera_Final_SN) ;
+
+SELECT Prep IF (-1 >>>) (0 ("segons")) ;
+	# segons ell
+	# segons el xic
