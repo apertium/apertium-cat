@@ -609,3 +609,6 @@ REMOVE:r_na_9_fp_fp A OR PP IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 
 SELECT Prep IF (-1 >>>) (0 ("segons")) ;
 	# segons ell
 	# segons el xic
+
+SELECT N IF (-1 ("comte")) (0 ("duc")) ;
+	# comte-duc d'Olivares
