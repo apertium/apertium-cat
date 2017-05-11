@@ -612,3 +612,10 @@ SELECT Prep IF (-1 >>>) (0 ("segons")) ;
 
 SELECT N IF (-1 ("comte")) (0 ("duc")) ;
 	# comte-duc d'Olivares
+
+SELECT Prep IF (-1C N) (0 ("sobre")) (1 Det) ;
+	# diverses hipòtesis sobre l'aparició
+
+SELECT Vblex IF (-1C ("no")) (0 ("porta")) (1 ("cap")) ;
+SELECT Det IF (-2C ("no")) (-1 Vblex) (0 ("cap")) (1C N) ;
+	# no porta cap indicació
