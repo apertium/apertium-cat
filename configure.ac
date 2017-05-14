@@ -3,7 +3,7 @@
 
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Catalan], [2.0.0], [xavi.ivars@gmail.com], [apertium-cat], [http://wiki.apertium.org/wiki/Apertium-cat])
+AC_INIT([Apertium Catalan], [2.1.0], [xavi.ivars@gmail.com], [apertium-cat], [http://wiki.apertium.org/wiki/Apertium-cat])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
