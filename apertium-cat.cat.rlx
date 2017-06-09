@@ -627,3 +627,6 @@ SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap blanc
 SELECT N IF (-1 ("com a")) (0 ("cap")) ;
 	# ha estat designat com a cap de les famílies
+
+SELECT PP IF (-1 Ser) (0 ("conegut")) ;
+	# són conegudes principalment a través de
