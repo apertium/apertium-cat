@@ -630,6 +630,8 @@ SELECT N IF (-1 ("com a")) (0 ("cap")) ;
 
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
+SELECT PP IF (-1 ("més")) (0 ("conegut")) ;
+	# l'aqüeducte antic més conegut
 
 REMOVE Vblex IF (0 NP) (0 Vblex) (NOT -1 >>>) ;
 	# Sant Jaume i Torre-solí
