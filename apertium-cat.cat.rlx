@@ -270,6 +270,8 @@ SUBSTITUTE:si_ja_2 ("sí") ("sí_ja") TARGET ("sí") IF (0 ("sí") OR ("Sí")) (
 
 SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
+SELECT:va2 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
+	# Va més ràpidament
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg>$ (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>$
