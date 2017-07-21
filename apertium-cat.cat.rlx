@@ -647,7 +647,8 @@ SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("pare")) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("germà")) ;
 	# son pare, son germà
 
-SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) ;
+SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 	# parla amb ell
 	# parla bé
 	# parla millor que ell
+	# de parla grega
