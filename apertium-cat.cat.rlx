@@ -162,8 +162,8 @@ SELECT:que_3 CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1C Adv);
 SELECT:que_3b CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1 ("entonces")) ;
 SELECT:que_4 CnjSub (0 ("que")) (-1C PP) (-2C ("haver") OR ("Haver") OR ("ser") OR ("Ser") OR ("estar") OR ("Estar")) ;
 SELECT:que_5 CnjSub (0 ("que")) (-2 ("tan") OR ("Tan")) (-1 A OR Adv) ;
-SELECT:que_6 CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) ;
-SELECT:que_7 CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) ;
+SELECT:que_6 CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 V OR Pron) ;
+SELECT:que_7 CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 V OR Pron) ;
 
 REMOVE:r_adv Adv (0 Adv) (-1C N) (1C N) ;
 	# manifestantes bajo jurisdicción
@@ -646,3 +646,8 @@ REMOVE Det IF (0 Det + (m)) (0 A + (f)) (1 N + (f)) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("pare")) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("germà")) ;
 	# son pare, son germà
+
+SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) ;
+	# parla amb ell
+	# parla bé
+	# parla millor que ell
