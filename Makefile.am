@@ -89,6 +89,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix		\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
 		$(LANG1).prob			\
+		genvdix.py 			\
 		modes.xml
 
 ###############################################################################
