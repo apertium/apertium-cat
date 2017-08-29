@@ -662,3 +662,6 @@ SELECT PP IF (0 ("<passada>")) (1 Det + FemSg) (2 N + FemSg) ;
 SELECT Num IF (0 ("I")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 	# Pere I el Catòlic
 	# Pere i Joan
+
+SELECT Masc IF (0 ("final")) (-1 Prep) ;
+	# a finals de, de finals de
