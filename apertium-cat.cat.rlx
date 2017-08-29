@@ -29,7 +29,6 @@ LIST Interj = (ij) ;
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 
 SET V = Vblex + Vbmod + Vbhaver + Copula ;
-SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
 SET Word = N + NP + A + Det + PreAdv + Adv + V + Pron + Prep + CnjCoo + CnjSub + CnjAdv + Rel + Interj ;
 SET NP_Member = N + A + Det + PreAdv + Adv + Pron ; # Pron es distinto al resto...
 #SET NOT_NP_Member = Word - NP_Member;
@@ -86,6 +85,8 @@ SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
 SET Verb_Prep = Verb OR Prep ;
 SET Cnj_Rel = CnjCoo OR CnjSub OR CnjAdv OR Rel ;
 SET Cnj_Rel_End = >>> OR CnjCoo OR CnjSub OR CnjAdv OR Rel ;
+
+SET Trencat = ("terç") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") ;
 
 SET Barrera_Final_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro ;	# Verb és perillós per la ambigüitat, però en general, prolífic
 SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro ;
@@ -424,8 +425,8 @@ REMOVE:r_na_1_fp A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$F
 ## abisenios inteligentes (jóvenes > n)
 ## escrito largo (escrito > n)
 
-REMOVE:r_na_3_ms_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascSg LINK 0 N OR NP) (1 Adj_PP + $$MascSg) ;
-REMOVE:r_na_3_mp_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascPl LINK 0 N OR NP) (1 Adj_PP + $$MascPl) ;
+REMOVE:r_na_3_ms_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascSg LINK 0 N OR NP) (NOT 0 Trencat) (1 Adj_PP + $$MascSg) ;
+REMOVE:r_na_3_mp_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascPl LINK 0 N OR NP) (NOT 0 Trencat) (1 Adj_PP + $$MascPl) ;
 REMOVE:r_na_3_fs_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) ;
 REMOVE:r_na_3_fp_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) ;
 
@@ -665,3 +666,7 @@ SELECT Num IF (0 ("I")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 
 SELECT Masc IF (0 ("final")) (-1 Prep) ;
 	# a finals de, de finals de
+
+SELECT N IF (-2 ("un")) (-1 Trencat) (0 N + Pl OR A + Pl) ;
+SELECT N IF (-2 Num) (NOT -2 ("un")) (-1 Trencat) (0 N OR A) ;
+	# un terç estrangers, dos terços estrangers
