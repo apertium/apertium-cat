@@ -11,6 +11,7 @@ LIST N = (n) ;
 LIST NP = (np) ;
 LIST A = (adj) ;
 LIST Det = (det) ;
+LIST PreDet = (predet) ;
 LIST Num = (num) ;
 LIST Adv = (adv) ;
 LIST PreAdv = (preadv) ;
@@ -368,7 +369,7 @@ SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser")) (-1 Det) (NOT -1 
 	# PERO: muy poco conocida.
 
 REMOVE:pr_n_pr1 A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr1b N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT:pr_n_pr1b N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
 SELECT:pr_n_pr2 N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 SELECT:pr_n_pr3 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
 SELECT:pr_n_pr4 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
