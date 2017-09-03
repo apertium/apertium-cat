@@ -40,6 +40,7 @@ LIST Inf = (inf) ;
 
 LIST PP = (pp) ;
 LIST PRS = (prs) ;
+LIST PIS = (pis) ;
 LIST Ger = (ger) ;
 
 LIST P1 = (p1) ;
@@ -217,6 +218,9 @@ SELECT:subj5 PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Ver
 	# es común que la persona sienta la certeza
 	# es posible que vengas.
 	# es bueno que vengas
+
+REMOVE PIS (0 ("<foren>")) (1 PP) ;
+	# que foren capturats
 
 #
 # reflexivo
