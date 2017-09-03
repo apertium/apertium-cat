@@ -104,7 +104,7 @@ LIST Podar = "podar" ;
 LIST Creure = "creure" ;
 LIST Creuar = "creuar" ;
 LIST Segons = "segons" ;
-LIST VSer = "ser" ;
+LIST Seriar = "seriar" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -305,8 +305,8 @@ SELECT:creure4b Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) (3 N) 
 SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
 
 # ser i seriar (p.ex. seria)
-SELECT:ser1 VSer IF (0 ("ser") OR ("seriar")) (1 PP) ;
-SELECT:ser1 VSer IF (0 ("ser") OR ("seriar")) (1 A OR N) ;
+REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
+REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
