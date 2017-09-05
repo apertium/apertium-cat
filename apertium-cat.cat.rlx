@@ -111,7 +111,7 @@ SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
 SET Haver = ("haver") OR ("Haver") ;
 
-SET Como = ("como") OR ("Como") ;
+SET Com = ("com") OR ("Com") ;
 
 # adjetivos ambíguos que sólo pueden anteceder el nombre ("gran" o "buen" no son ambiguos)
 SET PreAdj = ("mal") OR ("Mal") ;
@@ -146,9 +146,9 @@ SELECT:este_1 Det IF (0 ("Este") + $$MascSg) (-1 >>>) (1 N + $$MascSg) ;
 	# Este estado
 
 # Tio estas ligita al la (mis)difinoj de accionista__n, albañil__n, gilipollas__n kaj reh/én__n
-#SELECT:n_mf_1 Masc IF (0C N LINK NOT 0 Defensa) (-1C Vblex OR Prep OR ("como")) (NOT -1 PP) (1 <<< OR Prep) ;
+#SELECT:n_mf_1 Masc IF (0C N LINK NOT 0 Defensa) (-1C Vblex OR Prep OR ("com")) (NOT -1 PP) (1 <<< OR Prep) ;
 	## cogieron rehenes.
-#SELECT:n_mf_2 Masc IF (0C N LINK NOT 0 Defensa) (-1C Num) (-2C Vblex OR Prep OR ("como")) (NOT -2 PP) (1 <<< OR Prep) ;
+#SELECT:n_mf_2 Masc IF (0C N LINK NOT 0 Defensa) (-1C Num) (-2C Vblex OR Prep OR ("com")) (NOT -2 PP) (1 <<< OR Prep) ;
 	## cogieron tres rehenes.
 
 # se referirán, desde entonces, a los indígenas del Magreb como pueblos líbicos, aunque
@@ -180,8 +180,8 @@ REMOVE:nom_verb2 N (NOT -2 Verb) (NOT -2 Prep) (-1C Pro) (0 N LINK 0 Verb) ;
 	# le cuenta que
 	# NO: que ayuda en muchos aspectos
 
-REMOVE:tanto_como_1 A (0 ("tanto") OR ("Tanto")) (*1 ("como") BARRIER CnjSub) ;
-REMOVE:tanto_como_2 Verb (-1* ("tanto") OR ("Tanto") BARRIER CnjSub) (0 ("como")) ;
+REMOVE:tant_com_1 A (0 ("tant") OR ("Tant")) (*1 ("com") BARRIER CnjSub) ;
+REMOVE:tant_com_2 Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 
 REMOVE:adj_adv_1 Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
 REMOVE:adj_adv_2 Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
@@ -232,8 +232,7 @@ SUBSTITUTE:ref_1 ("suyo") ("suyo_ref") TARGET ("suyo") IF (0 ("suyo")) (*-1 (vbl
 #
 # comparaciones
 #
-#SELECT:tanto_1 Adv IF (0 ("tanto")) (1C N) (2 ("como")) ;
-#SUBSTITUTE:tanto_1 ("tanto") ("tanto_same") TARGET ("tanto") IF (0 ("tanto")) (1C N) (2 ("como")) ;
+#SELECT:tant_1 Adv IF (0 ("tant")) (1C N) (2 ("com")) ;
 
 SELECT:pp_1 PP IF (-1 ("haver") OR ("Haver")) (0 PP) ;
 SELECT:pp_2 PP IF (-1 ("ser") OR ("ser")) (0 PP) (*1 ("por") BARRIER (Cnj_Rel_End)) ;
@@ -325,39 +324,39 @@ REMOVE:r_na_4d A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 ("pa
 # eren semblants al Sol, però [VERIFY: funciona amb cat-disam, però no amb cat-tagger]
 REMOVE:r_na_4e A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (1 CM OR CnjCoo) (2 CnjSub) ;
 
-REMOVE:r_na_5_ms A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
-REMOVE:r_na_5_fs A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
-REMOVE:r_na_5_mp A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
-REMOVE:r_na_5_fp A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
-REMOVE:r_na_5_msv A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1C Verb) ;
-REMOVE:r_na_5_fsv A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1C Verb) ;
-REMOVE:r_na_5_mpv A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1C Verb) ;
-REMOVE:r_na_5_fpv A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1C Verb) ;
-REMOVE:r_na_5_mscop A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Copula) ;
-REMOVE:r_na_5_fscop A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Copula) ;
-REMOVE:r_na_5_mpcop A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Copula) ;
-REMOVE:r_na_5_fpcop A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Copula) ;
-REMOVE:r_na_5_mscom A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE:r_na_5_fscom A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE:r_na_5_mpcom A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE:r_na_5_fpcom A OR PP IF (NOT -2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE:r_na_5_ms A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
+REMOVE:r_na_5_fs A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
+REMOVE:r_na_5_mp A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
+REMOVE:r_na_5_fp A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) ;
+REMOVE:r_na_5_msv A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1C Verb) ;
+REMOVE:r_na_5_fsv A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1C Verb) ;
+REMOVE:r_na_5_mpv A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1C Verb) ;
+REMOVE:r_na_5_fpv A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1C Verb) ;
+REMOVE:r_na_5_mscop A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Copula) ;
+REMOVE:r_na_5_fscop A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Copula) ;
+REMOVE:r_na_5_mpcop A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Copula) ;
+REMOVE:r_na_5_fpcop A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Copula) ;
+REMOVE:r_na_5_mscom A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE:r_na_5_fscom A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE:r_na_5_mpcom A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE:r_na_5_fpcom A OR PP IF (NOT -2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 
-REMOVE:r_na_5_ms A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fs A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mp A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fp A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE:r_na_5_msv A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fsv A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mpv A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fpv A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mscop A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fscop A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mpcop A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fpcop A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mscom A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fscom A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE:r_na_5_mpcom A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE:r_na_5_fpcom A OR PP IF (-2 ("como") OR ("Como")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
+REMOVE:r_na_5_ms A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fs A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mp A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fp A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
+REMOVE:r_na_5_msv A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fsv A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mpv A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fpv A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mscop A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fscop A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mpcop A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fpcop A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mscom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fscom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
+REMOVE:r_na_5_mpcom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
+REMOVE:r_na_5_fpcom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 
 SELECT:s_na_1_ms N IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
 SELECT:s_na_1_fs N IF (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
@@ -378,9 +377,9 @@ SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser")) (-1 Det) (NOT -1 
 	# PERO: Las clasificaciones más reconocidas internacionalmente son la francesa y la estadounidense.
 	# PERO: muy poco conocida.
 
-REMOVE:pr_n_pr1 A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr1b N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr2 N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Como) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
+REMOVE:pr_n_pr1 A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT:pr_n_pr1b N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT:pr_n_pr2 N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 SELECT:pr_n_pr3 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
 SELECT:pr_n_pr4 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 
