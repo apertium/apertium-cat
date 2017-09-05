@@ -190,10 +190,10 @@ SELECT:adj_adv_4_ms Adv (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
 SELECT:adj_adv_4_fs Adv (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
 SELECT:adj_adv_4_mp Adv (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
 SELECT:adj_adv_4_fp Adv (-1C N + $$FemPl) (0 A LINK 0 Adv) (1C A + $$FemPl) ;
-SELECT:adj_adv_4b_ms Adv (-1C N + $$MascSg) (0 ("poco")) (1 A + $$MascSg) ;
-SELECT:adj_adv_4b_fs Adv (-1C N + $$FemSg) (0 ("poco")) (1 A + $$FemSg) ;
-SELECT:adj_adv_4b_mp Adv (-1C N + $$MascPl) (0 ("poco")) (1 A + $$MascPl) ;
-SELECT:adj_adv_4b_fp Adv (-1C N + $$FemPl) (0 ("poco")) (1 A + $$FemPl) ;
+SELECT:adj_adv_4b_ms Adv (-1C N + $$MascSg) (0 ("poc")) (1 A + $$MascSg) ;
+SELECT:adj_adv_4b_fs Adv (-1C N + $$FemSg) (0 ("poc")) (1 A + $$FemSg) ;
+SELECT:adj_adv_4b_mp Adv (-1C N + $$MascPl) (0 ("poc")) (1 A + $$MascPl) ;
+SELECT:adj_adv_4b_fp Adv (-1C N + $$FemPl) (0 ("poc")) (1 A + $$FemPl) ;
 SELECT:adj_adv_5_ms A (-2C N + $$MascSg) (-1C Adv) (0 A + $$MascSg) ;
 SELECT:adj_adv_5_fs A (-2C N + $$FemSg) (-1C Adv) (0 A + $$FemSg) ;
 SELECT:adj_adv_5_mp A (-2C N + $$MascPl) (-1C Adv) (0 A + $$MascPl) ;
@@ -240,40 +240,13 @@ SELECT:pp_2 PP IF (-1 ("ser") OR ("ser")) (0 PP) (*1 ("por") BARRIER (Cnj_Rel_En
 # seguir, estar + ger
 SELECT:ger Ger IF (-1 ("estar") OR ("Estar") OR ("seguir") OR ("Seguir")) (0 Ger) ;
 
-# doble negación (eo)
-SET No = ("no") OR ("No") ;
-SET AdvNeg = ("nunca") OR ("Nunca") OR ("jamás") OR ("Jamás") ;
-SET PronNeg = ("nada") OR ("Nada") OR ("nadie") OR ("Nadie") OR ("ninguno") OR ("Ninguno") ;
-SET DetNeg = ("ninguno") OR ("Ninguno") ;
-REMOVE:dob_neg_1 No IF (0 No) (1 Verb) (*2 AdvNeg OR PronNeg BARRIER Cnj_Rel) ;
-SUBSTITUTE:dob_neg_2 ("nada") ("algo") TARGET ("nada") IF (*-2 AdvNeg LINK 1* Verb BARRIER Cnj_Rel) (0 ("nada")) ;
-SUBSTITUTE:dob_neg_3 ("nadie") ("alguien") TARGET ("nadie") IF (*-2 AdvNeg LINK 1* Verb BARRIER Cnj_Rel) (0 ("nadie")) ;
-SUBSTITUTE:dob_neg_4 ("ninguno") ("alguno") TARGET ("ninguno") IF (*-2 AdvNeg LINK 1* Verb BARRIER Cnj_Rel) (0 ("ninguno")) ;
-	# no hay ningún
-	# nunca hay ningún
-	# nunca hay nadie
-
 #
 # PALABRAS PARTICULARES
 #
 
-SELECT:estado_1 N IF (-1 Det + Masc) (0 ("estado") OR ("Estado")) ;
-SELECT:estado_2 PP IF (-1 Vbhaver) (0 ("estado")) (1 PP) ;
-SELECT:estado_3 N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estado")) ;	# "Estado" (con mayúscula) va precedido de una palabra con minúscula inicial
-
-# la tierra como medio de vida
-
-# vía pr/n
-REMOVE:via1 Prep IF (-1 Det + $$FemSg) (0 ("vía") + $$FemSg) ;
-REMOVE:via2 Prep IF (0 ("vía") + $$FemSg) (1 A + $$FemSg) ;
-
-SELECT:media_1 N IF (-3C Num) (-2 N) (-1 CnjCoo) (0 ("media")) ;
-SUBSTITUTE:media_2 ("media") ("media_duono") TARGET ("media") IF (-3C Num) (-2 N) (-1 CnjCoo) (0 ("media")) ;
-	# dos veces y media > kaj duono
-SELECT:si_ja_1 Adv IF (0 ("sí") OR ("Sí")) (1C Verb) (NOT -1 Prep) ;
-SUBSTITUTE:si_ja_2 ("sí") ("sí_ja") TARGET ("sí") IF (0 ("sí") OR ("Sí")) (1C Verb) (NOT -1 Prep) ;
-	# sí comentó
-	# en sí fue
+SELECT:estat_1 N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
+SELECT:estat_2 PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
+SELECT:estat_3 N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estat")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
 SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
@@ -385,8 +358,8 @@ SELECT:pr_n_pr4 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) 
 
 # NP / ADJ
 
-SELECT:s_na_1_arg NP IF (-1 Det + Fem) (0 ("Argentina") OR ("China") OR ("India") OR ("Filipinas") OR ("Baleares") OR ("Canarias") OR ("Polinesia")) (1 <<< OR Prep OR Det OR CM) ;
-SELECT:s_na_1_med NP IF (-1 Det + Masc) (0 ("Mediterráneo") OR ("Atlántico") OR ("Cantábrico") OR ("Pacífico") OR ("Índico") OR ("Ártico")) (1 <<< OR Prep OR Det OR CM) ;
+SELECT:s_na_1_arg NP IF (-1 Det + Fem) (0 ("Argentina") OR ("India") OR ("Filipines") OR ("Balears") OR ("Canàries") OR ("Polinèsia")) (1 <<< OR Prep OR Det OR CM) ;
+SELECT:s_na_1_med NP IF (-1 Det + Masc) (0 ("Mediterrani") OR ("Atlàntic") OR ("Cantàbric") OR ("Pacífic") OR ("Índic") OR ("Àrtic")) (1 <<< OR Prep OR Det OR CM) ;
 
 # NP / N
 REMOVE:r_na_3_ms Noun_Adj_PP IF (-1 Det + $$MascSg) (0 NP + $$MascSg) (1 Adj_PP + $$MascSg) ;
