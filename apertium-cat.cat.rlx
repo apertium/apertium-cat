@@ -657,3 +657,9 @@ SELECT Masc IF (0 ("final")) (-1 Prep) ;
 SELECT N IF (-2 ("un")) (-1 Trencat) (0 N + Pl OR A + Pl) ;
 SELECT N IF (-2 Num) (NOT -2 ("un")) (-1 Trencat) (0 N OR A) ;
 	# un terç estrangers, dos terços estrangers
+
+REMOVE Ger IF (0 ("bastant")) (1C A OR PP) ;
+	# models bastant generalitzats
+
+SELECT PP IF (-1C Copula) (0C Vblex) ;
+REMOVE Inf IF (-1C Copula) (0 V) ;
