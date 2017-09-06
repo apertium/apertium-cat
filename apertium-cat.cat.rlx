@@ -661,5 +661,7 @@ SELECT N IF (-2 Num) (NOT -2 ("un")) (-1 Trencat) (0 N OR A) ;
 REMOVE Ger IF (0 ("bastant")) (1C A OR PP) ;
 	# models bastant generalitzats
 
-SELECT PP IF (-1C Copula) (0C Vblex) ;
+REMOVE N IF (0 ("sobretot")) (NOT 1 Det) ;
+
+SELECT PP IF (-1C Copula) (0C Vblex) ;		# va ser vist
 REMOVE Inf IF (-1C Copula) (0 V) ;
