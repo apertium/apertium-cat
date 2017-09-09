@@ -248,8 +248,10 @@ SELECT:estat_1 N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
 SELECT:estat_2 PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
 SELECT:estat_3 N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estat")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
-SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
+#SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
+SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1/* Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
+	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
 SELECT:va2 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
 	# Va més ràpidament
 
