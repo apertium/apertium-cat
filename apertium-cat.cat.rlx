@@ -338,10 +338,10 @@ SELECT:s_na_1_fp N IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP)
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
 
-SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
 	# nos vino impuesto.
-SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR ("ser") OR ("sino")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
 
 SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser")) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 Barrera_Final_Estrict_SN) ;
