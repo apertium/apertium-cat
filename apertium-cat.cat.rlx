@@ -667,3 +667,6 @@ REMOVE N IF (0 ("sobretot")) (NOT 1 Det) ;
 
 SELECT PP IF (-1C Copula) (0C Vblex) ;		# va ser vist
 REMOVE Inf IF (-1C Copula) (0 V) ;
+
+SELECT Pron IF (0 ("qui")) (-1C Prep) (-2C Vblex) (NOT -2 PP) ;			# no sé a qui li he dit
+SELECT Pron IF (0 ("qui")) (-1C Prep) (-2 Adv) (-3C Vblex) (NOT -3 PP) ;	# no sé bé a qui li he dit
