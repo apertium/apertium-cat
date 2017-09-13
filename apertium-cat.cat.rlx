@@ -670,3 +670,5 @@ REMOVE Inf IF (-1C Copula) (0 V) ;
 
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2C Vblex) (NOT -2 PP) ;			# no sé a qui li he dit
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2 Adv) (-3C Vblex) (NOT -3 PP) ;	# no sé bé a qui li he dit
+
+SELECT Prep IF (0 ("fins")) (1 Det) (2 N) ;	# fins una estrella [no funcionava amb el tagger en cat-fra]
