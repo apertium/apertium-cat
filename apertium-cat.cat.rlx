@@ -672,3 +672,8 @@ SELECT Pron IF (0 ("qui")) (-1C Prep) (-2C Vblex) (NOT -2 PP) ;			# no sé a qui
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2 Adv) (-3C Vblex) (NOT -3 PP) ;	# no sé bé a qui li he dit
 
 SELECT Prep IF (0 ("fins")) (1 Det) (2 N) ;	# fins una estrella [no funcionava amb el tagger en cat-fra]
+
+SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Copula) (1 P1 OR P2 OR P3) ;
+	# depenent de si són intel·ligents
+SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Vbmod) (1 P1 OR P2 OR P3) ;
+	# depenent de si volen menjar
