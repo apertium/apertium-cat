@@ -25,9 +25,13 @@ LIST CnjCoo = (cnjcoo) ;
 LIST CnjSub = (cnjsub) ;
 LIST CnjAdv = (cnjadv) ;
 LIST Rel = (rel) ;
+LIST Itg = (itg) ;
 LIST Interj = (ij) ;
 
+LIST unknown = ("\\*.*"r) ;
+
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+LIST Excl = "!" ;
 
 SET V = Vblex + Vbmod + Vbhaver + Copula ;
 SET Word = N + NP + A + Det + PreAdv + Adv + V + Pron + Prep + CnjCoo + CnjSub + CnjAdv + Rel + Interj ;
@@ -68,6 +72,7 @@ SET Pers = (p1) OR (p2) OR (p3) ;
 
 SET Ref = (prn pro ref) ;
 SET Pro = (prn pro) ;
+SET Tn = (prn tn) ;
 
 SET Ant = (np ant) ;
 SET Cog = (np cog) ;
@@ -106,6 +111,8 @@ LIST Creure = "creure" ;
 LIST Creuar = "creuar" ;
 LIST Segons = "segons" ;
 LIST Seriar = "seriar" ;
+LIST Caldre = "caldre" ;
+LIST Calar = "calar" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -206,9 +213,7 @@ SELECT:adj_adv_5_fp A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) ;
 #REMOVE:np_a_fp A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
 	# asignaba a Armenia territorios
 
-# eliminación del imperativo en competición con el presente del indicativo
-REMOVE:imp_1 Imp IF (0 (vblex pri p3 sg) LINK 0 (vblex imp p2 sg)) ;
-REMOVE:imp_2 Imp IF (-1 ("que")) (0 Verb) ;
+REMOVE Imp IF (NOT 1* Excl) ;
 
 # elección de subjuntivo después de "que"
 SELECT:subj1 PRS (*-1 ("que") OR ("Que") BARRIER (Cnj_Rel_End)) (*-1 VerboSubj) (0C Verb) (NOT 0 ("<poden>")) ;
@@ -264,6 +269,7 @@ SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
 	# si va precedit per "em" triem "vanar"
 
 # voler i volar (p.ex. volen)
+SELECT:voler0 Voler IF (0 ("voler") OR ("volar")) (1/* Inf) ;
 SELECT:voler1 Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
 SELECT:voler2 Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
 SELECT:voler3 Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
@@ -272,9 +278,11 @@ SELECT:voler5 Voler IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("que")) ;
 	# No volen pas que, volen sovint que
 
 # poder i podar (p.ex. poden)
+SELECT:poder0 Poder IF (0 ("poder") OR ("podar")) (1/* Inf) ;
 SELECT:poder1 Poder IF (0 ("poder") OR ("podar")) (1 Inf) ;
 
 # creure i creuar (p.ex. creuen)
+SELECT:creure0 Creure IF (0 ("creure") OR ("creuar")) (1/* Inf) ;
 SELECT:creure1 Creure IF (0 ("creure") OR ("creuar")) (1 Inf) ;
 SELECT:creure2 Creure IF (0 ("creure") OR ("creuar")) (1 ("que")) ;
 SELECT:creure3 Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("que")) ;
@@ -286,8 +294,12 @@ SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
 
 # ser i seriar (p.ex. seria)
 REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
-REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N) ;
-REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
+REMOVE:ser2 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N) ;
+REMOVE:ser3 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
+
+# caldre i calar (p.ex. calen)
+SELECT Calar IF (-1 Pro) (OC ("caldre") OR ("calar")) ;
+REMOVE Calar IF (NOT -1 Pro) (OC ("caldre") OR ("calar")) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
@@ -679,3 +691,8 @@ SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Copula) (1 P1 OR P2 OR P3) ;
 	# depenent de si són intel·ligents
 SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Vbmod) (1 P1 OR P2 OR P3) ;
 	# depenent de si volen menjar
+
+SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel OR unknown OR A) ;
+SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual")) ;
+SELECT Prep (0 ("sobre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Itg OR unknown) ;
+SELECT Prep (0 ("sobre")) (1 ("el que") OR ("el qual")) ;		# sobre el que diu en Joan
