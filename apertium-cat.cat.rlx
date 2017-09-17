@@ -287,6 +287,7 @@ SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
 # ser i seriar (p.ex. seria)
 REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
 REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N) ;
+REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
