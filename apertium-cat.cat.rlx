@@ -152,7 +152,8 @@ SELECT:este_1 Det IF (0 ("Este") + $$MascSg) (-1 >>>) (1 N + $$MascSg) ;
 	## cogieron tres rehenes.
 
 # se referirán, desde entonces, a los indígenas del Magreb como pueblos líbicos, aunque
-REMOVE:r_verb_1 Vblex (0 Vblex + Pers) (*1C Vblex + Pers BARRIER Cnj_Rel) ;
+#REMOVE:r_verb_1 Vblex (0 Vblex + Pers) (*1C Vblex + Pers BARRIER Cnj_Rel) ;
+	# no funciona: quan va venir, ho van veure
 # SELECT:r_verb_2 Vblex (0 Vblex + Pers) (-1C Pro) ; No: podría recurrir a ellas para hacer
 
 # preposiciones / verbos
