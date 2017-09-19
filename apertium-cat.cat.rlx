@@ -202,10 +202,10 @@ SELECT:adj_adv_4b_ms Adv (-1C N + $$MascSg) (0 ("poc")) (1 A + $$MascSg) ;
 SELECT:adj_adv_4b_fs Adv (-1C N + $$FemSg) (0 ("poc")) (1 A + $$FemSg) ;
 SELECT:adj_adv_4b_mp Adv (-1C N + $$MascPl) (0 ("poc")) (1 A + $$MascPl) ;
 SELECT:adj_adv_4b_fp Adv (-1C N + $$FemPl) (0 ("poc")) (1 A + $$FemPl) ;
-SELECT:adj_adv_5_ms A (-2C N + $$MascSg) (-1C Adv) (0 A + $$MascSg) ;
-SELECT:adj_adv_5_fs A (-2C N + $$FemSg) (-1C Adv) (0 A + $$FemSg) ;
-SELECT:adj_adv_5_mp A (-2C N + $$MascPl) (-1C Adv) (0 A + $$MascPl) ;
-SELECT:adj_adv_5_fp A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) ;
+SELECT:adj_adv_5_ms A (-2C N + $$MascSg) (-1C Adv) (0 A + $$MascSg) (NOT 0 ("va")) ;
+SELECT:adj_adv_5_fs A (-2C N + $$FemSg) (-1C Adv) (0 A + $$FemSg) (NOT 0 ("va")) ;
+SELECT:adj_adv_5_mp A (-2C N + $$MascPl) (-1C Adv) (0 A + $$MascPl) (NOT 0 ("va")) ;
+SELECT:adj_adv_5_fp A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) (NOT 0 ("va")) ;
 
 #REMOVE:np_a_ms A IF (0 NP LINK 0 (adj m sg)) (-1 Prep) (1C N) (NOT 1 MascSg) ;
 #REMOVE:np_a_fs A IF (0 NP LINK 0 (adj f sg)) (-1 Prep) (1C N) (NOT 1 FemSg) ;
