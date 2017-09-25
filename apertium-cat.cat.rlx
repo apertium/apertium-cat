@@ -260,6 +260,8 @@ SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1/* Inf) ;
 	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
 SELECT:va2 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
 	# Va més ràpidament
+SELECT:va3 Anar IF (0 ("anar") OR ("va")) (0 P3) (1C PP) ;
+	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg>$ (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>$
