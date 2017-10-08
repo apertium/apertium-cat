@@ -698,3 +698,4 @@ SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel
 SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual")) ;
 SELECT Prep (0 ("sobre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Itg OR unknown) ;
 SELECT Prep (0 ("sobre")) (1 ("el que") OR ("el qual")) ;		# sobre el que diu en Joan
+SELECT Prep (0 ("entre")) (1 ("<fa>")) ;				# el Cretaci superior, entre fa 77 i fa 74 milions d'anys
