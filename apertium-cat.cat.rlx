@@ -305,7 +305,7 @@ SELECT Calar IF (-1 Pro) (OC ("caldre") OR ("calar")) ;
 REMOVE Calar IF (NOT -1 Pro) (OC ("caldre") OR ("calar")) ;
 
 # jo bec
-SELECT Beure IF (-1 ("jo")) (O ("<bec>")) ;
+SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
