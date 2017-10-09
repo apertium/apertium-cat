@@ -113,6 +113,7 @@ LIST Segons = "segons" ;
 LIST Seriar = "seriar" ;
 LIST Caldre = "caldre" ;
 LIST Calar = "calar" ;
+LIST Beure = "beure" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -302,6 +303,9 @@ REMOVE:ser3 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 # caldre i calar (p.ex. calen)
 SELECT Calar IF (-1 Pro) (OC ("caldre") OR ("calar")) ;
 REMOVE Calar IF (NOT -1 Pro) (OC ("caldre") OR ("calar")) ;
+
+# jo bec
+SELECT Beure IF (-1 ("jo")) (O ("<bec>")) ;
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
