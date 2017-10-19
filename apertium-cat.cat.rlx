@@ -364,12 +364,18 @@ SELECT:s_na_1_fp N IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP)
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
 
-REMOVE:s_na_1_ms N IF (-2 Det + Def + $$MascSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-REMOVE:s_na_1_fs N IF (-2 Det + Def + $$FemSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-REMOVE:s_na_1_mp N IF (-2 Det + Def + $$MascPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$MascPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-REMOVE:s_na_1_fp N IF (-2 Det + Def + $$FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+REMOVE N IF (-2 Det + Def + $$MascSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+REMOVE N IF (-2 Det + Def + $$FemSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+REMOVE N IF (-2 Det + Def + $$MascPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$MascPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+REMOVE N IF (-2 Det + Def + $$FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
 	# el més extemista de tots
 	# és la més comuna.
+
+SELECT A IF (-3 N + $$MascSg) (-2 A + $$MascSg) (-1 ("més") OR ("menys")) (0 A + $$MascSg LINK NOT 0 NP) (0 V) ;
+SELECT A IF (-3 N + $$MascSg) (-2 A + $$FemSg) (-1 ("més") OR ("menys")) (0 A + $$FemSg LINK NOT 0 NP) (0 V) ;
+SELECT A IF (-3 N + $$MascSg) (-2 A + $$MascPl) (-1 ("més") OR ("menys")) (0 A + $$MascPl LINK NOT 0 NP) (0 V) ;
+SELECT A IF (-3 N + $$MascSg) (-2 A + $$FemPl) (-1 ("més") OR ("menys")) (0 A + $$FemPl LINK NOT 0 NP) (0 V) ;
+	# l'activitat industrial més activa
 
 SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
