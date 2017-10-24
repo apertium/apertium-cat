@@ -383,8 +383,8 @@ SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR
 SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
 
-SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser")) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 Barrera_Final_Estrict_SN) ;
-SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser")) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 CM OR CnjCoo) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_3 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 CM OR CnjCoo) (1 Barrera_Final_Estrict_SN) ;
 	# detonar los explosivos.
 	# PERO: Las clasificaciones más reconocidas internacionalmente son la francesa y la estadounidense.
 	# PERO: muy poco conocida.
