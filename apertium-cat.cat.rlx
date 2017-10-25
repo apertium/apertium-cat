@@ -120,7 +120,19 @@ SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
 SET Haver = ("haver") OR ("Haver") ;
 
+SET V_CI = ("telefonar") OR ("trucar") ;	# verbs darrere els quals no pot anar un CD, sinó un CI
+SET V_CD_CI = ("agafar") OR ("afegir") OR ("atorgar") OR ("atribuir")
+	OR ("comprar") OR ("comunicar") OR ("construir") OR ("contestar") OR ("cridar")
+	OR ("dar") OR ("demanar") OR ("demanar") OR ("deixar") OR ("dir") OR ("disparar") OR ("donar")
+	OR ("escriure") OR ("importar") OR ("lliurar") OR ("manllevar")
+	OR ("oferir") OR ("ofertar")
+	OR ("parlar") OR ("pegar") OR ("permetre") OR ("pispar") OR ("plaure") OR ("prendre")
+	OR ("reconèixer") OR ("regalar") OR ("replicar") OR ("repugnar") OR ("respondre") OR ("robar")
+	OR ("sobreviure") OR ("vendre") ;	# verbs darrere els quals pot anar tant un CD com un CI
+
 SET Com = ("com") OR ("Com") ;
+
+LIST Li = "li" ;
 
 # adjetivos ambíguos que sólo pueden anteceder el nombre ("gran" o "buen" no son ambiguos)
 SET PreAdj = ("mal") OR ("Mal") ;
@@ -310,6 +322,23 @@ REMOVE Calar IF (NOT -1 Pro) (0C ("caldre") OR ("calar")) ;
 
 # jo bec
 SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
+
+#
+# Desambiguació "los" enc / els "pro"
+#
+#"<donant-los>"
+#	"donar" vblex ger
+#		"el" prn enc p3 m pl
+#	"donar" vblex ger
+#		"li" prn enc p3 mf pl
+SELECT Li IF (O ("<els>")) (1C V_CI) ;
+SELECT Li IF (O ("<els>")) (1C V) (1 ("parlar")) ;	# purament per freqüències en què "els parlo" es refereix a idiomes i no a persones.
+SELECT Li IF (O ("<els>")) (1 V_CD_CI) (2 Det) ;
+SELECT SUB:1 Li IF (0/* V_CI) ;
+SELECT SUB:1 Li IF (0/* ("parlar")) ;			# purament per freqüències en què "els parlo" es refereix a idiomes i no a persones.
+SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
+	# donant-los una cosa
+
 
 #
 # Desambiguación ADJ (+PP) - NOMBRE
