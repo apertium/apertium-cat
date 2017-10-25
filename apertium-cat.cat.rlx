@@ -1,6 +1,7 @@
 # exemple ambigüitat fins i tot per a un parlant: "noble húngaro" (hungara nobelo / nobla hungaro), "viejos fanáticos" (maljunaj fanatikuloj / fanatikaj maljunuloj)
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
 
 SETS
 
@@ -156,6 +157,11 @@ REMOVE:r_cog_1 Cog IF (-1 DetDef) (0 Cog) ;
 REMOVE:r_cog_2 Cog IF (-1 DetInd) (0 Cog) ;
 REMOVE:r_ant_1 Ant IF (-1 DetDef) (0 Ant) ;
 REMOVE:r_ant_2 Ant IF (-1 DetInd) (0 Ant) ;
+
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol")) ;
+SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;	# Pujol diu
+SELECT Cog IF (0 Cog) (0 Ant) (-1C Ant) ;
+
 
 SELECT:este_2 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 A + $$MascSg) (2 N + $$MascSg) ;
 	# de este bonito estado
@@ -400,11 +406,12 @@ REMOVE N IF (-2 Det + Def + $$FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP +
 	# el més extemista de tots
 	# és la més comuna.
 
-SELECT A IF (-3 N + $$MascSg) (-2 A + $$MascSg) (-1 ("més") OR ("menys")) (0 A + $$MascSg LINK NOT 0 NP) (0 V) ;
-SELECT A IF (-3 N + $$MascSg) (-2 A + $$FemSg) (-1 ("més") OR ("menys")) (0 A + $$FemSg LINK NOT 0 NP) (0 V) ;
-SELECT A IF (-3 N + $$MascSg) (-2 A + $$MascPl) (-1 ("més") OR ("menys")) (0 A + $$MascPl LINK NOT 0 NP) (0 V) ;
-SELECT A IF (-3 N + $$MascSg) (-2 A + $$FemPl) (-1 ("més") OR ("menys")) (0 A + $$FemPl LINK NOT 0 NP) (0 V) ;
+SELECT A IF (-3 N + $$MascSg) (-2 A + $$MascSg) (-1 ("més") OR ("menys")) (0 A + $$MascSg LINK NOT 0 NP) ;
+SELECT A IF (-3 N + $$FemSg) (-2 A + $$FemSg) (-1 ("més") OR ("menys")) (0 A + $$FemSg LINK NOT 0 NP) ;
+SELECT A IF (-3 N + $$MascPl) (-2 A + $$MascPl) (-1 ("més") OR ("menys")) (0 A + $$MascPl LINK NOT 0 NP) ;
+SELECT A IF (-3 N + $$FemPl) (-2 A + $$FemPl) (-1 ("més") OR ("menys")) (0 A + $$FemPl LINK NOT 0 NP) ;
 	# l'activitat industrial més activa
+	# les llengües internacionales més esteses
 
 SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
