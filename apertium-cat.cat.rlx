@@ -337,9 +337,9 @@ SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
 #		"el" prn enc p3 m pl
 #	"donar" vblex ger
 #		"li" prn enc p3 mf pl
-SELECT Li IF (O ("<els>")) (1C V_CI) ;
-SELECT Li IF (O ("<els>")) (1C V) (1 ("parlar")) ;	# purament per freqüències en què "els parlo" es refereix a idiomes i no a persones.
-SELECT Li IF (O ("<els>")) (1 V_CD_CI) (2 Det) ;
+SELECT Li IF (0 ("<els>")) (1C V_CI) ;
+SELECT Li IF (0 ("<els>")) (1C V) (1 ("parlar")) ;	# purament per freqüències en què "els parlo" es refereix a idiomes i no a persones.
+SELECT Li IF (0 ("<els>")) (1 V_CD_CI) (2 Det) ;
 SELECT SUB:1 Li IF (0/* V_CI) ;
 SELECT SUB:1 Li IF (0/* ("parlar")) ;			# purament per freqüències en què "els parlo" es refereix a idiomes i no a persones.
 SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
