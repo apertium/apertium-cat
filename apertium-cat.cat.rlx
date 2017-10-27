@@ -413,6 +413,12 @@ SELECT A IF (-3 N + $$FemPl) (-2 A + $$FemPl) (-1 ("més") OR ("menys")) (0 A + 
 	# l'activitat industrial més activa
 	# les llengües internacionales més esteses
 
+REMOVE N IF (-3 N + $$MascSg) (-2 A + $$MascSg) (-1 ("i")) (0 A + $$MascSg) (0 N) ;
+REMOVE N IF (-3 N + $$FemSg) (-2 A + $$FemSg) (-1 ("i")) (0 A + $$FemSg) (0 N) ;
+REMOVE N IF (-3 N + $$MascPl) (-2 A + $$MascPl) (-1 ("i")) (0 A + $$MascPl) (0 N) ;
+REMOVE N IF (-3 N + $$FemPl) (-2 A + $$FemPl) (-1 ("i")) (0 A + $$FemPl) (0 N) ;
+	# el seu caràcter i religiós
+
 SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
 	# nos vino impuesto.
