@@ -115,6 +115,8 @@ LIST Seriar = "seriar" ;
 LIST Caldre = "caldre" ;
 LIST Calar = "calar" ;
 LIST Beure = "beure" ;
+LIST Veure = "veure" ;
+LIST Viure = "viure" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -321,13 +323,21 @@ REMOVE:ser3 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 
 # ser i estat (p.ex. estat)
 SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 PP) ;
+SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1 Det) ;
+	# han estat les de marxa atlètica
 
 # caldre i calar (p.ex. calen)
 SELECT Calar IF (-1 Pro) (0C ("caldre") OR ("calar")) ;
 REMOVE Calar IF (NOT -1 Pro) (0C ("caldre") OR ("calar")) ;
 
+# veure i viure (p.ex. viu)
+SELECT Viure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
+
 # jo bec
 SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
+
+SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
+	# L'agnòstic sol separar les posicions
 
 #
 # Desambiguació "los" enc / els "pro"
@@ -710,6 +720,14 @@ SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
 	# pensa que cap indicació
 SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
 	# pensa que cap bona indicació
+
+SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C A OR PP) ;
+	# és molt variat
+SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C Adv) ;
+	# és molt a prop
+SELECT PreAdv IF (-1C N) (0 ("molt")) (1C Adv) ;
+SELECT PreAdv IF (-2 N) (-1 A) (0 ("molt")) (1C Adv) ;
+	# un museu molt a prop
 
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
