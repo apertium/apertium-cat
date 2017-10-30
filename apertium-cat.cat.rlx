@@ -214,10 +214,10 @@ REMOVE:tant_com_2 Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 REMOVE:adj_adv_1 Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
 REMOVE:adj_adv_2 Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
 REMOVE:adj_adv_3 Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) ;
-SELECT:adj_adv_4_ms Adv (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
-SELECT:adj_adv_4_fs Adv (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
-SELECT:adj_adv_4_mp Adv (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
-SELECT:adj_adv_4_fp Adv (-1C N + $$FemPl) (0 A LINK 0 Adv) (1C A + $$FemPl) ;
+REMOVE:adj_adv_4_ms A (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
+REMOVE:adj_adv_4_fs A (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
+REMOVE:adj_adv_4_mp A (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
+REMOVE:adj_adv_4_fp A (-1C N + $$FemPl) (0 A LINK 0 Adv) (1C A + $$FemPl) ;
 SELECT:adj_adv_4b_ms Adv (-1C N + $$MascSg) (0 ("poc")) (1 A + $$MascSg) ;
 SELECT:adj_adv_4b_fs Adv (-1C N + $$FemSg) (0 ("poc")) (1 A + $$FemSg) ;
 SELECT:adj_adv_4b_mp Adv (-1C N + $$MascPl) (0 ("poc")) (1 A + $$MascPl) ;
@@ -701,6 +701,15 @@ SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap blanc
 SELECT N IF (-1 ("com a")) (0 ("cap")) ;
 	# ha estat designat com a cap de les famílies
+
+SELECT Det IF (-1 Prep) (0 ("cap")) (1C N) ;
+	# sense cap indicació
+SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
+	# de cap d'aquestes indicacions
+SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
+	# pensa que cap indicació
+SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
+	# pensa que cap bona indicació
 
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
