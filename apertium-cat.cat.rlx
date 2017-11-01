@@ -34,6 +34,8 @@ LIST unknown = ("\\*.*"r) ;
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
 
+SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
+
 SET V = Vblex + Vbmod + Vbhaver + Copula ;
 SET Word = N + NP + A + Det + PreAdv + Adv + V + Pron + Prep + CnjCoo + CnjSub + CnjAdv + Rel + Interj ;
 SET NP_Member = N + A + Det + PreAdv + Adv + Pron ; # Pron es distinto al resto...
@@ -318,7 +320,7 @@ SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
 
 # ser i seriar (p.ex. seria)
 REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
-REMOVE:ser2 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N) ;
+REMOVE:ser2 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N OR Det) ;
 REMOVE:ser3 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 
 # ser i estat (p.ex. estat)
@@ -494,42 +496,46 @@ SELECT:r_na_13_fp N IF (-3 Barrera_Inicial_SN LINK NOT 0 Verb) (-2C Det + $$FemP
 
 # NOM ADJ
 
-REMOVE:r_na_1_ms A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Adj_PP + $$MascSg) ;
-REMOVE:r_na_1_mp A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Adj_PP + $$MascPl) ;
-REMOVE:r_na_1_fs A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) ;
-REMOVE:r_na_1_fp A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) ;
+REMOVE A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$MascSg LINK 0 N OR NP) (1 Adj_PP + $$MascSg) (NOT 0 ("nou") OR ("sol")) ;
+REMOVE A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 Adj_PP + $$MascPl) (NOT 0 ("nou") OR ("sol")) ;
+REMOVE A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) (NOT 0 ("nou") OR ("sol")) ;
+REMOVE A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) (NOT 0 ("nou") OR ("sol")) ;
 ## jóvenes inteligentes (jóvenes > n)
 ## jóvenes encapuchadas (jóvenes > n)
 ## abisenios inteligentes (jóvenes > n)
 ## escrito largo (escrito > n)
+## nous materials
+## pels sols fets de
 
-REMOVE:r_na_3_ms_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascSg LINK 0 N OR NP) (NOT 0 Trencat) (1 Adj_PP + $$MascSg) ;
-REMOVE:r_na_3_mp_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascPl LINK 0 N OR NP) (NOT 0 Trencat) (1 Adj_PP + $$MascPl) ;
-REMOVE:r_na_3_fs_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) ;
-REMOVE:r_na_3_fp_adj A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) ;
+REMOVE A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascSg LINK 0 N OR NP) (NOT 0 Trencat) (NOT 0 ("nou") OR ("sol")) (1 Adj_PP + $$MascSg) ;
+REMOVE A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$MascPl LINK 0 N OR NP) (NOT 0 Trencat) (NOT 0 ("nou") OR ("sol")) (1 Adj_PP + $$MascPl) ;
+REMOVE A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemSg LINK 0 N OR NP) (NOT 0 ("nou") OR ("sol")) (1 Adj_PP + $$FemSg) ;
+REMOVE A OR PP IF (NOT -1 N OR A OR PP OR ("ser") OR ("estar")) (0 Noun_Adj + $$FemPl LINK 0 N OR NP) (NOT 0 ("nou") OR ("sol")) (1 Adj_PP + $$FemPl) ;
 
-REMOVE:r_na_3_ms_pp PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$MascSg LINK 0 N OR NP) (1 Adj_PP + $$MascSg) ;
-REMOVE:r_na_3_mp_pp PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$MascPl LINK 0 N OR NP) (1 Adj_PP + $$MascPl) ;
-REMOVE:r_na_3_fs_pp PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) ;
-REMOVE:r_na_3_fp_pp PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) ;
+REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$MascSg LINK 0 N OR NP) (1 Adj_PP + $$MascSg) ;
+REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$MascPl LINK 0 N OR NP) (1 Adj_PP + $$MascPl) ;
+REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$FemSg LINK 0 N OR NP) (1 Adj_PP + $$FemSg) ;
+REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$FemPl LINK 0 N OR NP) (1 Adj_PP + $$FemPl) ;
 ## vieron jóvenes inteligentes (jóvenes > n)
 ## vieron jóvenes encapuchadas (jóvenes > n)
 ## vieron abisenios inteligentes (jóvenes > n)
 ## PROBLEMA: con alto contenido (alto > n/adv); ídem per a adj ambigus típicament preposats: alto, bajo, mal (+flaco favor, etc.)
 ## Està fet més malament
 
-SELECT:na3_ms A OR PP IF (-1 N + $$MascSg) (0 Adj_PP + $$MascSg) (1 Adj_PP + $$MascSg) ;
-SELECT:na3_mp A OR PP IF (-1 N + $$MascPl) (0 Adj_PP + $$MascPl) (1 Adj_PP + $$MascPl) ;
-SELECT:na3_fs A OR PP IF (-1 N + $$FemSg) (0 Adj_PP + $$FemSg) (1 Adj_PP + $$FemSg) ;
-SELECT:na3_fp A OR PP IF (-1 N + $$FemPl) (0 Adj_PP + $$FemPl) (1 Adj_PP + $$FemPl) ;
+SELECT A OR PP IF (-1 N + $$MascSg) (0 Adj_PP + $$MascSg) (NOT 0 PreAdv) (1 Adj_PP + $$MascSg) ;
+SELECT A OR PP IF (-1 N + $$MascPl) (0 Adj_PP + $$MascPl) (NOT 0 PreAdv) (1 Adj_PP + $$MascPl) (NOT 0 ("<segons>")) ;
+SELECT A OR PP IF (-1 N + $$FemSg) (0 Adj_PP + $$FemSg) (NOT 0 PreAdv) (1 Adj_PP + $$FemSg) ;
+SELECT A OR PP IF (-1 N + $$FemPl) (0 Adj_PP + $$FemPl) (NOT 0 PreAdv) (1 Adj_PP + $$FemPl) ;
 ## "la Primera Conferencia Americana celebrada" (pqè Americana > adj)
+## però: simbolisme molt complex
+## els avions segons diversos criteris
 
 # NOM ADJ ADJ
 
-SELECT:naa1_ms A OR PP IF (-2 N + $$MascSg) (-1 Adj_PP + $$MascSg) (0 Adj_PP + $$MascSg) (NOT 0 Det OR Ger) ;
-SELECT:naa1_mp A OR PP IF (-2 N + $$MascPl) (-1 Adj_PP + $$MascPl) (0 Adj_PP + $$MascPl) (NOT 0 Det OR Ger) ;
-SELECT:naa1_fs A OR PP IF (-2 N + $$FemSg) (-1 Adj_PP + $$FemSg) (0 Adj_PP + $$FemSg) (NOT 0 Det OR Ger) ;
-SELECT:naa1_fp A OR PP IF (-2 N + $$FemPl) (-1 Adj_PP + $$FemPl) (0 Adj_PP + $$FemPl) (NOT 0 Det OR Ger) ;
+SELECT A OR PP IF (-2 N + $$MascSg) (-1 Adj_PP + $$MascSg) (0 Adj_PP + $$MascSg) (NOT 0 Det OR Ger) ;
+SELECT A OR PP IF (-2 N + $$MascPl) (-1 Adj_PP + $$MascPl) (0 Adj_PP + $$MascPl) (NOT 0 Det OR Ger) ;
+SELECT A OR PP IF (-2 N + $$FemSg) (-1 Adj_PP + $$FemSg) (0 Adj_PP + $$FemSg) (NOT 0 Det OR Ger) ;
+SELECT A OR PP IF (-2 N + $$FemPl) (-1 Adj_PP + $$FemPl) (0 Adj_PP + $$FemPl) (NOT 0 Det OR Ger) ;
 
 # NOM ADJ ADJ ADJ
 
@@ -690,6 +696,9 @@ REMOVE:r_na_9_fp_fp A OR PP IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 
 
 # REMOVE:r_na_20 A OR PP IF (-1 Barrera_Inicial_SN LINK NOT 0 N) (NOT -1 Limite_Barrera_Inicial_SN) (0 Noun_Adj_PP LINK 0 N OR NP) (1 Barrera_Final_SN) ;
 
+SELECT Prep IF (-1 Rel) (0 ("<durant>")) ;
+	# on durant anys, quan durant anys
+
 SELECT Prep IF (-1 >>>) (0 ("segons")) ;
 	# segons ell
 	# segons el xic
@@ -720,6 +729,10 @@ SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
 	# pensa que cap indicació
 SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
 	# pensa que cap bona indicació
+SELECT Det IF (-1C Verb) (0 ("cap")) (1C N) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1C A) (2C N) ;
+SELECT Pron IF (NOT -1 Det OR A) (0 ("cap")) (1C Verb) ;
+	# però cap ha estat acceptada
 
 SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C A OR PP) ;
 	# és molt variat
