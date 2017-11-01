@@ -731,6 +731,10 @@ SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
 	# pensa que cap bona indicació
 SELECT Det IF (-1C Verb) (0 ("cap")) (1C N) ;
 SELECT Det IF (-1C Verb) (0 ("cap")) (1C A) (2C N) ;
+	# no va aconseguir cap conquesta territorial
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C N) ;
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
+	# no hi ha pràcticament cap menció
 SELECT Pron IF (NOT -1 Det OR A) (0 ("cap")) (1C Verb) ;
 	# però cap ha estat acceptada
 
