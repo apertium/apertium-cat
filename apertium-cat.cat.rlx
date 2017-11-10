@@ -119,6 +119,7 @@ LIST Calar = "calar" ;
 LIST Beure = "beure" ;
 LIST Veure = "veure" ;
 LIST Viure = "viure" ;
+LIST Seure = "seure" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -162,8 +163,10 @@ REMOVE:r_cog_2 Cog IF (-1 DetInd) (0 Cog) ;
 REMOVE:r_ant_1 Ant IF (-1 DetDef) (0 Ant) ;
 REMOVE:r_ant_2 Ant IF (-1 DetInd) (0 Ant) ;
 
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol")) ;
-SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;	# Pujol diu
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol") OR ("Nadal") OR ("Parlament")) ;
+	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
+SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
+SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 SELECT Cog IF (0 Cog) (0 Ant) (-1C Ant) ;
 
 
@@ -337,6 +340,9 @@ SELECT Viure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
 
 # jo bec
 SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
+
+# jo sec
+SELECT Seure IF (-1 ("jo")) (0 ("<sec>")) ;
 
 SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
@@ -712,6 +718,8 @@ SELECT Prep IF (-1C N) (0 ("sobre")) (1 Det) ;
 SELECT Vblex IF (-1C ("no")) (0 ("porta")) (1 ("cap")) ;
 SELECT Det IF (-2C ("no")) (-1 Vblex) (0 ("cap")) (1C N) ;
 	# no porta cap indicació
+SELECT Det IF (-2C ("no")) (-1 Vblex) (0 ("cap")) (1C N OR Inf) ;
+	# no tenien cap poder ni estatus social
 
 SELECT Pron IF (-4 ("no")) (-3 ("en")) (-2 Vbmod) (-1 Inf) (0 ("cap")) ;
 	# no en pot portar cap
