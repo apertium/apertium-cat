@@ -76,6 +76,7 @@ SET Pers = (p1) OR (p2) OR (p3) ;
 SET Ref = (prn pro ref) ;
 SET Pro = (prn pro) ;
 SET Tn = (prn tn) ;
+SET Tn_nt = (prn tn nt) ;
 
 SET Ant = (np ant) ;
 SET Cog = (np cog) ;
@@ -120,6 +121,7 @@ LIST Beure = "beure" ;
 LIST Veure = "veure" ;
 LIST Viure = "viure" ;
 LIST Seure = "seure" ;
+LIST Moure = "moure" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -341,12 +343,18 @@ SELECT Viure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
 # jo bec
 SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
 
+# jo moc
+SELECT Moure IF (-1 ("jo")) (0 ("<moc>")) ;
+
 # jo sec
 SELECT Seure IF (-1 ("jo")) (0 ("<sec>")) ;
+SELECT Seure IF (-1 >>>) (0 ("<Sec>")) ;
 
 SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
 
+SELECT Vblex IF (-1 Tn_nt) (0 N OR V) (0 P3) ;
+	# això comporta
 #
 # Desambiguació "los" enc / els "pro"
 #
