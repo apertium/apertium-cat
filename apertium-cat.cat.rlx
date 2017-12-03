@@ -457,11 +457,11 @@ SELECT:n_a_eos_3 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1 Det) 
 	# PERO: Las clasificaciones más reconocidas internacionalmente son la francesa y la estadounidense.
 	# PERO: muy poco conocida.
 
-REMOVE:pr_n_pr1 A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr1b N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr2 N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
-SELECT:pr_n_pr3 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT:pr_n_pr4 N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
+REMOVE A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet LINK NOT 0 Pron) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
+SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
+SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 
 # NP / ADJ
 
@@ -736,11 +736,26 @@ SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap blanc
 SELECT N IF (-1 ("com a")) (0 ("cap")) ;
 	# ha estat designat com a cap de les famílies
+SELECT Fem IF (-3 ("ser") OR ("estar")) (-2 PP + Fem) (-1 ("com a")) (0 ("cap")) (1C Prep) ;
+	# va ser designada com a cap de
+SELECT Masc IF (NOT -2 PP + Fem) (-1C Prep) (0 ("cap")) (1C Prep) (NOT 2 Det + Pl) ;
+	# Aristòtil va ser designat com a cap de la reial acadèmia
 
 SELECT Det IF (-1 Prep) (0 ("cap")) (1C N) ;
 	# sense cap indicació
 SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (1/* Det + Pl) ;
 	# de cap d'aquestes indicacions
+	# amb cap de les formes
+SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
+	# cap dels meus amics
+	# cap de les meves amigues
+	# però: és cap dels mossos d'esquadre
+SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
+	# no és cap dels meus amics
+	# no és cap de les meves amigues
 SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
 	# pensa que cap indicació
 SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
