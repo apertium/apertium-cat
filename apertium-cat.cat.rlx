@@ -171,6 +171,7 @@ SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 SELECT Cog IF (0 Cog) (0 Ant) (-1C Ant) ;
 
+SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;	# el Sol
 
 SELECT:este_2 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 A + $$MascSg) (2 N + $$MascSg) ;
 	# de este bonito estado
