@@ -223,7 +223,7 @@ REMOVE:tant_com_2 Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 
 REMOVE:adj_adv_1 Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
 REMOVE:adj_adv_2 Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
-REMOVE:adj_adv_3 Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) ;
+REMOVE:adj_adv_3 Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
 REMOVE:adj_adv_4_ms A (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
 REMOVE:adj_adv_4_fs A (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
 REMOVE:adj_adv_4_mp A (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
@@ -537,7 +537,7 @@ REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + $$FemPl LINK 
 ## PROBLEMA: con alto contenido (alto > n/adv); ídem per a adj ambigus típicament preposats: alto, bajo, mal (+flaco favor, etc.)
 ## Està fet més malament
 
-SELECT A OR PP IF (-1 N + $$MascSg) (0 Adj_PP + $$MascSg) (NOT 0 PreAdv) (1 Adj_PP + $$MascSg) ;
+SELECT A OR PP IF (-1 N + $$MascSg) (0 Adj_PP + $$MascSg) (NOT 0 PreAdv) (1 Adj_PP + $$MascSg) (NOT 0 Adv) ;
 SELECT A OR PP IF (-1 N + $$MascPl) (0 Adj_PP + $$MascPl) (NOT 0 PreAdv) (1 Adj_PP + $$MascPl) (NOT 0 ("<segons>")) ;
 SELECT A OR PP IF (-1 N + $$FemSg) (0 Adj_PP + $$FemSg) (NOT 0 PreAdv) (1 Adj_PP + $$FemSg) ;
 SELECT A OR PP IF (-1 N + $$FemPl) (0 Adj_PP + $$FemPl) (NOT 0 PreAdv) (1 Adj_PP + $$FemPl) ;
