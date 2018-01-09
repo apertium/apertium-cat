@@ -128,6 +128,8 @@ SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
 SET Haver = ("haver") OR ("Haver") ;
 
+LIST Que = "que" ;
+
 SET V_CI = ("telefonar") OR ("trucar") ;	# verbs darrere els quals no pot anar un CD, sinó un CI
 SET V_CD_CI = ("agafar") OR ("afegir") OR ("atorgar") OR ("atribuir")
 	OR ("comprar") OR ("comunicar") OR ("construir") OR ("contestar") OR ("cridar")
@@ -170,7 +172,7 @@ SELECT Ant IF (0 Ant) (1C Ant) ;
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
 
-SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben")) ;
+SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 
@@ -180,6 +182,18 @@ SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol") OR ("Nadal") OR ("Parlament") OR
 SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;		# el Sol
 SELECT N IF (-1 ("<la>")) (0 ("<Guerra>")) ;		# la Guerra (Mundial, d'Independència, etc.)
 SELECT N IF (-2 ("<la>")) (-1 A) (0 ("<Guerra>")) ;	# la Gran Guerra
+
+
+SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
+	# la dona que estima les flors
+SELECT Rel (-2C N) (-1 A) (0 Que) (1 Verb + P3) ;
+	# la dona gran que estima les flors
+SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1C N) ;
+SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2C N) ;
+SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2 A) (3C N) ;
+SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2A A) (3 N) ;
+	# la dona que estima les flors
+
 
 SELECT:este_2 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 A + $$MascSg) (2 N + $$MascSg) ;
 	# de este bonito estado
@@ -212,8 +226,8 @@ SELECT:que_3 CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1C Adv);
 SELECT:que_3b CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1 ("entonces")) ;
 SELECT:que_4 CnjSub (0 ("que")) (-1C PP) (-2C ("haver") OR ("Haver") OR ("ser") OR ("Ser") OR ("estar") OR ("Estar")) ;
 SELECT:que_5 CnjSub (0 ("que")) (-2 ("tan") OR ("Tan")) (-1 A OR Adv) ;
-SELECT:que_6 CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 V OR Pron) ;
-SELECT:que_7 CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 V OR Pron) ;
+SELECT:que_6 CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
+SELECT:que_7 CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
 
 REMOVE:r_adv Adv (0 Adv) (-1C N) (1C N) ;
 	# manifestantes bajo jurisdicción
@@ -254,7 +268,7 @@ SELECT:adj_adv_5_fp A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) (NOT 0 ("va"))
 REMOVE Imp IF (NOT 1* Excl) ;
 
 # elección de subjuntivo después de "que"
-SELECT:subj1 PRS (*-1 ("que") OR ("Que") BARRIER (Cnj_Rel_End)) (*-1 VerboSubj) (0C Verb) (NOT 0 ("<poden>")) ;
+SELECT:subj1 PRS (*-1 Que BARRIER (Cnj_Rel_End)) (*-1 VerboSubj) (0C Verb) (NOT 0 ("<poden>")) ;
 #REMOVE:subj2 PRS (*-1 >>> BARRIER CnjAdv OR CnjSub OR Rel) (NOT -1 ("no") OR ("No") OR ("nunca") OR ("Nunca")) (0C Verb) ;
 SELECT:subj3 PRS (*-1 ("ser# .*"r) LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
 SELECT:subj4 PRS (*-1 ("ser") LINK 1 A LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
