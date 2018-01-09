@@ -160,16 +160,22 @@ SET VPred = ("considerar") OR ("Considerar") OR ("creer") OR ("Creer") OR ("opin
 
 SECTION
 
-REMOVE:r_cog_1 Cog IF (-1 DetDef) (0 Cog) ;
-REMOVE:r_cog_2 Cog IF (-1 DetInd) (0 Cog) ;
-REMOVE:r_ant_1 Ant IF (-1 DetDef) (0 Ant) ;
-REMOVE:r_ant_2 Ant IF (-1 DetInd) (0 Ant) ;
+REMOVE Cog IF (-1 DetDef) (0 Cog) ;
+REMOVE Cog IF (-1 DetInd) (0 Cog) ;
+REMOVE Ant IF (-1 DetDef) (0 Ant) ;
+REMOVE Ant IF (-1 DetInd) (0 Ant) ;
+
+SELECT Ant IF (0 Ant) (1C Ant) ;
+        # Rosa Maria
+SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
+SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
+
+SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben")) ;
+#SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
+#SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
 	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
-SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
-SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
-SELECT Cog IF (0 Cog) (0 Ant) (-1C Ant) ;
 
 SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;		# el Sol
 SELECT N IF (-1 ("<la>")) (0 ("<Guerra>")) ;		# la Guerra (Mundial, d'Independència, etc.)
