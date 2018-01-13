@@ -376,8 +376,13 @@ SELECT Seure IF (-1 >>>) (0 ("<Sec>")) ;
 SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
 
-SELECT Vblex IF (-1 Tn_nt) (0 N OR V) (0 P3) ;
+SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
+SELECT Vblex IF (-1C Adv) (0C N OR Vblex) (1 Det) (2C N) ;
+SELECT Vblex IF (0C N OR Vblex) (0 ("posar")) (1 Det) (2 N) ;
+	# finalment posa l'esquena completament recta
+
+
 #
 # Desambiguació "los" enc / els "pro"
 #
