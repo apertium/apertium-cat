@@ -194,6 +194,7 @@ SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2 A) (3C N) ;
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2A A) (3 N) ;
 	# la dona que estima les flors
 
+SELECT Vbhaver (-1 ("hi")) (0 Vbhaver) (NOT 1 PP) ;
 
 SELECT:este_2 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 A + $$MascSg) (2 N + $$MascSg) ;
 	# de este bonito estado
@@ -871,3 +872,7 @@ SELECT Ger (-1C N) (OC ("<ensenyant>")) (1 ("en") OR ("a"))  ;	# va escampar els
 
 SELECT A (-1 Ser) (0 ("divertit")) ;
 SELECT A (-2 Ser) (-1 PreAdv) (0 ("divertit")) ;
+
+SELECT Adv (-1C V) (0 ("<junts>")) ;
+	# vénen junts
+SELECT Adv (-2C V) (-1 ("tot")) (0 ("<junts>")) ;
