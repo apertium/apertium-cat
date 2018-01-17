@@ -123,6 +123,8 @@ LIST Veure = "veure" ;
 LIST Viure = "viure" ;
 LIST Seure = "seure" ;
 LIST Moure = "moure" ;
+LIST So = "so" ;
+LIST Son = "son" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -377,6 +379,8 @@ SELECT Seure IF (-1 >>>) (0 ("<Sec>")) ;
 
 SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
+
+SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
@@ -847,6 +851,8 @@ SELECT Num IF (0 ("<I>")) (-1 unknownMajIni) ;
 SELECT Num IF (-1 Det + Def + $$MascSg) (0 ("<I>")) (1C N + $$MascSg) ;
 SELECT Num IF (-1 Det + Def + $$FemSg) (0 ("<I>")) (1C N + $$FemSg) ;
 	# la I República
+SELECT Num IF (0 ("<I>")) (-1 ("segle")) ;
+	# el segle I
 
 SELECT Masc IF (0 ("final")) (-1 Prep) ;
 	# a finals de, de finals de
