@@ -30,6 +30,7 @@ LIST Itg = (itg) ;
 LIST Interj = (ij) ;
 
 LIST unknown = ("\\*.*"r) ;
+LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
@@ -176,7 +177,7 @@ SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det) (-1 >>>) (NOT 0 ("just") OR (
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
 	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;		# el Sol
@@ -447,10 +448,10 @@ REMOVE:r_na_5_fscom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemSg) (0 Nou
 REMOVE:r_na_5_mpcom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 REMOVE:r_na_5_fpcom A OR PP IF (-2 ("com") OR ("Com")) (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 
-SELECT:s_na_1_ms N IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT:s_na_1_fs N IF (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT:s_na_1_mp N IF (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT:s_na_1_fp N IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+SELECT N IF (-1 Det + $$MascSg) (0 Noun_Adj_PP + $$MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+SELECT N IF (-1 Det + $$FemSg) (0 Noun_Adj_PP + $$FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+SELECT N IF (-1 Det + $$MascPl) (0 Noun_Adj_PP + $$MascPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+SELECT N IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
 
@@ -467,6 +468,12 @@ SELECT A IF (-3 N + $$MascPl) (-2 A + $$MascPl) (-1 ("més") OR ("menys")) (0 A 
 SELECT A IF (-3 N + $$FemPl) (-2 A + $$FemPl) (-1 ("més") OR ("menys")) (0 A + $$FemPl LINK NOT 0 NP) ;
 	# l'activitat industrial més activa
 	# les llengües internacionales més esteses
+
+REMOVE N IF (-1C N + $$MascSg) (0 N OR A + $$MascSg) (1 (",")) (2 A + $$MascSg)  (3 ("i")) (4 A + $$MascSg) ;
+REMOVE N IF (-1C N + $$FemSg) (0 N OR A + $$FemSg) (1 (",")) (2 A + $$FemSg)  (3 ("i")) (4 A + $$FemSg) ;
+REMOVE N IF (-1C N + $$MascPl) (0 N OR A + $$MascPl) (1 (",")) (2 A + $$MascPl)  (3 ("i")) (4 A + $$MascPl) ;
+REMOVE N IF (-1C N + $$FemPl) (0 N OR A + $$FemPl) (1 (",")) (2 A + $$FemPl)  (3 ("i")) (4 A + $$FemPl) ;
+	# ortografia francesa, llatina i grega
 
 REMOVE N IF (-3 N + $$MascSg) (-2 A + $$MascSg) (-1 ("i")) (0 A + $$MascSg) (0 N) ;
 REMOVE N IF (-3 N + $$FemSg) (-2 A + $$FemSg) (-1 ("i")) (0 A + $$FemSg) (0 N) ;
@@ -832,9 +839,14 @@ SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 SELECT PP IF (0 ("<passada>")) (1 Det + FemSg) (2 N + FemSg) ;
 	# fins passada la nit
 
-SELECT Num IF (0 ("I")) (-1 Ant) (NOT 1 Cog OR Ant) ;
+SELECT Num IF (0 ("<I>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 	# Pere I el Catòlic
 	# Pere i Joan
+SELECT Num IF (0 ("<I>")) (-1 unknownMajIni) ;
+	# NomEstrany I
+SELECT Num IF (-1 Det + Def + $$MascSg) (0 ("<I>")) (1C N + $$MascSg) ;
+SELECT Num IF (-1 Det + Def + $$FemSg) (0 ("<I>")) (1C N + $$FemSg) ;
+	# la I República
 
 SELECT Masc IF (0 ("final")) (-1 Prep) ;
 	# a finals de, de finals de
@@ -862,7 +874,8 @@ SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Vbmod) (1 P1 OR P2 OR P3) ;
 	# depenent de si volen menjar
 
 SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel OR unknown OR A) ;
-SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual")) ;
+SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual") OR ("<altres>")) ;
+SELECT Prep (0 ("entre")) (1 ("de")) (2 ("<altres>")) ;
 SELECT Prep (0 ("sobre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Itg OR unknown) ;
 SELECT Prep (0 ("sobre")) (1 ("el que") OR ("el qual")) ;		# sobre el que diu en Joan
 SELECT Prep (0 ("entre")) (1 ("<fa>")) ;				# el Cretaci superior, entre fa 77 i fa 74 milions d'anys
