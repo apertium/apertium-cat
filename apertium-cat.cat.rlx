@@ -11,6 +11,7 @@ LIST <<< = <<< ;
 LIST N = (n) ;
 LIST NP = (np) ;
 LIST A = (adj) ;
+LIST Pos = (pos) ;
 LIST Det = (det) ;
 LIST PreDet = (predet) ;
 LIST Num = (num) ;
@@ -132,6 +133,7 @@ SET Estar = ("estar") OR ("Estar");
 SET Haver = ("haver") OR ("Haver") ;
 
 LIST Que = "que" ;
+LIST Deu = "deu" ;
 
 SET V_CI = ("telefonar") OR ("trucar") ;	# verbs darrere els quals no pot anar un CD, sinó un CI
 SET V_CD_CI = ("agafar") OR ("afegir") OR ("atorgar") OR ("atribuir")
@@ -175,7 +177,7 @@ SELECT Ant IF (0 Ant) (1C Ant) ;
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
 
-SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel")) ;
+SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 
@@ -382,12 +384,18 @@ SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 
 SELECT So IF (0 So OR Son + Pl) ;
 
+SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
+	# Deu anys després
+SELECT Num IF (0 Deu) (1 A) (2 N) (3 ("abans") OR ("després")) ;
+SELECT Num IF (0 Deu) (1 N) (2 A) (3 ("abans") OR ("després")) ;
+
 SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
 SELECT Vblex IF (-1C Adv) (0C N OR Vblex) (1 Det) (2C N) ;
 SELECT Vblex IF (0C N OR Vblex) (0 ("posar")) (1 Det) (2 N) ;
 	# finalment posa l'esquena completament recta
-
+SELECT N IF (-2 Prep) (-1 Pos) (0 N OR Vblex) (1 A) ;
+	# juntament amb la seva guarda personal
 
 #
 # Desambiguació "los" enc / els "pro"
