@@ -64,6 +64,8 @@ LIST Masc = m mf ;
 LIST Fem = f mf ;
 LIST Sg = sg sp ;
 LIST Pl = pl sp ;
+LIST Sg_strict = sg ;
+LIST Pl_strict = pl ;
 SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
 SET MascPl = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
 SET FemSg = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
@@ -128,6 +130,8 @@ LIST So = "so" ;
 LIST Son = "son" ;
 LIST Fi = "fi" ;
 LIST Fins = "fins" ;
+LIST Fer = "fer" ;
+LIST Faig = "faig" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -388,6 +392,10 @@ SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 
+REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
+REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
+	# els reis catalans els faig a partir de
+
 SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
 	# Deu anys després
 SELECT Num IF (0 Deu) (1 A) (2 N) (3 ("abans") OR ("després")) ;
@@ -503,8 +511,8 @@ SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR
 SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
 
-SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 Barrera_Final_Estrict_SN) ;
-SELECT:n_a_eos_3 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1 Det) (NOT -1 ("este") OR ("Este")) (1 CM OR CnjCoo) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_3 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 CM OR CnjCoo) (1 Barrera_Final_Estrict_SN) ;
 	# detonar los explosivos.
 	# PERO: Las clasificaciones más reconocidas internacionalmente son la francesa y la estadounidense.
 	# PERO: muy poco conocida.
@@ -815,9 +823,17 @@ SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
 SELECT Det IF (-1C Verb) (0 ("cap")) (1C N) ;
 SELECT Det IF (-1C Verb) (0 ("cap")) (1C A) (2C N) ;
 	# no va aconseguir cap conquesta territorial
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (2 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 A) (1 N) (3 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estrict_SN) ;
+	# no hi ha cap dubte que
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C N) ;
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
 	# no hi ha pràcticament cap menció
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 N) (2 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 A) (1 N) (3 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estrict_SN) ;
+	# no hi ha pràcticament cap dubte que
 SELECT Pron IF (NOT -1 Det OR A) (0 ("cap")) (1C Verb) ;
 	# però cap ha estat acceptada
 
