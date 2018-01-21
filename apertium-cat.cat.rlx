@@ -396,6 +396,9 @@ REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
 REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
 	# els reis catalans els faig a partir de
 
+REMOVE Copula IF (0 Copula) (1C V + P1 OR P2 OR P3) ;
+	# de la nostra era queda
+
 SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
 	# Deu anys després
 SELECT Num IF (0 Deu) (1 A) (2 N) (3 ("abans") OR ("després")) ;
