@@ -126,6 +126,8 @@ LIST Seure = "seure" ;
 LIST Moure = "moure" ;
 LIST So = "so" ;
 LIST Son = "son" ;
+LIST Fi = "fi" ;
+LIST Fins = "fins" ;
 LIST VSer = "ser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
@@ -383,6 +385,8 @@ SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
 
 SELECT So IF (0 So OR Son + Pl) ;
+
+SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 
 SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
 	# Deu anys després
