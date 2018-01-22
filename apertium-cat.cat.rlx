@@ -848,6 +848,10 @@ SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C Adv) ;
 SELECT PreAdv IF (-1C N) (0 ("molt")) (1C Adv) ;
 SELECT PreAdv IF (-2 N) (-1 A) (0 ("molt")) (1C Adv) ;
 	# un museu molt a prop
+SELECT PreAdv IF (-1C N) (0 ("molt")) (1C A OR PP) ;
+SELECT PreAdv IF (-2C N) (-1 A) (0 ("molt")) (1C A OR PP) ;
+SELECT PreAdv IF (-2 N) (-1C A) (0 ("molt")) (1C A OR PP) ;
+	# una oferta educativa molt àmplia
 
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
