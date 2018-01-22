@@ -804,7 +804,8 @@ SELECT Fem IF (-3 ("ser") OR ("estar")) (-2 PP + Fem) (-1 ("com a")) (0 ("cap"))
 SELECT Masc IF (NOT -2 PP + Fem) (-1C Prep) (0 ("cap")) (1C Prep) (NOT 2 Det + Pl) ;
 	# Aristòtil va ser designat com a cap de la reial acadèmia
 
-SELECT Det IF (-1 Prep) (0 ("cap")) (1C N) ;
+SELECT Det IF (0 ("cap")) (1C N) ;
+#SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
 	# sense cap indicació
 SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
 SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (1/* Det + Pl) ;
