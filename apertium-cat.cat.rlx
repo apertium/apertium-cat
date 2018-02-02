@@ -32,6 +32,7 @@ LIST Interj = (ij) ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
@@ -887,16 +888,29 @@ SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 SELECT PP IF (0 ("<passada>")) (1 Det + FemSg) (2 N + FemSg) ;
 	# fins passada la nit
 
-SELECT Num IF (0 ("<I>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
+REMOVE CnjCoo IF (0 ("<I>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
+REMOVE N IF (0 ("<VI>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
+SELECT A IF (0 segles_num_romans) (0C A OR Num) (-1 Ant) (NOT 1 Cog OR Ant) ;
 	# Pere I el Catòlic
 	# Pere i Joan
-SELECT Num IF (0 ("<I>")) (-1 unknownMajIni) ;
+REMOVE CnjCoo IF (0 ("<I>")) (-1 unknownMajIni) ;
+REMOVE N IF (0 ("<VI>")) (-1 unknownMajIni) ;
+SELECT A IF (0 segles_num_romans) (0C A OR Num) (-1 unknownMajIni) ;
 	# NomEstrany I
-SELECT Num IF (-1 Det + Def + $$MascSg) (0 ("<I>")) (1C N + $$MascSg) ;
-SELECT Num IF (-1 Det + Def + $$FemSg) (0 ("<I>")) (1C N + $$FemSg) ;
+SELECT A IF (-1 Det + Def + $$MascSg) (0 ("<I>")) (1C N + $$MascSg) ;
+SELECT A IF (-1 Det + Def + $$FemSg) (0 ("<I>")) (1C N + $$FemSg) ;
+SELECT A IF (-1 Det + Def + $$MascSg) (0 ("<VI>")) (1C N + $$MascSg) ;
+SELECT A IF (-1 Det + Def + $$FemSg) (0 ("<VI>")) (1C N + $$FemSg) ;
+SELECT A IF (-1 Det + Def + $$MascSg) (0 segles_num_romans) (0C A OR Num) (1C N + $$MascSg) ;
+SELECT A IF (-1 Det + Def + $$FemSg) (0 segles_num_romans) (0C A OR Num) (1C N + $$FemSg) ;
 	# la I República
-SELECT Num IF (0 ("<I>")) (-1 ("segle")) ;
+SELECT A IF (0 ("<I>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
+SELECT A IF (0 ("<VI>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
+#SELECT A IF (0 segles_num_romans) (0C A OR Num) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
+SELECT A IF (0 segles_num_romans) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
 	# el segle I
+SELECT N IF (0 ("<C>")) (-1 Num) ;
+	# 100°C
 
 SELECT Masc IF (0 ("final")) (-1 Prep) ;
 	# a finals de, de finals de
