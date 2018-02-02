@@ -188,6 +188,9 @@ SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>) (NOT 0 ("just
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
 
+SELECT N IF (-1 ("<santes>")) (0 ("<creus>")) ;
+SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
+
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
 	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
@@ -784,6 +787,8 @@ REMOVE:r_na_9_fp_fp A OR PP IF (-1 Det + $$FemPl) (0 Noun_Adj_PP + $$FemPl LINK 
 
 SELECT Prep IF (-1 Rel) (0 ("<durant>")) ;
 	# on durant anys, quan durant anys
+SELECT Prep IF (0 ("durant")) (1 Det) ;
+	# de Catalunya durant el segle XII
 
 SELECT Prep IF (-1 >>>) (0 ("segons")) ;
 	# segons ell
