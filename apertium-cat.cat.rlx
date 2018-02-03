@@ -63,6 +63,8 @@ LIST Enc = (enc) ;
 
 LIST Masc = m mf ;
 LIST Fem = f mf ;
+LIST Masc_strict = n ;
+LIST Fem_strict = f ;
 LIST Sg = sg sp ;
 LIST Pl = pl sp ;
 LIST Sg_strict = sg ;
@@ -86,6 +88,7 @@ SET Tn_nt = (prn tn nt) ;
 SET Ant = (np ant) ;
 SET Cog = (np cog) ;
 SET Ant_Cog = Ant OR Cog ;
+SET Top = (np top) OR (np loc) ;
 
 SET DetDef = (det def) ;
 SET DetInd = (det ind) ;
@@ -100,9 +103,15 @@ SET Adv_PreAdv = Adv OR PreAdv ;
 SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
 SET Verb_Prep = Verb OR Prep ;
 SET Cnj_Rel = CnjCoo OR CnjSub OR CnjAdv OR Rel ;
-SET Cnj_Rel_End = >>> OR CnjCoo OR CnjSub OR CnjAdv OR Rel ;
+SET Cnj_Rel_End = >>> OR CnjCoo OR CnjSub OR CnjAdv OR Rel OR Inf;
 
 SET Trencat = ("terç") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") ;
+
+SET Llocs = ("riu") OR ("mar") OR ("oceà") OR ("muntanya") OR ("serra") OR ("serralada") OR ("cordillera") OR ("carena")
+	OR ("carrer") OR ("parc") OR ("plaça") OR ("avinguda") OR ("ciutat") OR ("vila") OR ("poble") OR ("capital") ;
+SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("oncle") OR ("tia") OR ("sogre") OR ("cunyat")
+	OR ("marit") OR ("dona") OR ("muller") OR ("espòs") OR ("company") OR ("veí") OR ("cap") OR ("amic") OR ("conegut") ;
+#SET Persones2 = ("pare") ("mare") ("avi") ;
 
 SET Barrera_Final_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro ;	# Verb és perillós per la ambigüitat, però en general, prolífic
 SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro ;
@@ -134,6 +143,8 @@ LIST Fins = "fins" ;
 LIST Fer = "fer" ;
 LIST Faig = "faig" ;
 LIST VSer = "ser" ;
+LIST Pobla = "pobla" ;
+LIST Poble = "poble" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -160,12 +171,13 @@ LIST Li = "li" ;
 SET PreAdj = ("mal") OR ("Mal") ;
 
 # adjetivos ambiguos que se anteponen a menudo
-SET AdjPrefAmb = ("bajo") OR ("alto") OR ("joven") OR ("viejo") OR ("medio") OR ("dicho") OR ("menor") OR ("mayor") OR ("doble") OR ("triple") OR ("posible") OR ("cierto") ;
+SET AdjPrefAmb = ("gran") OR ("petit") OR ("nou") OR ("antic") OR ("menor") OR ("major") OR ("doble") OR ("triple") OR ("possible") OR ("suposat") OR ("presumpte") ;
 
-SET VerboSubj = ("querer") OR ("Querer") OR ("desear") OR ("Desear") OR ("proponer") OR ("Proponer") OR ("gustar") OR ("Gustar") OR ("placer") OR ("Placer") OR ("exigir") OR ("Exigir") OR ("reclamar") OR ("Reclamar") OR ("pedir") OR ("Pedir") OR ("esperar") OR ("Esperar") ;
+# verbs Vblex que típicament impliquen subjuntiu
+SET VerbSubj = ("voler") OR ("desitjar") OR ("proposar") OR ("agradar") OR ("plaure") OR ("exigir") OR ("reclamar") OR ("demanar") OR ("esperar") ;
 
-# verbos Vblex que típicamente tienen predicativo
-SET VPred = ("considerar") OR ("Considerar") OR ("creer") OR ("Creer") OR ("opinar") OR ("Opinar") OR ("sentir") OR ("Sentir") OR ("hallar") OR ("Hallar") OR ("permanecer") OR ("Permanecer") OR ("continuar") OR ("Continuar") OR ("mantener") OR ("Mantener") OR ("resultar") OR ("Resultar") OR ("volver") OR ("Volver") ;
+# verbs Vblex que típicament impliquen indicatiu
+SET VInd = ("considerar") OR ("creure") OR ("opinar") OR ("dir") OR ("sentir") OR ("trobar") OR ("continuar") OR ("mantenir") OR ("resultar") ;
 
 
 ###############################################################################
@@ -190,6 +202,9 @@ SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>) (NOT 0 ("just
 
 SELECT N IF (-1 ("<santes>")) (0 ("<creus>")) ;
 SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
+	# santes creus
+SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
+	# creu de Sant Jordi
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
 	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
@@ -211,15 +226,6 @@ SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2A A) (3 N) ;
 
 SELECT Vbhaver (-1 ("hi")) (0 Vbhaver) (NOT 1 PP) ;
 
-SELECT:este_2 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 A + $$MascSg) (2 N + $$MascSg) ;
-	# de este bonito estado
-SELECT:este_1 Det IF (0 ("este") + $$MascSg) (-1 Verb_Prep) (1 N + $$MascSg) ;
-	# de este estado
-SELECT:este_2 Det IF (0 ("Este") + $$MascSg) (-1 >>>) (1 A + $$MascSg) (2 N + $$MascSg) ;
-	# Este bonito estado
-SELECT:este_1 Det IF (0 ("Este") + $$MascSg) (-1 >>>) (1 N + $$MascSg) ;
-	# Este estado
-
 # Tio estas ligita al la (mis)difinoj de accionista__n, albañil__n, gilipollas__n kaj reh/én__n
 #SELECT:n_mf_1 Masc IF (0C N LINK NOT 0 Defensa) (-1C Vblex OR Prep OR ("com")) (NOT -1 PP) (1 <<< OR Prep) ;
 	## cogieron rehenes.
@@ -231,64 +237,60 @@ SELECT:este_1 Det IF (0 ("Este") + $$MascSg) (-1 >>>) (1 N + $$MascSg) ;
 	# no funciona: quan va venir, ho van veure
 # SELECT:r_verb_2 Vblex (0 Vblex + Pers) (-1C Pro) ; No: podría recurrir a ellas para hacer
 
-# preposiciones / verbos
-SELECT:pr_cnjadv_1 Prep (0 ("después de") OR ("Después de") OR ("antes de") OR ("Antes de") OR ("tras") OR ("Tras")) (1 Det OR Pron LINK NOT 0 Enc) ;
-SELECT:pr_cnjadv_2 Prep (0 ("después de") OR ("Después de") OR ("antes de") OR ("Antes de") OR ("tras") OR ("Tras")) (1C A) ;
-SELECT:pr_cnjadv_3 CnjAdv (0 ("después de") OR ("Después de") OR ("antes de") OR ("Antes de") OR ("tras") OR ("Tras")) (1C Inf OR Enc) ;
+SELECT CnjSub (0 ("que")) (-1C Inf OR Enc) ;
+SELECT CnjSub (0 ("que")) (-1C Vblex LINK NOT 0 PP) ;
+SELECT CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1C Adv);
+SELECT CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1 ("entonces")) ;
+SELECT CnjSub (0 ("que")) (-1C PP) (-2C ("haver") OR ("Haver") OR ("ser") OR ("Ser") OR ("estar") OR ("Estar")) ;
+SELECT CnjSub (0 ("que")) (-2 ("tan") OR ("Tan")) (-1 A OR Adv) ;
+SELECT CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
+SELECT CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
 
-SELECT:que_1 CnjSub (0 ("que")) (-1C Inf OR Enc) ;
-SELECT:que_2 CnjSub (0 ("que")) (-1C Vblex LINK NOT 0 PP) ;
-SELECT:que_3 CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1C Adv);
-SELECT:que_3b CnjSub (0 ("que")) (-2C Vblex LINK NOT 0 PP) (-1 ("entonces")) ;
-SELECT:que_4 CnjSub (0 ("que")) (-1C PP) (-2C ("haver") OR ("Haver") OR ("ser") OR ("Ser") OR ("estar") OR ("Estar")) ;
-SELECT:que_5 CnjSub (0 ("que")) (-2 ("tan") OR ("Tan")) (-1 A OR Adv) ;
-SELECT:que_6 CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
-SELECT:que_7 CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
-
-REMOVE:r_adv Adv (0 Adv) (-1C N) (1C N) ;
+REMOVE Adv (0 Adv) (-1C N) (1C N) ;
 	# manifestantes bajo jurisdicción
 
-REMOVE:nom_verb1 N (-1C Pro) (0 N LINK 0 Verb) (1 ("que")) ;
-REMOVE:nom_verb2 N (NOT -2 Verb) (NOT -2 Prep) (-1C Pro) (0 N LINK 0 Verb) ;
-#REMOVE:nom_verb3 N (NOT *-1 Verb BARRIER <<< OR CnjSub OR CnjAdv OR Rel) (0 N LINK 0 Verb) (NOT *1 Verb BARRIER >>> OR CnjSub OR CnjAdv OR Rel);
-#SELECT:nom_verb3 V (NOT *-1 Verb BARRIER <<< OR CnjSub OR CnjAdv OR Rel) (0 Verb) (NOT *1 Verb BARRIER >>> OR CnjSub OR CnjAdv OR Rel);
+REMOVE N (-1C Pro) (0 N LINK 0 Verb) (1 ("que")) ;
+REMOVE N (NOT -2 Verb) (NOT -2 Prep) (-1C Pro) (0 N LINK 0 Verb) ;
+#REMOVE N (NOT *-1 Verb BARRIER <<< OR CnjSub OR CnjAdv OR Rel) (0 N LINK 0 Verb) (NOT *1 Verb BARRIER >>> OR CnjSub OR CnjAdv OR Rel);
+#SELECT V (NOT *-1 Verb BARRIER <<< OR CnjSub OR CnjAdv OR Rel) (0 Verb) (NOT *1 Verb BARRIER >>> OR CnjSub OR CnjAdv OR Rel);
 	# se estima que
 	# le cuenta que
 	# NO: que ayuda en muchos aspectos
 
-REMOVE:tant_com_1 A (0 ("tant") OR ("Tant")) (*1 ("com") BARRIER CnjSub) ;
-REMOVE:tant_com_2 Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
+REMOVE A (0 ("tant") OR ("Tant")) (*1 ("com") BARRIER CnjSub) ;
+REMOVE Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 
-REMOVE:adj_adv_1 Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
-REMOVE:adj_adv_2 Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
-REMOVE:adj_adv_3 Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
-REMOVE:adj_adv_4_ms A (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
-REMOVE:adj_adv_4_fs A (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
-REMOVE:adj_adv_4_mp A (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
-REMOVE:adj_adv_4_fp A (-1C N + $$FemPl) (0 A LINK 0 Adv) (1C A + $$FemPl) ;
-SELECT:adj_adv_4b_ms Adv (-1C N + $$MascSg) (0 ("poc")) (1 A + $$MascSg) ;
-SELECT:adj_adv_4b_fs Adv (-1C N + $$FemSg) (0 ("poc")) (1 A + $$FemSg) ;
-SELECT:adj_adv_4b_mp Adv (-1C N + $$MascPl) (0 ("poc")) (1 A + $$MascPl) ;
-SELECT:adj_adv_4b_fp Adv (-1C N + $$FemPl) (0 ("poc")) (1 A + $$FemPl) ;
-SELECT:adj_adv_5_ms A (-2C N + $$MascSg) (-1C Adv) (0 A + $$MascSg) (NOT 0 ("va")) ;
-SELECT:adj_adv_5_fs A (-2C N + $$FemSg) (-1C Adv) (0 A + $$FemSg) (NOT 0 ("va")) ;
-SELECT:adj_adv_5_mp A (-2C N + $$MascPl) (-1C Adv) (0 A + $$MascPl) (NOT 0 ("va")) ;
-SELECT:adj_adv_5_fp A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) (NOT 0 ("va")) ;
+REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
+REMOVE Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
+REMOVE Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
+REMOVE A (-1C N + $$MascSg) (0 A LINK 0 Adv) (1C A + $$MascSg) ;
+REMOVE A (-1C N + $$FemSg) (0 A LINK 0 Adv) (1C A + $$FemSg) ;
+REMOVE A (-1C N + $$MascPl) (0 A LINK 0 Adv) (1C A + $$MascPl) ;
+REMOVE A (-1C N + $$FemPl) (0 A LINK 0 Adv) (1C A + $$FemPl) ;
+SELECT Adv (-1C N + $$MascSg) (0 ("poc")) (1 A + $$MascSg) ;
+SELECT Adv (-1C N + $$FemSg) (0 ("poc")) (1 A + $$FemSg) ;
+SELECT Adv (-1C N + $$MascPl) (0 ("poc")) (1 A + $$MascPl) ;
+SELECT Adv (-1C N + $$FemPl) (0 ("poc")) (1 A + $$FemPl) ;
+SELECT A (-2C N + $$MascSg) (-1C Adv) (0 A + $$MascSg) (NOT 0 ("va")) ;
+SELECT A (-2C N + $$FemSg) (-1C Adv) (0 A + $$FemSg) (NOT 0 ("va")) ;
+SELECT A (-2C N + $$MascPl) (-1C Adv) (0 A + $$MascPl) (NOT 0 ("va")) ;
+SELECT A (-2C N + $$FemPl) (-1C Adv) (0 A + $$FemPl) (NOT 0 ("va")) ;
 
-#REMOVE:np_a_ms A IF (0 NP LINK 0 (adj m sg)) (-1 Prep) (1C N) (NOT 1 MascSg) ;
-#REMOVE:np_a_fs A IF (0 NP LINK 0 (adj f sg)) (-1 Prep) (1C N) (NOT 1 FemSg) ;
-#REMOVE:np_a_mp A IF (0 NP LINK 0 (adj m pl)) (-1 Prep) (1C N) (NOT 1 MascPl) ;
-#REMOVE:np_a_fp A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
+#REMOVE A IF (0 NP LINK 0 (adj m sg)) (-1 Prep) (1C N) (NOT 1 MascSg) ;
+#REMOVE A IF (0 NP LINK 0 (adj f sg)) (-1 Prep) (1C N) (NOT 1 FemSg) ;
+#REMOVE A IF (0 NP LINK 0 (adj m pl)) (-1 Prep) (1C N) (NOT 1 MascPl) ;
+#REMOVE A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
 	# asignaba a Armenia territorios
 
 REMOVE Imp IF (NOT 1* Excl) ;
 
 # elección de subjuntivo después de "que"
-SELECT:subj1 PRS (*-1 Que BARRIER (Cnj_Rel_End)) (*-1 VerboSubj) (0C Verb) (NOT 0 ("<poden>")) ;
-#REMOVE:subj2 PRS (*-1 >>> BARRIER CnjAdv OR CnjSub OR Rel) (NOT -1 ("no") OR ("No") OR ("nunca") OR ("Nunca")) (0C Verb) ;
-SELECT:subj3 PRS (*-1 ("ser# .*"r) LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
-SELECT:subj4 PRS (*-1 ("ser") LINK 1 A LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
-SELECT:subj5 PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
+SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb) (NOT 0 ("<poden>")) ;
+	# Compte: quiero decirle que me parece muy bien
+#REMOVE PRS (*-1 >>> BARRIER CnjAdv OR CnjSub OR Rel) (NOT -1 ("no") OR ("No") OR ("nunca") OR ("Nunca")) (0C Verb) ;
+SELECT PRS (*-1 ("ser# .*"r) LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
+SELECT PRS (*-1 ("ser") LINK 1 A LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
+SELECT PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Verb) (NOT 0 ("<poden>")) ;
 	# es común que la persona sienta la certeza
 	# es posible que vengas.
 	# es bueno que vengas
@@ -296,12 +298,6 @@ SELECT:subj5 PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Ver
 
 REMOVE PIS (0 ("<foren>")) (1 PP) ;
 	# que foren capturats
-
-#
-# reflexivo
-# (decido que todos los posesivos en 3a persona, si el verbo está en 3a persona, son reflexivos)
-#
-SUBSTITUTE:ref_1 ("suyo") ("suyo_ref") TARGET ("suyo") IF (0 ("suyo")) (*-1 (vblex p3) BARRIER >>> OR CnjSub OR CnjAdv OR Rel) ;
 
 #
 # comparaciones
@@ -318,54 +314,70 @@ SELECT:ger Ger IF (-1 ("estar") OR ("Estar") OR ("seguir") OR ("Seguir")) (0 Ger
 # PALABRAS PARTICULARES
 #
 
-SELECT:estat_1 N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
-SELECT:estat_2 PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
-SELECT:estat_3 N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estat")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
+SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
+SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
+SELECT N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estat")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 
-#SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
-SELECT:va1 Anar IF (0 ("anar") OR ("va")) (0 P3) (1/* Inf) ;
+#SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
+SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1/* Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
 	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
-SELECT:va2 Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
+SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
 	# Va més ràpidament
-SELECT:va3 Anar IF (0 ("anar") OR ("va")) (0 P3) (1C PP) ;
+SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1C PP) ;
 	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg>$ (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>$
-SELECT:van1 Anar IF (0 ("vanar") OR ("anar")) (0 P1) (NOT -1 ("em")) ;
+SELECT Anar IF (0 ("vanar") OR ("anar")) (0 P1) (NOT -1 ("em")) ;
 	# si no va precedit per "em" triem "anar"
-SELECT:van2 Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
+SELECT Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
 	# si va precedit per "em" triem "vanar"
 
 # voler i volar (p.ex. volen)
-SELECT:voler0 Voler IF (0 ("voler") OR ("volar")) (1/* Inf) ;
-SELECT:voler1 Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
-SELECT:voler2 Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
-SELECT:voler3 Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
-SELECT:voler4 Voler IF (0 ("voler") OR ("volar")) (1 ("que")) ;
-SELECT:voler5 Voler IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("que")) ;
+SELECT Voler IF (0 ("voler") OR ("volar")) (1/* Inf) ;
+SELECT Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
+SELECT Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
+SELECT Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
+SELECT Voler IF (0 ("voler") OR ("volar")) (1 ("que")) ;
+SELECT Voler IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("que")) ;
 	# No volen pas que, volen sovint que
 
 # poder i podar (p.ex. poden)
-SELECT:poder0 Poder IF (0 ("poder") OR ("podar")) (1/* Inf) ;
-SELECT:poder1 Poder IF (0 ("poder") OR ("podar")) (1 Inf) ;
+SELECT Poder IF (0 ("poder") OR ("podar")) (1/* Inf) ;
+SELECT Poder IF (0 ("poder") OR ("podar")) (1 Inf) ;
 
 # creure i creuar (p.ex. creuen)
-SELECT:creure0 Creure IF (0 ("creure") OR ("creuar")) (1/* Inf) ;
-SELECT:creure1 Creure IF (0 ("creure") OR ("creuar")) (1 Inf) ;
-SELECT:creure2 Creure IF (0 ("creure") OR ("creuar")) (1 ("que")) ;
-SELECT:creure3 Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("que")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1/* Inf) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Inf) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 ("que")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("que")) ;
 	# No creuen pas que, creuen sovint que
-SELECT:creure4 Creuar IF (0 ("creure") OR ("creuar")) (1 ("en")) (2 N) (NOT 2 ("déu"));
-SELECT:creure5 Creure IF (0 ("creure") OR ("creuar")) (1 ("en")) ;
-SELECT:creure4b Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) (3 N) (NOT 3 ("déu"));
-SELECT:creure5b Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 ("a")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("a")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 ("algú")) ;
+
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 ("en")) (2 N) (NOT 2 ("déu"));
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 ("en")) ;
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) (3 N) (NOT 3 ("déu"));
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 ("en")) ;
+
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Top) ;
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Top) ;
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Det) (2 Top) ;
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Det) (3 Top) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Ant) (NOT 1 ("<Creus")) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Ant) ;
+
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Det) (2 Llocs) ;
+SELECT Creuar IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Det) (3 Llocs) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Det) (2 Persones) ;
+SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Det) (3 Persones) ;
 
 # ser i seriar (p.ex. seria)
-REMOVE:ser1 Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
-REMOVE:ser2 Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N OR Det) ;
-REMOVE:ser3 Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
+REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
+REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N OR Det) ;
+REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 
 # ser i estat (p.ex. estat)
 SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 PP) ;
@@ -396,6 +408,8 @@ SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 
+SELECT Poble IF (0 Poble OR Pobla + Pl) (NOT -1 Fem_strict) (NOT 1 Fem_strict) ;
+
 REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
 REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
 	# els reis catalans els faig a partir de
@@ -413,7 +427,11 @@ SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 SELECT Vblex IF (-1C Adv) (0C N OR Vblex) (1 Det) (2C N) ;
 SELECT Vblex IF (0C N OR Vblex) (0 ("posar")) (1 Det) (2 N) ;
 	# finalment posa l'esquena completament recta
+SELECT N IF (-2 Prep) (-1 Det) (0 N OR Vblex) (1 A) ;
+SELECT N IF (-2C Prep) (-1 Det) (0C N OR Vblex) ;
+	# que corre paral·lela a la costa sud-americana del Pacífic
 SELECT N IF (-2 Prep) (-1 Pos) (0 N OR Vblex) (1 A) ;
+SELECT N IF (-2C Prep) (-1 Pos) (0C N OR Vblex) ;
 	# juntament amb la seva guarda personal
 
 REMOVE Itg IF (0 Com) (1 (":")) ;
@@ -520,10 +538,10 @@ REMOVE N IF (-3 N + $$MascPl) (-2 A + $$MascPl) (-1 ("i")) (0 A + $$MascPl) (0 N
 REMOVE N IF (-3 N + $$FemPl) (-2 A + $$FemPl) (-1 ("i")) (0 A + $$FemPl) (0 N) ;
 	# el seu caràcter màgic i religiós
 
-SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_1 N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VInd) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
 	# nos vino impuesto.
-SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sino")) (-1C Vblex) (NOT -1 PP OR ("hablar") OR VPred) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+SELECT:n_a_eos_1b N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VInd) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
 
 SELECT:n_a_eos_2 N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 Barrera_Final_Estrict_SN) ;
