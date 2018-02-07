@@ -145,6 +145,8 @@ LIST Faig = "faig" ;
 LIST VSer = "ser" ;
 LIST Pobla = "pobla" ;
 LIST Poble = "poble" ;
+LIST Turquesa = "turquesa" ;
+LIST Turques = "turquès" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -409,6 +411,8 @@ SELECT So IF (0 So OR Son + Pl) ;
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 
 SELECT Poble IF (0 Poble OR Pobla + Pl) (NOT -1 Fem_strict) (NOT 1 Fem_strict) ;
+
+SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
 
 REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
 REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
