@@ -220,6 +220,9 @@ SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
 	# la dona que estima les flors
 SELECT Rel (-2C N) (-1 A) (0 Que) (1 Verb + P3) ;
 	# la dona gran que estima les flors
+#REMOVE Rel (-2C Verb) (-1C Prep) (0 Rel OR Itg) ;	# s'ha d'estudiar millor
+	# sap de què parla
+
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1C N) ;
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2C N) ;
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2 A) (3C N) ;
