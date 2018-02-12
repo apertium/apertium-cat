@@ -113,6 +113,8 @@ SET Llocs = ("riu") OR ("mar") OR ("oceà") OR ("muntanya") OR ("serra") OR ("se
 SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("oncle") OR ("tia") OR ("sogre") OR ("cunyat")
 	OR ("marit") OR ("dona") OR ("muller") OR ("espòs") OR ("company") OR ("veí") OR ("cap") OR ("amic") OR ("conegut") ;
 #SET Persones2 = ("pare") ("mare") ("avi") ;
+SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("comte") OR ("marquès") OR ("duc")
+	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
 
 SET Barrera_Final_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro ;	# Verb és perillós per la ambigüitat, però en general, prolífic
 SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro ;
@@ -201,6 +203,13 @@ SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
+SELECT Top IF (-2 Ant) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# Hiparc de Nicea
+SELECT Top IF (-2 ("concili") OR ("parlament") OR ("estatut") OR ("constitució") OR ("tractat") OR ("declaració"))
+	(-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# concili de Nicea
+SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# príncep de Viana
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>) (NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
@@ -211,6 +220,8 @@ SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
 	# santes creus
 SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 	# creu de Sant Jordi
+
+SELECT N IF (0 ("sant")) (1 NP) ;
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Guerra")) ;
 	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
@@ -441,6 +452,8 @@ SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
 	# Deu anys després
 SELECT Num IF (0 Deu) (1 A) (2 N) (3 ("abans") OR ("després")) ;
 SELECT Num IF (0 Deu) (1 N) (2 A) (3 ("abans") OR ("després")) ;
+
+SELECT Num IF (0 ("<I>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
 
 SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
