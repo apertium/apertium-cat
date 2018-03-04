@@ -1054,3 +1054,6 @@ SELECT PreAdv (-1 Ser OR Estar OR ("tornar") OR ("esdevenir")) (0 ("massa")) (1 
 SELECT Adv (-1C V) (0 ("<junts>")) ;
 	# vénen junts
 SELECT Adv (-2C V) (-1 ("tot")) (0 ("<junts>")) ;
+
+REMOVE A (-1 Det + Def) (0 A) (0 Adv) (1 A);
+	# el més gran
