@@ -109,6 +109,7 @@ SET Cnj_Rel = CnjCoo OR CnjSub OR CnjAdv OR Rel ;
 SET Cnj_Rel_End = >>> OR CnjCoo OR CnjSub OR CnjAdv OR Rel OR Inf;
 
 SET Trencat = ("terç") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") ;
+SET Ordinal = ("primer") OR ("segon") OR ("tercer") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") OR ("últim") OR ("darrer") ;
 
 SET Llocs = ("riu") OR ("mar") OR ("oceà") OR ("muntanya") OR ("serra") OR ("serralada") OR ("cordillera") OR ("carena")
 	OR ("carrer") OR ("parc") OR ("plaça") OR ("avinguda") OR ("ciutat") OR ("vila") OR ("poble") OR ("capital") ;
@@ -867,9 +868,10 @@ SELECT Prep IF (-1 Rel) (0 ("<durant>")) ;
 SELECT Prep IF (0 ("durant")) (1 Det) ;
 	# de Catalunya durant el segle XII
 
-SELECT Prep IF (-1 >>>) (0 ("segons")) ;
+SELECT Prep IF (-1 >>>) (0 Segons) ;
 	# segons ell
 	# segons el xic
+REMOVE Prep IF (-1 Det + Def + Pl) (0 Segons) ;
 
 SELECT N IF (-1 ("comte")) (0 ("duc")) ;
 	# comte-duc d'Olivares
@@ -1055,5 +1057,6 @@ SELECT Adv (-1C V) (0 ("<junts>")) ;
 	# vénen junts
 SELECT Adv (-2C V) (-1 ("tot")) (0 ("<junts>")) ;
 
-REMOVE A (-1 Det + Def) (0 A) (0 Adv) (1 A);
+REMOVE A (-1 Det + Def) (0 A) (0 Adv) (NOT 0 Ordinal) (1 A) (NOT 1 Trencat);
 	# el més gran
+	# el primer quart
