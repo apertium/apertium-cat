@@ -521,6 +521,10 @@ SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
 #
 
 # NOM / ADJ
+
+REMOVE N IF (-1 Estar LINK NOT 0 VSer) (0 Noun_Adj_PP) ;
+# estan retallades
+
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 <<< OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 <<< OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 CM) (2 Prep OR Det OR CnjSub OR CnjCoo) ;
