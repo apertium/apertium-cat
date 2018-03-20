@@ -2853,13 +2853,26 @@
           <r>l'hi<b/></r>
         </p>
       </e>
-      <e alt="val">
+      <e alt="val_gva">
         <p>
           <l><b/><a/>el<b/></l>
           <r>li'l<b/></r>
         </p>
       </e>
-      <e alt="val">
+      <e alt="val_uni">
+        <p>
+          <l><b/><a/>el<b/></l>
+          <r>li'l<b/></r>
+        </p>
+      </e>
+      <e alt="val_gva">
+        <p>
+          <l><b/><a/>el<b/></l>
+          <r>li<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
+      </e>
+      <e alt="val_uni">
         <p>
           <l><b/><a/>el<b/></l>
           <r>li<b/>l'</r>
@@ -2872,16 +2885,16 @@
           <r>els<b/>hi<b/></r>
         </p>
       </e>
-      <e alt="val">
+      <e alt="val_gva">
         <p>
           <l><b/><a/>els<b/></l>
           <r>li'ls<b/></r>
         </p>
       </e>
-      <e>
+      <e alt="val_uni">
         <p>
           <l><b/><a/>els<b/></l>
-          <r>els<b/>hi<b/></r>
+          <r>li'ls<b/></r>
         </p>
       </e>
       <e alt="cat">
@@ -2890,7 +2903,14 @@
           <r>la<b/>hi<b/></r>
         </p>
       </e>
-      <e alt="val">
+      <e alt="val_gva">
+        <p>
+          <l><b/><a/>la<b/></l>
+          <r>li<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
+      </e>
+      <e alt="val_uni">
         <p>
           <l><b/><a/>la<b/></l>
           <r>li<b/>l'</r>
@@ -2903,7 +2923,13 @@
           <r>les<b/>hi<b/></r>
         </p>
       </e>
-      <e alt="val">
+      <e alt="val_gva">
+        <p>
+          <l><b/><a/>les<b/></l>
+          <r>li<b/>les<b/></r>
+        </p>
+      </e>
+      <e alt="val_uni">
         <p>
           <l><b/><a/>les<b/></l>
           <r>li<b/>les<b/></r>
