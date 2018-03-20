@@ -119,6 +119,9 @@ SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("on
 SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("comte") OR ("marquès") OR ("duc")
 	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
 
+# adj que són ambiguts amb el pp de verbs intransitius
+SET PP_Intr_Adj = ("controvertit") ;
+
 SET Barrera_Final_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro ;	# Verb és perillós per la ambigüitat, però en general, prolífic
 SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro ;
 SET Barrera_Inicial_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Verb OR Rel ;	# Verb és perillós per la ambigüitat, però en general, prolífic
@@ -156,6 +159,8 @@ LIST Turques = "turquès" ;
 LIST Turques = "turquès" ;
 LIST Turques = "turquès" ;
 LIST Ponent = "ponent" ;
+LIST Encara = "encara" ;
+LIST Encarar = "encarar" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -453,6 +458,26 @@ SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
 
+SELECT Encara IF (-1 Vbhaver) (0 Encara OR Encarar) ;
+	# hi ha encara alguns antics alumnes
+SELECT Encara IF (0 Encara OR Encarar) (1 Verb LINK 0 Pers) ;
+SELECT Encara IF (0 Encara OR Encarar) (1 Adv) (2 Verb LINK 0 Pers) ;
+SELECT Encara IF (0 Encara OR Encarar) (1 Adv) (2 Adv) (3 Verb LINK 0 Pers) ;
+	# perquè encara conserva
+	# un article que encara no exiteix
+SELECT Encara IF (0 Encara OR Encarar) (1 Pron) (2 Verb LINK 0 Pers) ;
+SELECT Encara IF (0 Encara OR Encarar) (1 Adv) (2 Pron) (3 Verb LINK 0 Pers) ;
+SELECT Encara IF (0 Encara OR Encarar) (1 Adv) (2 Adv) (3 Pron) (4 Verb LINK 0 Pers) ;
+	# encara no es coneix
+SELECT Encara IF (0 Encara OR Encarar) (1C A OR PP) ;
+SELECT Encara IF (0 Encara OR Encarar) (1 PreAdv) (2C A OR PP) ;
+	# encara molt imprecís
+SELECT Encara IF (0 Encara OR Encarar) (1 ("més") OR ("menys")) ;
+	# encara menys
+SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
+	# més pròxim encara
+
+
 SELECT A IF (-1 ("observació")) (0 ("participant")) ;
 
 SELECT MF IF (-1 Det) (0 Ponent) ;
@@ -519,6 +544,9 @@ SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
 #
 # Desambiguación ADJ (+PP) - NOMBRE
 #
+
+REMOVE PP IF (-1 VSer) (0 PP_Intr_Adj) ;
+  # el judici fou controvertit
 
 # NOM / ADJ
 
