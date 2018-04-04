@@ -154,6 +154,8 @@ LIST Faig = "faig" ;
 LIST VSer = "ser" ;
 LIST Pobla = "pobla" ;
 LIST Poble = "poble" ;
+LIST Tens = "tens" ;
+LIST Tenir = "tenir" ;
 LIST Turquesa = "turquesa" ;
 LIST Turques = "turquès" ;
 LIST Turques = "turquès" ;
@@ -457,6 +459,8 @@ SELECT Poble IF (0 Poble OR Pobla + Pl) (NOT -1 Fem LINK NOT 0 MF) (NOT 1 Fem LI
 SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
+
+SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 
 SELECT Encara IF (-1 Vbhaver) (0 Encara OR Encarar) ;
 	# hi ha encara alguns antics alumnes
