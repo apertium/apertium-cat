@@ -916,6 +916,8 @@ SELECT Prep IF (-1 >>>) (0 Segons) ;
 	# segons ell
 	# segons el xic
 REMOVE Prep IF (-1 Det + Def + Pl) (0 Segons) ;
+REMOVE A OR N IF (NOT -1 Det OR A) (0 Segons) (1 Det OR Ant OR Cog) ;
+REMOVE A OR N IF (NOT -2 N) (-1C A OR PP) (0 Segons) (1 Det OR Ant OR Cog) ;
 
 SELECT N IF (-1 ("comte")) (0 ("duc")) ;
 	# comte-duc d'Olivares
