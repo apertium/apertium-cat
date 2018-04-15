@@ -92,6 +92,7 @@ SET Ant = (np ant) ;
 SET Cog = (np cog) ;
 SET Ant_Cog = Ant OR Cog ;
 SET Top = (np top) OR (np loc) ;
+SET Al = (al) ;
 
 SET DetDef = (det def) ;
 SET DetInd = (det ind) ;
@@ -481,6 +482,9 @@ SELECT Encara IF (0 Encara OR Encarar) (1 ("més") OR ("menys")) ;
 SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 	# més pròxim encara
 
+SELECT Cog IF (-2 Ant) (-1 ("de")) (0 ("Orange")) ;
+SELECT Cog IF (-3 Ant) (-2 Num) (-1 ("de")) (0 ("Orange")) ;
+SELECT Al IF (0 ("Orange")) (1 ("S.A.") OR Top) ;
 
 SELECT A IF (-1 ("observació")) (0 ("participant")) ;
 
