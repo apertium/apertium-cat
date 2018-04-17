@@ -560,6 +560,20 @@ SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
 REMOVE PP IF (-1 VSer) (0 PP_Intr_Adj) ;
   # el judici fou controvertit
 
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 N + Fem + Pl) ; 
+  # noltes arts japoneses
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ; 
+
 # NOM / ADJ
 
 REMOVE N IF (-1 Estar LINK NOT 0 VSer) (0 Noun_Adj_PP) ;
