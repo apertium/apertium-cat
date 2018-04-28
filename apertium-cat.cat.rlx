@@ -538,6 +538,8 @@ REMOVE Itg IF (NOT -1 >>>) (NOT -1 Verb) (NOT -1 Adv) (NOT -1 Prep) (0 Com) ;
 REMOVE Itg IF (-1 >>>) (0 Com) (NOT 1 Verb) (NOT 1 Pron) ;
 	# not: com fas? com tu fas? com li fas?
 
+REMOVE N + Fem IF (0 ("u"i)) (NOT -1 Det + (f)) (NOT -1 ("lletra"i)); # l'u (no és nom de lletra u femení)
+
 #
 # Desambiguació "los" enc / els "pro"
 #
