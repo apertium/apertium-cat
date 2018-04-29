@@ -676,14 +676,23 @@ SELECT N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 CM OR 
 
 REMOVE A OR PP IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
 SELECT N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula LINK NOT 0 PreDet LINK NOT 0 Pron OR Num) (NOT 0 ("passat") OR ("passada")) (1 Barrera_Final_Estrict_SN LINK NOT 0 PP LINK NOT 0 N) ;
-SELECT N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
+SELECT N IF (NOT -2 Verb) (-1 Prep LINK NOT 0 Com) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (NOT 0 ("gra")) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrera_Final_SN LINK NOT 0 PP LINK NOT 0 N) ;
 SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
 
-SELECT A (0 ("gran") + Pl) (1 N + MascPl) ;
+SELECT A (0 ("gran") + Pl) (1 N + Pl) ;
 	## grans matemàtics
+SELECT A (0 ("gran") + Pl) (1 CnjCoo) (2 ("petit") + Pl) ;
+SELECT A (0 ("gran") + Pl) (-1 CnjCoo) (-2 ("petit") + Pl) ;
+SELECT A (0 ("gran") + Pl) (1 CnjCoo) (2 Det + Pl) (3 ("petit") + Pl) ;
+SELECT A (-1 Det + Pl) (0 ("gran") + Pl) (-2 CnjCoo) (-3 ("petit") + Pl) ;
+SELECT A (0 ("gran") + Pl) (1 CnjCoo) (2 Prep) (3 Det + Pl) (4 ("petit") + Pl) ;
+SELECT A (0 ("gran") + Pl) (1 CnjCoo) (2 ("<dels>")) (3 ("petit") + Pl) ;
+SELECT A (-2 Prep) (-1 Det + Pl) (0 ("gran") + Pl) (-3 CnjCoo) (-4 ("petit") + Pl) ;
+SELECT A (-1 ("<dels>")) (0 ("gran") + Pl) (-2 CnjCoo) (-3 ("petit") + Pl) ;
+	## grans i petits, petits i grans, etc.
 
 # NP / ADJ
 
