@@ -34,6 +34,7 @@ SET Rpar = (rpar) ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST MajIni = ("[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
@@ -204,6 +205,11 @@ SET VInd = ("considerar") OR ("creure") OR ("opinar") OR ("dir") OR ("sentir") O
 #
 
 SECTION
+
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans); 
+#Posa com a lema la forma de la paraula marcada amb *
+# Amb els adjectius hi ha més risc d'error (!)
+REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans);  # Això no sé si és útil. 
 
 REMOVE Cog IF (-1 DetDef) (0 Cog) ;
 REMOVE Cog IF (-1 DetInd) (0 Cog) ;
