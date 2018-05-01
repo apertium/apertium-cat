@@ -34,7 +34,7 @@ SET Rpar = (rpar) ;
 
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
-LIST MajIni = ("[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST MajIni = ("<[A-ZÀÁÈÉíÒÓÚÜÇ].*>"r) ;
 LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
