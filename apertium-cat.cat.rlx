@@ -161,12 +161,12 @@ LIST Tens = "tens" ;
 LIST Tenir = "tenir" ;
 LIST Turquesa = "turquesa" ;
 LIST Turques = "turquès" ;
-LIST Turques = "turquès" ;
-LIST Turques = "turquès" ;
 LIST Ponent = "ponent" ;
 LIST Encara = "encara" ;
 LIST Encarar = "encarar" ;
 LIST Primer = "primer" ;
+LIST Promes = "promès" ;
+LIST Promesa = "promesa" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -470,6 +470,9 @@ SELECT Poble IF (0 Poble OR Pobla + Pl) (NOT -1 Fem LINK NOT 0 MF) (NOT 1 Fem LI
 SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
+
+SELECT Promes IF (0 Promes OR Promes) (-1 Pos) ;
+SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 
