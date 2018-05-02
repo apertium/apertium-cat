@@ -12,6 +12,7 @@ LIST N = (n) ;
 LIST NP = (np) ;
 LIST A = (adj) ;
 LIST Pos = (pos) ;
+LIST Ord = (ord) ;
 LIST Det = (det) ;
 LIST PreDet = (predet) ;
 LIST Num = (num) ;
@@ -111,7 +112,7 @@ SET Cnj_Rel = CnjCoo OR CnjSub OR CnjAdv OR Rel ;
 SET Cnj_Rel_End = >>> OR CnjCoo OR CnjSub OR CnjAdv OR Rel OR Inf;
 
 SET Trencat = ("terç") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") ;
-SET Ordinal = ("primer") OR ("segon") OR ("tercer") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") OR ("últim") OR ("darrer") ;
+SET Ordinal = ("primer") OR ("segon") OR ("tercer") OR ("quart") OR ("cinquè") OR ("quint") OR ("sisè") OR ("setè") OR ("vuitè") OR ("novè") OR ("últim") OR ("darrer") OR (Ord) ;
 
 SET Llocs = ("riu") OR ("mar") OR ("oceà") OR ("muntanya") OR ("serra") OR ("serralada") OR ("cordillera") OR ("carena")
 	OR ("carrer") OR ("parc") OR ("plaça") OR ("avinguda") OR ("ciutat") OR ("vila") OR ("poble") OR ("capital") ;
@@ -165,6 +166,7 @@ LIST Turques = "turquès" ;
 LIST Ponent = "ponent" ;
 LIST Encara = "encara" ;
 LIST Encarar = "encarar" ;
+LIST Primer = "primer" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -1148,3 +1150,19 @@ SELECT Adv (-2C V) (-1 ("tot")) (0 ("<junts>")) ;
 REMOVE A (-1 Det + Def) (0 A) (0 Adv) (NOT 0 Ordinal) (1 A) (NOT 1 Trencat);
 	# el més gran
 	# el primer quart
+REMOVE Adv (-1/* Det + MascSg) (0 Primer + MascSg) ;
+REMOVE Adv (-1/* Det + FemSg) (0 Primer + FemSg) ;
+REMOVE Adv (-1/* Det + MascPl) (0 Primer + MascPl) ;
+REMOVE Adv (-1/* Det + FemPl) (0 Primer + FemPl) ;
+SELECT A (-1/* Det + MascSg) (0 Ord + MascSg) (1 N + MascSg) ;
+SELECT A (-1/* Det + FemSg) (0 Ord + FemSg) (1 N + FemSg) ;
+SELECT A (-1/* Det + MascPl) (0 Ord + MascPl) (1 N + MascPl) ;
+SELECT A (-1/* Det + FemPl) (0 Ord + FemPl) (1 N + FemPl) ;
+SELECT A (-2/* Det + MascSg) (-1C N + MascSg) (0 Ord + MascSg) ;
+SELECT A (-2/* Det + FemSg) (-1C N + FemSg) (0 Ord + FemSg) ;
+SELECT A (-2/* Det + MascPl) (-1C N + MascPl) (0 Ord + MascPl) ;
+SELECT A (-2/* Det + FemPl) (-1C N + FemPl) (0 Ord + FemPl) ;
+SELECT A (-1 Prep) (0 Ord + MascSg) (1 N + MascSg) ;
+SELECT A (-1 Prep) (0 Ord + FemSg) (1 N + FemSg) ;
+SELECT A (-1 Prep) (0 Ord + MascPl) (1 N + MascPl) ;
+SELECT A (-1 Prep) (0 Ord + FemPl) (1 N + FemPl) ;
