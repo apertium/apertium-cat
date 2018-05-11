@@ -354,6 +354,10 @@ SELECT PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Verb) (NO
 REMOVE PIS (0 ("<foren>")) (1 PP) ;
 	# que foren capturats
 
+# adjectiu/nom i gerundi (filtrant, comptant, alternant, impugnant, cantant...)
+REMOVE:adj_ger A IF (0 A) (0 Ger) (NOT -1/* Det OR Prep);
+REMOVE:nom_ger N IF (0 N) (0 Ger) (NOT -1/* Det OR Prep);
+
 #
 # comparaciones
 #
@@ -368,6 +372,12 @@ SELECT Ger IF (-1 ("estar") OR ("Estar") OR ("seguir") OR ("Seguir")) (0 Ger) ;
 #
 # PALABRAS PARTICULARES
 #
+
+SELECT:pols1 MascSg IF (0 ("<pols>"i)) (-1 MascSg);
+SELECT:pols2 MascSg IF (0 ("<pols>"i)) (1 MascSg);
+SELECT:pols3 MascPl IF (0 ("<pols>"i)) (-1 MascPl);
+SELECT:pols4 MascPl IF (0 ("<pols>"i)) (1 MascPl);
+SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
 
 SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
 SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
