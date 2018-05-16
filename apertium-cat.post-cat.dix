@@ -2376,6 +2376,13 @@
         </p>
         <par n="no_apostrofa"/>
       </e>
+      <e>
+        <p>
+          <l><b/><a/>de</l>
+          <r>els<b/></r>
+        </p>
+        <par n="de"/>
+      </e>
     </pardef>
 
     <pardef n="les">
