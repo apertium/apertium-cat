@@ -213,6 +213,10 @@ SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant)) (0C V
 # Amb els adjectius hi ha més risc d'error (!)
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al"));  # Això no sé si és útil. 
 
+# prep + verb/nom > nom: (ej. dels centres ABC)
+REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i));
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det); 
+
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
 
 REMOVE Cog IF (-1 DetDef) (0 Cog) ;
@@ -381,6 +385,15 @@ SELECT:pols2 MascSg IF (0 ("<pols>"i)) (1 MascSg);
 SELECT:pols3 MascPl IF (0 ("<pols>"i)) (-1 MascPl);
 SELECT:pols4 MascPl IF (0 ("<pols>"i)) (1 MascPl);
 SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
+
+REMOVE:concorda_num (f) IF (-2 (det m)) (-1 (num)) (0 (m)) (0 (f)); # els/les tres regnes
+REMOVE:concorda_num (m) IF (-2 (det f)) (-1 (num)) (0 (m)) (0 (f));
+
+#ordinales (el tagger no detecta els ordinals)
+SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
+SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl);
+SELECT:ordinal A IF (0 (ord) + FemSg) (1 N + FemSg);
+SELECT:ordinal A IF (0 (ord) + FemPl) (1 N + FemPl);
 
 SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
 SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
