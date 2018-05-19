@@ -215,7 +215,10 @@ REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant)) (0C Verb OR N OR A) (0 Maj
 
 # prep + verb/nom > nom: (ej. dels centres ABC)
 REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i));
-REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det); 
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascSg) (0 MascSg); 
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascPl) (0 MascPl); 
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (0 FemSg); 
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (0 FemPl); 
 
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
 
@@ -389,9 +392,13 @@ SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
 REMOVE:concorda_num (f) IF (-2 (det m)) (-1 (num)) (0 (m)) (0 (f)); # els/les tres regnes
 REMOVE:concorda_num (m) IF (-2 (det f)) (-1 (num)) (0 (m)) (0 (f));
 
+REMOVE:càmera (m) IF (0 ("càmera"i)) (NOT -1 (det m)) (NOT -1 (adj m)) (NOT 1 (adj m)); #si no està determinat és femení
+
+REMOVE:contractes (f) IF (0 ("<contractes>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
+
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
-SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl);
+SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl) (NOT 0 ("segons"i));
 SELECT:ordinal A IF (0 (ord) + FemSg) (1 N + FemSg);
 SELECT:ordinal A IF (0 (ord) + FemPl) (1 N + FemPl);
 
