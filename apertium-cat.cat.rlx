@@ -213,6 +213,10 @@ SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant)) (0C V
 # Amb els adjectius hi ha més risc d'error (!)
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al"));  # Això no sé si és útil. 
 
+#amb sols
+SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
+SELECT:seu N IF (0 ("<seu>"i)) (-1 Det + FemSg);
+
 # prep + verb/nom > nom: (ej. dels centres ABC)
 REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i));
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascSg) (0 MascSg); 
@@ -395,12 +399,16 @@ REMOVE:concorda_num (m) IF (-2 (det f)) (-1 (num)) (0 (m)) (0 (f));
 REMOVE:càmera (m) IF (0 ("càmera"i)) (NOT -1 (det m)) (NOT -1 (adj m)) (NOT 1 (adj m)); #si no està determinat és femení
 
 REMOVE:contractes (f) IF (0 ("<contractes>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
+REMOVE:quadres    (f) IF (0 ("<quadres>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
 
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
 SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl) (NOT 0 ("segons"i));
 SELECT:ordinal A IF (0 (ord) + FemSg) (1 N + FemSg);
 SELECT:ordinal A IF (0 (ord) + FemPl) (1 N + FemPl);
+
+SELECT:ordinal Det IF (0 Det + MascSg) (1 (ord) + MascSg) (2 N + MascSg); #el quart àlbum >*lo cuarto
+
 
 SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
 SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
