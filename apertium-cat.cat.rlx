@@ -218,7 +218,7 @@ SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
 SELECT:seu N IF (0 ("<seu>"i)) (-1 Det + FemSg);
 
 #molt 
-SELECT:molt_adv PreAdv IF (0 ("<molt>"i)) (1 A OR Adv OR PP);
+SELECT:molt_adv PreAdv IF (0 ("<molt>"i)) (1 A OR Adv OR PP) (NOT 1 Pron) (NOT 1 Rel) (NOT 1 Itg);
 
 # prep + verb/nom > nom: (ej. dels centres ABC)
 REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i));
@@ -384,7 +384,8 @@ SELECT PP IF (-1 ("haver") OR ("Haver")) (0 PP) ;
 SELECT PP IF (-1 ("ser") OR ("ser")) (0 PP) (*1 ("por") BARRIER (Cnj_Rel_End)) ;
 
 # seguir, estar + ger
-SELECT Ger IF (-1 ("estar") OR ("Estar") OR ("seguir") OR ("Seguir")) (0 Ger) ;
+SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)) (0 Ger) ;
+
 
 #
 # PALABRAS PARTICULARES
