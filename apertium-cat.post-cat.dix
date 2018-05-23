@@ -2381,6 +2381,22 @@
         <par n="vocals_per_a_la"/>
       </e>
 
+      <e>
+        <p>
+          <l><b/></l>
+          <r>la<b/></r>
+        </p>
+        <par n="quotes"/>
+        <par n="consonants_per_a_la"/>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r>la</r>
+        </p>
+        <par n="quotes"/>
+        <par n="consonants_per_a_la"/>
+      </e>
 
       <e>
         <p>
