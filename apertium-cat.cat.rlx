@@ -229,6 +229,10 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (
 
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
 
+SELECT:grau NP IF (0 ("Grau")) (-1/* NP); #Grau nom comú / cognom
+SELECT:grau NP IF (0 ("Grau")) (1/* NP);
+REMOVE:grau NP IF (0 ("Grau"));
+
 REMOVE Cog IF (-1 DetDef) (0 Cog) ;
 REMOVE Cog IF (-1 DetInd) (0 Cog) ;
 REMOVE Ant IF (-1 DetDef) (0 Ant) ;
@@ -412,7 +416,6 @@ SELECT:ordinal A IF (0 (ord) + FemSg) (1 N + FemSg);
 SELECT:ordinal A IF (0 (ord) + FemPl) (1 N + FemPl);
 
 SELECT:ordinal Det IF (0 Det + MascSg) (1 (ord) + MascSg) (2 N + MascSg); #el quart àlbum >*lo cuarto
-
 
 SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
 SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
