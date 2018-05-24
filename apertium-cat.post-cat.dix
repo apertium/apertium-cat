@@ -357,6 +357,12 @@
         <i>11<b/></i>
       </e>
       <e>
+        <i>1%</i>
+      </e>
+      <e>
+        <i>11%</i>
+      </e>
+      <e>
         <i>I<b/></i>
       </e>
       <e>
@@ -595,6 +601,26 @@
     </pardef>
 
     <pardef n="vocals_per_a_la">
+      
+      <e><i>hidra</i></e>     
+      <e><i>hifa</i></e>
+      <e><i>hulla</i></e>
+      <e><i>illa</i></e>
+      <e><i>Imma</i></e>
+      <e><i>inca</i></e>
+      <e><i>Ingrid</i></e>
+      <e><i>ISO</i></e>
+      <e><i>UCE</i></e>
+      <e><i>UCI</i></e>
+      <e><i>UJI</i></e>
+      <e><i>ungla</i></e>
+      <e><i>unça</i></e>
+      <e><i>urbs</i></e>
+      <e><i>urna</i></e>
+      <e><i>urpa</i></e>
+      <e><i>URSS</i></e>
+      <e><i>UVI</i></e>
+
       <e>
         <i>a</i>
       </e>
@@ -745,6 +771,24 @@
     </pardef>
 
     <pardef n="consonants_per_a_la">
+      <e><i>hidrac</i></e>
+      <e><i>hidrag</i></e>
+      <e><i>hidran</i></e>
+      <e><i>hidrar</i></e>
+      <e><i>hidrat</i></e>
+      <e><i>hidraz</i></e>
+      <e><i>hifal</i></e>
+      <e><i>illad</i></e>
+      <e><i>Immac</i></e>
+      <e><i>Imman</i></e>
+      <e><i>incai</i></e>
+      <e><i>incal</i></e>
+      <e><i>incan</i></e>
+      <e><i>incap</i></e>
+      <e><i>incar</i></e>
+      <e><i>incas</i></e>
+      <e><i>incau</i></e>
+      <e><i>urpad</i></e>
       <e>
         <par n="caracter_general"/>
       </e>
@@ -2337,6 +2381,22 @@
         <par n="vocals_per_a_la"/>
       </e>
 
+      <e>
+        <p>
+          <l><b/></l>
+          <r>la<b/></r>
+        </p>
+        <par n="quotes"/>
+        <par n="consonants_per_a_la"/>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r>la</r>
+        </p>
+        <par n="quotes"/>
+        <par n="consonants_per_a_la"/>
+      </e>
 
       <e>
         <p>
@@ -2375,6 +2435,13 @@
           <r>els</r>
         </p>
         <par n="no_apostrofa"/>
+      </e>
+      <e>
+        <p>
+          <l><b/><a/>de</l>
+          <r>els<b/></r>
+        </p>
+        <par n="de"/>
       </e>
     </pardef>
 
