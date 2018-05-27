@@ -231,7 +231,7 @@ REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula
 
 SELECT:grau NP IF (0 ("Grau")) (-1/* NP OR unknownMajIni); #Grau nom comú / cognom
 SELECT:grau NP IF (0 ("Grau")) (1/* NP OR unknownMajIni);
-SELECT:grau NP IF (0 ("Grau")) (-1 ("de") OR ("i")) (-2/* NP OR unknownMajIni) (-1/* Det);
+SELECT:grau NP IF (0 ("Grau")) (-1 ("de") OR ("i")) (-2/* NP OR unknownMajIni) (NOT -1/* Det);
 SELECT:grau NP IF (0 ("Grau")) (-1 ("sant"));
 REMOVE:grau NP IF (0 ("Grau"));
 
