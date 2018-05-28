@@ -406,6 +406,8 @@ SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
 REMOVE:concorda_num (f) IF (-2 (det m)) (-1 (num)) (0 (m)) (0 (f)); # els/les tres regnes
 REMOVE:concorda_num (m) IF (-2 (det f)) (-1 (num)) (0 (m)) (0 (f));
 
+SELECT:apartat N IF (0 ("apartat"i)) (1 ("<[a-zA-Z]>"r));
+
 REMOVE:càmera (m) IF (0 ("càmera"i)) (NOT -1 (det m)) (NOT -1 (adj m)) (NOT 1 (adj m)); #si no està determinat és femení
 
 REMOVE:contractes (f) IF (0 ("<contractes>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
