@@ -915,7 +915,7 @@ REMOVE A OR PP IF (-1 Barrera_Inicial_SN LINK NOT 0 N) (NOT -1 Limite_Barrera_In
 # entre occitanos, catalanes, vascos y gallegos
 # vinieron italianos, alemanes, polacos y ucranianos.
 
-SELECT N IF (-2C N) (-1 CnjCoo) (0 Noun_Adj_PP LINK NOT 0 NP) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-2C N) (-1 CnjCoo) (0 Noun_Adj_PP LINK NOT 0 NP) (1 Barrera_Final_Estrict_SN) (NOT 0 ("<segons>"i)) ;
 ## adquiriendo una gran reputación como poeta y crítico.
 SELECT N IF (2C N) (1 CnjCoo) (0C Noun_Adj_PP LINK NOT 0 NP) (-1 Barrera_Inicial_SN) ;
 ## "se utiliza en periódicos y libros"
