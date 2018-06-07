@@ -214,6 +214,7 @@ SECTION
 REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni); 
 
 REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic")); 
+REMOVE:marina NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc")); 
 
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
 #Posa com a lema la forma de la paraula marcada amb *
