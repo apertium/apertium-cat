@@ -202,8 +202,7 @@ SET VerbSubj = ("voler") OR ("desitjar") OR ("proposar") OR ("agradar") OR ("pla
 SET VInd = ("considerar") OR ("creure") OR ("opinar") OR ("dir") OR ("sentir") OR ("trobar") OR ("continuar") OR ("mantenir") OR ("resultar") ;
 
 # coincidències nom propi/comú
-
-SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Sastre");
+SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons");
 
 ###############################################################################
 #  Morphological disambiguation
@@ -211,9 +210,10 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Sastre")
 
 SECTION
 
-SELECT:grau NP IF (0 NomPropiComu) (-1/* NP OR unknownMajIni); #Fons nom comú / cognom
-REMOVE:grau NP IF (0 NomPropiComu);
+# Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
+REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni); 
 
+REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic")); 
 
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
 #Posa com a lema la forma de la paraula marcada amb *
