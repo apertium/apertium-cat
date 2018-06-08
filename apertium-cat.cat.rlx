@@ -36,6 +36,7 @@ SET Rpar = (rpar) ;
 LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 LIST MajIni = ("<[A-ZÀÁÈÉíÒÓÚÜÇ].*>"r) ;
+LIST MinIni = ("<[a-zàáèéìíòóùúçñ].*>"r) ;
 LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
@@ -202,7 +203,7 @@ SET VerbSubj = ("voler") OR ("desitjar") OR ("proposar") OR ("agradar") OR ("pla
 SET VInd = ("considerar") OR ("creure") OR ("opinar") OR ("dir") OR ("sentir") OR ("trobar") OR ("continuar") OR ("mantenir") OR ("resultar") ;
 
 # coincidències nom propi/comú
-SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons");
+SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia");
 
 ###############################################################################
 #  Morphological disambiguation
@@ -210,17 +211,24 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons");
 
 SECTION
 
+SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog) OR MajIni);   # Navarro i García
+SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog) OR MajIni);
+
 # Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
 REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni); 
 
 REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic")); 
-REMOVE:marina NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc")); 
-REMOVE:marina NP IF (0 ("Li")) (1 Verb + Pers); 
+REMOVE:costa NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc")); 
+REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (ant) OR (cog) OR unknownMajIni); 
 
-SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
-#Posa com a lema la forma de la paraula marcada amb *
+# Per a evitar la traducicó de cognoms
+# Posa com a lema la forma de la paraula marcada amb *
 # Amb els adjectius hi ha més risc d'error (!)
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al"));  # Això no sé si és útil. 
+
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-2C (ant) OR (cog)) (-1 ("i")) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-3C (ant) OR (cog)) (-3C (ant) OR (cog) OR MajIni) (-1 ("i")) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
 
 #amb sols
 SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
