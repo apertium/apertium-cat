@@ -211,8 +211,8 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia
 
 SECTION
 
-SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog) OR MajIni);   # Navarro i García
-SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog) OR MajIni);
+SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog) OR unknownMajIni);   # Navarro i García
+SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog) OR unknownMajIni);
 
 # Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
 REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni); 
@@ -228,7 +228,7 @@ SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (co
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al"));  # Això no sé si és útil. 
 
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-2C (ant) OR (cog)) (-1 ("i")) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
-SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-3C (ant) OR (cog)) (-3C (ant) OR (cog) OR MajIni) (-1 ("i")) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-3C (ant) OR (cog)) (-3C (ant) OR (cog) OR unknownMajIni) (-1 ("i")) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
 
 #amb sols
 SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
