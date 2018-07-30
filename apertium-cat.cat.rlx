@@ -43,6 +43,7 @@ SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Excl = "!" ;
 
 SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
+SET Cnj = CnjCoo OR CnjSub OR CnjAdv ;
 
 SET V = Vblex + Vbmod + Vbhaver + Copula ;
 SET Word = N + NP + A + Det + PreAdv + Adv + V + Pron + Prep + CnjCoo + CnjSub + CnjAdv + Rel + Interj ;
@@ -210,6 +211,14 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia
 #
 
 SECTION
+
+
+# Diacrítics de la nova ortografia IEC 2017
+
+SELECT:dona_v Vblex IF (0 ("donar")) (-1 Pro) (-2 Pro) (NOT -2 ("<en>"i));
+SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i));
+SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i));
+SELECT:dona_n N IF (0 ("dona")) (NOT -1 Cnj);
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
