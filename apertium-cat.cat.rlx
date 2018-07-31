@@ -216,8 +216,8 @@ SECTION
 # Diacrítics de la nova ortografia IEC 2017
 
 SELECT:dona_v Vblex IF (0 ("donar")) (-1 Pro) (-2 Pro) (NOT -2 ("<en>"i));
-SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i));
-SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i));
+SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i)) (NOT -1 ("<en>"i));
+SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i)) (NOT -1 ("<en>"i));
 SELECT:dona_n N IF (0 ("dona")) (NOT -1 Cnj);
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
