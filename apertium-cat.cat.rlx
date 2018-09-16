@@ -420,6 +420,9 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+SELECT:que PreAdv IF (0 ("que")) (1C A) (NOT 2 N OR A);
+REMOVE:que PreAdv IF (0 ("que"));
+
 SELECT:pols1 MascSg IF (0 ("<pols>"i)) (-1 MascSg);
 SELECT:pols2 MascSg IF (0 ("<pols>"i)) (1 MascSg);
 SELECT:pols3 MascPl IF (0 ("<pols>"i)) (-1 MascPl);
