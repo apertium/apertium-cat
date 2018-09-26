@@ -299,7 +299,13 @@ SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 SELECT N IF (0 ("sant")) (1 NP) ;
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis")) ;
-	# Traiem paraules que, per una raó o altra, es posen en majúscules sense ser NP
+	# Llevem paraules que, per una raó o altra, es posen en majúscules sense ser NP
+
+SELECT:Consell_top Top IF (0 ("Consell")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
+REMOVE:Consell_top Top IF (0 ("Consell"));
+SELECT:Consell_n N IF (0 ("Consell")) (1 A + MascSg);
+SELECT:Consell_n (np al) IF (0 ("Consell")) (0*/* ("Generalitat") OR ("la Generalitat"));
+SELECT:Consell_n N IF (0 ("Consell"));
 
 SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;		# el Sol
 SELECT N IF (-1 ("<la>")) (0 ("<Guerra>")) ;		# la Guerra (Mundial, d'Independència, etc.)
