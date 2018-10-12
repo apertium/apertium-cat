@@ -3,14 +3,14 @@
 
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Catalan], [2.5.0], [xavi.ivars@gmail.com], [apertium-cat], [http://wiki.apertium.org/wiki/Apertium-cat])
+AC_INIT([Apertium Catalan], [2.6.0], [xavi.ivars@gmail.com], [apertium-cat], [http://wiki.apertium.org/wiki/Apertium-cat])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
 AC_PROG_AWK
 
-m4_define([required_apertium_version], [3.4.0])
-m4_define([required_lttoolbox_version], [3.3.2])
+m4_define([required_apertium_version], [3.5.2])
+m4_define([required_lttoolbox_version], [3.5.0])
 
 PKG_CHECK_MODULES(APERTIUM, apertium >= required_apertium_version)
 PKG_CHECK_MODULES(LTTOOLBOX, lttoolbox >= required_lttoolbox_version)
