@@ -426,6 +426,9 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+SELECT:escaient A IF (0 ("escaient"));
+REMOVE:compondre ("compostar") IF (0 ("compostar")) (0 ("compondre"));
+
 SELECT:que PreAdv IF (0 ("que")) (1C A) (NOT 2 N OR A) (NOT 1 ("junt")) (-1 >>>); #(NOT -1 ("més") OR ("menys") OR ("manco")); 
 REMOVE:que PreAdv IF (0 ("que")); #(Excepcions?)
 
