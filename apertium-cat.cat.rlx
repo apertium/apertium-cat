@@ -410,6 +410,14 @@ REMOVE PIS (0 ("<foren>")) (1 PP) ;
 #REMOVE:adj_ger A IF (0 A) (0 Ger) (NOT -1/* Det OR Prep);
 #REMOVE:nom_ger N IF (0 N) (0 Ger) (NOT -1/* Det OR Prep);
 
+# pronom + verb (És estrany que falli el tagger!)
+SELECT:pronom_verb Verb IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'arreplega
+# 3a persona, no 1a
+SELECT:pronom_verb (p3) IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'implante
+
+# arreplega V/N: TODO: generalitzar
+SELECT:arreplega Verb IF (0 ("entrega") OR ("arreplega")) (1 Det OR ("que")); 
+
 #
 # comparaciones
 #
