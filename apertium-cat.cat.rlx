@@ -230,7 +230,7 @@ REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic"))
 REMOVE:costa NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc")); 
 REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (ant) OR (cog) OR unknownMajIni); 
 
-# Per a evitar la traducicó de cognoms
+# Per a evitar la traducció de cognoms
 # Posa com a lema la forma de la paraula marcada amb *
 # Amb els adjectius hi ha més risc d'error (!)
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) ; 
@@ -414,6 +414,9 @@ REMOVE PIS (0 ("<foren>")) (1 PP) ;
 SELECT:pronom_verb Verb IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'arreplega
 # 3a persona, no 1a
 SELECT:pronom_verb (p3) IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'implante
+
+# deure
+REMOVE:deure_vbmod Vbmod IF (0 ("deure")) (NOT 1 Inf);
 
 # arreplega V/N: TODO: generalitzar
 SELECT:arreplega Verb IF (0 ("entrega") OR ("arreplega")) (1 Det OR ("que")); 
