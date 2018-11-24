@@ -440,6 +440,7 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 SELECT:escaient A IF (0 ("escaient"));
 REMOVE:compondre ("compostar") IF (0 ("compostar")) (0 ("compondre"));
 
+SELECT:nus A IF (0 ("<nus>"i)) (-2 ("model")) (-1 ("de")) (NOT 1 A + MascSg);
 REMOVE:nus A IF (0 ("<nus>"i)) (1 N + Fem OR N + Sg); #noms de lletres: nus B-10, més casos?
 
 SELECT:que PreAdv IF (0 ("que")) (1C A) (NOT 2 N OR A) (NOT 1 ("junt")) (-1 >>>); #(NOT -1 ("més") OR ("menys") OR ("manco")); 
