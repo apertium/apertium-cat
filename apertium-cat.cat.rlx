@@ -437,6 +437,10 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+
+#el vals (per què falla el tagger?)
+REMOVE:n_sg_pl (pl) IF (0 N + Pl) (0 N + Sg) (-1 Det + Sg);
+
 SELECT:escaient A IF (0 ("escaient"));
 REMOVE:compondre ("compostar") IF (0 ("compostar")) (0 ("compondre"));
 
