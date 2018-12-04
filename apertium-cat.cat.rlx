@@ -582,6 +582,7 @@ SELECT Promes IF (0 Promes OR Promes) (-1 Pos) ;
 SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
+SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
 
 SELECT Encara IF (-1 Vbhaver) (0 Encara OR Encarar) ;
 	# hi ha encara alguns antics alumnes
