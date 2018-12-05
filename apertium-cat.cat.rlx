@@ -263,6 +263,10 @@ REMOVE Cog IF (-1 DetInd) (0 Cog) ;
 REMOVE Ant IF (-1 DetDef) (0 Ant) ;
 REMOVE Ant IF (-1 DetInd) (0 Ant) ;
 
+#acrónimos
+LIST AllUpper = ("<[A-Z]+>"r) ;
+SELECT:acronim (acr) IF (0 AllUpper);
+
 SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
