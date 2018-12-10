@@ -441,6 +441,8 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+#estret, assedegat (no participi)
+REMOVE:estret PP IF (0 ("estret") OR ("assedegat"))  (NOT -1 Vbhaver);
 
 #el vals (per què falla el tagger?)
 REMOVE:n_sg_pl (n pl) IF (0 N + Pl) (0 N + Sg) (-1 Det + Sg);
