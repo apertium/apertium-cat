@@ -486,6 +486,9 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+SELECT ("a fi de") IF (0 ("a fi de")) (1 Inf);
+REMOVE ("a fi de") IF (0 ("a fi de")) (NOT 1 Inf);
+
 #recolzada
 REMOVE:recolzada N IF (0 ("recolzada")) (NOT -1 Det + Fem);
 REMOVE:recolzada N IF (0 ("recolzada")) (1 ("per"));
