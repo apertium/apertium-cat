@@ -123,6 +123,8 @@ SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("on
 #SET Persones2 = ("pare") ("mare") ("avi") ;
 SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("comte") OR ("marquès") OR ("duc")
 	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
+SET DiaSetmana = ("dilluns") OR ("dimarts") OR ("dimecres") OR ("dijous") OR ("divendres") OR ("dissabte") OR ("diumenge");
+
 
 # adj que són ambiguts amb el pp de verbs intransitius
 SET PP_Intr_Adj = ("controvertit") ;
@@ -212,13 +214,43 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia
 
 SECTION
 
-
+#
 # Diacrítics de la nova ortografia IEC 2017
-
+#
 SELECT:dona_v Vblex IF (0 ("donar")) (-1 Pro) (-2 Pro) (NOT -2 ("<en>"i));
 SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i)) (NOT -1 ("<en>"i));
 SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i)) (NOT -1 ("<en>"i));
 SELECT:dona_n N IF (0 ("dona")) (NOT -1 Cnj);
+
+# feu/féu, veu/véu. Desambigua els casos clars: es feu>féu,  t'ho feu>féu. 
+SELECT:feu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p2 pl)) (-1/* ("es") OR ("et")); 
+REMOVE:feu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p2 pl));
+REMOVE:veu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p3 sg));
+#bota/bóta: cal mirar el context
+SELECT ("bóta") IF (0 ("bóta")) (0*/* ("vi"));
+SELECT ("bota") IF (0 ("bota"));
+#ós/os
+SELECT ("ós") IF (0 ("ós")) (1 ("bru") OR ("gris") OR ("grizzly"));
+SELECT ("os") IF (0 ("os"));
+#fora/fóra TODO: caldrà fer tota la desambiguació que es fa en castellà per a "fuera"
+#Per a la traducció en castellà no és problema perquè en castellà també coincidex el verb i l'adverbi
+#En altres idiomes sí que hi ha problemes si no es desambigua bé
+SELECT (cni) IF (0 ("<fora>"i) OR ("<fóra>"i)) (1 A) (-1 >>>); #Fóra difícil=Seria difícil
+REMOVE Ser IF (0 ("<fora>"i));
+#molta/mòlta. Cal mirar el context. En principi s'ignora.
+REMOVE ("mòlta") IF (0 ("molt"));
+#molt/mòlt
+SELECT PP IF (0 ("molt")) (-1 Vbhaver) (NOT -1 ("hi"));
+REMOVE PP IF (0 ("molt"));
+#mora/móra. Cal mirar el context. En principi s'ignora.
+REMOVE ("móra") IF (0 ("mora"));
+#véns,vénen/vens,venen
+SELECT ("vendre") IF (0 ("vendre")) (1 Pos OR N);
+SELECT ("vendre") IF (0 ("vendre")) (1 Det) (NOT 2 DiaSetmana);
+SELECT ("venir") IF (0 ("venir")) (0 ("vendre"));
+#ves/vés
+REMOVE ("anar") IF (0 ("<ves>"i)) (1 ("per")) (2 ("on"));
+SELECT ("anar") IF (0 ("<ves>"i));
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
