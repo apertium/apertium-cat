@@ -217,6 +217,7 @@ SECTION
 #
 # Diacrítics de la nova ortografia IEC 2017
 #
+
 SELECT:dona_v Vblex IF (0 ("donar")) (-1 Pro) (-2 Pro) (NOT -2 ("<en>"i));
 SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i)) (NOT -1 ("<en>"i));
 SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i)) (NOT -1 ("<en>"i));
@@ -231,6 +232,7 @@ SELECT ("bóta") IF (0 ("bóta")) (0*/* ("vi"));
 SELECT ("bota") IF (0 ("bota"));
 #ós/os
 SELECT ("ós") IF (0 ("ós")) (1 ("bru") OR ("gris") OR ("grizzly"));
+SELECT ("ós") IF (0 ("ós")) (1 ("de")) (2 Det) (3 ("caverna"));
 SELECT ("os") IF (0 ("os"));
 #fora/fóra TODO: caldrà fer tota la desambiguació que es fa en castellà per a "fuera"
 #Per a la traducció en castellà no és problema perquè en castellà també coincidex el verb i l'adverbi
@@ -248,9 +250,20 @@ REMOVE ("móra") IF (0 ("mora"));
 SELECT ("vendre") IF (0 ("vendre")) (1 Pos OR N);
 SELECT ("vendre") IF (0 ("vendre")) (1 Det) (NOT 2 DiaSetmana);
 SELECT ("venir") IF (0 ("venir")) (0 ("vendre"));
+# revendre (més comú que revenir)
+SELECT ("revendre") IF (0 ("revenir")) (0 ("revendre"));
 #ves/vés
 REMOVE ("anar") IF (0 ("<ves>"i)) (1 ("per")) (2 ("on"));
 SELECT ("anar") IF (0 ("<ves>"i));
+#res/rés. Dubtós: el res > rés ?
+SELECT ("rés") IF (0 ("res")) (1/* ("de")) (2 Det) (3 ("hora") + FemPl);
+SELECT ("rés") IF (0 ("res")) (1/* ("de")) (2* ("parenostre") OR ("avemaria") OR ("rosari") OR ("oració") OR ("pregària"));
+SELECT ("res") IF (0 ("res"));
+#seu/sèu.
+SELECT ("sèu") IF (0 ("sèu") + MascSg) (-1 Prep) (-2* ("untar") OR ("candela"));
+REMOVE ("sèu") IF (0 ("seu"));
+
+## FINAL Diacrítics nous
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
