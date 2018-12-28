@@ -263,7 +263,7 @@ SELECT ("res") IF (0 ("res"));
 SELECT ("sèu") IF (0 ("sèu") + MascSg) (-1 Prep) (-2* ("untar") OR ("candela"));
 REMOVE ("sèu") IF (0 ("seu"));
 #net/nét
-SELECT A if (0 ("net")) (-1 Num OR ("<€>") OR ("mantener"));
+SELECT A if (0 ("net")) (-1 Num OR ("<€>") OR ("mantener") OR ("IVA"));
 
 ## FINAL Diacrítics nous
 
