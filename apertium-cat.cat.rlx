@@ -37,6 +37,7 @@ LIST unknown = ("\\*.*"r) ;
 LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
 LIST MajIni = ("<[A-ZÀÁÈÉíÒÓÚÜÇ].*>"r) ;
 LIST MinIni = ("<[a-zàáèéìíòóùúçñ].*>"r) ;
+LIST MajIni2 = ("<[A-ZÀÁÈÉÍÌÒÓÚÜÇ][a-zàáèéìíòóùúïüçñ·]+.*>"r) ;
 LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
@@ -263,7 +264,28 @@ SELECT ("res") IF (0 ("res"));
 SELECT ("sèu") IF (0 ("sèu") + MascSg) (-1 Prep) (-2* ("untar") OR ("candela"));
 REMOVE ("sèu") IF (0 ("seu"));
 #net/nét
-SELECT A if (0 ("net")) (-1 Num OR ("<€>") OR ("mantener") OR ("IVA"));
+REMOVE ("nét") IF (0 ("net")) (-1 ("<€>") OR ("mantener") OR ("IVA"));
+REMOVE ("nét") IF (0 ("net")) (1 ("patrimonial") OR ("aigua") OR ("contribució") OR ("memòria"));
+REMOVE ("nét") IF (0 ("net")) (1 ("de")) (2 ("cor"));
+SELECT N IF (0 ("nét") + MascSg ) (-1 MascSg) (-1 Pos);
+SELECT N IF (0 ("nét") + MascPl ) (-1 MascPl) (-1 Pos);
+SELECT N IF (0 ("nét") + FemSg ) (-1 FemSg) (-1 Pos);
+SELECT N IF (0 ("nét") + FemPl ) (-1 FemPl) (-1 Pos);
+SELECT N IF (0 ("nét")) (-1 (ord) OR ("darrer") OR ("últim")) (-2 ("el"));
+SELECT N IF (0 ("nét")) (-1 Num OR ("un") OR ("més") OR ("menys")) (-2 ("tenir"));
+SELECT N IF (0 ("nét")) (-1 ("el")) (1 ("de"));
+SELECT N IF (0 ("nét")) (1 ("de")) (2 MajIni2) (NOT -1 N) (NOT -1 ("més") OR ("menys"));
+SELECT N IF (0 ("nét")) (-1 ("un") OR ("algun")) (1 ("de") OR (pos));
+SELECT N IF (0 ("nét")) (-1 Copula) (1C ("de")) (2C ("el"));
+SELECT N IF (0 ("nét")) (-1 Copula) (1/* ("de") + ("el"));
+SELECT N IF (0 ("nét")) (-1 >>> OR CM) (1/* ("de") + ("el") + Sg);
+SELECT N IF (0 ("nét")) (-1 >>> OR CM) (1 ("de")) (2 ("el") + Sg);
+SELECT N IF (0 ("nét")) (-1 CnjCoo OR CM) (-2 ("fill") OR ("avi") OR ("pare") OR ("mare"));
+SELECT N IF (0 ("nét")) (1 CnjCoo OR CM) (2 ("fill") OR ("avi") OR ("pare") OR ("mare"));
+SELECT N IF (0 ("nét")) (-1/* ("de") + ("el")) (-2 ("un") OR ("algun"));
+SELECT N IF (0 ("nét")) (-1 ("el")) (-2 ("de")) (-3 ("un") OR ("algun"));
+SELECT N IF (0 ("nét")) (-1 ("algun de"));
+REMOVE ("nét") IF (0 ("net")); #Al final, prioritat al sistema tradicional!
 
 ## FINAL Diacrítics nous
 
