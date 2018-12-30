@@ -513,6 +513,9 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+
+SELECT Vblex IF (0 ("mancar")) (1 CnjSub OR CnjAdv OR Rel);
+
 SELECT ("a fi de") IF (0 ("a fi de")) (1 Inf);
 REMOVE ("a fi de") IF (0 ("a fi de")) (NOT 1 Inf);
 
