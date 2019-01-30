@@ -1230,6 +1230,9 @@ SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estri
 SELECT Pron IF (NOT -1 Det OR A) (0 ("cap")) (1C Verb) ;
 	# però cap ha estat acceptada
 
+REMOVE (f) IF (0 ("cap")) (NOT -1 (f)) (NOT 1 (f));
+REMOVE (m) IF (0 ("cap")) (0 FemPl) (-1 FemPl); 
+
 SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C A OR PP) ;
 	# és molt variat
 SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C Adv) ;
