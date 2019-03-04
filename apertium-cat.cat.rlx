@@ -243,7 +243,7 @@ REMOVE Ser IF (0 ("<fora>"i));
 #molta/mòlta. Cal mirar el context. En principi s'ignora.
 REMOVE ("mòlta") IF (0 ("molt"));
 #molt/mòlt
-SELECT PP IF (0 ("molt")) (-1 Vbhaver) (NOT -1 ("hi"));
+SELECT PP IF (0 ("molt")) (-1 Vbhaver) (NOT -2 ("hi"));
 REMOVE PP IF (0 ("molt"));
 #mora/móra. Cal mirar el context. En principi s'ignora.
 REMOVE ("móra") IF (0 ("mora"));
