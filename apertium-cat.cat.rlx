@@ -333,6 +333,8 @@ REMOVE Cog IF (-1 DetInd) (0 Cog) ;
 REMOVE Ant IF (-1 DetDef) (0 Ant) ;
 REMOVE Ant IF (-1 DetInd) (0 Ant) ;
 
+REMOVE Verb IF (0 ("IX")) ;
+
 #acrónimos
 LIST AllUpper = ("<[A-Z]+>"r) ;
 SELECT:acronim (acr) IF (0 AllUpper);
