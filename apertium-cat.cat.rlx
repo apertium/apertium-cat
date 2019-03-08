@@ -58,6 +58,7 @@ LIST Inf = (inf) ;
 LIST PP = (pp) ;
 LIST PRS = (prs) ;
 LIST PIS = (pis) ;
+LIST IFI = (ifi) ;
 LIST Ger = (ger) ;
 
 LIST P1 = (p1) ;
@@ -480,6 +481,7 @@ SELECT PRS (*-1 ("ser") LINK 1 Adv_PreAdv LINK 1 A LINK 1 ("que")) (0C Verb) (NO
 
 REMOVE PIS (0 ("<foren>")) (1 PP) ;
 	# que foren capturats
+SELECT IFI (0 ("<Foren>")) (-1 >>>) ;
 
 # adjectiu/nom i gerundi (filtrant, comptant, alternant, impugnant, cantant...)
 # Desactivat perquè és molt més complicat.
