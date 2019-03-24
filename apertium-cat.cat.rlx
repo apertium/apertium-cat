@@ -531,7 +531,13 @@ REMOVE:recolzada N IF (0 ("recolzada")) (NOT -1 Det + Fem);
 REMOVE:recolzada N IF (0 ("recolzada")) (1 ("per"));
 
 #estret, assedegat (no participi)
-REMOVE:estret PP IF (0 ("estret") OR ("assedegat"))  (NOT -1 Vbhaver);
+REMOVE:estret PP IF (0 ("estret") OR ("assedegat")) (NOT -1 Vbhaver);
+
+#tractat (no participi)
+#REMOVE:tractat PP IF (0 ("estret") OR ("tractat") OR ("assedegat")) (NOT -1 Vbhaver);
+	# no funciona: bits de manera simultània
+REMOVE PP IF (0 ("tractat")) (1 ("de")) (2 ("pau") OR ("amistat") OR NP OR unknownMajIni) (NOT -1 Vbhaver);
+SELECT N IF (-2 ("tractat")) (-1 ("de")) (2 ("pau"));
 
 #el vals (per què falla el tagger?)
 REMOVE:n_sg_pl (n pl) IF (0 N + Pl) (0 N + Sg) (-1 Det + Sg);
