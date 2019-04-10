@@ -526,6 +526,9 @@ SELECT Vblex IF (0 ("mancar")) (1 CnjSub OR CnjAdv OR Rel);
 SELECT ("a fi de") IF (0 ("a fi de")) (1 Inf);
 REMOVE ("a fi de") IF (0 ("a fi de")) (NOT 1 Inf);
 
+#animal
+REMOVE A IF (-1 Copula + P3 + Pl) (0 ("animal") + Pl);
+
 #recolzada
 REMOVE:recolzada N IF (0 ("recolzada")) (NOT -1 Det + Fem);
 REMOVE:recolzada N IF (0 ("recolzada")) (1 ("per"));
