@@ -314,7 +314,7 @@ SELECT:seu N IF (0 ("<seu>"i)) (-1 Det + FemSg);
 SELECT:molt_adv PreAdv IF (0 ("<molt>"i)) (1 A OR Adv OR PP) (NOT 1 Pron) (NOT 1 Rel) (NOT 1 Itg);
 
 # prep + verb/nom > nom: (ej. dels centres ABC)
-REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i));
+REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i)) (NOT -1C/* Rel);
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascSg) (0 MascSg); 
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascPl) (0 MascPl); 
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (0 FemSg); 
