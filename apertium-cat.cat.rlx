@@ -1391,3 +1391,11 @@ SELECT A (-1 Prep) (0 Ord + MascSg) (1 N + MascSg) ;
 SELECT A (-1 Prep) (0 Ord + FemSg) (1 N + FemSg) ;
 SELECT A (-1 Prep) (0 Ord + MascPl) (1 N + MascPl) ;
 SELECT A (-1 Prep) (0 Ord + FemPl) (1 N + FemPl) ;
+
+
+SELECT Prep IF (-1 >>> OR _S_SOFT_DELIMITERS_) (0 ("tot i")) (1 Inf) ;
+SELECT Prep IF (-1 >>> OR _S_SOFT_DELIMITERS_) (0 ("tot i")) (1 Det) (2 N) ;
+SELECT Prep IF (-1 >>> OR _S_SOFT_DELIMITERS_) (0 ("tot i")) (1 Det) (2 Adj_PP) (3 N) ;
+REMOVE Prep IF (0 ("tot i")) ;
+    # tot i haver caigut
+	# tot i les reivindicacions
