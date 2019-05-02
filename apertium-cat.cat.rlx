@@ -360,6 +360,9 @@ SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR C
 REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-2 NP) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 
+SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
+SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
+
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>")
 	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
