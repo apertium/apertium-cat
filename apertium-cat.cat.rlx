@@ -361,7 +361,7 @@ REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant
 SELECT Top IF (-2 NP) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 
 SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
-SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
+SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>")
@@ -393,8 +393,8 @@ SELECT A IF (-1 ("<Guerra>")) (0 ("<Civil>")) ;		# la Guerra (Mundial, d'Indepen
 SELECT A IF (-1 N + MascSg) (0 NP OR A) (0 ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
 SELECT A IF (-2 N + MascSg) (-1 A + MascSg) (0 NP OR A) (0 ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
 
-SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu")) ;
-SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")) ;
+SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu") OR ("Egea")) ;
+SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
 
 SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
 	# la dona que estima les flors
