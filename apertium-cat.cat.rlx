@@ -341,7 +341,9 @@ SELECT:acronim (acr) IF (0 AllUpper);
 
 SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
-SELECT Cog IF (0 Cog OR Ant) (-1C Ant) ;
+SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 segles_num_romans) (NOT 1 Cog) (NOT 1 ("de"));
+	# Josep Maria Carles
+	# Joan Carles I
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
 SELECT Top IF (-2 Ant) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# Hiparc de Nicea
