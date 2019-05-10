@@ -545,7 +545,7 @@ REMOVE:estret PP IF (0 ("estret") OR ("assedegat")) (NOT -1 Vbhaver);
 #REMOVE:tractat PP IF (0 ("estret") OR ("tractat") OR ("assedegat")) (NOT -1 Vbhaver);
 	# no funciona: bits de manera simultània
 REMOVE PP IF (0 ("tractat")) (1 ("de")) (2 ("pau") OR ("amistat") OR NP OR unknownMajIni) (NOT -1 Vbhaver);
-SELECT N IF (-2 ("tractat")) (-1 ("de")) (2 ("pau"));
+SELECT N IF (-2 ("tractat")) (-1 ("de")) (0 ("pau"));
 
 #el vals (per què falla el tagger?)
 REMOVE:n_sg_pl (n pl) IF (0 N + Pl) (0 N + Sg) (-1 Det + Sg);
