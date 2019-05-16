@@ -338,6 +338,10 @@ REMOVE Verb IF (0 ("IX")) ;
 #acrónimos
 LIST AllUpper = ("<[A-Z]+>"r) ;
 SELECT:acronim (acr) IF (0 AllUpper);
+SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<AC>")) (0C ("aC"));
+	# evita que "AC" s'interpretin com a "aC" en el cas en què no hi hagi cap altra opció a triar (AC<acr> no estigui definit en el bidix)
+SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<DC>")) (0C ("dC"));
+	# evita que "DC" s'interpretin com a "dC" en el cas en què no hi hagi cap altra opció a triar (DC<acr> no estigui definit en el bidix)
 
 SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
@@ -751,8 +755,8 @@ SELECT Num IF (0 ("<I>")) (1 ("república") OR ("congrés") OR ("conferència"))
 SELECT Num IF (0 ("<V>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
 SELECT Num IF (0 ("<X>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
 
-SELECT CnjCoo IF (-1 >>>) (0 ("<I>")) (NOT 1 Rpar OR <<<) ;
-SELECT Num IF (-1 >>>) (0 ("<I>")) (1 Rpar OR <<<) ;
+SELECT CnjCoo IF (-1 >>>) (0 ("<I>")) (NOT 1 Rpar OR <<< OR ("<aC>") OR ("<dC>")) ;
+SELECT Num IF (-1 >>>) (0 ("<I>")) (1 Rpar OR <<< OR <<< OR ("<aC>") OR ("<dC>")) ;
 
 SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
@@ -1331,6 +1335,12 @@ SELECT A IF (0 ("<VI>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") O
 SELECT A IF (0 ("<X>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
 #SELECT A IF (0 segles_num_romans) (0C A OR Num) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
 SELECT A IF (0 segles_num_romans) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) ;
+	# el segle I
+SELECT Num IF (0 ("<I>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) (NOT 0 A) ;
+SELECT Num IF (0 ("<V>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) (NOT 0 A) ;
+SELECT Num IF (0 ("<VI>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) (NOT 0 A) ;
+SELECT Num IF (0 ("<X>")) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) (NOT 0 A) ;
+SELECT Num IF (0 segles_num_romans) (-1 ("segle") OR ("mil·lenni") OR ("any") OR ("mes") OR ("setmana") OR ("dia")) (NOT 0 A) ;
 	# el segle I
 SELECT N IF (0 ("<C>")) (-1 Num) ;
 	# 100°C
