@@ -459,6 +459,9 @@ REMOVE N (NOT -2 Verb) (NOT -2 Prep) (-1C Pro) (0 N LINK 0 Verb) ;
 REMOVE A (0 ("tant") OR ("Tant")) (*1 ("com") BARRIER CnjSub) ;
 REMOVE Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 
+SELECT A OR Adv (-1 ("tan")) (0 A OR Adv) (1 ("com")) ;
+	# tan important com
+
 REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
 REMOVE Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
 REMOVE Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
