@@ -173,6 +173,7 @@ LIST Encarar = "encarar" ;
 LIST Primer = "primer" ;
 LIST Promes = "promès" ;
 LIST Promesa = "promesa" ;
+LIST Tot = "tot" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -724,6 +725,9 @@ SELECT Encara IF (0 Encara OR Encarar) (1 ("més") OR ("menys")) ;
 	# encara menys
 SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 	# més pròxim encara
+
+SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
+REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
 
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
