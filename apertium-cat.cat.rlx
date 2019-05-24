@@ -175,6 +175,7 @@ LIST Primer = "primer" ;
 LIST Promes = "promès" ;
 LIST Promesa = "promesa" ;
 LIST Tot = "tot" ;
+LIST Entre = "entre" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -779,12 +780,22 @@ SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 SELECT Vblex IF (-1C Adv) (0C N OR Vblex) (1 Det) (2C N) ;
 SELECT Vblex IF (0C N OR Vblex) (0 ("posar")) (1 Det) (2 N) ;
 	# finalment posa l'esquena completament recta
-SELECT N IF (-2 Prep) (-1 Det) (0 N OR Vblex) (1 A) ;
-SELECT N IF (-2C Prep) (-1 Det) (0C N OR Vblex) ;
+SELECT N IF (-2 Prep) (-1 Det + MascSg) (0 N + MascSg OR Vblex) (1 A + MascSg) ;
+SELECT N IF (-2 Prep) (-1 Det + MascPl) (0 N + MascPl OR Vblex) (1 A + MascPl) ;
+SELECT N IF (-2 Prep) (-1 Det + FemSg) (0 N + FemSg OR Vblex) (1 A + FemSg) ;
+SELECT N IF (-2 Prep) (-1 Det + FemPl) (0 N + FemPl OR Vblex) (1 A + FemPl) ;
+SELECT N IF (-2C Prep) (-1 Det + MascSg) (0C N + MascSg OR Vblex) ;
+SELECT N IF (-2C Prep) (-1 Det + FemSg) (0C N + FemSg OR Vblex) ;
+SELECT N IF (-2C Prep) (-1 Det + MascPl) (0C N + MascPl OR Vblex) ;
+SELECT N IF (-2C Prep) (-1 Det + FemPl) (0C N + FemPl OR Vblex) ;
 	# que corre paral·lela a la costa sud-americana del Pacífic
+	# que entre altres forma una part
 SELECT N IF (-2 Prep) (-1 Pos) (0 N OR Vblex) (1 A) ;
 SELECT N IF (-2C Prep) (-1 Pos) (0C N OR Vblex) ;
 	# juntament amb la seva guarda personal
+
+SELECT Pron IF (-1C Prep) (0 ("<altres>")) (NOT 1 N + Pl) (NOT 1 A + Pl) (NOT 1 unknown) ;
+	# que entre altres forma una part
 
 REMOVE Itg IF (0 Com) (1 (":")) ;
 	# paraules com:
