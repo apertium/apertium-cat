@@ -66,6 +66,7 @@ LIST P2 = (p2) ;
 LIST P3 = (p3) ;
 
 LIST Def = (def) ;
+LIST Dem = (dem) ;
 
 LIST Enc = (enc) ;
 
@@ -729,6 +730,13 @@ SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
 SELECT Pron IF (0 Tot + Pl) (1 ("nosaltres") OR ("vosaltres") OR ("ell") + Pl OR ("vostè") + Pl) ;
+SELECT Pron IF (0 Tot + MascSg) (1 Det + MascSg) (2 N + MascSg) ;	# tot aquest carrer
+SELECT Pron IF (0 Tot + FemSg) (1 Det + FemSg) (2 N + FemSg) ;		# tota aquesta avinguda
+SELECT Pron IF (0 Tot + MascPl) (1 Det + MascPl) (2 N + MascPl) ;	# tots aquests dies
+SELECT Pron IF (0 Tot + FemPl) (1 Det + FemPl) (2 N + FemPl) ;		# totes aquestes noies
+SELECT Pron IF (0 Tot + MascPl) (1 Pron + Dem + MascPl) (2 N + MascPl) ;	# tots aquests
+SELECT Pron IF (0 Tot + FemPl) (1 Pron + Dem + FemPl) (2 N + FemPl) ;	# totes aquestes
+SELECT Pron IF (0 Tot + MascSg) (1 ("això") OR ("allò") ) ;
 
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
