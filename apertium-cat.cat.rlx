@@ -728,6 +728,7 @@ SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
+SELECT Pron IF (0 Tot + Pl) (1 ("nosaltres") OR ("vosaltres") OR ("ell") + Pl OR ("vostè") + Pl) ;
 
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
