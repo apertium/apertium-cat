@@ -361,10 +361,20 @@ SELECT Top IF (-3 Ant) (-2 segles_num_romans) (-1 ("de")) (0 Ant OR Cog OR Top) 
 SELECT Top IF (-2 ("concili") OR ("parlament") OR ("estatut") OR ("constitució") OR ("tractat") OR ("declaració"))
 	(-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# concili de Nicea
-SELECT Top IF (-2 ("corona") OR ("regne") OR ("comtat") OR ("ducat")) (-1 ("de")) (0 Cog OR Top) ;
+SELECT Top IF (-2 ("catedral") OR ("monestir") OR ("col·egiata") OR ("església"))
+	(-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# catedral de Lleó
+SELECT Top IF (-2 ("corona") OR ("regne") OR ("comtat") OR ("ducat") OR ("república") OR ("província") OR ("regió"))
+	(-1 ("de")) (0 Cog OR Top) ;
 	# regne de Castella
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# príncep de Viana
+SELECT Top IF (-2 ("superfície")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# superfície d'Aragó
+SELECT Top IF (-3 ("comunitat")) (-2 ("autònom")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# comunitat autònoma de Múrcia
+SELECT Top IF (-2 ("<Comunitat>")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+	# Comunitat de Madrid
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
