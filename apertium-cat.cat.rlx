@@ -177,6 +177,7 @@ LIST Promesa = "promesa" ;
 LIST Tot = "tot" ;
 LIST Entre = "entre" ;
 LIST Les = "les" ;
+LIST De = "de" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -740,6 +741,7 @@ SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 	# més pròxim encara
 
 SELECT Det IF (0 Les) (0 Def) (1 unknown) ;	# una de les koses
+REMOVE A IF (0 Les) (0 Def) (1 De) ;		# Les de ponent
 
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
