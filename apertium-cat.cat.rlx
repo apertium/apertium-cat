@@ -1263,6 +1263,12 @@ SELECT Fem IF (-3 ("ser") OR ("estar")) (-2 PP + Fem) (-1 ("com a")) (0 ("cap"))
 	# va ser designada com a cap de
 SELECT Masc IF (NOT -2 PP + Fem) (-1C Prep) (0 ("cap")) (1C Prep) (NOT 2 Det + Pl) ;
 	# Aristòtil va ser designat com a cap de la reial acadèmia
+SELECT N IF (-1 ("nomenar") OR ("anomenar")) (0 ("cap")) (1 ("de")) (2 N) ;
+	# ha estat nomenat cap de departament
+	# el va nomenar cap de departament
+SELECT N IF (-1 ("det")) (0 ("<Cap>")) ;
+SELECT N IF (0 ("<Cap>")) (1 ("oriental") OR ("occidental") OR ("septentrional")) ;
+	# el Cap Occidental
 
 SELECT Det IF (0 ("cap")) (1C N) ;
 #SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
