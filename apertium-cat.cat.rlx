@@ -723,6 +723,8 @@ SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
 
+SELECT Verb IF (0 ("girar")) (0 ("gira")) (1 ("al voltant de") OR ("a l'entorn de") OR ("entorn")) ;	# "entorn" es troba en els texts
+
 SELECT Encara IF (-1 Vbhaver) (0 Encara OR Encarar) ;
 	# hi ha encara alguns antics alumnes
 SELECT Encara IF (0 Encara OR Encarar) (1 Verb LINK 0 Pers) ;
