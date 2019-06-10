@@ -34,7 +34,8 @@ SET Lpar = (lpar) ;
 SET Rpar = (rpar) ;
 
 LIST unknown = ("\\*.*"r) ;
-LIST unknownMajIni = ("\\*[A-ZÀÁÈÉíÒÓÚÜÇ].*"r) ;
+LIST unknownMajIni = ("\\*[A-ZÀÁÈÉÍÒÓÚÜÇ].*"r) ;
+LIST MajSola = ("<[A-ZÀÁÈÉÍÒÓÚÜÇ]>"r) ;
 LIST MajIni = ("<[A-ZÀÁÈÉíÒÓÚÜÇ].*>"r) ;
 LIST MinIni = ("<[a-zàáèéìíòóùúçñ].*>"r) ;
 LIST MajIni2 = ("<[A-ZÀÁÈÉÍÌÒÓÚÜÇ][a-zàáèéìíòóùúïüçñ·]+.*>"r) ;
@@ -308,8 +309,8 @@ REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (a
 # Per a evitar la traducció de cognoms
 # Posa com a lema la forma de la paraula marcada amb *
 # Amb els adjectius hi ha més risc d'error (!)
-SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 ("<M>")); 
-REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 ("<M>"));  # Això no sé si és útil. 
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 MajSola); # 
+REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 MajSola);  # Això no sé si és útil. 
 
 #amb sols
 SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
