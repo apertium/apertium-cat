@@ -701,6 +701,13 @@ SELECT Moure IF (-1 ("jo")) (0 ("<moc>")) ;
 # jo sec
 SELECT Seure IF (-1 ("jo")) (0 ("<sec>")) ;
 SELECT Seure IF (-1 >>>) (0 ("<Sec>")) ;
+# tu seus
+SELECT Seure IF (-1 ("tu")) (0 ("<seus>")) ;
+SELECT Seure IF (-1 >>>) (0 ("<Seus>")) ;
+# ell seu
+SELECT Seure IF (-1 Tn + P3 + Sg) (0 ("<seu>")) ;
+SELECT Seure IF (-1 Ant_Cog) (0 ("<seu>")) ;
+SELECT Seure IF (-1 >>>) (0 ("<Seu>")) (NOT 1 ("de")) ;
 
 SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
