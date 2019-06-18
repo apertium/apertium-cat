@@ -406,6 +406,10 @@ SELECT N IF (0 ("sant")) (1 NP) ;
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis")) ;
 	# Llevem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
+SELECT:Planes_top Top IF (0 ("<Planes>")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
+SELECT:Planes_cog (cog) IF (0 ("<Planes>")) (-1 (ant) OR (cog));
+#SELECT:Planes_n N IF (0 ("<Planes>")) (1 A + FemPl);
+
 SELECT:Consell_top Top IF (0 ("Consell")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
 REMOVE:Consell_top Top IF (0 ("Consell"));
 SELECT:Consell_n N IF (0 ("Consell")) (1 A + MascSg);
