@@ -1283,6 +1283,7 @@ SELECT N IF (-1 ("nomenar") OR ("anomenar")) (0 ("cap")) (1 ("de")) (2 N) ;
 SELECT N IF (-1 ("det")) (0 ("<Cap>")) ;
 SELECT N IF (0 ("<Cap>")) (1 ("oriental") OR ("occidental") OR ("septentrional")) ;
 	# el Cap Occidental
+SELECT N IF (0 ("<Cap>")) (1 unknownMajIni) ;
 
 SELECT Det IF (0 ("cap")) (1C N) ;
 #SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
