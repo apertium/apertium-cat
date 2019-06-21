@@ -213,6 +213,9 @@ SET VerbSubj = ("voler") OR ("desitjar") OR ("proposar") OR ("agradar") OR ("pla
 # verbs Vblex que típicament impliquen indicatiu
 SET VInd = ("considerar") OR ("creure") OR ("opinar") OR ("dir") OR ("sentir") OR ("trobar") OR ("continuar") OR ("mantenir") OR ("resultar") ;
 
+# verbs Vblex que sovint van seguits d'adjectiu
+SET VAdj = ("considerar") OR ("creure") OR ("opinar") OR ("trobar") OR ("resultar") OR ("semblar") OR ("continuar") OR ("mantenir") OR ("romandre") ;
+
 # coincidències nom propi/comú
 SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia");
 
@@ -963,10 +966,14 @@ REMOVE N IF (-3 N + MascPl) (-2 A + MascPl) (-1 ("i")) (0 A + MascPl) (0 N) ;
 REMOVE N IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("i")) (0 A + FemPl) (0 N) ;
 	# el seu caràcter màgic i religiós
 
-SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VInd) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VAdj) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
 	# nos vino impuesto.
-SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VInd) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-1 PP) (NOT -1 VAdj) (-2 Vbhaver) (1 Barrera_Final_Estrict_SN) ;
+	# ha detonat explosius
+SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-2 PP) (NOT -2 VAdj) (-3 Vbhaver) (1 Barrera_Final_Estrict_SN) ;
+	# ha detonat sempre explosius
+SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VAdj) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
 
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 Barrera_Final_Estrict_SN) ;
