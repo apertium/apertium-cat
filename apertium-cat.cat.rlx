@@ -844,6 +844,11 @@ REMOVE N + Fem IF (0 ("u"i)) (NOT -1 Det + (f)) (NOT -1 ("lletra"i)); # l'u (no 
 # set per cent
 SELECT (num) IF (0 (num)) (1 ("per")) (2 ("cent"));
 
+SELECT N IF (0 ("perquè")) (-1 ("<el>"i));
+REMOVE N IF (0 ("perquè"));
+
+REMOVE N IF (0 ("lliure")) (-1 Adv); # ¿Es pot generalitzar més: adv + adj?
+REMOVE Vblex IF (0 ("lliure")) (-1 Adv) (-2 Vblex);
 #
 # Desambiguació "los" enc / els "pro"
 #
@@ -971,7 +976,7 @@ SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR (
 	# nos vino impuesto.
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-1 PP) (NOT -1 VAdj) (-2 Vbhaver) (1 Barrera_Final_Estrict_SN) ;
 	# ha detonat explosius
-SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-2 PP) (NOT -2 VAdj) (-3 Vbhaver) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap")) (-2 PP) (NOT -2 VAdj) (-3 Vbhaver) (1 Barrera_Final_Estrict_SN) (NOT -1 N);
 	# ha detonat sempre explosius
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VAdj) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
