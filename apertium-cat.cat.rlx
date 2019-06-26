@@ -1380,6 +1380,7 @@ SELECT PP IF (0 ("<passada>")) (1 Det + FemSg) (2 N + FemSg) ;
 	# fins passada la nit
 
 REMOVE CnjCoo IF (0 ("<I>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
+REMOVE CnjCoo IF (0 ("<I>")) (-1 Ant) (1C Cog OR Top) ;		# Maria I Estuard, Alexandre I Pico della Mirandola
 REMOVE N IF (0 ("<V>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 REMOVE N IF (0 ("<VI>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 REMOVE N IF (0 ("<X>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
