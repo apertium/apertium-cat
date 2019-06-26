@@ -352,6 +352,12 @@ SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<AC>")) (0C ("aC"));
 SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<DC>")) (0C ("dC"));
 	# evita que "DC" s'interpretin com a "dC" en el cas en què no hi hagi cap altra opció a triar (DC<acr> no estigui definit en el bidix)
 
+SELECT N IF (0 ("sant")) (1 NP) ;
+
+REMOVE NP IF (0 ("Mestre") + MascSg) (-1/* Det + MascSg); # el Mestre A...
+REMOVE NP IF (0 ("Mestre")) (1 ("internacional")); 
+
+
 SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
 SELECT Ant IF (-1 ("sant")) (0 Ant) (0 Cog OR Top) ;
@@ -403,8 +409,6 @@ SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
 	# santes creus
 SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 	# creu de Sant Jordi
-
-SELECT N IF (0 ("sant")) (1 NP) ;
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis")) ;
 	# Llevem paraules que, per una raó o altra, es posen en majúscules sense ser NP
