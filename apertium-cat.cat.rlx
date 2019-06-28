@@ -346,7 +346,7 @@ REMOVE Verb IF (0 ("IX")) ;
 
 #acrónimos
 LIST AllUpper = ("<[A-Z]+>"r) ;
-SELECT:acronim (acr) IF (0 AllUpper);
+SELECT:acronim (acr) IF (0 AllUpper) (NOT 0 ("<V>")) ;
 SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<AC>")) (0C ("aC"));
 	# evita que "AC" s'interpretin com a "aC" en el cas en què no hi hagi cap altra opció a triar (AC<acr> no estigui definit en el bidix)
 SUBSTITUTE (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0 ("<DC>")) (0C ("dC"));
