@@ -507,6 +507,9 @@ SELECT A (-2C N + FemSg) (-1C Adv) (0 A + FemSg) (NOT 0 ("va")) ;
 SELECT A (-2C N + MascPl) (-1C Adv) (0 A + MascPl) (NOT 0 ("va")) ;
 SELECT A (-2C N + FemPl) (-1C Adv) (0 A + FemPl) (NOT 0 ("va")) ;
 
+SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 V) (NOT -2 VAdj) ;			# es formen molt més ràpid
+SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 Adv_PreAdv) (-3 V) (NOT -3 VAdj) ;
+
 #REMOVE A IF (0 NP LINK 0 (adj m sg)) (-1 Prep) (1C N) (NOT 1 MascSg) ;
 #REMOVE A IF (0 NP LINK 0 (adj f sg)) (-1 Prep) (1C N) (NOT 1 FemSg) ;
 #REMOVE A IF (0 NP LINK 0 (adj m pl)) (-1 Prep) (1C N) (NOT 1 MascPl) ;
