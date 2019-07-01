@@ -491,6 +491,8 @@ REMOVE Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
 
 SELECT A OR Adv (-1 ("tan")) (0 A OR Adv) (1 ("com")) ;
 	# tan important com
+REMOVE Ger (-1 ("més") OR ("menys")) (0 A OR Adv OR PP) (0 Ger) ;
+	# més important
 
 REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
 REMOVE Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
