@@ -1004,6 +1004,7 @@ SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 Barrer
 SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR CnjCoo) (2 Barrera_Final_SN LINK NOT 0 PP) ;
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
+SELECT Num (0 ("nou")) (1 Noun_Adj_PP + Pl_strict) ;	# Guerra dels Nou Anys
 
 SELECT A (0 ("gran") + Pl) (1 N + Pl) ;
 	## grans matemàtics
