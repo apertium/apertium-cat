@@ -175,6 +175,8 @@ LIST Encarar = "encarar" ;
 LIST Primer = "primer" ;
 LIST Promes = "promès" ;
 LIST Promesa = "promesa" ;
+LIST Terme = "terme" ;
+LIST Termes = "termes" ;
 LIST Tot = "tot" ;
 LIST Entre = "entre" ;
 LIST Les = "les" ;
@@ -745,6 +747,8 @@ SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
 SELECT Promes IF (0 Promes OR Promes) (-1 Pos) ;
 SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 
+SELECT Terme IF (0 Terme OR Termes) (1 ("municipal") + Pl) ;
+
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
 
@@ -799,6 +803,8 @@ REMOVE MF IF (-1C Prep) (0 Ponent) ;
 REMOVE Ger IF (-1C Rel) (0 Ger LINK 0 Pers) ;
 REMOVE Ger IF (-2C Rel) (-1 Adv) (0 Ger LINK 0 Pers) ;
 	# que sent
+
+#REMOVE Det IF (-1C/* Det) (0 Det OR A OR Pron) ;			# els altres, dels altres
 
 REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
 REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
