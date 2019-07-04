@@ -73,8 +73,10 @@ LIST Enc = (enc) ;
 
 LIST Masc = m mf ;
 LIST Fem = f mf ;
-# LIST Masc_strict = n ; no utilitzar: també agafa mf
+# LIST Masc_strict = m ; no utilitzar: també agafa mf
 # LIST Fem_strict = f ; no utilitzar: també agafa mf
+#LIST Masc_strict = (m) ;
+#LIST Fem_strict = (f) ; 
 LIST MF = mf ;
 LIST Sg = sg sp ;
 LIST Pl = pl sp ;
@@ -139,6 +141,8 @@ SET Barrera_Inicial_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Verb OR Rel ;	# Verb
 SET Barrera_Inicial_Estrict_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Rel ;
 SET Limite_Barrera_Inicial_SN = ("ser") OR ("Ser") OR ("estar") OR ("Estar") OR ("semblar") OR ("Semblar") OR ("haver") OR ("Haver") ;
 
+LIST Acta = "acta" ;
+LIST Acte = "acte" ;
 LIST Anar = "anar" ;
 LIST Vanar = "vanar" ;
 LIST Voler = "voler" ;
@@ -773,8 +777,10 @@ SELECT Encara IF (0 Encara OR Encarar) (1 ("més") OR ("menys")) ;
 SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 	# més pròxim encara
 
-SELECT Det IF (0 Les) (0 Def) (1 unknown) ;	# una de les koses
-REMOVE A IF (0 Les) (0 Def) (1 De) ;		# Les de ponent
+SELECT Det IF (0 Les) (0 Def) (1 unknown) ;		# una de les koses
+REMOVE A IF (0 Les) (0 Def) (1 De) ;			# Les de ponent
+REMOVE A IF (0 Les) (0 Def) (0 De) ;			# de les
+REMOVE A IF (0 Les) (0 Def) (1 ("altre") + Pl) ;	# les altres
 
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
