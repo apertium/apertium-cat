@@ -779,8 +779,10 @@ SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 
 SELECT Det IF (0 Les) (0 Def) (1 unknown) ;		# una de les koses
 REMOVE A IF (0 Les) (0 Def) (1 De) ;			# Les de ponent
-REMOVE A IF (0 Les) (0 Def) (0 De) ;			# de les
+#REMOVE A IF (0 Les) (0 Def) (0 De) ;			# de les
 REMOVE A IF (0 Les) (0 Def) (1 ("altre") + Pl) ;	# les altres
+REMOVE A IF (0 Les) (0 Def) (NOT -1 De) ;
+REMOVE A IF (0 Les) (0 Def) (NOT 1 ("majestat") OR ("humanitat")) ;
 
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
