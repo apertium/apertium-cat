@@ -321,6 +321,8 @@ REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (a
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 MajSola); # 
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans) (NOT -1 ("Al")) (NOT 0 MajSola);  # Això no sé si és útil. 
 
+REMOVE:cog_top (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 >>>); #Orihuela, Vilallonga
+
 #amb sols
 SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
 SELECT:seu N IF (0 ("<seu>"i)) (-1 Det + FemSg);
@@ -420,8 +422,8 @@ SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis")) ;
 	# Llevem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
-SELECT:Planes_top Top IF (0 ("<Planes>")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
-SELECT:Planes_cog (cog) IF (0 ("<Planes>")) (-1 (ant) OR (cog));
+SELECT:Planes_top Top IF (0 ("<Planes>") OR ("Vilallonga")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
+SELECT:Planes_cog (cog) IF (0 ("<Planes>") OR ("Vilallonga")) (-1 (ant) OR (cog));
 #SELECT:Planes_n N IF (0 ("<Planes>")) (1 A + FemPl);
 
 SELECT:Consell_top Top IF (0 ("Consell")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
