@@ -129,6 +129,7 @@ SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("on
 #SET Persones2 = ("pare") ("mare") ("avi") ;
 SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("comte") OR ("marquès") OR ("duc")
 	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
+SET PuntCardinal = ("nord") OR ("sud") OR ("est") OR ("oest") OR ("nord-est") OR ("nord-oest") OR ("sud-est") OR ("sud-oest") OR ("llevant") OR ("ponent") ;
 SET DiaSetmana = ("dilluns") OR ("dimarts") OR ("dimecres") OR ("dijous") OR ("divendres") OR ("dissabte") OR ("diumenge");
 
 
@@ -390,21 +391,24 @@ SELECT Top IF (-2 ("catedral") OR ("monestir") OR ("col·egiata") OR ("església
 SELECT Top IF (-2 ("corona") OR ("regne") OR ("comtat") OR ("ducat") OR ("república") OR ("província") OR ("regió"))
 	(-1 ("de")) (0 Cog OR Top) ;
 	# regne de Castella
-SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
 	# príncep de Viana
-SELECT Top IF (-2 ("superfície")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 PuntCardinal) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
+	# al nord d'Aragó
+SELECT Top IF (-2 ("superfície")) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
 	# superfície d'Aragó
-SELECT Top IF (-3 ("comunitat")) (-2 ("autònom")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-3 ("comunitat")) (-2 ("autònom")) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
 	# comunitat autònoma de Múrcia
-SELECT Top IF (-2 ("<Comunitat>")) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 ("<Comunitat>")) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
 	# Comunitat de Madrid
-SELECT Top IF (-1 ("alt") OR ("baix")) (0 Ant OR Cog OR Top) (NOT 0 ("Consell"));
+SELECT Top IF (-1 ("alt") OR ("baix")) (0 Ant OR Cog OR Top OR Al) (NOT 0 ("Consell"));
         # Alt Aragó, Baix Aragó, però no: Alt Consell
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-2 NP) (-1 ("de")) (0 Ant OR Cog OR Top) ;
+SELECT Top OR Al IF (-1 ("fundar")) (0 Ant OR Cog OR Top OR Al) ;
 
 SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
