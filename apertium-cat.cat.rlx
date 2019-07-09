@@ -188,6 +188,8 @@ LIST Entre = "entre" ;
 LIST Les = "les" ;
 LIST De = "de" ;
 LIST Ens = "ens" ;
+LIST Forca = "força" ;
+LIST Bastant = "bastant" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -818,6 +820,10 @@ REMOVE MF IF (-1C Prep) (0 Ponent) ;
 
 SELECT Pron IF (0 Ens) (1 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefAmb) ;
 SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefAmb) ;
+
+
+SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 Adj_PP) ;				# és força bo
+SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
 
 REMOVE Ger IF (-1C Rel) (0 Ger LINK 0 Pers) ;
 REMOVE Ger IF (-2C Rel) (-1 Adv) (0 Ger LINK 0 Pers) ;
