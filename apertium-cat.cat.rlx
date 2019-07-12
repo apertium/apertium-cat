@@ -409,6 +409,7 @@ SELECT Top IF (-1 ("alt") OR ("baix")) (0 Ant OR Cog OR Top OR Al) (NOT 0 ("Cons
 REMOVE Cog IF (-1 Det + Def) (0 NP) ;		# el Rosselló (pot ser l'article, però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top)
 REMOVE Ant_Cog IF (-1 ("en")) (0 NP) ;		# pot ser l'article (que no analitzem com a tal), però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top (excepte en alguns topònims)
 REMOVE Ant_Cog IF (-2 >>> OR CnjSub) (-1 ("a")) (0 NP) ;	# és molt difícil que sigui un ant/cog en aquesta posició, en canvi els top són freqüents en inici de frase
+SELECT Ant_Cog IF (-1C Ant_Cog) (0 NP) ;
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
@@ -455,7 +456,7 @@ SELECT A IF (-2 N + MascSg) (-1 A + MascSg) (0 NP OR A) (0 ("català") OR ("arag
 SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu") OR ("Egea")) ;
 SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
 
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
