@@ -456,7 +456,7 @@ SELECT A IF (-2 N + MascSg) (-1 A + MascSg) (0 NP OR A) (0 ("català") OR ("arag
 SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu") OR ("Egea")) ;
 SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
 
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
@@ -544,7 +544,8 @@ SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 Adv_PreAdv) (-3 V) (NOT -3 VAdj) ;
 #REMOVE A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
 	# asignaba a Armenia territorios
 
-REMOVE Imp IF (NOT 1* Excl) ;
+REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS) ;
+SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
 
 # elección de subjuntivo después de "que"
 SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb) (NOT 0 ("<poden>")) ;
