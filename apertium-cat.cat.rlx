@@ -1425,6 +1425,8 @@ REMOVE Det IF (0 Det + (m)) (0 A + (f)) (1 N + (f)) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("pare")) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("germà")) ;
 	# son pare, son germà
+SELECT Det IF (0 ("un") + MascSg) (1 Top + MascSg) ;
+SELECT Det IF (0 ("un") + FemSg) (1 Top + FemSg) ;	# una Itàlia
 
 SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 	# parla amb ell
