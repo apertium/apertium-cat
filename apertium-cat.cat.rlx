@@ -344,6 +344,7 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (0 FemPl); 
 
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
+REMOVE:verb_maj Vblex IF (0 MajIni) (0 Verb + (p1)) (0 N); #Registre, Centre, Informe, Projecte...
 
 SELECT:grau NP IF (0 ("Grau")) (-1/* NP OR unknownMajIni); #Grau nom comú / cognom
 SELECT:grau NP IF (0 ("Grau")) (1/* NP OR unknownMajIni);
@@ -423,6 +424,11 @@ SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant
 SELECT:marc_n N IF (0 ("marc")) (-1 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 SELECT:marc_n N IF (1 ("marc")) (0 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 REMOVE:pla_n NP IF (0 ("Pla")) (1 ("internacional") OR ("nacional") OR ("europeu") OR ("espanyol") OR ("català") OR ("valencià") OR ("balear") OR ("municipal") OR ("autonòmic"));
+SELECT:centre_n N IF (0 ("centre")) (1 ("privat") OR ("concertat") OR ("nacional") OR ("internacional"));
+SELECT:registre_n N IF (0 ("registre")) (1 ("general") OR ("oficial") OR ("nacional") OR ("internacional"));
+SELECT:data_n N IF (0 ("data")) (1 ("fi") OR ("inici") OR ("final")); #data fi
+SELECT:data_n N IF (-1 ("data")) (0 ("fi"));
+SELECT:contracte_n N IF (0 ("contracte")) (1 ("servei") OR ("subministrament") OR ("provisió") OR ("proveïment"));
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>")
@@ -544,7 +550,9 @@ SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 Adv_PreAdv) (-3 V) (NOT -3 VAdj) ;
 #REMOVE A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
 	# asignaba a Armenia territorios
 
-REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS) ;
+SELECT Adv IF (0 ("encara")) (-1 Ger); #Sent encara
+
+REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS);
 SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
 
 # elección de subjuntivo después de "que"
