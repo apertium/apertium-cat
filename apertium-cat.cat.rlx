@@ -648,6 +648,8 @@ SELECT:pols1 MascSg IF (0 ("<pols>"i)) (-1 MascSg);
 SELECT:pols2 MascSg IF (0 ("<pols>"i)) (1 MascSg);
 SELECT:pols3 MascPl IF (0 ("<pols>"i)) (-1 MascPl);
 SELECT:pols4 MascPl IF (0 ("<pols>"i)) (1 MascPl);
+SELECT:pols5 FemSg IF (0 ("<pols>"i)) (-1 ("en")) (NOT 1 A) ;
+SELECT:pols6 MascSg IF (0 ("<pols>"i)) (-1 ("a")) (NOT 1 A) ;
 SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
 
 REMOVE:concorda_num (f) IF (-2 (det m)) (-1 (num)) (0 (m)) (0 (f)); # els/les tres regnes
