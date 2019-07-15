@@ -346,8 +346,8 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (
 
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
 
-SELECT:barri_n N IF (0 ("barri") OR ("premi")) (1 MajIni OR ("ciutat")); #Barri, Premi
-REMOVE:verb_maj Vblex IF (0 MajIni) (0 ("<.*[Ee]>"r)) (0 Verb + (p1)) (0 N); #Registre, Centre, Informe, Projecte,... Però no: Recull, Escull, Fem, Faig
+SELECT:barri_n N IF (0 ("barri") OR ("premi")) (1 MajIni OR ("ciutat")); #barri, premi
+REMOVE:verb_maj Vblex IF (0 MajIni) (0 ("<.*([eo]|si)>"ri)) (0 Verb + (p1)) (0 N); #Registre, Centre, Informe, Projecte, Dosi, Foto... Però no: Recull, Escull, Fem, Faig, Premi la tecla
 
 SELECT:grau NP IF (0 ("Grau")) (-1/* NP OR unknownMajIni); #Grau nom comú / cognom
 SELECT:grau NP IF (0 ("Grau")) (1/* NP OR unknownMajIni);
@@ -917,6 +917,9 @@ REMOVE N IF (0 ("perquè"));
 
 REMOVE N IF (0 ("lliure")) (-1 Adv); # ¿Es pot generalitzar més: adv + adj?
 REMOVE Vblex IF (0 ("lliure")) (-1 Adv) (-2 Vblex);
+
+SELECT Vblex IF (0 ("prémer")) (2 ("tecla") OR ("botó"));
+
 #
 # Desambiguació "los" enc / els "pro"
 #
