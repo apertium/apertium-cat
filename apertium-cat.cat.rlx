@@ -1207,7 +1207,11 @@ SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + MascPl) (-1C Adv) (0 A + MascPl LINK
 SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + FemPl) (-1C Adv) (0 A + FemPl LINK NOT 0 Det) ;
 # ". Civiles étnicamente croatas"
 
+# ADJ O PP
+
 # COORDINACIÓN
+
+# REMOVE A IF (0 A) (0 PP) (1 ("per")) ;	# millora sensiblment el cat>ita però afecta poc (i més aviat negativament) al cat>spa
 
 # NOM CONJ NOM
 
