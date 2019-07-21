@@ -343,7 +343,14 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascPl) 
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (0 FemSg); 
 REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (0 FemPl); 
 
+
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
+
+SELECT:foto_n N IF (0 ("foto")) (NOT -1 Pron); #foto carnet vs li foto un cop
+SELECT:barri_n N IF (0 ("barri") OR ("premi")) (1 MajIni OR ("ciutat")); #barri, premi
+REMOVE:verb_maj Vblex IF (0 MajIni) (0 ("<.*([eo]|si)>"ri)) (0 Verb + (p1)) (0 N); #Registre, Centre, Informe, Projecte, Dosi, Foto... Però no: Recull, Escull, Fem, Faig, Premi la tecla
+
+
 
 SELECT:grau NP IF (0 ("Grau")) (-1/* NP OR unknownMajIni); #Grau nom comú / cognom
 SELECT:grau NP IF (0 ("Grau")) (1/* NP OR unknownMajIni);
@@ -409,6 +416,7 @@ SELECT Top IF (-1 ("alt") OR ("baix")) (0 Ant OR Cog OR Top OR Al) (NOT 0 ("Cons
 REMOVE Cog IF (-1 Det + Def) (0 NP) ;		# el Rosselló (pot ser l'article, però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top)
 REMOVE Ant_Cog IF (-1 ("en")) (0 NP) ;		# pot ser l'article (que no analitzem com a tal), però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top (excepte en alguns topònims)
 REMOVE Ant_Cog IF (-2 >>> OR CnjSub) (-1 ("a")) (0 NP) ;	# és molt difícil que sigui un ant/cog en aquesta posició, en canvi els top són freqüents en inici de frase
+SELECT Ant_Cog IF (-1C Ant_Cog) (0 NP) ;
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
@@ -418,6 +426,15 @@ SELECT Top OR Al IF (-1 ("fundar")) (0 Ant OR Cog OR Top OR Al) ;
 
 SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
+
+SELECT:marc_n N IF (0 ("marc")) (-1 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
+SELECT:marc_n N IF (1 ("marc")) (0 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
+REMOVE:pla_n NP IF (0 ("Pla")) (1 ("internacional") OR ("nacional") OR ("europeu") OR ("espanyol") OR ("català") OR ("valencià") OR ("balear") OR ("municipal") OR ("autonòmic"));
+SELECT:centre_n N IF (0 ("centre")) (1 ("privat") OR ("concertat") OR ("nacional") OR ("internacional"));
+SELECT:registre_n N IF (0 ("registre")) (1 ("general") OR ("oficial") OR ("nacional") OR ("internacional"));
+SELECT:data_n N IF (0 ("data")) (1 ("fi") OR ("inici") OR ("final")); #data fi
+SELECT:data_n N IF (-1 ("data")) (0 ("fi"));
+SELECT:contracte_n N IF (0 ("contracte")) (1 ("servei") OR ("subministrament") OR ("provisió") OR ("proveïment"));
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>")
@@ -430,9 +447,6 @@ SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
 	# santes creus
 SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 	# creu de Sant Jordi
-
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis")) ;
-	# Llevem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT:Planes_top Top IF (0 ("<Planes>") OR ("Vilallonga")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
 SELECT:Planes_cog (cog) IF (0 ("<Planes>") OR ("Vilallonga")) (-1 (ant) OR (cog));
@@ -453,6 +467,9 @@ SELECT A IF (-2 N + MascSg) (-1 A + MascSg) (0 NP OR A) (0 ("català") OR ("arag
 
 SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu") OR ("Egea")) ;
 SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
+
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla")) ;
+	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
 	# la dona que estima les flors
@@ -539,7 +556,10 @@ SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 Adv_PreAdv) (-3 V) (NOT -3 VAdj) ;
 #REMOVE A IF (0 NP LINK 0 (adj f pl)) (-1 Prep) (1C N) (NOT 1 FemPl) ;
 	# asignaba a Armenia territorios
 
-REMOVE Imp IF (NOT 1* Excl) ;
+SELECT Adv IF (0 ("encara")) (-1 Ger); #Sent encara
+
+REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS);
+SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
 
 # elección de subjuntivo después de "que"
 SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb) (NOT 0 ("<poden>")) ;
@@ -631,6 +651,9 @@ SELECT:pols1 MascSg IF (0 ("<pols>"i)) (-1 MascSg);
 SELECT:pols2 MascSg IF (0 ("<pols>"i)) (1 MascSg);
 SELECT:pols3 MascPl IF (0 ("<pols>"i)) (-1 MascPl);
 SELECT:pols4 MascPl IF (0 ("<pols>"i)) (1 MascPl);
+SELECT:pols5 FemSg IF (0 ("<pols>"i)) (-1 ("en")) (NOT 1 A) ;
+SELECT:pols6 MascSg IF (0 ("<pols>"i)) (-1 ("a")) (NOT -1/* Det) (NOT 1 A) ;
+SELECT:pols7 MascPl IF (0 ("<pols>"i)) (-1/* Det + MascPl) ;
 SELECT:pols0 FemSg IF (0 ("<pols>"i)); # per defecte
 
 REMOVE:concorda_num (f) IF (-2 (det m)) (-1 (num)) (0 (m)) (0 (f)); # els/les tres regnes
@@ -897,6 +920,9 @@ REMOVE N IF (0 ("perquè"));
 
 REMOVE N IF (0 ("lliure")) (-1 Adv); # ¿Es pot generalitzar més: adv + adj?
 REMOVE Vblex IF (0 ("lliure")) (-1 Adv) (-2 Vblex);
+
+SELECT Vblex IF (0 ("prémer")) (2 ("tecla") OR ("botó"));
+
 #
 # Desambiguació "los" enc / els "pro"
 #
@@ -1181,7 +1207,11 @@ SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + MascPl) (-1C Adv) (0 A + MascPl LINK
 SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + FemPl) (-1C Adv) (0 A + FemPl LINK NOT 0 Det) ;
 # ". Civiles étnicamente croatas"
 
+# ADJ O PP
+
 # COORDINACIÓN
+
+# REMOVE A IF (0 A) (0 PP) (1 ("per")) ;	# millora sensiblment el cat>ita però afecta poc (i més aviat negativament) al cat>spa
 
 # NOM CONJ NOM
 
@@ -1419,6 +1449,8 @@ REMOVE Det IF (0 Det + (m)) (0 A + (f)) (1 N + (f)) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("pare")) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("germà")) ;
 	# son pare, son germà
+SELECT Det IF (0 ("un") + MascSg) (1 Top + MascSg) ;
+SELECT Det IF (0 ("un") + FemSg) (1 Top + FemSg) ;	# una Itàlia
 
 SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 	# parla amb ell
