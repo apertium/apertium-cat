@@ -452,6 +452,8 @@ SELECT:Planes_top Top IF (0 ("<Planes>") OR ("Vilallonga")) (-2 ("ajuntament") O
 SELECT:Planes_cog (cog) IF (0 ("<Planes>") OR ("Vilallonga")) (-1 (ant) OR (cog));
 #SELECT:Planes_n N IF (0 ("<Planes>")) (1 A + FemPl);
 
+SELECT:Biscaia Top IF (0 ("Biscaia")) (NOT 1 Ant_Cog) (NOT -1 Ant_Cog);
+
 SELECT:Consell_top Top IF (0 ("Consell")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
 REMOVE:Consell_top Top IF (0 ("Consell"));
 SELECT:Consell_n N IF (0 ("Consell")) (1 A + MascSg);
