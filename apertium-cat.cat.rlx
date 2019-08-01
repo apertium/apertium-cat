@@ -413,8 +413,8 @@ SELECT Top IF (-2 ("<Comunitat>")) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
 	# Comunitat de Madrid
 SELECT Top IF (-1 ("alt") OR ("baix")) (0 Ant OR Cog OR Top OR Al) (NOT 0 ("Consell"));
         # Alt Aragó, Baix Aragó, però no: Alt Consell
-REMOVE Cog IF (-1 Det + Def) (0 NP) ;		# el Rosselló (pot ser l'article, però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top)
-REMOVE Ant_Cog IF (-1 ("en")) (0 NP) ;		# pot ser l'article (que no analitzem com a tal), però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top (excepte en alguns topònims)
+REMOVE Cog IF (-1 Det + Def) (0 NP) ;		# el Rosselló (pot ser cognom, però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top)
+REMOVE Ant_Cog IF (-1 ("en")) (0 NP) ;		# "en" pot ser l'article (que no analitzem com a tal), però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top (excepte en alguns topònims)
 REMOVE Ant_Cog IF (-2 >>> OR CnjSub) (-1 ("a")) (0 NP) ;	# és molt difícil que sigui un ant/cog en aquesta posició, en canvi els top són freqüents en inici de frase
 SELECT Ant_Cog IF (-1C Ant_Cog) (0 NP) ;
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
