@@ -792,6 +792,11 @@ SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 
 SELECT Terme IF (0 Terme OR Termes) (1 ("municipal") + Pl) ;
 
+SELECT Fem IF (0 ("<Terra>")) (NOT -1 Masc OR Fem) (NOT 1 Masc OR Fem) ;
+SELECT Fem IF (0 ("<Terres>")) (NOT -1 Masc OR Fem) (NOT 1 Masc OR Fem) ;
+SELECT Fem IF (0 ("<Terra>")) (-1 ("anomenar") OR ("anomenat")) (NOT 1 Masc OR Fem) ;
+SELECT Fem IF (0 ("<Terres>")) (-1 ("anomenar") OR ("anomenat")) (NOT 1 Masc OR Fem) ;
+
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
 
