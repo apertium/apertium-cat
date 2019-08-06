@@ -42,6 +42,7 @@ LIST MajIni2 = ("<[A-ZÀÁÈÉÍÌÒÓÚÜÇ][a-zàáèéìíòóùúïüçñ·]
 LIST segles_num_romans = ("[IVX][IVX]*"r) ;
 
 SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
+LIST Guio = (guio) ;
 LIST Excl = "!" ;
 
 SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
@@ -387,6 +388,9 @@ SELECT Ant IF (-1 ("sant")) (0 Ant) (0 Cog OR Top) ;
 SELECT Cog IF (0 Cog OR Ant) (-1C Ant) (NOT 1 segles_num_romans) (NOT 1 Cog) (NOT 1 ("de"));
 	# Josep Maria Carles
 	# Joan Carles I
+SELECT Cog IF (0 Cog) (1 Guio) (2 Cog) ;
+SELECT Cog IF (-2 Cog) (-1 Guio) (0 Cog) ;
+	# Ocasio-Cortez
 SELECT Ant_Cog IF (0 Cog OR Ant) (1C Cog) ;
 SELECT Top IF (-2 Ant) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# Hiparc de Nicea
