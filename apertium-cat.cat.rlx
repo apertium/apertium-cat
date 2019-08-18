@@ -853,6 +853,8 @@ SELECT Al IF (0 ("Orange")) (1 ("S.A.") OR Top) ;
 
 SELECT A IF (-1 ("observació")) (0 ("participant")) ;
 
+SELECT Fem IF (-1 Ser OR ("formar")) (0 ("part")) ;
+
 SELECT MF IF (-1 Det) (0 Ponent) ;
 SELECT MF IF (-2 Det) (-1 A) (0 Ponent) ;
 SELECT MF IF (-3 Det) (-2 Adv_PreAdv) (-1 A) (0 Ponent) ;
