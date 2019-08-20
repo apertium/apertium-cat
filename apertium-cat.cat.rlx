@@ -836,6 +836,8 @@ REMOVE A IF (0 Les) (0 Def) (NOT 1 ("majestat") OR ("humanitat")) ;
 
 SELECT Adv IF (0 Tot) (1C Ger) ;	# tot cantant
 REMOVE Adv IF (0 Tot) (NOT 1 Ger) ;
+SELECT Adv IF (0 Tot) (1 ("depenent")) (2 ("de")) (NOT -1 Det + MascSg) ;
+SELECT Ger IF (-1 Tot) (0 ("depenent")) (1 ("de")) (NOT -2 Det + MascSg) ;
 SELECT Pron IF (0 Tot + Pl) (1 ("nosaltres") OR ("vosaltres") OR ("ell") + Pl OR ("vostè") + Pl) ;
 SELECT PreDet IF (0 Tot + MascSg) (1 Det + MascSg) (2 N + MascSg) ;		# tot aquest carrer
 SELECT PreDet IF (0 Tot + FemSg) (1 Det + FemSg) (2 N + FemSg) ;		# tota aquesta avinguda
@@ -1549,7 +1551,7 @@ SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Copula) (1 P1 OR P2 OR P3) ;
 	# depenent de si són intel·ligents
 SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Vbmod) (1 P1 OR P2 OR P3) ;
 	# depenent de si volen menjar
-SELECT Pron IF (-1 Prep) (0 ("si")) (1 ("mateix"))
+SELECT Pron IF (-1 Prep) (0 ("si")) (1 ("mateix")) ;
 	# depenent de si mateix/a/os/es
 
 SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel OR unknown OR A) ;
