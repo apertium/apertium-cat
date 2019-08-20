@@ -1549,6 +1549,8 @@ SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Copula) (1 P1 OR P2 OR P3) ;
 	# depenent de si són intel·ligents
 SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Vbmod) (1 P1 OR P2 OR P3) ;
 	# depenent de si volen menjar
+SELECT Pron IF (-1 Prep) (0 ("si")) (1 ("mateix"))
+	# depenent de si mateix/a/os/es
 
 SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel OR unknown OR A) ;
 SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual") OR ("<altres>")) ;
