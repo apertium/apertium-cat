@@ -844,6 +844,7 @@ SELECT PreDet IF (0 Tot + FemPl) (1 Det + FemPl) (2 N + FemPl) ;		# totes aquest
 SELECT Pron IF (0 Tot + MascPl) (1 Pron + Dem + MascPl) (NOT 2 N + MascPl) ;	# tots aquests
 SELECT Pron IF (0 Tot + FemPl) (1 Pron + Dem + FemPl) (NOT 2 N + FemPl) ;	# totes aquestes
 SELECT Pron IF (0 Tot + MascSg) (1 ("això") OR ("allò") ) ;
+SELECT Pron IF (0 Tot + MascSg) (1 Det + Def + MascSg ) (2 PP + MascSg) (NOT 3 N + MascSg) ;	# tot el relacionat (potser no és normatiu, però es troba)
 
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
