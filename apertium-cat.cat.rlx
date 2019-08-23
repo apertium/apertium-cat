@@ -1382,6 +1382,30 @@ SELECT Det IF (-2C ("no")) (-1 Vblex) (0 ("cap")) (1C N OR Inf) ;
 
 SELECT Pron IF (-4 ("no")) (-3 ("en")) (-2 Vbmod) (-1 Inf) (0 ("cap")) ;
 	# no en pot portar cap
+SELECT Pron IF (-3 ("no")) (-2 ("en")) (-1 Vblex) (0 ("cap")) ;
+	# no n'acollirà cap
+SELECT Pron IF (-4 ("no")) (-3 Pro) (-2 ("en")) (-1 Vblex) (0 ("cap")) ;
+	# no li en dirà cap
+SELECT Pron IF (-4 ("no")) (-3 ("en")) (-2 Vblex) (-1 Adv) (0 ("cap")) ;
+	# no n'acollirà mai cap
+SELECT Pron IF (-5 ("no")) (-4 Pro) (-3 ("en")) (-2 Vblex) (-1 Adv) (0 ("cap")) ;
+	# no li en dirà mai cap
+SELECT Pron IF (-4 ("no")) (-3 ("en")) (-2 Vbhaver) (-1 PP) (0 ("cap")) ;
+	# no n'ha acollit cap
+SELECT Pron IF (-5 ("no")) (-4 Pro) (-3 ("en")) (-2 Vbhaver) (-1 PP) (0 ("cap")) ;
+	# no li n'ha dit cap
+SELECT Pron IF (-5 ("no")) (-4 ("en")) (-3 Vbhaver) (-2 PP) (-1 Adv) (0 ("cap")) ;
+	# no n'ha acollit mai cap
+SELECT Pron IF (-6 ("no")) (-5 Pro) (-4 ("en")) (-3 Vbhaver) (-2 PP) (-1 Adv) (0 ("cap")) ;
+	# no li n'ha dit mai cap
+SELECT Pron IF (-4 ("no")) (-3 ("en")) (-2 Anar) (-1 Inf) (0 ("cap")) ;
+	# no en va acollir cap
+SELECT Pron IF (-5 ("no")) (-4 Pro) (-3 ("en")) (-2 Anar) (-1 Inf) (0 ("cap")) ;
+	# no li'n va dir cap
+SELECT Pron IF (-5 ("no")) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("cap")) ;
+	# no en va acollir mai cap
+SELECT Pron IF (-6 ("no")) (-5 Pro) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("cap")) ;
+	# no li'n va dir mai cap
 SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap unit
 	# un cap blanc
