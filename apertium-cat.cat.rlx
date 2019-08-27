@@ -1408,6 +1408,8 @@ SELECT Pron OR Det IF (-5 ("no")) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("c
 	# no en va acollir mai cap
 SELECT Pron OR Det IF (-6 ("no")) (-5 Pro) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("cap")) ;
 	# no li'n va dir mai cap
+SELECT Pron OR Det IF (-2 ("no")) (-1 ("hi ha")) (0 ("cap")) ;	# no n'hi ha cap que
+REMOVE Det IF (0 ("cap")) (1 ("que")) ;
 SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap unit
 	# un cap blanc
