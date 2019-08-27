@@ -465,6 +465,7 @@ SELECT:Consell_n (np al) IF (0 ("Consell")) (0*/* ("Generalitat") OR ("la Genera
 SELECT:Consell_n N IF (0 ("Consell"));
 
 SELECT N IF (-1 ("<el>")) (0 ("<Sol>")) ;		# el Sol
+SELECT N IF (-1/* Det + Def + MascSg) (0 ("<Sol>")) ;	# del Sol
 SELECT N IF (-1 ("<la>")) (0 ("<Guerra>")) ;		# la Guerra (Mundial, d'Independència, etc.)
 SELECT N IF (-2 ("<la>")) (-1 A) (0 ("<Guerra>")) ;	# la Gran Guerra
 SELECT A IF (-1 ("<Guerra>")) (0 ("<Civil>")) ;		# la Guerra (Mundial, d'Independència, etc.)
