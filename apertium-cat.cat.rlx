@@ -870,7 +870,8 @@ SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefA
 SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 Adj_PP) ;				# és força bo
 SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
 
-SELECT A OR PP IF (-1 VAdj) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) ;	# sembla blanc/espavilat/interessant/dolent/constant
+SELECT A OR PP IF (-1 VAdj) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("empresa") OR ("despesa") OR ("<portant>"));	
+# sembla blanc/espavilat/interessant/dolent/constant
 SELECT A IF (-1 VAdj) (0C Adj_PP) (NOT 1 Prep) ;			# sembla blanc/espavilat
 
 REMOVE Adv IF (0 A_la_meitat) (1 Adj_PP + FemSg) ;
