@@ -753,8 +753,8 @@ SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1 Det) ;
 	# han estat les de marxa atlètica
 
 # caldre i calar (p.ex. calen)
-SELECT Calar IF (-1 Pro) (0C ("caldre") OR ("calar")) ;
-REMOVE Calar IF (NOT -1 Pro) (0C ("caldre") OR ("calar")) ;
+SELECT Calar IF (-1 Pro + Ref) (0C ("caldre") OR ("calar")) ;
+REMOVE Calar IF (NOT -1 Pro + Ref) (0C ("caldre") OR ("calar")) ;
 
 # veure i viure (p.ex. viu)
 SELECT Viure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
