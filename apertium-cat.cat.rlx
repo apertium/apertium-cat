@@ -617,6 +617,8 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 #
 
 
+REMOVE:valg_adj A IF (0 ("valg")) (NOT -1 ("genoll") OR ("genu") OR ("cúbit") OR ("hàl·lux") OR ("peu") OR ("polze") OR ("talipes"))
+
 SELECT Vblex IF (0 ("mancar")) (1 CnjSub OR CnjAdv OR Rel);
 
 SELECT ("a fi de") IF (0 ("a fi de")) (1 Inf);
