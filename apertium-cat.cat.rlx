@@ -77,7 +77,7 @@ LIST Fem = f mf ;
 # LIST Masc_strict = m ; no utilitzar: també agafa mf
 # LIST Fem_strict = f ; no utilitzar: també agafa mf
 #LIST Masc_strict = (m) ;
-#LIST Fem_strict = (f) ; 
+#LIST Fem_strict = (f) ;
 LIST MF = mf ;
 LIST Sg = sg sp ;
 LIST Pl = pl sp ;
@@ -247,8 +247,8 @@ SELECT:dona_v Vblex IF (0 ("<dona>"i)) (-1 Pro) (NOT -1 ("<la>"i)) (NOT -1 ("<en
 SELECT:dona_v Vblex IF (0 ("<dones>"i)) (-1 Pro) (NOT -1 ("<les>"i)) (NOT -1 ("<en>"i));
 SELECT:dona_n N IF (0 ("dona")) (NOT -1 Cnj);
 
-# feu/féu, veu/véu. Desambigua els casos clars: es feu>féu,  t'ho feu>féu. 
-SELECT:feu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p2 pl)) (-1/* ("es") OR ("et")); 
+# feu/féu, veu/véu. Desambigua els casos clars: es feu>féu,  t'ho feu>féu.
+SELECT:feu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p2 pl)) (-1/* ("es") OR ("et"));
 REMOVE:feu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p2 pl));
 REMOVE:veu (ifi) IF (0 (vblex ifi p3 sg)) (0 (vblex pri p3 sg));
 #bota/bóta: cal mirar el context
@@ -316,17 +316,17 @@ REMOVE ("nét") IF (0 ("net")); #Al final, prioritat al sistema tradicional!
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
 
 # Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
-REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni); 
+REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni);
 
-REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic")); 
-REMOVE:costa NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc")); 
-REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (ant) OR (cog) OR unknownMajIni); 
+REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic"));
+REMOVE:costa NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc"));
+REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (ant) OR (cog) OR unknownMajIni);
 
 # Per a evitar la traducció de cognoms
 # Posa com a lema la forma de la paraula marcada amb *
 # Amb els adjectius hi ha més risc d'error (!)
-SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola); # 
-REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola);  # Això no sé si és útil. 
+SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola); #
+REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola);  # Això no sé si és útil.
 
 REMOVE:cog_top (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 >>>); #Orihuela, Vilallonga
 
@@ -334,18 +334,18 @@ REMOVE:cog_top (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 >
 SELECT:sols Adv IF (0 ("sols"i)) (-1 Prep);
 SELECT:seu N IF (0 ("<seu>"i)) (-1 Det + FemSg);
 
-#molt 
+#molt
 SELECT:molt_adv PreAdv IF (0 ("<molt>"i)) (1 A OR Adv OR PP) (NOT 1 Pron) (NOT 1 Rel) (NOT 1 Itg);
 
 # prep + verb/nom > nom: (ej. dels centres ABC)
 REMOVE:prep_VbN Verb + Pers IF (0 Verb + Pers) (-1C/* Prep) (NOT -1 ("fins"i)) (NOT -1C/* Rel);
-REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascSg) (0 MascSg); 
-REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascPl) (0 MascPl); 
-REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (0 FemSg); 
-REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (0 FemPl); 
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascSg) (0 MascSg);
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + MascPl) (0 MascPl);
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemSg) (0 FemSg);
+REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (0 FemPl);
 
 
-REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria. 
+REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria.
 
 SELECT:foto_n N IF (0 ("foto")) (NOT -1 Pron); #foto carnet vs li foto un cop
 SELECT:barri_n N IF (0 ("barri") OR ("premi")) (1 MajIni OR ("ciutat")); #barri, premi
@@ -378,7 +378,7 @@ SELECT N IF (0 ("sant")) (1 NP) ;
 
 REMOVE NP IF (0 ("Serra") + FemSg) (-1/* Det + FemSg); # la Serra A...
 REMOVE NP IF (0 ("Mestre") + MascSg) (-1/* Det + MascSg); # el Mestre A...
-REMOVE NP IF (0 ("Mestre")) (1 ("internacional")); 
+REMOVE NP IF (0 ("Mestre")) (1 ("internacional"));
 
 
 SELECT Ant IF (0 Ant) (1C Ant) ;
@@ -598,7 +598,7 @@ SELECT:pronom_verb (p3) IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'implan
 REMOVE:deure_vbmod Vbmod IF (0 ("deure")) (NOT 1 Inf);
 
 # arreplega V/N: TODO: generalitzar
-SELECT:arreplega Verb IF (0 ("entrega") OR ("arreplega")) (1 Det OR ("que")); 
+SELECT:arreplega Verb IF (0 ("entrega") OR ("arreplega")) (1 Det OR ("que"));
 
 #
 # comparaciones
@@ -617,7 +617,7 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 #
 
 
-REMOVE:valg_adj A IF (0 ("valg")) (NOT -1 ("genoll") OR ("genu") OR ("cúbit") OR ("hàl·lux") OR ("peu") OR ("polze") OR ("talipes"))
+REMOVE:valg_adj A IF (0 ("valg")) (NOT -1 ("genoll") OR ("genu") OR ("cúbit") OR ("hàl·lux") OR ("peu") OR ("polze") OR ("talipes")) ;
 
 SELECT Vblex IF (0 ("mancar")) (1 CnjSub OR CnjAdv OR Rel);
 
@@ -653,7 +653,7 @@ REMOVE:compondre ("compostar") IF (0 ("compostar")) (0 ("compondre"));
 SELECT:nus A IF (0 ("<nus>"i)) (-2 ("model")) (-1 ("de")) (NOT 1 A + MascSg);
 REMOVE:nus A IF (0 ("<nus>"i)) (1 N + Fem OR N + Sg); #noms de lletres: nus B-10, més casos?
 
-SELECT:que PreAdv IF (0 ("que")) (1C A) (NOT 2 N OR A) (NOT 1 ("junt")) (-1 >>>); #(NOT -1 ("més") OR ("menys") OR ("manco")); 
+SELECT:que PreAdv IF (0 ("que")) (1C A) (NOT 2 N OR A) (NOT 1 ("junt")) (-1 >>>); #(NOT -1 ("més") OR ("menys") OR ("manco"));
 REMOVE:que PreAdv IF (0 ("que")); #(Excepcions?)
 
 SELECT:pols1 MascSg IF (0 ("<pols>"i)) (-1 MascSg);
@@ -872,7 +872,7 @@ SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefA
 SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 Adj_PP) ;				# és força bo
 SELECT PreAdv IF (-1 Ser OR VAdj) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
 
-SELECT A OR PP IF (-1 VAdj) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("empresa") OR ("despesa") OR ("<portant>"));	
+SELECT A OR PP IF (-1 VAdj) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("empresa") OR ("despesa") OR ("<portant>"));
 # sembla blanc/espavilat/interessant/dolent/constant
 SELECT A IF (-1 VAdj) (0C Adj_PP) (NOT 1 Prep) ;			# sembla blanc/espavilat
 
@@ -971,19 +971,19 @@ SELECT SUB:1 Li IF (0/* V_CD_CI) (1 Det) ;
 REMOVE PP IF (-1 VSer) (0 PP_Intr_Adj) ;
   # el judici fou controvertit
 
-REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 N + Fem + Pl) ; 
-REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 N + Fem + Pl) ;
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 N + Fem + Pl) ;
   # noltes arts japoneses
-REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ; 
-REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ; 
-REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ; 
-REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ; 
-REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ; 
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ;
+REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ;
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ;
+REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ;
+REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ;
 
 # NOM / ADJ
 
@@ -1277,23 +1277,23 @@ SELECT N IF (2C N) (1 CnjCoo) (0C Noun_Adj_PP LINK NOT 0 NP) (-1 Barrera_Inicial
 
 # NOM, NOM CONJ NOM
 
-SELECT N IF (-2C N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Noun_Adj_PP) ; 
-SELECT N IF (-3 CM) (-2C N) (-1 CnjCoo) (0 Noun_Adj_PP) (NOT 1 A) ; 
-SELECT N IF (0 Noun_Adj_PP) (1 CM) (2C N) (1 CnjCoo) (2 Noun_Adj_PP) ; 
+SELECT N IF (-2C N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Noun_Adj_PP) ;
+SELECT N IF (-3 CM) (-2C N) (-1 CnjCoo) (0 Noun_Adj_PP) (NOT 1 A) ;
+SELECT N IF (0 Noun_Adj_PP) (1 CM) (2C N) (1 CnjCoo) (2 Noun_Adj_PP) ;
 # compositor, teórico y pedagogo
 # varios religiosos, pensadores y políticos
 
-SELECT N IF (-2 N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2C N) ; 
-SELECT N IF (-2C N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Det) (3 N) ; 
+SELECT N IF (-2 N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2C N) ;
+SELECT N IF (-2C N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Det) (3 N) ;
 # Dificil tratar a la vez:
 # ". Católicos, ortodoxos y algunos anglicanos consideran"
 # "Se encuentra en latín, polaco, lituano y otras lenguas."
 
 # ADJ, ADJ CONJ ADJ
 
-SELECT A IF (-2C A) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Noun_Adj_PP) ; 
-SELECT A IF (-3 CM) (-2C A) (-1 CnjCoo) (0 Noun_Adj_PP) (NOT 1 N) ; 
-SELECT A IF (0 Noun_Adj_PP) (1 CM) (2C A) (1 CnjCoo) (2 Noun_Adj_PP) ; 
+SELECT A IF (-2C A) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Noun_Adj_PP) ;
+SELECT A IF (-3 CM) (-2C A) (-1 CnjCoo) (0 Noun_Adj_PP) (NOT 1 N) ;
+SELECT A IF (0 Noun_Adj_PP) (1 CM) (2C A) (1 CnjCoo) (2 Noun_Adj_PP) ;
 # rojo, verde y azul
 
 # NOM, NOM,
@@ -1469,7 +1469,7 @@ SELECT Pron IF (NOT -1 Det OR A) (0 ("cap")) (1C Verb) ;
 	# però cap ha estat acceptada
 
 REMOVE (f) IF (0 ("cap")) (NOT -1 (f)) (NOT 1 (f));
-REMOVE (m) IF (0 ("cap")) (0 FemPl) (-1 FemPl); 
+REMOVE (m) IF (0 ("cap")) (0 FemPl) (-1 FemPl);
 
 SELECT PreAdv IF (-1 Ser) (0 ("molt")) (1C A OR PP) ;
 	# és molt variat

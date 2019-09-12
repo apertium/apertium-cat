@@ -22,7 +22,7 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR1).autopgen-diacritics-vells.bin		\
 	$(LANG1)$(VAR1).autopgen-diacritics-nous.bin		\
 	$(LANG1)$(VAR1).rlx.bin
-	
+
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
 
@@ -32,26 +32,26 @@ TARGETS_COMMON =			\
 
 $(LANG1)$(VAR1).automorf.bin: $(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1).acx
 	apertium-validate-dictionary $<
-	lt-comp lr $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx 
-	
+	lt-comp lr $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
+
 .deps/$(BASENAME).$(LANG1).cat.dix: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
-	python genvdix.py cat $< >$@
+	apertium-genvdix cat $< >$@
 
 .deps/$(BASENAME).$(LANG1).val_gva.dix: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
-	python genvdix.py val_gva $< >$@
+	apertium-genvdix val_gva $< >$@
 
 .deps/$(BASENAME).$(LANG1).val_uni.dix: $(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
-	python genvdix.py val_uni $< >$@
+	apertium-genvdix val_uni $< >$@
 
 
 $(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).cat.dix
 	apertium-validate-dictionary $<
 	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
 
-$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val_gva.dix 
+$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val_gva.dix
 	apertium-validate-dictionary $<
 	lt-comp -v val_gva rl $< $@ $(BASENAME).$(LANG1).acx
 
@@ -84,8 +84,8 @@ $(LANG1)$(VAR1).autopgen-diacritics-nous.bin: $(BASENAME).post-diacritics-nous.d
 ## Disambiguation rules
 ###############################################################################
 
-$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
-	$(CGCOMP) $< $@
+$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
+	cg-comp $< $@
 
 ###############################################################################
 ## Distribution
@@ -97,7 +97,6 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix		\
 		$(BASENAME).post-diacritics-vells.dix	\
 		$(BASENAME).post-diacritics-nous.dix	\
 		$(LANG1).prob			\
-		genvdix.py 			\
 		modes.xml
 
 ###############################################################################
