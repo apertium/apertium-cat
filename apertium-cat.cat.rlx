@@ -328,8 +328,8 @@ REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (a
 SUBSTITUTE:nom_propi1 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola); #
 REPLACE:nom_propi2 (np) Verb OR N OR A IF (-1C (ant) OR (cog)) (0C Verb OR N OR A) (0 MajIni) (NOT 0 segles_num_romans OR ("oriental") OR ("occidental")) (NOT -1 ("Al")) (NOT 0 MajSola);  # Això no sé si és útil.
 #de Torrin
-SUBSTITUTE:nom_propi3 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0C Verb + MajIni) (-1 Prep);
-REPLACE:nom_propi4 (np) Verb IF (0C Verb + MajIni) (-1 Prep);
+SUBSTITUTE:nom_propi3 (".*"r) ("\\*$1"v) TARGET ("<(.*)>"r) IF (0C Verb + Pers + MajIni) (-1/* Prep);
+REPLACE:nom_propi4 (np) Verb IF (0C Verb + Pers + MajIni) (-1/* Prep);
 
 REMOVE:cog_top (cog) IF (0C NP) (0 (cog)) (0 (top)) (NOT 1 (ant) OR (cog)) (-1 >>>); #Orihuela, Vilallonga
 
