@@ -354,9 +354,9 @@ REMOVE:deu_num N IF (0 ("deu")) (-1 ("a") OR ("amb")) (-2 Num);
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria.
 
 SELECT:foto_n N IF (0 ("foto")) (NOT -1 Pron); #foto carnet vs li foto un cop
-SELECT:barri_n N IF (0 ("barri") OR ("premi")) (1 MajIni OR ("ciutat")); #barri, premi
+SELECT:barri_n N IF (0 ("barri") OR ("premi") OR ("apartat") OR ("empresa") OR ("despesa")) (1 MajIni OR ("ciutat")); #barri, premi
+SELECT:barri_n N IF (0 ("barri") OR ("premi") OR ("apartat")) (1 (META:/["«“'‘]/r));
 REMOVE:verb_maj Vblex IF (0 MajIni) (0 ("<.*([eo]|si)>"ri)) (0 Verb + (p1)) (0 N); #Registre, Centre, Informe, Projecte, Dosi, Foto... Però no: Recull, Escull, Fem, Faig, Premi la tecla
-
 
 
 SELECT:grau NP IF (0 ("Grau")) (-1/* NP OR unknownMajIni); #Grau nom comú / cognom
@@ -793,7 +793,8 @@ SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 
-REMOVE:empresa_n PP IF (0 ("empresa")) (-1 Prep);
+REMOVE:empresa_n PP IF (0 ("empresa") or ("despesa")) (-1 Prep);
+REMOVE:empresa_n PP IF (0 ("empresa") or ("despesa")) (-1 Det + Fem);
 
 SELECT Pobla IF (0 Poble OR Pobla + Pl) (-1 Fem LINK NOT 0 MF) ;
 SELECT Pobla IF (0 Poble OR Pobla + Pl) (1 Fem LINK NOT 0 MF) ;
