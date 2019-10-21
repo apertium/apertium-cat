@@ -1192,10 +1192,10 @@ REMOVE PP IF (NOT -1 N OR Vbhaver OR ("ser") OR ("estar")) (0 PP + FemPl LINK 0 
 ## PROBLEMA: con alto contenido (alto > n/adv); ídem per a adj ambigus típicament preposats: alto, bajo, mal (+flaco favor, etc.)
 ## Està fet més malament
 
-SELECT A OR PP IF (-1 N + MascSg) (0 Adj_PP + MascSg) (NOT 0 PreAdv) (1 Adj_PP + MascSg) (NOT 0 Adv) ;
-SELECT A OR PP IF (-1 N + MascPl) (0 Adj_PP + MascPl) (NOT 0 PreAdv) (1 Adj_PP + MascPl) (NOT 0 ("<segons>")) ;
-SELECT A OR PP IF (-1 N + FemSg) (0 Adj_PP + FemSg) (NOT 0 PreAdv) (1 Adj_PP + FemSg) ;
-SELECT A OR PP IF (-1 N + FemPl) (0 Adj_PP + FemPl) (NOT 0 PreAdv) (1 Adj_PP + FemPl) ;
+SELECT A OR PP IF (-1 N + MascSg) (NOT -1 ("cap")) (0 Adj_PP + MascSg) (NOT 0 PreAdv) (1 Adj_PP + MascSg) (NOT 0 Adv) ;
+SELECT A OR PP IF (-1 N + MascPl) (NOT -1 ("cap")) (0 Adj_PP + MascPl) (NOT 0 PreAdv) (1 Adj_PP + MascPl) (NOT 0 ("<segons>")) ;
+SELECT A OR PP IF (-1 N + FemSg) (NOT -1 ("cap")) (0 Adj_PP + FemSg) (NOT 0 PreAdv) (1 Adj_PP + FemSg) ;
+SELECT A OR PP IF (-1 N + FemPl) (NOT -1 ("cap")) (0 Adj_PP + FemPl) (NOT 0 PreAdv) (1 Adj_PP + FemPl) ;
 ## "la Primera Conferencia Americana celebrada" (pqè Americana > adj)
 ## però: simbolisme molt complex
 ## els avions segons diversos criteris
@@ -1441,6 +1441,7 @@ SELECT N IF (0 ("<Cap>")) (1 ("oriental") OR ("occidental") OR ("septentrional")
 SELECT N IF (0 ("<Cap>")) (1 unknownMajIni) ;
 
 SELECT Det IF (0 ("cap")) (1C N) ;
+SELECT Det IF (0 ("cap")) (1 N) (2 Adj_PP) ;
 #SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
 	# sense cap indicació
 SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
