@@ -92,6 +92,8 @@ SET MascPl2 = (m pl) OR (m sp) OR (mf pl) OR (mf sp) ;
 SET FemSg2 = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
 SET FemPl2 = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
 
+SET ConcordaGN = MascSg OR MascPl OR FemSg OR FemPl;
+
 SET Pers = (p1) OR (p2) OR (p3) ;
 
 SET Ref = (prn pro ref) ;
@@ -792,6 +794,7 @@ SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
+REMOVE:fins_n Prep IF (-1 Det + &&ConcordaGN) (0 ("fi") + &&ConcordaGN) (1 Adj_PP + &&ConcordaGN);
 
 REMOVE:empresa_n PP IF (0 ("empresa") or ("despesa")) (-1 Prep);
 REMOVE:empresa_n PP IF (0 ("empresa") or ("despesa")) (-1 Det + Fem);
