@@ -3301,13 +3301,13 @@
           <r>ho</r>
         </p>
       </e> 
-      <e>
+      <!--<e>
         <p>
           <l><a/>ex<b/></l>
           <r>ex</r>
         </p>
         <par n="consonant"/>
-      </e>
+      </e>-->
       <e>
         <p>
           <l><a/>mitjan<b/><a/>el<b/></l>
