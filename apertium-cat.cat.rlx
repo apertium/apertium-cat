@@ -717,7 +717,7 @@ SELECT Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
 # voler i volar (p.ex. volen)
 SELECT Voler IF (0 ("voler") OR ("volar")) (1/* Inf) ;
 SELECT Voler IF (0 ("voler") OR ("volar")) (1 Inf) ;
-SELECT Voler IF (0 ("voler") OR ("volar")) (-1 (prn pro));
+SELECT Voler IF (0 ("voler") OR ("volar")) (-1 (prn pro)) (NOT -1 Det OR Prep);
 SELECT Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
 SELECT Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
 SELECT Voler IF (0 ("voler") OR ("volar")) (1 ("que")) ;
