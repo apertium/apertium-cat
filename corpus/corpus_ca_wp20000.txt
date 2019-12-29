@@ -112,7 +112,7 @@
 00112. Es tracten de  conjunts  d'algunes de les proves esmentades anteriorment
 00113. L'atletisme, normalment es duu a terme a una pista ovalada descoberta formada per un mínim de 4 carrils (acostumen a ser 8, la recta d'arribada ha de tenir un mínim de 6 carrils) on es realitzen les cursa curses i, unes zones on es fan els salt atlètic salts i els llançament atlètic llançaments, però a vegades es fan a unes zones properes
 00114. La superfície de les pistes s'anomena ''tartán'' i és un material sintètic
-00115. Les pistes, al llarg de la història han variat molt
+00115. Les pistes, al llarg de la història han variat molt.
 00116. Els estadis importants tenen accessos a l'estadi a les quatre cantonades i estan envoltades per grades, on se situa el públic.
 00117. La construcció d'aquestes pistes és molt costosa i difícil per l'elevat preu de construcció, la gran superfície que ocupen, juntament amb tot el material necessari
 00118. Una pista oficial, el carrer 1 (l'interior) fa 400 metres cada volta
@@ -8896,7 +8896,7 @@
 08896. En aquella època en què molts escriptors van passar-se a la llengua castellana, Espriu es va mantenir fidel al català, tot i saber que seria  impossible rebre cap mena de reconeixement literari 
 08897. Entre 1947 i 1948 va escriure la peça teatral ''Primera història d'Esther'', amb un llenguatge molt ric i treballat per mostrar la riquesa que es perdria si el català desapareixia
 08898. Salvador Espriu va participar en la vida clandestina de la literatura catalana de la immediata postguerra
-08899. El 7 d'agost de 1950 la seva mare va morir de càncer, fet que va significar un cop molt fort per a l'escriptor, ja que l'estimava i admirava molt
+08899. El 7 d'agost de 1950 la seva mare va morir de càncer, fet que va significar un cop molt fort per a l'escriptor, ja que l'estimava i admirava molt.
 08900. Es definia com a agnòstic, mai com a Ateisme ateu, però afirmava que se sentia atret per la religió
 08901. L'any 1960 pot deixar la notaria Gual i passa a fer unes incertes feines d'assessorament a la mútua mèdica que dirigeix el seu germà Josep.
 08902. El 1963 apareix ''Obra Poètica'', recull de tots els seus llibres de poemes en què, a més a més, apareix per primera vegada el ''Llibre de Sinera''
@@ -11226,7 +11226,7 @@
 11226. Quan els gats entren en combat contra un altre gat per qüestions d'autodefensa, territori, reproducció o dominància, intenten semblar més intimidadors i amenaçadors eriçant el pèl i arquejant l'esquena, incrementant així la seva mida aparent
 11227. Hi ha diversos tipus de miol; per exemple, el que emeten els gatons després de néixer o quan se'ls molesta mentre dormen és perquè la mare els identifiqui
 11228. Els gats poden roncar per demostrar afecte, com les femelles quan lactància alleten la ventrada
-11229. Els gats poden roncar i miolar alhora, especialment els que vocalitzen molt
+11229. Els gats poden roncar i miolar alhora, especialment els que vocalitzen molt.
 11230. Els gats poden caçar més de mil espècies diferents, principalment insectes, mentre que la majoria de grans fèlids en cacen menys de cent
 11231. Fins i tot, els gats ben alimentats poden caçar i matar ocells, ratolins, rates i altres petits animals que enxampin, per després mostrar el «trofeu de caça» als amos
 11232. Els gats tenen una dentadura especialitzada i un sistema digestiu adaptat per a digerir la carn
@@ -11866,7 +11866,7 @@
 11866. Pel seu caràcter, i la seva dedicació a l'agricultura, els espais rurals sofreixen una sèrie de '''condicionants ecològics'''; ja que no tots els climes, ni tots els sòls són aptes per a qualsevol tipus, ni tècnica, de conreu
 11867. L''''agricultura actual''' ha tractat de superar els condicionaments climàtics conreant les espècies Conreu d'hivernacle sota plàstic: en hivernacle
 11868. El conreu d'una determinada espècie durant anys en un mateix lloc acaba per '''esgotar els minerals''' dels quals s'alimenta la planta
-11869. Les tècniques de regadiu han canviat molt
+11869. Les tècniques de regadiu han canviat molt.
 11870. En moltes ocasions, és l'estructura de la propietat de la terra i l'estructura agrària, el que defineix els paisatges rurals
 11871. Però una cosa és la grandària de la propietat i una altra el de les Explotació Agrària explotacions
 11872. Al mateix temps, els condicionaments tècnics han suposat un augment progressiu de la productivitat de la terra, amb el que la grandària de l'explotació s'ha relativitzat
