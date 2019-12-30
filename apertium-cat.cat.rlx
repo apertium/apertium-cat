@@ -997,6 +997,7 @@ REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ;
 REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ;
 REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ;
 REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ;
+SELECT Pron IF (0 ("molts")) (1/* ("de")) ;
 
 # NOM / ADJ
 
@@ -1496,6 +1497,8 @@ SELECT PreAdv IF (-1C N) (0 ("molt")) (1C A OR PP) ;
 SELECT PreAdv IF (-2C N) (-1 A) (0 ("molt")) (1C A OR PP) ;
 SELECT PreAdv IF (-2 N) (-1C A) (0 ("molt")) (1C A OR PP) ;
 	# una oferta educativa molt àmplia
+SELECT PreAdv IF (0 ("molt")) (1 ("lluny de")) ;
+SELECT PreAdv IF (0 ("molt")) (1 ("a prop de")) ;
 
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
