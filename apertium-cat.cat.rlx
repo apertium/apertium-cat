@@ -96,6 +96,8 @@ SET ConcordaGN = MascSg OR MascPl OR FemSg OR FemPl;
 
 SET Pers = (p1) OR (p2) OR (p3) ;
 
+SET NSg = (n sg) ;
+
 SET Ref = (prn pro ref) ;
 SET Pro = (prn pro) ;
 SET Tn = (prn tn) ;
@@ -637,6 +639,14 @@ REMOVE ("a fi de") IF (0 ("a fi de")) (NOT 1 Inf);
 #animal
 REMOVE A IF (-1 Copula + P3 + Pl) (0 ("animal") + Pl);
 
+#parlant
+SELECT Ger IF (-1C Adv) (0 ("parlant"));
+  ## musicalment parlant
+SELECT N IF (-1 ("més") OR ("menys")) (0 ("parlant") + Pl);
+  ## més parlants
+SELECT N IF (0 ("parlant")) (1 ("natiu") OR ("nadiu"));
+  ## parlants nadius
+
 #recolzada
 REMOVE:recolzada N IF (0 ("recolzada")) (NOT -1 Det + Fem);
 REMOVE:recolzada N IF (0 ("recolzada")) (1 ("per"));
@@ -884,6 +894,7 @@ SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefA
 
 SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 Adj_PP) ;				# és força bo
 SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
+REMOVE NSg IF (0 Forca) (1 Adj_PP + Pl_strict) ;	# algunes força populars / les forces armades
 
 SELECT A OR PP IF (-1 VAdj OR ("estimar")) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("germà") OR ("empresa") OR ("despesa") OR ("<portant>"));
 # sembla blanc/espavilat/interessant/dolent/constant
