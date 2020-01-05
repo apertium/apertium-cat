@@ -1,0 +1,1789 @@
+"<L'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<arquitectura>"
+	"arquitectura" n f sg
+"<de>"
+	"de" pr
+"<Barcelona>"
+;	"Barcelona" np cog mf sp
+	"Barcelona" np top f sg
+"<ha>"
+	"haver" vbhaver pri p3 sg
+"<tingut>"
+	"tenir" vblex pp m sg
+"<una>"
+;	"u" num f sp
+;	"un" prn tn f sg
+	"un" det ind f sg
+"<evolució>"
+	"evolució" n f sg
+"<paral·lela>"
+	"paral·lel" adj f sg
+;	"paral·lela" n f sg
+"<a>"
+	"a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<resta>"
+	"resta" n f sg
+;	"restar" vblex pri p3 sg
+;	"restar" vblex imp p2 sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<arquitectura>"
+	"arquitectura" n f sg
+"<catalana>"
+	"català" adj f sg
+;	"català" n f sg
+"<,>"
+	"," cm
+"<i>"
+	"i" cnjcoo
+"<ha>"
+	"haver" vbhaver pri p3 sg
+"<seguit>"
+;	"seguit" adv
+;	"seguit" n m sg
+;	"seguit" adj m sg
+	"seguir" vblex pp m sg
+"<de>"
+	"de" pr
+"<forma>"
+	"forma" n f sg
+;	"formar" vblex pri p3 sg
+;	"formar" vblex imp p2 sg
+"<diversa>"
+	"divers" adj f sg
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<múltiples>"
+	"múltiple" adj mf pl
+;	"múltiple" n m pl
+"<tendències>"
+	"tendència" n f pl
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<s'>"
+	"es" prn pro ref p3 mf sp
+"<han>"
+	"haver" vbhaver pri p3 pl
+"<anat>"
+	"anar" vblex pp m sg
+"<produint>"
+	"produir" vblex ger
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<context>"
+	"context" n m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<història>"
+	"història" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<art>"
+	"art" n mf sg
+"<occidental>"
+;	"occidental" n mf sg
+	"occidental" adj mf sg
+"<.>"
+	"." sent
+"<Al llarg de>"
+	"al llarg de" pr
+"<la seva>"
+	"el seu" det pos f sg
+;	"el seu" prn tn pos f sg
+"<història>"
+	"història" n f sg
+"<,>"
+	"," cm
+"<Barcelona>"
+;	"Barcelona" np cog mf sp
+	"Barcelona" np top f sg
+"<ha>"
+	"haver" vbhaver pri p3 sg
+"<acollit>"
+	"acollir" vblex pp m sg
+"<diverses>"
+;	"divers" adj f pl
+	"divers" det ind f pl
+"<cultures>"
+	"cultura" n f pl
+"<i>"
+	"i" cnjcoo
+"<civilitzacions>"
+	"civilització" n f pl
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<han>"
+	"haver" vbhaver pri p3 pl
+"<aportat>"
+	"aportar" vblex pp m sg
+"<el seu>"
+	"el seu" det pos m sg
+;	"el seu" prn tn pos m sg
+"<concepte>"
+	"concepte" n m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<art>"
+	"art" n mf sg
+"<i>"
+	"i" cnjcoo
+"<han>"
+	"haver" vbhaver pri p3 pl
+"<deixat>"
+;	"deixat" adj m sg
+	"deixar" vblex pp m sg
+"<el seu>"
+	"el seu" det pos m sg
+;	"el seu" prn tn pos m sg
+"<llegat>"
+	"llegat" n m sg
+;	"llegar" vblex pp m sg
+"<per a>"
+	"per a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<posteritat>"
+	"posteritat" n f sg
+"<,>"
+	"," cm
+"<des dels>"
+	"el" det def m pl
+		"des de" pr
+"<primers>"
+	"primer" adj ord m pl
+"<pobladors>"
+;	"poblador" adj m pl
+	"poblador" n m pl
+"<ibers>"
+	"iber" adj m pl
+;	"iber" n m pl
+"<,>"
+	"," cm
+"<passant>"
+	"passar" vblex ger
+;	"passant" n mf sg
+;	"passant" adj mf sg
+"<pels>"
+	"el" det def m pl
+		"per" pr
+"<colonitzadors>"
+;	"colonitzador" adj m pl
+	"colonitzador" n m pl
+"<romans>"
+	"romà" adj m pl
+;	"romà" n m pl
+;	"romandre" vblex pri p2 sg
+"<,>"
+	"," cm
+"<els>"
+	"el" det def m pl
+;	"el" prn pro p3 m pl
+;	"li" prn pro p3 mf pl
+;	"prpers" prn pro p3 m pl
+;	"prpers" prn pro p3 mf pl
+"<visigots>"
+;	"visigot" adj m pl
+	"visigot" n m pl
+"<i>"
+	"i" cnjcoo
+"<un>"
+;	"u" num m sp
+;	"un" prn tn m sg
+	"un" det ind m sg
+"<breu>"
+	"breu" adj mf sg
+"<període>"
+	"període" n m sg
+"<islàmic>"
+	"islàmic" adj m sg
+"<,>"
+	"," cm
+"<fins al>"
+	"el" det def m sg
+		"fins a" pr
+"<sorgiment>"
+	"sorgiment" n m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<edat mitjana>"
+;	"edat mitjana" np al
+	"edat mitjana" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<art>"
+	"art" n mf sg
+"<,>"
+	"," cm
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<llengua>"
+	"llengua" n f sg
+"<i>"
+	"i" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<cultura>"
+	"cultura" n f sg
+"<catalana>"
+	"català" adj f sg
+;	"català" n f sg
+"<,>"
+	"," cm
+"<amb>"
+	"amb" pr
+"<una>"
+;	"u" num f sp
+;	"un" prn tn f sg
+	"un" det ind f sg
+"<primera>"
+	"primer" adj ord f sg
+"<època>"
+	"època" n f sg
+"<d'>"
+	"de" pr
+"<esplendor>"
+	"esplendor" n f sg
+"<per a>"
+	"per a" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<art>"
+	"art" n mf sg
+"<català>"
+;	"català" n m sg
+	"català" adj m sg
+"<,>"
+	"," cm
+"<on>"
+;	"on" adv
+;	"on" adv itg
+	"on" rel adv
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<romànic>"
+	"romànic" adj m sg
+"<i>"
+	"i" cnjcoo
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<gòtic>"
+	"gòtic" adj m sg
+"<van>"
+	"anar" vblex pri p3 pl
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<períodes>"
+	"període" n m pl
+"<molt>"
+	"molt" adv
+;	"molt" preadv
+;	"molt" adj m sg
+;	"molt" det ind m sg
+;	"moldre" vblex pp m sg
+"<fructífers>"
+	"fructífer" adj m pl
+"<per al>"
+	"el" det def m sg
+		"per a" pr
+"<desenvolupament>"
+	"desenvolupament" n m sg
+"<artístic>"
+	"artístic" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<regió>"
+	"regió" n f sg
+"<.>"
+	"." sent
+"<.>"
+	"." sent
+
+
+"<Durant>"
+	"durant" pr
+;	"durar" vblex ger
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<edat>"
+	"edat" n f sg
+"<moderna>"
+	"modern" adj f sg
+"<,>"
+	"," cm
+"<època>"
+	"època" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<què>"
+;	"què" prn itg mf sg
+	"què" rel an mf sp
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<comtal>"
+	"comtal" adj mf sg
+"<es>"
+	"es" prn pro ref p3 mf sp
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<vincular>"
+	"vincular" vblex inf
+"<a>"
+	"a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Monarquia>"
+	"monarquia" n f sg
+"<Hispànica>"
+	"hispànic" adj f sg
+"<,>"
+	"," cm
+"<els>"
+	"el" det def m pl
+;	"el" prn pro p3 m pl
+;	"li" prn pro p3 mf pl
+;	"prpers" prn pro p3 m pl
+;	"prpers" prn pro p3 mf pl
+"<principals>"
+	"principal" adj mf pl
+"<estils>"
+	"estil" n m pl
+"<van>"
+	"anar" vblex pri p3 pl
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<Renaixement>"
+	"renaixement" n m sg
+"<i>"
+	"i" cnjcoo
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<Barroc>"
+;	"Barroc" n m sg
+;	"barroc" n m sg
+;	"barroc" adj m sg
+	"Barroc" np al m sg
+"<,>"
+	"," cm
+"<desenvolupats>"
+;	"desenvolupat" adj m pl
+	"desenvolupar" vblex pp m pl
+"<a partir de>"
+	"a partir de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<propostes>"
+	"proposta" n f pl
+"<provinents>"
+	"provinent" adj mf pl
+"<dels>"
+	"el" det def m pl
+		"de" pr
+"<països>"
+	"país" n m pl
+"<difusors>"
+	"difusor" adj m pl
+;	"difusor" n m pl
+"<d'>"
+	"de" pr
+"<aquests>"
+;	"aquest" prn tn m pl
+	"aquest" det dem m pl
+"<estils>"
+	"estil" n m pl
+"<,>"
+	"," cm
+"<principalment>"
+	"principalment" adv
+"<Itàlia>"
+	"Itàlia" np top f sg
+"<i>"
+	"i" cnjcoo
+"<França>"
+	"França" np top f sg
+"<.>"
+	"." sent
+"<Aquests>"
+;	"aquest" prn tn m pl
+	"aquest" det dem m pl
+"<estils>"
+	"estil" n m pl
+"<van>"
+	"anar" vblex pri p3 pl
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<aplicats>"
+;	"aplicat" adj m pl
+	"aplicar" vblex pp m pl
+"<amb>"
+	"amb" pr
+"<diverses>"
+;	"divers" adj f pl
+	"divers" det ind f pl
+"<variants>"
+;	"variant" adj mf pl
+	"variant" n f pl
+"<locals>"
+	"local" adj mf pl
+;	"local" n m pl
+"<,>"
+	"," cm
+"<i>"
+	"i" cnjcoo
+"<si bé>"
+	"si bé" cnjadv
+"<alguns>"
+;	"algun" prn tn m pl
+	"algun" det ind m pl
+"<autors>"
+	"autor" n m pl
+"<afirmen>"
+	"afirmar" vblex pri p3 pl
+;	"afirmar" vblex prs p3 pl
+;	"afirmar" vblex imp p3 pl
+"<que>"
+	"que" cnjsub
+;	"que" preadv
+;	"que" rel an mf sp
+"<no>"
+	"no" adv
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<un>"
+;	"u" num m sp
+;	"un" prn tn m sg
+	"un" det ind m sg
+"<període>"
+	"període" n m sg
+"<especialment>"
+	"especialment" adv
+"<esplendorós>"
+	"esplendorós" adj m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<esdevenir>"
+;	"esdevenir" vblex inf
+	"esdevenir" n m sg
+"<artístic>"
+	"artístic" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<,>"
+	"," cm
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<qualitat>"
+	"qualitat" n f sg
+"<de>"
+	"de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<obres>"
+	"obra" n f pl
+;	"obrir" vblex pri p2 sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<estar d'acord>"
+	"estar# d'acord" vblex inf
+"<amb>"
+	"amb" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<conjunt>"
+	"conjunt" n m sg
+;	"conjunt" adj m sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<estat>"
+;	"ser" vbser pp m sg
+	"estat" n m sg
+;	"estar" vblex pp m sg
+"<,>"
+	"," cm
+"<mentre que>"
+	"mentre que" cnjadv
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<quantitat>"
+	"quantitat" n f sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<un>"
+;	"u" num m sp
+;	"un" prn tn m sg
+	"un" det ind m sg
+"<període>"
+	"període" n m sg
+"<bastant>"
+	"bastant" adv
+;	"bastant" preadv
+;	"bastar" vblex ger
+;	"bastant" adj m sg
+;	"bastant" adj f sg
+"<productiu>"
+	"productiu" adj m sg
+"<,>"
+	"," cm
+"<encara que>"
+	"encara que" cnjadv
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<major part>"
+	"major part" n f sg
+"<de>"
+	"de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<realitzacions>"
+	"realització" n f pl
+"<no>"
+	"no" adv
+"<hagi>"
+;	"haver" vbhaver prs p1 sg
+	"haver" vbhaver prs p3 sg
+"<arribat a>"
+	"arribar# a" vblex pp m sg
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<actualitat>"
+	"actualitat" n f sg
+"<.>"
+	"." sent
+"<.>"
+	"." sent
+
+
+"<El>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<segle XIX>"
+	"segle XIX" n m sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<comportar>"
+	"comportar" vblex inf
+"<una>"
+;	"u" num f sp
+;	"un" prn tn f sg
+	"un" det ind f sg
+"<certa>"
+;	"cert" adj f sg
+	"cert" det ind f sg
+"<revitalització>"
+	"revitalització" n f sg
+"<econòmica>"
+	"econòmic" adj f sg
+"<i>"
+	"i" cnjcoo
+"<cultural>"
+	"cultural" adj mf sg
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<es>"
+	"es" prn pro ref p3 mf sp
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<plasmar>"
+	"plasmar" vblex inf
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<un>"
+;	"u" num m sp
+;	"un" prn tn m sg
+	"un" det ind m sg
+"<dels>"
+	"el" det def m pl
+		"de" pr
+"<períodes>"
+	"període" n m pl
+"<més>"
+	"més" adv
+;	"més" preadv
+;	"més" adj mf sp
+"<fructífers>"
+	"fructífer" adj m pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<arquitectura>"
+	"arquitectura" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<,>"
+	"," cm
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<modernisme>"
+	"modernisme" n m sg
+"<.>"
+	"." sent
+"<Cal>"
+	"caldre" vbmod pri p3 sg
+"<remarcar>"
+	"remarcar" vblex inf
+"<que>"
+	"que" cnjsub
+;	"que" preadv
+;	"que" rel an mf sp
+"<fins al>"
+	"el" det def m sg
+		"fins a" pr
+"<segle>"
+	"segle" n m sg
+"<xix>"
+	"*xix"
+"<estava>"
+;	"estar" vblex pii p1 sg
+	"estar" vblex pii p3 sg
+"<encotillada>"
+;	"encotillat" adj f sg
+	"encotillar" vblex pp f sg
+"<per>"
+	"per" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<muralles>"
+	"muralla" n f pl
+"<d'>"
+	"de" pr
+"<origen>"
+	"origen" n m sg
+"<medieval>"
+	"medieval" adj mf sg
+"<,>"
+	"," cm
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<tenir>"
+	"tenir" vblex inf
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<consideració>"
+	"consideració" n f sg
+"<de>"
+	"de" pr
+"<plaça>"
+	"plaça" n f sg
+"<militar>"
+;	"militar" vblex inf
+;	"militar" n mf sg
+	"militar" adj mf sg
+"<,>"
+	"," cm
+"<de manera que>"
+	"de manera que" cnjadv
+"<el seu>"
+	"el seu" det pos m sg
+;	"el seu" prn tn pos m sg
+"<creixement>"
+	"creixement" n m sg
+"<estava>"
+;	"estar" vblex pii p1 sg
+	"estar" vblex pii p3 sg
+"<limitat>"
+;	"limitat" adj m sg
+	"limitar" vblex pp m sg
+"<.>"
+	"." sent
+"<La>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<situació>"
+	"situació" n f sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<canviar>"
+	"canviar" vblex inf
+"<amb>"
+	"amb" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<enderrocament>"
+	"enderrocament" n m sg
+"<de>"
+	"de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<muralles>"
+	"muralla" n f pl
+"<i>"
+	"i" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<donació>"
+	"donació" n f sg
+"<a>"
+	"a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Fortalesa>"
+	"fortalesa" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Ciutadella>"
+;	"ciutadella" n f sg
+	"Ciutadella" np top f sg
+"<,>"
+	"," cm
+"<el que>"
+	"el que" rel an m sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<propiciar>"
+	"propiciar" vblex inf
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<expansió>"
+	"expansió" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<per>"
+	"per" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<plana>"
+	"pla" adj f sg
+;	"plana" n f sg
+"<contigua>"
+	"contigu" adj f sg
+"<,>"
+	"," cm
+"<fet>"
+;	"fet" n m sg
+	"fer" vblex pp m sg
+"<que>"
+	"que" cnjsub
+;	"que" preadv
+;	"que" rel an mf sp
+"<es>"
+	"es" prn pro ref p3 mf sp
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<plasmar>"
+	"plasmar" vblex inf
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<projecte>"
+	"projecte" n m sg
+;	"projectar" vblex pri p1 sg
+;	"projectar" vblex prs p1 sg
+;	"projectar" vblex prs p3 sg
+;	"projectar" vblex imp p3 sg
+"<d'>"
+	"de" pr
+"<Eixample>"
+;	"eixample" n m sg
+	"Eixample" np top m sg
+;	"eixamplar" vblex pri p1 sg
+;	"eixamplar" vblex prs p1 sg
+;	"eixamplar" vblex prs p3 sg
+;	"eixamplar" vblex imp p3 sg
+"<elaborat>"
+	"elaborat" adj m sg
+;	"elaborar" vblex pp m sg
+"<per>"
+	"per" pr
+"<Ildefons>"
+	"Ildefons" np ant m sg
+"<Cerdà>"
+;	"cerdà" adj m sg
+	"Cerdà" np cog mf sp
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<suposar>"
+	"suposar" vblex inf
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<ampliació>"
+	"ampliació" n f sg
+"<territorial>"
+	"territorial" adj mf sg
+"<més>"
+	"més" adv
+;	"més" preadv
+;	"més" adj mf sp
+"<gran>"
+	"gran" adj mf sg
+"<de>"
+	"de" pr
+"<Barcelona>"
+;	"Barcelona" np cog mf sp
+	"Barcelona" np top f sg
+"<.>"
+	"." sent
+"<Un altre>"
+;	"un altre" prn tn m sg
+	"un altre" det ind m sg
+"<augment>"
+	"augment" n m sg
+"<significatiu>"
+	"significatiu" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<superfície>"
+	"superfície" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<capital>"
+;	"capital" n m sg
+	"capital" n f sg
+;	"capital" n mf sg
+;	"capital" adj mf sg
+"<catalana>"
+	"català" adj f sg
+;	"català" n f sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<annexió>"
+	"annexió" n f sg
+"<de>"
+	"de" pr
+"<diversos>"
+;	"divers" adj m pl
+	"divers" det ind m pl
+"<municipis>"
+	"municipi" n m pl
+"<limítrofs>"
+	"limítrof" adj m pl
+"<entre>"
+	"entre" pr
+;	"entrar" vblex pri p1 sg
+;	"entrar" vblex prs p1 sg
+;	"entrar" vblex prs p3 sg
+;	"entrar" vblex imp p3 sg
+"<finals>"
+;	"final" adj mf pl
+	"final" n m pl
+;	"final" n f pl
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<segle>"
+	"segle" n m sg
+"<xix>"
+	"*xix"
+"<i>"
+	"i" cnjcoo
+"<principis>"
+	"principi" n m pl
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<XX>"
+	"XX" num mf sp
+;	"XX" adj mf sp
+"<.>"
+	"." sent
+"<Tot>"
+	"tot" adv
+;	"tot" n m sg
+;	"tot" predet m sg
+;	"tot" predet nt sp
+;	"tot" prn tn m sg
+;	"tot" det ind m sg
+"<això>"
+	"això" prn tn nt
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<suposar>"
+	"suposar" vblex inf
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<adequació>"
+	"adequació" n f sg
+"<dels>"
+	"el" det def m pl
+		"de" pr
+"<nous>"
+	"nou" adj m pl
+;	"nou" n f pl
+"<espais>"
+	"espai" n m pl
+"<urbans>"
+	"urbà" adj m pl
+;	"urbà" n m pl
+"<i>"
+	"i" cnjcoo
+"<un>"
+;	"u" num m sp
+;	"un" prn tn m sg
+	"un" det ind m sg
+"<augment>"
+	"augment" n m sg
+"<dels>"
+	"el" det def m pl
+		"de" pr
+"<encàrrecs>"
+	"encàrrec" n m pl
+"<artístics>"
+	"artístic" adj m pl
+"<municipals>"
+	"municipal" adj mf pl
+;	"municipal" n mf pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<vies>"
+	"via" n f pl
+"<públiques>"
+	"públic" adj f pl
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<van>"
+	"anar" vblex pri p3 pl
+"<ser>"
+	"ser" vbser inf
+;	"ser" n m sg
+"<afavorits>"
+	"afavorir" vblex pp m pl
+"<igualment>"
+	"igualment" adv
+"<per>"
+	"per" pr
+"<diversos>"
+;	"divers" adj m pl
+	"divers" det ind m pl
+"<esdeveniments>"
+	"esdeveniment" n m pl
+"<celebrats>"
+;	"celebrat" adj m pl
+	"celebrar" vblex pp m pl
+"<a>"
+	"a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<,>"
+	"," cm
+"<com>"
+;	"com" adv
+;	"com" cnjadv
+;	"com" cnjcoo
+;	"com" pr
+;	"com" adv itg
+	"com" rel adv
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<Exposició>"
+	"exposició" n f sg
+"<Universal>"
+;	"universal" n m sg
+	"universal" adj mf sg
+"<de>"
+	"de" pr
+"<1888>"
+	"1888" num
+"<i>"
+	"i" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Internacional>"
+	"internacional" adj mf sg
+"<de>"
+	"de" pr
+"<1929>"
+	"1929" num
+"<o>"
+	"o" cnjcoo
+"<,>"
+	"," cm
+"<més>"
+	"més" adv
+;	"més" preadv
+;	"més" adj mf sp
+"<recentment>"
+	"recentment" adv
+"<,>"
+	"," cm
+"<pels>"
+	"el" det def m pl
+		"per" pr
+"<Jocs Olímpics>"
+	"Jocs Olímpics" np al m pl
+"<de>"
+	"de" pr
+"<1992>"
+	"1992" num
+"<i>"
+	"i" cnjcoo
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<Fòrum>"
+	"fòrum" n m sg
+"<Universal>"
+;	"universal" n m sg
+	"universal" adj mf sg
+"<de>"
+	"de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<Cultures>"
+	"cultura" n f pl
+"<de>"
+	"de" pr
+"<2004>"
+	"2004" num
+"<.>"
+	"." sent
+"<.>"
+	"." sent
+
+
+"<El>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<segle XX>"
+	"segle XX" n m sg
+"<va>"
+;	"va" adj m sg
+	"anar" vblex pri p3 sg
+"<suposar>"
+	"suposar" vblex inf
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<posada al dia>"
+	"posada# al dia" n f sg
+"<dels>"
+	"el" det def m pl
+		"de" pr
+"<diversos>"
+;	"divers" adj m pl
+	"divers" det ind m pl
+"<estils>"
+	"estil" n m pl
+"<produïts>"
+	"produir" vblex pp m pl
+"<pels>"
+	"el" det def m pl
+		"per" pr
+"<arquitectes>"
+	"arquitecte" n mf pl
+"<barcelonins>"
+	"barceloní" adj m pl
+;	"barceloní" n m pl
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<van>"
+	"anar" vblex pri p3 pl
+"<connectar>"
+	"connectar" vblex inf
+"<amb>"
+	"amb" pr
+"<els>"
+	"el" det def m pl
+;	"el" prn pro p3 m pl
+;	"li" prn pro p3 mf pl
+;	"prpers" prn pro p3 m pl
+;	"prpers" prn pro p3 mf pl
+"<corrents>"
+;	"corrents" adv
+;	"corrent" adj mf pl
+	"corrent" n m pl
+"<internacionals>"
+	"internacional" adj mf pl
+"<i>"
+	"i" cnjcoo
+"<van>"
+	"anar" vblex pri p3 pl
+"<posar>"
+	"posar" vblex inf
+"<a>"
+	"a" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+
+"<primera>"
+	"primer" adj ord f sg
+"<línia>"
+	"línia" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<avantguarda>"
+	"avantguarda" n f sg
+"<.>"
+	"." sent
+"<El>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<desenvolupament>"
+	"desenvolupament" n m sg
+"<arquitectònic>"
+	"arquitectònic" adj m sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<aquests>"
+;	"aquest" prn tn m pl
+	"aquest" det dem m pl
+"<últims>"
+	"últim" adj m pl
+"<anys>"
+	"any" n m pl
+"<i>"
+	"i" cnjcoo
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<aposta>"
+	"aposta" n f sg
+;	"apostar" vblex pri p3 sg
+;	"apostar" vblex imp p2 sg
+"<pel>"
+	"el" det def m sg
+		"per" pr
+"<disseny>"
+	"disseny" n m sg
+"<i>"
+	"i" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<innovació>"
+	"innovació" n f sg
+"<,>"
+	"," cm
+"<així com>"
+	"així com" cnjadv
+;	"així com" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<vinculació>"
+	"vinculació" n f sg
+"<de>"
+	"de" pr
+"<l'>"
+	"el" det def mf sg
+;	"el" prn pro p3 mf sg
+"<urbanisme>"
+	"urbanisme" n m sg
+"<amb>"
+	"amb" pr
+"<els>"
+	"el" det def m pl
+;	"el" prn pro p3 m pl
+;	"li" prn pro p3 mf pl
+;	"prpers" prn pro p3 m pl
+;	"prpers" prn pro p3 mf pl
+"<valors>"
+	"valor" n m pl
+"<ecològics>"
+	"ecològic" adj m pl
+"<i>"
+	"i" cnjcoo
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<sostenibilitat>"
+	"sostenibilitat" n f sg
+"<,>"
+	"," cm
+"<han>"
+	"haver" vbhaver pri p3 pl
+"<convertit>"
+;	"convertit" adj m sg
+	"convertir" vblex pp m sg
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<capital>"
+;	"capital" n m sg
+	"capital" n f sg
+;	"capital" n mf sg
+;	"capital" adj mf sg
+"<catalana>"
+	"català" adj f sg
+;	"català" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<una>"
+;	"u" num f sp
+;	"un" prn tn f sg
+	"un" det ind f sg
+"<de>"
+	"de" pr
+"<les>"
+;	"les" adj m sg
+	"el" det def f pl
+;	"el" prn pro p3 f pl
+;	"prpers" prn pro p3 f pl
+"<ciutats>"
+	"ciutat" n f pl
+"<europees>"
+	"europeu" adj f pl
+;	"europeu" n f pl
+"<més>"
+	"més" adv
+;	"més" preadv
+;	"més" adj mf sp
+"<punteres>"
+	"punter" adj f pl
+;	"puntera" adj mf pl
+;	"puntera" n f pl
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<el>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<terreny>"
+	"terreny" n m sg
+"<arquitectònic>"
+	"arquitectònic" adj m sg
+"<,>"
+	"," cm
+"<fet>"
+;	"fet" n m sg
+	"fer" vblex pp m sg
+"<que>"
+	"que" cnjsub
+;	"que" preadv
+;	"que" rel an mf sp
+"<ha>"
+	"haver" vbhaver pri p3 sg
+"<estat>"
+	"ser" vbser pp m sg
+;	"estat" n m sg
+;	"estar" vblex pp m sg
+"<reconegut>"
+	"reconegut" adj m sg
+;	"reconèixer" vblex pp m sg
+"<amb>"
+	"amb" pr
+"<nombrosos>"
+	"nombrós" adj m pl
+"<premis>"
+	"premi" n m pl
+;	"prémer" vblex prs p2 sg
+"<i>"
+	"i" cnjcoo
+"<distincions>"
+	"distinció" n f pl
+"<,>"
+	"," cm
+"<com>"
+	"com" adv
+;	"com" cnjadv
+;	"com" cnjcoo
+;	"com" pr
+;	"com" adv itg
+;	"com" rel adv
+"<el premi>"
+	"premi" n m sg
+		"el" det def m sg
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<Reial>"
+	"reial" adj mf sg
+"<Institut>"
+	"institut" n m sg
+"<d'>"
+	"de" pr
+"<Arquitectes>"
+	"arquitecte" n mf pl
+"<Britànics>"
+	"britànic" adj m pl
+;	"britànic" n m pl
+"<(>"
+	"(" lpar
+"<1999>"
+	"1999" num
+"<)>"
+	")" rpar
+"<i>"
+	"i" cnjcoo
+"<el premi>"
+	"premi" n m sg
+		"el" det def m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Biennal>"
+	"biennal" n f sg
+;	"biennal" adj mf sg
+"<de>"
+	"de" pr
+"<Venècia>"
+	"Venècia" np top f sg
+"<(>"
+	"(" lpar
+"<2002>"
+	"2002" num
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+"<.>"
+	"." sent
+
+
+"<El>"
+;	"el" detnt
+	"el" det def m sg
+;	"el" prn pro p3 m sg
+;	"prpers" prn pro p3 m sg
+"<patrimoni>"
+	"patrimoni" n m sg
+"<arquitectònic>"
+	"arquitectònic" adj m sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<ciutat>"
+	"ciutat" n f sg
+"<gaudeix>"
+	"gaudir" vblex pri p3 sg
+;	"gaudir" vblex imp p2 sg
+"<d'>"
+	"de" pr
+"<una>"
+;	"u" num f sp
+;	"un" prn tn f sg
+	"un" det ind f sg
+"<especial>"
+	"especial" adj mf sg
+"<protecció>"
+	"protecció" n f sg
+"<en>"
+	"en" pr
+;	"en" prn pro adv
+"<virtut>"
+	"virtut" n f sg
+"<de>"
+	"de" pr
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<Llei>"
+	"llei" n f sg
+"<9>"
+	"9" num
+/
+"<1993>"
+	"1993" num
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<Patrimoni>"
+	"patrimoni" n m sg
+"<Cultural>"
+	"cultural" adj mf sg
+"<Català>"
+;	"català" n m sg
+	"català" adj m sg
+;	"Català" np cog mf sp
+"<,>"
+	"," cm
+"<que>"
+;	"que" cnjsub
+;	"que" preadv
+	"que" rel an mf sp
+"<garanteix>"
+	"garantir" vblex pri p3 sg
+;	"garantir" vblex imp p2 sg
+"<la>"
+	"el" det def f sg
+;	"el" prn pro p3 f sg
+;	"prpers" prn pro p3 f sg
+"<protecció>"
+	"protecció" n f sg
+"<,>"
+	"," cm
+"<conservació>"
+	"conservació" n f sg
+"<,>"
+	"," cm
+"<investigació>"
+	"investigació" n f sg
+"<i>"
+	"i" cnjcoo
+"<difusió>"
+	"difusió" n f sg
+"<del>"
+	"el" det def m sg
+		"de" pr
+"<patrimoni>"
+	"patrimoni" n m sg
+"<cultural>"
+	"cultural" adj mf sg
+"<,>"
+	"," cm
+"<amb>"
+	"amb" pr
+"<diversos>"
+;	"divers" adj m pl
+	"divers" det ind m pl
+"<graus>"
+	"grau" n m pl
+"<de>"
+	"de" pr
+"<cobertura>"
+	"cobertura" n f sg
+"<:>"
+	":" sent
+"<nivell>"
+	"nivell" n m sg
+"<A>"
+	"a" pr
+"<(>"
+	"(" lpar
+"<Bé>"
+;	"bé" adv
+;	"bé" ij
+	"bé" n m sg
+"<Cultural>"
+	"cultural" adj mf sg
+"<d'>"
+	"de" pr
+"<Interès>"
+	"interès" n m sg
+"<Nacional>"
+	"nacional" adj mf sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<nivell>"
+	"nivell" n m sg
+"<B>"
+	"b" n f sg
+"<(>"
+	"(" lpar
+"<Bé>"
+;	"bé" adv
+;	"bé" ij
+	"bé" n m sg
+"<Cultural>"
+	"cultural" adj mf sg
+"<d'>"
+	"de" pr
+"<Interès>"
+	"interès" n m sg
+"<Local>"
+;	"local" n m sg
+	"local" adj mf sg
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<nivell>"
+	"nivell" n m sg
+"<C>"
+;	"C" num mf sp
+;	"C" adj mf sp
+	"c" n f sg
+"<(>"
+	"(" lpar
+"<Bé>"
+;	"bé" adv
+;	"bé" ij
+	"bé" n m sg
+"<d'>"
+	"de" pr
+"<Interès>"
+	"interès" n m sg
+"<Urbanístic>"
+	"urbanístic" adj m sg
+"<)>"
+	")" rpar
+"<i>"
+	"i" cnjcoo
+"<nivell>"
+	"nivell" n m sg
+"<D>"
+;	"D" num mf sp
+;	"D" adj mf sp
+	"d" n f sg
+;	"D" np cog mf sp
+"<(>"
+	"(" lpar
+"<Bé>"
+;	"bé" adv
+;	"bé" ij
+	"bé" n m sg
+"<d'>"
+	"de" pr
+"<Interès>"
+	"interès" n m sg
+"<Documental>"
+	"documental" n m sg
+;	"documental" adj mf sg
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+"<.>"
+	"." sent
+
