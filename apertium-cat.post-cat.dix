@@ -2876,6 +2876,20 @@
       </e>
       <e>
         <p>
+          <l><b/><a/>el<b/></l>
+          <r>us<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
+      </e>
+      <e>
+        <p>
+          <l><b/><a/>la<b/></l>
+          <r>us<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
+      </e>
+      <e>
+        <p>
           <l><b/><a/></l>
           <r>us<b/></r>
         </p>
@@ -2897,6 +2911,20 @@
           <r>ens<b/></r>
         </p>
         <par n="no_apostrofa"/>
+      </e>
+      <e>
+        <p>
+          <l><b/><a/>el<b/></l>
+          <r>ens<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
+      </e>
+      <e>
+        <p>
+          <l><b/><a/>la<b/></l>
+          <r>ens<b/>l'</r>
+        </p>
+        <par n="vocal_general"/>
       </e>
       <e>
         <p>
