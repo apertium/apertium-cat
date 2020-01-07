@@ -716,6 +716,8 @@ SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Adv) ;
 	# Va més ràpidament
 SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1C PP) ;
 	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
+SELECT Anar IF (0 ("anar") OR ("va")) (1C Ger) ;
+	# la pedra va caient
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg> (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>
@@ -823,6 +825,9 @@ SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 SELECT Terme IF (0 Terme OR Termes) (1 ("municipal") + Pl) ;
 
 SELECT N IF (0 ("coure")) (1C A) (NOT 2 N) ;	# monedes que inclouen coure pur
+
+SELECT A IF (-1C N + Sg) (0 ("constant") + Sg) ;	# operacions de temps constant
+SELECT A IF (-1C N + Pl) (0 ("constant") + Pl) ;
 
 SELECT Fem IF (0 ("<Terra>")) (NOT -1 Masc OR Fem) (NOT 1 Masc OR Fem) ;
 SELECT Fem IF (0 ("<Terres>")) (NOT -1 Masc OR Fem) (NOT 1 Masc OR Fem) ;
