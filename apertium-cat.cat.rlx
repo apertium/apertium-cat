@@ -704,6 +704,7 @@ SELECT:ordinal A IF (0 (ord) + FemPl) (1 N + FemPl);
 SELECT:ordinal Det IF (0 Det + MascSg) (1 (ord) + MascSg) (2 N + MascSg); #el quart àlbum >*lo cuarto
 
 SELECT N IF (-1 Det + Masc) (0 ("estat") OR ("Estat")) ;
+SELECT N IF (-1 Lpar) (0 ("estat") OR ("Estat")) (1 Rpar) ;
 SELECT PP IF (-1 Vbhaver) (0 ("estat")) (1 PP) ;
 SELECT N IF (-1 ("[a-záéíóúñ].*"r)) (0 ("Estat")) ;	# "Estat" (con mayúscula) va precedido de una palabra con minúscula inicial
 SELECT N IF (-1 ("ciutat")) (0 ("estat")) ;	# ciutat estat
