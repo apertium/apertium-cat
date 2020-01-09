@@ -707,7 +707,7 @@
 00707. El Gaià entre les serres serra de Brufaganya de Brufaganya i Serra de Queralt (Bellprat)  de Queralt entre les comarques de l'Anoia i Conca de Barberà
 00708. El Francolí té una conca més gran i penetra a l'Alt Camp pel congost de la Riba, d'onze quilòmetres de longitud, un dels estrets més característics i espectaculars que hi ha a la Serralada Prelitoral
 00709. L'Alt Camp té un clima mediterrani amb influència marítima
-00710. Les temperatures mitjanes anuals oscil·len entre 13 i 16 °C, una mica menys en els vessants més enlairats
+00710. Les temperatures mitjanes anuals oscil·len entre 13 i 16°C, una mica menys en els vessants més enlairats
 00711. La vegetació natural estaria constituïda sobretot per alzinars a gairebé tot el territori
 00712. Bona part de les brolles i garrigues actuals provenen d'antics conreus de vinya, garrofer o olivera, que han estat abandonats en els darrers cents anys
 00713. L'Alt Camp és la comarca menys poblada de les tres que integren el Camp de Tarragona
@@ -2612,7 +2612,7 @@
 02612. Des del segle XX ha existit un important moviment d'immigració cap a Anglaterra, majoritàriament d'habitants provinents d'altres parts de les Illes Britàniques, però també de països de la Mancomunitat de Nacions, particularment de països del Subcontinent indi.
 02613. Anglaterra comprèn la zona central i sud de les dues terceres parts de l'illa de Gran Bretanya, més altres territoris illencs com l'illa de Wight i les illes Scilly
 02614. Els Penins que són coneguts com l'espina dorsal d'Anglaterra, són la cadena muntanyosa més antiga del país, originades al final del Paleozoic fa aproximadament 300 milions d'anys
-02615. Anglaterra té un clima marítim temperat, és a dir, té temperatures no massa inferiors a 0 °C a l'hivern i no gaire més altes de 32 °C a l'estiu
+02615. Anglaterra té un clima marítim temperat, és a dir, té temperatures no massa inferiors a 0°C a l'hivern i no gaire més altes de 32°C a l'estiu
 02616. El 1707, amb l'Acta d'Unió (1707) Union Act, que va crear el Regne Unit, Anglaterra va deixar d'existir com a entitat política independent
 02617. No hi ha cap moviment amb suport popular significatiu que promogui la independència d'Anglaterra del Regne Unit, tot i que una part significativa de la població se sent més anglesa que britànica i no posaria impediments a la independència de les altres parts
 02618. Atès que Anglaterra és un dels països constituents del Regne Unit, el sistema polític imperant és una monarquia monarquia constitucional constitucional amb un parlamentarisme govern parlamentari basat en el sistema Westminster
@@ -3428,7 +3428,7 @@
 03428. El seu acord amb el conjunt d'observacions juntament amb l'elegància del concepte fan de la inflació el model més interessant, lluny de qualsevol altre, per les problemàtiques que abasta
 03429. Més enllà de la fase d'inflació, i més generalment a temperatures d'aproximadament la temperatura de Planck, s'entra dins els dominis en què les teories físiques actuals esdevenen no vàlides, car es fa necessari usar la relativitat general, incloent-hi els conceptes de la mecànica quàntica
 03430. Abans de les observacions de l'energia fosca, els cosmòlegs van considerar dos escenaris possibles per a un possible futur de l'univers
-03431. L'univers en creixement es faria cada vegada menys dens, i la mitjana de la temperatura podria apropar-se asimptòticament al zero absolut (0 K o -273,15 °C)
+03431. L'univers en creixement es faria cada vegada menys dens, i la mitjana de la temperatura podria apropar-se asimptòticament al zero absolut (0 K o -273,15°C)
 03432. El ''big bang'' és una teoria científica, i com a tal s'ha de mantenir o ha de ser rebutjada d'acord amb les observacions
 03433. El ''big bang'' com a teoria científica no es troba associada amb cap religió
 03434. L'Església Catòlica Romana Església catòlica romana ha acceptat el ''big bang'' com una descripció de l'origen de l'univers
@@ -4291,7 +4291,7 @@
 04291. Els límits dins de Rússia són, al nord i a l'oest, amb la província d'Irkutsk i el llac Baikal, al sud-oest amb la república de Tuvà i a l'est amb la província de Txità
 04292. El 80% del territori és muntanyós; al sud-oest s'alcen les muntanyes Saian, que culminen en el Munku Sardik (3.491 m), a la frontera amb Mongòlia
 04293. Els rius principals són el Selengà (''Sëlëngë müren''), Barguzin (''Bargazhan''), Udà, Verkhnaia Angara (afluents del Baikal), Vitim (del Lena) i Irkut, Oka i Kitoi (''Süxë gol'') (del Ienissei)
-04294. La temperatura mitjana anual és de -1,6 °C, essent la mitjana d'hivern de -22 °C i la mitjana estival de 18 °C.
+04294. La temperatura mitjana anual és de -1,6°C, essent la mitjana d'hivern de -22°C i la mitjana estival de 18°C.
 04295. Els recursos naturals buriats són l'or, el tungstè, el zinc, l'urani i d'altres
 04296. Segons el Cens rus (2002), els russos eren gairebé dos terços de la població de la república, mentre que els buriats només eren el 27,8%
 04297. El buriat hi és la llengua oficial juntament amb el rus.
@@ -4451,7 +4451,7 @@
 04451. L''''energia de dissociació''' d'un enllaç és l'energia necessària per separar un enllaç mitjançant homòlisi o heteròlisi
 04452. Així, la força de l'enllaç ve determinada per l''''energia de dissociació''', D; com major sigui l'energia de dissociació de l'enllaç, major serà la força d'unió entre els dos àtoms que formen l'enllaç.
 04453. La formació d'enllaços covalents pot donar lloc a dos tipus de substàncies amb estructures i propietats completament diferents
-04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550 °C; el diòxid de silici (SiO2), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700 °C; i el Grafit (mineral) grafit.
+04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550°C; el diòxid de silici (SiO2), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700°C; i el Grafit (mineral) grafit.
 04455. Les substàncies que presenten ressonància (que també pot ésser anomenada mesomeria) són anomenades híbrids de ressonància o estat mesomèric i, per tal d'expressar-les correctament, s'hauran de representar mitjançant dues o més estructures separades per un signe de doble fletxa (↔)
 04456. Un exemple de molècula que presenta aquesta propietat és l'ozó, O3
 04457. El que succeeix en la realitat, però, és que l'estat real de l'estructura de les molècules que formen la substància en ressonància és un intermedi entre l'estat que representen totes les formes mesòmeres

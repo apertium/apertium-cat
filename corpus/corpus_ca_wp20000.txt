@@ -482,7 +482,7 @@
 00482. En els anys 90, la societat aragonesa fa un significatiu pas qualitatiu en la qualitat de vida pel progrés econòmic de l'Estat a tots els nivells.
 00483. A principis del segle XXI, s'establix un significatiu increment d'infraestructures, com l'arribada de l'Alta Velocitat Espanyola (AVE), la construcció de la nova Autovia Somport-Sagunt i l'impuls dels dos aeroports de la Comunitat, Garrapinillos-Saragossa i Osca-Pirineus (Monflorite)
 00484. Però el que va revolucionar més la Saragossa capital i la Comunitat fou la designació de Saragossa com a seu per a la Expo 2008, cosa que ha suposat una sèrie de canvis i creixement accelerat per a la comunitat autònoma.
-00485. La superfície d'Aragó és de 47.719,2 nbsp;km² dels quals 15.636,2 nbsp;km² pertanyen a la província d'Osca, 17.274,3 nbsp;km² a la de província de Saragossa Saragossa i 14.808,7 nbsp;km² a la de província de Terol Terol
+00485. La superfície d'Aragó és de 47.719,2 km² dels quals 15.636,2 km² pertanyen a la província d'Osca, 17.274,3 km² a la de província de Saragossa Saragossa i 14.808,7 km² a la de província de Terol Terol
 00486. L'orografia de la comunitat té com a eix central la vall de l'Ebre, d'unes altituds entre 150 i 300 metres, del qual transita entre dues regions somontanes, la pirinenca i la ibèrica, preàmbuls de dues grans formacions muntanyoses, el Pirineu al nord i el Sistema Ibèric al sud.
 00487. Podem distingir-hi tres unitats fisiogràfiques: els Pirineus, la Depressió Ibèrica i el Sistema Ibèric.
 00488. Els rius pirinencs, els més cabalosos i amb crescudes a l'època de fusió de les neus, contrasten amb els menys importants i de règim torrencial de les muntanyes prepirinenques i de la Serralada Ibèrica
@@ -707,7 +707,7 @@
 00707. El Gaià entre les serres serra de Brufaganya de Brufaganya i Serra de Queralt (Bellprat)  de Queralt entre les comarques de l'Anoia i Conca de Barberà
 00708. El Francolí té una conca més gran i penetra a l'Alt Camp pel congost de la Riba, d'onze quilòmetres de longitud, un dels estrets més característics i espectaculars que hi ha a la Serralada Prelitoral
 00709. L'Alt Camp té un clima mediterrani amb influència marítima
-00710. Les temperatures mitjanes anuals oscil·len entre 13 i 16 °C, una mica menys en els vessants més enlairats
+00710. Les temperatures mitjanes anuals oscil·len entre 13 i 16°C, una mica menys en els vessants més enlairats
 00711. La vegetació natural estaria constituïda sobretot per alzinars a gairebé tot el territori
 00712. Bona part de les brolles i garrigues actuals provenen d'antics conreus de vinya, garrofer o olivera, que han estat abandonats en els darrers cents anys
 00713. L'Alt Camp és la comarca menys poblada de les tres que integren el Camp de Tarragona
@@ -759,7 +759,7 @@
 00759. La fórmula de la Velocitat d'escapament es dedueix fàcilment com segueix.
 00760. L'energia específica (energia per unitat de massa) de qualsevol vehicle espacial està composta per dos components, l'energia potencial específica i l'energia cinètica
 00761. Degut a la conservació de l'energia, l'energia orbital específica total és
-00762. La velocitat d'escapament de la superfície de la Terra és d'uns 11 nbsp;km/s, però aquesta velocitat és massa baixa per enviar un cos a una distància infinita degut a la gravetat del Sol
+00762. La velocitat d'escapament de la superfície de la Terra és d'uns 11 km/s, però aquesta velocitat és massa baixa per enviar un cos a una distància infinita degut a la gravetat del Sol
 00763. Es casà el 15 d'agost de 1282 a Barcelona amb Elionor d'Anglaterra i de Castella Elionor d'Anglaterra, filla del rei d'Anglaterra Eduard I d'Anglaterra Eduard I i Elionor de Castella i de Portugal Elionor de Castella, a les pregàries de la qual accedí finalment, alliberant en ''Carles II d'Anjou''
 00764. Fou sebollit al convent de Sant Francesc de Barcelona; quan fou desamortitzat i enderrocat, el 1837, les restes foren portades a la catedral de Barcelona i instal·lades el 1852 en un sepulcre en una capella del claustre, juntament amb les d'altres persones reials
 00765. L'ambició mediterrània d'Alfons comportà el desànim de l'aristocràcia aragonesa, la qual veia en perill els seus privilegis davant una monarquia exitosa i no participava en els beneficis marítims
@@ -866,20 +866,20 @@
 00866. Algunes sèries animades de la televisió americana també han fet paròdies o referències a l'anime com a ''South Park'' («Chinpokomon» i l'episodi de «Good Times With Weapons»)
 00867. Pot ser que la fama d'una sèrie quedi confinada en una àrea relativament petita o que, en canvi, s'estengui per mig món
 00868. Convertint el seu petit regne en el centre director de l'Imperi persa, que arribava fins al riu Indus, es converteix en un dels personatges més cèlebres de l'Edat antiga antiguitat
-00869. Alexandre va néixer a Pel·la (Macedònia) Pel·la, la capital del Regne de Macedònia, segons Plutarc de Queronea el 21 de juliol (en el calendari macedoni Hecatombaeon hekatombaiốn) del 356 nbsp;aC
+00869. Alexandre va néixer a Pel·la (Macedònia) Pel·la, la capital del Regne de Macedònia, segons Plutarc de Queronea el 21 de juliol (en el calendari macedoni Hecatombaeon hekatombaiốn) del 356 aC
 00870. Diversos companys d'infantesa d'Alexandre, entre els quals Ptolemeu I Soter Ptolemeu, Filotes (general) Filotes, Hefestió de Pel·la Hefestió, es troben al seu costat en el moment de la conquesta de l'Àsia.
 00871. La seducció del personatge es deu, sens dubte, a aquesta barreja contradictòria: bàrbar i macedoni, místic i realista, violent i generós, portat per la seva imaginació i el seu somni i guiat per la seva lucidesa
-00872. Ben aviat (340 nbsp;aC), el seu pare el va associar a les feines del govern nomenant-lo regent
-00873. Després de l'assassinat del seu pare l'any 336 nbsp;aC a mans de Pausànias, un capità de la seva guàrdia, Alexandre va heretar el regne quan només tenia vint anys
+00872. Ben aviat (340 aC), el seu pare el va associar a les feines del govern nomenant-lo regent
+00873. Després de l'assassinat del seu pare l'any 336 aC a mans de Pausànias, un capità de la seva guàrdia, Alexandre va heretar el regne quan només tenia vint anys
 00874. Consolidada així l'hegemonia macedònia a Grècia, havia de complir-se la premonició que, segons refereix Plutarc, Filip li va dir certa vegada al seu fill:  Macedònia és massa petita per a tu 
-00875. Dominada tota la Mediterrània oriental, el 331 nbsp;aC tornà cap al nord per presentar la batalla definitiva al gran rei Darios
+00875. Dominada tota la Mediterrània oriental, el 331 aC tornà cap al nord per presentar la batalla definitiva al gran rei Darios
 00876. Quan tot l'imperi persa va caure en les seves mans, Alexandre va adoptar el tipus de cort i la condició d'un príncep oriental, factor que va provocar una violenta oposició entre el grup dels seus generals macedònics, i una conjura contra ell, resolta amb l'execució de Parmeni, un dels seus generals més antics que datava del regnat del seu pare
 00877. Temps després hi va haver una nova conjura contra Alexandre, ideada pels seus patges, la qual tampoc no va assolir el seu objectiu
 00878. El canvi de voluntat d'Alexandre, afalagat per la submissió dels perses i per la seva elevació a personatge de rang diví com a gran rei, el va portar a preferir la continuació de la política tradicional persa en lloc de la seva idea primitiva, i mentre el seu exèrcit i tots els grecs consideraven complert el seu deure de destruir l'enemic ancestral, ell es va decantar per la conquesta de territoris més a l'orient.
 00879. Un dels seus generals més benvolguts, i l'últim de l'exèrcit llegat pel seu pare, va ser Clito el Negre, que va morir en mans del mateix Alexandre una nit de tabola, després de sentir-se ofès per ell.
 00880. Va envair la Bactriana després de l'assassinat de Darios pel sàtrapa d'aquella zona; es va casar amb la princesa Roxana, i va portar el seu exèrcit a travessar l'Hindukush i a dominar la vall de l'Indus, amb la sola resistència del rei Poros d'Hidaspes
 00881. La seva marxa només fou detinguda per la resistència passiva de l'exèrcit, que no volgué anar més enllà de l'Hífasi
-00882. Després de la mort de Spitamenes i el seu matrimoni amb Roxana (Roshanak a Bactriana) per consolidar les seves relacions amb les seves noves satrapies d'Àsia Central Àsia central, el 326 nbsp;aC, Alexandre -finalment- estava alliberat per a girar la seva atenció al subcontinent indi
+00882. Després de la mort de Spitamenes i el seu matrimoni amb Roxana (Roshanak a Bactriana) per consolidar les seves relacions amb les seves noves satrapies d'Àsia Central Àsia central, el 326 aC, Alexandre -finalment- estava alliberat per a girar la seva atenció al subcontinent indi
 00883. Alexandre, personalment, juntament amb la seva guarda personal, companys de peu, arquers, agrianians i soldats a cavall amb javelines, va dirigir-los contra els clans Kamboja (els aspasis de Kunar/les valls d'Alishang, els guraeans de la vall de Guraeus (Panjkora), i els assakenois de les valls de Buner i Swat)
 00884. Les conseqüències de la massacre general i incendis provocats comesos per Alexandre a Massaga i Ora, fou nombrosa gent Assakenian que va fugir a una elevada fortalesa anomenada ''Aornos''
 00885. Escrivint sobre la campanya d'Alexandre contra els assakenois, Victor Hanson comenta:  Després de prometre als assacenis envoltats les seves vides per la capitulació, executava tots els seus soldats que s'havien rendit
@@ -1282,7 +1282,7 @@
 01282. Un '''avió''' (provinent del francès ''avion'', i aquest alhora del llatí ''avis'', ''ocell au'') és una aeronau, més pesant que l'aire, capaç de volar per l'Atmosfera terrestre atmosfera
 01283. El somni de poder volar comença a la prehistòria, on els primers homes ja es preguntaven com volar
 01284. Anys d'investigació per moltes persones que volien aconseguir aquell repte, van ser molt pobres i lents, però continuats
-01285. Aquest enginy ostenta el molt discutit títol de primer aparell més pesant que l'aire capaç d'enlairar-se del terra pels seus propis mitjans (sembla que va recórrer uns 50 Metre m a una altura de 20 nbsp;cm, el 9 d'octubre de 1890), i el de ser la primera màquina denominada '''avió''', ja que així va ser inscrit pel seu constructor en la patent
+01285. Aquest enginy ostenta el molt discutit títol de primer aparell més pesant que l'aire capaç d'enlairar-se del terra pels seus propis mitjans (sembla que va recórrer uns 50 Metre m a una altura de 20 cm, el 9 d'octubre de 1890), i el de ser la primera màquina denominada '''avió''', ja que així va ser inscrit pel seu constructor en la patent
 01286. L'any 1903 van construir la seva primera hèlix segons càlculs originals
 01287. Crítics dels germans Wright afirmen que aquest vol no va tenir testimonis considerables (4 salvavides i un noi), donat l'aïllament en el qual van ser realitzades les proves
 01288. El 1905, els Wright van recórrer 25 milles, volant durant 30 minuts sense tocar terra
@@ -2612,7 +2612,7 @@
 02612. Des del segle XX ha existit un important moviment d'immigració cap a Anglaterra, majoritàriament d'habitants provinents d'altres parts de les Illes Britàniques, però també de països de la Mancomunitat de Nacions, particularment de països del Subcontinent indi.
 02613. Anglaterra comprèn la zona central i sud de les dues terceres parts de l'illa de Gran Bretanya, més altres territoris illencs com l'illa de Wight i les illes Scilly
 02614. Els Penins que són coneguts com l'espina dorsal d'Anglaterra, són la cadena muntanyosa més antiga del país, originades al final del Paleozoic fa aproximadament 300 milions d'anys
-02615. Anglaterra té un clima marítim temperat, és a dir, té temperatures no massa inferiors a 0 nbsp;°C a l'hivern i no gaire més altes de 32 nbsp;°C a l'estiu
+02615. Anglaterra té un clima marítim temperat, és a dir, té temperatures no massa inferiors a 0°C a l'hivern i no gaire més altes de 32°C a l'estiu
 02616. El 1707, amb l'Acta d'Unió (1707) Union Act, que va crear el Regne Unit, Anglaterra va deixar d'existir com a entitat política independent
 02617. No hi ha cap moviment amb suport popular significatiu que promogui la independència d'Anglaterra del Regne Unit, tot i que una part significativa de la població se sent més anglesa que britànica i no posaria impediments a la independència de les altres parts
 02618. Atès que Anglaterra és un dels països constituents del Regne Unit, el sistema polític imperant és una monarquia monarquia constitucional constitucional amb un parlamentarisme govern parlamentari basat en el sistema Westminster
@@ -2883,7 +2883,7 @@
 02883. Per al joc de dobles, el terreny està limitat per les línies exteriors.
 02884. La xarxa ha de ser de malla de corda fina o fibra artificial, necessàriament de color fosc
 02885. La xarxa reglamentària mesura 76 cm d'ample i 6,20 m de llarg
-02886. L'altura de la xarxa és d'1,524 nbsp;metres al centre del terreny de joc, mesurat des del sòl a la vora superior de la cinta blanca de la xarxa
+02886. L'altura de la xarxa és d'1,524 metres al centre del terreny de joc, mesurat des del sòl a la vora superior de la cinta blanca de la xarxa
 02887. Hi ha diverses marques de raquetes al mercat
 02888. El cordam és especial per al Bàdminton, el més fi dels esports de raqueta, i cal tensar-lo entre 5 i 9 kg
 02889. El Volant (bàdminton) volant pesa de 4,75 a 5,5 g
@@ -2990,7 +2990,7 @@
 02990. Dels segles VII a VI aC n'està documentada l'existència de poblats de les tribus laietanes (ibers)
 02991. En sentit estricte doncs, sembla que la ciutat de Barcelona va ser refundada pels romans a finals del segle I aC, sobre el mateix assentament ibèric anterior, on ja s'havien instal·lat des de l'any 218 aC, i la varen convertir en una fortificació militar, anomenada ''Iulia Augusta Paterna Faventia Barcino'', que era situada sobre l'anomenat ''Mons Taber'', una petita elevació on avui es troba el barri de la catedral i la plaça de Sant Jaume
 02992. Diversos pergamins medievals del segle X, parlen d'Ardena, una població a l'actual Avinguda Diagonal, entre les Corts i Sarrià
-02993. Barcelona, a mitjan segle nbsp;XI, va esdevenir un important centre comercial, on confluïa una bona part de la producció agrícola dels voltants per a ser comercialitzada
+02993. Barcelona, a mitjan segle XI, va esdevenir un important centre comercial, on confluïa una bona part de la producció agrícola dels voltants per a ser comercialitzada
 02994. A partir del segle XIV la ciutat inicià una etapa de decadència que es perllongaria durant els segles següents
 02995. El 1888 Barcelona va organitzar la seva primera Exposició Universal de Barcelona de 1888 Exposició Universal, gràcies a la qual urbanitzà una gran extensió de terreny que comprenia des del Parc de la Ciutadella fins a la Barceloneta, i va millorar les infraestructures a tota la ciutat
 02996. Al llarg de la segona meitat del segle XIX, coincidint amb el projecte del 1854 d'enderrocament de les muralles que envoltaven la ciutat, es va procedir a incorporar les altres poblacions del pla de Barcelona
@@ -3428,7 +3428,7 @@
 03428. El seu acord amb el conjunt d'observacions juntament amb l'elegància del concepte fan de la inflació el model més interessant, lluny de qualsevol altre, per les problemàtiques que abasta
 03429. Més enllà de la fase d'inflació, i més generalment a temperatures d'aproximadament la temperatura de Planck, s'entra dins els dominis en què les teories físiques actuals esdevenen no vàlides, car es fa necessari usar la relativitat general, incloent-hi els conceptes de la mecànica quàntica
 03430. Abans de les observacions de l'energia fosca, els cosmòlegs van considerar dos escenaris possibles per a un possible futur de l'univers
-03431. L'univers en creixement es faria cada vegada menys dens, i la mitjana de la temperatura podria apropar-se asimptòticament al zero absolut (0 K o -273,15 nbsp;°C)
+03431. L'univers en creixement es faria cada vegada menys dens, i la mitjana de la temperatura podria apropar-se asimptòticament al zero absolut (0 K o -273,15°C)
 03432. El ''big bang'' és una teoria científica, i com a tal s'ha de mantenir o ha de ser rebutjada d'acord amb les observacions
 03433. El ''big bang'' com a teoria científica no es troba associada amb cap religió
 03434. L'Església Catòlica Romana Església catòlica romana ha acceptat el ''big bang'' com una descripció de l'origen de l'univers
@@ -3767,7 +3767,7 @@
 03767. A la guerra civil va esdevenir lloc de refugi (hospital militar, aeroport) per la seva situació estratègica a la rereguarda de la zona republicana
 03768. Banyoles està situada a l'extrem nord oriental dels Països Catalans i és la capital de la comarca del Pla de l'Estany
 03769. La ciutat de Banyoles està ubicada a la riba oriental de l'Estany que porta el mateix nom, sobre la cota de 175 m sobre el nivell del mar
-03770. El terme municipal de Banyoles és petit, amb una superfície de 10,89 nbsp;km², i queda envoltat pels municipis de Porqueres i Fontcoberta
+03770. El terme municipal de Banyoles és petit, amb una superfície de 10,89 km², i queda envoltat pels municipis de Porqueres i Fontcoberta
 03771. El clima de Banyoles és típicament mediterrani, entre les tendències més acusades de l'atlàntica de la Garrotxa i la més humida del Gironès
 03772. Els vents dominants són els que bufen del nord-oest, predominants durant tot l'any, i del sud-est, més notoris a la primavera i l'estiu i associats a la marinada
 03773. Els elements geogràfics del voltant tenen una importància bàsica en les variacions climàtiques de la ciutat: la serralada de Muntanya de Rocacorba Rocacorba protegeix dels vents humits del sud-oest, la Mare de Déu del Mont empara pel nord-oest i la disposició de la plana comarcal compensa i suavitza el clima
@@ -4010,7 +4010,7 @@
 04010. El 2 de març de 1714, és ascendit al càrrec de ''Konzertmeister'' de la cort, amb la qual cosa la seva tasca es desvia preferentment cap a la música instrumental
 04011. Sis dies després, el 8 de març, neix Carl Philipp Emanuel Bach Carl Philipp Emanuel, futur compositor i segurament el millor i més famós dels fills de Bach.
 04012. A finals de l'any 1716 mor el mestre de capella Samuel Drese
-04013. Frustrat i descontent amb el duc Wilhelm Ernst, el 1717 rep una oferta del príncep Leopold d'Anhalt-Köthen, petit principat situat a uns 100 nbsp;km de Weimar, per tal d'esdevenir mestre de capella de la seva petita cort i Bach l'accepta immediatament
+04013. Frustrat i descontent amb el duc Wilhelm Ernst, el 1717 rep una oferta del príncep Leopold d'Anhalt-Köthen, petit principat situat a uns 100 km de Weimar, per tal d'esdevenir mestre de capella de la seva petita cort i Bach l'accepta immediatament
 04014. En el transcurs d'un viatge a Dresden d'aquell mateix any, es produeix la famosa anècdota del concurs amb el cèlebre organista francès Louis Marchand
 04015. En la seva nova vida al servei del príncep Leopold, Bach crearà importants obres instrumentals, ja que la cort de Köthen era calvinista i la música religiosa hi era prohibida
 04016. Bach restà nou anys al servei del príncep Leopold
@@ -4129,7 +4129,7 @@
 04129. A la comarca de la Llitera el nom utilitzat per a designar els bolets no comestibles és ''pixagós'', i és ''rovelló'' (per la similitud que tenen amb el veritable rovelló) el nom emprat per a tots els ''Lactarius'' comestibles.
 04130. Segons els llocs es parla d'anar a ''caçar'', ''cercar'', ''aplegar'' o ''collir''  bolets.
 04131. Aquest model és el que té més parts de l'estructura encara que algunes espècies poden mancar d'un o d'alguns dels elements descrits a continuació.
-04132. La seva mida varia notablement, des de tenir pocs mil·límetres en algunes espècies fins a assolir en d'altres els 30 nbsp;cm
+04132. La seva mida varia notablement, des de tenir pocs mil·límetres en algunes espècies fins a assolir en d'altres els 30 cm
 04133. Totes aquestes dades poden ser útils per a identificar els bolets.
 04134. Aquestes són les formes principals de capell:
 04135. Els bolets impulsen el sistema de defenses, estimulen l'activitat cerebral i, pel seu alt contingut en iode, revitalitzen l'organisme.
@@ -4161,7 +4161,7 @@
 04161. Si bé en principi l'audiència estatunidenca la va evitar, ''Blade Runner'' va arribar a ser popular internacionalment i la considera una pel·lícula de culte
 04162. L'actor William Sanderson, qui va interpretar a Sebastian, va posar la veu a un personatge similar en la sèrie d'animació ''Batman: The Animated Series''
 04163. Existeixen set versions de ''Blade Runner'', encara que només tres són àmpliament conegudes i vistes: 
-04164. El 1990, Warner Bros va permetre breument reproduir en cinemes una còpia de 70 nbsp;mm de la pel·lícula, anunciant-la com un Director's Cut (Muntatge del Director)
+04164. El 1990, Warner Bros va permetre breument reproduir en cinemes una còpia de 70 mm de la pel·lícula, anunciant-la com un Director's Cut (Muntatge del Director)
 04165. En resposta al descontentament de Scott (i en part a causa del ressorgiment de la popularitat de la pel·lícula a principis dels anys 1990), Warner Bros va decidir editar un definitiu Director's Cut sota la direcció de Scott, que es presentaria en 1992.
 04166. Per això van contractar al restaurador de pel·lícules Michael Arick, que va ser un dels que va redescobrir les edicions originals de ''Blade Runner'' i que ja estava realitzant les consultes per la Warner, per encapçalar el projecte al costat de Scott
 04167. Arick va realitzar diversos canvis a la pel·lícula, la majoria d'ells eren canvis d'edició menors, incloent-hi la reinserció de Deckard trobant l'unicorn d'origami de Gaff al vestíbul a prop del seu apartament, al final de la pel·lícula
@@ -4291,7 +4291,7 @@
 04291. Els límits dins de Rússia són, al nord i a l'oest, amb la província d'Irkutsk i el llac Baikal, al sud-oest amb la república de Tuvà i a l'est amb la província de Txità
 04292. El 80% del territori és muntanyós; al sud-oest s'alcen les muntanyes Saian, que culminen en el Munku Sardik (3.491 m), a la frontera amb Mongòlia
 04293. Els rius principals són el Selengà (''Sëlëngë müren''), Barguzin (''Bargazhan''), Udà, Verkhnaia Angara (afluents del Baikal), Vitim (del Lena) i Irkut, Oka i Kitoi (''Süxë gol'') (del Ienissei)
-04294. La temperatura mitjana anual és de -1,6 nbsp;°C, essent la mitjana d'hivern de -22 nbsp;°C i la mitjana estival de 18 nbsp;°C.
+04294. La temperatura mitjana anual és de -1,6°C, essent la mitjana d'hivern de -22°C i la mitjana estival de 18°C.
 04295. Els recursos naturals buriats són l'or, el tungstè, el zinc, l'urani i d'altres
 04296. Segons el Cens rus (2002), els russos eren gairebé dos terços de la població de la república, mentre que els buriats només eren el 27,8%
 04297. El buriat hi és la llengua oficial juntament amb el rus.
@@ -4314,7 +4314,7 @@
 04314. Un jaciment a la font del Ros a Berga, descobert el 1988, va aportar dades del Paleolític Mitjà i del Superior.
 04315. A partir del neolític, la presència humana està més documentada amb Cultura dels sepulcres de fossa sepulcres de fossa
 04316. L'historiador romà Titus Livi parla de la tribu ibèrica dels bergistans, sotmesa primer per Anníbal (218 aC) i més tard per Marc Porci Cató Censorí Cató (195 aC).
-04317. Sota l'ocupació sarraïna, el Berguedà esdevingué territori de frontera fins a passar a dependre del Comtat de Cerdanya, del qual se separà per esdevenir, breument, Comtat de Berga a principis del segle nbsp;XI
+04317. Sota l'ocupació sarraïna, el Berguedà esdevingué territori de frontera fins a passar a dependre del Comtat de Cerdanya, del qual se separà per esdevenir, breument, Comtat de Berga a principis del segle XI
 04318. Durant els segles següents, el Berguedà coneixerà les epidèmies de pesta dels segles XIV i XV, el bandolerisme del XVI, i la guerra dels segadors al XVII.
 04319. A partir del XVIII, després de la Guerra de Successió, s'esdevé una època de creixement econòmic i demogràfic amb el desenvolupament de la indústria tèxtil, a la qual el Berguedà aporta la seva pròpia màquina de filar, la berguedana o maixerina
 04320. Durant la guerra dels set anys (1833-1840), Berga fou un centre important de la insurrecció carlina; essent seu de la Junta carlina de Catalunya que tingué com a cap  !--sic-- l Comte d'Espanya, famós per les seves arbitrarietats i crueltat, i assassinat en circumstàncies envoltades d'una aurèola llegendària
@@ -4451,7 +4451,7 @@
 04451. L''''energia de dissociació''' d'un enllaç és l'energia necessària per separar un enllaç mitjançant homòlisi o heteròlisi
 04452. Així, la força de l'enllaç ve determinada per l''''energia de dissociació''', D; com major sigui l'energia de dissociació de l'enllaç, major serà la força d'unió entre els dos àtoms que formen l'enllaç.
 04453. La formació d'enllaços covalents pot donar lloc a dos tipus de substàncies amb estructures i propietats completament diferents
-04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550 nbsp;°C; el diòxid de silici (SiO sub 2 /sub ), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700 nbsp;°C; i el Grafit (mineral) grafit.
+04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550°C; el diòxid de silici (SiO sub 2 /sub ), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700°C; i el Grafit (mineral) grafit.
 04455. Les substàncies que presenten ressonància (que també pot ésser anomenada mesomeria) són anomenades híbrids de ressonància o estat mesomèric i, per tal d'expressar-les correctament, s'hauran de representar mitjançant dues o més estructures separades per un signe de doble fletxa (↔)
 04456. Un exemple de molècula que presenta aquesta propietat és l'ozó, O3
 04457. El que succeeix en la realitat, però, és que l'estat real de l'estructura de les molècules que formen la substància en ressonància és un intermedi entre l'estat que representen totes les formes mesòmeres
@@ -4683,7 +4683,7 @@
 04683. Des dels inicis del rodatge d'una pel·lícula fins a la seva conclusió i distribució, hi ha molts aspectes tècnics que cal tenir en compte.
 04684. Dos grans sistemes són possibles: 
 04685. Abans de començar a rodar és imprescindible escollir el suport fotogràfic que enregistrarà les imatges previstes.
-04686. La pel·lícula com a suport físic es presenta en diversos formats: 8 nbsp;mm, 16 nbsp;mm, 35 nbsp;mm i 65 nbsp;mm
+04686. La pel·lícula com a suport físic es presenta en diversos formats: 8 mm, 16 mm, 35 mm i 65 mm
 04687. Com més gran és el fotograma més resolució i qualitat tècnica pot tenir la imatge final.
 04688. Pel que fa a la sensibilitat els graus disponibles varien entre ISO 50 i ISO 800
 04689. Un cop enregistrades les imatges cal processar la pel·lícula en un laboratori cinematogràfic
@@ -4691,7 +4691,7 @@
 04691. Un cas particular és el dels filtres que provoquen l'anomenada  nit americana , que enfosqueixen les imatges rodades de dia de manera que semblen filmades de nit.
 04692. L'equivalent fotogràfic (i, per tant, cinematogràfic) de l'ull humà és l'objectiu de la càmera
 04693. Els objectius amb una distància angular petita (relativa al format de la pel·lícula) s'anomenen  grans angulars  i ofereixen un camp de visió més ample que el de l'ull humà
-04694. Pel que fa a la distància focal, hi ha objectius amb distància focal fixa i objectius amb distància focal variable (que es pot ajustar entre dos valors, inferior o superior; per exemple 35–150 nbsp;mm)
+04694. Pel que fa a la distància focal, hi ha objectius amb distància focal fixa i objectius amb distància focal variable (que es pot ajustar entre dos valors, inferior o superior; per exemple 35–150 mm)
 04695. El diàmetre exterior d'un objectiu, la seva apertura, es relaciona amb la seva capacitat per a captar llum
 04696. Cada objectiu té un diafragma d'apertura que permet limitar el diàmetre efectiu de captació de llum.
 04697. Igual que en fotografia (un film no és res més que una sèrie de fotografies), la distància focal d'un objectiu i l'obertura del diafragma incideixen en la profunditat de camp
@@ -5286,19 +5286,19 @@
 05286. En general la taxa adiabàtica de l'aire, que tendeix a expandir-se i disminuir la seva temperatura amb l'increment de l'altitud, explica la baixada de les temperatures.
 05287. A latituds mitjanes es consideren alta muntanya a partir d'una altitud entre 1.200 i 2000 m
 05288. El clima de muntanya és un tipus de clima de caràcter azonal, és a dir, present en qualsevol latitud en llocs amb una altitud notablement superior al territori que l'envolta.
-05289. A la península Ibèrica es considera a partir de 600 o 800 metres que comença la muntanya mitjana i a partir de 1500 l'alta muntanya encara que el límit on creixen els arbres se situa a uns 2200 nbsp;metres
+05289. A la península Ibèrica es considera a partir de 600 o 800 metres que comença la muntanya mitjana i a partir de 1500 l'alta muntanya encara que el límit on creixen els arbres se situa a uns 2200 metres
 05290. En cadascuna de les zones climàtiques mundials, els règims tèrmics i pluviomètrics del medi muntanyenc són pròxims al de les planes veïnes, però les temperatures són més baixes, i les precipitacions augmenten, com a mínim, fins a una determinada altitud
 05291. La pressió atmosfèrica i la densitat de l'aire disminueixen amb l'altitud seguint una funció Logaritme logarítmica, ja que l'aire tendeix a ser més dens prop de la superfície de la Terra
-05292. El Clima continental és conegut així al clima rigorós on les diferències de temperatures entre l'hivern i estiu són enormes, així mateix amb el dia i la nit, els estius són calents i els hiverns molt Fred (temperatura) freds, sempre hi ha gelades a l'hivern (per assolir temperatures sota 0 nbsp;°C) i en general pluges escasses, aquestes característiques es produeixen per localitzar-se en l'interior dels continents o per regions aïllades per cadenes muntanyes que impedeix la influència marítima.
+05292. El Clima continental és conegut així al clima rigorós on les diferències de temperatures entre l'hivern i estiu són enormes, així mateix amb el dia i la nit, els estius són calents i els hiverns molt Fred (temperatura) freds, sempre hi ha gelades a l'hivern (per assolir temperatures sota 0°C) i en general pluges escasses, aquestes característiques es produeixen per localitzar-se en l'interior dels continents o per regions aïllades per cadenes muntanyes que impedeix la influència marítima.
 05293. El clima continental sempre es passa en territoris fora de la zona de clima intertropical, a les zones nord i al sud del planeta a nivells de latitud mitjana que és la zona anomenada temperada, els vents posseeixen una gran influència d'aquest tipus de clima que porten la seva influència fins a les zones costaneres, en aquest sentit el nom té certa ambigüitat.
 05294. El clima continental també es pot considerar un clima determinat modificat i extremat per l'absència temperat del mar, així a les zones interiors equatorials de Brasil, nord de l'Argentina i el centre d'Àfrica es pot parlar d'un clima continental, però amb característiques tropicals, on el fet diferent són les grans amplituds tèrmiques diàries, encara que seguirien sent tropical
 05295. El clima atlàntic o clima oceànic es caracteritza per unes temperatures suaus i abundants pluges a causa de la proximitat a l'oceà, a les costes occidentals dels continents
 05296. Les característiques de temperatura varien entre els climes oceànics clima subtropical subtropicals des d'un punt de vista tèrmic, però preval més comunament un règim mesotèrmic, amb hiverns frescos però no freds i estius tebis, però no calents
-05297. Entre el clima mediterrani ''Csa'' i l'oceànic ''cfb'', es dóna una transició al ''Csb'', que podria definir-se com oceànic pel fet que les precipitacions són abundants la major part de l'any i la pluviometria anual a vegades supera els 1.000 mm, a més les temperatures són molt suaus, no superant a l'estiu els 22 nbsp;°C de mitjana
-05298. El clima polar es caracteritza per tenir gairebé de manera permanent temperatures per sota de 0 °C
+05297. Entre el clima mediterrani ''Csa'' i l'oceànic ''cfb'', es dóna una transició al ''Csb'', que podria definir-se com oceànic pel fet que les precipitacions són abundants la major part de l'any i la pluviometria anual a vegades supera els 1.000 mm, a més les temperatures són molt suaus, no superant a l'estiu els 22°C de mitjana
+05298. El clima polar es caracteritza per tenir gairebé de manera permanent temperatures per sota de 0°C
 05299. El clima polar es dóna principalment als dos pols terrestres, el de l'hemisferi nord, al nord del cercle polar àrtic, i el de l'hemisferi sud, al sud del cercle polar antàrtic
 05300. El clima de les zones més altes de les principals serralada serralades del planeta s'assembla molt al polar, podent donar{{què data=desembre de 2014}} en les cimeres de l'Himàlaia, dels Serralada dels Andes Andes o de les muntanyes d'Alaska.
-05301. Els mitjans naturals de la zona freda o mitjans polars es localitzen entre els Cercle Polar Àrtic cercles polars Àrtic i cercle polar antàrtic Antàrtic i els corresponents pol nord pols nord i pol sud sud, entre els 65 nbsp;° i els 90 nbsp;° de latitud nord i sud.
+05301. Els mitjans naturals de la zona freda o mitjans polars es localitzen entre els Cercle Polar Àrtic cercles polars Àrtic i cercle polar antàrtic Antàrtic i els corresponents pol nord pols nord i pol sud sud, entre els 65 ° i els 90 ° de latitud nord i sud.
 05302. La classificació climàtica de Köppen és un dels sistemes de classificació del clima més utilitzats
 05303. El sistema de classificació combina les mitjanes de temperatura i precipitació i l'estacionalitat d'aquesta última
 05304. La classificació de Trewartha és una versió modificada del sistema de Kopp
@@ -5306,7 +5306,7 @@
 05306. Un punt de contenció són els climes secs ''B''; John Griffiths argumenta aquí que la seva separació per Kopp en només dues subcategories termals és inadequada
 05307. Una altra de les objeccions concerneix la Categoria temperada del Grup C, d'estar sobredimensionada (inclou Tampa, Florida Tampa, Florida i Cape May, Nova Jersey, per exemple)
 05308. Una tercera idea és crear un clima  oceànic polar  o  EM , en el grup E per separar les localitats marítimes relativament temperades (com Ushuaia, Argentina i les illes Aleuta) dels climes de tundra continentals més freds
-05309. La precisió dels 10 nbsp;°C en el mes més càlid com a línia d'inici en els climes polars ha estat qüestionada; Otto Nordenskiöld, per exemple, va proposar una fórmula alternativa: ''W'' = 9 - 0.1''C ' ', on ''W'' representa la temperatura mitjana del mes més calorós i ''C'' el mes més fred, tots dos en graus Celsius (per exemple, si la mitjana del mes més fred és -20 °C, i la del mes més càlid d'11 °C o més, caldria evitar catalogar aquest clima de polar)
+05309. La precisió dels 10°C en el mes més càlid com a línia d'inici en els climes polars ha estat qüestionada; Otto Nordenskiöld, per exemple, va proposar una fórmula alternativa: ''W'' = 9 - 0.1''C ' ', on ''W'' representa la temperatura mitjana del mes més calorós i ''C'' el mes més fred, tots dos en graus Celsius (per exemple, si la mitjana del mes més fred és -20°C, i la del mes més càlid d'11°C o més, caldria evitar catalogar aquest clima de polar)
 05310. El clima és un sistema complex i per això el seu comportament és molt difícil de predir
 05311. El '''clima global''' requereix l'estudi d'un altre tipus de paràmetres anomenats '''forçaments externs'''
 05312. Són els següents:
@@ -5335,7 +5335,7 @@
 05335. El nou sistema proposat per Copèrnic té certs avantatges sobre el del seu predecessor
 05336. Copèrnic havia estudiat els escrits dels filòsofs grecs cercant-hi referències al problema del moviment terrestre, especialment els pitagòrics i Aristarc de Samos, el qual establí per primera vegada la teoria heliostàtica.
 05337. Les hipòtesis fonamentals de la Teoria Copernicana són:
-05338. És indubtable que 2.000 nbsp;anys de teoria geocèntrica no van acabar només pel sorgiment aïllat de les teories de Copèrnic: val a dir que hi confluí una necessitat social fruit dels nous aires del Renaixement i del neoplatonisme que es respiraven a l'època.
+05338. És indubtable que 2.000 anys de teoria geocèntrica no van acabar només pel sorgiment aïllat de les teories de Copèrnic: val a dir que hi confluí una necessitat social fruit dels nous aires del Renaixement i del neoplatonisme que es respiraven a l'època.
 05339. El que es coneix com ''Revolució de Copèrnic revolució copernicana'' és la seva formulació de la teoria heliocèntrica, segons la qual, la Terra i els altres planetes (excepte la Lluna, considerada un planeta, en aquella època) giren al voltant del Sol.
 05340. Cal centrar el valor real de la seva obra en el fet de reimposar teories rebutjades pel ''sentit comú'' i de donar-los una estructuració coherent i científica.
 05341. La ruptura bàsica que representava per a la ideologia religiosa medieval la substitució d'un cosmos clos i jerarquitzat, amb l'home com a centre, per un Univers homogeni i infinit, situat al voltant del Sol, féu que Copèrnic dubtés de publicar la seva obra per tal d'evitar problemes més que previsibles amb l'Església Catòlica Església, i no fou fins al 1543 que aparegué la primera edició del ''De Revolutionibus Orbium Coelestium'', com ja s'ha dit, feta a Nuremberg amb la supervisió del seu deixeble Georg Joachim Rheticus.
@@ -5604,7 +5604,7 @@
 05604. A l'interior de l'edifici hi ha el gran tresor del Colosseu: la graderia (o càvea) no aprofita els desnivells del terreny, sinó que s'aixeca sobre moltes voltes superposades, recolzades damunt de pilastres de travertí
 05605. La façana s'erigeix sobre un estilòbat damunt el qual s'aixequen quatre pisos
 05606. A l'interior, als intercolumnis del segon i tercer pis, hi havia estàtua estàtues; als passadissos de la graderia, relleus de marbre i d'estuc.
-05607. El fet que l'edifici es trobés sobre una llacuna va obligar a excavar fins a 14 nbsp;metres de llims inservibles i realitzar una fonamentació de gairebé 13 metres d'''opus cementicium'' (filades d'argamassa de calç i pedres alternades).
+05607. El fet que l'edifici es trobés sobre una llacuna va obligar a excavar fins a 14 metres de llims inservibles i realitzar una fonamentació de gairebé 13 metres d'''opus cementicium'' (filades d'argamassa de calç i pedres alternades).
 05608. El plànol de la sorra tenia un complet sistema de Drenar (hidrologia) drenatge, connectat a quatre imponents claveguerams
 05609. La façana s'articula en quatre Ordre arquitectònic ordres, i les seves altures no es corresponen amb els pisos interiors
 05610. També es feien «silvà», recreacions de Paisatge natural paisatges naturals a la sorra
@@ -5620,7 +5620,7 @@
 05620. La caspa es pot produir per un augment de la secreció de les glàndula sebàcia glàndules sebàcies, o per sequedat de la pell del crani, encara que la causa exacta es desconeix
 05621. Millora amb el rentat freqüent del cabell i amb la utilització de xampús especials receptats pel metge.
 05622. Les '''cobres''' o '''elàpids''' són serps pertanyents a set gènere (biologia) gèneres diferents de la família (biologia) família ''Elapidae''
-05623. Les cobres presenten una mida molt variable, des dels 18 nbsp;cm (''Drysdalia'') fins als sis metres ''(Ophiophagus)'' de longitud
+05623. Les cobres presenten una mida molt variable, des dels 18 cm (''Drysdalia'') fins als sis metres ''(Ophiophagus)'' de longitud
 05624. Viuen a diverses regions de les zones tropicals i subtropicals de tot el món.
 05625. Totes les cobres són verinoses, i moltes són potencialment mortals per a l'home
 05626. Els elàpids utilitzen el seu verí per a atacar a les seves preses i com a mecanisme de defensa
@@ -5779,7 +5779,7 @@
 05779. El barri de '''La Llosa''' està situat a la part oest del municipi i envoltat de diverses urbanitzacions, com el Dorado, la Dorada, Horta de Santa Maria, etc.
 05780. Castellvell ha esdevingut el pulmó de la capital del Baix Camp
 05781. Població principalment agrícola, avui ja són majoria els reusencs establerts al terme de manera permanent que treballen fora en les activitats més diverses
-05782. El poble es troba a 36 nbsp;quilòmetres de Reus i el seu aeroport, i a 140 de Barcelona
+05782. El poble es troba a 36 quilòmetres de Reus i el seu aeroport, i a 140 de Barcelona
 05783. El clima és típic de muntanya mediterrània.
 05784. L'Santa Maria de Capafonts església parroquial és dedicada a Santa Maria
 05785. Als afores s'hi troba l'ermita de la Mare de Déu de Barrulles que fou construïda el segle XII
@@ -6138,7 +6138,7 @@
 06138. L'estat d'oxidació més habitual dels calcògens és -2 en els calcogènids, tot i que també poden tenir valors de -1
 06139. Sembla doncs més prudent parlar de comunitats i no referir-se a biocenosi a l'hora d'atribuir a un conjunt d'espècies un nom que les agrupi segons la seva nínxol ecològic estratègia ecològica, puix que molts cops aquests diferents grups tenen una certa interdependència.
 06140. Els '''camèfits''' són un tipus biològic de les formes vitals de Raunkjaer.
-06141. Són els vegetals que les seves parts aèries són persistents tot l'any però que tenen les seves Gemma_(botànica) gemmes persistents a un nivell de terra inferior als 25-50 nbsp;cm.
+06141. Són els vegetals que les seves parts aèries són persistents tot l'any però que tenen les seves Gemma_(botànica) gemmes persistents a un nivell de terra inferior als 25-50 cm.
 06142. Són plantes de gran resistència, ja que combinen els avantatges de les formes vitals de més petites i grans dimensions
 06143. Subdivisió:
 06144. La Salvia officinalis sàlvia comuna, la farigola, la lavanda i el llistó són exemples de camèfits.
@@ -6218,7 +6218,7 @@
 06218. El coure natiu sol acompanyar als seus minerals en bosses que afloren a la superfície i que s'exploten en mines a cel obert
 06219. La '''producció''' del coure comença amb l'extracció del mineral
 06220. Les etapes fonamentals d’aquest procés són: '''1) concentració o flotació 2) Filtrat 3) Fusió 4) Conversió 5) Refinament'''
-06221. Altres components obtinguts en aquest procés nbsp;són el ferro (Fe) i el sofre (S), també quantitats molt petites nbsp;d'altres metalls com la plata (Ag) i l’or (Au)
+06221. Altres components obtinguts en aquest procés són el ferro (Fe) i el sofre (S), també quantitats molt petites d'altres metalls com la plata (Ag) i l’or (Au)
 06222. Com a regla general una instal·lació metal·lúrgica de coure que produeixi 300.000 t/any d’ànodes, consumeix 1.000.000 t/any de concentrat de coure i com a subproductes produeix unes 900.000 t/ant d’àcid sulfúric i 300.000 t/any d’escòries.
 06223. Els processos fonamentals en què es basa aquesta tècnica és la lixiviació amb àcid sulfúric, posteriorment aplicant una precipitació selectiva i una electròlisi s’aconsegueix obtenir el coure purificat.
 06224. Els tipus de coure usualment obtinguts són els següents:
@@ -6367,11 +6367,11 @@
 06367. Des de llavors, va anar tornant a Barcelona en diverses ocasions, i el 1963 hi passa uns mesos, que aprofita per adquirir un terreny al carrer de Cristòfol Colom, núm
 06368. Del 1980 al 1991 va preparar el ''Diccionari etimològic i complementari de la llengua catalana''
 06369. Se n'instal·là la capella ardent al Saló de Sant Jordi del Palau de la Generalitat de Catalunya Palau de la Generalitat i fou enterrat al cementiri de Montjuïc (Barcelona).
-06370. El lingüista nbsp;Joan Coromines va formar-se al llarg de la seva vida entre les ciutats de Barcelona, Montpeller, Madrid, Zuric, Ginebra i París
+06370. El lingüista Joan Coromines va formar-se al llarg de la seva vida entre les ciutats de Barcelona, Montpeller, Madrid, Zuric, Ginebra i París
 06371. Coromines va mantenir posicions profundament catalanisme catalanistes, va rebutjar una càtedra a Madrid, el nomenament per a ésser membre de la Real Academia Española i diversos premis del govern espanyol (com la Gran Creu d'Alfons X) a causa del tractament que rebia la llengua catalana a Espanya.
 06372. El cedulari general és un fitxer de 36 calaixos amb un milió de cèdules, ordenades alfabèticament, amb la informació obtinguda a les enquestes orals i el buidatge sistemàtic de publicacions i documents manuscrits
 06373. Després d'un recorregut per tots els continents, que el salvà de la Guerra Civil Espanyola Guerra Civil i de la Segona Guerra Mundial, es conserva a la Fundació Pere Coromines de Sant Pol de Mar.
-06374. El 1926, Joan Coromines va escriure una carta a Celestina Vigneaux, la seva mare, nbsp;de París estant, on explica la seva visita a la ciutat, explicant-li la seva primera impressió d'aquesta.
+06374. El 1926, Joan Coromines va escriure una carta a Celestina Vigneaux, la seva mare, de París estant, on explica la seva visita a la ciutat, explicant-li la seva primera impressió d'aquesta.
 06375. El novembre de '''1928''' Joan Coromines, explicava als seus pares les seves vivències per la ciutat suïssa de Zuric.
 06376. El març de '''1929''', Joan Coromines enviava una carta als seus pares, on encara parla del fred polar de Zuric, i de la seva visita al poble propenc de Stäfa.
 06377. A l'abril de '''1929''' va escriure una altra carta als seus pares, Pere Coromines i Celestina Vigneaux, des de Ginebra
@@ -6506,7 +6506,7 @@
 06506. La cerca per un terme que defineixi la  comunicació  com una paraula estàtica o una disciplina unificada pot no ser tan important com entendre la comunicació com un conjunt de semblances amb una àmplia pluralitat de definicions tal com estableix Dll Wittgenstein.
 06507. Els estudis sobre la comunicació es van intensificar després de la II Guerra Mundial a causa del gran interès per trobar possibilitats de control social aportat pels mecanismes comunicatius
 06508. El '''Canigó''' és una muntanya del Pirineu, situada entre les comarques Catalunya Nord nord-catalanes del Conflent, el Rosselló i el Vallespir
-06509. El cim, la pica del Canigó o Pic de Balaig, fa 2.784 nbsp;msnm
+06509. El cim, la pica del Canigó o Pic de Balaig, fa 2.784 msnm
 06510. Situat a prop de Prada de Conflent Prada, al límit de Taurinyà i de Vernet, domina tota la plana de la Tet i Perpinyà
 06511. El cim del Canigó, termenal dels municipis de Castell de Vernet Castell, Taurinyà, Vallmanya i Vernet, al Conflent, es troba enmig d'una serralada de tres cims amb la Pica Joffre (2.362 m) al nord i el Puig dels Tres Vents (2.731 m) al sud.
 06512. Una creu de forja corona el cim, erigida durant la Segona Guerra mundial pels Escoltisme escoltes de l'agrupament de Nostra Dama la Reial de Perpinyà (1923)
@@ -6621,7 +6621,7 @@
 06621. La història de Catalunya, tant al nord com al sud dels Pirineus es pot dividir en les següents etapes:
 06622. La sentència de l'estatut de 2010, entre d'altres, va revifar el sentiment independentista i va ser el detonant per activar un procés independentista català, que va celebrar manifestacions multitudinàries el Manifestació «Som una nació
 06623. Catalunya té una superfície aproximada de 32.000 km²
-06624. Els Pirineus catalans representen gairebé la meitat, en longitud, de tot el Pirineu, ja que s'estén per més de 200 nbsp;km
+06624. Els Pirineus catalans representen gairebé la meitat, en longitud, de tot el Pirineu, ja que s'estén per més de 200 km
 06625. La Depressió Central Catalana és una plana situada entre els Pirineus i la Serralada Prelitoral
 06626. Gairebé la totalitat de Catalunya pertany a la conca mediterrània
 06627. Els climes de Catalunya:{{legend #00A86B Clima atlàntic}}{{legend #9966CC Clima alpí}}{{legend #77B5FE Clima mediterrani de muntanya alta}}{{legend #FFE5B4 Clima mediterrani de muntanya mitjana}}{{legend #FF7F00 Clima mediterrani litoral}}{{legend #FF8C69 	 Clima mediterrani continentalitzat }} esquerra
@@ -6657,14 +6657,14 @@
 06657. A part, el litoral català té una gran quantitat de ports, tant de pescadors com d'esportius.
 06658. A Catalunya hi ha 12.000 quilòmetres de vies per al trànsit d'automòbils, tot i que 10.843 d'aquests quilòmetres corresponen a carreteres de calçada única
 06659. L'estructura de les autopistes està centralitzada cap a Barcelona
-06660. Catalunya va ser el primer territori de la península en tenir ferrocarril, el 28 d'octubre de 1848, quan es va inaugurar la línia entre Barcelona i Mataró, d'una distància de 28,4 nbsp;km
+06660. Catalunya va ser el primer territori de la península en tenir ferrocarril, el 28 d'octubre de 1848, quan es va inaugurar la línia entre Barcelona i Mataró, d'una distància de 28,4 km
 06661. Actualment, tot i que s'han modernitzat els trens, la xarxa viària segueix sent pràcticament la mateixa que fa cent anys, amb una estructura molt centralitzada cap a Barcelona
 06662. Les propietàries de les línies ferroviàries de Catalunya són l'ADIF i els Ferrocarrils de la Generalitat de Catalunya
 06663. Durant els primers mesos del 2008, va entrar en servei la línia d'Tren d'Alta Velocitat alta velocitat (Alta Velocidad Española AVE) a l'Estació de Sants, amb tres línies de servei: Barcelona - Madrid, Barcelona - Sevilla i Barcelona - Màlaga
 06664. D'altra banda, el govern de la Generalitat de Catalunya va anunciar el desembre del 2005 un pla per a construir 1.100 quilòmetres de noves línies, 300 en vies convencionals i 800 en vies d'alta velocitat, que uniran les principals ciutats catalanes de forma transversal
 06665. L'única xarxa de metro de Catalunya és el Metro de Barcelona que comunica entre si les ciutats de Barcelona, l'Hospitalet de Llobregat, Cornellà de Llobregat, Santa Coloma de Gramenet, Badalona, Sant Boi de Llobregat i Montcada i Reixac
 06666. Pel que fa a la xarxa catalana d'autobusos, Catalunya té més de 300 línies d'autobús urbà i interurbà, segons dades de la Generalitat del 2010
-06667. Al voltant de 2,5 milions de persones viuen en un radi (Geometria) radi de 25 nbsp;km des de la capital
+06667. Al voltant de 2,5 milions de persones viuen en un radi (Geometria) radi de 25 km des de la capital
 06668. Catalunya ha rebut diverses onades d'immigrants al llarg del segle XX
 06669. A Catalunya es parlen els dos blocs principals de la llengua catalana
 06670. El castellà que es parla a Catalunya té trets dispars, sense mostrar un dialecte específic
@@ -6907,8 +6907,8 @@
 06907. Hi ha tres possibles casos en funció del valor de '''b'''² '''- 4ac''':
 06908. En aquest cas: 
 06909. La recta tangent a una circumferència en un punt ''P'' és perpendicular al diàmetre que passa per ''P''
-06910. Per tant, el pendent (matemàtiques) pendent d'una circumferència a (''x'' sub 1 /sub , nbsp;''y'' sub 1 /sub ) ve donat per:
-06911. De forma més general, el pendent en un punt (''x'', nbsp;''y'') a la circumferència  math (x-a)^2 +(y-b)^2 = r^2 /math , és a dir, la circumferència centrada a (''a'', nbsp;''b'') amb radi ''r'', ve donat per
+06910. Per tant, el pendent (matemàtiques) pendent d'una circumferència a (''x'' sub 1 /sub , ''y'' sub 1 /sub ) ve donat per:
+06911. De forma més general, el pendent en un punt (''x'', ''y'') a la circumferència  math (x-a)^2 +(y-b)^2 = r^2 /math , és a dir, la circumferència centrada a (''a'', ''b'') amb radi ''r'', ve donat per
 06912. L'àrea del cercle delimitat per una circumferència és:
 06913. Un angle inscrit (en els exemples de la figura són els angles blau i verd) és exactament la meitat de l'angle central corresponent (vermell)
 06914. Si ''M'' és un punt i  math \Gamma /math  és una circumferència de centre ''O'' i de radi ''R'', llavors, per tota recta que passa per ''M'' i talla el cercle a ''A'' i ''B'', es té
@@ -7273,7 +7273,7 @@
 07273. També es coneix com a dia la part d'aquest que va des de l'ortus eixida del Sol i el seu ocàs
 07274. La refracció per l'Atmosfera terrestre atmosfera dels rajos lluminosos del Sol motiva que vegem llum quan el Sol no ha eixit encara: aurora, alba o crepuscle matutí
 07275. El dia dura 2H i la nit 24-2H
-07276. La duració del dia i la nit va canviant en el transcurs de l'any sent la duració del dia de 12 nbsp;h (en totes les latituds) en els equinoccis més de 12 hores a la primavera i estiu, aconseguint el dia més llarg en el solstici d'estiu, on també ocorre la nit més curta
+07276. La duració del dia i la nit va canviant en el transcurs de l'any sent la duració del dia de 12 h (en totes les latituds) en els equinoccis més de 12 hores a la primavera i estiu, aconseguint el dia més llarg en el solstici d'estiu, on també ocorre la nit més curta
 07277. Aquest efecte s'accentua més com major és la latitud
 07278. A causa de la Reforma Protestant, però, molts països d'Europa Occidental no varen, inicialment, seguir la reforma gregoriana, i van mantenir el seu vell sistema
 07279. El dia és en aquest calendari la unitat fonamental de temps del calendari gregorià
@@ -7289,10 +7289,10 @@
 07289. Es diu que se les pot observar amb facilitat a la Nit de Sant Joan, però normalment només se les pot observar d’amagat, com espiant un misteri, en nits de lluna plena.
 07290. Al poema El Canigó, de Jacint Verdaguer i Santaló Jacint Verdaguer, hi ha nombroses referències a una dona d’aigua, de nom Flordeneu, que enamora al cavaller Gentil, nebot del compte Guifré el Pilós Guifré
 07291. El '''Danubi''' és un riu de l'Europa Central Europa central, el segon en longitud després del Volga
-07292. La conca hidrogràfica del Danubi té una superfície d'uns 801.463 nbsp;km² i abasta nombrosos països de l'Europa central i oriental
+07292. La conca hidrogràfica del Danubi té una superfície d'uns 801.463 km² i abasta nombrosos països de l'Europa central i oriental
 07293. Històricament, el Danubi va ser una de les fronteres de l'Imperi Romà Imperi romà
-07294. El Danubi és l'únic dels grans rius d'Europa que va cap a l'est, recorrent 2.852 nbsp;km fins a finalitzar el seu curs a la mar Negra, formant el delta del Danubi (4.300 nbsp;km²) a Romania i Ucraïna
-07295. És navegable per vaixells transoceànics fins a Braila (Romania) i per embarcacions fluvials fins a Ulm (Alemanya), a una distància d'uns 2.575 nbsp;km; aproximadament, 60 dels seus 300 afluents són navegables
+07294. El Danubi és l'únic dels grans rius d'Europa que va cap a l'est, recorrent 2.852 km fins a finalitzar el seu curs a la mar Negra, formant el delta del Danubi (4.300 km²) a Romania i Ucraïna
+07295. És navegable per vaixells transoceànics fins a Braila (Romania) i per embarcacions fluvials fins a Ulm (Alemanya), a una distància d'uns 2.575 km; aproximadament, 60 dels seus 300 afluents són navegables
 07296. El Danubi passa per ciutats importants com:
 07297. És una via molt important per a l'Europa central i oriental, encara que el seu trànsit és, en el context europeu, d'una menor importància relativa en comparació a la del Rin
 07298. L'agricultura dels països danubians és, en general, extensiva, basada en l'explotació de propietats mitjanes i grans, en gran part col·lectivitzacions a partir de la Segona Guerra Mundial Segona Guerra mundial, sobretot en els països socialistes sota la influència soviètica
@@ -7417,7 +7417,7 @@
 07417. Händel utilitzava un diapasó de 422,5 Hz.
 07418. Es va establir el diapasó normalitzador agafant com a referència el diapasó  da capella 
 07419. Tot i els intents dels segles anteriors, no va ser fins al segle XIX que hi va haver els primers intents seriosos de normalització científica:
-07420. Finalment, el 1969 es van celebrar 3 reunions, a Salzburg, Florència i Toledo i es va fixar el diapasó normal a 440Hz a 20 nbsp;°C.
+07420. Finalment, el 1969 es van celebrar 3 reunions, a Salzburg, Florència i Toledo i es va fixar el diapasó normal a 440Hz a 20°C.
 07421. Una '''drusa''' és una formació mineral en la qual els cristalls d'un o més tipus de minerals s'organitzen al voltant d'un nucli que sol ser un altre cristall.
 07422. Els minerals comuns que es presenten sovint en forma de drusa són la pirita, el quars, l'ortoclasa i la fluorita.
 07423. Representa l'oclusiva alveolar sonora /d/ en la majoria de casos, el so /δ/ entre vocals i el so /t/ de l'alfabet fonètic internacional a final de síl·laba sempre que no segueixi una altra consonant sonora.
@@ -7479,7 +7479,7 @@
 07479. Segons la tradició cristiana, un cop mort Jesús el dia abans de l'inici de la celebració anual del Péssah o Pasqua jueva, durant el dia de repòs, el dissabte, Jesús davalla als inferns o al Infern Sheol, on hi havia tots els morts des de l'inici del món a l'espera de la resurrecció de Crist
 07480. En l'Església Catòlica Romana Església Catòlica, és un dia en què no hi ha sagraments, no es celebra l'Eucaristia (llevat de la Vetlla Pasqual a la nit) i l'única acció litúrgica a les esglésies permesa és la pregària de la Litúrgia de les hores Litúrgia de les Hores.
 07481. Dinamarca és una monarquia constitucional amb un parlamentarisme sistema parlamentari de govern
-07482. El punt més septentrional és la punta de Grenen al nord de Skagen (57° nbsp;45′ nbsp;7″ nbsp;N), i el més meridional és l'extrem sud de l'illa Falster (''Gedser Odde''), al sud de la vila de Gedser (54° nbsp;33′ nbsp;35″ nbsp;S)
+07482. El punt més septentrional és la punta de Grenen al nord de Skagen (57° 45′ 7″ N), i el més meridional és l'extrem sud de l'illa Falster (''Gedser Odde''), al sud de la vila de Gedser (54° 33′ 35″ S)
 07483. Dinamarca forma part de la gran plana bàltica que comprèn també la plana sueca i la plana alemanya, que en els Període glacial períodes glacials fou recoberta pel glaç
 07484. El punt natural més alt és el turó de Møllehøj amb 170,86 metres, situat al municipi de Skanderborg, el segueixen en importància el Yding Skovhøj amb 170,77 metres, al municipi de Horsens, i l'Ejer Bavnehøj amb 170,35 metres, també al municipi de Skanderborg
 07485. A la meitat occidental de Jutlàndia el sòl és constituït per sorra i còdols que portà l'aigua procedent de la fosa del glaç, i és una regió poc fèrtil; és coberta de landa (vegetació) landes i únicament és utilitzada per a la cria de bestiar
@@ -7874,7 +7874,7 @@
 07874. La inferència estadística té per objectiu induir les propietats d'una població a partir dels resultats obtinguts amb una mostra.
 07875. Es recolza en els resultats de l'estadística matemàtica, que aplica càlculs matemàtics rigorosos basats en la teoria de la probabilitats i en la teoria de la informació a les situacions on no s'observen més que algunes mostres (experiments) del fenomen a estudiar.
 07876. Sense l'estadística matemàtica, un càlcul sobre les dades (per exemple una mitjana), no és més que un indicador
-07877. També es poden emetre hipòtesis sobre la llei que genera el fenomen general, per exemple «la talla dels nens de 10 nbsp;anys als Països Catalans segueix una distribució normal ?»
+07877. També es poden emetre hipòtesis sobre la llei que genera el fenomen general, per exemple «la talla dels nens de 10 anys als Països Catalans segueix una distribució normal ?»
 07878. Finalment, es pot intentar modelitzar un fenomen a posteriori
 07879. Un model és abans de tot un mitjà de connectar les '''variables a explicar''' ''Y'' amb les '''variables explicatives''' ''X'', per una relació funcional:
 07880. Els models estadístics es poden ser classificar en grans famílies (segons la forma de la funció F):
@@ -7947,7 +7947,7 @@
 07947. Alçada de la línia de servei - 1,83m 
 07948. Alçada del Tin - 0,48m 
 07949. Caixa de servei - 1,60 * 1,60 m
-07950. Ample de les línies 5 nbsp;cm 
+07950. Ample de les línies 5 cm 
 07951. L'empunyadura de l'esquaix és molt diferent a la del pàdel i del tennis, s'agafa la raqueta per sota del mànec i es posa una mica diagonal, és a dir com l'empunyadura de martell, però més girada.
 07952. Swing: El swing és la posició bàsica de l'esquaix es basa a estirar el cos i tocar la pilota amb la raqueta correctament, per practicar aquest moviment s'acostumen a fer fintes que és com una simulació d'un cop a la pilota, però sense cap pilota, això es fa per tal que l'entrenador pugui veure els errors que fas en el cop, o auto avaluar tu mateix com el fas, tot i que en moltes ocasions es fan per escalfar abans d'un partit.
 07953. Tot i que l'esquaix és un esport minoritari a Catalunya hi ha diversos llocs on practicar l'esquaix com per exemple el club natació Lleida, el Can Mèlich (Badalona) o el Malibú (Barcelona).
@@ -8611,7 +8611,7 @@
 08611. En holandès  Gezondheit!  (salut).
 08612. Els hindús els relacionen amb la possessió demoníaca; L'esperit maligne que s'havia emparat d'algú, és llançat fora amb l'esternut
 08613. Les raons que empenyen a les persones a emigrar dels seus països acostumen a ser complexes i diverses i es distingeixen de les causes immediates que precipiten la decisió de deixar el país
-08614. L{{'}}'''Ebre''' (en castellà, basc i aragonès ''Ebro'', en llatí ''Hiberus Flumen'', en àrab أبرة nbsp;''Ibruh'') és el segon riu més cabalós de la península Ibèrica després del Duero, i l'únic gran riu peninsular que aboca a la Mediterrània
+08614. L{{'}}'''Ebre''' (en castellà, basc i aragonès ''Ebro'', en llatí ''Hiberus Flumen'', en àrab أبرة ''Ibruh'') és el segon riu més cabalós de la península Ibèrica després del Duero, i l'únic gran riu peninsular que aboca a la Mediterrània
 08615. Partint de la teoria etimològica del mot, tant sigui la relacionada amb els ibers com amb els grecs, el que és clar és que amb l'arribada dels romans l'Ebre s'anomenà en llatí ''Hiberus Flumen''
 08616. Tradicionalment, s'establia a la deu de Fontibre (del llatí ''Fontas Iberi'', 'fonts de l'Ebre'), a Cantàbria, a 880 m d'altitud
 08617. Entre d'altres, l'Ebre passa per Reinosa, Miranda de Ebro, Haro, Logronyo, Calahorra, Alfaro, Tudela, Alagó, Saragossa, Casp, Mequinensa, Faió, Riba-roja d'Ebre, Flix, Ascó, Móra d'Ebre, Tivenys, Xerta, Aldover, Tortosa, Amposta, Sant Jaume d'Enveja i Deltebre.
@@ -8987,7 +8987,7 @@
 08987. L'energia potencial es defineix com el treball fet per un objecte contra una força donada en canviar de posició.
 08988. L'energia potencial elàstica s'expressa per:
 08989. L'energia cinètica, simbolitzada per exemple amb ''E'' sub k /sub , ''T'' o ''K'', és l'energia que té un cos pel fet d'estar accelerat o desaccelerat
-08990. La Gravetat força gravitatòria és igual a la massa, ''m'', multiplicada per l'acceleració de la gravetat ''g'' nbsp;= 9.81 nbsp;m/s²
+08990. La Gravetat força gravitatòria és igual a la massa, ''m'', multiplicada per l'acceleració de la gravetat ''g'' = 9.81 m/s²
 08991. En un gran nombre de situacions, és possible utilitzar l'energia alliberada per un sistema per a elevar la temperatura d'un altre objecte, per exemple, l'aigua que escalfa un escalfador
 08992. Si un corrent elèctric passa a través d'una Resistència elèctrica (propietat) resistència, part de l'energia del corrent elèctric es converteix en calor
 08993. L''''energia radiant''' és l''''energia''' de les Radiació electromagnètica ones electromagnètiques continguda en la llum visible i altres formes de radiació, com els raigs X
@@ -9154,7 +9154,7 @@
 09154. A més, altres problemes són:
 09155. L'element clau d'aquest treball és l'energia del vent o eòlica, utilitzada durant moltes etapes de la humanitat, primer amb la invenció de la vela, els tradicionals molins per moldre gra i finalment els aerogeneradors productors d'electricitat
 09156. Segons el grup d'escolars, l'hidrogen que s'obté és net, ja que durant el procés d'obtenció no s'emet cap tipus d'agent contaminant a l'atmosfera i en la posterior utilització del combustible tampoc perquè l'únic residu que allibera l'hidrogen és vapor d'aigua.
-09157. Les energies renovables es consideren com a  energia alternativa energies alternatives  comparades amb el model energètic tradicional, tant per la seva disponibilitat (present i futura) garantida (a diferència dels combustible fòssil combustibles fòssils que necessiten milers d'anys per a la seva formació) com pel seu menor impacte ambiental; tanmateix, en alguns casos aquest impacte pot ser molt gran, com el causat per l' embassament de les Tres Gorges , finalitzat recentment a la República Popular de la Xina Xina i que va propiciar el desplaçament de milions de persones i la inundació de molts nbsp;km sup 2 /sup  de terres.
+09157. Les energies renovables es consideren com a  energia alternativa energies alternatives  comparades amb el model energètic tradicional, tant per la seva disponibilitat (present i futura) garantida (a diferència dels combustible fòssil combustibles fòssils que necessiten milers d'anys per a la seva formació) com pel seu menor impacte ambiental; tanmateix, en alguns casos aquest impacte pot ser molt gran, com el causat per l' embassament de les Tres Gorges , finalitzat recentment a la República Popular de la Xina Xina i que va propiciar el desplaçament de milions de persones i la inundació de molts km sup 2 /sup  de terres.
 09158. L'any 2006, vora el 18% de l'energia consumida al món tenia el seu origen a una font renovable, el 13% provenia de la biomassa com la llenya
 09159. Les energies renovables han constituït una part important de l'energia utilitzada pels humans des de temps remots, especialment la mecànica (animal o humana: a la construcció, navegació, agricultura, transport humà i de mercaderies, etc.), l'eòlica (molí de vent molins de vent, navegació) i la hidràulica (molins)
 09160. A partir de la Revolució Industrial, amb l'aplicació industrial de la màquina de vapor, i més endavant encara més amb la tecnologia dels motors de combustió per als transports de persones i de mercaderies, es van abandonant parcialment aquestes formes d'aprofitament
@@ -9164,7 +9164,7 @@
 09164. El vent s'ha fet servir des d'antic per moure les aspes dels molí de vent molins, i actualment s'utilitza a més per a moure aerogeneradors, que no són més que molins que mouen una turbina d'eix horitzontal, connectada a un generador que produeix energia elèctrica
 09165. El Sol té una potència de l'ordre de 4·10 sup 26 /sup  Watts
 09166. Hom la recull amb panell solar panells solars o amb col·lector solar col·lectors solars per a transformar-la en energia tèrmica (energia solar tèrmica) o en energia elèctrica (energia solar termoelèctrica i energia solar fotovoltaica, l'obtinguda amb panell fotovoltaic panells fotovoltaics)
-09167. La calor de l'interior de la Terra (5.000 nbsp;°C) es deu a diversos factors, entre els quals destaquen el gradient geotèrmic i la calor radiogènica
+09167. La calor de l'interior de la Terra (5.000°C) es deu a diversos factors, entre els quals destaquen el gradient geotèrmic i la calor radiogènica
 09168. En algunes zones del planeta, a prop de la superfície, les aigües subterrànies poden assolir temperatures d'ebullició, i, per tant, servir per escalfar.
 09169. La diferència principal entre la biomassa i els combustibles fòssils (restes de plantes mortes que, en haver perdut una gran part d'aigua i aire, tenen aquesta energia molt més concentrada) és que els segons triguen milers d'anys a formar-se a la natura
 09170. L'eventual confusió del públic general a la classificació dels agrocombustibles pot provenir del fet que de vegades alguns sectors i empreses interessats en la promoció d'aquest negoci desenvolupen la promoció del màrqueting segons la qual s'anomenen renovables sense ser-ho i, fins i tot,  bio , sense ser tampoc productes d'una agricultura biològica ni èticament sostenible.
@@ -9563,7 +9563,7 @@
 09563. Per la seva ruptura amb l'Església Catòlica Romana, Enric VIII va iniciar l'escenari de grans invasions espanyoles o franceses
 09564. Esment a part mereix -sens dubte- el fet que un monarca amb el pragmatisme polític i fins a la crueltat d'Enric VIII hagi donat a la música un lloc preponderant en la seva cort
 09565. L’'''edat mitjana''' o '''edat medieval''' és el període intermedi de la història d'Europa enmig de l'edat antiga i l'edat moderna
-09566. L'edat mitjana s'acostuma a dividir en dos grans períodes: alta edat mitjana (segle V a segle X, sense una clara diferenciació amb l'antiguitat tardana); i baixa edat mitjana (segle nbsp;XI a segle XV), que al seu torn pot dividir-se en un període de plenitud, la plena edat mitjana (segle XI a segle XIII), i els dos últims segles (edat mitjana tardana) que van presenciar la crisi de l'edat mitjana (segle XIV i XV)
+09566. L'edat mitjana s'acostuma a dividir en dos grans períodes: alta edat mitjana (segle V a segle X, sense una clara diferenciació amb l'antiguitat tardana); i baixa edat mitjana (segle XI a segle XV), que al seu torn pot dividir-se en un període de plenitud, la plena edat mitjana (segle XI a segle XIII), i els dos últims segles (edat mitjana tardana) que van presenciar la crisi de l'edat mitjana (segle XIV i XV)
 09567. L'alta edat mitjana es caracteritzà per la ruralització i la davallada comercial i cultural de l'Occident europeu
 09568. La baixa edat mitjana es caracteritzà, a partir del segle XI, per un canvi de tendència: l'agricultura de l'Occident europeu començà a generar excedents comercialitzables i es produí un desenvolupament de les ciutats impulsat per una intensa activitat comercial
 09569. Fins a la Revolució Industrial, la població europea visqué en un precari equilibri amb els recursos alimentaris; així, qualsevol augment demografia demogràfic que no es correspongués amb un increment de les possibilitats agràries derivava en una vulnerable davant de qualsevol atac epidèmia epidèmic
@@ -9599,7 +9599,7 @@
 09599. Tres segles després de la caiguda de l'imperi Romà d'Occident Imperi romà d'Occident, el món grecoromà havia estat abolit de l'Occident europeu
 09600. Fins i tot Carlemany tenia previst repartir, l'any 806, l'imperi entre els seus tres fills
 09601. En la gestació d'aquest model convergiren diversos factors determinants:
-09602. L'Occident europeu tenia, als segles VI i VII, una densitat de població estimada de 5 a 6 habitants per nbsp;km² a la Gàl·lia i a Hispània, un poc més al nord d'Itàlia, i només de 2,3 a la Germània (regió) Germània
+09602. L'Occident europeu tenia, als segles VI i VII, una densitat de població estimada de 5 a 6 habitants per km² a la Gàl·lia i a Hispània, un poc més al nord d'Itàlia, i només de 2,3 a la Germània (regió) Germània
 09603. Per tant, l'agricultura era devoradora d'espai, extensiva, seminòmada i dedicada a l'autosuficiència, inclosa la manufacturera
 09604. El retorn a l'estructura comercial i urbana de l'Imperi Romà Imperi romà esdevingué impossible
 09605. Els intercanvis comercials, entre els segles VI a X, disminuïren a Occident i a les terres interiors fou estrany l'ús de monedes en les transaccions mercantils
@@ -9648,7 +9648,7 @@
 09648. És parlat pels evenkis de Rússia, Mongòlia, i la República Popular de la Xina
 09649. La seva parla es caracteritza per:
 09650. Es va desenvolupar a l'antiga URSS, i entre els més destacats hi ha A
-09651. Té una població de més de 5 milions d'habitants i una àrea d'aproximadament 49.000 nbsp;km²
+09651. Té una població de més de 5 milions d'habitants i una àrea d'aproximadament 49.000 km²
 09652. La Datació basada en el carboni-14 datació amb carboni-14 situa les troballes arqueològiques més antigues d'Eslovàquia -trobades a la vora de Nové Mesto nad Váhom– a l'any 270000 aC, a l'era del paleolític inferior
 09653. Altres eines de pedra del paleolític mitjà (200000-80000 aC) provenen de la cova de Prévôt, prop de Bojnice, així com d'altres jaciments propers
 09654. Els arqueòlegs han trobat esquelets d'' nowiki/ 'homo sàpiens'' prehistòrics a la regió, així com nombrosos objectes i vestigis de la cultura gravetià gravetiana, principalment a les valls dels rius riu Nitra Nitra, Hron, Ipeľ, Váh i fins a la ciutat de Žilina, i també als peus de les muntanyes Vihorlatské vrchy Vihorlat, Inovec, Tribeč i Myjava
@@ -9657,10 +9657,10 @@
 09657. Els ''kraje'' se subdivideixen en molts ''districtes d'Eslovàquia okresy'' (en singular ''okres'', traduït com a 'districte')
 09658. El paisatge eslovac és sobretot muntanyós, amb la Carpats serralada carpàtica que s'estén sobre la major part de la meitat nord del país
 09659. Els rius principals són, a part del Danubi (escrit ''Dunaj'' en eslovac i pronunciat ''Dunai''), els seus afluents Váh i Hron, els Hornád, Tisza, Morava, Uh, Nitra, Poprad, Ipeľ, Bodrog, Torysa, Laborec, Topl'a i Slaná
-09660. La temperatura mitjana anual és de 9-10 nbsp;°C
-09661. La temperatura mitjana anual és de 8-9 nbsp;°C
-09662. La temperatura mitjana anual és d'entre 5 i 8,5 nbsp;°C
-09663. La temperatura mitjana anual és inferior a 5 nbsp;°C
+09660. La temperatura mitjana anual és de 9-10°C
+09661. La temperatura mitjana anual és de 8-9°C
+09662. La temperatura mitjana anual és d'entre 5 i 8,5°C
+09663. La temperatura mitjana anual és inferior a 5°C
 09664. Eslovàquia ha superat amb èxit la difícil transició des d'un sistema d'economia de planificació centralitzada a un d'economia de mercat
 09665. Eslovàquia és un estat que pertany a la Unió Europea des de l'1 de maig del 2004
 09666. Aquesta situació explica el gran ritme de creixement econòmic que Eslovàquia ha tingut en els darrers anys (6,1% el 2005)
@@ -9686,7 +9686,7 @@
 09686. Eslovènia és el punt de trobada de quatre regions geogràfiques europees importants: els Alps, els Alps Dinàrics (aquí anomenats Alps Julians), la plana de Pannònia i la regió del Karst, juntament amb la Mediterrània
 09687. La meitat d'Eslovènia és coberta de bosc: és el tercer país més boscós d'Europa, darrere de Finlàndia i Suècia
 09688. El clima és clima mediterrani mediterrani a la costa, alpí a les muntanyes, i clima continental continental amb estius suaus a calents i hiverns freds als altiplans i a les valls de l'est del país
-09689. La neu és bastant freqüent en l'hivern d'Eslovènia, el rècord de neu a Ljubljana es va produir el 1952, amb 146 nbsp;cm.
+09689. La neu és bastant freqüent en l'hivern d'Eslovènia, el rècord de neu a Ljubljana es va produir el 1952, amb 146 cm.
 09690. La capital, Ljubljana, amb uns 265.000 habitants, i Maribor (114.000) són les dues ciutats eslovenes que passen dels cent mil habitants
 09691. L'any 2002 Eslovènia tenia una població de 2.009.000 habitants, encara que la seva població està augmentant lentament, gairebé en equilibri, ja que el 2005 la població era de 2.011.614 habitants, i el 2009 era de 2.047.000
 09692. Amb 95 hab/Km² Eslovènia està en els últims llocs entre els països europeus en densitat de població (comparar amb els 320/km² dels Països Baixos o els 195/km² d'Itàlia)
@@ -10206,7 +10206,7 @@
 10206. Característica fonamental de Figueres és la tramuntana, vent sec i fred del nord que bufa indistintament a totes les estacions però que a l'hivern pot arribar a condicionar la vida quotidiana: efecte de reforç de la sensació tèrmica de fred pel vent fort
 10207. La tramuntana és d'altra banda causant de l'ombra pluviomètrica que afecta la plana de l'Empordà
 10208. La tramuntana es presenta amb particular incidència entre el novembre, el març i a l'estiu, particularment al juny, pot comportar-se com un vent sec i caldejat de característiques Fohn
-10209. La temperatura màxima absoluta registrada a la ciutat va ser 38 nbsp;°C del 16 d'agost del 1987 i la mínima absoluta els -16 º de l'11 de febrer del 1956
+10209. La temperatura màxima absoluta registrada a la ciutat va ser 38°C del 16 d'agost del 1987 i la mínima absoluta els -16 º de l'11 de febrer del 1956
 10210. Figueres es troba geogràficament en el punt per on entren a la península Ibèrica les grans onades de fred siberianes o simplement d'origen europeu, donant-se una mitjana de tres dies de nevada anuals que, en episodis de ''tramuntana negra'' (tramuntana que es dóna amb temps pertorbat) han donat lloc a grans nevades de 1944 (mig metre de neu), 1954, 1956, 1962, 1963, 1970, gener de 1985, gener de 1986, febrer del 87, gener del 92, desembre del 97, març del 93, gener del 2000, desembre del 2001 i la tempesta de neu de març de 2010 que va causar col·lapse de la xarxa elèctrica de la comarca a causa de la combinació de la neu humida amb les congestes ocasionats per la tramuntana.
 10211. A partir de l'any 258, degut a un caos administratiu dins els territoris de l'Imperi Romà, es va produir la invasió del poble germànic dels francs que va destruir i saquejar tot el que van trobar durant 12 anys; durant aquest període els bàrbars germànics haurien acabat amb la petita població de Joncària, deixant-la reduïda a un pilot de runes i cendres (que haurien donat el nom de Cendrassos a les restes d'aquest l'establiment romà)
 10212. L'any 802 trobem per primera vegada en una inscripció el nom de  villa Ficerias  i el 962 apareix en un altre document el nom de  Figariae 
@@ -10527,7 +10527,7 @@
 10527. El color vermell de la superfície de Mart (planeta) Mart es pensa que és a causa d'un ferro ric en òxid, la regolita.
 10528. El ferro és el metall més utilitzat, amb el 95% en pes de la producció mundial de metall
 10529. L'austenita és una solució intersticial de carboni en ferro amb estructura de xarxa cúbica centrada en les cares (CCC)
-10530. Al domini dels acers trobem un punt eutectoide per a una concentració de carboni del 0,77% i una temperatura de 723 °C
+10530. Al domini dels acers trobem un punt eutectoide per a una concentració de carboni del 0,77% i una temperatura de 723°C
 10531. L'acer és l'aliatge de ferro més conegut, sent aquest el seu ús més freqüent
 10532. Els estats d'oxidació del ferro són;
 10533. Els òxids de ferro més coneguts són l'òxid de ferro (II), FeO, l'òxid de ferro (III), Fe sub 2 /sub O sub 3 /sub , i l'òxid mixt Fe sub 3 /sub O sub 4 /sub 
@@ -10555,7 +10555,7 @@
 10555. Els gasos resultants, poden intervenir en una sèrie de reaccions; el coc pot reaccionar amb l'oxigen per a formar diòxid de carboni:
 10556. Al seu torn el diòxid de carboni pot reducció reduir-se per a donar monòxid de carboni:
 10557. Encara que també es pot donar el procés contrari en oxidar-se el monòxid de carboni amb oxigen per a tornar a donar diòxid de carboni:
-10558. El procés d'oxidació de coc amb oxigen allibera energia i s'utilitza per a escalfar el forn, arribant fins a uns 1900 nbsp;°C en la part inferior del forn
+10558. El procés d'oxidació de coc amb oxigen allibera energia i s'utilitza per a escalfar el forn, arribant fins a uns 1900°C en la part inferior del forn
 10559. En primer lloc els òxids de ferro poden reduir-se, parcialment o totalment, amb el monòxid de carboni, CO; per exemple:
 10560. Després, a mesura que arriba a parts més baixes del forn i la temperatura augmenta, reaccionen amb el coc (carboni en la seva major part), reduint-se els òxids
 10561. El carbonat de calci es descompon:
@@ -10714,8 +10714,8 @@
 10714. Tot i que molts usuaris de la fusta parlen de la putrefacció seca, el terme és enganyós, ja que la fusta ha de contenir aigua perquè ocorrin els atacs biològics
 10715. La humitat en la fusta respon a diversos propòsits en el procés de la putrefacció
 10716. Amb l'excepció dels bacteris anaeròbiques, tots els organismes requereixen l'oxigen per a la seva respiració
-10717. La majoria dels organismes prosperen en un rang òptim de temperatura de 21 °C a 30 °C, però són capaços de sobreviure sobre una considerable gamma de temperatura
-10718. En temperatures sobre 32 °C, el creixement de la majoria dels organismes declina, encara que un cert d'espècies continuï extremadament tolerant a prosperar fins a 40 °C
+10717. La majoria dels organismes prosperen en un rang òptim de temperatura de 21°C a 30°C, però són capaços de sobreviure sobre una considerable gamma de temperatura
+10718. En temperatures sobre 32°C, el creixement de la majoria dels organismes declina, encara que un cert d'espècies continuï extremadament tolerant a prosperar fins a 40°C
 10719. La majoria dels agents biòtics que ataquen la fusta s'utilitza com a font d'aliment
 10720. Els bacteris són petits organismes unicel·lulars que estan entre els més comuns de la terra
 10721. Els fongs són simples organismes que utilitzen la fusta com a font d'aliment
@@ -10729,7 +10729,7 @@
 10729. En les etapes de dany avançat, la fusta no conserva virtualment cap resistència, es formen les butxaques de putrefacció, o la fusta es dissol literalment
 10730. Els insectes estan entre els organismes més comuns en la terra, i moltes de les seves espècies posseeixen la capacitat d'utilitzar la fusta per abric o aliment
 10731. L'atac de l'insecte és evident generalment des túnels o cavitats en la fusta, que contenen sovint pols o aserrín (excrements de l'insecte) de fusta
-10732. Hi ha 2.000 espècies de tèrmits que es distribueixen en àrees on la mitjana anual de temperatura és de 10 °C o superior
+10732. Hi ha 2.000 espècies de tèrmits que es distribueixen en àrees on la mitjana anual de temperatura és de 10°C o superior
 10733. Els tèrmits subterrànies (''Rhinotermitidae'') ataquen implícitament qualsevol fusta disponible, però necessiten una font d'humitat i típicament un niu a la terra
 10734. Els tèrmits de la fusta humida són comuns en el Pacífic Nord-oest, encara que un grup es troba al sud-oest més àrid
 10735. Els tèrmits de la fusta seca (''Kalotermitidae'') es diferencien dels tèrmits subterranis de la fusta humida per la seva capacitat d'atacar la fusta que és extremadament seca; (5 a 6 per cent de contingut d'humitat)
@@ -10821,7 +10821,7 @@
 10821. França també es compon de molts territoris fora del continent europeu, anomenats Dependències d'ultramar franceses territoris d'ultramar, la qual cosa li permet estar present en tots els oceans del món excepte l'oceà Àrtic
 10822. França és fronterera amb el Brasil i Surinam a la Guaiana Francesa, i també amb els Països Baixos a través de la part francesa de Illa de Sant Martí Sant Martí
 10823. Deixant de banda els territoris d'ultramar, França ha duplicat la seva superfície inicial al llarg de la seva història annexionant-se alguns territoris dels voltants mitjançant tractats o conquestes, d'entre els quals destaca la totalitat d'Occitània, situada al sud de França, que representa la conquesta més important
-10824. A causa dels seus nombrosos Dependències d'ultramar franceses departaments i territoris d'ultramar dispersos en gairebé tots els oceans del planeta, França posseeix la segona zona econòmica exclusiva (ZEE) més gran del món, que abasta 11.035.000 nbsp;km², just darrere de la ZEE dels Estats Units d'Amèrica Estats Units (11.351.000 nbsp;km²), i davant de la ZEE d'Austràlia (8.148.250 nbsp;km²)
+10824. A causa dels seus nombrosos Dependències d'ultramar franceses departaments i territoris d'ultramar dispersos en gairebé tots els oceans del planeta, França posseeix la segona zona econòmica exclusiva (ZEE) més gran del món, que abasta 11.035.000 km², just darrere de la ZEE dels Estats Units d'Amèrica Estats Units (11.351.000 km²), i davant de la ZEE d'Austràlia (8.148.250 km²)
 10825. Amb 4.810,45 metres sobre el nivell del mar, el Mont Blanc, situat als Alps a la frontera entre França i Itàlia, és el punt més elevat de França, de la Unió Europea i de l'Europa Occidental Europa occidental
 10826. La França metropolitana compta amb una àmplia varietat de conjunts topogràfics i paisatges naturals
 10827. Les costes ofereixen paisatges contrastants: penya-segats (a la costa Blava, per exemple), els aiguamolls i les zones forestals de Sologne o les llargues platges sorrenques del Llenguadoc
@@ -10893,7 +10893,7 @@
 10893. Als Estats Units d'Amèrica Estats Units és un dels esports més populars fins al punt de què ha estat el primer esport practicat a la lluna, ja que l'astronauta Alan Shepard hi va fer un cop l'any 1971
 10894. Com altres esports els golf va ser introduït als Països Catalans per anglesos
 10895. El golf es disputa en una àrea de terreny que s'anomena camp de golf
-10896. Les '''pilotes de golf''' tenen un diàmetre de 42.67 nbsp;mm i una massa que no pot excedir els 45.93 grams
+10896. Les '''pilotes de golf''' tenen un diàmetre de 42.67 mm i una massa que no pot excedir els 45.93 grams
 10897. Els '''pals de golf''' són utilitzats per colpejar la pilota
 10898. Els pals de golf moderns estan fabricats amb materials i tècniques molt avançats
 10899. Els pals anomenats ferros es diferencien entre si per l'angle de les seves bases, mitjançant el qual varia la seva inclinació perquè la bola surti llançada en trajectòries més horitzontals o més altes, segons la distància al clot
@@ -11027,14 +11027,14 @@
 11027. El municipi tenia prop de 98.000 habitants el 2014.
 11028. La ciutat de Girona està situada a la confluència dels rius Onyar, Güell (riu) Güell, Galligants i Ter, a una altitud de 75 m, a l'anomenat pla de Girona.
 11029. Girona limita al nord amb els municipis de Sant Julià de Ramis i Sarrià de Ter; a l'est, els de Celrà i Juià; al sud-est, amb el de Quart; al sud-oest, amb els de Fornells de la Selva i Vilablareix; i a l'oest amb els de Salt i Sant Gregori.
-11030. El clima és mediterrani, al límit de la característica fonamental d'aquest clima - la sequera estival, amb prou feines percebuda alguns anys a la zona de Girona - i amb una oscil·lació entre els freds de l'hivern - són habituals les glaçades entre desembre i febrer- i les calors de l'estiu - màximes superiors als 35 nbsp;°C durant la canícula - que li atorguen, en conjunt, un caràcter més extremat que als climes litorals, però sense arribar a la continentalitat de les conques interiors de Catalunya
+11030. El clima és mediterrani, al límit de la característica fonamental d'aquest clima - la sequera estival, amb prou feines percebuda alguns anys a la zona de Girona - i amb una oscil·lació entre els freds de l'hivern - són habituals les glaçades entre desembre i febrer- i les calors de l'estiu - màximes superiors als 35°C durant la canícula - que li atorguen, en conjunt, un caràcter més extremat que als climes litorals, però sense arribar a la continentalitat de les conques interiors de Catalunya
 11031. Els primers pobladors van ser els Cultura ibèrica ibers de la tribu dels Indigets, situats als poblats dels punts elevats que envolten i clouen el pla de Girona, com el del congost de l'actual Sant Julià de Ramis, que era el més important
 11032. La nova ciutat de ''Gerunda'' es nodrí dels antics habitants del poblat de Sant Julià de Ramis que, segons sembla, foren obligats a traslladar-se a l{{'}}''oppidum'' gironí
 11033. L'estructura de la ciutat de ''Gerunda'' era atípica
 11034. L'estructura política de la ciutat seguia els paràmetres estàndards de qualsevol ciutat romana
 11035. Finalment, per cloure aquest apartat, hom no pot deixar d'esmentar l'altra part de la ''ciuitas'' de ''Gerunda'': l{{'}}''ager''
 11036. La primera comunitat cristianisme cristiana de ''Gerunda'' apareix documentada als voltants de 304-305 dC, en el si de les persecucions de Dioclecià, en les quals es creu que morí en martiri a la ciutat un dels difusors de la religió a la zona, arribat per mitjà de les rutes comercial marítimes: Sant Feliu màrtir Sant Feliu de Scil·la (Mauritània)
-11037. Girona no s'escapà als esdeveniments: s'embarcà a les reformes de Dioclecià (284 - 305 dC), patí les incursions germàniques (segles segle nbsp;IV IV-segle V V dC) i a la fi veié com el Poder romà es desfeia sobre el territori i s'instal·lava un nou Poder que, en algunes característiques, seguí unes polítiques de continuïtat
+11037. Girona no s'escapà als esdeveniments: s'embarcà a les reformes de Dioclecià (284 - 305 dC), patí les incursions germàniques (segles segle IV IV-segle V V dC) i a la fi veié com el Poder romà es desfeia sobre el territori i s'instal·lava un nou Poder que, en algunes característiques, seguí unes polítiques de continuïtat
 11038. Un altre àmbit en el qual Girona es veié a bastament enfortida fou el de l'organització eclesiàstica
 11039. L'any 711 s'inicià la Al-Àndalus#Història conquesta musulmana de la península Ibèrica
 11040. Durant llarg temps es pensà que la conquesta de Girona conquesta franca fou obra personal de l'emperador Carlemany
@@ -11056,7 +11056,7 @@
 11056. El quart pont és el viaducte del ferrocarril, construït el 1876 i que representà l'arribada de la modernitat i el progrés a una Girona encara emmurallada.
 11057. Girona té 2 tipus de transport urbà, l'autobús i la Girocleta
 11058. La ciutat de '''Girona''' té actualment l'autobús com un dels dos mitjans de transport públic, el gestiona el consorci del transport metropolità
-11059. La Girocleta  nbsp;és un servei públic de lloguer de bicicletes
+11059. La Girocleta  és un servei públic de lloguer de bicicletes
 11060. El municipi de '''Girona''' no disposa de cap accés o enclavament marítim i, en conseqüència, no té cap port dins el terme municipal
 11061. La infraestructura aeroportuària que serveix la ciutat de '''Girona''' i la resta de la província és l'aeroportAeroport Internacional Girona Costa Brava  Girona- Costa Brava, situat al municipi de Vilobí d'Onyar, a 12 km de la ciutat
 11062. Girona disposa de dues estacions de ferrocarril d'ADIF connectada a la xarxa estatal de ferrocarrils amb ample de via de 1668 mm
@@ -11066,7 +11066,7 @@
 11066. Sobre tota aquesta xarxa viària hi ha una xarxa d'autobusos metropolitans, regionals i nacionals que connecten Girona amb la resta de poblacions
 11067. Les característiques urbanístiques i patrimonials de la ciutat de Girona la converteixen en un plató idoni per a espots publicitaris, sessions fotogràfiques, sèries televisives i filmacions de metratge divers
 11068. A Girona se rodarà la sèrie 'Joc de Trons' que normalement devia ser jugada a Tarragona i això gràcies al fet que Girona té pedra més blanquinosa o grisosa que la de Tarragona.http://www.ara.cat/comarquesgironines/Girona-guanyar-Tarragona-Joc-Trons_0_1541245968.html
-11069. El Llibre del Sindicat Remença de 1448 conté les actes de les reunions celebrades pels homes de remença, o serfs, de 912 parròquies de les diòcesis catalanes de nbsp;Girona, nbsp;Vic, nbsp;Barcelona, nbsp;Elna nbsp;i nbsp;Urgell nbsp;per tal de nomenar els seus síndics o representants que havien de negociar l'abolició de la servitud dels nbsp;mals usos nbsp;davant del rei nbsp;Alfons el Magnànim
+11069. El Llibre del Sindicat Remença de 1448 conté les actes de les reunions celebrades pels homes de remença, o serfs, de 912 parròquies de les diòcesis catalanes de Girona, Vic, Barcelona, Elna i Urgell per tal de nomenar els seus síndics o representants que havien de negociar l'abolició de la servitud dels mals usos davant del rei Alfons el Magnànim
 11070. Situat al cor del Barri Vell, a l'antic convent dels Caputxins (segle XVIII i posterior institut provincial (1845 - 1968), el museu repassa tota la història de la ciutat de Girona des dels primers pobladors prehistòria prehistòrics, passant per l'esplendor medieval fins a arribar als nostres dies
 11071. Els espais del museu estan configurats per l'edifici principal i per l'espai dedicat a la Guerra Civil, el refugi antiaeri del Jardí de la Infància, que forma part de la Xarxa d'Espais de Memòria Democràtics
 11072. L'antiga església i l'antic convent de Sant Pere de Galligants allotgen les col·leccions de la secció gironina del Museu d'Arqueologia de Catalunya, abans anomenat Museu Provincial d'Antiguitats i Belles Arts
@@ -11092,11 +11092,11 @@
 11092. Parc Científic i Tecnològic de la Universitat de Girona
 11093. L'Arxiu Municipal de Girona és el servei especialitzat de l'Ajuntament en la gestió, el tractament i la preservació de la documentació, amb independència de la seva data, tipologia i suport
 11094. Centre de Recerca i Difusió de la Imatge (CRDI)
-11095. El nbsp;'''Col·lectiu de Crítics de Cinema de Girona''' nbsp;el van formar l’any 1990 un grup de persones que exercien la crítica de cinema en mitjans de comunicació de les comarques gironines, amb la intenció de ser un element dinamitzador del fet cinematogràfic, entès com a un element cultural que ultrapassa el simple vessant comercial
+11095. El '''Col·lectiu de Crítics de Cinema de Girona''' el van formar l’any 1990 un grup de persones que exercien la crítica de cinema en mitjans de comunicació de les comarques gironines, amb la intenció de ser un element dinamitzador del fet cinematogràfic, entès com a un element cultural que ultrapassa el simple vessant comercial
 11096. El 1992, mitjançant un acord amb l’empresa del Cinema Modern, el Col·lectiu passa a programar la sala B del cinema, que queda rebatejada com a Cinema-estudi Truffaut
 11097. Es van organitzar actes amb la col·laboració de l’associació Naturalistes de Girona (amb motiu del Dia de la Terra), dels GRAMC (projeccions de cinema dins la Setmana Intercultural), l’Aliança Francesa (projeccions de cinema francès) i el Front d’Alliberament Gai de Catalunya, entre altres
-11098. El nbsp;'''castell de Sant Miquel''' nbsp;és un conjunt arquitectònic al cim del puig o nbsp;muntanya de Sant Miquel nbsp;a cavall dels municipis de nbsp;Girona nbsp;i nbsp;Celrà nbsp;(Gironès)
-11099. La Torre d'Alfons XII constitueix una gran talaia de 160 metres d'altitud que permet obtenir una magnífica panoràmica de tota la ciutat, de sud a nord, amb nbsp;la Devesa nbsp;i més enllà els Pirineus, amb el Canigó i el Puig Neulós, com teló de fons, tot recorrent el perímetre habilitat com a camí que l'envolta
+11098. El '''castell de Sant Miquel''' és un conjunt arquitectònic al cim del puig o muntanya de Sant Miquel a cavall dels municipis de Girona i Celrà (Gironès)
+11099. La Torre d'Alfons XII constitueix una gran talaia de 160 metres d'altitud que permet obtenir una magnífica panoràmica de tota la ciutat, de sud a nord, amb la Devesa i més enllà els Pirineus, amb el Canigó i el Puig Neulós, com teló de fons, tot recorrent el perímetre habilitat com a camí que l'envolta
 11100. Els centres culturals són espais arquitectònics destinats a manifestacions culturals
 11101. El Centre Cultural La Mercè és un equipament municipal polivalent i pluridisciplinari que gestiona una programació d'activitats culturals i que acull iniciatives diverses
 11102. L'equipament cultural té per marc l'antic convent de la Mercè, un edifici construït al segle XIV que va ser emprat com a hospital militar durant el segle XIX i part del XX
@@ -11332,7 +11332,7 @@
 11332. Al sector occidental, la cubeta d'Olot-Santa Pau, la presència de materials volcànics contribueix a donar acusada personalitat al paisatge
 11333. El Fluvià, de règim mediterrani, té un cabal hidràulic cabal no gaire important (1,07 m sup 3 /sup /s a Olot).
 11334. La Garrotxa contrasta amb les comarques veïnes per l'elevada humitat
-11335. Pel que fa a les temperatures, a Olot la mínima de gener és de 0,09 nbsp;°C, i la màxima d'agost, de 27,7 nbsp;°C
+11335. Pel que fa a les temperatures, a Olot la mínima de gener és de 0,09°C, i la màxima d'agost, de 27,7°C
 11336. La vegetació segueix les línies del clima
 11337. Els nuclis de població concentrada són molt poc importants
 11338. La zona volcànica de la Garrotxa és a la Serralada Transversal, on hi ha una quarantena de cons volcànics, en bon estat de conservació i amb importants corrents de lava basàltica
@@ -11498,7 +11498,7 @@
 11498. La '''gastronomia asturiana''' és la gastronomia tradicional pròpia d'Astúries
 11499. El país consisteix en una extensa àrea continental situada al sud dels Balcans; la península del Peloponès, separada del continent pel canal de l'istme de Corint; i un bon nombre d'Llista d'illes de Grècia illes, que inclouen, entre d'altres, Creta, Illa de Rodes Rodes, Eubea, Lesbos, Quios, Tassos, Samotràcia, Lemnos i els arxipèlags del Dodecanès, les Cíclades i les Espòrades, totes aquestes a la mar Egea, i Corfú (ciutat) Corfú, Lèucada, Cefalònia i Zacint a la mar Jònica
 11500. El clima de Grècia és mediterrani i presenta hiverns suaus i humits, i estius càlids i eixuts
-11501. En línia dreta, la distància que hi ha de Barcelona a la capital de Grècia, Atenes, és d'aproximadament 1.870 nbsp;km.
+11501. En línia dreta, la distància que hi ha de Barcelona a la capital de Grècia, Atenes, és d'aproximadament 1.870 km.
 11502. Grècia està formada per tretze regions administratives o ''περιφέρειες'' (''perifèries''), subdividides, fins al 2010, alhora en ''νομοί'' (''nomoí''), que es podria traduir per ''departaments'', ''districtes'' o Prefectures de Grècia ''prefectures''
 11503. Llista de regions gregues amb la capital corresponent:
 11504. Grècia té més d'11 milions d'habitants, dels quals la meitat viu en ciutats
@@ -12096,11 +12096,11 @@
 12096. Fins als primers anys de l'època dels Tres Regnes (cap als volts dels anys 220-226 de l'era cristiana) en el  Tractat de les arts  es deia que el  qí  tenia 17 línies horitzontals i 17 de verticals
 12097. El  qí  va ser sempre un joc de les classes intel·lectuals i governants de l'antiga Antiga Xina Xina
 12098. El  qí  va ser introduït al Japó cap a l'any 735 de la nostra era per un bonze budisme budista Japó japonès anomenat Kibi Dajin, i ha tingut una acollida molt favorable en aquest país
-12099. El Japó va ser el primer país que va establir un Sistema professional en el go sistema de jugadors professionals, fa 400 nbsp;anys
+12099. El Japó va ser el primer país que va establir un Sistema professional en el go sistema de jugadors professionals, fa 400 anys
 12100. S'estima que és jugat per uns cinquanta milions de persones en el sud-est asiàtic
 12101. Encara que el joc del go va ser descrit pels viatgers europeus que van anar a l'extrem orient durant el segle XVII, no es va començar a jugar a Europa fins al 1880
 12102. Els millors jugadors europeus acudeixen al Japó a estudiar el joc
-12103. El tauler del joc -comunament anomenat '''''goban''''', pel seu nom en japonès- fa generalment entre 45 i 48 nbsp;cm de llarg i 42 i 44 nbsp;cm d'ample
+12103. El tauler del joc -comunament anomenat '''''goban''''', pel seu nom en japonès- fa generalment entre 45 i 48 cm de llarg i 42 i 44 cm d'ample
 12104. Al tauler hi ha dibuixades 19x19 línies (horitzontals i verticals) formant quasi quadrats (o quadrats per simplificació), però també s'utilitzen versions més petites (principalment les mides 9x9 i 13x13) per iniciar-se al joc o estudiar estratègies, mai per competir
 12105. Un equip complet de pedres de Go (goishi) normalment està format per 181 pedres negres i 180 de blanques
 12106. Les pedres tradicionals es fabriquen de manera que les pedres negres siguin lleugerament més grans que les blanques, amb la finalitat de contrarestar una il·lusió òptica creada pel contrast de colors que fa que les pedres blanques es vegin sobre el tauler lleugerament més grans que les negres.
@@ -12464,7 +12464,7 @@
 12464. La primera població dels Països Catalans on es va practicar l'handbol va ser Granollers, on un cop l'any s'hi fa el Torneig Internacional d'Handbol.
 12465. El terreny de joc és un rectangle de 40 metres de llarg per 20 d'ample, dividit en dues meitats Quadrat (polígon) quadrades on podem trobar-hi una àrea de porteria a cadascuna.
 12466. La porteria està situada al centre de cada línia exterior de porteria
-12467. Totes les línies del camp formen part de la superfície que limiten i mesuren 5 nbsp;cm d'ample excepte en el cas esmentat de la línia de gol
+12467. Totes les línies del camp formen part de la superfície que limiten i mesuren 5 cm d'ample excepte en el cas esmentat de la línia de gol
 12468. La línia de cop franc és una línia discontínua; es marca 3 metres més enllà de la línia de l'àrea
 12469. La línia de canvis (un segment de la línia lateral) per cada equip va des de la línia central fins a un punt que se'n allunya 4,5 metres
 12470. Es juga amb una pilota de cuir o de material sintètic
@@ -13347,7 +13347,7 @@
 13347. L’aire humit fred pot provocar la formació de gel, el que és un perill per les aeronaus, ja que afecta el perfil de la fulla i el pes augmenta
 13348. La humitat d'una barreja d'aire-vapor d'aigua es determina mitjançant l'ús de diagrames psicromètrics si tant la temperatura de bulb sec (''T'') i la temperatura de bulb humit (''Tw'') de la barreja són coneguts
 13349. On  math  T  /math  és la temperatura de bulb sec, expressat en graus Celsius ('''°C'''),  math  P  /math  és la pressió absoluta, expressada en hectopascals ('''hPa'''), i  math  {{e^*}_w}  /math  és la pressió de vapor saturat expressat en hectopascals ('''hPa''').
-13350. Buck va estimar que l'error relatiu màxim és de menys de 0,20% entre -20 nbsp;°C i +50 nbsp;°C quan aquesta forma particular de la fórmula generalitzada s'utilitza per estimar la pressió de vapor saturat d'aigua.
+13350. Buck va estimar que l'error relatiu màxim és de menys de 0,20% entre -20°C i +50°C quan aquesta forma particular de la fórmula generalitzada s'utilitza per estimar la pressió de vapor saturat d'aigua.
 13351. Sovint el concepte de retenció d'aire en el vapor d'aigua es presenten per descriure el concepte d{{'}}''humitat relativa''
 13352. El factor de millora  math  \left(f_w\right)  /math  es defineix com la relació entre la pressió de vapor de saturació de l’aigua en l’aire humit  math  \left(e'_w\right)  /math  i la pressió de vapor de saturació de l’aigua pura
 13353. La humitat relativa d'un sistema d'aire-aigua és dependent no només de la temperatura sinó també de la pressió absoluta del sistema estudiat
@@ -13414,7 +13414,7 @@
 13414. Hongria és una república
 13415. Hongria es pot dividir en tres zones principals: el nord muntanyós (amb turons i muntanyes baixes prop de la frontera eslovena, la més elevada de les quals és el Kékes, amb 1.014 m), la gran plana a l'est del Danubi (l'Alföld) i la part occidental, també plana amb alguns turons, on destaca el llac Balaton i les muntanyes Bakony.
 13416. Té tres grans rius, el Danubi i els seus afluents Tisza i Dráva, a més a més de llacs de diversa consideració, com el ja esmentat Balaton i el Fertő o Neusiedler, a la frontera amb Àustria.
-13417. La superfície és de 93.030 nbsp;km².
+13417. La superfície és de 93.030 km².
 13418. A Hongria, hi viuen poc més de deu milions d'habitants (10.006.835, estimació del 2005), amb un creixement anual negatiu (-0,29% el 2003)
 13419. L'índex d'alfabetització és força alt (99,4% el 2003)
 13420. La capital del país és Budapest, i les ciutats principals són Debrecen, Miskolc, Szeged, Pécs i Győr.
@@ -13437,7 +13437,7 @@
 13437. La teoria de l'homeopatia sosté que els mateixos símptomes que provoca una substància tòxic tòxica en una persona sana poden ser curats per un remei preparat amb la mateixa substància tòxica, seguint el principi enunciat com a ''similia similibus curantur'' ( allò similar es cura amb allò similar )
 13438. S'arriba al límit de la dilució quan resta encara una sola molècula de la substància
 13439. Hahnemann defensava l'ús de dilucions de 30C per a la majoria dels casos (és a dir, dilucions en un factor de 10 sup 60 /sup ).{{sfn Hahnemann 1833 p=Aforisme 128}} En l'època de Hahnemann, era raonable suposar que els remeis es poguessin diluir indefinidament, ja que tot just es començava a reconèixer el concepte d'àtom o molècula com la Nombre d'Avogadro unitat més petita possible d'una substància química
-13440. El volum de tota l'aigua de la Terra és d'uns 1.36×10 sup 9 /sup  nbsp;km sup 3 /sup :
+13440. El volum de tota l'aigua de la Terra és d'uns 1.36×10 sup 9 /sup  km sup 3 /sup :
 13441. Al principi, Hahnemann utilitzava dosis sense diluir per a fer les proves, però més tard va defensar l'ús de proves amb remeis a una dilució 30C,{{sfn Hahnemann 1833 p=Aforisme 128}} i la majoria de comprovacions modernes es duen a terme utilitzant remeis ultradiluïts en què és molt poc probable que cap de les molècules originals hi sigui encara present.{{sfn Kayne 2006 p=52}} Durant el procés de prova, Hahnemann administrava remeis a voluntaris sans, i els observadors recopilaven els símptomes resultants en un  quadre del medicament 
 13442. A partir d'aquests símptomes, l'homeòpata tria com tractar el pacient
 13443. La llista d'ingredients que es pot veure en els remeis pot confondre els consumidors fent-los creure que el producte realment conté aquests ingredients
@@ -13875,7 +13875,7 @@
 13875. Amb l'Imperi, el Senat romà Senat va ser relegat a un cos consultiu que preparava lleis i ordenances per l'administració, i les promulgava
 13876. Roma converteix en províncies seves els pobles que conquereix
 13877. Amb ell comença una època relativament pacífica, durant la qual té lloc la romanització (història) romanització, o sigui, la difusió de la civilització romana per tots els territoris conquerits.
-13878. Els emperadors posteriors a August van acabar de configurar l'Imperi tal com seria durant més de 300 nbsp;anys, és a dir estès al voltant del Mediterrani i amb les fronteres des de Britània fins a l'Èufrates
+13878. Els emperadors posteriors a August van acabar de configurar l'Imperi tal com seria durant més de 300 anys, és a dir estès al voltant del Mediterrani i amb les fronteres des de Britània fins a l'Èufrates
 13879. L'Imperi Romà es va dividir definitivament a la mort de Teodosi I el gran el 395 en l'Imperi Romà d'Occident i l'Imperi Romà d'Orient.
 13880. Un municipi romà fou cada una de les ciutats romanes amb dret de ciutadania, les quals conservaven les seves institucions interiors derivades de l'antic ordre i adaptades per ser bàsicament iguals a les de Roma, sovint solament amb canvis de nom
 13881. L'arquitectura romana és probablement el testimoni més significatiu de la Antiga Roma civilització romana
@@ -14062,7 +14062,7 @@
 14062. L'expressió
 14063. Aquesta identitat és un cas particular de la fórmula d'Euler:
 14064. Des del punt de vista de l'anàlisi complexa, la identitat d'Euler és un cas particular de la fórmula d'Euler, que afirma que per qualsevol nombre real {{math ''x''}},
-14065. En particular quan: {{math ''x''}} nbsp;= nbsp;''{{math ''π''}}'', o mig gir (180°), al voltant d'una circumferència :
+14065. En particular quan: {{math ''x''}} = ''{{math ''π''}}'', o mig gir (180°), al voltant d'una circumferència :
 14066. Com que
 14067. Això redueix el problema a la demostració de la fórmula d'Euler, qüestió que es remunta als fonaments de l'anàlisi complexa
 14068. Les escriptures íntegrament ideogràmiques diferents a les nostres, i és el més comú que els ideogrames es combinin amb un altre tipus de logograma logogrames que no representen directament idees o conceptes
@@ -14126,7 +14126,7 @@
 14126. Podem llavors dir que la IA posseeix característiques humanes com ara l'aprenentatge, l'adaptació, el raonament, l'autocorrecció, el millorament implícit, i la percepció modular del món
 14127. Molts dels investigadors sobre IA sostenen que «la intel·ligència és un programa capaç de ser executat independentment de la màquina que l'executeu, ordinador o cervell».
 14128. Com passa gairebé sempre en el cas d'una ciència acabada de crear, la intel·ligència artificial aborda tantes qüestions que es poden confondre en un nivell fonamental i conceptual que, adjunt a la ciència, cal fer consideracions des del punt de vista de la filosofia
-14129. Durant més de 2000 nbsp;anys de tradició en filosofia, han anat sorgint diverses teories del raonament i de l'aprenentatge, simultàniament amb el punt de vista que la ment es redueix al funcionament físic
+14129. Durant més de 2000 anys de tradició en filosofia, han anat sorgint diverses teories del raonament i de l'aprenentatge, simultàniament amb el punt de vista que la ment es redueix al funcionament físic
 14130. Va començar amb el naixement de Plató a 428 aC i amb el que va aprendre de Sòcrates
 14131. Els filòsofs van delimitar les més importants idees relacionades amb la intel·ligència artificial, però per passar d'allà a una ciència formal era necessari comptar amb una formalització matemàtica en tres àrees principals: la computació, la lògica i la probabilitat
 14132. L'home s'ha aplicat a si mateix el nom científic de ''Homo sapiens'' com una valoració de la transcendència de les nostres habilitats mentals tant per a la nostra vida quotidiana com per al nostre propi sentit d'identitat
@@ -14217,7 +14217,7 @@
 14217. Localitzada sobre la dorsal atlàntica, al punt de contacte entre les placa tectònica plaques euro-asiàtica i nord-americana, l'illa coneix una notabilíssima activitat geològica, essent-ne característics els volcà volcans i els guèisers
 14218. Islàndia és la divuitena illa més gran del món i la segona més gran d'Europa, després de Gran Bretanya
 14219. Islàndia es pot dividir, a grans traços, en dues parts: la costa amb nombrosos fiords i l'interior, un gran desert deshabitat amb llits de lava, muntanyes i glaceres (que ocupen cap al 10% del país)
-14220. La costa sud, sotmesa a l'embat dels vents marins, no té uns hiverns (tèrmicament) gaire rigorosos, tenint en compte la seva latitud: la temperatura mitjana de gener és de 0 nbsp;°C Reykjavík (11 nbsp;°C al juliol, mitjana anual d'uns 5 nbsp;°C)
+14220. La costa sud, sotmesa a l'embat dels vents marins, no té uns hiverns (tèrmicament) gaire rigorosos, tenint en compte la seva latitud: la temperatura mitjana de gener és de 0°C Reykjavík (11°C al juliol, mitjana anual d'uns 5°C)
 14221. Hi ha variacions climàtiques entre una part de l'illa i una altra
 14222. Els assentaments humans permanents han pertorbat considerablement l'ecosistema aïllat de sòls volcànics i amb una diversitat d'espècies molt limitada
 14223. Els animals d'Islàndia inclouen ovelles (''Ovis aries''), bestiar caps de bestiar (''Bos taurus''), pollastres (''Gallus gallus''), cabres (Capra), el poni  poni islandès (''Equus ferus caballus'') i el gos  gos islandès (''Canis lupus familiaris'')
@@ -14689,9 +14689,9 @@
 14689. Es necessiten cartes espanyoles, variant catalana, és a dir amb vuits i nous  i monedes.
 14690. Les cartes s'han de repartir entre tots els jugadors a parts iguals, comença qui tingui el sis d'oros; a partir d'aquí els jugadors han d'anar posant cartes per arribar des del sis cap a l'as i cap al dotze i així amb tots els colls, si un jugador no té cap carta per posar ha de posar una moneda al mig, el que guanya és el primer que es queda sense cartes, i com a premi guanya totes les monedes que els jugadors han posat al mig
 14691. La mort de la reina Salomé Alexandra va portar als seus dos fills Hircà II i Aristòbul II de Judea a una sagnant guerra civil
-14692. Aristòbul va demanar ajut a Gneu Pompeu Magne Gneu Pompeu i va enviar un missatger al seu llegat a Síria, Marc Emili Escaure (governador) Marc Emili Escaure, al que va prometre 8.000 nbsp;kg
+14692. Aristòbul va demanar ajut a Gneu Pompeu Magne Gneu Pompeu i va enviar un missatger al seu llegat a Síria, Marc Emili Escaure (governador) Marc Emili Escaure, al que va prometre 8.000 kg
 14693. Hircà va permetre a Pompeu entrar a la torre baixa del temple, però els seguidors d'Aristòbul encara dominaven el temple
-14694. Marc Emili Escaure va fer la guerra a Aretes (i fou subornat amb 6000 nbsp;kg
+14694. Marc Emili Escaure va fer la guerra a Aretes (i fou subornat amb 6000 kg
 14695. En català representa la fricativa postalveolar sonora entre vocals i a inici de mot en els dialectes Català oriental central central i català balear balear
 14696. El 1982 es va iniciar el grup JPEG al que s'uneix el SGVII el 1986
 14697. El JPEG només tracta imatges fixes, però existeix un estàndard relacionat anomenat MPEG per a vídeo
@@ -14877,7 +14877,7 @@
 14877. Per exemple, un kilobyte és 1024 bytes, i no 1000 bytes
 14878. Una excepció destacada és el camp dels disc dur discs durs, on el valor més petit s'utilitza en especificacions tècniques i en la publicitat
 14879. Igualment succeeix quan es parla de velocitat de transferència de dades
-14880. Per exemple, 56 kilobits per segon és 56 nbsp;000 bits per segon, i no 57 nbsp;344 bits per segon
+14880. Per exemple, 56 kilobits per segon és 56 000 bits per segon, i no 57 344 bits per segon
 14881. Per tal d'evitar aquesta discordança, s'ha introduït el prefix kibi- (símbol '''Ki''') per a  1024 , però no és gaire utilitzat.
 14882. Una convenció errònia però usada sovint és utilitzar el símbol ''k'' per 1000 i ''K'' per 1024
 14883. El '''khakàs''' és una llengua turquesa parlada principalment a la República de Khakàssia (Rússia Federació Russa) pels khakassos, de 60.000 a 80.000 persones
@@ -14902,8 +14902,8 @@
 14902. La temperatura representa -a grans trets- el moviment dels àtoms, i no s'explicaria l'existència de temperatures negatives més que per la definició més o menys arbitrària de les escales existents
 14903. A l'escala Kelvin, llavors, no hi ha temperatures negatives
 14904. D'altra banda, en laboratoris s'han aconseguit temperatures d'uns quants nanokèlvins -és a dir, mil milionèsimes de kèlvins a sobre del zero absolut
-14905. L'escala de temperatura Celsius és, per definició, la temperatura absoluta amb un decalatge respecte a l'origen de 273,15 nbsp;K:
-14906. El zero absolut és situat a – 273,15 nbsp;°C
+14905. L'escala de temperatura Celsius és, per definició, la temperatura absoluta amb un decalatge respecte a l'origen de 273,15 K:
+14906. El zero absolut és situat a – 273,15°C
 14907. L'escala Grau Fahrenheit Fahrenheit és una escala anglosaxona afí a l'escala Celsius:
 14908. La inversa de la temperatura és un paràmetre que forma part d'algunes fórmules, els físics utilitzen el paràmetre β definit com:
 14909. Cada escala de temperatura presenta alguns avantatges respecte a les altres, d'aquí que encara coexisteixin.
@@ -14911,8 +14911,8 @@
 14911. Vist en els ordinadors que pròpiament donen suport a Unicode, el text citat pot ser similar al text de sota (la mida pot variar):
 14912. La descomposició bàsica d'aquest caràcter és U+004B (K majúscula), així alguns navegadors poden simplement mostrar una  K  al seu lloc a causa de la normalització Unicode.
 14913. El zero absolut és la temperatura corresponent a 0 kelvin o, el que és el mateix, -273,15 graus a l'escala Celsius
-14914. Un cop trobada la relació entre la temperatura i el volum d'un gas van veure que per força hi havia d'haver un límit de temperatura, i la idea del zero absolut surt de la funció que relaciona temperatura i volum i arriba un moment on el volum és 0, com que el volum no pot ser negatiu sabem que la temperatura mínima és aquella en què la funció talla l'eix X quan el volum és 0: -273 nbsp;°C
-14915. Els intents d’arribar al zero absolut sempre s'han quedat a les portes, Johann Heinrich Lambert (1728-1777) es va quedar a 3 nbsp;°C, i actualment les màquines frigorífiques es queden a 0,15 nbsp;°C d’aconseguir-ho, la raó és que les molècula molècules de la càmera, en arribar a aquesta temperatura, no tenen energia suficient per fer que la temperatura baixi encara més
+14914. Un cop trobada la relació entre la temperatura i el volum d'un gas van veure que per força hi havia d'haver un límit de temperatura, i la idea del zero absolut surt de la funció que relaciona temperatura i volum i arriba un moment on el volum és 0, com que el volum no pot ser negatiu sabem que la temperatura mínima és aquella en què la funció talla l'eix X quan el volum és 0: -273°C
+14915. Els intents d’arribar al zero absolut sempre s'han quedat a les portes, Johann Heinrich Lambert (1728-1777) es va quedar a 3°C, i actualment les màquines frigorífiques es queden a 0,15°C d’aconseguir-ho, la raó és que les molècula molècules de la càmera, en arribar a aquesta temperatura, no tenen energia suficient per fer que la temperatura baixi encara més
 14916. S'ha esmentat que existeix una relació entre la temperatura i la pressió del gas i per refredar un gas fins al zero absolut, si el volum es manté constant, la pressió disminueix a mesura que el gas es refreda
 14917. A temperatures properes a 0 kelvin, la matèria presenta propietats inusuals, com ara la superconductivitat, la superfluïdesa i el Condensat de Bose-Einstein condensació de Bose-Einstein
 14918. L'any 2001 els científics Eric Allin Cornell Eric Cornell i Carl Wieman van rebre ex-aequo el premi Nobel de Física amb Wolfgang Ketterle pels seus estudis sobre els condensats de Bose-Einstein, tipificats com un nou estat d'agregació de la matèria que presenten certs materials a temperatures molt baixes
@@ -15272,7 +15272,7 @@
 15272. S'han planejat futures missions tripulades a la Lluna, finançades tant per governs com per fons privats
 15273. La Lluna, després del Sol, és l'objecte més brillant al cel, al mateix temps pot ser el seu únic cost celestial on el canvi de fase entre la lluna plena i lluna nova nova com la seva Lluentor superficial brillantor pot ser observada a simple vista des de la Terra
 15274. Els detalls recognoscibles de la Lluna observats a ull nu (vegeu ''La cara de la Lluna'') tenen efecte en diverses cultures, com per exemple la relació amb el ''conill''
-15275. A més del culte mitològic de les diverses cultures primitives sobre el Fase lunar ritme de la lluna per a la descripció dels períodes de temps i com a base de calendaris, avui en dia és encara la base del calendari islàmic, que té un any lunar de 354 dies (12 nbsp;mesos sinòdics)
+15275. A més del culte mitològic de les diverses cultures primitives sobre el Fase lunar ritme de la lluna per a la descripció dels períodes de temps i com a base de calendaris, avui en dia és encara la base del calendari islàmic, que té un any lunar de 354 dies (12 mesos sinòdics)
 15276. La tripulació de l'''Apollo 11'' va col·locar una placa d'acer inoxidable, per commemorar la missió i deixar informació sobre la visita a tots els éssers vius que la trobin
 15277. La Lluna ha estat objecte de nombroses obres d'art i de la literatura, i la inspiració per a moltes d'altres
 15278. La Lluna com a cos celeste és objecte de novel·la novel·les i ficció, de la doble novel·la de Jules Verne ''De la Terra a la Lluna'' i ''Al voltant de la Lluna''; de l'opereta ''Frau Luna'' de Paul Lincke o els còmics en dos volums d'Hergé titulats ''Les aventures de Tintín'', ''Objectiu: la Lluna'' i ''Hem caminat damunt la Lluna'' fins a la presentació Futurisme futurística d'un Colonització de la Lluna assentament humà a la Lluna o la guia turística d'''Els viatges a la Lluna'' de Werner Tiki Küstenmacher.
@@ -16244,7 +16244,7 @@
 16244. Els municipis que la segueixen en població són Calvià (52.451), Manacor (40.873), Inca (Mallorca) Inca (29.966), Llucmajor (36.959), Marratxí (34.385), Alcúdia (19.243), Felanitx (18.482) i Pollença (16.114) (dades de l'INE, 1 de gener de 2011)
 16245. Els dos principals motors de l'economia són el turisme i la construcció, havent relegat a un segon pla a la indústria (pell, calçat, mobles, ceràmica, perla  perles, joieria, bijuteria) i al sector primari (agricultura, ramaderia, pesca, mineria), si bé les administracions locals s'esforcen últimament per a diversificar l'economia mallorquina potenciant altres sectors
 16246. Una de les badies de l'illa amb cert renom internacional es troba a Portals Vells amb la cala del Mag, que deu el seu nom a una pel·lícula que es va filmar allà el 1967 amb Anthony Quinn, Candice Bergen i Michael Caine
-16247. El clima mallorquí és típicament mediterrani, amb temperatures altes a l'estiu (superant els 30 nbsp;°C) i moderadament baixes a l'hivern (rarament inferiors als 5 nbsp;°C)
+16247. El clima mallorquí és típicament mediterrani, amb temperatures altes a l'estiu (superant els 30°C) i moderadament baixes a l'hivern (rarament inferiors als 5°C)
 16248. Mallorca presenta dues serres: la Serra de Tramuntana, amb muntanyes més altes, i les Serres de Llevant, d'altures més modestes
 16249. Aquí es pot destacar el massís de Randa, amb el Puig de Randa (543 m) i el Puig de Galdent (420 m).
 16250. Vegeu: Llista de cims de Mallorca
@@ -16554,7 +16554,7 @@
 16554. L'òrbita de la Lluna està en un pla inclinat respecte al pla de l'eclíptica: té una inclinació d'uns cinc graus
 16555. La duració mitjana dels diferents mesos lunars no és constant
 16556. Tant en el Calendari Gregorià, com en el Calendari julià, l'any té dotze mesos
-16557. El mes de febrer té 29 dies en els any de traspàs anys de traspàs: un de cada quatre anys té 366 dies, tret d'un de cada 100, tot i que cada 400 nbsp;anys no es té en compte aquesta última excepció
+16557. El mes de febrer té 29 dies en els any de traspàs anys de traspàs: un de cada quatre anys té 366 dies, tret d'un de cada 100, tot i que cada 400 anys no es té en compte aquesta última excepció
 16558. Però aviat arribarien els canvis, ja que Cèsar va tenir l'honor de posar-li el seu nom al cinquè mes (de 31 dies) i el va designar ''juliol''.
 16559. El seu successor, i fill adoptiu, Octavi August, donaria el nom d'''agost'' al sisè mes (de 30 dies)
 16560. Segons el calendari hebreu els anys poden tenir 12 o 13 mesos, que reben els noms de:
@@ -16861,7 +16861,7 @@
 16861. A Capadòcia (Àsia Menor, actual Turquia), Basili de Cesarea Sant Basili el Gran (330-379) va ser el pioner del monacat
 16862. En un moment determinat de la història de l'Imperi Romà, el monacat oriental va traslladar el seu eix al Mont Athos (Όρος Άθως) a Grècia i a Constantinoble a Àsia Menor, des d'on es van difondre els monestirs per terres de Rússia fins a arribar a la vora del Oceà Pacífic Pacífic.
 16863. En l'Església Ortodoxa de l'Est, els monjos i les monges seguixen una disciplina ascètica semblant
-16864. Un dels grans centres de la vida monàstica ortodoxa és la Muntanya Sagrada (també anomenada Mont Athos), a Grècia, es tracta d'una península autònoma d'aproximadament 32 nbsp;km
+16864. Un dels grans centres de la vida monàstica ortodoxa és la Muntanya Sagrada (també anomenada Mont Athos), a Grècia, es tracta d'una península autònoma d'aproximadament 32 km
 16865. L'estructura arquitectònica d'un '''monestir imperi Bizantí bizantí''' és totalment diferent de l'occidental
 16866. Generalment s'ubicava el monestir en un mig retirat però si açò no era possible s'aconseguia l'aïllament construint uns grans murs
 16867. L'entrada al monestir es feia a través d'un portal cobert on hi havia uns bancs que podien ocupar els captaires visitants a l'espera d'una almoina
@@ -17005,9 +17005,9 @@
 17005. Hi ha una infrautilitzada estació de ferrocarril de la línia Barcelona-Puigcerdà, per evidents motius d'inanació pressupostària
 17006. L'agricultura i la ramaderia han perdut la seva importància, encara que resten algunes cases de pagès actives
 17007. El clima de Manlleu i de la Plana de Vic, condicionat per l’orografia, és el mediterrani continental humit que es caracteritza per una forta oscil·lació tèrmica
-17008. Els hiverns són freds i humits amb oscil·lacions de temperatures que passen entre -15 nbsp;°C i 10 nbsp;°C com a conseqüència, en gran part, de la inversió tèrmica durant l’hivern
-17009. Les primaveres són plujoses amb temperatures fresques i agradables ( 5 a 25 nbsp;°C), mentre que a l’estiu predominen temperatures elevades d’entre 21-22 nbsp;°C, amb màximes freqüents superiors als 31 nbsp;°C
-17010. La tardor sol ser plujosa, amb boira i temperatures temperades (de -3 nbsp;°C a 22 nbsp;°C)
+17008. Els hiverns són freds i humits amb oscil·lacions de temperatures que passen entre -15°C i 10°C com a conseqüència, en gran part, de la inversió tèrmica durant l’hivern
+17009. Les primaveres són plujoses amb temperatures fresques i agradables ( 5 a 25°C), mentre que a l’estiu predominen temperatures elevades d’entre 21-22°C, amb màximes freqüents superiors als 31°C
+17010. La tardor sol ser plujosa, amb boira i temperatures temperades (de -3°C a 22°C)
 17011. Cal dir que els darrers anys, per efecte del canvi climàtic, el clima és poc previsible i amb més risc de sequera en qualsevol època, però a la vegada també èpoques amb molta pluja (els anys 2009, 2010, i el que portem de 2011 han sigut bastant plujosos)
 17012. El riu Ter té una gran diversitat de fauna, ja que les espècies troben en el riu un lloc idoni per viure, alimentar-se, reproduir-se o reposar
 17013. La fauna que està més directament relacionada amb el riu són els peixos
@@ -17173,7 +17173,7 @@
 17173. La hipòtesi d'Avogadro no fou admesa per la comunitat científica fins al 1860, quan un deixeble d'Avogadro, Stanislao Cannizzaro, presentà en una Congrés de Karlsruhe reunió científica a Karlsruhe un article (publicat el 1858) sobre les hipòtesis d'Avogadro i la determinació de massa atòmica masses atòmiques.
 17174. En les molècules, es pot imaginar que els parells electrònics compartits mantenen units els àtoms entre si es tracta de l'enllaç covalent
 17175. Al Montseny hi són abundants les pissarra pissarres i el granit, però també s'hi troba l'estranya mica lepidolita
-17176. El municipi de '''Montseny''', conegut antigament amb el nom del titular de la seva parròquia, Sant Julià del Montseny, té actualment una extensió de 26,8 nbsp;km², està situat al vessant meridional de la muntanya del Montseny i és l'únic poble del massís que en manté el nom
+17176. El municipi de '''Montseny''', conegut antigament amb el nom del titular de la seva parròquia, Sant Julià del Montseny, té actualment una extensió de 26,8 km², està situat al vessant meridional de la muntanya del Montseny i és l'únic poble del massís que en manté el nom
 17177. El municipi, situat a la comarca del Vallès Oriental, termeneja amb les comarques d'Osona i de la Selva i té forma triangular
 17178. És difícil establir unes característiques geogràfiques homogènies (clima, relleu, vegetació,...) en un terme municipal amb un relleu tan accidentat i muntanyós i amb un desnivell de nord a sud que arriba als 1.200 metres
 17179. El relleu accidentat i l'orientació fan que el clima i la vegetació siguin ben diversos
@@ -17357,7 +17357,7 @@
 17357. La massa es mesura en quilograms en el Sistema Internacional sistema internacional
 17358. En física, el quilogram és la unitat de massa, però la utilització en la vida corrent de ''quilogram'' és una abreviatura pel pes d'un cos que té la massa d'un quilogram a nivell del mar; habitualment, s'utilitza en moltes situacions quotidianes el quilopond quilogram força com una mesura de la força que equival al pes d'un quilogram de massa, però aquest ús és incompatible amb el Sistema Internacional d'Unitats sistema internacional d'unitats i s'ha d'evitar en contextos científics
 17359. Segons aquest sistema, la massa de Planck (''m sub  p /sub '') té el valor:
-17360. Aquest quant de massa té un valor de 2,177 · 10  sup  -8  /sup  nbsp;kg.
+17360. Aquest quant de massa té un valor de 2,177 · 10  sup  -8  /sup  kg.
 17361. La massa de Planck és d'una escala més o menys humana, perquè ve a ser el pes d'una puça.
 17362. En mecànica clàssica o newtoniana, estrictament parlant, la massa es refereix a dos conceptes: 
 17363. Hom ha demostrat experimentalment, amb la màxima precisió amb què es pot mesurar, que la massa inercial i la gravitatòria d'un objecte són iguals, encara que conceptualment es consideren diferents.
@@ -17565,9 +17565,9 @@
 17565. La planta pol·linitza tant per insectes com pel vent.
 17566. Les maduixes contenen una gran quantitat d'àcids orgànics i vitamina C, substàncies minerals i sucres per la qual raó és molt apreciat pel seu gust i les seves aplicacions en medicina
 17567. Les maduixeres que es conreen habitualment són plantes no híbrides de les espècies ''Fragaria vesca'' (maduixera europea) o ''Fragaria virginiana'' (maduixera nord-americana)
-17568. La maduixera és un cultiu que s'adapta molt bé a tota mena de climes, tot i així la seva temperatura mínima biològica és de 6 nbsp;°C
-17569. La part vegetativa de la maduixera és altament resistent a gelades, arribant a suportar temperatures fins a – 20 nbsp;°C, encara que els òrgans florals són malferits quan els valors són inferiors a 0 nbsp;°C.
-17570. Els valors adequats per a una fructificació adequada se situen rodejant els 15-20 nbsp;°C de mitjana anual.
+17568. La maduixera és un cultiu que s'adapta molt bé a tota mena de climes, tot i així la seva temperatura mínima biològica és de 6°C
+17569. La part vegetativa de la maduixera és altament resistent a gelades, arribant a suportar temperatures fins a – 20°C, encara que els òrgans florals són malferits quan els valors són inferiors a 0°C.
+17570. Els valors adequats per a una fructificació adequada se situen rodejant els 15-20°C de mitjana anual.
 17571. Per tal que la maduixera tingui un desenvolupament favorable, necessiten un sòl sorrenc
 17572. A les zones fredes, les maduixes solen plantar-se al principi de la primavera, i a mitjan estiu, o més tard als llocs més càlids
 17573. La maduixera té una vida mitjana de 4-5 anys, però quan és cultivada per a treure'n rendiment econòmic només és útil durant dos anys, ja que després es torna feble i vulnerable davant plagues i insectes, i per això s'han de treure del camp de recol·lecció i substituir-les per noves
@@ -17603,12 +17603,12 @@
 17603. És considerat com un dels autors en català més importants de la seva època i va rebre diversos premis per la seva obra, entre altres el Premi Ciutat de Barcelona, el Premi Joan Crexells de narrativa o la Premi Creu de Sant Jordi Creu de Sant Jordi, atorgada per la Generalitat de Catalunya, l'any 2001.
 17604. Va fer magisteri a la Escuela de Magisterio del barri de la Magdalena, a Saragossa; carrera que va exercir alguns anys a la seva vila nadiua, fins que va anar a fer el soldat, inicialment, al regiment d'Artilleria Antiaèria de Calataiud i, després, a la Jefatura del mateix cos a Saragossa
 17605. Animat pel seu compatrici Edmon Vallès, novel·lista, assagista i historiador, es va instal·lar a Barcelona per dedicar-se a la literatura i a la pintura
-17606. Es va donar a conèixer amb el recull de narracions nbsp;''Històries de la mà esquerra'', premi Joan Santamaria 1971, publicat per l'entitat organitzadora del premi, el 1973
-17607. Tant en el primer recull  -que va reeditar ampliant-lo amb noves narracions i el pròleg de Pere Calders, el 1981 a Editorial la Magrana (des d'aquell moment editorial on Moncada ha publicat en exclusiva)-, com en el segon, nbsp;''El cafè de la granota'' (1985) recreen -a cavall entre el realisme i la fantasia- el passat mític de l'antiga població de Mequinensa -ara soterrada sota les aigües del riu Ebre-; temàtica que va reprendre en les seves altres produccions (novel·les i narracions)
-17608. Moncada fa reviure Mequinensa amb precisió històrica, el 1988, amb la publicació de la primera novel·la nbsp;''Camí de sirga'', que va ser rebuda pel públic i la crítica com una de les novel·les més importants de la darrera narrativa catalana
-17609. A la novel·la nbsp;''La galeria de les estàtues'' nbsp;(1992), Mequinensa queda en segon terme enfront de la ciutat imaginària de Torrelloba, capital de província inspirada en Saragossa on l'autor va estudiar els anys cinquanta
-17610. El 1997 va publicar la novel·la nbsp;''Estremida memòria'', que va obtenir els premis Joan Crexells i el de la Crítica Serra d'Or, 1998
-17611. El 1999 va publicar un nou recull de narracions amb històries sorprenents, evocadores, humanes: nbsp;''Calaveres atònites'', des dels ulls d'un jove advocat barceloní, que va a Mequinensa a la dècada dels cinquanta, a ocupar la plaça de secretari del jutjat de pau
+17606. Es va donar a conèixer amb el recull de narracions ''Històries de la mà esquerra'', premi Joan Santamaria 1971, publicat per l'entitat organitzadora del premi, el 1973
+17607. Tant en el primer recull  -que va reeditar ampliant-lo amb noves narracions i el pròleg de Pere Calders, el 1981 a Editorial la Magrana (des d'aquell moment editorial on Moncada ha publicat en exclusiva)-, com en el segon, ''El cafè de la granota'' (1985) recreen -a cavall entre el realisme i la fantasia- el passat mític de l'antiga població de Mequinensa -ara soterrada sota les aigües del riu Ebre-; temàtica que va reprendre en les seves altres produccions (novel·les i narracions)
+17608. Moncada fa reviure Mequinensa amb precisió històrica, el 1988, amb la publicació de la primera novel·la ''Camí de sirga'', que va ser rebuda pel públic i la crítica com una de les novel·les més importants de la darrera narrativa catalana
+17609. A la novel·la ''La galeria de les estàtues'' (1992), Mequinensa queda en segon terme enfront de la ciutat imaginària de Torrelloba, capital de província inspirada en Saragossa on l'autor va estudiar els anys cinquanta
+17610. El 1997 va publicar la novel·la ''Estremida memòria'', que va obtenir els premis Joan Crexells i el de la Crítica Serra d'Or, 1998
+17611. El 1999 va publicar un nou recull de narracions amb històries sorprenents, evocadores, humanes: ''Calaveres atònites'', des dels ulls d'un jove advocat barceloní, que va a Mequinensa a la dècada dels cinquanta, a ocupar la plaça de secretari del jutjat de pau
 17612. Les seves obres s'han traduït a l'alemany, l'anglès, el castellà, el danès, l'eslovac, el francès, el gallec, el japonès, el neerlandès, el portuguès, el romanès, el suec, el vietnamita..
 17613. Pel conjunt de la seva trajectòria literària va ser distingit amb el Premi dels Escriptors Catalans (2000) i la Creu de Sant Jordi (2001)
 17614. Jesús Moncada sempre es va sentir molt arrelat a la seva terra, tant n’és el punt que a ''Camí de sirga''  narra la desaparició de l’antiga vila de Mequinensa (geogràficament entre el Segre i l’Ebre) a causa de la construcció del pantà de Riba-Roja.
@@ -17735,7 +17735,7 @@
 17735. El terreny es caracteritza pels seus baixos pujols amb camps de terrasses
 17736. Encara que durant l'època de grans pluges es formen alguns rierols, a Malta no hi ha rius o llacs permanents
 17737. Malta també compta amb les següents roques: la Roca Barbaganni, la Roca Fessej, la Roca Fungus, la Roca Għallis, les Roques de la Llacuna Blava (la Gran i la Petita), la Roca Sala i la Roca Xrobb l-Għaġin.
-17738. El clima local és temperat mediterrani amb hiverns plujosos però poc marcats (14 nbsp;°C) i estius secs i càlids (25 nbsp;°C)
+17738. El clima local és temperat mediterrani amb hiverns plujosos però poc marcats (14°C) i estius secs i càlids (25°C)
 17739. Des del 1993 Malta se subdivideix en 68 localitats o consells locals (''kunsilli lokali'' en maltès), que són l'entitat única d'administració subnacional, car no hi ha cap entitat intermediària entre aquesta i el govern nacional.
 17740. Per a l'entrada a la Unió Europea es van privatitzar algunes empreses que es trobaven sota el control de l'estat i es van liberalitzar els mercats
 17741. Els maltesos són majoritàriament catolicisme catòlics, i la influència de l'Església és present a gairebé tots els ambients
@@ -18352,13 +18352,13 @@
 18352. Es pot realitzar una aproximació del nombre ''e'' amb ''n'' termes de la seqüència de Taylor citada
 18353. Un '''nombre natural''' és qualsevol dels nombres 0, 1, 2, 3..., 19, 20, 21, 22, ..., 1059..., un milió ..., que es poden usar per a comptar els elements d'un conjunt finit
 18354. Segons Kronecker, matemàtic alemany (1823-1891):
-18355. S'especula que els primers usos coneguts dels nombres es retrotrauen a fa més de 30.000 nbsp;anys, època de la qual s'han trobat ossos i altres objectes amb marques tallades al damunt seu que possiblement haurien servit per a dur el compte d'alguna cosa, un nombre de dies o una quantitat d'objectes.
+18355. S'especula que els primers usos coneguts dels nombres es retrotrauen a fa més de 30.000 anys, època de la qual s'han trobat ossos i altres objectes amb marques tallades al damunt seu que possiblement haurien servit per a dur el compte d'alguna cosa, un nombre de dies o una quantitat d'objectes.
 18356. Els sistemes de marques no tenen el concepte de valor posicional (tal com el té l'actual sistema de numeració decimal), i això limita la seva aplicació a l'hora de representar nombres grans
 18357. El primer sistema conegut amb valor posicional va ser el sistema d'unitats de mesura de la Antiga Mesopotàmia Mesopotàmic, un sistema en base 60 3400 aC
 18358. Els matemàtics fan servir '''N''' o  math \mathbb{N} /math  (una N en doble ratlla, que es presenta com {{unicode ℕ}} en Unicode) per a referir-se al conjunt de tots els nombres naturals
 18359. Per a denotar el conjunt dels naturals sense el zero, és habitual usar un asterisc com a superíndex de la '''N''':
 18360. Quan es considera que 0 no és un nombre natural, a vegades s'utilitza una notació amb un subíndex 0 per a representar el conjunt dels naturals amb el 0:
-18361. Segons la norma DIN nbsp;5473 s'hauria de fer servir  math \N /math  per a tots els naturals (amb el zero) i  math \N^* /math  per als estrictament positius (és a dir, sense el zero).
+18361. Segons la norma DIN 5473 s'hauria de fer servir  math \N /math  per a tots els naturals (amb el zero) i  math \N^* /math  per als estrictament positius (és a dir, sense el zero).
 18362. Els que treballen en la teoria de conjunts sovint denoten el conjunt de tots els nombres naturals amb la lletra grega minúscula omega: ω
 18363. Pel que fa a la notació dels nombres naturals (els elements que conté el conjunt) la seva notació depèn del sistema de numeració emprat.
 18364. De forma que un nombre natural s'expressa amb un conjunt de xifres diferents (tantes com en la base) i el valor de cada xifra depèn de la seva posició en l'escriptura del nombre.
@@ -18415,8 +18415,8 @@
 18415. En les matemàtiques antic Egipte egípcies, el càlcul de fraccions requeria coneixements sobre les operacions, la divisió de naturals i la factorització
 18416. La primera prova indiscutible del coneixement dels nombres primers es remunta al voltant de l'any 300 aC i es troba en els Elements d'Euclides (volums VII a IX)
 18417. El ''garbell'' o sedàs d'Eratòstenes, atribuït a Eratòstenes de Cirene, és un mètode senzill que permet trobar nombres primers.
-18418. Fermat va enunciar la conjectura de què tots els nombres de la forma  math 2^{2^n}+1 /math  són primers (per això aquests nombres s’anomenen nombre de Fermat nombres de Fermat) i va verificar la hipòtesi fins a ''n'' = 4 (és a dir, 2 sup 16 /sup  nbsp;+ nbsp;1)
-18419. El monjo francès Marin Mersenne va investigar els nombres primers de la forma 2 sup ''p'' /sup  nbsp;− nbsp;1, amb ''p'' primer
+18418. Fermat va enunciar la conjectura de què tots els nombres de la forma  math 2^{2^n}+1 /math  són primers (per això aquests nombres s’anomenen nombre de Fermat nombres de Fermat) i va verificar la hipòtesi fins a ''n'' = 4 (és a dir, 2 sup 16 /sup  + 1)
+18419. El monjo francès Marin Mersenne va investigar els nombres primers de la forma 2 sup ''p'' /sup  − 1, amb ''p'' primer
 18420. Els treballs d’Euler en teoria de nombres contenen molts resultats referents als nombres primers
 18421. A començaments del segle XIX, Legendre i Gauss van conjecturar de forma independent que, quan  math n /math tendeix a infinit, la quantitat de nombres primers menors o iguals que  math n /math tendeixen asimptòticament a  math \tfrac{n}{\ln (n)} /math , on  math \ln (n) \  /math és el logaritme natural de  math n /math 
 18422. Durant molt de temps, es pensava que l'aplicació dels nombres primers era molt limitada fora de la matemàtica pura
@@ -18507,7 +18507,7 @@
 18507. Vist d'aquesta manera, cada nombre natural és un conjunt ben ordenat: el conjunt 4, per exemple, té elements 0, 1, 2, 3, que són ordenats naturalment com a 0 1 2 3 (ben ordenats)
 18508. A les Països Catalans terres de parla catalana, aquesta classe conté un sol ordre, el ''Tamaricetalia africanae'', i 3 aliances :
 18509. Un '''nombre perfecte''' és un nombre enter enter que és igual a la suma dels seus divisors positius, excepte ell mateix
-18510. Els nombres perfectes estan relacionats amb els Nombre primer de Mersenne nombres primers de Mersenne: si ''M'' és un Nombre primer de Mersenne primer de Mersenne (un nombre primer que és una unitat menor que una potència de 2), aleshores ''M''(''M''+1)/2 és un nombre perfecte, és a dir, que 2 sup ''n''−1 /sup (2 sup ''n'' /sup  nbsp;− nbsp;1) és un nombre perfecte
+18510. Els nombres perfectes estan relacionats amb els Nombre primer de Mersenne nombres primers de Mersenne: si ''M'' és un Nombre primer de Mersenne primer de Mersenne (un nombre primer que és una unitat menor que una potència de 2), aleshores ''M''(''M''+1)/2 és un nombre perfecte, és a dir, que 2 sup ''n''−1 /sup (2 sup ''n'' /sup  − 1) és un nombre perfecte
 18511. A més, Leonhard Euler Euler va demostrar en el segle XVIII que tots els nombres perfectes parells són d'aquesta forma
 18512. No es coneix l'existència de nombres perfectes senars
 18513. Considerant la suma dels divisors propis, hi ha altres tipus de nombres
@@ -18747,7 +18747,7 @@
 18747. Històricament les illes d'Oceania han passat per diferents graus de dependència de les potències colonials: protectorat, Colonització colònia, annexió o Territoris fideïcomissaris mandat o fideïcomís de les Nacions Unides
 18748. Estats independents amb fons groc; Dependències d'altres Estats amb fons taronja
 18749. Oceania cobreix una regió macrogeogràfica situada entre l'Àsia Sud-oriental i Amèrica, amb Austràlia com a major massa continental, seguida per les més petites i properes illes de Papua Nova Guinea i Nova Zelanda, a les que se sumen unes 25.000 petites illes disperses al Oceà Pacífic Pacífic
-18750. L'altitud mitjana d'Oceania és baixa: 340 nbsp;metres
+18750. L'altitud mitjana d'Oceania és baixa: 340 metres
 18751. La muntanya més alta d'Austràlia, Mont Mawson de 2.745 m, es troba a la petita illa Heard a l'Oceà Índic meridional, tot i que el Mont Kosciuszko, amb 2.228 m, és la principal elevació del continent australià.
 18752. El clima està fortament influenciat pels corrents oceànics (incloïent-hi El Niño, el qual causa sequera sequeres periòdiques) i pel sistema estacional tropical de baixa pressió atmosfèrica, que produeix freqüents tifó tifons al nord d'Austràlia
 18753. Les Precipitació (meteorologia) precipitacions són abundants a les costes orientals de les illes muntanyenques (exposades als vents alisis), mentre que les costes occidentals (a sotavent), pateixen una major aridesa
@@ -18950,7 +18950,7 @@
 18950. A l'altiplà del Lluçanès, el seu paisatge natural és de roures martinencs i alzines carrasques, però l'home ha canviat el paisatge per pinedes, de les quals destaca la de pi roig
 18951. Les subcomarques d'Osona són el Lluçanès, la plana de Vic, el Cabrerès i Guilleries-Montseny.
 18952. La comarca conté 50 municipis, 3 d'ells pertanyents a la província de Girona (Espinelves, Vidrà i Viladrau) i els 47 restants a la província de Barcelona
-18953. La comarca és molt activa, i disposa de molts dels serveis que poden disposar les grans capitals (com ara una Universitat de Vic Universitat), la majoria ubicats a la seva capital, Vic (amb una superfície de 30,92 nbsp;km² i gairebé uns 40.000 habitants).
+18953. La comarca és molt activa, i disposa de molts dels serveis que poden disposar les grans capitals (com ara una Universitat de Vic Universitat), la majoria ubicats a la seva capital, Vic (amb una superfície de 30,92 km² i gairebé uns 40.000 habitants).
 18954. És terra de grans escriptors i poetes, com ara Jacint Verdaguer, Emili Teixidor, Miquel Martí i Pol, Maria Àngels Anglada, Segimon Serrallonga, entre altres
 18955. El riu Ter va ser la seu de diverses colònies tèxtils, que juntament amb la ramaderia porcina, van enriquir la comarca
 18956. El municipi comprèn el nucli urbà i els veïnats de les Mines d'Osor, Santa Creu d'Horta, Sant Gregori (Osor) Sant Gregori, El Coll (Osor) el Coll i Sant Miquel de Maifré
@@ -19223,7 +19223,7 @@
 19223. La superfície central està coberta per una capa de gel en moviment d'uns 3 m de gruix de mitjana, encara que en alguns punts pot ser de tres vegades més; la circulació és en el sentit de les agulles del rellotge al corrent de Beaufort, però va gairebé en línia recta des de les illes de Nova Sibèria (al nord de Rússia) fins a l'estret de Dinamarca (entre Groenlàndia i Islàndia); el gel està envoltat de mar oberta durant l'estiu, però a l'hivern duplica la seva mida (i fins i tot més) i arriba fins a les masses de terra.
 19224. L'oceà Àrtic conté les plataforma continental plataformes continentals àrtiques, una de les quals, la de Sibèria, és la més gran del món
 19225. Sota l'actual edat glacial, l'oceà àrtic presenta un clima polar que es caracteritza per marges de temperatura relativament estrets de fred persistent; hiverns caracteritzats per la foscor contínua, el fred i unes condicions meteorològiques estables, amb cels clars; claror contínua als estius, boires, i de vegades tempestes dèbils amb pluja o neu.
-19226. La temperatura de la seva superfície és prou constant, al voltant del punt de congelació de l'aigua de mar, una mica per sota dels 0 nbsp;°C
+19226. La temperatura de la seva superfície és prou constant, al voltant del punt de congelació de l'aigua de mar, una mica per sota dels 0°C
 19227. La coberta de gel polar sobre l'oceà varia en extensió i gruix durant les diferents estacions
 19228. Conglomerats de sorres i graves, dipòsits detrítics, nòduls polimetàl·lics, camps de petroli i gas, peix, mamífers marins (foques i balenes).
 19229. Illes de gel que es desprenen ocasionalment al nord de l'illa Ellesmere; icebergs sorgits de les glaceres de Groenlàndia i de la costa nord-oriental del Canadà; permafrost a les illes; virtualment tancat pel gel d'octubre a juny, i practicable només amb vaixells trenca-gels d'octubre a maig.
@@ -19336,12 +19336,12 @@
 19336. Diversos processos operen al llarg de la costa de l'Antàrtida per produir, a l'oceà Austral, alguns tipus de massa d'aigua que no es troben en altres parts dels oceans de l'hemisferi sud
 19337. L'Oceà del Sud, geològicament el més jove dels oceans, es va formar quan l'Antàrtida i Amèrica del Sud van separar-se amb l'obertura del Passatge de Drake, fa aproximadament 30 milions d'anys
 19338. Per la naturalesa del seu sòl, l'oceà Austral té poques illes, amb excepció d'aquelles situades al continent antàrtic
-19339. L'oceà Antàrtic és profund, de 4.000 a 5.000 nbsp;metres a la majoria de la seva extensió, amb només àrees limitades d'aigües poc profundes
-19340. La profunditat màxima és de 7.235 nbsp;metres, a la Fossa de les Illes Sandwich del Sud ({{coord 60 0 S 0 24 W type:waterbody_region:AQ  nom =Fossa de les illes Sandwich del Sud}})
+19339. L'oceà Antàrtic és profund, de 4.000 a 5.000 metres a la majoria de la seva extensió, amb només àrees limitades d'aigües poc profundes
+19340. La profunditat màxima és de 7.235 metres, a la Fossa de les Illes Sandwich del Sud ({{coord 60 0 S 0 24 W type:waterbody_region:AQ  nom =Fossa de les illes Sandwich del Sud}})
 19341. La capa de gel antàrtica, al ritme de les estacions, creix des d'una mitjana mínima de 2,6 milions de quilòmetres quadrats al març fins a uns 18,8 milions de quilòmetres quadrats al setembre, més de 7 vegades en àrea
 19342. El corrent antàrtic circumpolar, de 21.000 km de longitud, es mou perpètuament cap a l'est; és el corrent oceànic més fort, i transporta 130 milions de metres cúbics d'aigua per segon -100 vegades el flux de tots els rius del món, i l'únic que dóna la volta al món sencer.
 19343. En molts aspectes, l'oceà Antàrtic és el contrari de l'oceà Àrtic, situat en l'extrem oposat de la Terra.
-19344. Les Temperatura temperatures de l'aigua varien entre els 10 nbsp;Grau Celsius °C i els -2 nbsp;°C
+19344. Les Temperatura temperatures de l'aigua varien entre els 10 Grau Celsius °C i els -2°C
 19345. La banquisa és el gel marí de prop d'un metre de fondària que es forma al voltant del continent antàrtic, i oscil·la entre un mínim de 2,6 milions de quilòmetres quadrats al març a fins a un màxim de 18,8 milions de quilòmetres quadrats al setembre
 19346. Jaciments de gas i de petroli probablement grans i possiblement enormes als marges continentals; nòduls de manganès; dipòsits de sorra i grava; pesca abundant
 19347. Quant a la flora, els Organisme organismes autòtrofs marins n'hi són els únics representants: fitoplàncton i alga algues marines.
