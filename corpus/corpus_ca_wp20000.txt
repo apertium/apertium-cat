@@ -120,7 +120,7 @@
 00120. La distància dels carrers es compta a la línia externa
 00121. Just abans de la sortida de la recta hi ha d'haver el número de cada carrer pintat de color blanc, de més de mig metre d'alçada i llegibles en la direcció de la carrera
 00122. També hi ha d'haver un passadís especial per enllaçar les proves que es fan fora la pista (marató, mitja marató, marxa atlètica) i que acaben a dins.
-00123. Estranya vegada alguns d'aquests llançaments poden desenvolupar-se a descampats adjacents a la pista, normalment per no fer malbé la gespa de l'interior, que molts cops s'utilitza com a camp de futbol, rugbi o hoquei sobre herba.
+00123. Rara vegada alguns d'aquests llançaments poden desenvolupar-se a descampats adjacents a la pista, normalment per no fer malbé la gespa de l'interior, que molts cops s'utilitza com a camp de futbol, rugbi o hoquei sobre herba.
 00124. També pot ser que es desenvolupi a pistes cobertes, on la recta fa només 50 metres, la meitat d'una pista normal, no s'hi poden fer proves com el llançament de disc o llançament de javelina javelina per l'escàs espai del qual es disposa
 00125. Tot i això hi ha proves com els Camp a través crossos, algunes curses de marxa atlètica marxa i les marató maratons que es desenvolupen a camí camins o carretera carreteres
 00126. El material necessari és molt variat segons la prova que es vulgui fer
