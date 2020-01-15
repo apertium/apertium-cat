@@ -202,6 +202,7 @@ SET Estar = ("estar") OR ("Estar");
 SET Haver = ("haver") OR ("Haver") ;
 
 LIST Que = "que" ;
+LIST Qui = "qui" ;
 LIST Deu = "deu" ;
 
 SET V_CI = ("telefonar") OR ("trucar") ;	# verbs darrere els quals no pot anar un CD, sinó un CI
@@ -488,10 +489,12 @@ SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
-SELECT Rel (-1C N) (0 Que) (1 Verb + P3) ;
+SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Verb + P3) ;
 	# la dona que estima les flors
-SELECT Rel (-2C N) (-1 A) (0 Que) (1 Verb + P3) ;
+	# és l'estat qui decideix
+SELECT Rel (-2C N) (-1 A) (0 Que OR Qui) (1 Verb + P3) ;
 	# la dona gran que estima les flors
+	# és l'estat espanyol qui decideix
 #REMOVE Rel (-2C Verb) (-1C Prep) (0 Rel OR Itg) ;	# s'ha d'estudiar millor
 	# sap de què parla
 
