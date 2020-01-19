@@ -1670,3 +1670,9 @@ SELECT Prep IF (-1 >>> OR _S_SOFT_DELIMITERS_) (0 ("tot i")) (1 Det) (2 Adj_PP) 
 REMOVE Prep IF (0 ("tot i")) ;
     # tot i haver caigut
 	# tot i les reivindicacions
+
+SELECT A IF (-1 N) (0 ("en pràctiques")) ;
+SELECT A IF (-2 N) (-1 A) (0 ("en pràctiques")) ;
+SELECT A IF (-1 Estar) (0 ("en pràctiques")) ;
+SELECT A IF (-2 Estar) (-1 Adv) (0 ("en pràctiques")) ;
+REMOVE A IF (0 ("en pràctiques")) ;
