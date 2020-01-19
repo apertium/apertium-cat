@@ -46,12 +46,18 @@
         <e><p><l><a/>liqüeféu</l><r>liqüefeu</r></p></e>
         <e><p><l><a/>litosòl</l><r>litosol</r></p></e>
         <e><p><l><a/>litosòls</l><r>litosols</r></p></e>
+        <e><p><l><a/>luvisòl</l><r>luvisol</r></p></e>
+        <e><p><l><a/>luvisòls</l><r>luvisols</r></p></e>
+        <e><p><l><a/>macromón</l><r>macromon</r></p></e>
+        <e><p><l><a/>micromón</l><r>micromon</r></p></e>
         <e><p><l><a/>malvéu</l><r>malveu</r></p></e>
         <e><p><l><a/>marededéu</l><r>marededeu</r></p></e>
         <e><p><l><a/>marededéus</l><r>marededeus</r></p></e>
         <e><p><l><a/>matamón</l><r>matamon</r></p></e>
         <e><p><l><a/>mol·lisòl</l><r>mol·lisol</r></p></e>
         <e><p><l><a/>mol·lisòls</l><r>mol·lisols</r></p></e>
+        <e><p><l><a/>monosialsòl</l><r>monosialsol</r></p></e>
+        <e><p><l><a/>monosialsòls</l><r>monosialsols</r></p></e>
         <e><p><l><a/>mèu</l><r>meu</r></p></e>
         <e><p><l><a/>mèus</l><r>meus</r></p></e>
         <e><p><l><a/>mòlt</l><r>molt</r></p></e>
@@ -65,11 +71,21 @@
         <e><p><l><a/>nétes</l><r>netes</r></p></e>
         <e><p><l><a/>néts</l><r>nets</r></p></e>
         <e><p><l><a/>nós</l><r>nos</r></p></e>
+        <e><p><l><a/>organosòl</l><r>organosol</r></p></e>
+        <e><p><l><a/>organosòls</l><r>organosols</r></p></e>
+        <e><p><l><a/>oxidisòl</l><r>oxidisol</r></p></e>
+        <e><p><l><a/>oxidisòls</l><r>oxidisols</r></p></e>
         <e><p><l><a/>paleosòl</l><r>paleosol</r></p></e>
         <e><p><l><a/>paleosòls</l><r>paleosols</r></p></e>
         <e><p><l><a/>perféu</l><r>perfeu</r></p></e>
         <e><p><l><a/>pergelisòl</l><r>pergelisol</r></p></e>
         <e><p><l><a/>pergelisòls</l><r>pergelisols</r></p></e>
+        <e><p><l><a/>pelosòl</l><r>pelosol</r></p></e>
+        <e><p><l><a/>pelosòls</l><r>pelosols</r></p></e>
+        <e><p><l><a/>planosòl</l><r>planosol</r></p></e>
+        <e><p><l><a/>planosòls</l><r>planosols</r></p></e>
+        <e><p><l><a/>podzoluvisòl</l><r>podzoluvisol</r></p></e>
+        <e><p><l><a/>podzoluvisòls</l><r>podzoluvisols</r></p></e>
         <e><p><l><a/>pregadéu</l><r>pregadeu</r></p></e>
         <e><p><l><a/>pregadéus</l><r>pregadeus</r></p></e>
         <e><p><l><a/>prevéu</l><r>preveu</r></p></e>
