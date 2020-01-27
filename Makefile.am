@@ -30,23 +30,23 @@ TARGETS_COMMON =			\
 ## Catalan transducer
 ###############################################################################
 
-$(BASENAME).$(LANG1).dix: $(BASENAME).$(LANG1).metadix 
+.deps/$(BASENAME).$(LANG1).dix: $(BASENAME).$(LANG1).metadix 
 	apertium-validate-dictionary $<
 	python3 convert-metadix-dix.py $< $@ 
 
-$(LANG1)$(VAR1).automorf.bin: $(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1).acx
+$(LANG1)$(VAR1).automorf.bin: .deps/$(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1).acx
 	apertium-validate-dictionary $<
-	lt-comp lr $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
+	lt-comp lr .deps/$(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
-.deps/$(BASENAME).$(LANG1).cat.dix: $(BASENAME).$(LANG1).dix .deps/.d
+.deps/$(BASENAME).$(LANG1).cat.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	apertium-genvdix cat $< >$@
 
-.deps/$(BASENAME).$(LANG1).val_gva.dix: $(BASENAME).$(LANG1).dix .deps/.d
+.deps/$(BASENAME).$(LANG1).val_gva.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	apertium-genvdix val_gva $< >$@
 
-.deps/$(BASENAME).$(LANG1).val_uni.dix: $(BASENAME).$(LANG1).dix .deps/.d
+.deps/$(BASENAME).$(LANG1).val_uni.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	apertium-genvdix val_uni $< >$@
 
@@ -94,7 +94,7 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 ###############################################################################
 ## Distribution
 ###############################################################################
-EXTRA_DIST=$(BASENAME).$(LANG1).dix		\
+EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
@@ -128,7 +128,7 @@ noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
 	test -d $(DESTDIR)$(apertium_cat_srcdir) || mkdir -p $(DESTDIR)$(apertium_cat_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_cat_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_cat_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_cat_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_cat_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-diacritics-vells.dix $(DESTDIR)$(apertium_cat_srcdir)

@@ -42,7 +42,6 @@ for pardef in pardefs.iter(tag='pardef'):
 mainsection = tree.find('.//section[@id="main"]')
 
 for e in mainsection.iter(tag='e'):
-    f.write(XMLtoString(e))
     par = e.find('par')
     if par is None:
         continue
