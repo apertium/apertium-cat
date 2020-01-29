@@ -822,7 +822,7 @@ SELECT Pobla IF (0 Poble OR Pobla + Pl) (1 Fem LINK NOT 0 MF) ;
 SELECT Poble IF (0 Poble OR Pobla + Pl) (NOT -1 Fem LINK NOT 0 MF) (NOT 1 Fem LINK NOT 0 MF);
 SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 
-REMOVE Ger IF (-1 Noun_Adj + Sg) (0 Protestant + Sg) (NOT 1 ("que") OR ("per")) ;	# el primer monarca protestant d'Anglaterra
+REMOVE Ger IF (-1 Noun_Adj + Sg) (0 Protestant + Sg) (NOT 1 ("que") OR ("per") OR ("contra")) ;	# el primer monarca protestant d'Anglaterra
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
 
