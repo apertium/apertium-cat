@@ -886,6 +886,8 @@ SELECT Pron IF (0 Tot + FemPl) (1 Pron + Dem + FemPl) (NOT 2 N + FemPl) ;	# tote
 SELECT Pron IF (0 Tot + MascSg) (1 ("això") OR ("allò") ) ;
 SELECT Pron IF (0 Tot + MascSg) (1 Det + Def + MascSg ) (2 PP + MascSg) (NOT 3 N + MascSg) ;	# tot el relacionat (potser no és normatiu, però es troba)
 
+REMOVE Det IF (0 Det + Pos OR Pron + Pos) (1 CnjCoo);	# tenia la meva mà en la seva i semblava
+
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
 SELECT Cog IF (-2 Ant) (-1 ("de")) (0 ("Orange")) ;
