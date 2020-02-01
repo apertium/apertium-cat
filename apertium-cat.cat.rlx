@@ -7,6 +7,7 @@ SETS
 
 LIST >>> = >>> ;
 LIST <<< = <<< ;
+SET EOS = <<< OR (sent) ;
 
 LIST N = (n) ;
 LIST NP = (np) ;
@@ -189,6 +190,7 @@ LIST Promes = "promès" ;
 LIST Promesa = "promesa" ;
 LIST Terme = "terme" ;
 LIST Termes = "termes" ;
+LIST Set = "set" ;
 LIST Tot = "tot" ;
 LIST Entre = "entre" ;
 LIST Les = "les" ;
@@ -835,6 +837,8 @@ SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
 
 SELECT Terme IF (0 Terme OR Termes) (1 ("municipal") + Pl) ;
 
+SELECT N IF (-2 ("guanyar") OR ("aconseguir") OR ("perdre")) (-1 Num) (0 Set) ;
+
 SELECT N IF (0 ("coure")) (1C A) (NOT 2 N) ;	# monedes que inclouen coure pur
 
 SELECT A IF (-1C N + Sg) (0 ("constant") + Sg) ;	# operacions de temps constant
@@ -1100,17 +1104,21 @@ SELECT A IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("més") OR ("menys")) (0 A + FemP
 	# l'activitat industrial més activa
 	# les llengües internacionales més esteses
 
-REMOVE N IF (-1C N + MascSg) (0 N OR A + MascSg) (1 (",")) (2 A + MascSg)  (3 ("i")) (4 A + MascSg) ;
-REMOVE N IF (-1C N + FemSg) (0 N OR A + FemSg) (1 (",")) (2 A + FemSg)  (3 ("i")) (4 A + FemSg) ;
-REMOVE N IF (-1C N + MascPl) (0 N OR A + MascPl) (1 (",")) (2 A + MascPl)  (3 ("i")) (4 A + MascPl) ;
-REMOVE N IF (-1C N + FemPl) (0 N OR A + FemPl) (1 (",")) (2 A + FemPl)  (3 ("i")) (4 A + FemPl) ;
+REMOVE N IF (-1C N + MascSg) (0 N OR A + MascSg) (1 (",")) (2 A + MascSg)  (3 ("i") OR ("o")) (4 A + MascSg) ;
+REMOVE N IF (-1C N + FemSg) (0 N OR A + FemSg) (1 (",")) (2 A + FemSg)  (3 ("i") OR ("o")) (4 A + FemSg) ;
+REMOVE N IF (-1C N + MascPl) (0 N OR A + MascPl) (1 (",")) (2 A + MascPl)  (3 ("i") OR ("o")) (4 A + MascPl) ;
+REMOVE N IF (-1C N + FemPl) (0 N OR A + FemPl) (1 (",")) (2 A + FemPl)  (3 ("i") OR ("o")) (4 A + FemPl) ;
 	# ortografia francesa, llatina i grega
 
-REMOVE N IF (-3 N + MascSg) (-2 A + MascSg) (-1 ("i")) (0 A + MascSg) (0 N) ;
-REMOVE N IF (-3 N + FemSg) (-2 A + FemSg) (-1 ("i")) (0 A + FemSg) (0 N) ;
-REMOVE N IF (-3 N + MascPl) (-2 A + MascPl) (-1 ("i")) (0 A + MascPl) (0 N) ;
-REMOVE N IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("i")) (0 A + FemPl) (0 N) ;
+REMOVE N IF (-3 N + MascSg) (-2 A + MascSg) (-1 ("i") OR ("o")) (0 A + MascSg) (NOT 1 A) ;
+REMOVE N IF (-3 N + FemSg) (-2 A + FemSg) (-1 ("i") OR ("o")) (0 A + FemSg) (NOT 1 A) ;
+REMOVE N IF (-3 N + MascPl) (-2 A + MascPl) (-1 ("i") OR ("o")) (0 A + MascPl) (NOT 1 A) ;
+REMOVE N IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("i") OR ("o")) (0 A + FemPl) (NOT 1 A) ;
 	# el seu caràcter màgic i religiós
+	# combustibles fòssils o centrals nuclears
+
+REMOVE N IF (-4 N + &&ConcordaGN) (-3 A + &&ConcordaGN) (-2 ("i") OR ("o")) (-1 Adv_PreAdv) (0 A + &&ConcordaGN) (NOT 1 A) ;
+SELECT PreAdv IF (-3 N + &&ConcordaGN) (-2 A + &&ConcordaGN) (-1 ("i") OR ("o")) (0 Forca) (1 A + &&ConcordaGN) (NOT 2 A) ;
 
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VAdj) (1 Barrera_Final_Estrict_SN) ;
 	# detonar explosivos.
@@ -1334,10 +1342,16 @@ SELECT N IF (-2C N) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Det) (3 N) ;
 
 # ADJ, ADJ CONJ ADJ
 
-SELECT A IF (-2C A) (-1 CM) (0 Noun_Adj_PP) (1 CnjCoo) (2 Noun_Adj_PP) ;
-SELECT A IF (-3 CM) (-2C A) (-1 CnjCoo) (0 Noun_Adj_PP) (NOT 1 N) ;
-SELECT A IF (0 Noun_Adj_PP) (1 CM) (2C A) (1 CnjCoo) (2 Noun_Adj_PP) ;
+SELECT A IF (-2C A + &&ConcordaGN) (-1 CM) (0 Noun_Adj_PP + &&ConcordaGN) (1 CnjCoo) (2 Noun_Adj_PP + &&ConcordaGN) ;
+SELECT A IF (-3 CM) (-2C A + &&ConcordaGN) (-1 CnjCoo) (0 Noun_Adj_PP + &&ConcordaGN) (NOT 1 N) ;
+SELECT A IF (-4 CM) (-3C A + &&ConcordaGN) (-2 CnjCoo) (-1 Adv_PreAdv) (0 Noun_Adj_PP + &&ConcordaGN) (NOT 1 N) ;
+SELECT A IF (0 Noun_Adj_PP + &&ConcordaGN) (1 CM) (2C A + &&ConcordaGN) (1 CnjCoo) (2 Noun_Adj_PP + &&ConcordaGN) ;
+SELECT A IF (-3 N + &&ConcordaGN) (-2 A + &&ConcordaGN) (-1 CM) (0 A + &&ConcordaGN) (1 CnjCoo) (2 Noun_Adj_PP + &&ConcordaGN);
+SELECT A IF (-3 N + &&ConcordaGN) (-2 A + &&ConcordaGN) (-1 CM) (0 A + &&ConcordaGN) (1 CnjCoo) (2 Adv_PreAdv) (3 Noun_Adj_PP + &&ConcordaGN);
+SELECT A IF (-6 N + &&ConcordaGN) (-5 A + &&ConcordaGN) (-4 CM) (-3 A + &&ConcordaGN) (-2 CnjCoo) (-1 Adv_PreAdv) (0 Noun_Adj_PP + &&ConcordaGN) (NOT 1 N) ;
+SELECT A IF (NOT -3 N + &&ConcordaGN) (-2C A + &&ConcordaGN) (-1 CnjCoo) (0 A + &&ConcordaGN) (1 EOS) ;
 # rojo, verde y azul
+# enclavaments genovesos, francoprovençals o fins i tot grecs i albanesos
 
 # NOM, NOM,
 
