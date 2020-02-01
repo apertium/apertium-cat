@@ -169,6 +169,7 @@ LIST Seure = "seure" ;
 LIST Moure = "moure" ;
 LIST So = "so" ;
 LIST Son = "son" ;
+LIST Fem_N = "fem" ;
 LIST Fi = "fi" ;
 LIST Fins = "fins" ;
 LIST Fer = "fer" ;
@@ -816,6 +817,8 @@ SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 	# L'agnòstic sol separar les posicions
 
 SELECT So IF (0 So OR Son + Pl) ;
+
+REMOVE N IF (0 Fem_N + Sg) (1 Inf) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
 REMOVE:fins_n Prep IF (-1 Det + &&ConcordaGN) (0 ("fi") + &&ConcordaGN) (1 Adj_PP + &&ConcordaGN);
