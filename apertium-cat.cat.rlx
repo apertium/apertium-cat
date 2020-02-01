@@ -651,6 +651,10 @@ SELECT N IF (-1 ("més") OR ("menys")) (0 ("parlant") + Pl);
 SELECT N IF (0 ("parlant")) (1 ("natiu") OR ("nadiu"));
   ## parlants nadius
 
+# però, emperò
+SELECT Adv IF (-1 CM) (0 ("però") OR ("emperò")) (1 CM) ;
+REMOVE Adv IF (0 ("però") OR ("emperò")) ;
+
 #recolzada
 REMOVE:recolzada N IF (0 ("recolzada")) (NOT -1 Det + Fem);
 REMOVE:recolzada N IF (0 ("recolzada")) (1 ("per"));
