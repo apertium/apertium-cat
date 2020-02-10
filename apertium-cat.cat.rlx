@@ -200,6 +200,7 @@ LIST Ens = "ens" ;
 LIST Forca = "força" ;
 LIST Bastant = "bastant" ;
 LIST A_la_meitat = "a la meitat" ;
+LIST Esser = "ésser" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -624,6 +625,11 @@ SELECT:pronom_verb (p3) IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'implan
 
 # deure
 REMOVE:deure_vbmod Vbmod IF (0 ("deure")) (NOT 1 Inf);
+
+REMOVE N IF (-1C Vbmod) (0 Inf) ;
+	# vol ésser
+REMOVE N IF (-1 ("resultar")) (0 Esser) (0 Inf) ;
+	# resulta ésser
 
 # arreplega V/N: TODO: generalitzar
 SELECT:arreplega Verb IF (0 ("entrega") OR ("arreplega")) (1 Det OR ("que"));
