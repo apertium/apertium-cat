@@ -628,6 +628,7 @@ SELECT:pronom_verb (p3) IF (-1 ("es"i)) (-1 (prn pro)) (0 (vblex p3)); #s'implan
 
 # deure
 REMOVE:deure_vbmod Vbmod IF (0 ("deure")) (NOT 1 Inf);
+REMOVE N IF (0 ("deure")) (1 ("a")) ;
 
 REMOVE N IF (-1C Vbmod) (0 Inf) ;
 	# vol ésser
