@@ -868,6 +868,13 @@ SELECT Terme IF (0 Terme OR Termes) (1 ("municipal") + Pl) ;
 
 SELECT N IF (-2 ("guanyar") OR ("aconseguir") OR ("perdre")) (-1 Num) (0 Set) ;
 
+REMOVE N IF (NOT -1 Det + FemSg) (0 ("quina") + FemSg) (1 N + FemSg) ;	# quina casa tens
+REMOVE N IF (NOT -1 Det + FemPl) (0 ("quina") + FemPl) (1 N + FemPl) ;	# quina casa tens
+
+SELECT N IF (-1 ("quin") + Fem) (0 ("massa")) ;
+SELECT N IF (0 ("massa")) (1 ("inercial") OR ("gravitacional")) ;
+SELECT N IF (-2 ("partícula")) (-1 Prep) (0 ("massa")) ;
+
 SELECT N IF (0 ("coure")) (1C A) (NOT 2 N) ;	# monedes que inclouen coure pur
 
 SELECT A IF (-1C N + Sg) (0 ("constant") + Sg) ;	# operacions de temps constant
