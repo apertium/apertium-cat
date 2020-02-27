@@ -229,7 +229,7 @@ LIST Li = "li" ;
 SET PreAdj = ("mal") OR ("força") ;
 
 # adjetivos ambiguos que se anteponen a menudo
-SET AdjPrefAmb = ("gran") OR ("petit") OR ("nou") OR ("antic") OR ("menor") OR ("major") OR ("doble") OR ("triple") OR ("possible") OR ("suposat") OR ("presumpte") OR ("altre") ;
+SET AdjPrefAmb = ("gran") OR ("petit") OR ("nou") OR ("antic") OR ("menor") OR ("major") OR ("doble") OR ("triple") OR ("possible") OR ("suposat") OR ("presumpte") OR ("altre") OR ("màxim") OR ("mínim") ;
 
 # verbs Vblex que típicament impliquen subjuntiu
 SET VerbSubj = ("voler") OR ("desitjar") OR ("proposar") OR ("agradar") OR ("plaure") OR ("exigir") OR ("reclamar") OR ("demanar") OR ("esperar") ;
