@@ -1126,12 +1126,17 @@ SELECT N IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK NOT 0 NP) (1 <<< OR Pre
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
 
-SELECT A IF (-2 Det + Def + MascSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascSg);
-SELECT A IF (-2 Det + Def + FemSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemSg);
-SELECT A IF (-2 Det + Def + MascPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascPl);
-SELECT A IF (-2 Det + Def + FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemPl);
+SELECT A OR PP IF (-2 Det + Def + MascSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascSg);
+SELECT A OR PP IF (-2 Det + Def + FemSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemSg);
+SELECT A OR PP IF (-2 Det + Def + MascPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascPl);
+SELECT A OR PP IF (-2 Det + Def + FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemPl);
+SELECT A IF (-2 Det + Def + MascSg) (-1 ("més") OR ("menys")) (0 Adj_PP + MascSg);
+SELECT A IF (-2 Det + Def + FemSg) (-1 ("més") OR ("menys")) (0 Adj_PP + FemSg);
+SELECT A IF (-2 Det + Def + MascPl) (-1 ("més") OR ("menys")) (0 Adj_PP + MascPl);
+SELECT A IF (-2 Det + Def + FemPl) (-1 ("més") OR ("menys")) (0 Adj_PP + FemPl);
 	# el més extemista de tots
 	# és la més comuna.
+	# les més avançades
 
 SELECT A IF (-3 N + MascSg) (-2 A + MascSg) (-1 ("més") OR ("menys")) (0 A + MascSg LINK NOT 0 NP) ;
 SELECT A IF (-3 N + FemSg) (-2 A + FemSg) (-1 ("més") OR ("menys")) (0 A + FemSg LINK NOT 0 NP) ;
