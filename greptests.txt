@@ -1,0 +1,2 @@
+apertium-cat.cat.dix:<e r="RL" lm="no tenir raó"><i>no<b/></i><par n="/tenir__vblex"/><p><l><b/>raó</l><r><g><b/>raó</g></r></p></e>
+apertium-cat.cat.dix:<e lm="no tenir res a veure"><i>no<b/></i><par n="abs/tenir__vblex"/><p><l><b/>res<b/>a<b/>veure</l><r><g><b/>res<b/>a<b/>veure</g></r></p></e>
