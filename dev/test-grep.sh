@@ -26,7 +26,7 @@ do
     grep -H "<b/></i>" $file | sed -E '/n="(~|cont|romana|.*el_qual__rel|.*el_seu__rel)/d' 
     
 done
-} > "greptests.txt"
+} > "dev/greptests.txt"
 
 echo "Checking for differences"
 git diff --exit-code
