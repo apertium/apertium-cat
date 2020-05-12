@@ -16,6 +16,9 @@ do
     grep -H "<b/><s" $file
     grep -H "<b/><b/>" $file
     grep -H "<b/><g>" $file
+    grep -H -P "<i>[^<]+ [^<]+</i>" $file
+    grep -H -P "<l>[^<]+ [^<]+</l>" $file
+    grep -H -P "<r>[^<]+ [^<]+</r>" $file
 
     #Poden ser correctes
     grep -H "<b/></l>" $file | sed -E '/n="(~|cont)/d'
