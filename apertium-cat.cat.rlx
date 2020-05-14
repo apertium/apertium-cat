@@ -1592,6 +1592,8 @@ SELECT PreAdv IF (-2 N) (-1C A) (0 ("molt")) (1C A OR PP) ;
 SELECT PreAdv IF (0 ("molt")) (1 ("lluny de")) ;
 SELECT PreAdv IF (0 ("molt")) (1 ("a prop de")) ;
 
+SELECT PreAdv IF (-1 >>>) (0 ("<Ben>")) (1 ("a")) ;
+
 SELECT PP IF (-1 Ser) (0 ("conegut")) ;
 	# són conegudes principalment a través de
 SELECT PP IF (-1 ("més")) (0 ("conegut")) ;
