@@ -1118,9 +1118,9 @@ REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR
 REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
@@ -1193,6 +1193,9 @@ SELECT N IF (-2 PP) (-1 ("por")) (0 N LINK NOT 0 NP LINK NOT 0 Copula) (1 CM OR 
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
 SELECT Num (0 ("nou")) (1 Noun_Adj_PP + Pl_strict) ;	# Guerra dels Nou Anys
+REMOVE Num (0 ("nou")) (1C Noun_Adj_PP + Sg_strict) ;	# a un nou ordre
+SELECT A (0 ("nou")) (1C N + Sg_strict) ;	# a un nou ordre
+SELECT A (-1/* Det + MascSg) (0 ("nou")) (1 N + Sg_strict) ;	# un nou estat
 SELECT Num (0 ("nou")) (-1 Vblex + Pl OR Copula + Pl) (-2 ("en")) ;		# en vénen nou
 SELECT Num (0 ("nou")) (-2 Vbhaver + Pl) (-1 PP) (-3 ("en")) ;			# n'han vingut nou
 SELECT Num (0 ("nou")) (-1 ("<n'hi ha>") OR ("<N'hi ha>")) ;
