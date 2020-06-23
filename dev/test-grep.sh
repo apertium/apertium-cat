@@ -4,7 +4,7 @@
 #set -o pipefail
 echo "Grep tests"
 {
-for file in apertium-cat.cat.dix
+for file in apertium-cat.cat.metadix
 do 
     grep -H "<i> " $file
     grep -H " </i>" $file
