@@ -249,6 +249,10 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia
 
 SECTION
 
+
+# PREFIXOS AFEGITS
+REMOVE:prefixes ("_prefix_.*"r) IF (0 ("_prefix_.*"r));
+
 #
 # Diacrítics de la nova ortografia IEC 2017
 #
