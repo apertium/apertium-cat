@@ -23,6 +23,21 @@ def XMLtoString(x):
     rough_string = ET.tostring(x, encoding="UTF-8", method="xml");
     return rough_string.decode("UTF-8")
 
+def word(e):
+    word = None
+    # e.find("i") doesn't word. Bug?!
+    for part in e:
+        if part.tag == "i":
+            word = part.text
+    if word is None:
+        p = e.find("p")
+        if p:
+            l = p.find("l")
+            word = l.text
+    if word is None:
+        word = ""
+    return word
+
 source = sys.argv[1]
 target = sys.argv[2]
 
@@ -44,6 +59,9 @@ mainsection = tree.find('.//section[@id="main"]')
 for e in mainsection.iter(tag='e'):
     par = e.find('par')
     if par is None:
+        continue
+    wordStr = word(e)
+    if len(wordStr)<5 or '<b/>' in wordStr or '_' in wordStr:
         continue
     parname = par.get("n")
     for prefix in prefixes.keys():      
