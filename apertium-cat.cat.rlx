@@ -779,7 +779,7 @@ SELECT Volar IF (0 ("voler") OR ("volar")) (1 ("a") OR ("cap") OR ("cap a")) ;
 SELECT Volar IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("a") OR ("cap") OR ("cap a")) ;
 SELECT Voler IF (0 ("voler") OR ("volar")) (1 ("que")) ;
 SELECT Voler IF (0 ("voler") OR ("volar")) (1 Adv) (2 ("que")) ;
-SELECT Voler IF (0 ("voler") OR ("volar")) (-1 ("què")) ;
+SELECT Voler IF (0 ("voler") OR ("volar")) (-1 ("què")) (NOT -2 ("en"));
 	# No volen pas que, volen sovint que
 
 # poder i podar (p.ex. poden)
