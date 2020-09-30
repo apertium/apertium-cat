@@ -979,7 +979,9 @@ REMOVE Ger IF (-2C Rel) (-1 Adv) (0 Ger LINK 0 Pers) ;
 	# que sent
 
 #com ara
-REMOVE ("com ara") IF (0 ("com ara")) (1 Verb);
+REMOVE ("com ara") IF (0 ("com ara")) (1 P1 OR P2 OR P3) (NOT 1 N OR PP);
+REMOVE ("com ara") IF (0 ("com ara")) (1 Pron) (2 P1 OR P2 OR P3) (NOT 2 N OR PP);
+SELECT ("com ara") IF (0 ("com ara")) (NOT 1 Verb) (1 N);
 
 #REMOVE Det IF (-1C/* Det) (0 Det OR A OR Pron) ;			# els altres, dels altres
 
