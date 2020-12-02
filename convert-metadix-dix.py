@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright (C) 2020 Jaume Orotlà <jaume.ortola@gmail.com>
+# Copyright (C) 2020 Jaume Ortolà <jaume.ortola@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
@@ -23,6 +23,21 @@ def XMLtoString(x):
     rough_string = ET.tostring(x, encoding="UTF-8", method="xml");
     return rough_string.decode("UTF-8")
 
+def word(e):
+    word = None
+    # e.find("i") doesn't word. Bug?!
+    for part in e:
+        if part.tag == "i":
+            word = part.text
+    if word is None:
+        p = e.find("p")
+        if p:
+            l = p.find("l")
+            word = l.text
+    if word is None:
+        word = ""
+    return word
+
 source = sys.argv[1]
 target = sys.argv[2]
 
@@ -36,7 +51,7 @@ prefixes = {}
 for pardef in pardefs.iter(tag='pardef'):
     namepardef = pardef.get("n")
     if namepardef.startswith("prefixes_"):
-        grammarclass = re.sub ("prefixes_([^_]+).*", "\\1", namepardef)
+        grammarclass = re.sub ("prefixes_([^_]+)$", "\\1", namepardef)
         prefixes[grammarclass]=namepardef
 
 mainsection = tree.find('.//section[@id="main"]')
@@ -44,12 +59,28 @@ mainsection = tree.find('.//section[@id="main"]')
 for e in mainsection.iter(tag='e'):
     par = e.find('par')
     if par is None:
-        continue
+        p = e.find('p')
+        if p:
+            par = p.find('r').find('s')
+        if par is None:
+            i = e.find('i')
+            if i:
+                par = i.find('s')
+        if par is None:
+            continue
+        parname = par.get("n")
+        for prefix in prefixes.keys():
+            if parname == prefix:
+                new = ET.Element('par')
+                prefixtoadd = prefixes[prefix]
+                new.set('n', prefixtoadd)
+                e.insert(0, new)
     parname = par.get("n")
-    for prefix in prefixes.keys():      
+    for prefix in prefixes.keys():
         if parname.endswith("__"+prefix):
             new = ET.Element('par')
-            new.set('n', prefixes[prefix])
+            prefixtoadd = prefixes[prefix]
+            new.set('n', prefixtoadd)
             e.insert(0, new)
 
 tree.write(target)
