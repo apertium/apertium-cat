@@ -38,6 +38,32 @@ def word(e):
         word = ""
     return word
 
+def isMultiword(e):
+    for part in e:
+        if part.tag == "i":
+            b = part.find("b")
+            if b:
+                return True
+    p = e.find("p")
+    if p:
+        l=p.find("l")
+        if l:
+            g = l.find("g")
+            if g:
+                return True
+            b = l.find("b")
+            if b is not None:
+                return True
+        r=p.find("r")
+        if r:
+            g = r.find("g")
+            if g:
+                return True
+            b = r.find("b")
+            if b is not None:
+                return True
+    return False
+
 source = sys.argv[1]
 target = sys.argv[2]
 
@@ -57,6 +83,8 @@ for pardef in pardefs.iter(tag='pardef'):
 mainsection = tree.find('.//section[@id="main"]')
 
 for e in mainsection.iter(tag='e'):
+    if isMultiword(e):
+        continue
     par = e.find('par')
     if par is None:
         p = e.find('p')
