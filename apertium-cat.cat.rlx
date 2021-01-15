@@ -740,6 +740,42 @@ REMOVE:càmera (m) IF (0 ("càmera"i)) (NOT -1 (det m)) (NOT -1 (adj m)) (NOT 1 
 REMOVE:contractes (f) IF (0 ("<contractes>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
 REMOVE:quadres    (f) IF (0 ("<quadres>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
 
+# cap
+REMOVE Det IF (-1 Det + Sg) (0 ("cap") + Sg) ;
+REMOVE Pron IF (-1 Det + Sg) (0 ("cap") + Sg) ;
+SELECT N IF (-1 ("el") + Sg) (0 ("cap") + Sg) ;
+SELECT Det IF (0 ("cap")) (1C N) (NOT -1 Det) ;
+SELECT Det IF (0 ("cap")) (1 N) (2 Adj_PP) (NOT -1 Det) ;
+#SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
+	# sense cap indicació
+SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (1/* Det + Pl) ;
+	# de cap d'aquestes indicacions
+	# amb cap de les formes
+SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
+	# cap dels meus amics
+	# cap de les meves amigues
+	# però: és cap dels mossos d'esquadre
+SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
+SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
+	# no és cap dels meus amics
+	# no és cap de les meves amigues
+SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
+	# pensa que cap indicació
+SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
+	# pensa que cap bona indicació
+SELECT Det IF (-1C Verb) (0 ("cap")) (1C N) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1C A) (2C N) ;
+	# no va aconseguir cap conquesta territorial
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (2 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 A) (1 N) (3 Barrera_Final_Estrict_SN) ;
+SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estrict_SN) ;
+	# no hi ha cap dubte que
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C N) ;
+SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
+	# no hi ha pràcticament cap menció
+
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
 SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl) (NOT 0 ("segons"i));
@@ -1071,7 +1107,7 @@ REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 N + Masc + Pl) ;
 REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 N + Fem + Pl) ;
 REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 N + Masc + Pl) ;
 REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 N + Fem + Pl) ;
-  # noltes arts japoneses
+  # moltes arts japoneses
 REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 A + Masc + Pl) (2 N + Masc + Pl) ;
 REMOVE Pron IF (0 ("molts") + Fem + Pl) (1 A + Fem + Pl) (2 N + Fem + Pl) ;
 REMOVE Pron IF (0 ("molts") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N + Masc + Pl) ;
@@ -1549,37 +1585,6 @@ SELECT N IF (0 ("<Cap>")) (1 ("oriental") OR ("occidental") OR ("septentrional")
 	# el Cap Occidental
 SELECT N IF (0 ("<Cap>")) (1 unknownMajIni) ;
 
-SELECT Det IF (0 ("cap")) (1C N) ;
-SELECT Det IF (0 ("cap")) (1 N) (2 Adj_PP) ;
-#SELECT Det IF (-1 Barrera_Inicial_Estrict_SN) (0 ("cap")) (1C N) ;
-	# sense cap indicació
-SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (2 Det + Pl) ;
-SELECT Pron IF (-1 Prep) (0 ("cap")) (1 ("de")) (1/* Det + Pl) ;
-	# de cap d'aquestes indicacions
-	# amb cap de les formes
-SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
-SELECT Pron IF (NOT -1 Det) (NOT -1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
-	# cap dels meus amics
-	# cap de les meves amigues
-	# però: és cap dels mossos d'esquadre
-SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (2 Det + Pl) ;
-SELECT Pron IF (-2 ("no")) (-1 Ser) (0 ("<cap>")) (1 ("de")) (1/* Det + Pl) ;
-	# no és cap dels meus amics
-	# no és cap de les meves amigues
-SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C N) ;
-	# pensa que cap indicació
-SELECT Det IF (-1 CnjSub) (0 ("cap")) (1C A) (2C N) ;
-	# pensa que cap bona indicació
-SELECT Det IF (-1C Verb) (0 ("cap")) (1C N) ;
-SELECT Det IF (-1C Verb) (0 ("cap")) (1C A) (2C N) ;
-	# no va aconseguir cap conquesta territorial
-SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (2 Barrera_Final_Estrict_SN) ;
-SELECT Det IF (-1C Verb) (0 ("cap")) (1 A) (1 N) (3 Barrera_Final_Estrict_SN) ;
-SELECT Det IF (-1C Verb) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estrict_SN) ;
-	# no hi ha cap dubte que
-SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C N) ;
-SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
-	# no hi ha pràcticament cap menció
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 N) (2 Barrera_Final_Estrict_SN) ;
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 A) (1 N) (3 Barrera_Final_Estrict_SN) ;
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1 N) (1 A) (3 Barrera_Final_Estrict_SN) ;
