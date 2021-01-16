@@ -1639,6 +1639,9 @@ SELECT Vblex IF (0 ("parla")) (0 Vblex OR N) (NOT -1 Det) (NOT 1 A + Fem) ;
 SELECT PP IF (0 ("<passada>")) (1 Det + FemSg) (2 N + FemSg) ;
 	# fins passada la nit
 
+SELECT PP IF (-1 N + &&ConcordaGN) (0 ("trobar") + PP + &&ConcordaGN) (NOT -1 PreAdj + &&ConcordaGN) ;
+SELECT PP IF (-3 N + &&ConcordaGN) (-2 De) (-1 N) (0 ("trobar") + PP + &&ConcordaGN) ;	# les restes de ceràmica trobades
+
 REMOVE CnjCoo IF (0 ("<I>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
 REMOVE CnjCoo IF (0 ("<I>")) (-1 Ant) (1C Cog OR Top) ;		# Maria I Estuard, Alexandre I Pico della Mirandola
 REMOVE N IF (0 ("<V>")) (-1 Ant) (NOT 1 Cog OR Ant) ;
