@@ -1503,6 +1503,10 @@ REMOVE A OR PP IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM)
 REMOVE A OR PP IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM) (2 Det + FemPl2) (3C N + FemPl2) ;
 # vinieron los italianos, los alemanes, los polacos y los ucranianos.
 
+# NOM / VERB
+
+REMOVE Verb IF (-1 Det + Pos + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# la seva guarda personal
+
 #### final clasificación
 
 # "intelectual alemán judío exiliado." FUNCIONA
