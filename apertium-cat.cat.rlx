@@ -456,6 +456,8 @@ SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
 
 SELECT Top IF (0 ("Aragó"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (0 ("Barcelona"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (0 ("València"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
 
 SELECT:marc_n N IF (0 ("marc")) (-1 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 SELECT:marc_n N IF (1 ("marc")) (0 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
