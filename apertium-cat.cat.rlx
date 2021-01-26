@@ -7,6 +7,7 @@ SETS
 
 LIST >>> = >>> ;
 LIST <<< = <<< ;
+SET BOS = >>> OR (sent) ;
 SET EOS = <<< OR (sent) ;
 
 LIST N = (n) ;
@@ -469,7 +470,7 @@ SELECT:data_n N IF (-1 ("data")) (0 ("fi"));
 SELECT:contracte_n N IF (0 ("contracte")) (1 ("servei") OR ("subministrament") OR ("provisió") OR ("proveïment"));
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
-	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>")
+	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>") OR ("<Cal>")
 	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
@@ -605,6 +606,14 @@ SELECT Adv IF (0 A) (0 Adv) (-1 Adv) (-2 Adv_PreAdv) (-3 V) (NOT -3 VAdj) ;
 	# asignaba a Armenia territorios
 
 SELECT Adv IF (0 ("encara")) (-1 Ger); #Sent encara
+
+SELECT NP IF (0 ("<Cal>")) (1 MajIni OR unknownMajIni) (NOT -1 BOS) ;
+REMOVE NP IF (0 ("<Cal>")) (-1 BOS) ;
+SELECT NP IF (0 ("<Can>")) (1 MajIni OR unknownMajIni) ;
+SELECT N IF (0 ("<cal>"i)) (1 Ant OR Cog) ;
+SELECT Verb IF (0 ("<cal>"i)) ;
+SELECT N IF (0 ("<cals>"i)) (1 Cog) ;
+SELECT Verb IF (0 ("<cals>"i)) ;
 
 REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS);
 SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
