@@ -471,7 +471,10 @@ SELECT:data_n N IF (0 ("data")) (1 ("fi") OR ("inici") OR ("final")); #data fi
 SELECT:data_n N IF (-1 ("data")) (0 ("fi"));
 SELECT:contracte_n N IF (0 ("contracte")) (1 ("servei") OR ("subministrament") OR ("provisió") OR ("proveïment"));
 
-SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 >>>)
+SELECT Vbhaver (-1 BOS) (0 NP) (1 PP) ;		# He fet
+SELECT Vbhaver (-1 BOS) (0 NP) (1 Adv OR CnjAdv) (2 PP) ;
+
+SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 BOS)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>") OR ("<Cal>")
 	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
