@@ -1021,6 +1021,7 @@ SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefA
 SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 Adj_PP) ;				# és força bo
 SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
 REMOVE NSg IF (0 Forca) (1 Adj_PP + Pl_strict) ;	# algunes força populars / les forces armades
+SELECT A IF (-1C Verb) (0 Forca) (1 N) (2 Barrera_Final_Estrict_SN) ;	# originà força polèmica
 
 SELECT A OR PP IF (-1 VAdj OR ("estimar")) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("germà") OR ("empresa") OR ("despesa") OR ("<portant>"));
 # sembla blanc/espavilat/interessant/dolent/constant
