@@ -68,6 +68,12 @@ LIST Ger = (ger) ;
 LIST P1 = (p1) ;
 LIST P2 = (p2) ;
 LIST P3 = (p3) ;
+SET Sg1 = (p1 sg) ;
+SET Sg2 = (p2 sg) ;
+SET Sg3 = (p3 sg) ;
+SET Pl1 = (p1 pl) ;
+SET Pl2 = (p2 pl) ;
+SET Pl3 = (p3 pl) ;
 
 LIST Def = (def) ;
 LIST Dem = (dem) ;
@@ -81,8 +87,8 @@ LIST Fem = f mf ;
 #LIST Masc_strict = (m) ;
 #LIST Fem_strict = (f) ;
 LIST MF = mf ;
-LIST Sg = sg sp ;
-LIST Pl = pl sp ;
+SET Sg = (sg) OR (sp) ;
+SET Pl = (pl) OR (sp) ;
 LIST Sg_strict = sg ;
 LIST Pl_strict = pl ;
 SET MascSg = (m sg) OR (m sp) OR (mf sg) OR (mf sp) ;
@@ -95,6 +101,8 @@ SET FemSg2 = (f sg) OR (f sp) OR (mf sg) OR (mf sp) ;
 SET FemPl2 = (f pl) OR (f sp) OR (mf pl) OR (mf sp) ;
 
 SET ConcordaGN = MascSg OR MascPl OR FemSg OR FemPl;
+SET ConcordaSP = Sg OR Pl ;
+SET ConcordaGV = Sg1 OR Sg2 OR Sg3 OR Pl1 OR Pl2 OR Pl3 ;
 
 SET Pers = (p1) OR (p2) OR (p3) ;
 
@@ -116,6 +124,7 @@ SET DetInd = (det ind) ;
 
 SET Noun_Adj = N OR A ;
 SET Noun_Adj_PP = N OR A OR PP ;
+SET Noun_NP = N OR NP ;
 SET Adj_PP = A OR PP ;
 SET NO_Adj_PP = Word - Adj_PP ;
 
@@ -138,6 +147,7 @@ SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("
 	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
 SET PuntCardinal = ("nord") OR ("sud") OR ("est") OR ("oest") OR ("nord-est") OR ("nord-oest") OR ("sud-est") OR ("sud-oest") OR ("llevant") OR ("ponent") ;
 SET DiaSetmana = ("dilluns") OR ("dimarts") OR ("dimecres") OR ("dijous") OR ("divendres") OR ("dissabte") OR ("diumenge");
+SET PronPers = ("jo") OR ("tu") OR ("ell") OR ("nosaltres") OR ("vosaltres") OR ("prpers") ;
 
 
 # adj que són ambiguts amb el pp de verbs intransitius
@@ -1137,6 +1147,46 @@ REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N
 REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ;
 SELECT Pron IF (0 ("molts")) (1/* ("de")) ;
 
+# P1 / P3
+
+SELECT P1 IF (NOT -2 Prep) (-1 ("jo")) (0 Verb) ;					# jo pensava
+SELECT P1 IF (NOT -3 Prep) (-2 ("jo")) (-1 Adv) (0 Verb) ;				# jo no pensava
+SELECT P1 IF (NOT -4 Prep) (-3 ("jo")) (-2 Adv) (-1 Adv) (0 Verb) ;			# jo no sempre pensava
+SELECT P1 IF (NOT -3 Prep) (-2 ("jo")) (-1 Pro) (0 Verb) ;				# jo em pensava
+SELECT P1 IF (NOT -4 Prep) (-3 ("jo")) (-2 Adv) (-1 Pro) (0 Verb) ;			# jo no em pensava
+SELECT P1 IF (NOT -5 Prep) (-4 ("jo")) (-3 Adv) (-2 Adv) (-1 Pro) (0 Verb) ;		# jo no sempre em pensava
+SELECT P1 IF (NOT -4 Prep) (-3 ("jo")) (-2 Pro) (-1 Pro) (0 Verb) ;			# jo m'ho pensava
+SELECT P1 IF (NOT -5 Prep) (-4 ("jo")) (-3 Adv) (-2 Pro) (-1 Pro) (0 Verb) ;		# jo no m'ho pensava
+SELECT P1 IF (NOT -6 Prep) (-5 ("jo")) (-4 Adv) (-3 Adv) (-2 Pro) (-1 Pro) (0 Verb) ;	# jo no sempre m'ho pensava
+
+# NOM / VERB
+
+REMOVE Verb IF (-1 Det + Pos + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# la seva guarda personal
+
+SELECT Verb IF (-2 ("es") + Pro) (-1 Pro) ;	# se la menja
+SELECT Verb IF (-1 PronPers + &&ConcordaGV) (0 Verb + &&ConcordaGV) ;			# tu estimes, ell estima	NO FUNCIONA
+# Hauria de ser amb ConcordaGV, però no funciona
+SELECT Verb IF (-1 PronPers + &&ConcordaSP) (0 Verb + &&ConcordaSP) ;			# tu estimes, ell estima
+SELECT Verb IF (-2 PronPers + &&ConcordaSP) (-1 Adv) (0 Verb + &&ConcordaSP) ;	# tu no estimes, ell no estima
+SELECT Verb IF (-3 PronPers + &&ConcordaSP) (-2 Adv) (-1 Adv) (0 Verb + &&ConcordaSP) ;	# tu no sempre estimes, ell no sempre estima
+SELECT Verb IF (-2 PronPers + &&ConcordaSP) (-1 Pro) (0 Verb + &&ConcordaSP) ;	# tu l'estimes, ell l'estima
+SELECT Verb IF (-3 PronPers + &&ConcordaSP) (-2 Adv) (-1 Pro) (0 Verb + &&ConcordaSP) ;	# tu no l'estimes, ell no l'estima
+SELECT Verb IF (-4 PronPers + &&ConcordaSP) (-3 Adv) (-2 Adv) (-1 Pro) (0 Verb + &&ConcordaSP) ;	# tu no sempre l'estimes, ell no sempre l'estima
+
+SELECT Verb IF (-1 ("tu")) (0 Verb + P2 + Sg) ;			# tu estimes Maria
+SELECT Verb IF (-2 ("tu")) (-1 Pro) (0 Verb + P2 + Sg) ;	# tu l'estimes
+
+SELECT Verb IF (-1 ("ell") + &&ConcordaSP) (0 Verb + P3 + &&ConcordaSP) (1 NP) ;	# ell estima Maria
+SELECT Verb IF (-1 ("ell") + &&ConcordaSP) (0 Verb + P3 + &&ConcordaSP) (1 Det) ;	# ell estima una noia
+SELECT Verb IF (-2 ("ell") + &&ConcordaSP) (-1 Pro) (0 Verb + P3 + &&ConcordaSP) ;	# ell l'estima
+
+REMOVE N IF (-1 Noun_NP + &&ConcordaSP) (0 Verb + P3 + &&ConcordaSP) (1 NP) ;	# Joan estima Maria
+REMOVE N IF (-1 Noun_NP + &&ConcordaSP) (0 Verb + P3 + &&ConcordaSP) (1 Det) ;	# Joan estima una noia / el consens entre els
+REMOVE N IF (-2 Noun_NP + &&ConcordaSP) (-1 Adv) (0 Verb + P3 + &&ConcordaSP) (1 NP) ;	# Joan no estima Maria
+REMOVE N IF (-2 Noun_NP + &&ConcordaSP) (-1 Adv) (0 Verb + P3 + &&ConcordaSP) (1 Det) ;	# Joan no estima una noia / el consens entre els
+
+SELECT A IF (-2 Ser) (-1 N + &&ConcordaGN) (0 ("seu") + &&ConcordaGN) ;		# fou deixeble seu Josep Trueta
+
 # NOM / ADJ
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
@@ -1280,6 +1330,7 @@ SELECT NP IF (-1 Det + Fem) (0 ("Argentina") OR ("India") OR ("Filipines") OR ("
 SELECT NP IF (-1 Det + Masc) (0 ("Mediterrani") OR ("Atlàntic") OR ("Cantàbric") OR ("Pacífic") OR ("Índic") OR ("Àrtic")) (1 <<< OR Prep OR Det OR CM) ;
 
 # NP / N
+
 REMOVE Noun_Adj_PP IF (-1 Det + MascSg) (0 NP + MascSg) (1 Adj_PP + MascSg) ;
 REMOVE Noun_Adj_PP IF (-1 Det + MascPl) (0 NP + MascPl) (1 Adj_PP + MascPl) ;
 REMOVE Noun_Adj_PP IF (-1 Det + FemSg) (0 NP + FemSg) (1 Adj_PP + FemSg) ;
@@ -1520,9 +1571,6 @@ REMOVE A OR PP IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM)
 REMOVE A OR PP IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM) (2 Det + FemPl2) (3C N + FemPl2) ;
 # vinieron los italianos, los alemanes, los polacos y los ucranianos.
 
-# NOM / VERB
-
-REMOVE Verb IF (-1 Det + Pos + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# la seva guarda personal
 
 #### final clasificación
 
