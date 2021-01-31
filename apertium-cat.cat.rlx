@@ -210,6 +210,7 @@ LIST Les = "les" ;
 LIST De = "de" ;
 LIST Ens = "ens" ;
 LIST Forca = "força" ;
+LIST Dit = "dit" ;
 LIST Bastant = "bastant" ;
 LIST A_la_meitat = "a la meitat" ;
 LIST Esser = "ésser" ;
@@ -1032,6 +1033,9 @@ SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 Adj_PP)
 SELECT PreAdv IF (-1 Ser OR VAdj OR ("estimar")) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és força més bo
 REMOVE NSg IF (0 Forca) (1 Adj_PP + Pl_strict) ;	# algunes força populars / les forces armades
 SELECT A IF (-1C Verb) (0 Forca) (1 N) (2 Barrera_Final_Estrict_SN) ;	# originà força polèmica
+
+REMOVE N IF (0 Dit) (0 (META:/["«“'‘]/r)) ;
+REMOVE N IF (-1 ("també")) (0 Dit) ;
 
 SELECT A OR PP IF (-1 VAdj OR ("estimar")) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) (NOT 0 ("germà") OR ("empresa") OR ("despesa") OR ("<portant>"));
 # sembla blanc/espavilat/interessant/dolent/constant
