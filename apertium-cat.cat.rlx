@@ -588,8 +588,7 @@ REMOVE N (NOT -2 Verb) (NOT -2 Prep) (-1C Pro) (0 N LINK 0 Verb) ;
 	# le cuenta que
 	# NO: que ayuda en muchos aspectos
 
-REMOVE A (0 ("tant") OR ("Tant")) (*1 ("com") BARRIER CnjSub) ;
-REMOVE Verb (-1* ("tant") OR ("Tant") BARRIER CnjSub) (0 ("com")) ;
+REMOVE A (0 ("tant") OR ("Tant")) (*1 ("com") OR ("com a") BARRIER CnjSub) ;	# tant a Damasc com a Beirut
 
 SELECT A OR Adv (-1 ("tan")) (0 A OR Adv) (1 ("com")) ;
 	# tan important com
