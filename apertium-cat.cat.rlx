@@ -1020,6 +1020,9 @@ SELECT A IF (-1 ("observació")) (0 ("participant")) ;
 
 SELECT Fem IF (-1 Ser OR ("formar")) (0 ("part")) ;
 
+REMOVE N (0 ("igual") + &&ConcordaGN) (NOT -1 Det + Pos + &&ConcordaGN) ;
+SELECT Adv (0 ("igual") + &&ConcordaGN) (-1 CM OR BOS) (1 ("que")) ;
+
 SELECT MF IF (-1 Det) (0 Ponent) ;
 SELECT MF IF (-2 Det) (-1 A) (0 Ponent) ;
 SELECT MF IF (-3 Det) (-2 Adv_PreAdv) (-1 A) (0 Ponent) ;
