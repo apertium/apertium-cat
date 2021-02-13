@@ -486,7 +486,7 @@ SELECT Vbhaver (-1 BOS) (0 NP) (1 PP) ;		# He fet
 SELECT Vbhaver (-1 BOS) (0 NP) (1 Adv OR CnjAdv) (2 PP) ;
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 BOS)
-	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Van>") OR ("<Cal>")
+	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Mar>") OR ("<Van>") OR ("<Cal>")
 	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
@@ -496,6 +496,7 @@ SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
 	# santes creus
 SELECT N IF (0 ("creure") OR ("creu")) (1 ("de")) ;
 	# creu de Sant Jordi
+SELECT N IF (0 ("Mar")) (1 ("de")) ;
 
 SELECT:Planes_top Top IF (0 ("<Planes>") OR ("Vilallonga")) (-2 ("ajuntament") OR ("alcalde") OR ("regidor") OR ("municipi") OR ("veí") OR ("batlle")) (-1 ("de"));
 SELECT:Planes_cog (cog) IF (0 ("<Planes>") OR ("Vilallonga")) (-1 (ant) OR (cog));
