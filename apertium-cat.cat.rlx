@@ -187,6 +187,9 @@ LIST Fins = "fins" ;
 LIST Fer = "fer" ;
 LIST Faig = "faig" ;
 LIST Gaire = "gaire" ;
+LIST Molt = "molt" ;
+LIST No = "no" ;
+LIST Pas = "pas" ;
 LIST VSer = "ser" ;
 LIST Pobla = "pobla" ;
 LIST Poble = "poble" ;
@@ -597,7 +600,7 @@ SELECT A OR Adv (-1 ("tan")) (0 A OR Adv) (1 ("com")) ;
 REMOVE Ger (-1 ("més") OR ("menys")) (0 A OR Adv OR PP) (0 Ger) ;
 	# més important
 
-REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A) ;
+REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A OR EOS) ;
 REMOVE Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
 REMOVE Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
 REMOVE A (-1C N + MascSg) (0 A LINK 0 Adv) (1C A + MascSg) ;
@@ -936,6 +939,16 @@ SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 REMOVE Ger IF (-1 Noun_Adj + Sg) (0 Protestant + Sg) (NOT 1 ("que") OR ("per") OR ("contra")) ;	# el primer monarca protestant d'Anglaterra
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
+
+SELECT Adv IF (-1C Verb + Pers) (0 Gaire) (NOT 1 Noun_Adj) ;	# no és gaire gran, no té gaire sentit
+SELECT Adv IF (-1C Verb + Pers) (0 Molt) (NOT 1 Noun_Adj) ;
+SELECT Adv IF (-2C Verb + Pers) (-1C Adv OR Pas) (0 Gaire) (NOT 1 A) ;
+SELECT Adv IF (-2C Verb + Pers) (-1C Adv OR Pas) (0 Molt) (NOT 1 Noun_Adj) ;
+SELECT PreAdv IF (0 Gaire OR Molt) (1C A OR PP) ;
+SELECT PreAdv IF (0 Gaire OR Molt) (1 ("a prop de") OR ("lluny de")) ;
+SELECT PreAdv IF (-2 No) (-1 Ser + &&ConcordaSP) (0 Gaire) (1 A + &&ConcordaSP) ;
+SELECT PreAdv IF (-3 No) (-2 Ser + &&ConcordaSP) (-1 Adv) (0 Gaire) (1 A + &&ConcordaSP) ;
+SELECT A (0 Gaire + &&ConcordaSP) (1 N + &&ConcordaSP) (NOT 1 Adj_PP) ;
 
 # "base": en cas de dubte, seleccionem base f en comptes de base mf
 SELECT Fem IF (-1 Fem) (0 Base) ;
