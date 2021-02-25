@@ -199,6 +199,8 @@ LIST Tens = "tens" ;
 LIST Tenir = "tenir" ;
 LIST Turquesa = "turquesa" ;
 LIST Turques = "turquès" ;
+LIST Penca = "penca" ;
+LIST Penques = "penques" ;
 LIST Base = "base" ;
 LIST Ponent = "ponent" ;
 LIST Encara = "encara" ;
@@ -940,6 +942,13 @@ SELECT Poble IF (0 Poble OR Pobla + Pl) (-1 ("<els>") OR ("<Els>")) ;
 REMOVE Ger IF (-1 Noun_Adj + Sg) (0 Protestant + Sg) (NOT 1 ("que") OR ("per") OR ("contra")) ;	# el primer monarca protestant d'Anglaterra
 
 SELECT Turques IF (0 Turques OR Turquesa) (-1 ("llengua")) ;
+
+SELECT Penca IF (0 Penca) (-1 Tenir) ;
+SELECT Penca IF (0 Penca) (-2 Tenir) (-1 Adv) ;
+SELECT Penca IF (0 Penca) (-2 Tenir) (-1 Det OR ("molt")) ;
+SELECT Penca IF (0 Penca) (-3 Tenir) (-1 Det OR ("molt")) (-2 Adv) ;
+SELECT Penques IF (0 Penques) (-2 Ser) (-1 ("un")) ;
+SELECT Penques IF (0 Penques) (-3 Ser) (-2 Adv) (-1 ("un")) ;
 
 SELECT Adv IF (-1C Verb + Pers) (0 Gaire) (NOT 1 Noun_Adj) ;	# no és gaire gran, no té gaire sentit
 SELECT Adv IF (-1C Verb + Pers) (0 Molt) (NOT 1 Noun_Adj) ;
