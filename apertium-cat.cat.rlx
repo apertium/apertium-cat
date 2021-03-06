@@ -694,7 +694,7 @@ SELECT PP IF (-1 ("haver") OR ("Haver")) (0 PP) ;
 SELECT PP IF (-1 ("ser") OR ("ser")) (0 PP) (*1 ("por") BARRIER (Cnj_Rel_End)) ;
 
 # seguir, estar + ger
-SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)) (0 Ger) ;
+SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)) (0 Ger) (NOT 0 ("durant")) ;
 
 
 #
@@ -894,6 +894,9 @@ REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
 
 # ser i estat (p.ex. estat)
 SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 PP) ;
+SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Adv) (2 PP) ;
+REMOVE VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Ger) ;
+REMOVE VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Adv) (2 Ger) ;
 SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1 Det) ;
 	# han estat les de marxa atlètica
 
