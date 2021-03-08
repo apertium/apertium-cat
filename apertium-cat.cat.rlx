@@ -702,6 +702,9 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 # PALABRAS PARTICULARES
 #
 
+#parir/parèixer -> parèixer (per freqüència), però caldria introduir excepcions
+REMOVE:pareixer ("parèixer") IF (0 ("parèixer")) (0 ("parir"));
+
 #sabeu: el tagger falla massa
 REMOVE:sabeu_no_adj A IF (0 ("sabeu") + MascSg) (NOT -1 MascSg);
 
