@@ -1078,10 +1078,11 @@ SELECT A IF (-3 No OR Ni) (-1 Verb) (NOT -2 Ser OR VAdj OR ("estimar")) (-1 Adv)
 
 SELECT AMes IF (-1 BOS OR CM);
 SELECT AMes IF (1 EOS OR CM);
+REMOVE AMes IF (1C Noun_Adj);
+REMOVE AMes IF (1 ("persona"));		# dona autonomia a més persones
 SELECT AMes IF (1 Det);
 SELECT AMes IF (1 Prep);
 SELECT AMes IF (1 Verb);
-REMOVE AMes IF (1C Noun_Adj OR ("persona"));		# dona autonomia a més persones
 SELECT AMes IF (NOT 1 Noun_Adj);
 
 REMOVE N IF (0 Dit) (0 (META:/["«“'‘]/r)) ;
