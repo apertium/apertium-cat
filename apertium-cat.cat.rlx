@@ -222,6 +222,7 @@ LIST Dit = "dit" ;
 LIST Bastant = "bastant" ;
 LIST A_la_meitat = "a la meitat" ;
 LIST Esser = "ésser" ;
+LIST Sentir = "sentir" ;
 
 SET Ser = ("ser") OR ("Ser") ;
 SET Estar = ("estar") OR ("Estar");
@@ -386,6 +387,11 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (
 # deu mil (deu: pot ser verb o numeral)
 REMOVE:deu_num N IF (0 ("deu")) (1 ("mil"));
 REMOVE:deu_num N IF (0 ("deu")) (-1 ("a") OR ("amb")) (-2 Num);
+
+# sent (ser/sentir)
+SELECT Sentir IF (0 Copula) (1 ("dolor") OR ("mal")) ;
+REMOVE Sentir IF (0 Copula) (1 (".*tor"ri)) ;
+REMOVE Sentir IF (0 Copula) (1C N) ;
 
 REMOVE:verb_maj Vblex IF (NOT -1 >>>) (0 MajIni) (0 Verb + Pers) (0 N); #paraula en majúsucla: és més probablement nom. Gran Via Marqués del Túria.
 
