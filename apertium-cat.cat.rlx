@@ -1081,6 +1081,12 @@ SELECT A IF (-3 No OR Ni) (-1 Verb) (NOT -2 Ser OR VAdj OR ("estimar")) (-1 Adv)
 
 SELECT AMes IF (-1 BOS OR CM);
 SELECT AMes IF (1 EOS OR CM);
+SELECT AMes IF (-1 CnjSub OR CnjAdv);
+SELECT AMes IF (-1 Copula);
+SELECT AMes IF (-1 ("i"));
+SELECT AMes IF (-1 Vbmod OR ("voler") OR ("saber") OR ("conèixer") OR ("estimar") OR ("incloure") OR ("abastar") OR ("incorporar"));
+SELECT AMes IF (1 ("còpia"));		# aportar/presentar/lliurar a més còpia
+SELECT AMes IF (1 ("actuació") + Pl);
 REMOVE AMes IF (1C Noun_Adj);
 REMOVE AMes IF (1 ("persona"));		# dona autonomia a més persones
 SELECT AMes IF (1 Det);
