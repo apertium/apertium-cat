@@ -389,7 +389,7 @@ REMOVE:deu_num N IF (0 ("deu")) (1 ("mil"));
 REMOVE:deu_num N IF (0 ("deu")) (-1 ("a") OR ("amb")) (-2 Num);
 
 # sent (ser/sentir)
-SELECT Sentir IF (0 Copula) (1 ("dolor") OR ("mal")) ;
+SELECT Sentir IF (0 Copula) (1 ("dolor") OR ("mal") OR ("compassió") OR ("tristesa") OR ("tristor") OR ("alegria") OR ("simpatia") OR ("antipatia") OR ("enuig") OR ("amor") OR ("odi") OR ("aversió") OR ("por") OR ("temor") OR ("orgull") OR ("recança") OR ("remordiment") OR ("vergonya") OR ("fàstic") OR ("crit") + Pl OR ("veu") + Pl OR ("soroll") OR ("fressa")) ;
 REMOVE Sentir IF (0 Copula) (1 (".*tor"ri)) ;
 REMOVE Sentir IF (0 Copula) (1C N) ;
 
@@ -536,6 +536,11 @@ SELECT Ant IF (NOT -1 Det OR ("mar")) (0 ("Egeu") OR ("Egea")) ;
 SELECT Top IF (-1 Det OR ("mar")) (0 ("Egeu")OR ("Egea")) ;
 
 SELECT Top IF (-1 Prep OR Lpar) (0 ("<Conca>")) (NOT 1 ("de")) ;
+
+REMOVE NP IF (-1/* Det + Pl) (0 ("<Set>")) ;
+REMOVE NP IF (0 ("<Set>")) (1 Noun_Adj + Pl) ;
+REMOVE NP IF (0 ("<Set>")) (1 unknownMajIni) ;
+REMOVE NP IF (0 ("<Set>")) (1 MajIni) ;
 
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
