@@ -85,7 +85,7 @@ LIST Masc = m mf ;
 LIST Fem = f mf ;
 # LIST Masc_strict = m ; no utilitzar: també agafa mf
 # LIST Fem_strict = f ; no utilitzar: també agafa mf
-#LIST Masc_strict = (m) ;
+LIST Masc_strict = (m) ;
 #LIST Fem_strict = (f) ;
 LIST MF = mf ;
 SET Sg = (sg) OR (sp) ;
@@ -1182,6 +1182,11 @@ REMOVE N IF (0 ("lliure")) (-1 Adv); # ¿Es pot generalitzar més: adv + adj?
 REMOVE Vblex IF (0 ("lliure")) (-1 Adv) (-2 Vblex);
 
 SELECT Vblex IF (0 ("prémer")) (2 ("tecla") OR ("botó"));
+
+# hi ha casos en què hi ha dues possibilitats per al n: mf (gentilici) i m (nom de la llengua)
+REMOVE N + MF IF (-1/* Det + Def + MascSg) (0 N + Masc_strict + Sg) ;		# el panjabi, el sindi
+REMOVE N + Masc_strict IF (-1/* Det + Def + MascPl) (0 N + MF + Pl) ;		# els panjabis, els sindis
+
 
 #
 # Desambiguació "los" enc / els "pro"
