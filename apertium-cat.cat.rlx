@@ -832,6 +832,9 @@ SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
 
 REMOVE N IF (0 ("sobretot")) (NOT -1/* Det) ;
 
+SELECT A IF (0 ("que ve")) (-1 DiaSetmana OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) ;
+REMOVE A IF (0 ("que ve")) ;
+
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
 SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl) (NOT 0 ("segons"i));
