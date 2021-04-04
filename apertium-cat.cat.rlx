@@ -830,6 +830,8 @@ SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C N) ;
 SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
 	# no hi ha pràcticament cap menció
 
+REMOVE N IF (0 ("sobretot")) (NOT -1/* Det) ;
+
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
 SELECT:ordinal A IF (0 (ord) + MascPl) (1 N + MascPl) (NOT 0 ("segons"i));
@@ -1856,8 +1858,6 @@ SELECT N IF (-2 Num) (NOT -2 ("un")) (-1 Trencat) (0 N OR A) ;
 
 REMOVE Ger IF (0 ("bastant")) (1C A OR PP) ;
 	# models bastant generalitzats
-
-REMOVE N IF (0 ("sobretot")) (NOT 1 Det) ;
 
 SELECT PP IF (-1C Copula) (0C Vblex) ;		# va ser vist
 REMOVE Inf IF (-1C Copula) (0 V) ;
