@@ -144,8 +144,8 @@ SET Llocs = ("riu") OR ("mar") OR ("oceà") OR ("muntanya") OR ("serra") OR ("se
 SET Persones = ("pare") OR ("mare") OR ("avi") OR ("germà") OR ("fill") OR ("oncle") OR ("tia") OR ("sogre") OR ("cunyat")
 	OR ("marit") OR ("dona") OR ("muller") OR ("espòs") OR ("company") OR ("veí") OR ("cap") OR ("amic") OR ("conegut") ;
 #SET Persones2 = ("pare") ("mare") ("avi") ;
-SET Dignitat = ("president") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("comte") OR ("marquès") OR ("duc")
-	OR ("arxiduc") OR ("infant") OR ("bisbe") ;
+SET Dignitat = ("president") OR ("vicepresident") OR ("governador") OR ("emperador") OR ("rei") OR ("príncep") OR ("baró") OR ("comte")
+	OR ("marquès") OR ("duc") OR ("arxiduc") OR ("infant") OR ("regent") OR ("soldà") OR ("bisbe") OR ("arquebisbe") ;
 SET PuntCardinal = ("nord") OR ("sud") OR ("est") OR ("oest") OR ("nord-est") OR ("nord-oest") OR ("sud-est") OR ("sud-oest") OR ("llevant") OR ("ponent") ;
 SET DiaSetmana = ("dilluns") OR ("dimarts") OR ("dimecres") OR ("dijous") OR ("divendres") OR ("dissabte") OR ("diumenge");
 SET PronPers = ("jo") OR ("tu") OR ("ell") OR ("nosaltres") OR ("vosaltres") OR ("prpers") ;
@@ -154,10 +154,10 @@ SET PronPers = ("jo") OR ("tu") OR ("ell") OR ("nosaltres") OR ("vosaltres") OR 
 # adj que són ambiguts amb el pp de verbs intransitius
 SET PP_Intr_Adj = ("controvertit") ;
 
-SET Barrera_Final_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro ;	# Verb és perillós per la ambigüitat, però en general, prolífic
-SET Barrera_Final_Estrict_SN = <<< OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro ;
-SET Barrera_Inicial_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Verb OR Rel ;	# Verb és perillós per la ambigüitat, però en general, prolífic
-SET Barrera_Inicial_Estrict_SN = >>> OR Prep OR CnjSub OR CnjAdv OR Rel ;
+SET Barrera_Final_SN = <<< OR (sent) OR Prep OR Det OR CnjSub OR CnjAdv OR Verb OR Rel OR Pro OR ("com") ;	# Verb és perillós per la ambigüitat, però en general, prolífic
+SET Barrera_Final_Estrict_SN = <<< OR (sent) OR Prep OR Det OR CnjSub OR CnjAdv OR Rel OR Pro OR ("com") ;
+SET Barrera_Inicial_SN = >>> OR (sent) OR Prep OR CnjSub OR CnjAdv OR Verb OR Rel ;	# Verb és perillós per la ambigüitat, però en general, prolífic
+SET Barrera_Inicial_Estrict_SN = >>> OR (sent) OR Prep OR CnjSub OR CnjAdv OR Rel ;
 SET Limite_Barrera_Inicial_SN = ("ser") OR ("Ser") OR ("estar") OR ("Estar") OR ("semblar") OR ("Semblar") OR ("haver") OR ("Haver") ;
 
 LIST Acta = "acta" ;
@@ -1390,6 +1390,12 @@ SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR (
 	# ha detonat sempre explosius
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (-1C Vblex) (NOT -1 PP OR ("parlar") OR VAdj) (1 CnjCoo) (2 Barrera_Final_Estrict_SN) ;
 	# detonando explosivos y derrumbando
+SELECT N IF (-2 ("hi")) (-1 Haver + P3) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-3 ("hi")) (-2 Haver + P3) (-1 Haver + PP) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-3 ("hi")) (-2 Anar + P3) (-1 Haver + Inf) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-3 ("hi")) (-2 Haver + P3) (-1 Adv) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-4 ("hi")) (-3 Haver + P3) (-2 Haver + PP) (-1 Adv) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
+SELECT N IF (-4 ("hi")) (-3 Anar + P3) (-2 Haver + Inf) (-1 Adv) (0 Noun_Adj_PP LINK NOT 0 Adv OR PP OR Ger OR Inf OR NP OR Prep OR ("ser") OR ("sinó")) (NOT 0 ("cap") OR ("nou")) (1 Barrera_Final_Estrict_SN) ;
 
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 Barrera_Final_Estrict_SN) ;
 SELECT N IF (0 Noun_Adj_PP LINK NOT 0 NP OR ("ser") OR Prep) (-1C Det) (1 CM OR CnjCoo) (1 Barrera_Final_Estrict_SN) ;
