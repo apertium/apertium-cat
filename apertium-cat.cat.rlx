@@ -1277,6 +1277,9 @@ REMOVE N IF (-2 Noun_NP + &&ConcordaSP) (-1 Adv) (0 Verb + P3 + &&ConcordaSP) (1
 REMOVE N IF (-2 Noun_NP + &&ConcordaSP) (-1 Adv) (0 Verb + P3 + &&ConcordaSP) (1 Det) ;	# Joan no estima una noia / el consens entre els
 
 SELECT A IF (-2 Ser) (-1 N + &&ConcordaGN) (0 ("seu") + &&ConcordaGN) ;		# fou deixeble seu Josep Trueta
+SELECT A IF (-1 ("darrere") OR ("rere") OR ("davant") OR ("sobre") OR ("sota") OR ("al davant") OR ("al darrere") OR ("al damunt") OR ("a sobre") OR ("a sota") OR ("prop") OR ("a prop") OR ("a la vora") OR ("al voltant") OR ("a l'entorn") OR ("a dins") OR ("a fora") OR ("a l'interior") OR ("a l'exterior")) (0 ("seu")) ;
+SELECT N IF (-1 CM) (0 ("seu")) (1 De) ;
+SELECT N IF (-2 CM) (-1C Adv) (0 ("seu")) (1 De) ;
 
 # NOM / ADJ
 
@@ -1295,10 +1298,12 @@ REMOVE N IF (-1 Estar LINK NOT 0 VSer) (0 Noun_Adj_PP) ;
 REMOVE P1 OR P2 OR P3 (-1C Estar) (0 N OR A OR Ger LINK 0 Pers) ;
 # està subjecte a
 
-REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 <<< OR Prep OR Det OR CnjSub) ;
-REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 <<< OR Prep OR Det OR CnjSub) ;
+REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
+REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 CM) (2 Prep OR Det OR CnjSub OR CnjCoo) ;
 REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 CM) (2 Prep OR Det OR CnjSub OR CnjCoo) ;
+REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1C Adv) (2 EOS OR Prep OR Det OR CnjSub OR CnjCoo) ;	# estan en converses des de fa temps
+REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1C Adv) (2 EOS OR Prep OR Det OR CnjSub OR CnjCoo) ;
 # eren semblants al Sol, però [VERIFY: funciona amb cat-disam, però no amb cat-tagger]
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (1 CM OR CnjCoo) (2 CnjSub) ;
 
