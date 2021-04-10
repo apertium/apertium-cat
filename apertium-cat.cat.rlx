@@ -927,7 +927,11 @@ SELECT Calar IF (-1 Pro + Ref) (0C ("caldre") OR ("calar")) ;
 REMOVE Calar IF (NOT -1 Pro + Ref) (0C ("caldre") OR ("calar")) ;
 
 # veure i viure (p.ex. viu)
-SELECT Viure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
+REMOVE Veure IF (NOT -1 ("jo")) (0 ("<viu>")) ;
+SELECT A IF (-1 Verb) (0 ("<viu>")) ;			# estar viu, matenir viu
+SELECT A IF (-2 Verb) (-1 Adv_PreAdv) (0 ("<viu>")) ;
+REMOVE A IF (NOT -1 N + MascSg) (0 ("<viu>")) (NOT 1 N + MascSg) ;
+REMOVE A IF (-1 N + MascSg) (0 ("<viu>")) (1 Det) ;	# el món viu una transformació
 
 # jo bec
 SELECT Beure IF (-1 ("jo")) (0 ("<bec>")) ;
