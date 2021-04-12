@@ -1298,6 +1298,8 @@ SELECT A IF (-2 Ser) (-1 N + &&ConcordaGN) (0 ("seu") + &&ConcordaGN) ;		# fou d
 SELECT A IF (-1 ("darrere") OR ("rere") OR ("davant") OR ("sobre") OR ("sota") OR ("al davant") OR ("al darrere") OR ("al damunt") OR ("a sobre") OR ("a sota") OR ("prop") OR ("a prop") OR ("a la vora") OR ("al voltant") OR ("a l'entorn") OR ("a dins") OR ("a fora") OR ("a l'interior") OR ("a l'exterior")) (0 ("seu")) ;
 SELECT N IF (-1 CM) (0 ("seu")) (1 De) ;
 SELECT N IF (-2 CM) (-1C Adv) (0 ("seu")) (1 De) ;
+SELECT Verb IF (-1 BOS) (0 ("seu")) ;
+SELECT Verb IF (-2 BOS) (-1 Adv) (0 ("seu")) ;
 
 # NOM / ADJ
 
