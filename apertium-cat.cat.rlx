@@ -551,6 +551,7 @@ REMOVE NP IF (0 ("<Set>")) (1 Noun_Adj + Pl) ;
 REMOVE NP IF (0 ("<Set>")) (1 unknownMajIni) ;
 REMOVE NP IF (0 ("<Set>")) (1 MajIni) ;
 
+SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
