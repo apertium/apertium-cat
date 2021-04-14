@@ -1301,6 +1301,8 @@ SELECT N IF (-2 CM) (-1C Adv) (0 ("seu")) (1 De) ;
 SELECT Verb IF (-1 BOS) (0 ("seu")) ;
 SELECT Verb IF (-2 BOS) (-1 Adv) (0 ("seu")) ;
 
+SELECT Verb IF (0 ("esperar")) (1C Inf) ;		# l'Estat espanyol espera rebre
+
 # NOM / ADJ
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
