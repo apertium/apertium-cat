@@ -607,6 +607,20 @@ SELECT CnjSub (0 ("que")) (-2 ("tan") OR ("Tan")) (-1 A OR Adv) ;
 SELECT CnjSub (0 ("que")) (-2 ("més") OR ("més")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
 SELECT CnjSub (0 ("que")) (-2 ("menys") OR ("menys")) (-1 A OR Adv) (NOT 1 Verb OR Pron) ;
 
+SELECT CnjSub (0 ("que")) (-2 Ser + P3 + Sg) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-2 Estar + P3 + Sg) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-2 VAdj + P3 + Sg) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-2 ("tenir")) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-3 Ser + P3 + Sg) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-3 Estar + P3 + Sg) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-3 VAdj + P3 + Sg) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-3 ("tenir")) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-4 Ser + P3 + Sg) (-3 Adv_PreAdv) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-4 Estar + P3 + Sg) (-3 Adv_PreAdv) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-4 VAdj + P3 + Sg) (-3 Adv_PreAdv) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+SELECT CnjSub (0 ("que")) (-4 ("tenir")) (-3 Adv_PreAdv) (-2 Adv_PreAdv) (-1C A OR ("clar")) ;
+
+
 REMOVE Adv (0 Adv) (-1C N) (1C N) ;
 	# manifestantes bajo jurisdicción
 
