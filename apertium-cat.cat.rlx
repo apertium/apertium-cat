@@ -724,13 +724,27 @@ SELECT:ger Ger IF (-1 ("estar"i) OR ("seguir"i) OR ("continuar"i) OR ("acabar"i)
 #
 
 #parir/parèixer -> parèixer (per freqüència), però caldria introduir excepcions
+REMOVE:parir ("parir") IF (0 ("parèixer")) (0 ("parir")) (1C A OR PP) ;
 REMOVE:pareixer ("parèixer") IF (0 ("parèixer")) (0 ("parir"));
 
 #sabeu: el tagger falla massa
 REMOVE:sabeu_no_adj A IF (0 ("sabeu") + MascSg) (NOT -1 MascSg);
 
+#creu
+REMOVE N IF (0 ("creu")) (1C Adj_PP + Masc_strict) ;
+REMOVE N IF (0 ("<creu>")) (1C Adj_PP + Pl_strict) ;
+REMOVE N IF (0 ("<creus>")) (1C Adj_PP + Sg_strict) ;
+
+#veu
+REMOVE N IF (0 ("veu")) (1C Adj_PP + Masc_strict) ;
+REMOVE N IF (0 ("<veu>")) (1C Adj_PP + Pl_strict) ;
+REMOVE N IF (0 ("<veus>")) (1C Adj_PP + Sg_strict) ;
+
 #riu
-SELECT:riu N IF (0 ("riu") OR ("model")) (1 MajIni);
+SELECT:riu N IF (0 ("riu")) (1 MajIni OR unknownMajIni);
+
+#model
+SELECT:model MF IF (0 ("model")) (1 MajIni OR unknownMajIni);
 
 REMOVE:valg_adj A IF (0 ("valg")) (NOT -1 ("genoll") OR ("genu") OR ("cúbit") OR ("hàl·lux") OR ("peu") OR ("polze") OR ("talipes")) ;
 REMOVE:cultivar_v N (0 ("<cultivar>"i)) (NOT -1 Det OR Pos);
