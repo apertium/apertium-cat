@@ -1000,6 +1000,21 @@ SELECT Vblex IF (0 ("<sol>")) (1 Inf) ;
 
 SELECT So IF (0 So OR Son + Pl) ;
 
+REMOVE N IF (-1C PreAdv) ;	# tan sol
+REMOVE Interj IF (-1C PreAdv) ;	# tan bé
+
+SELECT N IF (-1 Fer + P3 + Sg) (0 ("<sol>"i)) ;			# fa sol
+SELECT A IF (-2 ("<per>"i)) (-1 ("<si>"i)) (0 ("sol")) ;	# per si sol
+SELECT A IF (-1/* Det + &&ConcordaGN) (0 ("sol") + &&ConcordaGN) (1C Noun_Adj + &&ConcordaGN) ;
+REMOVE ("soler") IF (NOT 1 Inf) ;
+SELECT ("soler") IF (1 Inf) ;
+SELECT Inf IF (-1C ("soler")) ;
+SELECT Adv IF (-1 ("no")) (0 ("<sols>"i)) (NOT 1 Inf) ;
+SELECT Adv IF (NOT -3 Vblex + Pl) (-1 ("tan")) (0 ("<sols>"i)) ;
+SELECT Adv IF (0 ("<sols>"i)) (1 ("un") OR Num) ;
+SELECT Adv IF (NOT -1 Noun_Adj + MascPl) (1C Verb + Sg) (0 ("<sols>"i)) ;	# quan sols tenia
+SELECT Adv IF (NOT -1 Noun_Adj + MascPl) (NOT -1 Verb + Pl) (NOT -1 Inf OR Ger OR PP OR Adv) (0 ("<sols>"i)) ;
+
 REMOVE N IF (0 Fem_N + Sg) (1 Inf) ;
 
 SELECT Fins IF (0 Fins OR Fi + Pl) (1 ("fer")) ;
@@ -1358,6 +1373,9 @@ REMOVE N IF (0 ("<resta>"i)) (1 ("encara")) (2 Det + Sg) (3 A + Sg) (3 N + Sg) ;
 
 REMOVE N IF (-1 ("no")) (0 Verb) ;			# un nen no menja
 REMOVE N IF (-2 ("no")) (-1C Adv) (0 Verb) ;		# un nen no sempre menja
+REMOVE N IF (-2C Noun_NP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# Joan sempre menja
+REMOVE N IF (-3C Noun_Adj + &&ConcordaSP) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen gran sempre menja
+REMOVE N IF (-4 Noun_Adj + &&ConcordaSP) (-3 Adv_PreAdv) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen molt gran sempre menja
 
 # NOM / ADJ
 
