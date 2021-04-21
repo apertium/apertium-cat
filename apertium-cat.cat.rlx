@@ -1005,6 +1005,7 @@ REMOVE Interj IF (-1C PreAdv) ;	# tan bé
 
 SELECT N IF (-1 Fer + P3 + Sg) (0 ("<sol>"i)) ;			# fa sol
 SELECT A IF (-2 ("<per>"i)) (-1 ("<si>"i)) (0 ("sol")) ;	# per si sol
+SELECT N IF (-1/* Det + &&ConcordaGN) (0 ("sol") + &&ConcordaGN) (1C A + &&ConcordaGN) ;	# una sola llisa
 SELECT A IF (-1/* Det + &&ConcordaGN) (0 ("sol") + &&ConcordaGN) (1C Noun_Adj + &&ConcordaGN) ;
 REMOVE ("soler") IF (NOT 1 Inf) ;
 SELECT ("soler") IF (1 Inf) ;
