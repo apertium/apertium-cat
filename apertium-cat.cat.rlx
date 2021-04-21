@@ -1351,6 +1351,14 @@ SELECT Verb IF (-2 BOS) (-1 Adv) (0 ("seu")) ;
 
 SELECT Verb IF (0 ("esperar")) (1C Inf) ;		# l'Estat espanyol espera rebre
 
+REMOVE N IF (0 ("<resta>"i)) (1C Adv_PreAdv) (2 Det + Sg) (3 N + Sg) ;			# resta encara una molècula
+REMOVE N IF (0 ("<resta>"i)) (1 ("encara")) (2 Det + Sg) (3 N + Sg) ;			# resta encara una molècula
+REMOVE N IF (0 ("<resta>"i)) (1C Adv_PreAdv) (2 Det + Sg) (3 A + Sg) (3 N + Sg) ;	# resta encara una sola molècula
+REMOVE N IF (0 ("<resta>"i)) (1 ("encara")) (2 Det + Sg) (3 A + Sg) (3 N + Sg) ;	# resta encara una sola molècula
+
+REMOVE N IF (-1 ("no")) (0 Verb) ;			# un nen no menja
+REMOVE N IF (-2 ("no")) (-1C Adv) (0 Verb) ;		# un nen no sempre menja
+
 # NOM / ADJ
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
