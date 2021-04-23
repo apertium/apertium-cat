@@ -1286,7 +1286,7 @@
 01286. L'any 1903 van construir la seva primera hèlix segons càlculs originals
 01287. Crítics dels germans Wright afirmen que aquest vol no va tenir testimonis considerables (4 salvavides i un noi), donat l'aïllament en el qual van ser realitzades les proves
 01288. El 1905, els Wright van recórrer 25 milles, volant durant 30 minuts sense tocar terra
-01289. De fet, Santos-Dumont va ser realment la primera persona a realitzar un vol en una aeronau més pesant que l'aire per mitjans propis, ja que el Flyer dels germans Wright sol va deixar la necessitat de la catapulta el 1908
+01289. De fet, Santos-Dumont va ser realment la primera persona a realitzar un vol en una aeronau més pesant que l'aire per mitjans propis, ja que el Flyer dels germans Wright sols va deixar la necessitat de la catapulta el 1908
 01290. Malgrat aquestes proves documentades en la premsa de l'època, Santos Dumont és considerat com el creador de l'aviació moderna només al Brasil, i, en menor escala, a França, Portugal i Catalunya, sent un assumpte molt controvertit fins avui.
 01291. Després de la primera guerra mundial els enginyers van entendre que el desenvolupament de l'hèlix havia arribat al seu límit i van començar a investigar en el mètode de propulsió
 01292. Avui en dia, els avions més reconeguts en l'aviació comercial són els Boeing
@@ -2089,9 +2089,6 @@
 02089. L'altra espècie característica d'aquesta comunitat és ''Astragalus balearicus'' (eixorba-rates negre)
 02090. Es troben dues variants d'aquesta associació a Menorca:
 02091. En relació als articles dels noms propis, el criteri que fa temps que seguim (encertadament o no, això es pot descutir) és que es consideren part del nom propi (i per tant han de formar part del nom de la pàgina) els de les poblacions (es Mercadal, el Vendrell, etc.)
-02092. In the future, a stale edit lock can be fixed by going to this url: http: / / ca.wikipedia.org/wiki.cgi?action=unlock (broken up here so search spiders don't go hitting it all the time!) --Brion VIBBER
-02093. Dankon Brion! ;)
-02094. Ni ne povis eskribi
 02095. PER A TOTS
 02096. Hola Llull,
 02097. Sense ànim de polemitzar (ja hem parlat molt del tema, potser massa), crec que exageres: aquests termes són cada vegada més acceptats pel català mitjà, que és a qui va dedicat la Viquipèdia en català
