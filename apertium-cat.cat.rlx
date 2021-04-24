@@ -456,10 +456,10 @@ SELECT Ant IF (0 Ant) (1 segles_num_romans) ;
 SELECT Top IF (-2 ("concili") OR ("parlament") OR ("estatut") OR ("constitució") OR ("tractat") OR ("declaració"))
 	(-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# concili de Nicea
-SELECT Top IF (-2 ("catedral") OR ("monestir") OR ("col·egiata") OR ("església"))
+SELECT Top IF (-2 ("catedral") OR ("monestir") OR ("col·legiata") OR ("església") OR ("universitat") OR ("aeroport") OR ("port"))
 	(-1 ("de")) (0 Ant OR Cog OR Top) ;
 	# catedral de Lleó
-SELECT Top IF (-2 ("corona") OR ("regne") OR ("comtat") OR ("ducat") OR ("república") OR ("província") OR ("regió"))
+SELECT Top IF (-2 ("corona") OR ("regne") OR ("comtat") OR ("ducat") OR ("república") OR ("província") OR ("regió") OR ("ciutat") OR ("vila"))
 	(-1 ("de")) (0 Cog OR Top) ;
 	# regne de Castella
 SELECT Top IF (-2 Dignitat) (-1 ("de")) (0 Ant OR Cog OR Top OR Al) ;
