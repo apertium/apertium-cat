@@ -1169,6 +1169,10 @@ SELECT MF IF (-1 Masc_strict) (0 ("tifa")) ;
 SELECT MF IF (1 Masc_strict) (0 ("tifa")) ;
 REMOVE MF IF (0 ("tifa")) ;
 
+SELECT MF IF (-1 Masc_strict) (0 ("tronera")) ;
+SELECT MF IF (1 Masc_strict) (0 ("tronera")) ;
+REMOVE MF IF (0 ("tronera")) ;
+
 SELECT Pron IF (0 Ens) (1 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefAmb) ;
 SELECT Pron IF (0 Ens) (1 Pro) (2 Verb + Pers) (NOT -1 Det OR PreAdj OR AdjPrefAmb) ;
 
