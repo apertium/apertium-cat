@@ -1142,6 +1142,13 @@ SELECT Pron IF (0 Tot + MascPl) (1 Pron + Dem + MascPl) (NOT 2 N + MascPl) ;	# t
 SELECT Pron IF (0 Tot + FemPl) (1 Pron + Dem + FemPl) (NOT 2 N + FemPl) ;	# totes aquestes
 SELECT Pron IF (0 Tot + MascSg) (1 ("això") OR ("allò") ) ;
 SELECT Pron IF (0 Tot + MascSg) (1 Det + Def + MascSg ) (2 PP + MascSg) (NOT 3 N + MascSg) ;	# tot el relacionat (potser no és normatiu, però es troba)
+SELECT PreDet IF (0 Tot + MascSg) (1 Top + ("<el .*>"ir)) ;
+SELECT PreDet IF (0 Tot + FemSg) (1 Top + ("<la .*>"ir)) ;
+SELECT PreDet IF (0 Tot + MascPl) (1 Top + ("<els .*>"ir)) ;	# a tots els Països Catalans
+SELECT PreDet IF (0 Tot + FemPl) (1 Top + ("<les .*>"ir)) ;
+SELECT PreDet IF (0 Tot + &&ConcordaGN) (1 ("sol") + &&ConcordaGN) ;
+REMOVE PreDet IF (0 Tot) (NOT 1 Det OR Num OR N OR NP) ;	# totes van dins ; tots tres municipis ; de tota mena ; de tot Europa
+REMOVE PreDet IF (0 Tot + Det) (NOT 1 Det) ;			# de tota mena [cat-spa no té 'tot<det>']
 
 REMOVE Det IF (1C Verb + Pers) ;	# el va deixar
 REMOVE DetNT IF (1C Verb + Pers) ;	# el va deixar
