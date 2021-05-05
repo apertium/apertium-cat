@@ -190,6 +190,7 @@ LIST Fer = "fer" ;
 LIST Faig = "faig" ;
 LIST Gaire = "gaire" ;
 LIST Molt = "molt" ;
+LIST Poc = "poc" ;
 LIST Ni = "ni" ;
 LIST No = "no" ;
 LIST Pas = "pas" ;
@@ -1046,13 +1047,17 @@ SELECT Penques IF (0 Penques) (-3 Ser) (-2 Adv) (-1 ("un")) ;
 
 SELECT Adv IF (-1C Verb + Pers) (0 Gaire) (NOT 1 Noun_Adj) ;	# no és gaire gran, no té gaire sentit
 SELECT Adv IF (-1C Verb + Pers) (0 Molt) (NOT 1 Noun_Adj) ;
+SELECT Adv IF (-1C Verb + Pers) (0 Poc) (NOT 1 Noun_Adj) ;
 SELECT Adv IF (-2C Verb + Pers) (-1C Adv OR Pas) (0 Gaire) (NOT 1 A) ;
 SELECT Adv IF (-2C Verb + Pers) (-1C Adv OR Pas) (0 Molt) (NOT 1 Noun_Adj) ;
-SELECT PreAdv IF (0 Gaire OR Molt) (1C A OR PP) ;
+SELECT Adv IF (-2C Verb + Pers) (-1C Adv OR Pas) (0 Poc) (NOT 1 Noun_Adj) ;
+SELECT PreAdv IF (0 Gaire OR Molt OR Poc) (1C A OR PP) ;
 SELECT PreAdv IF (0 Gaire OR Molt) (1 ("a prop de") OR ("lluny de")) ;
 SELECT PreAdv IF (-2 No) (-1 Ser + &&ConcordaSP) (0 Gaire) (1 A + &&ConcordaSP) ;
 SELECT PreAdv IF (-3 No) (-2 Ser + &&ConcordaSP) (-1 Adv) (0 Gaire) (1 A + &&ConcordaSP) ;
 SELECT A (0 Gaire + &&ConcordaSP) (1 N + &&ConcordaSP) (NOT 1 Adj_PP) ;
+REMOVE ("no fa gaire") IF (1 N OR ("res")) ; 
+SELECT ("no fa gaire") ;
 
 SELECT PP (0 ("fet") OR ("feta")) (1 ("per")) ;
 
