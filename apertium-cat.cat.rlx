@@ -556,7 +556,7 @@ REMOVE NP IF (-1 N + MajIni) (0 ("<Gai>")) ;		# Front d'Alliberament Gai
 REMOVE NP IF (0 ("<Gai>")) (1 ("saber")) ;
 
 SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Reis") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Verb + P3) ;
