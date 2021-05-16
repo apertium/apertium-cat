@@ -1451,7 +1451,7 @@
 01451. Moltes espècies tenen una importància econòmica, principalment com a fonts d'aliment adquirides per caça o cria
 01452. Tot seguit es pot observar una llista dels ordres taxonòmics de la subclasse dels neornis, o ocells moderns
 01453. Els ocells es poden classificar també de manera més popular o menys tècnica
-01454. També es pot parlar dels caça ocells cinegètics, és a dir, ocells que viuen en llibertat i que sovint son caçats pels humans per aprofitar la seva carn (i a vegades alhora com a activitat recreativa), com ara la perdiu, la guatlla, el faisà, el colom (ocell) colom, l'ànec, l'oca, el gall dindi salvatge, etc.
+01454. També es pot parlar dels ocells cinegètics, és a dir, ocells que viuen en llibertat i que sovint són caçats pels humans per aprofitar la seva carn (i a vegades alhora com a activitat recreativa), com ara la perdiu, la guatlla, el faisà, el colom (ocell) colom, l'ànec, l'oca, el gall dindi salvatge, etc.
 01455. En comparació amb els altres vertebrats, els ocells tenen un pla corporal que presenta moltes adaptacions inusuals, majoritàriament, per facilitar-los el vol dels ocells vol.
 01456. Els ocells es comunicació dels animals comuniquen principalment per mitjà de senyals visuals i auditius
 01457. Quan surten de l'ou, l'estat de desenvolupament dels polls pot variar entre indefensos i independents, segons l'espècie de la qual es tracti
@@ -5570,7 +5570,7 @@
 05573. La indústria és escassa, bàsicament agroalimentària, tabaquera i de refinament de petroli (la refineria de Santa Cruz de Tenerife és la més antiga d'Espanya)
 05574. Només està conreat el 10% de la superfície, sent de secà la majoria (ordi, blat, vinya i papes), i de regadiu una minoria (plàtans i tomàquets), orientats al comerç amb la resta d'Espanya i amb la Unió Europea
 05575. Entre les especificacions fiscals de Canàries està la Reserva per a Inversions a Canàries (RIC), que disminueix de la base imposable de l'Impost de societats (IS) fins al 90% del benefici no distribuït (80% en el cas de professionals que han de tributar per l'Impost sobre la Renda de les Persones Físiques (IRPF) per l'import de la dotació a la reserva, que ha d'invertir-se en el termini de tres anys des de la dotació
-05576. S'ha iniciat també l'exportació de fruites tropicals (alvocats, pinya (fruita) pinyes, mànecs i altres cultius d'hivernacle) i flors
+05576. S'ha iniciat també l'exportació de fruites tropicals (alvocats, pinya (fruita) pinyes, mangos i altres cultius d'hivernacle) i flors
 05577. El sector de la construcció és el que ha aportat major creixement en l'últim decenni, però afronta en l'actualitat un cicle recessiu.
 05578. La densitat de població en les illes és de 278,8 hab/km², xifra més de tres vegades superior a la mitjana estatal
 05579. Malgrat el fort creixement de la natalitat registrat en la dècada de 1960, que va dibuixar una piràmide poblacional molt jove en els anys 80 (la població menor de 30 anys s'acostava llavors a la meitat de la població total), les menors taxes de fecunditat en els últims anys assenyalen un procés d'envelliment
