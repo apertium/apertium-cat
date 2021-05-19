@@ -1041,6 +1041,8 @@ REMOVE Verb IF (0 ("arbre")) (1 N + Sg) ;				# arbre fetitxe
 REMOVE Verb IF (-1 Det + &&ConcordaGN) (0 ("arbre") + &&ConcordaGN) ;	# l'arbre
 REMOVE Verb IF (0 ("arbre") + &&ConcordaGN) (1 Adj_PP + &&ConcordaGN) ;	# arbre fruiter
 
+REMOVE Verb IF (-1 Det + &&ConcordaGN) (0 ("era") + &&ConcordaGN) (1 A + &&ConcordaGN) ;	# l'era napoleònica
+
 SELECT Penca IF (0 Penca) (-1 Tenir) ;
 SELECT Penca IF (0 Penca) (-2 Tenir) (-1 Adv) ;
 SELECT Penca IF (0 Penca) (-2 Tenir) (-1 Det OR ("molt")) ;
