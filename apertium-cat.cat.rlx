@@ -482,11 +482,13 @@ SELECT Ant_Cog IF (-1C Ant_Cog) (0 NP) ;
 SELECT Ant_Cog IF (-1/* Det + Def + Sg) (-1 ("<can>"i) OR ("<cal>"i)) ;
 REMOVE Cog IF (-1/* Det + Def + Sg) (0 Ant OR Top OR Al) ;
 SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 ("ser") OR ("viure") OR ("residir") OR ("treballar") OR ("publicar")) (-1 ("a")) ;	# és a Salamanca ; s'ha publicat a Salamaca
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (NOT -1/* Det) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
 REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-2 NP) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 SELECT Top OR Al IF (-1 ("fundar")) (0 Ant OR Cog OR Top OR Al) ;
+SELECT Top OR Al IF (-1 ("dins de") OR ("fora de")) ;	# fora d'Israel
 
 SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
