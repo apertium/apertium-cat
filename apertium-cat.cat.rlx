@@ -1926,6 +1926,15 @@ REMOVE Det IF (0 Det + (m)) (0 A + (f)) (1 N + (f)) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("pare")) ;
 SELECT Det IF (0 ("son")) (0 Det OR N) (1 N + ("germà")) ;
 	# son pare, son germà
+SELECT Pron IF (-1 ("el") + &&ConcordaGN) (0 ("un") + &&ConcordaGN) ;			# els uns anomenats per Roma
+SELECT Pron IF (-1 ("cada")) (0 ("un") + Sg) ;		
+SELECT Det IF (0 ("un") + &&ConcordaGN) (1C Verb + Pers OR Noun_Adj + &&ConcordaGN) ;			# és una manera ; una adreça
+SELECT Det IF (0 ("un") + &&ConcordaGN) (1 A + &&ConcordaGN) (2C N + &&ConcordaGN) ;			# una important tasca
+SELECT Det IF (0 ("un") + &&ConcordaGN) (1 Adv_PreAdv) (2 A + &&ConcordaGN) (3 N + &&ConcordaGN) ;	# una molt important tasca
+SELECT Det IF (0 ("un") + &&ConcordaGN) (1 N + &&ConcordaGN) (2 A + &&ConcordaGN) ;			# una estesa important
+SELECT Det IF (0 ("un") + &&ConcordaGN) (1 N + &&ConcordaGN) (2 Adv_PreAdv) (3 A + &&ConcordaGN) ;	# una estesa molt important
+REMOVE Num IF (0 ("un")) (1 De) ;	# un dels esdeveniments
+SELECT Det IF (0 ("un")) (1 unknown) ;
 SELECT Det IF (0 ("un") + MascSg) (1 Top + MascSg) ;
 SELECT Det IF (0 ("un") + FemSg) (1 Top + FemSg) ;	# una Itàlia
 
