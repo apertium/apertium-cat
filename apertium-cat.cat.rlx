@@ -149,6 +149,7 @@ SET Dignitat = ("president") OR ("vicepresident") OR ("governador") OR ("emperad
 SET PuntCardinal = ("nord") OR ("sud") OR ("est") OR ("oest") OR ("nord-est") OR ("nord-oest") OR ("sud-est") OR ("sud-oest") OR ("llevant") OR ("ponent") ;
 SET DiaSetmana = ("dilluns") OR ("dimarts") OR ("dimecres") OR ("dijous") OR ("divendres") OR ("dissabte") OR ("diumenge");
 SET PronPers = ("jo") OR ("tu") OR ("ell") OR ("nosaltres") OR ("vosaltres") OR ("prpers") ;
+SET AccionsPers = ("parlar") OR ("dir") OR ("afirmar") OR ("declarar") OR ("manifestar") OR ("protestar") OR ("intervenir") OR ("saludar") OR ("jugar") OR ("guanyar") OR ("perdre") ;
 
 
 # adj que són ambiguts amb el pp de verbs intransitius
@@ -353,6 +354,9 @@ REMOVE ("nét") IF (0 ("net")); #Al final, prioritat al sistema tradicional!
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
+SELECT:apellido2 (cog) IF (-1 (ant)) (0 (cog)) (1 ("i"i)) (2 (cog)) (NOT 3 (ant) OR (cog) OR unknownMajIni) ;   # Anna Cabré i Pla
+SELECT:apellido3 (cog) IF (-3 (ant)) (-2 (cog)) (-1 ("i"i)) (0 (cog)) (NOT 1 (ant) OR (cog) OR unknownMajIni) ; # Anna Cabré i Pla
+SELECT:nom (ant) IF (0 (ant)) (1C (cog)) (2 ("i"i)) (3C (cog)) ;   # Anna Cabré i Pla
 
 # Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
 REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni);
@@ -481,7 +485,8 @@ REMOVE Ant_Cog IF (-2 >>> OR CnjSub) (-1 ("a")) (0 NP) ;	# és molt difícil que
 SELECT Ant_Cog IF (-1C Ant_Cog) (0 NP) ;
 SELECT Ant_Cog IF (-1/* Det + Def + Sg) (-1 ("<can>"i) OR ("<cal>"i)) ;
 REMOVE Cog IF (-1/* Det + Def + Sg) (0 Ant OR Top OR Al) ;
-SELECT Top IF (-2 ("anar") OR ("viatjar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("tornar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
+SELECT Top IF (-2 ("anada") OR ("viatge") OR ("tornada") OR ("camí") OR ("vol")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 SELECT Top IF (-2 ("ser") OR ("viure") OR ("residir") OR ("treballar") OR ("publicar")) (-1 ("a")) ;	# és a Salamanca ; s'ha publicat a Salamaca
 REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (NOT -1/* Det) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
@@ -561,8 +566,8 @@ SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
-SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 Verb + P3) ;		# a vegades Nadal diu
-SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 Adv) (2 Verb + P3) ;	# a vegades Nadal no diu
+SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 AccionsPers + P3) ;		# a vegades Nadal diu
+SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 Adv) (2 AccionsPers + P3) ;	# a vegades Nadal no diu
 
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Verb + P3) ;
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Adv) (2 Verb + P3) ;
@@ -678,6 +683,7 @@ SELECT Adv IF (0 ("encara")) (-1 Ger); #Sent encara
 SELECT NP IF (0 ("<Cal>")) (1 MajIni OR unknownMajIni) (NOT -1 BOS) ;
 REMOVE NP IF (0 ("<Cal>")) (-1 BOS) ;
 SELECT NP IF (0 ("<Can>")) (1 MajIni OR unknownMajIni) ;
+SELECT NP IF (-1 ("<Can>i") OR ("*Can"i)) (0 MajIni) ;
 SELECT N IF (0 ("<cal>"i)) (1 Ant OR Cog) ;
 SELECT Verb IF (0 ("<cal>"i)) ;
 SELECT N IF (0 ("<cals>"i)) (1 Cog) ;
