@@ -569,6 +569,12 @@ SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parla
 SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 AccionsPers + P3) ;		# a vegades Nadal diu
 SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 Adv) (2 AccionsPers + P3) ;	# a vegades Nadal no diu
 
+SELECT CnjSub IF (-1 ("<fa un.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-1 ("<fa poc.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-1 ("<fa força.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-1 ("<fa molt.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-3 Fer + P3 + Sg) (-2 Num OR DetInd) (-1 ("segon") OR ("minut") OR ("hora") OR ("dia") OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) (0 Que) ;
+
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Verb + P3) ;
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Adv) (2 Verb + P3) ;
 	# la dona que estima les flors
