@@ -891,6 +891,7 @@ REMOVE N IF (0 ("sobretot")) (NOT -1/* Det) ;
 
 SELECT A IF (0 ("que ve")) (-1 DiaSetmana OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) ;
 REMOVE A IF (0 ("que ve")) ;
+SELECT A IF (0 ("passat")) (-1 DiaSetmana OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) ;
 
 #ordinales (el tagger no detecta els ordinals)
 SELECT:ordinal A IF (0 (ord) + MascSg) (1 N + MascSg);
