@@ -1437,6 +1437,7 @@ SELECT Num (0 ("nou")) (-1 ("<n'hi ha>") OR ("<N'hi ha>")) ;
 SELECT Num (0 ("nou")) (-2 ("<n'hi ha>") OR ("<N'hi ha>")) (-1 Vbhaver + PP) ;
 
 REMOVE N IF (-1 Estar LINK NOT 0 VSer) (0 Noun_Adj_PP) ;
+REMOVE N IF (-1 ("romandre") LINK NOT 0 VSer) (0 Noun_Adj_PP) ;
 # estan retallades
 REMOVE P1 OR P2 OR P3 (-1C Estar) (0 N OR A OR Ger LINK 0 Pers) ;
 # està subjecte a
