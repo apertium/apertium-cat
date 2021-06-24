@@ -2029,6 +2029,11 @@ REMOVE Ger IF (0 ("bastant")) (1C A OR PP) ;
 SELECT PP IF (-1C Copula) (0C Vblex) ;		# va ser vist
 REMOVE Inf IF (-1C Copula) (0 V) ;
 
+REMOVE N IF (-1 ("arribar") + &&ConcordaSP) (0 PP + &&ConcordaSP) ;	# arriba encaixada
+REMOVE N IF (-2 ("arribar") + &&ConcordaSP) (-1 Adv_PreAdv) (0 PP + &&ConcordaSP) ;	# arriba molt encaixada
+REMOVE N IF (-1 ("venir") + &&ConcordaSP) (0 PP + &&ConcordaSP) ;
+REMOVE N IF (-2 ("venir") + &&ConcordaSP) (-1 Adv_PreAdv) (0 PP + &&ConcordaSP) ;
+
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2C Vblex) (NOT -2 PP) ;			# no sé a qui li he dit
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2 Adv) (-3C Vblex) (NOT -3 PP) ;	# no sé bé a qui li he dit
 
