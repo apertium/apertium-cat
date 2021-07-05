@@ -1112,6 +1112,20 @@ SELECT N IF (-2 ("guanyar") OR ("aconseguir") OR ("perdre")) (-1 Num) (0 Set) ;
 
 REMOVE N IF (NOT -1 Det + FemSg) (0 ("quina") + FemSg) (1 N + FemSg) ;	# quina casa tens
 REMOVE N IF (NOT -1 Det + FemPl) (0 ("quina") + FemPl) (1 N + FemPl) ;	# quina casa tens
+SELECT Pron IF (NOT -1 Det + FemSg) (0 ("quina") + FemSg) (1 Copula + P3 + Sg) ;	# quina és
+SELECT Pron IF (NOT -1 Det + FemPl) (0 ("quina") + FemPl) (1 Copula + P3 + Pl) ;	# quines són
+SELECT Pron IF (NOT -1 Det + FemSg) (0 ("quina") + FemSg) (1 Verb) (NOT 1 Copula) ;	# quina dius
+SELECT Pron IF (NOT -1 Det + FemPl) (0 ("quina") + FemPl) (1 Verb) (NOT 1 Copula) ;	# quines dius
+SELECT Pron IF (NOT -1 Det + FemSg) (0 ("quina") + FemSg) (1 Pro) (2 Verb) (NOT 2 Copula) ;	# quina es diu
+SELECT Pron IF (NOT -1 Det + FemPl) (0 ("quina") + FemPl) (1 Pro) (2 Verb) (NOT 2 Copula) ;	# quines es diuen
+REMOVE Imp IF (-1C ("quin")) ;	# segons quin sigui
+SELECT A IF (NOT -1 Det + FemSg) (0 ("quin") + FemSg) (1 N + FemSg) (2 Copula + P3 + Sg) ;	# quina casa és
+SELECT A IF (NOT -1 Det + FemPl) (0 ("quin") + FemPl) (1 N + FemPl) (2 Copula + P3 + Pl) ;	# quines cases són
+SELECT A IF (NOT -1 Det + FemSg) (0 ("quin") + FemSg) (1 N + FemSg) (2 Verb) (NOT 1 Copula) ;	# quina casa dius
+SELECT A IF (NOT -1 Det + FemPl) (0 ("quin") + FemPl) (1 N + FemPl) (2 Verb) (NOT 1 Copula) ;	# quines cases dius
+SELECT A IF (NOT -1 Det + FemSg) (0 ("quin") + FemSg) (1 N + FemSg) (2 Pro) (3 Verb) (NOT 3 Copula) ;	# quina casa es diu
+SELECT A IF (NOT -1 Det + FemPl) (0 ("quin") + FemPl) (1 N + FemPl) (2 Pro) (3 Verb) (NOT 3 Copula) ;	# quines cases es diuen
+REMOVE N IF (-1 CM OR CnjCoo) (0 ("quina")) (-1* ("quin")) ;
 
 SELECT N IF (-1 ("quin") + Fem) (0 ("massa")) ;
 SELECT N IF (0 ("massa")) (1 ("inercial") OR ("gravitacional")) ;
