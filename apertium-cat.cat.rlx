@@ -851,6 +851,9 @@ REMOVE:càmera (m) IF (0 ("càmera"i)) (NOT -1 (det m)) (NOT -1 (adj m)) (NOT 1 
 REMOVE:contractes (f) IF (0 ("<contractes>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
 REMOVE:quadres    (f) IF (0 ("<quadres>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (NOT 1 (adj f)) (NOT 1 (vblex pp f)); #si no està determinat és masculí
 
+# aquell
+SELECT Pron IF (0 ("aquell") + &&ConcordaGN) (1 PP + &&ConcordaGN) ;	# aquells acostumats al clima
+
 # cap
 REMOVE Det IF (-1 Det + Sg) (0 ("cap") + Sg) ;
 REMOVE Pron IF (-1 Det + Sg) (0 ("cap") + Sg) ;
