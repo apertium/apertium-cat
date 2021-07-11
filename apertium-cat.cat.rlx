@@ -854,7 +854,7 @@ REMOVE:quadres    (f) IF (0 ("<quadres>"i)) (NOT -1 (det f)) (NOT -1 (adj f)) (N
 SELECT A IF (-1C Noun_Adj + MascSg) (0 ("<dur>"i)) ;	# el nucli dur del govern
 
 # aquell
-SELECT Pron IF (0 ("aquell") + &&ConcordaGN) (1 PP + &&ConcordaGN) ;	# aquells acostumats al clima
+SELECT Pron IF (0 ("aquell") + &&ConcordaGN) (1 PP + &&ConcordaGN) (NOT 1 Noun_Adj + &&ConcordaGN) ;	# aquells acostumats al clima / aquelles despeses
 
 # cap
 REMOVE Det IF (-1 Det + Sg) (0 ("cap") + Sg) ;
