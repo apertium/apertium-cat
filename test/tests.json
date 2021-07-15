@@ -1,0 +1,10 @@
+{
+    "analysis": {
+        "input": "analysis-input.txt",
+        "mode": "cat-tagger"
+    },
+    "grep": {
+        "input": null,
+        "command": "test/test-grep.sh"
+    }
+}

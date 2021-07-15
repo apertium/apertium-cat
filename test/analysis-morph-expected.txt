@@ -1,0 +1,2 @@
+[Fe88LGjxxrOH#0] ^Una/u<num><f><sp>/un<prn><tn><f><sg>/un<det><ind><f><sg>$ ^frase/frase<n><f><sg>$ ^de/de<pr>$ ^prova/prova<n><f><sg>/_prefix_pro_va<adj><m><sg>/provar<vblex><pri><p3><sg>/provar<vblex><imp><p2><sg>$
+[/Fe88LGjxxrOH]

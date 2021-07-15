@@ -1,0 +1,7 @@
+[47DEQpj8HBSa#0] apertium-cat.cat.metadix:<e r="RL" a="hector" lm="fer càrrec de"><i>f</i><par n="f/er__vblex"/><p><l><b/>càrrec<b/><b/>de</l><r><g><b/>càrrec<b/>de</g></r></p></e>
+apertium-cat.cat.metadix:<e lm="Ióssif Stalin" a="hector"><i>Ióssif Stalin</i><par n="Marc__np"/></e>
+apertium-cat.cat.metadix:<e lm="La Gàrdia"><i>La Gàrdia</i><par n="Àfrica__np"/></e>
+apertium-cat.cat.metadix:<e lm="que " r="RL">     <i>que<b/></i><par n="que__cnjsub"/></e> <!-- "que" afegit en castellà-->
+apertium-cat.cat.metadix:<e r="RL" lm="no tenir raó"><i>no<b/></i><par n="/tenir__vblex"/><p><l><b/>raó</l><r><g><b/>raó</g></r></p></e>
+apertium-cat.cat.metadix:<e lm="no tenir res a veure"><i>no<b/></i><par n="abs/tenir__vblex"/><p><l><b/>res<b/>a<b/>veure</l><r><g><b/>res<b/>a<b/>veure</g></r></p></e>
+[/47DEQpj8HBSa]

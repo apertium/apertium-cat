@@ -143,9 +143,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "Una frase de prova" | apertium -d . cat-tagger | tee .test-mt
-	@echo '^Un<det><ind><f><sg>$$ ^frase<n><f><sg>$$ ^de<pr>$$ ^prova<n><f><sg>$$^.<sent>$$' > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
-	bash -x dev/test-grep.sh
-
+	apertium-regtest test

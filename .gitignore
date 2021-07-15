@@ -16,3 +16,4 @@
 /*.mode
 /.d
 /.deps
+/test/*-output.txt
