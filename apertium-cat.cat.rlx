@@ -83,10 +83,8 @@ LIST Enc = (enc) ;
 
 LIST Masc = m mf ;
 LIST Fem = f mf ;
-# LIST Masc_strict = m ; no utilitzar: també agafa mf
-# LIST Fem_strict = f ; no utilitzar: també agafa mf
 LIST Masc_strict = (m) ;
-#LIST Fem_strict = (f) ;
+LIST Fem_strict = (f) ;
 LIST MF = mf ;
 SET Sg = (sg) OR (sp) ;
 SET Pl = (pl) OR (sp) ;
@@ -1111,9 +1109,9 @@ SELECT N (0 ("predicat")) (-1 CnjCoo OR Guio) (-2 ("verb") OR ("subjecte") OR ("
 SELECT N (0 ("predicat")) (-1 Det) (-2 CnjCoo) (-3 ("verb") OR ("subjecte") OR ("complement")) ;
 
 # "base": en cas de dubte, seleccionem base f en comptes de base mf
-SELECT Fem IF (-1 Fem) (0 Base) ;
-SELECT Fem IF (1 Fem) (0 Base) ;
-SELECT Fem IF (NOT -1 Masc OR Fem) (0 Base) (NOT 1 Masc OR Fem) ;
+SELECT Fem_strict IF (NOT -1 Masc_strict) (0 Base) (NOT 1 Masc_strict) ;
+
+REMOVE Masc IF (NOT -1 Masc_strict) (0 ("necessitat")) (NOT 1 Masc_strict) ;
 
 SELECT Promes IF (0 Promes OR Promes) (-1 Pos) ;
 SELECT Promesa IF (0 Promes OR Promes) (NOT -1 Pos) ;
@@ -2042,8 +2040,7 @@ SELECT Num IF (0 segles_num_romans) (-1 ("segle") OR ("mil·lenni") OR ("any") O
 SELECT N IF (0 ("<C>")) (-1 Num) ;
 	# 100°C
 
-SELECT Masc IF (0 ("final")) (-1 Prep) ;
-	# a finals de, de finals de
+SELECT Masc IF (0 ("final")) (-1 Prep) ;	# a finals de, de finals de
 
 SELECT N IF (-2 ("un")) (-1 Trencat) (0 N + Pl OR A + Pl) ;
 SELECT N IF (-2 Num) (NOT -2 ("un")) (-1 Trencat) (0 N OR A) ;
