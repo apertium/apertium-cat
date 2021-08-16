@@ -1640,6 +1640,8 @@ SELECT N IF (-3 Barrera_Inicial_SN LINK NOT 0 Verb) (-2C Det + FemSg) (-1C A + F
 SELECT N IF (-3 Barrera_Inicial_SN LINK NOT 0 Verb) (-2C Det + MascPl) (-1C A + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN) ;
 SELECT N IF (-3 Barrera_Inicial_SN LINK NOT 0 Verb) (-2C Det + FemPl) (-1C A + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN) ;
 
+REMOVE A IF (NOT -2 N + &&ConcordaGN) (-1C A + &&ConcordaGN) (0 N + &&ConcordaGN) (NOT 0 Ord OR PreAdj OR AdjPrefAmb) ; 	# un dels primers pensadors associat a 
+
 # NOM ADJ
 
 REMOVE A OR PP IF (-1 Barrera_Inicial_Estrict_SN) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Adj_PP + MascSg) (NOT 0 ("nou") OR ("sol")) ;
