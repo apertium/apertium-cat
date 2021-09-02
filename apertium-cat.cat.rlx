@@ -2127,6 +2127,16 @@ REMOVE Prep IF (0 ("tot i")) ;
     # tot i haver caigut
 	# tot i les reivindicacions
 
+SELECT Prep IF (0/* N) (1 Det OR ("determinat")) ;	# tret de la presència; tret d'escopeta
+SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1C Num) ;	# tret de dos
+SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1 NP OR unknownMajIni) ;
+SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1 ("<excepcions>"i) OR ("<casos">i)) ;
+SELECT Prep IF (-1 ("qualsevol")) (0 ("tret de") OR ("llevat de")) ;
+SELECT Prep IF (-2 ("qualsevol")) (0 ("tret de") OR ("llevat de")) ;
+SELECT Prep IF (-3 ("qualsevol")) (-2 Noun_Adj + &&ConcordaGN) (-1 Noun_Adj + &&ConcordaGN) (0 ("tret de") OR ("llevat de")) ;
+SELECT N IF (0 ("tret de")) (1 ("escopeta") OR ("fusell") OR ("pistola") OR ("morter") OR ("canó") OR ("tanc")) ;
+SELECT N IF (0 ("lleva de")) (1 ("cervesa") OR ("forner")) ;
+
 SELECT A IF (-1 N) (0 ("en pràctiques")) ;
 SELECT A IF (-2 N) (-1 A) (0 ("en pràctiques")) ;
 SELECT A IF (-1 Estar) (0 ("en pràctiques")) ;
