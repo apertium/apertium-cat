@@ -1214,6 +1214,7 @@ SELECT Itg IF (0 ("què")) (1C Interj) ;			# què collons
 
 REMOVE Interj IF (0 N) (1 CM) (2 N) (NOT 1* ("!")) ;	# com ara: ostres, marisc
 SELECT Interj IF (-1 BOS) (0 N) (1 CM) (1* ("!")) ;	# Ostres, marisc!
+SELECT Interj IF (-1 BOS OR CM) (1 ("!")) ;
 
 SELECT Cog IF (-2 Ant) (-1 ("de")) (0 ("Orange")) ;
 SELECT Cog IF (-3 Ant) (-2 Num) (-1 ("de")) (0 ("Orange")) ;
