@@ -1176,6 +1176,9 @@ SELECT Encara IF (0 Encara OR Encarar) (1 ("més") OR ("menys")) ;
 SELECT Encara IF (-2 ("més") OR ("menys")) (-1 A OR PP) (0 Encara OR Encarar) ;
 	# més pròxim encara
 
+REMOVE N IF (NOT -1 Det + Def + MascSg) (0 ("<viu>"i)) ;
+REMOVE N IF (NOT -1 Det + Def + MascPl) (0 ("<vius>"i)) ;
+
 SELECT Det IF (0 Les) (0 Def) (1 unknown) ;		# una de les koses
 REMOVE A IF (0 Les) (0 Def) (1 De) ;			# Les de ponent
 #REMOVE A IF (0 Les) (0 Def) (0 De) ;			# de les
