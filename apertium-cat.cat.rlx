@@ -700,8 +700,9 @@ SELECT Verb IF (0 ("<cal>"i)) ;
 SELECT N IF (0 ("<cals>"i)) (1 Cog) ;
 SELECT Verb IF (0 ("<cals>"i)) ;
 
-REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C Imp OR PRS OR PIS);
+REMOVE Imp IF (NOT 1* Excl) (NOT -1 >>>) (NOT 0C PRS OR PIS);
 SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
+REMOVE Imp IF (0 ("portar")) (1 Ger) ;			# porten preparant-se
 
 # elección de subjuntivo después de "que"
 SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb) (NOT 0 ("<poden>")) ;
