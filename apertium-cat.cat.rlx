@@ -1391,6 +1391,9 @@ REMOVE Pron IF (0 ("pocs") + Masc + Pl) (1 Adv OR PreAdv) (2 A + Masc + Pl) (3 N
 REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N + Fem + Pl) ;
 SELECT Pron IF (0 ("molts")) (1/* ("de")) ;
 
+SELECT N IF (-1 ("posar")) (0 ("fi")) ;		# posar fi
+REMOVE N IF (-1 ("posar")) (0 A OR Adv) ;	# posar dret
+
 # P1 / P3
 
 SELECT P1 IF (NOT -2 Prep) (-1 ("jo")) (0 Verb) ;					# jo pensava
