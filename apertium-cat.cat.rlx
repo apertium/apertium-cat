@@ -566,6 +566,9 @@ REMOVE NP IF (-1 N + MajIni) (0 ("<Gai>")) ;		# Front d'Alliberament Gai
 REMOVE NP IF (0 ("<Gai>")) (1 ("saber")) ;
 
 SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
+SELECT N IF (-1 ("en")) (0 ("Català")) ;
+SELECT N IF (-1 ("en")) (0 ("Anglés") OR ("Anglès")) ;
+SELECT N IF (-1 ("en")) (0 ("Corts")) ;
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
@@ -1396,6 +1399,7 @@ REMOVE Pron IF (0 ("pocs") + Fem + Pl) (1 Adv OR PreAdv) (2 A + Fem + Pl) (3 N +
 SELECT Pron IF (0 ("molts")) (1/* ("de")) ;
 
 SELECT N IF (-1 ("posar")) (0 ("fi")) ;		# posar fi
+SELECT N IF (-1 ("posar")) (0 ("mans")) ;	# posar mans a l'obra
 REMOVE N IF (-1 ("posar")) (0 A OR Adv) ;	# posar dret
 
 # P1 / P3
@@ -1607,6 +1611,8 @@ REMOVE N (-2 Det + Def + MascSg) (-1 ("millor") OR ("pitjor")) (-1C A + Sg) (NOT
 REMOVE N (-2 Det + Def + FemSg) (-1 ("millor") OR ("pitjor")) (-1C A + Sg) (NOT 0 N + FemSg) ;
 REMOVE N (-2 Det + Def + MascPl) (-1 ("millor") OR ("pitjor")) (-1C A + Pl) (NOT 0 N + MascPl) ;
 REMOVE N (-2 Det + Def + FemPl) (-1 ("millor") OR ("pitjor")) (-1C A + Pl) (NOT 0 N + FemPl) ;
+SELECT A (-1 ("millor") OR ("pitjor")) (0 A + &&ConcordaSP) (1C N + &&ConcordaSP) ;
+SELECT A (-1 ("millor") OR ("pitjor")) (0 ("nou") + &&ConcordaSP) (1 N + &&ConcordaSP) ;	# millor nou defensa, millor nova jugadora
 SELECT N (-1 ("millor") OR ("pitjor")) (-1C A + &&ConcordaSP) (0 N + &&ConcordaSP) ;		# millor defensa, millor jugadora
 
 # NP / ADJ
@@ -1925,6 +1931,7 @@ SELECT Pron OR Det IF (-5 ("no")) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("c
 SELECT Pron OR Det IF (-6 ("no")) (-5 Pro) (-4 ("en")) (-3 Anar) (-2 Inf) (-1 Adv) (0 ("cap")) ;
 	# no li'n va dir mai cap
 SELECT Pron OR Det IF (-2 ("no")) (-1 ("hi ha")) (0 ("cap")) ;	# no n'hi ha cap que
+SELECT Pron OR Det IF (-1 ("contra")) (0 ("cap")) ;			# 13 vots contra cap
 REMOVE Det IF (0 ("cap")) (1 ("que")) ;
 SELECT N IF (-1 Det) (0 ("cap")) (1 PP OR A) ;
 	# un cap unit
