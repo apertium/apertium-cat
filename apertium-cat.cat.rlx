@@ -577,9 +577,17 @@ SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'�
 
 SELECT CnjSub IF (-1 ("<fa un.*>"ir) + Adv) (0 Que) ;
 SELECT CnjSub IF (-1 ("<fa poc.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-1 ("<feia poc.*>"ir) + Adv) (0 Que) ;
 SELECT CnjSub IF (-1 ("<fa força.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-1 ("<feia força.*>"ir) + Adv) (0 Que) ;
 SELECT CnjSub IF (-1 ("<fa molt.*>"ir) + Adv) (0 Que) ;
-SELECT CnjSub IF (-3 Fer + P3 + Sg) (-2 Num OR DetInd) (-1 ("segon") OR ("minut") OR ("hora") OR ("dia") OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) (0 Que) ;
+SELECT CnjSub IF (-1 ("<feia molt.*>"ir) + Adv) (0 Que) ;
+SELECT CnjSub IF (-2 Fer + P3 + Sg) (-1 ("segon") OR ("minut") OR ("hora") OR ("dia") OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni") OR ("temps")) (0 Que) ;
+SELECT CnjSub IF (-3 Fer + P3 + Sg) (-2 Num OR DetInd) (-1 ("segon") OR ("minut") OR ("hora") OR ("dia") OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni") OR ("temps")) (0 Que) ;
+SELECT Vblex IF (0 ("<fa poc>"i)) (1 N + MascSg) ;
+SELECT Adv IF (0 ("<fa poc>"i)) (NOT 1 N + MascSg) ;
+SELECT Vblex IF (0 ("<feia poc>"i)) (1 N + MascSg) ;
+SELECT Adv IF (0 ("<feia poc>"i)) (NOT 1 N + MascSg) ;
 
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Verb + P3) ;
 SELECT Rel (-1C N OR NP) (0 Que OR Qui) (1 Adv) (2 Verb + P3) ;
