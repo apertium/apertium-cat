@@ -1228,6 +1228,9 @@ SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 SELECT Interj IF (-1 ("què") + Itg) (0 N) ;		# què collons
 SELECT Itg IF (0 ("què")) (1C Interj) ;			# què collons
 
+SELECT Itg IF (-1 BOS) (0 ("què")) (1* ("?")) ;
+SELECT Itg IF (-2 BOS) (-1 CnjCoo) (0 ("què")) (1* ("?")) ;
+
 REMOVE Interj IF (0 N) (1 CM) (2 N) (NOT 1* ("!")) ;	# com ara: ostres, marisc
 SELECT Interj IF (-1 BOS) (0 N) (1 CM) (1* ("!")) ;	# Ostres, marisc!
 SELECT Interj IF (-1 BOS OR CM) (1 ("!")) ;
