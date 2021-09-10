@@ -2111,7 +2111,19 @@ REMOVE N IF (-2 ("venir") + &&ConcordaSP) (-1 Adv_PreAdv) (0 PP + &&ConcordaSP) 
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2C Vblex) (NOT -2 PP) ;			# no sé a qui li he dit
 SELECT Pron IF (0 ("qui")) (-1C Prep) (-2 Adv) (-3C Vblex) (NOT -3 PP) ;	# no sé bé a qui li he dit
 
-SELECT Prep IF (0 ("fins")) (1 Det) (2 N) ;	# fins una estrella [no funcionava amb el tagger en cat-fra]
+SELECT Prep IF (0 Fins) (1 Det) (2 N) ;	# fins una estrella [no funcionava amb el tagger en cat-fra]
+SELECT N + Masc IF (-2 ("objecte") OR ("objectiu")) (-1 ("i")) (0 Fins) ;
+SELECT N + Masc IF (-2 ("objecte") OR ("objectiu")) (-1 ("i")) (0 Fi) ;
+SELECT N + Masc IF (-2 ("<fi>"i)) (-1 ("o")) (0 Fins) ;		# el fi o fins
+
+SELECT N IF (-2 ("<fruits>"i) OR ("<fruites>"i)) (-1 ("i")) (0 ("<llavors>"i)) ;
+SELECT N IF (2 ("<fruits>"i) OR ("<fruites>"i)) (1 ("i")) (0 ("<llavors>"i)) ;
+
+SELECT N IF (-2 ("<ocupació>"i)) (-1 ("i")) (0 ("<sou>"i)) ;
+
+SELECT N IF (-2 ("<allotjament>"i)) (-1 ("i")) (0 ("<menjar>"i)) ;
+
+SELECT N IF (-2C N) (-1 ("i")) (0 ("<coure>"i)) ;
 
 SELECT CnjAdv IF (-1 ("de")) (0 ("si")) (1 Copula) (1 P1 OR P2 OR P3) ;
 	# depenent de si són intel·ligents
