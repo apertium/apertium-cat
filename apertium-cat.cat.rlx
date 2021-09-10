@@ -188,6 +188,9 @@ LIST Fins = "fins" ;
 LIST Fer = "fer" ;
 LIST Faig = "faig" ;
 LIST Gaire = "gaire" ;
+LIST NoGaire = "no gaire" ;
+LIST NoMassa = "no massa" ;
+LIST NoProu = "no prou" ;
 LIST Molt = "molt" ;
 LIST Poc = "poc" ;
 LIST Ni = "ni" ;
@@ -1273,6 +1276,8 @@ SELECT PreAdv IF (-2 Ser OR VAdj OR ("estimar")) (-1 Adv) (0 Forca OR Bastant OR
 SELECT PreAdv IF (-2 Ser OR VAdj OR ("estimar")) (-1 Adv) (0 Forca OR Bastant) (1 ("més") OR ("menys")) (2 Adj_PP) ;	# és sempre força més bo
 SELECT PreAdv IF (-2 No OR Ni) (-1 Ser OR VAdj OR ("estimar")) (0 Gaire OR Molt) (1 Adj_PP) ;			# no és gaire bo
 SELECT PreAdv IF (-3 No OR Ni) (-2 Ser OR VAdj OR ("estimar")) (-1 Adv) (0 Gaire OR Molt) (1 Adj_PP) ;		# no és sempre gaire bo
+SELECT PreAdv IF (NOT -1 Det) (0 Forca) (1C A) ;	# força especial
+SELECT PreAdv IF (0 Bastant OR NoGaire OR NoMassa OR NoProu OR Molt) (1C A) ;	# no gaire especial
 REMOVE NSg IF (0 Forca) (1 Adj_PP + Pl_strict) ;	# algunes força populars / les forces armades
 SELECT A IF (-1C Verb) (0 Forca) (1 N) (2 Barrera_Final_Estrict_SN) ;	# originà força polèmica
 SELECT A IF (-2 No OR Ni) (-1 Verb) (NOT -1 Ser OR VAdj OR ("estimar")) (0 Gaire OR Molt) (1 N) ;			# no té gaire èxit
