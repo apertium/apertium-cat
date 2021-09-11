@@ -999,7 +999,7 @@ SELECT Creure IF (0 ("creure") OR ("creuar")) (1 Adv) (2 Det) (3 Persones) ;
 # ser i seriar (p.ex. seria)
 REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 PP) ;
 REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 A OR N OR Det) ;
-REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N) ;
+REMOVE Seriar IF (0C ("ser") OR ("seriar")) (1 Adv OR PreAdv) (2 A OR N OR Det) ;
 
 # ser i estat (p.ex. estat)
 SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 PP) ;
