@@ -1169,6 +1169,9 @@ SELECT Fem IF (0 ("<Terres>")) (NOT -1 Masc OR Fem) (NOT 1 Masc OR Fem) ;
 SELECT Fem IF (0 ("<Terra>")) (-1 ("anomenar") OR ("anomenat")) (NOT 1 Masc OR Fem) ;
 SELECT Fem IF (0 ("<Terres>")) (-1 ("anomenar") OR ("anomenat")) (NOT 1 Masc OR Fem) ;
 
+REMOVE N + Masc_strict (-1 Det + Fem_strict) (NOT -1 Det + Masc) (0 N + Fem_strict) ;	# la terra	
+REMOVE N + Fem_strict (-1 Det + Masc_strict) (NOT -1 Det + Fem) (0 N + Masc_strict) ;	# el terra	
+
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
 SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
 
