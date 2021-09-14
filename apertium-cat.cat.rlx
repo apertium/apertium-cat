@@ -1281,7 +1281,7 @@ SELECT PreAdv IF (-2 Ser OR VAdj OR ("estimar")) (-1 Adv) (0 Forca OR Bastant) (
 SELECT PreAdv IF (-2 No OR Ni) (-1 Ser OR VAdj OR ("estimar")) (0 Gaire OR Molt) (1 Adj_PP) ;			# no és gaire bo
 SELECT PreAdv IF (-3 No OR Ni) (-2 Ser OR VAdj OR ("estimar")) (-1 Adv) (0 Gaire OR Molt) (1 Adj_PP) ;		# no és sempre gaire bo
 SELECT N IF (-1 Prep) (0 Forca) (1 ("major")) ;
-SELECT N IF (-1 Prep) (0 Forca) (1 ("brut") OR ("muscular") OR ("sobrehumà") OR ("centrífug") OR ("centrípet") OR ("atòmic") OR ("elèctric") OR ("magnètic") OR ("hidràulic") OR ("laboral") OR ("motriu") OR ("armat") OR ("militar") OR ("expedicionari") OR ("colonial") OR ("aeri") OR ("naval") OR ("terrestre") OR ("aerotransportat")) ;
+SELECT N IF (-1 Prep) (0 Forca) (1 ("brut") OR ("muscular") OR ("sobrehumà") OR ("centrífug") OR ("centrípet") OR ("gravitatori") OR ("atòmic") OR ("elèctric") OR ("magnètic") OR ("hidràulic") OR ("laboral") OR ("motriu") OR ("armat") OR ("militar") OR ("expedicionari") OR ("colonial") OR ("aeri") OR ("naval") OR ("terrestre") OR ("aeronaval") OR ("aerotransportat")) ;
 SELECT PreAdv IF (-2 N + &&ConcordaGN) (-1 A + &&ConcordaGN) (0 Forca) (1 A + &&ConcordaGN) ;	# una destinació turística força popular
 SELECT N IF (-1C A + &&ConcordaGN) (0 Forca + &&ConcordaGN) (1 A + &&ConcordaGN) ;	# una petita força protectora
 SELECT N IF (-1 PreAdj + &&ConcordaGN) (0 Forca + &&ConcordaGN) (1 A + &&ConcordaGN) ;
