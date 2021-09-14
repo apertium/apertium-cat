@@ -1366,10 +1366,11 @@ SELECT N IF (-2C Prep) (-1 Pos) (0C N OR Vblex) ;
 SELECT Pron IF (-1C Prep) (0 ("<altres>")) (NOT 1 N + Pl) (NOT 1 A + Pl) (NOT 1 unknown) ;
 	# que entre altres forma una part
 
-REMOVE Itg IF (0 Com) (1 (":")) ;
-	# paraules com:
-REMOVE Itg IF (NOT -2 V LINK -1 Adv) (0 Com) ;
-	# no sé com
+REMOVE Itg IF (0 Com) (1 (":")) ;	# paraules com:
+SELECT Itg IF (-1 >>>) (0 Com) (1* ("?")) ;
+SELECT Itg IF (-1 ("saber") OR ("pensar") OR ("rumiar") OR ("discutir")) (0 Com) ;
+SELECT Itg IF (-2 ("saber") OR ("pensar") OR ("rumiar") OR ("discutir")) (-1 Adv) (0 Com) ;
+REMOVE Itg IF (-2 ("tan")) (-1 A OR Adv) (0 Com) ;
 REMOVE Itg IF (NOT -1 >>>) (NOT -1 Verb) (NOT -1 Adv) (NOT -1 Prep) (0 Com) ;
 REMOVE Itg IF (-1 >>>) (0 Com) (NOT 1 Verb) (NOT 1 Pron) ;
 	# not: com fas? com tu fas? com li fas?
