@@ -1659,6 +1659,9 @@ SELECT A (-1 ("millor") OR ("pitjor")) (0 A + &&ConcordaSP) (1C N + &&ConcordaSP
 SELECT A (-1 ("millor") OR ("pitjor")) (0 ("nou") + &&ConcordaSP) (1 N + &&ConcordaSP) ;	# millor nou defensa, millor nova jugadora
 SELECT N (-1 ("millor") OR ("pitjor")) (-1C A + &&ConcordaSP) (0 N + &&ConcordaSP) ;		# millor defensa, millor jugadora
 
+REMOVE DetNT IF (1C N + MascSg) ;
+REMOVE DetNT IF (1C NP + MascSg) ;	# el Bòsfor
+
 # NP / ADJ
 
 SELECT NP IF (-1 Det + Fem) (0 ("Argentina") OR ("India") OR ("Filipines") OR ("Balears") OR ("Canàries") OR ("Polinèsia")) (1 <<< OR Prep OR Det OR CM) ;
