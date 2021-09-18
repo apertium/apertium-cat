@@ -802,6 +802,9 @@ SELECT:riu N IF (0 ("riu")) (1 MajIni OR unknownMajIni);
 #model
 SELECT:model MF IF (0 ("model")) (1 MajIni OR unknownMajIni);
 
+#pes
+SELECT:pes ("pes") IF (NOT -1 Det + FemPl) (0 ("<pes>"i)) ;
+
 REMOVE:valg_adj A IF (0 ("valg")) (NOT -1 ("genoll") OR ("genu") OR ("cúbit") OR ("hàl·lux") OR ("peu") OR ("polze") OR ("talipes")) ;
 REMOVE:cultivar_v N (0 ("<cultivar>"i)) (NOT -1 Det OR Pos);
 SELECT Vblex IF (0 ("mancar")) (1 CnjSub OR CnjAdv OR Rel);
