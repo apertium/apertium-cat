@@ -1177,7 +1177,9 @@ REMOVE N + Masc_strict (-1 Det + Fem_strict) (NOT -1 Det + Masc) (0 N + Fem_stri
 REMOVE N + Fem_strict (-1 Det + Masc_strict) (NOT -1 Det + Fem) (0 N + Masc_strict) ;	# el terra	
 
 SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1 N) ;
+SELECT Tenir IF (0 Tens OR Tenir) (NOT -1 Det) (1C A OR PP) ;	# tens pocs entrenaments
 SELECT Tenir IF (0 Tens OR Tenir) (-1 Fem OR MascPl) ;
+SELECT Tenir IF (0 Tens OR Tenir) (-1 EOS) ;
 
 SELECT Verb IF (0 ("girar")) (0 ("gira")) (1 ("al voltant de") OR ("a l'entorn de") OR ("entorn")) ;	# "entorn" es troba en els texts
 
