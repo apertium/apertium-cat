@@ -23,7 +23,7 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR1).autopgen-diacritics-nous.bin		\
 	$(LANG1)$(VAR1).rlx.bin	\
 	$(LANG1).prefs.rlx.bin \
-	$(LANG1).pre107_prefs.rlx.bin
+	$(LANG1).pre2017_prefs.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
