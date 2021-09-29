@@ -1,0 +1,5 @@
+# Ignoring variables, pick pre2017 diacritic accents.
+
+DELIMITERS = ".";
+
+SELECT (v:pre2017) ;

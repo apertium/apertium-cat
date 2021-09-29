@@ -21,7 +21,9 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR3).autopgen.bin		\
 	$(LANG1)$(VAR1).autopgen-diacritics-vells.bin		\
 	$(LANG1)$(VAR1).autopgen-diacritics-nous.bin		\
-	$(LANG1)$(VAR1).rlx.bin
+	$(LANG1)$(VAR1).rlx.bin	\
+	$(LANG1).prefs.rlx.bin \
+	$(LANG1).pre107_prefs.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 @ap_include@
@@ -91,6 +93,13 @@ $(LANG1)$(VAR1).autopgen-diacritics-nous.bin: $(BASENAME).post-diacritics-nous.d
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 	cg-comp $< $@
 
+$(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
+	cg-comp $< $@
+
+$(LANG1).pre2017_prefs.rlx.bin: $(BASENAME).$(LANG1).pre2017_prefs.rlx
+	cg-comp $< $@
+
+
 ###############################################################################
 ## Distribution
 ###############################################################################
@@ -101,6 +110,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).post-diacritics-vells.dix	\
 		$(BASENAME).post-diacritics-nous.dix	\
 		$(LANG1).prob			\
+		$(LANG1).preferences.xml \
 		modes.xml
 
 ###############################################################################
@@ -113,7 +123,9 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 apertium_catdir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_cat_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
-apertium_cat_DATA=$(TARGETS_COMMON) $(LANG1).prob
+apertium_cat_DATA=$(TARGETS_COMMON) \
+		  $(LANG1).prob \
+		  $(LANG1).preferences.xml
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
