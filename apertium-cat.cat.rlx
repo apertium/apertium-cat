@@ -572,6 +572,7 @@ SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
 SELECT N IF (-1 ("en")) (0 ("Català")) ;
 SELECT N IF (-1 ("en")) (0 ("Anglés") OR ("Anglès")) ;
 SELECT N IF (-1 ("en")) (0 ("Corts")) ;
+SELECT N IF (0 ("Just")) (1 ("entre")) (2 ("el")) (3 ("nació")) ;
 SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
