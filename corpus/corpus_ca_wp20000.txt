@@ -404,7 +404,7 @@
 00404. Les modernes tècniques de seqüenciació de base nitrogenada bases de l'ADN, juntament amb la metodologia de la cladística han permès reinterpretar les relacions filogenètiques dels diferents fílums animals, el que ha produït una revolució en la seva classificació; encara no hi ha un acord unànime sobre el tema, però són cada vegada més els zoòlegs que admeten la nova classificació, que és la representada el taxobox d'aquest article; així, la majoria de bilateris sembla que pertanyen a un d'aquests quatre llinatges:
 00405. Altres organismes model del regne animal inclouen el ratolí domèstic (''Mus musculus'') i el peix zebra (''Danio rerio'').
 00406. En el sistema original de Carl von Linné Linné, els animals eren un d'entre tres regne (biologia) regnes, dividits en les classes ''Vermes'', ''Insecta'', ''Peix Pisces'', Amphibia, ''Aves'' i Mammalia
-00407. L{{'}}'''aigua''' és un compost químic transparent, inodor, insípid, químicament format per hidrogen i oxigen, de fórmula empírica H sub 2 /sub O, que és el constituent majoritari de la pluja, mars, llacs, rius… L'aigua té una elevada capacitat per a dissoldre substàncies i rarament es troba com a substància pura sinó essent part d'alguna mescla
+00407. L{{'}}'''aigua''' és un compost químic transparent, inodor, insípid, químicament format per hidrogen i oxigen, de fórmula empírica H2O, que és el constituent majoritari de la pluja, mars, llacs, rius… L'aigua té una elevada capacitat per a dissoldre substàncies i rarament es troba com a substància pura sinó essent part d'alguna mescla
 00408. L'aigua és una substància amb una estructura química peculiar
 00409. Com totes les substàncies, l'aigua pot canviar d'estat
 00410. A temperatura ambient l'aigua pura és líquida, inodora, insípida i incolora, tot i que adquireix una lleu tonalitat blava en grans volums, a causa de la refracció de la llum en travessar-la, ja que absorbeix amb major facilitat les longituds d'ona llarga (vermell, taronja i groc) que les longituds d'ona curta (blau, violeta), desviant lleugerament aquestes últimes, provocant que en grans quantitats d'aigua aquestes ones curtes es facin apreciables
@@ -593,10 +593,10 @@
 00593. Fixeu-vos en la figura de la dreta
 00594. Observant el diagrama vectorial de resta dels vectors tangents es veu que això es pot expressar com:
 00595. On  math \overset{\to }{\mathop{u_{n'}}}\, /math  és el vector unitari en la direcció de la diferència, per tant es té:
-00596. Però fixeu-vos que quan els punts ''P'' sub -1 /sub  i ''P'' sub 1 /sub  tendeixen a ''P'' sub 0 /sub  Llista d'identitats trigonomètriques#Càlcul infinitessimal el sinus tendeix a ser igual a l'arc (vegeu també Demostració de les identitats trigonomètriques#Identitat del quocient entre el sinus i l'angle ''demostració de la identitat del quocient entre el sinus i l'angle'') i els vectors tangents a la trajectòria tendeixen a ser els vectors tangents a la circumferència per tant es té:
+00596. Però fixeu-vos que quan els punts ''P'' -1 i ''P'' 1 tendeixen a ''P'' 0 Llista d'identitats trigonomètriques#Càlcul infinitessimal el sinus tendeix a ser igual a l'arc (vegeu també Demostració de les identitats trigonomètriques#Identitat del quocient entre el sinus i l'angle ''demostració de la identitat del quocient entre el sinus i l'angle'') i els vectors tangents a la trajectòria tendeixen a ser els vectors tangents a la circumferència per tant es té:
 00597. Fixeu-vos que la fórmula es pot interpretar com la definició de ''r''
 00598. Fixeu-vos també que el vector normal a la trajectòria necessita aquesta circumferència per quedar completament definit, a més de ser normal al vector tangent ha de pertànyer al pla d'aquesta circumferència.
-00599. La composició d'acceleracions consisteix a calcular l'acceleració que té un punt mesurada en un determinat sistema de referència, per exemple un sistema galil·leà, respecte del que es diu que és l'acceleració absoluta ''a'' sub ab /sub , a partir de l'acceleració respecte d'un altre sistema de referència que es mou respecte del primer anomenada acceleració relativa ''a'' sub rel /sub  sabent el moviment del sistema de referència relatiu respecte de l'absolut.
+00599. La composició d'acceleracions consisteix a calcular l'acceleració que té un punt mesurada en un determinat sistema de referència, per exemple un sistema galil·leà, respecte del que es diu que és l'acceleració absoluta ''a'' ab , a partir de l'acceleració respecte d'un altre sistema de referència que es mou respecte del primer anomenada acceleració relativa ''a'' rel sabent el moviment del sistema de referència relatiu respecte de l'absolut.
 00600. En general es té:
 00601. L'acceleració d'arrossegament és l'acceleració que tindria el punt respecte de la referència absoluta si estigués fix respecte de la referència relativa
 00602. Les tres components de l'acceleració d'arrossegament tenen un significat clar: la primera és l'acceleració deguda al fet que l'origen del sistema de coordenades està accelerant, la segona és deguda al fet que el sistema té una acceleració angular i és perpendicular al vector de posició del punt, i la tercera és l'acceleració centrípeta deguda a la velocitat de rotació de la referència relativa.
@@ -609,10 +609,10 @@
 00609. Els tres primers components són les derivades de les components de la velocitat respecte de la referència relativa multiplicades pels vectors directors de la referència relativa, per tant, és el vector acceleració relativa  math \overset{\to }{\mathop{a_{rel}}}\, /math 
 00610. En derivar cada un dels vectors directors de la referència relativa respecte del temps en general s'obtindrà un vector per cada un que tindrà tres components:
 00611. En notació matricial això permet expressar les tres últimes components com:
-00612. Però, pel fet que els vectors directors tinguin mòdul constant (=1) ha de ser ω sub xx /sub  = ω sub yy /sub  = ω sub zz /sub  = 0.
-00613. A més pel fet de ser perpendiculars entre ells i continuar sent-ho en tot moment ha de ser ω sub yx /sub  = -ω sub xy /sub , ω sub zx /sub  = -ω sub xz /sub  i ω sub zy /sub  = -ω sub yz /sub , per tant l'expressió es pot escriure:
+00612. Però, pel fet que els vectors directors tinguin mòdul constant (=1) ha de ser ω xx = ω yy = ω zz = 0.
+00613. A més pel fet de ser perpendiculars entre ells i continuar sent-ho en tot moment ha de ser ω yx = -ω xy , ω zx = -ω xz i ω zy = -ω yz , per tant l'expressió es pot escriure:
 00614. Substituint a (2) queda:
-00615. On  math \overset{\to }{\mathop{\omega _{arr}}}\,=\omega _{yz}\overset{\to }{\mathop{e_{x}}}\,-\omega _{xz}\overset{\to }{\mathop{e_{y}}}\,+\omega _{xy}\overset{\to }{\mathop{e_{z}}}\, /math  tenint en compte que ω sub ij /sub  vol dir: el component en la direcció ''j'' de la derivada respecte del temps derivada temporal del vector director ''i''.
+00615. On  math \overset{\to }{\mathop{\omega _{arr}}}\,=\omega _{yz}\overset{\to }{\mathop{e_{x}}}\,-\omega _{xz}\overset{\to }{\mathop{e_{y}}}\,+\omega _{xy}\overset{\to }{\mathop{e_{z}}}\, /math  tenint en compte que ω ij vol dir: el component en la direcció ''j'' de la derivada respecte del temps derivada temporal del vector director ''i''.
 00616. En l'últim terme de l'equació (1) cal calcular la derivada temporal del vector posició respecte de la referència relativa, com que aquest vector es pot expressar com el producte de les seves components pels vectors directors de la referència relativa, seguin el mateix raonament s'arriba a:
 00617. Substituint (3) i (4) en (1), operant i reordenant termes s'obté:
 00618. Un sòlid rígid és un conjunt de punts, units o no, tals que entre ells hi ha sempre a la mateixa distància
@@ -1445,7 +1445,7 @@
 01445. La necessitat d'estandarditzar els nivells d'afinació (com a mínim dins d'una mateixa ciutat o un mateix país) sorgí quan es començà a popularitzar l'execució de música combinada d'orgue amb ensambles instrumentals
 01446. Durant la primera meitat del segle XIX hi hagué una tendència a pujar l'afinació de l'orquestra
 01447. El diapasó normal del ''la'' a 435 Hz donava com a resultat un ''do'' central afinat a 258,65 Hz
-01448. En les orquestres de cambra i simfòniques de música europees actuals es pren com a referència un ''la'' sub 3 /sub  de 442 Hz produït per un dispositiu electrònic
+01448. En les orquestres de cambra i simfòniques de música europees actuals es pren com a referència un ''la'' 3 de 442 Hz produït per un dispositiu electrònic
 01449. Els ocells moderns es morfologia (biologia) caracteritzen per pondre ous i per tenir ploma plomes, un bec mancat de dents, un ritme metabòlic elevat, un cor amb quatre cambres i un morfologia dels ocells esquelet
 01450. Moltes espècies emprenen llargues au migratòria migracions anuals, i moltes fan moviments irregulars més curts
 01451. Moltes espècies tenen una importància econòmica, principalment com a fonts d'aliment adquirides per caça o cria
@@ -1884,7 +1884,7 @@
 01884. Altres exemples de l'antiguitat es troben en l'algorisme d'Euclides algorisme d'Euclides per a calcular el màxim comú divisor de dos enters positius i pertanyen a l'àmbit de les matemàtiques
 01885. Donat un conjunt finit ''C'' de nombres, es té el problema de trobar-ne el nombre més gran
 01886. És a dir, donat un conjunt  math C=\{c_1,c_2,\dots,c_n\} /math  es demana trobar ''m'' tal que  math m \in C /math  i  math x\leq m /math  per a tot element ''x'' que pertany al conjunt ''C''.
-01887. Per trobar-ne l'element màxim, s'assumeix que el primer element (''c'' sub 1 /sub ) és el màxim, després, es recorre el conjunt i es compara cada valor amb el valor del màxim nombre trobat fins aquell moment
+01887. Per trobar-ne l'element màxim, s'assumeix que el primer element (''c'' 1) és el màxim, després, es recorre el conjunt i es compara cada valor amb el valor del màxim nombre trobat fins aquell moment
 01888. L'algorisme pot ser escrit d'una manera més formal en el pseudocodi següent:
 01889. Sobre la notació:
 01890. La història del plantejament matemàtic de la teoria dels algorismes va haver de nodrir-se de diferents idees en el camp de les matemàtiques per tal d'arribar a disposar dels primers computadors.
@@ -2354,7 +2354,7 @@
 02357. Segons l'altitud, la temperatura i la composició de l'aire, l'atmosfera terrestre es divideix en quatre capes: troposfera, estratosfera, mesosfera i termosfera
 02358. Les porcions més importants per a anàlisi de la contaminació atmosfèrica són les dues capes properes a la Terra: la troposfera i l'estratosfera
 02359. En aquesta capa, de 7 km d'altura en els pols i 16 km en els tròpics, hi ha els núvols i gairebé tot el vapor d'aigua
-02360. En relació amb això val la pena recordar que, en termes generals, un contaminant és una substància que està «fora de lloc», i que un bon exemple pot ser el cas de l'ozó (O sub 3 /sub ).
+02360. En relació amb això val la pena recordar que, en termes generals, un contaminant és una substància que està «fora de lloc», i que un bon exemple pot ser el cas de l'ozó (O3).
 02361. Quan aquest gas es troba en l'aire que es respira, és a dir sota els 25 quilòmetres d'altura habituals, és contaminant i constitueix un poderós antisèptic que exerceix un efecte nociu per a la salut, per la qual cosa en aquestes circumstàncies se li coneix com '' ozó troposfèric '' o '' ozó dolent ''.
 02362. No obstant això, el mateix gas, quan està en l'estratosfera, forma la capa que protegeix dels raigs ultraviolats del Sol a tots els éssers vivents (vida) de la Terra, per la qual cosa se l'identifica com '' ozó bo ''.
 02363. En petites quantitats poden existir substàncies d'un altre tipus: Pols (partícules) Pols, pol·len, espores i cendra volcànica
@@ -2468,7 +2468,7 @@
 02471. Aquesta teoria és completament consistent amb allò que ha estat observat al laboratori; de fet, el positró va ser descobert experimentalment per Carl Anderson el 1932.
 02472. El 1996, al CERN es va aconseguir de formar un antiàtom d'antidrogen de vida molt curta compost per un antiprotó i un positró.
 02473. En física, es fa servir una barra horitzontal o màcron per a diferenciar les partícules de les antipartícules: per exemple protó '''p''' i antiprotó ''' span style= text-decoration: overline  p /span '''
-02474. També s'utilitza la diferència de càrrega elèctrica entre ambdues partícules: per exemple, electró '''e sup − /sup ''' i positró '''e sup + /sup '''
+02474. També s'utilitza la diferència de càrrega elèctrica entre ambdues partícules: per exemple, electró '''e sup − /sup ''' i positró '''e+'''
 02475. Les hipòtesis científiques acceptades afirmen que en l'origen de l'univers hi havia matèria i antimatèria en iguals proporcions
 02476. Un recent experiment en l'accelerador KEK del Japó suggereix que això potser és cert, i que per tant no és necessari un excés de matèria en el ''big bang'': simplement les lleis físiques que regeixen l'univers afavoreixen la supervivència de la matèria davant l'antimatèria
 02477. L'equació de Dirac, formulada per Paul Dirac el 1928, va predir l'existència d'antipartícules a més de les partícules de matèria ordinàries
@@ -3857,14 +3857,14 @@
 03860. Els monosacàrids són els monòmers dels glúcids
 03861. De la unió successiva de monosacàrids (amilosa) o disacàrids (àcid hialurònic) es formen unes macromolècules que reben el nom de polisacàrids.
 03862. Tots els sucres són glúcids, però no tots els glúcids són sucres
-03863. Com ja s'ha comentat, el tipus més simple de glúcids són els monosacàrids, formats essencialment per carboni, hidrogen i oxigen, majoritàriament en una ràtio d'1:2:1 (la fórmula general és C sub ''n'' /sub H sub 2''n'' /sub O sub ''n'' /sub , on ''n'' com a mínim és 3)
+03863. Com ja s'ha comentat, el tipus més simple de glúcids són els monosacàrids, formats essencialment per carboni, hidrogen i oxigen, majoritàriament en una ràtio d'1:2:1 (la fórmula general és C ''n'' H 2''n'' O ''n'' , on ''n'' com a mínim és 3)
 03864. Els monosacàrids es classifiquen en aldosa aldoses (amb un grup aldehid al final de la cadena, com per exemple la glucosa) i en cetosa cetoses (amb un grup cetona ceto a la cadena, com per exemple la fructosa)
 03865. La molècula resultant de la unió de dos monosacàrids rep el nom de disacàrid
 03866. Els polímers de sucres es caracteritzen per tenir extrems reductors o no reductors
 03867. Quan alguns (entre tres i sis) monosacàrids s'uneixen, el producte és un oligosacàrid (''oligo'' significa  pocs )
 03868. Hi ha dues classes principals de polisacàrids; els '''homopolisacàrids''', formats per cadenes successives d'un mateix monòmer, com ara la cel·lulosa (fabricada per les plantes i component estructural important de la seva paret cel·lular); i els '''heteropolisacàrids''', formats per diferents tipus de monòmers, com ara l'àcid hialurònic.
 03869. La glucosa és la font d'energia principal de la majoria de sistemes metabòlics
-03870. La glucosa és metabolitzada principalment per una ruta de deu passos molt important i antiga anomenada glicòlisi, el resultat net de la qual és trencar una molècula de glucosa en dues molècules de piruvat; també produeix dues molècules d'adenosina trifosfat ATP, la moneda energètica de les cèl·lules, juntament amb dos equivalents reductors en convertir nicotinamida adenina dinucleòtid NAD sup + /sup  en NADH
+03870. La glucosa és metabolitzada principalment per una ruta de deu passos molt important i antiga anomenada glicòlisi, el resultat net de la qual és trencar una molècula de glucosa en dues molècules de piruvat; també produeix dues molècules d'adenosina trifosfat ATP, la moneda energètica de les cèl·lules, juntament amb dos equivalents reductors en convertir nicotinamida adenina dinucleòtid NAD+ en NADH
 03871. En les cèl·lules glicòlisi aeròbica aeròbiques amb prou oxigen, com la majoria de cèl·lules humanes, el piruvat és metabolitzat encara més
 03872. En els vertebrats, els múscul esquelètic músculs esquelètics que es contrauen vigorosament (com per exemple durant l'aixecament de pesos o els esprints) no reben prou oxigen per a respondre a les seves necessitats energètiques, de manera que passen al fermentació (biologia) metabolisme anaeròbic, convertint glucosa en lactat
 03873. Els '''lípids''' són biomolècules insolubles en aigua i solubles en dissolvents orgànics, constituïdes essencialment per carboni, hidrogen i oxigen (en una proporció molt més baixa)
@@ -4062,11 +4062,11 @@
 04065. Tal com s'ha mencionat anteriorment, la biosfera integra també les interaccions dels éssers vius amb elements de la litosfera, la hidrosfera i l'atmosfera
 04066. El cicle del carboni és el sistema de les transformacions químiques de compostos que contenen carboni pel qual es produeixen bescanvis entre la biosfera, hidrosfera, atmosfera i la litosfera
 04067. Es pensa que aquest cicle inclou les següents reserves de carboni, que estan connectades per camins de bescanvi:
-04068. El carboni és un component essencial per als vegetals i els animals; la reserva fonamental de carboni, en forma de molècules de Diòxid de carboni CO sub 2 /sub  es troba en l'atmosfera i la hidrosfera
-04069. A mesura que el CO sub 2 /sub  és consumit per les plantes, també és reemplaçat per mitjà de la respiració dels éssers vius, per la descomposició de la matèria orgànica i com a producte final de combustió de petroli, gasolina, etc.
+04068. El carboni és un component essencial per als vegetals i els animals; la reserva fonamental de carboni, en forma de molècules de Diòxid de carboni CO2 es troba en l'atmosfera i la hidrosfera
+04069. A mesura que el CO2 és consumit per les plantes, també és reemplaçat per mitjà de la respiració dels éssers vius, per la descomposició de la matèria orgànica i com a producte final de combustió de petroli, gasolina, etc.
 04070. El cicle del nitrogen compren cadascun dels processos biològics i Abiòtic abiòtics en què es basa el subministrament d'aquest element als éssers vius
 04071. La major part de l'atmosfera terrestre, aproximadament un 78%, és nitrogen, així doncs, l'atmosfera és la principal reserva d'aquest element
-04072. El nitrogen està present en el medi ambient en diverses formes incloent la del nitrogen orgànic, amoni (NH sub 4 /sub  sup + /sup ), nitrit (NO sub 2 /sub  sup - /sup ), nitrat (NO sub 3 /sub  sup - /sup ), i nitrogen gas nitrogen (N sub 2 /sub )
+04072. El nitrogen està present en el medi ambient en diverses formes incloent la del nitrogen orgànic, amoni (NH4+), nitrit (NO2-), nitrat (NO3-), i nitrogen gas nitrogen (N2)
 04073. Activitats humanes com la crema de combustibles fòssils, l'ús de fertilitzants de nitrogen artificial i l'alliberament de nitrogen en aigües residuals estan provocant l'alteració del cicle global del nitrogen.
 04074. El cicle hidrològic o cicle de l'aigua, descriu el moviment continu d'aigua per la superfície terrestre
 04075. La major part de l'aigua es troba en forma líquida, sobretot en els oceans i mars, i en menor mesura en forma d'aigües subterrànies o superficials (rius)
@@ -4380,8 +4380,8 @@
 04383. La beguda s'obté per infusió del cafè mòlt en aigua calenta
 04384. La '''cafeïna''', '''teïna''' o '''guaranina''' és un compost químic que es troba en la naturalesa en les llavors de café cafè, de cacau (xocolata), de Cola (gènere) cola, en les fulles del planta de te te i en la guaranà
 04385. La cafeïna és un alcaloide de la família metilxantina, que també inclou els compostos teofil·lina i teobromina, amb estructura química semblant
-04386. La seua fórmula química és carboni C sub 8 /sub hidrogen H sub 10 /sub nitrogen N sub 4 /sub oxigen O sub 2 /sub , el seu Nomenclatura sistemàtica nom sistemàtic és 1,3,7- nowiki tri /nowiki metilxantina o 3,7-dihidro-1,3,7-trigrup metil metil-1H-purina-2,6-diona i la seua estructura pot veure's als diagrames inclosos
-04387. La cafeïna és una substància molt poc soluble en hidrogen H sub 2 /sub oxigen O a temperatura ambient, això dificulta la seva lliure mobilitat pels diferents Teixit vegetal teixits de la planta, si no fos així, la cafeïna resultaria tòxica per a les cèl·lules de les plantes
+04386. La seua fórmula química és carboni C8 hidrogen H10 nitrogen N4 oxigen O2, el seu Nomenclatura sistemàtica nom sistemàtic és 1,3,7- nowiki tri /nowiki metilxantina o 3,7-dihidro-1,3,7-trigrup metil metil-1H-purina-2,6-diona i la seua estructura pot veure's als diagrames inclosos
+04387. La cafeïna és una substància molt poc soluble en hidrogen H2 oxigen O a temperatura ambient, això dificulta la seva lliure mobilitat pels diferents Teixit vegetal teixits de la planta, si no fos així, la cafeïna resultaria tòxica per a les cèl·lules de les plantes
 04388. Una tassa de cafè (beguda) café conté de 100 a 200 miligram mg de cafeïna
 04389. La cafeïna inhibeix la fosfodiesterasis, que és responsable de la desactivació de la AMPc
 04390. El consum en quantitats molt grans pot provocar una intoxicació
@@ -4411,8 +4411,8 @@
 04414. Una altra substància és la fibra de carboni, semblant al 'carbó vitri' i obtinguda estirant fibres orgàniques i carbonitzant-les
 04415. També es troba formant '''enllaç covalent enllaços covalents''' en la química orgànica, de la qual n'és el pilar bàsic, i forma part de tots els ser viu éssers vius.
 04416. El carboni és l'àtom clau en l'estructura de les biomolècules o molècules que formen la ésser viu matèria viva, gràcies a la seva capacitat de formar llargues cadenes i anells, i de formar enllaços covalents amb nombrosos element químic elements, la qual cosa origina una extraordinària varietat de molècules amb propietats fisicoquimicobiològiques diferents.
-04417. Quan s'uneix amb oxigen, forma el diòxid de carboni (CO sub 2 /sub ), és el compost que expel·lim els animals en respirar, i és absolutament vital per al creixement de les plantes
-04418. Trobem grans quantitats de carboni en la litosfera, sobretot en el carbonat de calci (CaCO sub 3 /sub ), integrant de les roca calcària roques calcàries
+04417. Quan s'uneix amb oxigen, forma el diòxid de carboni (CO2), és el compost que expel·lim els animals en respirar, i és absolutament vital per al creixement de les plantes
+04418. Trobem grans quantitats de carboni en la litosfera, sobretot en el carbonat de calci (CaCO3), integrant de les roca calcària roques calcàries
 04419. A la natura, sovint es troba sense combinar en els diferents tipus de carbó (amb graus variables d'impuresa impureses)
 04420. Quan s'uneix amb hidrogen, forma diversos compostos anomenats hidrocarburs, essencials per a la indústria en forma de combustibles fòssils
 04421. El gas natural, el petroli, la gasolina i el quitrà són barreges d'hidrocarburs de diferents longituds, i amb diferents propietats, que poden a més incloure altres substàncies.
@@ -4448,7 +4448,7 @@
 04451. L''''energia de dissociació''' d'un enllaç és l'energia necessària per separar un enllaç mitjançant homòlisi o heteròlisi
 04452. Així, la força de l'enllaç ve determinada per l''''energia de dissociació''', D; com major sigui l'energia de dissociació de l'enllaç, major serà la força d'unió entre els dos àtoms que formen l'enllaç.
 04453. La formació d'enllaços covalents pot donar lloc a dos tipus de substàncies amb estructures i propietats completament diferents
-04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550°C; el diòxid de silici (SiO sub 2 /sub ), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700°C; i el Grafit (mineral) grafit.
+04454. Com a exemples més destacats trobem el diamant, una forma atròpica de carboni amb els àtoms disposats en una xarxa de Tetràedre tetràedres units entre ells mitjançant enllaços covalents amb un punt de fusió de 3550°C; el diòxid de silici (SiO2), on cada àtom de silici està rodejat per quatre àtoms d'oxigen units mitjançant enllaços covalents i té un punt de fusió de 1700°C; i el Grafit (mineral) grafit.
 04455. Les substàncies que presenten ressonància (que també pot ésser anomenada mesomeria) són anomenades híbrids de ressonància o estat mesomèric i, per tal d'expressar-les correctament, s'hauran de representar mitjançant dues o més estructures separades per un signe de doble fletxa (↔)
 04456. Un exemple de molècula que presenta aquesta propietat és l'ozó, O3
 04457. El que succeeix en la realitat, però, és que l'estat real de l'estructura de les molècules que formen la substància en ressonància és un intermedi entre l'estat que representen totes les formes mesòmeres
@@ -5185,7 +5185,7 @@
 05188. Un coet adquireix velocitat gràcies al fet que el fet d'expulsar una part de la seva massa genera, d'acord amb la Lleis de Newton tercera llei de Newton, una força en direcció contrària a la direcció d'ejecció
 05189. La força de reacció és més gran com més importants siguin la massa ejectada i la velocitat d'ejecció d'aquesta massa
 05190. L'energia necessària per mantenir aquest flux de gasos que propulsa el coet prové d'una reacció química exotèrmica que sol ser la combustió
-05191. Els combustibles utilitzats en els coets són de naturalesa diversa, anant des de derivats del petroli com el querosè fins a productes exòtics i difícils de manejar com l'hidrogen líquid (LH sub 2 /sub )
+05191. Els combustibles utilitzats en els coets són de naturalesa diversa, anant des de derivats del petroli com el querosè fins a productes exòtics i difícils de manejar com l'hidrogen líquid (LH2)
 05192. El disseny d'un coet és significativament diferent segons la natura del combustible que utilitza
 05193. Hi ha altres categories de coets amb dissenys innovadors que no s'han pogut posar en pràctica per problemes tècnics i/o econòmics
 05194. La importància dels coets com a vehicles rau en dues característiques:
@@ -6061,14 +6061,14 @@
 06064. Hom distingeix els hidrocarburs acíclics, de cadena oberta, dels cíclics, de cadena tancada.
 06065. Els '''alcohols''' són substàncies orgàniques caracteritzades per la presència d'un grup funcional constituït per un hidroxil, -OH, enllaçat directament a un carboni que no és aromàtic.
 06066. Els alcohols, R-OH, han pres llur nom del més antigament conegut de tots ells, l'esperit de vi, alcohol etílic o etanol
-06067. Segons les regles de la IUPAC, els alcohols es designen afegint al nom de l'hidrocarbur el sufix ''-ol'', tot preservant la n etimològica (ex: metà, metà-n-ol), i indicant la posició de l'hidroxil amb un nombre en prefix, per exemple 2-butanol, CH sub 3 /sub CH sub 2 /sub CH(OH)CH sub 3 /sub 
+06067. Segons les regles de la IUPAC, els alcohols es designen afegint al nom de l'hidrocarbur el sufix ''-ol'', tot preservant la n etimològica (ex: metà, metà-n-ol), i indicant la posició de l'hidroxil amb un nombre en prefix, per exemple 2-butanol, CH3CH2CH(OH)CH3
 06068. Els èters (R—O—R') resulten de la substitució dels dos àtoms hidrogen de l'aigua i són geomètricament semblants a l'aigua i als alcohols
 06069. Els punt de fusió punts de fusió i d'punt d'ebullició ebullició dels èters són comparables als dels hidrocarburs de massa molecular semblant
-06070. Segons les regles de nomenclatura de la IUPAC, els aldehids alifàtics RCHO es designen afegint al nom de l'hidrocarbur RCH sub 3 /sub  el sufix ''-al'', tot preservant la n etimològica (per exemple: metà → metà-n-al), i els aldehids amb el grup funcional directament fixat a un sistema cíclic, afegint el sufix ''-carbaldehid'' al nom d'aquest
+06070. Segons les regles de nomenclatura de la IUPAC, els aldehids alifàtics RCHO es designen afegint al nom de l'hidrocarbur RCH3 el sufix ''-al'', tot preservant la n etimològica (per exemple: metà → metà-n-al), i els aldehids amb el grup funcional directament fixat a un sistema cíclic, afegint el sufix ''-carbaldehid'' al nom d'aquest
 06071. Els aldehids bullen lleugerament a una temperatura més alta que els hidrocarburs, però molt per sota dels alcohols corresponents
 06072. Químicament els aldehids són substàncies neutres, reductores, de reactivitat intensa i variada
 06073. Les cetones són substàncies orgàniques caracteritzades per la presència del grup funcional C=O (carbonil) unit a dos radicals hidrocarbonats o, en les cetones cícliques, formant part d'una cadena alifàtica tancada.
-06074. Segons les regles de la IUPAC, les cetones alifàtiques RR'CO són designades, en la nomenclatura substitutiva, afegint al nom de l'hidrocarbur RR'CH sub 2 /sub  (en català, sovint seguit d'una n etimològica) el sufix ''-ona''; davant el nom va el nombre que indica la posició del carboni carbonílic en la cadena
+06074. Segons les regles de la IUPAC, les cetones alifàtiques RR'CO són designades, en la nomenclatura substitutiva, afegint al nom de l'hidrocarbur RR'CH2 (en català, sovint seguit d'una n etimològica) el sufix ''-ona''; davant el nom va el nombre que indica la posició del carboni carbonílic en la cadena
 06075. Les cetones més simples, fins a uns dotze àtoms de carboni, són líquides
 06076. Els '''àcids carboxílics''' són substàncies orgàniques de fórmula general R—COOH, que tenen en llur molècula un o diversos grups carboxil i que manifesten, per tant, les propietats àcides que aquest confereix
 06077. Segons quina és la natura del grup R, els àcids carboxílics es classifiquen en alifàtics, alicíclics (que poden ésser, uns i altres, saturats o insaturats), aromàtics i heterocíclics
@@ -6076,7 +6076,7 @@
 06079. Les propietats físiques dels àcids carboxílics depenen de llur estructura i de llur massa molecular
 06080. Els àcids carboxílics són en general àcids febles, amb valors pK sub a /sub  que, en general, varien entre 3 i 5, i la primera acidesa dels diàcids és molt més forta que la dels monoàcids, sobretot si els dos carboxils són pròxims
 06081. Els àcids carboxílics donen sal (química) sals alcalines solubles en aigua i són estables enfront dels oxidants i reductors
-06082. Els '''èsters''' són substàncies orgàniques caracteritzades per la presència del grup funcional -COOR, és a dir, per la unió del grup acil amb un grup alquil.En el cas d'èsters d'àcids inorgànics (nítric, sulfúric, fosfòric), el grup alquil va lligat al residu d'àcid mineral (-NO sub 2 /sub , -SO sub 3 /sub H, -PO sub 3 /sub H sub 2 /sub ).
+06082. Els '''èsters''' són substàncies orgàniques caracteritzades per la presència del grup funcional -COOR, és a dir, per la unió del grup acil amb un grup alquil.En el cas d'èsters d'àcids inorgànics (nítric, sulfúric, fosfòric), el grup alquil va lligat al residu d'àcid mineral (-NO2, -SO3H, -PO3H2).
 06083. D'acord amb les normes de la IUPAC, els èsters són designats expressant primerament la part que prové de l'àcid carboxílic per un substantiu format afegint el sufix ''-oat'' (precedit d'una n etimològica) el nom de l'hidrocarbur del mateix nombre d'àtoms de carboni que l'àcid, i després el nom del radical de la part catiònica, com ara heptanoat d'etil
 06084. Les '''amides''' són compost orgànic composts orgànics que deriven formalment de l'amoníac o d'una amina primària o secundària per substitució per radical acil radicals acil d'un hidrogen (amides primàries), de dos hidrògens (amides secundàries) o de tres hidrògens (amides terciàries)
 06085. El nom '''amida''' ve del francès ''amide'', format amb el radical de ''ammoniaque'' i ''-ide'', sufix que indica la presència d'un àcid, provinent del mot ''acide''.
@@ -6084,7 +6084,7 @@
 06087. Les amides són poc bàsiques, a causa de la important contribució de la forma ressonant b en la qual el nitrogen ja no suporta el parell d'electrons no compartits al qual són degudes les propietats bàsiques de les amines
 06088. Les amides es preparen principalment: per acilació de l'amoníac o d'amines primàries o secundàries per destil·lació lenta de amoni sals amòniques d'àcids carboxílics i també per Reacció d'hidratació hidratació, en el medi àcid o bàsic, de nitrils.
 06089. Les amides monomèriques són rares en la natura, amb poques excepcions, tals com la urea
-06090. Les '''amines''' són composts orgànics que deriven formalment de l'amoníac, NH sub 3 /sub , per substitució d'un o més àtoms d'hidrogen per grups hidrocarbonats R
+06090. Les '''amines''' són composts orgànics que deriven formalment de l'amoníac, NH3, per substitució d'un o més àtoms d'hidrogen per grups hidrocarbonats R
 06091. En la nomenclatura sistemàtica, les amines primàries s'anomenen afegint el sufix ''-amina'' bé al nom del grup R, bé al nom del compost RH
 06092. Les amines primàries i secundàries poden formar enllaç d'hidrogen enllaços d'hidrogen i tenen, per tant, punt d'ebullició punts d'ebullició superiors als dels hidrocarburs de massa molecular similar
 06093. Les amines són composts bàsics a causa del parell d'electrons no compartits del nitrogen, que poden captar un protó
@@ -6093,8 +6093,8 @@
 06096. Els òxids inorgànics poden ésser denominats anteposant al nom de l'element el mot ''òxid'', amb els prefixos numèrics escaients, o bé mitjançant el sistema de Stock.
 06097. Els òxids tenen un gran nombre d'aplicacions en la indústria (semiconductor, ciment, vidre, pintura, refractari).
 06098. Els hidràcids més importants són:
-06099. Oxoàcids més importants:Àcid arsènic, H sub 3 /sub AsO sub 4 /sub  - Àcid arseniós, H sub 2 /sub AsO sub 3 /sub  - Àcid bòric, H sub 3 /sub BO sub 3 /sub  - Àcid bròmic, HBrO sub 3 /sub  - Àcid carbònic, H sub 2 /sub CO sub 3 /sub  - Àcid clòric, HClO sub 3 /sub  - Àcid clorós, HClO sub 2 /sub  - Àcid cròmic, H sub 2 /sub CrO sub 4 /sub  - Àcid fosfòric, H sub 3 /sub PO sub 4 /sub  - Àcid fosforós, H sub 3 /sub PO sub 3 /sub  - Àcid hipobromós, HOBr(aq) - Àcid hipoclorós, HOCl(aq) - Àcid hipofosforós, H sub 3 /sub PO sub 2 /sub  - Àcid iòdic, HIO sub 3 /sub  - Àcid nítric, HNO sub 3 /sub  - Àcid nitrós, HNO sub 2 /sub  - Àcid perclòric, HClO sub 4 /sub  - Àcid perdisulfúric, H sub 2 /sub S sub 2 /sub O sub 8 /sub  - Àcid periòdic, HIO sub 4 /sub  - Àcid permonosulfúric, H sub 2 /sub SO sub 5 /sub  - Àcid pirofosfòric, H sub 2 /sub P sub 2 /sub O sub 7 /sub  - Àcid selènic, H sub 2 /sub SeO sub 4 /sub  - Àcid seleniós Àcid selenós, H sub 2 /sub SeO sub 3 /sub  - Àcid silícic, H sub 4 /sub SiO sub 4 /sub  - Àcid sulfàmic, NH sub 2 /sub SO sub 3 /sub H - Àcid sulfúric, H sub 2 /sub SO sub 4 /sub  - Àcid sulfurós, H sub 2 /sub SO sub 3 /sub  - Àcid tel·lúric, H sub 2 /sub TeO sub 4 /sub  - Àcid tel·lurós, H sub 2 /sub TeO sub 3 /sub 
-06100. Els hidròxids estan constituïts per anions hidroxil, OH sup - /sup , i cations metàl·lics
+06099. Oxoàcids més importants:Àcid arsènic, H3AsO4 - Àcid arseniós, H2AsO3 - Àcid bòric, H3BO3 - Àcid bròmic, HBrO3 - Àcid carbònic, H2CO3 - Àcid clòric, HClO3 - Àcid clorós, HClO2 - Àcid cròmic, H2CrO4 - Àcid fosfòric, H3PO4 - Àcid fosforós, H3PO3 - Àcid hipobromós, HOBr(aq) - Àcid hipoclorós, HOCl(aq) - Àcid hipofosforós, H3PO2 - Àcid iòdic, HIO3 - Àcid nítric, HNO3 - Àcid nitrós, HNO2 - Àcid perclòric, HClO4 - Àcid perdisulfúric, H2S2O8 - Àcid periòdic, HIO4 - Àcid permonosulfúric, H2SO5 - Àcid pirofosfòric, H2P2O7 - Àcid selènic, H2SeO4 - Àcid seleniós Àcid selenós, H2SeO3 - Àcid silícic, H4SiO4 - Àcid sulfàmic, NH2SO3H - Àcid sulfúric, H2SO4 - Àcid sulfurós, H2SO3 - Àcid tel·lúric, H2TeO4 - Àcid tel·lurós, H2TeO3
+06100. Els hidròxids estan constituïts per anions hidroxil, OH-, i cations metàl·lics
 06101. Les sals són composts iònics formats per combinacions d'anions amb cations metàl·lics
 06102. Segons llur constitució, les sals poden classificar-se en:
 06103. Un complex és un compost químic que conté un àtom o un ió central, generalment d'un metall de transició, acceptador d'electrons, envoltat d'un grup d'ions o de molècules neutres (els lligands), donadors d'electrons.
@@ -6105,11 +6105,11 @@
 06108. Els complexos tenen formes geomètriques definides segons el nombre i el tipus dels orbitals de l'ió metàl·lic que participen en l'enllaç
 06109. Les propietats químiques dels complexos no són les de constituents separats, sinó unes altres de pròpies de la nova unitat
 06110. Molts complexos intervenen com a catalitzadors en fase homogènia, o com a intermedis en molts altres tipus de reaccions (per exemple, els catalitzadors de Ziegler i Natta per a la polimerització de l'etilè són complexos d'alumini i titani)
-06111. El primer compost organometàl·lic conegut fou el dietilzinc (CH sub 3 /sub —CH sub 2 /sub —Zn—CH sub 2 /sub —CH sub 3 /sub ), aïllat el 1849 pel químic anglès Edward Frankland; d'aleshores ençà, hom n'ha sintetitzats un gran nombre, que comprèn gairebé tots els elements metàl·lics.
+06111. El primer compost organometàl·lic conegut fou el dietilzinc (CH3—CH2—Zn—CH2—CH3), aïllat el 1849 pel químic anglès Edward Frankland; d'aleshores ençà, hom n'ha sintetitzats un gran nombre, que comprèn gairebé tots els elements metàl·lics.
 06112. N'hi ha de dos tipus:
 06113. Des del punt de vista del tipus d'enllaç, poden ésser classificats en:
 06114. La natura de l'enllaç metall-carboni té una gran influència sobre l'estabilitat d'aquests composts
-06115. S'han originat de forma natural per un procés de fossilització en anòxia (manca d'oxigen) ambiental: la matèria orgànica no s'ha degradat per microorganismes (que no hi poden viure), fent-se diòxid de carboni (CO sub 2 /sub ) i aigua (H sub 2 /sub O), sinó que roman en forma de molècules orgàniques més complexes, sòlides, líquides o gas, l'energia de les quals és la que s'allibera en utilitzar-los com a combustible.
+06115. S'han originat de forma natural per un procés de fossilització en anòxia (manca d'oxigen) ambiental: la matèria orgànica no s'ha degradat per microorganismes (que no hi poden viure), fent-se diòxid de carboni (CO2) i aigua (H2O), sinó que roman en forma de molècules orgàniques més complexes, sòlides, líquides o gas, l'energia de les quals és la que s'allibera en utilitzar-los com a combustible.
 06116. Els combustibles fòssils necessiten una enorme quantitat de matèria orgànica i de temps per a generar-se
 06117. Segons la seva estructura química es classifiquen en diferents tipus de carbó segons la seva composició mineralògica en quatre grans grups:
 06118. S'usa sobretot a Caldera calderes industrials i a centrals termoelèctriques
@@ -6187,7 +6187,7 @@
 06190. El '''coure''' (del llatí ''cuprum''), de símbol '''Cu''', és un element químic de nombre atòmic 29 i un dels metalls més importants
 06191. El coure forma part d'una quantitat molt elevada d'aliatges que generalment presenten millors propietats mecàniques, tot i que tenen una conductivitat elèctrica menor
 06192. Va ser un dels primers metalls a ser utilitzat per l'ésser humà
-06193. Exposat a l'aire, el color roig salmó inicial varia a roig violeta per la formació d'òxid cuprós (Cu sub 2 /sub O), per a ennegrir-se posteriorment durant la formació d'òxid cúpric (CuO)
+06193. Exposat a l'aire, el color roig salmó inicial varia a roig violeta per la formació d'òxid cuprós (Cu2O), per a ennegrir-se posteriorment durant la formació d'òxid cúpric (CuO)
 06194. A la natura, es troben dos isòtops estables del coure, Cu-63 i Cu-65, essent el més lleuger el més abundant (69,17%)
 06195. El declivi del bronze va començar cap al 1000 aC, quan va sorgir al Pròxim Orient una nova tecnologia que va possibilitar la producció de ferro metàl·lic a partir de minerals ferris
 06196. Durant gran part del segle XIX, Gran Bretanya va ser el major productor mundial de coure, però la importància que va anar adquirint el coure va motivar l'explotació minera en altres països, especialment als Estats Units i Xile, a més de l'obertura de mines a l'Àfrica
@@ -6227,7 +6227,7 @@
 06230. A partir d’aquestes etapes el coure passa per dos tipus de forn diferents segons el producte que se’n vulgui obtenir
 06231. Un cop el coure està fos, aquest es cola de forma contínua o semi contínua
 06232. S’obtenen productes reciclats com tubs, canonades de gas, aigua, refrigeració…, cables  d’alta, mitja i baixa tensió, cables per a la indústria de telecomunicacions i automoció, suports per a superconductors i fins i tot catenàries de tren.
-06233. A nivell medi ambiental aquest procés redueix un 86% de les emissions de SO sub 2 /sub , quatre cops les de CO sub 2 /sub  i un 99% la generació de residus sòlids
+06233. A nivell medi ambiental aquest procés redueix un 86% de les emissions de SO2, quatre cops les de CO2 i un 99% la generació de residus sòlids
 06234. En general, el preu del coure reciclat pot arribar a valdre fins a un 90% del preu inicial
 06235. Fins ara hem comentat el reciclatge del coure un cop el material ha arribat al final de la seva vida útil però en l’extracció minera del coure també es reutilitza una petita part del material sobrant
 06236. També l'Avaluació Voluntària de Riscos assegura que el coure és una opció ecològica i segura i que actualment hi ha dades suficients per a avaluar la seguretat dels processos de producció i ús.
@@ -6904,7 +6904,7 @@
 06907. Hi ha tres possibles casos en funció del valor de '''b'''² '''- 4ac''':
 06908. En aquest cas: 
 06909. La recta tangent a una circumferència en un punt ''P'' és perpendicular al diàmetre que passa per ''P''
-06910. Per tant, el pendent (matemàtiques) pendent d'una circumferència a (''x'' sub 1 /sub , ''y'' sub 1 /sub ) ve donat per:
+06910. Per tant, el pendent (matemàtiques) pendent d'una circumferència a (''x''1, ''y''1) ve donat per:
 06911. De forma més general, el pendent en un punt (''x'', ''y'') a la circumferència  math (x-a)^2 +(y-b)^2 = r^2 /math , és a dir, la circumferència centrada a (''a'', ''b'') amb radi ''r'', ve donat per
 06912. L'àrea del cercle delimitat per una circumferència és:
 06913. Un angle inscrit (en els exemples de la figura són els angles blau i verd) és exactament la meitat de l'angle central corresponent (vermell)
@@ -8832,7 +8832,7 @@
 08835. Els electrons poden ser creats mitjançant la desintegració beta d'radioisòtop isòtops radioactius i en col·lisions d'alta energia com, per exemple, l'entrada d'un raig còsmic a l'atmosfera
 08836. Pel nombre quàntic ''s'' = {{frac 1 2}}
 08837. A partir de la teoria de l'electrostàtica, l'energia potencial d'una esfera de radi ''r'' i càrrega ''e'' ve donada per:
-08838. On ''ε'' sub 0 /sub  és la permitivitat del buit
+08838. On ''ε''0 és la permitivitat del buit
 08839. On ''c'' és la velocitat de la llum en el buit
 08840. Un electró pot estar «enllaçat» al nucli d'un àtom per la força d'atracció de Coulomb
 08841. Els efectes de la relativitat especial es basen en una quantitat coneguda com el factor de Lorentz, que es defineix com  math \scriptstyle\gamma=1/ \sqrt{ 1-{v^2}/{c^2} } /math , on ''v'' és la velocitat de la partícula
@@ -9026,8 +9026,8 @@
 09029. Com tots els catalitzadors, els enzims no alteren la posició de l'equilibri químic de la reacció
 09030. A més, els enzims poden acoblar dues o més reaccions, de manera que una reacció termodinàmicament favorable pot ser utilitzada per a alimentar-ne una de termodinàmicament desfavorable
 09031. Els enzims catalitzen de manera igual les reaccions normals i les inverses
-09032. H_2CO_3} /math  (en teixit (biologia) teixits; alta concentració de CO sub 2 /sub )
-09033. CO_2 + H_2O} /math  (en pulmons; baixa concentració de CO sub 2 /sub )
+09032. H_2CO_3} /math  (en teixit (biologia) teixits; alta concentració de CO2)
+09033. CO_2 + H_2O} /math  (en pulmons; baixa concentració de CO2)
 09034. Tanmateix, si l'equilibri està molt desplaçat en una direcció, és a dir, en una reacció molt exergònica, la reacció és efectivament irreversible
 09035. La cinètica enzimàtica és la investigació de com els enzims s'uneixen a substrats i els transformen en productes
 09036. La contribució principal d'Henri fou pensar en les reaccions enzimàtiques de dues etapes
@@ -9109,7 +9109,7 @@
 09112. Els mesos de major rendiment són els mesos d'estiu, ja que són els millors a nivell solar (inclinació, orientació)
 09113. El rendiment dels col·lectors, es pot calcular amb l'equació següent:
 09114. On: 
-09115. K sub 1 /sub , K sub 2 /sub : coeficients de pèrdua de calor expressats en W/(m²·K), W/(m²·K²) respectivament (dades segons fabricant)
+09115. K1, K2: coeficients de pèrdua de calor expressats en W/(m²·K), W/(m²·K²) respectivament (dades segons fabricant)
 09116. I = Irradiació W/m²
 09117. La garantia de funcionament d'aquest tipus d'instal·lacions és de tres anys
 09118. Cal fer també revisions generals de la instal·lació, com són revisions de les fixacions dels captadors i d'altres, fer un bon manteniment de la caldera i controlar tot tipus de pèrdues que hi pugui haver al circuit de consum.
@@ -10128,7 +10128,7 @@
 10131. En les plantes verdes, la reacció global de la fixació de carboni mitjançant la fotosíntesi (de vegades coneguda com a reducció del carboni) es pot representar per aquesta equació simplificada:
 10132. De manera simplificada, la fotosíntesi podria ser definida com la conversió de l'energia solar en energia química, realitzada pels organismes vius, i que és la característica principal dels fotoautòtrofs, és a dir, que són capaços de sintetitzar glúcids a partir de Compost inorgànic compostos inorgànics utilitzant la llum com a font d'energia (com per exemple la llum del Sol), i no a partir de la ingestió d'altres organismes o dels seus nutrients derivats
 10133. La fotosíntesi té lloc en dues fases
-10134. En la segona fase, '''fase fosca''', les reaccions són independents de la llum i utilitzen aquestes molècules amb un alt contingut energètic per capturar (fixar) el diòxid de carboni, CO sub 2 /sub , i produir els Precursor (química) precursors de la glucosa
+10134. En la segona fase, '''fase fosca''', les reaccions són independents de la llum i utilitzen aquestes molècules amb un alt contingut energètic per capturar (fixar) el diòxid de carboni, CO2, i produir els Precursor (química) precursors de la glucosa
 10135. Aquests processos no només es produeixen a les plantes, també en els animals quan l'energia de les plantes passa a través de la cadena alimentaria
 10136. En les plantes i les algues, la fotosíntesi es realitza en uns orgànuls anomenats cloroplasts
 10137. Malgrat que totes les parts verdes de les plantes contenen cloroplasts és a les fulles on es recull la gran majoria de l'energia
@@ -10138,7 +10138,7 @@
 10141. Perquè aquesta producció de NADPH s'esdevingui, l'electró ha d'entrar en la molècula de clorofil·la del Fotosistema fotosistema I
 10142. Si la longitud d'ona és llarga també es pot produir la forma cíclica o fotofosforilació anoxigènica
 10143. Així doncs, la fixació de carboni produeix productes intermediaris que després es transformaran en els carbohidrats finals
-10144. En la fixació o reducció del diòxid de carboni, una molècula de CO sub 2 /sub  es combina amb un sucre de cinc carbonis, la ribulosa 1,5-bisfosfat (RuBP) per a produir dues molècules d'àcid 3-fosfoglicèric (3GP), de tres carbonis cadascuna, també anomenat 3-fosfoglicerat
+10144. En la fixació o reducció del diòxid de carboni, una molècula de CO2 es combina amb un sucre de cinc carbonis, la ribulosa 1,5-bisfosfat (RuBP) per a produir dues molècules d'àcid 3-fosfoglicèric (3GP), de tres carbonis cadascuna, també anomenat 3-fosfoglicerat
 10145. En condicions ambientals caloroses i seques, les plantes tanquen els seus estroma estromes per evitar la pèrdua d'aigua
 10146. Es creu que els primers sistemes fotosintètics, com ara els dels bacteri verd del sofre bacteris verds i bacteri porpra del sofre porpres del sofre, així com els Chloroflexi bacteris verds i bacteri porpra porpres no del sofre, eren anoxigènics, utilitzant diferents molècules com a donador d'electrons donadors d'electrons
 10147. La font principal d'oxigen de l'atmosfera terrestre atmosfera és la evolució de l'oxigen fotosíntesi de l'oxigen, i a vegades hom es refereix a la seva primera aparició amb el nom de catàstrofe de l'oxigen
@@ -10527,7 +10527,7 @@
 10530. Al domini dels acers trobem un punt eutectoide per a una concentració de carboni del 0,77% i una temperatura de 723°C
 10531. L'acer és l'aliatge de ferro més conegut, sent aquest el seu ús més freqüent
 10532. Els estats d'oxidació del ferro són;
-10533. Els òxids de ferro més coneguts són l'òxid de ferro (II), FeO, l'òxid de ferro (III), Fe sub 2 /sub O sub 3 /sub , i l'òxid mixt Fe sub 3 /sub O sub 4 /sub 
+10533. Els òxids de ferro més coneguts són l'òxid de ferro (II), FeO, l'òxid de ferro (III), Fe2O3, i l'òxid mixt Fe3O4
 10534. Es coneixen compostos en l'estat d'oxidació +4, +5 i +6, però són poc comuns, i en el cas del +5, no està ben caracteritzat
 10535. Es tenen indicis d'ús del ferro, segurament procedent de meteorits, quatre mil·lennis abans de Crist, per part dels sumeris i egipte egipcis.
 10536. Entre dos i tres mil·lennis abans de Crist van apareixent cada vegada més objectes de ferro (que es distingeix del ferro procedent de meteorits per l'absència de níquel) a Antiga Mesopotàmia Mesopotàmia, Anatòlia i Egipte
@@ -11612,7 +11612,7 @@
 11615. Gibson, com tants d'altres constructors, ja havia experimentat amb l'ús de pastilles en guitarres acústiques, però va ser als anys 50 que va introduir al mercat la Gibson Les Paul, instrument que esdevindria la seva marca
 11616. El 1954 Fender va crear el model Stratocaster, sovint abreujada com Strat, que des de finals dels anys 60 ha esdevingut el més estès del mercat.
 11617. Avui dia els dissenys de les guitarres de moltes companyies imiten els de la Gibson Les Paul i la Fender Stratocaster.
-11618. La majoria de guitarres elèctriques tenen sis corda (música) cordes, normalment afinades, d'agut a greu, mi sub 5 /sub , si sub 4 /sub , sol sub 4 /sub , re sub 4 /sub , la sub 3 /sub , mi sub 3 /sub , com totes les guitarres, tot i que hi ha afinacions alternatives, com ara abaixar un to la corda més greu
+11618. La majoria de guitarres elèctriques tenen sis corda (música) cordes, normalment afinades, d'agut a greu, mi5, si4, sol4, re4, la3, mi3, com totes les guitarres, tot i que hi ha afinacions alternatives, com ara abaixar un to la corda més greu
 11619. Algunes guitarres elèctriques tenen una palanca de trèmolo acoblada al pont que pot comprimir o perllongar les cordes temporalment, produint un vibrato
 11620. Els ponts que permeten d'acoblar-hi una palanqueta de vibrato s'anomenen  ponts flotants 
 11621. El primer és propi de les guitarres de gamma baixa
@@ -11741,7 +11741,7 @@
 11744. Les equacions de camp d'Einstein tenen moltes solucions possibles, en funció de les condicions inicials que imposem, com les característiques del tensor energia-impuls o determinades restriccions a la mateixa solució, com certes simetries
 11745. És el comportament de l'espaitemps al voltant d'un objecte massiu en rotació.
 11746. Segons la teoria de Newton, quan a un cos se li aplica una força, a aquest cos se li dóna una acceleració
-11747. Si suposem que un cos de massa (Massa#Massa gravitacional gravitacional) ''m sub 1 /sub '' entra en el camp gravitacional de ''m sub 2 /sub '' es veurà atret amb una força donada per:
+11747. Si suposem que un cos de massa (Massa#Massa gravitacional gravitacional) ''m1'' entra en el camp gravitacional de ''m2'' es veurà atret amb una força donada per:
 11748. A continuació definim un vector, anomenat ''acceleració de la gravetat'':
 11749. Considerant l'Massa#Equivalència de la massa inercial i massa gravitacional equivalència entre massa inercial i gravitacional, utilitzant la Lleis de Newton segona llei de la dinàmica, podem deduir que el vector  math \vec g /math  representa l'acceleració d'un cos sotmès a una força gravitatòria
 11750. L'acceleració de la gravetat a la Terra, al nivell del mar és d'uns 9,80665 m/s², però varia segons l'altura a la qual ens trobem.
@@ -12111,7 +12111,7 @@
 12114. La puntuació total per a les negres serà: 19 + 10 = 29
 12115. A la sèrie de televisió ''Andromeda'', diversos  flashbacks  revelaven qüestions sobre un dels personatges, relacionats amb el Go.
 12116. La '''guanina''' és una base nitrogenada del grup de les purina purines, una de les cinc bases del codi genètic (ADN i ARN)
-12117. La guanina és una substància orgànica de fórmula química C sub 5 /sub H sub 5 /sub N sub 5 /sub O
+12117. La guanina és una substància orgànica de fórmula química C5H5N5O
 12118. En l'ADN, sempre s'aparella amb la citosina per mitjà de tres pont d'hidrogen ponts d'hidrogen, la qual cosa fa estable la cadena
 12119. La guanina ocorre en els excrements de diversos animals, com les aus
 12120. La genòmica es desenvolupà als anys 80 i sobretot als 90, amb els projectes de seqüenciació dels genomes de diverses espècies, inclòs el de l'home (completat el 2001)
@@ -12184,7 +12184,7 @@
 12187. Certs granits (plagiogranits), que es troben en petits plutons a l'escorça oceànica, són el resultat de la diferenciació definitiva dels magmes bàsics
 12188. Actualment es coneixen granits de 500 colors diferents
 12189. Les roques volcàniques corresponents als granits són les Riolita riolites.
-12190. La composició química del granit és: 74,5% de sílice, 14% d'alúmina, 9,5% d'òxids de sodi i de potassi (Na sub 2 /sub O, K sub 2 /sub O) i 2% d'altres òxids (Fe, Mn, Mg, Ca)
+12190. La composició química del granit és: 74,5% de sílice, 14% d'alúmina, 9,5% d'òxids de sodi i de potassi (Na2O, K2O) i 2% d'altres òxids (Fe, Mn, Mg, Ca)
 12191. El terme granit es pot prendre en els sentit més ampli dels granitoides.
 12192. Els granits són d'origen plutònic, per oposició a les roques efusives d'origen volcànic com el basalt
 12193. En certes zones del món com Àfrica del Sud, Nord-oest del Brasil, Nord-oest d'Austràlia, els granits representen fins a un 75% de la superfície de les roques exposades
@@ -12275,7 +12275,7 @@
 12278. L_{tot} = 2\pi I_0 R^2_D
 12279. Perfils lleugers de l'espiral, en termes de la coordenada  math r/R_D /math , no depenen de la lluminositat de la galàxia.
 12280. Una '''galàxia el·líptica''' és un tipus de galàxia de la seqüència de Hubble que es caracteritza per les següents propietats físiques:
-12281. El tipus més comú és l'E sub 3 /sub , i el màxim és l'E sub 7 /sub  -car per sobre, la galàxia tendiria a dispersar-se i a prendre una forma més voluminosa-, i cal destacar que el seu aspecte depèn no només de la seva forma sinó de l'angle amb què es veu, de manera que algunes E sub 0 /sub  són en realitat allargades -quelcom de ja comentat pel mateix Edwin Powell Hubble-.
+12281. El tipus més comú és l'E3, i el màxim és l'E7 -car per sobre, la galàxia tendiria a dispersar-se i a prendre una forma més voluminosa-, i cal destacar que el seu aspecte depèn no només de la seva forma sinó de l'angle amb què es veu, de manera que algunes E0 són en realitat allargades -quelcom de ja comentat pel mateix Edwin Powell Hubble-.
 12282. Aquests són, tanmateix, els únics punts que solen tenir en comú, car les galàxies el·líptiques varien molt en lluminositat, massa i mida, anant des de les petites galàxia nana esferoïdal nanes esferoïdals, de característiques semblants a les d'un cúmul globular -però molt riques en matèria fosca- o les galàxia el·líptica nana galàxies el·líptiques nanes, fins a les grans galàxies el·líptiques presents en grans cúmuls de galàxies (per exemple, les galàxies de tipus ''D'' i galàxia cD ''cD'', caracteritzades per estar envoltades per un gran halo ''D''ifús, tipus al qual pertany la M87, el prototip de galàxia el·líptica gegant) -entre les quals es troben les galàxies més grans i brillants de l'univers-.
 12283. Físicament també es poden dividir en dos tipus: les  quadrades  -que solen ser galàxies grans-, la forma de les quals és determinada per moviments aleatoris de les seves estrelles, però que són més grans en algunes direccions que en altres-, i les  discoïdals , sovint de lluminositat mitjana o baixa, en les quals les estrelles solen tenir velocitats similars, però que estan relativament aplanades a causa de la rotació de la galàxia.
 12284. Les grans galàxies el·líptiques solen tenir un sistema de cúmul globular cúmuls globulars, nuclis dobles, i gran quantitat de galàxies satèl·lit
@@ -13079,9 +13079,9 @@
 13082. La hac no és pas muda quan s'usa per a representar el so /h/ de certes interjeccions ('''h'''a, '''h'''a; e'''h'''em...) i el so /x/ d'alguns manlleus del castellà o del caló, per exemple: com pi'''h'''o, catalanització del castellà ''pijo'' (persona que fa ostentació de seguir les modes associades a una classe social acomodada), o '''h'''alar (menjar), manlleu del caló.
 13083. L'adjectiu ''aspirada'' es refereix al sentit etimològic d'aquesta paraula que era ''emetre (un so) amb un hàlit'', com surt al DCVB.
 13084. En condicions estàndard de temperatura i pressió, l'hidrogen és transparència (òptica) incolor, inodor, insípid, no tòxic, no metall no metàl·lic, i altament combustible; pren la forma d'un gas molècula diatòmica diatòmic de fórmula molecular {{quím H 2}}
-13085. En compost iònic compostos iònics, l'hidrogen pot prendre una càrrega negativa (en forma d'un anió conegut com a hidrur que s'escriu H sup − /sup ), o bé una càrrega positiva (catió H sup + /sup )
+13085. En compost iònic compostos iònics, l'hidrogen pot prendre una càrrega negativa (en forma d'un anió conegut com a hidrur que s'escriu H sup − /sup ), o bé una càrrega positiva (catió H+)
 13086. Les fases possibles de l'hidrogen són les següents:
-13087. L'oxidació de l'hidrogen fa que perdi el seu electró i esdevingui el catió H sup + /sup , que no té cap electró i consta d'un nucli atòmic nucli compost normalment d'un sol protó; és per això que al {{quím H +}} se'l sol anomenar simplement «protó»
+13087. L'oxidació de l'hidrogen fa que perdi el seu electró i esdevingui el catió H+, que no té cap electró i consta d'un nucli atòmic nucli compost normalment d'un sol protó; és per això que al {{quím H +}} se'l sol anomenar simplement «protó»
 13088. Un protó aïllat, {{quím H +}}, no pot existir en solució o en cristalls iònics a causa de la seva atracció imparable cap a altres àtoms o molècules amb electrons
 13089. Lavoisier produïa l'hidrogen pels seus famosos experiments sobre la conservació de la massa fent reaccionar un flux de vapor amb ferro metàl·lic a través d'un tub de ferro incandescent escalfat en un forn
 13090. Molts metalls, tals com el zirconi, tenen una reacció similar amb l'aigua que resulta en la producció d'hidrogen.
@@ -13090,10 +13090,10 @@
 13093. L'alumini també pot produir {{quím H 2}} si es tracta amb bases químiques:
 13094. Aquesta reacció és afavorida a baixes pressions però, tanmateix, es duu a terme a pressions elevades (2,0 MPa o 20 atm) perquè el {{quím H 2}} a pressió elevada és el producte més comercialitzable i els sistemes de purificació per adsorció per oscil·lació de pressió treballen millor a altes pressions
 13095. En condicions anaeròbiques, el ferro i els acer aliat acers aliats són lentament oxidats pels protons de l'aigua simultàniament reduïts a hidrogen molecular ({{quím H 2}})
-13096. Per la seva banda, en condicions anaeròbiques, l'hidròxid de ferro (II) (Fe(OH) sub 2 /sub ) pot ser oxidat pels protons de l'aigua per formar magnetita i hidrogen molecular
-13097. La magnetita ben cristal·litzada (Fe sub 3 /sub O sub 4 /sub ) és termodinàmicament més estable que l'hidròxid de ferro (II) (Fe(OH) sub 2 /sub )
+13096. Per la seva banda, en condicions anaeròbiques, l'hidròxid de ferro (II) (Fe(OH)2) pot ser oxidat pels protons de l'aigua per formar magnetita i hidrogen molecular
+13097. La magnetita ben cristal·litzada (Fe3O4) és termodinàmicament més estable que l'hidròxid de ferro (II) (Fe(OH)2)
 13098. Aquest procés ocorre durant la corrosió anaeròbica del ferro i de l'acer en aigua anòxica aigües subterrànies lliures d'oxigen i en la reducció del sòl per sota del límit freàtic.
-13099. En absència d'oxigen atmosfèric (O sub 2 /sub ) en condicions geològiques de profunditat tal que l'atmosfera terrestre ja no hi té efecte, l'hidrogen ({{quím H 2}}) es produeix durant el procés de serpentinització per l'oxidació anaeròbica feta pels protons (H sup + /sup ) de l'aigua del silicat de ferro (Fe sup 2+ /sup ) present a la xarxa cristal·lina de la faialita (Fe sub 2 /sub SiO sub 4 /sub )
+13099. En absència d'oxigen atmosfèric (O2) en condicions geològiques de profunditat tal que l'atmosfera terrestre ja no hi té efecte, l'hidrogen ({{quím H 2}}) es produeix durant el procés de serpentinització per l'oxidació anaeròbica feta pels protons (H+) de l'aigua del silicat de ferro (Fe sup 2+ /sup ) present a la xarxa cristal·lina de la faialita (Fe2SiO4)
 13100. Aquesta reacció s'assembla molt a la reacció de Schikorr observada en l'oxidació anaeròbica de l'hidròxid de ferro (II) en contacte amb l'aigua.
 13101. L'hidrogen se sol fer servir en centrals elèctriques com a refrigerant pels generadors, ja que té un cert nombre de propietats favorables que són resultat directe de les seves lleugeres molècules diatòmiques
 13102. Els desavantatges de l'hidrogen líquid inclouen la seva poca densitat i baixa temperatura, que fan que calguin dipòsits de combustible més grans, més ben aïllats i, per tant, més pesants
@@ -13146,7 +13146,7 @@
 13149. Després de la mort d'Alexandre el Gran a Babilònia l'any 323 aC, va esclatar una Diàdocs crisi de successió entre els seus generals
 13150. Aquests són elements volàtils, que tendeixen a capturar un electró per acabar d'emplenar la seva capa de valència (química) valència, formant un anió (halur)
 13151. Si s'augmenta el nombre atòmic (Z) s’intensifica el color.
-13152. En la natura, es troben en forma de molècules àtom diatòmiques i en diferents estats: gas (F sub 2 /sub , Cl sub 2 /sub ), líquid (Br sub 2 /sub ) o sòlid (I sub 2 /sub ).
+13152. En la natura, es troben en forma de molècules àtom diatòmiques i en diferents estats: gas (F2, Cl2), líquid (Br2) o sòlid (I2).
 13153. L{{'}}'''heli''' és l'element químic de nombre atòmic 2 i representat pel símbol '''He'''
 13154. El 1868, l'astrònom francès Pierre Janssen observà per primer cop una signatura de espectroscòpia línia espectral en la llum solar en un eclipsi de sol
 13155. L'heli és el segon element més lleuger i és el segon element abundància dels elements més abundant en l'univers observable
@@ -14166,9 +14166,6 @@
 14169. La forma normalitzada d'una paraula ha de semblar el denominador comú de les paraules i elements en les llengües fonts.
 14170. La taula següent il·lustra respectivament els sons de les consonants i de les vocals presents en interlingua.
 14171. Article 1 de la Declaració de Drets Humans:
-14172. Parenostre:
-14173. Nostre Patre, qui es in le celos, br / 
-14174. Da nos hodie nostre pan quotidian, br / 
 14175. Llista de congressos internacionals d'interlingua organitzats per la Union Mundial pro Interlingua:
 14176. Altres llengües planificades:
 14177. El '''iacut''' o '''sakhà''' és una llengua turquesa parlada per unes 360.000 persones a la Sakhà República de Sakhà, al nord de la Sibèria Rússia russa
@@ -15339,7 +15336,7 @@
 15342. File:P5010015.JPG Façana principal de l'ermita de Santa Justa
 15343. File:P5010013.JPG Santa Justa, l'absis des de la Creu de la Passió
 15344. El '''llautó''' és un aliatge de coure i zinc
-15345. La seva fórmula química és Cu sub 3 /sub Zn, i cristal·litza en el sistema isomètric
+15345. La seva fórmula química és Cu3Zn, i cristal·litza en el sistema isomètric
 15346. Segons la classificació de Nickel-Strunz, el llautó pertany a «01.AB - Metalls i aliatges de metalls, família zinc-coure» juntament amb els següents minerals: cadmi natiu cadmi, reni natiu reni, zinc natiu zinc, titani natiu titani, danbaïta, zhanghengita, α-llautó, tongxinita i zinccopperita, així com de tres espècies més encara sense nom definitiu.
 15347. La seva mal·leabilitat varia segons la seva composició i la temperatura, i es pot barrejar amb altres substàncies, fins i tot en quantitats mínimes
 15348. Per obtenir llautó, es barreja el zinc amb el coure en gresols o en un forn de reverber o de cubilot
@@ -15826,7 +15823,7 @@
 15829. Les observacions demostraven que la llum provinent de les galàxies presenta un desplaçament cap al roig (altrament anomenat ''resdhift'') proporcional a la seva distància respecte al Sistema Solar sistema solar, el qual és determinat mitjançant el corriment de les línies espectrals de les galàxies
 15830. En què:
 15831. Això ens porta, en efecte, a la llei de Hubble, que estableix la proporció entre la distància '''D''' en què es troba la galàxia:
-15832. La constant de proporcionalitat és la '''constant de Hubble''' (H sub 0 /sub ), que correspon a la velocitat d'expansió actual de l'univers, en primera aproximació.
+15832. La constant de proporcionalitat és la '''constant de Hubble''' (H0), que correspon a la velocitat d'expansió actual de l'univers, en primera aproximació.
 15833. L'any 2003, les dades aconseguides pel satèl·lit WMAP van donar un valor de 71 ± 4 (km/s)/Megaparsec Mpc
 15834. Atribuïm a '''a(t)''' com a factor d'escala de l'univers, el qual és determinat segons el model cosmològic elegit, en general, de les equacions de Friedmann
 15835. D'aquesta manera, l'evolució d'aquesta distància al llarg del temps, segons aquestes definicions, quedarà com:
@@ -17139,7 +17136,7 @@
 17142. El 2005 també va llançar el motor de cerca conegut com a ''MSN Search'' per competir amb Google que més tard es va dir Bing
 17143. Microsoft sempre ha tingut demandes per monopoli, però aquesta vegada les va tenir amb la Unió Europea, i va ser multat amb 500 milions de € i obligat a comercialitzar una versió sense el ''Windows Media Player'' i el ''IE'' incorporat.
 17144. Els defensors del programari lliure senyalen la incorporació de la companyia a l'Aliança de la Plataforma d'Informàtica de Confiança (TCPA) com a preocupant
-17145. Una molècula pot consistir en diversos àtoms d'un únic element químic, com en el cas de l'oxigen diatòmic (O sub 2 /sub ), o de diferents elements, com en el cas de l'aigua (H sub 2 /sub O)
+17145. Una molècula pot consistir en diversos àtoms d'un únic element químic, com en el cas de l'oxigen diatòmic (O2), o de diferents elements, com en el cas de l'aigua (H2O)
 17146. Les molècules com a components de la matèria són comunes en les substàncies orgàniques (i per tant en la bioquímica)
 17147. La majoria de les molècules són massa petites per ser vistes a ull nu, però hi ha excepcions
 17148. Les molècules es componen d'electrons i nucli atòmic nuclis atòmics
@@ -17388,8 +17385,8 @@
 17391. Substituint  math \vec v=(v,0,0) /math , amb passos simples, obtenim les relacions següents, degudes a Hendrik Lorentz:
 17392. Si la velocitat del cos és molt menor que la velocitat de la llum ''c'', el factor de Lorentz ''γ'' tendirà a 1; per això, la massa en repòs del cos és exactament equivalent a la massa inercial.
 17393. Més enllà del concepte de massa en repòs, en el context de la relativitat especial, hi ha hagut històricament altres definicions de la massa
-17394. L 'energia ''E'' es defineix en la relativitat especial com el producte de la velocitat de la llum ''c'' i del component temporal ''P sub 0 /sub '' del quadrimoment (o quadrivector de la quantitat de moviment)
-17395. Aquesta equació estableix una correspondència entre la massa en repòs d'un cos i la seva energia: en altres paraules, cada cos amb massa en repòs té una energia de repòs no nul·la ''E sub 0 /sub '' deguda únicament al fet de tenir massa.
+17394. L 'energia ''E'' es defineix en la relativitat especial com el producte de la velocitat de la llum ''c'' i del component temporal ''P0'' del quadrimoment (o quadrivector de la quantitat de moviment)
+17395. Aquesta equació estableix una correspondència entre la massa en repòs d'un cos i la seva energia: en altres paraules, cada cos amb massa en repòs té una energia de repòs no nul·la ''E0'' deguda únicament al fet de tenir massa.
 17396. Aquesta equació també permet incorporar el principi de conservació de la massa al de conservació de l'energia: per exemple, l'energia de la Sol es deu a les Fusió nuclear reaccions termonuclears en les quals la massa en repòs dels àtoms que participen en la reacció és major que la massa dels productes de la reacció, però es conserva l'energia total pel fet que el ''defecte de massa'' es converteix en energia (Energia cinètica cinètica) i és alliberada successivament en forma de Fotó fotons i Neutrí neutrins, o en les col·lisions amb altres àtoms.
 17397. En la mecànica relativista, tenim una extraordinària relació que lliga la massa en repòs d'un cos, la seva energia i la seva quantitat de moviment
 17398. Substituint la darrera equació obtenim la que busquem:
@@ -18228,10 +18225,10 @@
 18231. Si ''a'' i ''b'' són dos nombres racionals es diu que ''a'' ≥ ''b'' (i es llegeix ''a'' és més gran o igual que ''b'') si i només si ''a'' - ''b'' és no negatiu.
 18232. Exemple:
 18233. Es compleix que aquesta relació d'ordre és total perquè ''a'' - ''b'' = - (''b'' - ''a'') i també es compleix que si ''a'' ≥ ''b'' i ''b'' ≥ ''a'' ha de ser ''a'' = ''b'' perquè ha de ser ''a'' - ''b'' =0.
-18234. Donats dons nombres racionals qualsevol ''r'' sub 1 /sub  i ''r'' sub 2 /sub  es tracta de trobar un nombre racional que estigui entremig
+18234. Donats dons nombres racionals qualsevol ''r''1 i ''r''2 es tracta de trobar un nombre racional que estigui entremig
 18235. Si
-18236. Ara, suposant que ''r'' sub 1 /sub  ≤ ''r'' sub 1 /sub , cal veure que aquest resultat és més gran o igual que ''r'' sub 1 /sub  i més petit o igual que ''r'' sub 2 /sub 
-18237. Si ''r'' sub 1 /sub  ≤ ''r'' sub 2 /sub  vol dir que 
+18236. Ara, suposant que ''r''1 ≤ ''r''1, cal veure que aquest resultat és més gran o igual que ''r''1 i més petit o igual que ''r''2
+18237. Si ''r''1 ≤ ''r''2 vol dir que 
 18238. Però 
 18239. Aquesta propietat és conseqüència de l'arquimedianitat de  math \mathbb{R} /math .
 18240. Siguin dos reals diferents
@@ -18384,7 +18381,7 @@
 18387. Mentre que en general no és possible dividir un nombre natural ''a'' entre qualsevol altre ''b'' i que aquesta operació resulti un nombre natural (és a dir, no és possible trobar un altre nombre natural ''q'' tal que ''b×q'' = ''a''); tenim alguna cosa semblant a la divisió: per a qualssevol dos nombres naturals ''a'' i ''b'', amb ''b'' ≠ 0, podem trobar altres naturals ''q'' i ''r'' tals que 
 18388. El nombre ''q'' l'anomenem ''quocient'' i ''r'' el ''residu'' d'aquesta divisió d'''a'' entre ''b''
 18389. L'operació que a ''a'' i ''b'' els fa correspondre ''q'' i ''r'' (o dit d'una altra manera que a partir de ''a'' i ''b'' calcula ''q'' i ''r'') s'anomena '''divisió euclidiana'''
-18390. Una forma de calcular la divisió euclidiana de ''a'' entre ''b'' seria anar provant, començar per ''q'' sub 0 /sub  = 0 i seguir per ''q'' sub 1 /sub  = 1, ''q'' sub 2 /sub  = 2 ..
+18390. Una forma de calcular la divisió euclidiana de ''a'' entre ''b'' seria anar provant, començar per ''q''0 = 0 i seguir per ''q''1 = 1, ''q''2 = 2 ..
 18391. A l'article Divisió euclidiana#Mètode corrent, decimal Divisió euclidiana s'explica rigorosament l'algorisme per calcular la divisió euclidiana quan els nombres estan escrits en base 10 i a l'article Divisió#Com realitzar una divisió manualment Divisió s'explica amb un exemple el càlcul manual emprant aquest algorisme.
 18392. Hi ha certs subconjunts del conjunt dels nombres naturals que són objecte d'estudi singular.
 18393. Un subconjunt dels conjunt dels nombres naturals de rellevant importància és el conjunt dels nombres primers.
@@ -18406,7 +18403,7 @@
 18409. Noteu el fet que tots els Nombre natural nombres naturals són divisibles entre ells mateixos i entre la unitat
 18410. El nombre primer més petit és el 2 i, de fet, és l'únic nombre primer que és també Nombre parell parell, ja que qualsevol parell més gran és múltiple de dos
 18411. El teorema fonamental de l'aritmètica estableix que qualsevol Nombre enter enter positiu superior a 1 pot representar-se sempre com un producte de nombres primers, i aquesta representació (factorització dels enters factorització) és única
-18412. Encara no s'ha pogut provar, però es conjectura, que existeixen infinits nombres primers de la forma ''p'' sub 1 /sub  = ''p'' sub 2 /sub  + 2 (sent ''p'' sub 1 /sub  i ''p'' sub 2 /sub  primers) o primers bessons
+18412. Encara no s'ha pogut provar, però es conjectura, que existeixen infinits nombres primers de la forma ''p''1 = ''p''2 + 2 (sent ''p''1 i ''p''2 primers) o primers bessons
 18413. Hi ha nombrosos algorismes per trobar nombres primers
 18414. Nombroses tauletes d'argila seca atribuïdes a les civilitzacions que es van anar succeint a Mesopotàmia al llarg del II mil·lenni a.C
 18415. En les matemàtiques antic Egipte egípcies, el càlcul de fraccions requeria coneixements sobre les operacions, la divisió de naturals i la factorització
@@ -18516,8 +18513,8 @@
 18519. Inspirat per la teoria cinètica molecular dels gasos, el científic italià Amedeo Avogadro proposà una hipòtesi el 1811, amb la finalitat de descriure les reaccions químiques com un procés atòmic entre els àtoms o molècules
 18520. Aquesta expressió s'obté a partir de la densitat del silici:
 18521. Alguns nombres irracionals són nombres Nombre algebraic algebraics, com l'arrel quadrada de 2 o l'arrel cúbica de 5; altres són nombre transcendent transcendents, com Nombre π  math \pi /math  i Nombre e  math e /math 
-18522. Suposem que el log sub 2 /sub 3 sigui racional.
-18523. Llavors, per alguns enters positius  var m /var  i  var n /var , tenim log sub 2 /sub 3 =  var m /var / var n /var .
+18522. Suposem que el log23 sigui racional.
+18523. Llavors, per alguns enters positius  var m /var  i  var n /var , tenim log23 =  var m /var / var n /var .
 18524. De vegades se suposa erròniament que els matemàtics defineixen els «nombres irracionals», en termes d'expansions decimals i que declaren que un nombre és irracional si la seva expansió decimal no es repeteix ni acaba
 18525. De tota manera, és cert que un nombre té la forma ''n''/''m'' on ''n'' i ''m'' són enters, si i només si la seva expansió decimal es repeteix o acaba
 18526. A la inversa, suposem que trobem una expansió decimal periòdica, per exemple:
