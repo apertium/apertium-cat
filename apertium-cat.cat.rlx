@@ -1,4 +1,3 @@
-# exemple ambigüitat fins i tot per a un parlant: "noble húngaro" (hungara nobelo / nobla hungaro), "viejos fanáticos" (maljunaj fanatikuloj / fanatikaj maljunuloj)però és infreqüent en el tipus de textos que tractem i és improbable que, a més, coincideixi amb un top)
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" "<;>";
 SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
@@ -56,6 +55,8 @@ SET Word = N + NP + A + Det + PreAdv + Adv + V + Pron + Prep + CnjCoo + CnjSub +
 SET NP_Member = N + A + Det + PreAdv + Adv + Pron ; # Pron es distinto al resto...
 #SET NOT_NP_Member = Word - NP_Member;
 SET NOT_NP_Member = Vblex OR Vbmod OR Vbhaver OR Copula OR Prep OR CnjCoo OR CnjSub OR CnjAdv OR Rel OR Interj ;
+
+SET NotaMusical = ("do" m) OR ("re" m) OR ("mi" m) OR ("fa" m) OR ("sol" m) OR ("la" m) OR ("si" m) ;
 
 LIST Imp = (imp) ;
 LIST Inf = (inf) ;
@@ -352,6 +353,45 @@ SELECT N IF (0 ("nét")) (-1 ("algun de"));
 REMOVE ("nét") IF (0 ("net")); #Al final, prioritat al sistema tradicional!
 
 ## FINAL Diacrítics nous
+
+# Notes musicals
+REMOVE N IF (0 ("si"i)) (1 ("<fa>"i)) (2 ("<sol>"i)) ;
+REMOVE N IF (-1 ("si"i)) (0 ("<fa>"i)) (1 ("<sol>"i)) ;
+REMOVE N IF (-2 ("si"i)) (-1 ("<fa>"i)) (0 ("<sol>"i)) ;
+SELECT N IF (0 ("<mi>")) (1 ("major") OR ("menor") OR ("bemoll") OR ("sostingut")) ;
+SELECT N IF (0 ("<mi>")) (1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("sol") OR ("la") OR ("si")) ;
+SELECT N IF (0 ("<mi>")) (-1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("sol") OR ("la") OR ("si")) ;
+#SELECT N IF (0 ("<mi>")) (1C NotaMusical) ;
+SELECT N IF (0 ("<mi>")) (-1C NotaMusical) ;
+SELECT N IF (0 ("<fa>")) (1 ("bemoll") OR ("sostingut")) ;
+SELECT N IF (0 ("<fa>")) (1 ("do") OR ("re") OR ("mi") OR ("fa")) ;
+SELECT N IF (0 ("<fa>")) (-1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("sol")) ;
+SELECT N IF (0 ("<fa>")) (1C NotaMusical) (NOT 1 ("<sol>"i) OR ("<la>"i)) ;
+SELECT N IF (0 ("<sol>")) (1C NotaMusical) ;
+SELECT N IF (0 ("<sol>")) (-1C NotaMusical) ;
+SELECT N IF (0 ("<la>")) (1 ("<bemoll>") OR ("<sostingut>")) ;
+SELECT N IF (0 ("<la>")) (1 ("do") OR ("re") OR ("la") OR ("si")) ;
+SELECT N IF (0 ("<la>")) (-1 ("do") OR ("re") OR ("la")) ;
+SELECT N IF (0 ("<la>")) (-1C NotaMusical) (-1 NotaMusical) ;
+SELECT N IF (0 ("<si>")) (1 ("major") OR ("menor") OR ("bemoll") OR ("sostingut")) ;
+SELECT N IF (0 ("<si>")) (1 ("do") OR ("re") OR ("mi") OR ("sol") OR ("si")) ;
+SELECT N IF (0 ("<si>")) (-1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("si")) ;
+SELECT N IF (0 ("<si>")) (1C NotaMusical) (NOT 1 ("<la>"i) OR ("<sol>"i)) ;
+#SELECT N IF (0 ("<si>")) (-1C NotaMusical) ;
+SELECT N IF (0 ("<si>")) (-1C NotaMusical) (-1C NotaMusical) ;
+SELECT N IF (0 NotaMusical) (1C NotaMusical) (2C NotaMusical) ;
+SELECT N IF (-1C NotaMusical) (0 NotaMusical) (1C NotaMusical) ;
+SELECT N IF (-2C NotaMusical) (-1C NotaMusical) (0 NotaMusical) ;
+SELECT N IF (0 NotaMusical) (1 CM) (2 NotaMusical) (3 ("i") OR ("o")) (4 NotaMusical) ;
+SELECT N IF (-2 NotaMusical) (-1 CM) (0 NotaMusical) (1 ("i") OR ("o")) (2 NotaMusical) ;
+SELECT N IF (-4 NotaMusical) (-3 CM) (-2 NotaMusical) (1 ("i") OR ("o")) (0 NotaMusical) ;
+SELECT N IF (0 NotaMusical) (1 CM) (2C NotaMusical) (3 CM) (4C NotaMusical) ;
+SELECT N IF (-2C NotaMusical) (-1 CM) (0 NotaMusical) (1 CM) (2C NotaMusical) ;
+SELECT N IF (-4C NotaMusical) (-3 CM) (-2C NotaMusical) (1 CM) (0 NotaMusical) ;
+REMOVE N IF (0 ("mi")) ;
+REMOVE N IF (0 ("fa")) ;
+REMOVE N IF (0 ("la")) ;
+REMOVE N IF (0 ("si")) ;
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
