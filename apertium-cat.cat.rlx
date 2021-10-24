@@ -403,6 +403,12 @@ REMOVE N IF (-2 Prep) (-1C Tn) (0 ("sol")) ;	# per a mi sol
 SELECT:apellido2 (cog) IF (-1 (ant)) (0 (cog)) (1 ("i"i)) (2 (cog)) (NOT 3 (ant) OR (cog) OR unknownMajIni) ;   # Anna Cabré i Pla
 SELECT:apellido3 (cog) IF (-3 (ant)) (-2 (cog)) (-1 ("i"i)) (0 (cog)) (NOT 1 (ant) OR (cog) OR unknownMajIni) ; # Anna Cabré i Pla
 SELECT:nom (ant) IF (0 (ant)) (1C (cog)) (2 ("i"i)) (3C (cog)) ;   # Anna Cabré i Pla
+SELECT Cog IF (-2 ("Rovira")) (-1 ("i"i)) (0 ("Virgili"));
+SELECT Cog IF (-2 ("Torras")) (-1 ("i"i)) (0 ("Bages"));
+SELECT Cog IF (-2 Cog) (-1 ("i"i)) (0 ("Virgili"));
+SELECT Cog IF (0 ("Virgili")) (1 ("i"i)) (2 Cog) ;
+SELECT Cog IF (-1 Ant) (0 ("Virgili")) ;
+SELECT Ant IF (0 ("Virgili")) ;
 
 # Coincidència nom propi/comú. Ex. Fons Europeu, Guerra Civil...
 REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMajIni);
