@@ -395,7 +395,8 @@ REMOVE N IF (0 ("fa")) ;
 REMOVE N IF (0 ("la")) ;
 REMOVE N IF (0 ("si")) ;
 SELECT A IF (-1 NotaMusical) (0 ("sostingut") OR ("bemoll")) ;
-REMOVE N IF (-2 Prep) (-1 Tn) (0 ("sol")) ;	# per a mi sol
+REMOVE N IF (-2 Prep) (-1 ("un")) (0 ("sol")) ;	# amb un sol
+REMOVE N IF (-2 Prep) (-1C Tn) (0 ("sol")) ;	# per a mi sol
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
@@ -1981,10 +1982,9 @@ REMOVE A OR PP IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM)
 
 # REMOVE A OR PP IF (-1 Barrera_Inicial_SN LINK NOT 0 N) (NOT -1 Limite_Barrera_Inicial_SN) (0 Noun_Adj_PP LINK 0 N OR NP) (1 Barrera_Final_SN) ;
 
-SELECT Prep IF (-1 Rel) (0 ("<durant>")) ;
-	# on durant anys, quan durant anys
-SELECT Prep IF (0 ("durant")) (1 Det) ;
-	# de Catalunya durant el segle XII
+SELECT Prep IF (-1 Rel) (0 ("<durant>")) ;	# on durant anys, quan durant anys
+SELECT Prep IF (0 ("durant")) (1 Det) ;		# de Catalunya durant el segle XII
+SELECT Prep IF (0 ("durant")) (1 ("molt de temps") OR ("molts dies")) ;	
 
 SELECT Prep IF (-1 >>>) (0 Segons) ;
 	# segons ell
