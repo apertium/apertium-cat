@@ -57,6 +57,7 @@ SET NP_Member = N + A + Det + PreAdv + Adv + Pron ; # Pron es distinto al resto.
 SET NOT_NP_Member = Vblex OR Vbmod OR Vbhaver OR Copula OR Prep OR CnjCoo OR CnjSub OR CnjAdv OR Rel OR Interj ;
 
 SET NotaMusical = ("do" m) OR ("re" m) OR ("mi" m) OR ("fa" m) OR ("sol" m) OR ("la" m) OR ("si" m) ;
+SET Instrument = ("piano") OR ("violí") OR ("viola") OR ("violoncel") OR ("contrabaix") OR ("flauta") OR ("oboè") OR ("clarinet") OR ("trompeta") OR ("trombó") OR ("trombó# de vares") OR ("trombó# de colissa") OR ("trombó# de pistons") OR ("saxo") OR ("saxofon") OR ("òrgan") OR ("arpa") OR ("guitarra") ;
 
 LIST Imp = (imp) ;
 LIST Inf = (inf) ;
@@ -359,7 +360,7 @@ REMOVE N IF (0 ("si"i)) (1 ("<fa>"i)) (2 ("<sol>"i)) ;
 REMOVE N IF (-1 ("si"i)) (0 ("<fa>"i)) (1 ("<sol>"i)) ;
 REMOVE N IF (-2 ("si"i)) (-1 ("<fa>"i)) (0 ("<sol>"i)) ;
 SELECT N IF (0 ("<mi>")) (1 ("major") OR ("menor") OR ("bemoll") OR ("sostingut")) ;
-SELECT N IF (0 ("<mi>")) (1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("sol") OR ("la") OR ("si")) ;
+SELECT N IF (0 ("<mi>")) (1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("la") OR ("si")) ;
 SELECT N IF (0 ("<mi>")) (-1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("sol") OR ("la") OR ("si")) ;
 #SELECT N IF (0 ("<mi>")) (1C NotaMusical) ;
 SELECT N IF (0 ("<mi>")) (-1C NotaMusical) ;
@@ -374,11 +375,12 @@ SELECT N IF (0 ("<la>")) (1 ("do") OR ("re") OR ("la") OR ("si")) ;
 SELECT N IF (0 ("<la>")) (-1 ("do") OR ("re") OR ("la")) ;
 SELECT N IF (0 ("<la>")) (-1C NotaMusical) (-1 NotaMusical) ;
 SELECT N IF (0 ("<si>")) (1 ("major") OR ("menor") OR ("bemoll") OR ("sostingut")) ;
-SELECT N IF (0 ("<si>")) (1 ("do") OR ("re") OR ("mi") OR ("sol") OR ("si")) ;
+SELECT N IF (0 ("<si>")) (1 ("do") OR ("re") OR ("mi") OR ("si")) ;
 SELECT N IF (0 ("<si>")) (-1 ("do") OR ("re") OR ("mi") OR ("fa") OR ("si")) ;
 SELECT N IF (0 ("<si>")) (1C NotaMusical) (NOT 1 ("<la>"i) OR ("<sol>"i)) ;
 #SELECT N IF (0 ("<si>")) (-1C NotaMusical) ;
 SELECT N IF (0 ("<si>")) (-1C NotaMusical) (-1C NotaMusical) ;
+SELECT N IF (-2 ("concert") OR ("simfonia") OR Instrument) (-1 ("en")) (0 NotaMusical) ;
 SELECT N IF (0 NotaMusical) (1C NotaMusical) (2C NotaMusical) ;
 SELECT N IF (-1C NotaMusical) (0 NotaMusical) (1C NotaMusical) ;
 SELECT N IF (-2C NotaMusical) (-1C NotaMusical) (0 NotaMusical) ;
@@ -392,6 +394,8 @@ REMOVE N IF (0 ("mi")) ;
 REMOVE N IF (0 ("fa")) ;
 REMOVE N IF (0 ("la")) ;
 REMOVE N IF (0 ("si")) ;
+SELECT A IF (-1 NotaMusical) (0 ("sostingut") OR ("bemoll")) ;
+REMOVE N IF (-2 Prep) (-1 Tn) (0 ("sol")) ;	# per a mi sol
 
 #SELECT:apellido0 (cog) IF (0 (cog)) (1 ("i"i)) (2 (cog));   # Navarro i García
 #SELECT:apellido1 (cog) IF (0 (cog)) (-1 ("i"i)) (-2 (cog));
