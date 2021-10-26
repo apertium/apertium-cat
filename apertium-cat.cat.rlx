@@ -18,7 +18,8 @@ LIST Det = (det) ;
 LIST DetNT = (detnt) ;
 LIST PreDet = (predet) ;
 LIST Num = (num) ;
-LIST Adv = (adv) ;
+#LIST Adv = (adv) ;
+SET Adv = (adv) - (prn adv) ;
 LIST PreAdv = (preadv) ;
 LIST Vblex = (vblex) ;
 LIST Vbmod = (vbmod) ;
@@ -995,14 +996,12 @@ SELECT N IF (0 ("estat")) (1 De) (2 Top) ;	# estat de Nova York
 SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1/* Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
 	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
-SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1 Adv) ;
-	# Va més ràpidament
-SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1C PP) ;
-	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
-SELECT Anar IF (0C ("anar") OR ("va")) (1C Ger) ;
-	# la pedra va caient
+SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1 Adv) ;	# Va més ràpidament
+SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1C PP) ;	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
+SELECT Anar IF (0C ("anar") OR ("va")) (1C Ger) ;	# la pedra va caient
 SELECT Anar IF (0C ("anar") OR ("va")) (1 ("a") OR ("cap a") OR ("per") OR ("contra") OR ("a favor de")) ;
 SELECT Anar IF (-1 NP) (0C ("anar") OR ("va")) ;
+SELECT Anar IF (NOT -1 ("en") OR Noun_Adj + MascSg OR Ser + Sg OR ("considerar") OR ("com") OR ("com a")) (0 ("<va>"i)) ;
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg> (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>
@@ -1569,6 +1568,10 @@ REMOVE N IF (-2C Noun_NP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara"
 REMOVE N IF (-3C Noun_Adj + &&ConcordaSP) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen gran sempre menja
 REMOVE N IF (-4 Noun_Adj + &&ConcordaSP) (-3 Adv_PreAdv) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen molt gran sempre menja
 
+REMOVE Noun_Adj_PP IF (-2 Det + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves fem tard
+REMOVE Noun_Adj_PP IF (-3 Det + &&ConcordaGN) (-2 Noun_Adj_PP + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves discrets fem tard
+REMOVE Noun_Adj_PP IF (-4 Det + &&ConcordaGN) (-3 Noun_Adj_PP + &&ConcordaGN) (-2 Adv_PreAdv) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves molt discrets fem tard
+
 # NOM / ADJ
 
 SELECT Num (0 ("nou")) (1 AdjPrefAmb + Pl) ;
@@ -1603,72 +1606,34 @@ REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N 
 REMOVE N IF (-2 Ant) (-1 Def + MascSg) (0 Noun_Adj_PP + MascSg) ;
 REMOVE N IF (-2 Ant) (-1 Def + FemSg) (0 Noun_Adj_PP + FemSg) ;
 # Martí l'Humà
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1C Verb) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1C Verb) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1C Verb) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1C Verb) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Copula) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 Copula) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Copula) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Copula) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
-REMOVE A OR PP IF (NOT -2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE A OR PP IF (NOT -2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1C Verb) ;
+REMOVE A OR PP IF (NOT -2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Copula) ;
+REMOVE A OR PP IF (NOT -2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) ;
+REMOVE A OR PP IF (NOT -2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Verb + Pers OR Verb + Ger) (NOT 1 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves fem tard
 
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Copula) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
-REMOVE A OR PP IF (-2 Com) (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Barrera_Final_Estrict_SN OR Ant_Cog) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1C Verb) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
+REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 
-SELECT N IF (-1 Det + MascSg) (0 Noun_Adj_PP + MascSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT N IF (-1 Det + FemSg) (0 Noun_Adj_PP + FemSg LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT N IF (-1 Det + MascPl) (0 Noun_Adj_PP + MascPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
-SELECT N IF (-1 Det + FemPl) (0 Noun_Adj_PP + FemPl LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
+SELECT N IF (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
 
-SELECT A OR PP IF (-2 Det + Def + MascSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascSg);
-SELECT A OR PP IF (-2 Det + Def + FemSg) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemSg);
-SELECT A OR PP IF (-2 Det + Def + MascPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + MascPl);
-SELECT A OR PP IF (-2 Det + Def + FemPl) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + FemPl);
-SELECT A IF (-2 Det + Def + MascSg) (-1 ("més") OR ("menys")) (0 Adj_PP + MascSg);
-SELECT A IF (-2 Det + Def + FemSg) (-1 ("més") OR ("menys")) (0 Adj_PP + FemSg);
-SELECT A IF (-2 Det + Def + MascPl) (-1 ("més") OR ("menys")) (0 Adj_PP + MascPl);
-SELECT A IF (-2 Det + Def + FemPl) (-1 ("més") OR ("menys")) (0 Adj_PP + FemPl);
+SELECT A OR PP IF (-2 Det + Def + &&ConcordaGN) (-1 ("més") OR ("menys")) (0 Noun_Adj_PP + &&ConcordaGN);
+SELECT A IF (-2 Det + Def + &&ConcordaGN) (-1 ("més") OR ("menys")) (0 Adj_PP + &&ConcordaGN);
 	# el més extemista de tots
 	# és la més comuna.
 	# les més avançades
 
-SELECT A IF (-3 N + MascSg) (-2 A + MascSg) (-1 ("més") OR ("menys")) (0 A + MascSg LINK NOT 0 NP) ;
-SELECT A IF (-3 N + FemSg) (-2 A + FemSg) (-1 ("més") OR ("menys")) (0 A + FemSg LINK NOT 0 NP) ;
-SELECT A IF (-3 N + MascPl) (-2 A + MascPl) (-1 ("més") OR ("menys")) (0 A + MascPl LINK NOT 0 NP) ;
-SELECT A IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("més") OR ("menys")) (0 A + FemPl LINK NOT 0 NP) ;
+SELECT A IF (-3 N + &&ConcordaGN) (-2 A + &&ConcordaGN) (-1 ("més") OR ("menys")) (0 A + &&ConcordaGN LINK NOT 0 NP) ;
 	# l'activitat industrial més activa
 	# les llengües internacionales més esteses
 
-REMOVE N IF (-1C N + MascSg) (0 N OR A + MascSg) (1 (",")) (2 A + MascSg)  (3 ("i") OR ("o")) (4 A + MascSg) ;
-REMOVE N IF (-1C N + FemSg) (0 N OR A + FemSg) (1 (",")) (2 A + FemSg)  (3 ("i") OR ("o")) (4 A + FemSg) ;
-REMOVE N IF (-1C N + MascPl) (0 N OR A + MascPl) (1 (",")) (2 A + MascPl)  (3 ("i") OR ("o")) (4 A + MascPl) ;
-REMOVE N IF (-1C N + FemPl) (0 N OR A + FemPl) (1 (",")) (2 A + FemPl)  (3 ("i") OR ("o")) (4 A + FemPl) ;
+REMOVE N IF (-1C N + &&ConcordaGN) (0 N OR A + &&ConcordaGN) (1 (",")) (2 A + &&ConcordaGN)  (3 ("i") OR ("o")) (4 A + &&ConcordaGN) ;
 	# ortografia francesa, llatina i grega
 
-REMOVE N IF (-3 N + MascSg) (-2 A + MascSg) (-1 ("i") OR ("o")) (0 A + MascSg) (NOT 1 A) ;
-REMOVE N IF (-3 N + FemSg) (-2 A + FemSg) (-1 ("i") OR ("o")) (0 A + FemSg) (NOT 1 A) ;
-REMOVE N IF (-3 N + MascPl) (-2 A + MascPl) (-1 ("i") OR ("o")) (0 A + MascPl) (NOT 1 A) ;
-REMOVE N IF (-3 N + FemPl) (-2 A + FemPl) (-1 ("i") OR ("o")) (0 A + FemPl) (NOT 1 A) ;
+REMOVE N IF (-3 N + &&ConcordaGN) (-2 A + &&ConcordaGN) (-1 ("i") OR ("o")) (0 A + &&ConcordaGN) (NOT 1 A) ;
 	# el seu caràcter màgic i religiós
 	# combustibles fòssils o centrals nuclears
 
@@ -1716,10 +1681,7 @@ SELECT A (-1 ("<dels>")) (0 ("gran") + Pl) (-2 CnjCoo) (-3 ("petit") + Pl) ;
 	## grans i petits, petits i grans, etc.
 
 SELECT A (0 ("millor") OR ("pitjor")) (0 A + &&ConcordaSP) (1 N + &&ConcordaSP) (NOT 1 PP) ;	# millor defensa, millor jugadora; millor conegut
-REMOVE N (-2 Det + Def + MascSg) (-1 ("millor") OR ("pitjor")) (-1C A + Sg) (NOT 0 N + MascSg) ;	# el millor era que...
-REMOVE N (-2 Det + Def + FemSg) (-1 ("millor") OR ("pitjor")) (-1C A + Sg) (NOT 0 N + FemSg) ;
-REMOVE N (-2 Det + Def + MascPl) (-1 ("millor") OR ("pitjor")) (-1C A + Pl) (NOT 0 N + MascPl) ;
-REMOVE N (-2 Det + Def + FemPl) (-1 ("millor") OR ("pitjor")) (-1C A + Pl) (NOT 0 N + FemPl) ;
+REMOVE N (-2 Det + Def + &&ConcordaGN) (-1 ("millor") OR ("pitjor")) (-1C A + Sg) (NOT 0 N + &&ConcordaGN) ;	# el millor era que...
 SELECT A (-1 ("millor") OR ("pitjor")) (0 A + &&ConcordaSP) (1C N + &&ConcordaSP) ;
 SELECT A (-1 ("millor") OR ("pitjor")) (0 ("nou") + &&ConcordaSP) (1 N + &&ConcordaSP) ;	# millor nou defensa, millor nova jugadora
 SELECT N (-1 ("millor") OR ("pitjor")) (-1C A + &&ConcordaSP) (0 N + &&ConcordaSP) ;		# millor defensa, millor jugadora
