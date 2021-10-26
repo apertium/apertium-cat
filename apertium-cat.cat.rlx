@@ -1406,6 +1406,10 @@ SELECT Num IF (0 ("<X>")) (1 ("república") OR ("congrés") OR ("conferència"))
 SELECT CnjCoo IF (-1 >>>) (0 ("<I>")) (NOT 1 Rpar OR <<< OR ("<aC>") OR ("<dC>")) ;
 SELECT Num IF (-1 >>>) (0 ("<I>")) (1 Rpar OR <<< OR <<< OR ("<aC>") OR ("<dC>")) ;
 
+SELECT Adv (-1* No LINK 1 ("en")) (0 Ni) (1 ("un")) (2 CM OR EOS OR Rel) ;
+SELECT CnjCoo (0 Ni) (1* Ni) ;
+SELECT CnjCoo (0 Ni) (-1* No OR Ni OR ("enlloc") OR ("enlloc no") OR ("mai") OR ("mai no") OR ("ningú") OR ("ningú no") OR ("cap") + Det OR ("cap") + Pron) ;
+
 SELECT Vblex IF (-1 Tn_nt) (0 N OR Vblex) (0 P3) ;
 	# això comporta
 SELECT Vblex IF (-1C Adv) (0C N OR Vblex) (1 Det) (2C N) ;
