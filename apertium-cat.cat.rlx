@@ -993,11 +993,11 @@ SELECT N IF (-1 ("ciutat")) (0 ("estat")) ;	# ciutat estat
 SELECT N IF (0 ("estat")) (1 De) (2 Top) ;	# estat de Nova York
 
 #SELECT Anar IF (0 ("anar") OR ("va")) (0 P3) (1 Inf) ;
-SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1/* Inf) ;
+SELECT Anar IF (0 ("<va>"i)) (1/* Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
 	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
-SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1 Adv) ;	# Va més ràpidament
-SELECT Anar IF (0C ("anar") OR ("va")) (0 P3) (1C PP) ;	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista
+SELECT Anar IF (0 ("<va>"i)) (1 Adv) ;	# Va més ràpidament
+SELECT Anar IF (0 ("<va>"i)) (1 PP) ;	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista ; com va vestit?
 SELECT Anar IF (0C ("anar") OR ("va")) (1C Ger) ;	# la pedra va caient
 SELECT Anar IF (0C ("anar") OR ("va")) (1 ("a") OR ("cap a") OR ("per") OR ("contra") OR ("a favor de")) ;
 SELECT Anar IF (-1 NP) (0C ("anar") OR ("va")) ;
