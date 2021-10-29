@@ -64,6 +64,7 @@ LIST Imp = (imp) ;
 LIST Inf = (inf) ;
 
 LIST PP = (pp) ;
+LIST PRI = (pri) ;
 LIST PRS = (prs) ;
 LIST PIS = (pis) ;
 LIST IFI = (ifi) ;
@@ -779,6 +780,7 @@ SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb)
 REMOVE Imp (*-1 Que BARRIER Cnj_Rel_End) (0C Verb) ;
 	# es preocupa que tots siguin reis
 REMOVE Imp (*-1 CnjAdv + ("<.* que>"r) BARRIER Cnj_Rel_End) (0C Verb) ;
+REMOVE PRI (*-1 ("abans que") OR ("després que") BARRIER Cnj_Rel_End) (0C Verb) (0 PRS) ;	# abans que mengem
 REMOVE Imp (*-1 ("com més") BARRIER Cnj_Rel_End) (0C Verb) ;
 REMOVE Imp (*-1 ("com menys") BARRIER Cnj_Rel_End) (0C Verb) ;
 	# com més petites siguin les partícules, més ...
