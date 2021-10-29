@@ -1570,6 +1570,8 @@ REMOVE N IF (-2C Noun_NP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara"
 REMOVE N IF (-3C Noun_Adj + &&ConcordaSP) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen gran sempre menja
 REMOVE N IF (-4 Noun_Adj + &&ConcordaSP) (-3 Adv_PreAdv) (-2C Noun_Adj_PP + &&ConcordaSP) (-1C Adv) (NOT -1 ("com") OR ("com ara")) (0 Verb + P3 + &&ConcordaSP) ;	# el nen molt gran sempre menja
 
+SELECT PP (-2 ("un")) (-1 ("vegada") OR ("cop") OR ("volta")) (0 PP + &&ConcordaGN) (1 Det + &&ConcordaGN) (2 N + &&ConcordaGN) ;	# una vegada fets els preparatius
+SELECT PP (-2 ("un")) (-1 ("vegada") OR ("cop") OR ("volta")) (0 PP + &&ConcordaGN) (1 CM) (2 Det + &&ConcordaGN) (3 N + &&ConcordaGN) ;	# una vegada fets, els preparatius
 REMOVE Noun_Adj_PP IF (-2 Det + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves fem tard
 REMOVE Noun_Adj_PP IF (-3 Det + &&ConcordaGN) (-2 Noun_Adj_PP + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves discrets fem tard
 REMOVE Noun_Adj_PP IF (-4 Det + &&ConcordaGN) (-3 Noun_Adj_PP + &&ConcordaGN) (-2 Adv_PreAdv) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves molt discrets fem tard
