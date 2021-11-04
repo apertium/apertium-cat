@@ -19,8 +19,6 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR1).autopgen.bin		\
 	$(LANG1)$(VAR2).autopgen.bin		\
 	$(LANG1)$(VAR3).autopgen.bin		\
-	$(LANG1)$(VAR1).autopgen-diacritics-vells.bin		\
-	$(LANG1)$(VAR1).autopgen-diacritics-nous.bin		\
 	$(LANG1)$(VAR1).rlx.bin	\
 	$(LANG1).prefs.rlx.bin \
 	$(LANG1).pre2017_prefs.rlx.bin
@@ -80,18 +78,16 @@ $(LANG1)$(VAR2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 $(LANG1)$(VAR3).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	lt-comp -a val_uni lr $< $@
 
-$(LANG1)$(VAR1).autopgen-diacritics-vells.bin: $(BASENAME).post-diacritics-vells.dix
-	lt-comp -a cat lr $< $@
-
-$(LANG1)$(VAR1).autopgen-diacritics-nous.bin: $(BASENAME).post-diacritics-nous.dix
-	lt-comp -a cat lr $< $@
-
 ###############################################################################
 ## Disambiguation rules
 ###############################################################################
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 	cg-comp $< $@
+
+###############################################################################
+## Variant preferences
+###############################################################################
 
 $(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
 	cg-comp $< $@
@@ -107,8 +103,6 @@ EXTRA_DIST=$(BASENAME).$(LANG1).metadix		\
 		$(BASENAME).$(LANG1).acx	\
 		$(BASENAME).$(LANG1).rlx	\
 		$(BASENAME).post-$(LANG1).dix	\
-		$(BASENAME).post-diacritics-vells.dix	\
-		$(BASENAME).post-diacritics-nous.dix	\
 		$(LANG1).prob			\
 		$(LANG1).preferences.xml \
 		modes.xml
@@ -143,8 +137,6 @@ install-data-local: install-modes
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).metadix $(DESTDIR)$(apertium_cat_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_cat_srcdir)
 	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_cat_srcdir)
-	$(INSTALL_DATA) $(BASENAME).post-diacritics-vells.dix $(DESTDIR)$(apertium_cat_srcdir)
-	$(INSTALL_DATA) $(BASENAME).post-diacritics-nous.dix $(DESTDIR)$(apertium_cat_srcdir)
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
