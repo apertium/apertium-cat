@@ -9144,7 +9144,7 @@
 09147. La indústria de l'energia eòlica en temps moderns va començar el 1979 amb la producció en sèrie de turbines de vent pels fabricants Kuriant, Vestas, Nordtank i Bonus
 09148. El continent asiàtic, com a conjunt, s'ha incorporat tardanament a la producció eòlica, però al final de la primera dècada del segle XXI, està superant en dinamisme el tradicional mercat europeu, i també el renovat mercat americà i s'ha unit a l'ús d'energia eòlica.
 09149. Si bé el Japó inicià a finals del segle XX les primeres instal·lacions eòliques, el ritme de creixement ha resultat molt pausat, gairebé tímid, malgrat disposar d'un fabricant propi, i reconegut, com és Mitsubishi.
-09150. La India, en canvi, ha seguit un creixement més sostingut, i en paral·lel al creixement mundial, donant l'oportunitat de crear una gran companyia pròpia de fabricació d'aerogeneradors, Suzlon.
+09150. L'Índia, en canvi, ha seguit un creixement més sostingut, i en paral·lel al creixement mundial, donant l'oportunitat de crear una gran companyia pròpia de fabricació d'aerogeneradors, Suzlon.
 09151. Degut a la falta de seguretat en l'existència de vent, l'energia eòlica no pot ser utilitzada com a única font d'energia elèctrica.
 09152. Per tant, per resoldre les caigudes en la producció d'energia eòlica, és indispensable un suport de les energies convencionals (centrals de carbó o de central de cicle combinat cicle combinat, per exemple, i més recentment les de carbó net)
 09153. A més, la variabilitat en la producció d'energia eòlica comporta dues conseqüències importants:
