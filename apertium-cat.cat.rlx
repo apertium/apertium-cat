@@ -1388,6 +1388,9 @@ REMOVE Ger IF (-2C Rel) (-1 Adv) (0 Ger LINK 0 Pers) ;
 
 #REMOVE Det IF (-1C/* Det) (0 Det OR A OR Pron) ;			# els altres, dels altres
 
+REMOVE Det IF (0 A OR Adv OR Pron) (1 CM OR EOS) ;	# son certs
+REMOVE Det IF (0 ("cert")) (1 ("que")) ;	# és cert que
+
 REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
 REMOVE N IF (-1 DetDef + Pl_strict) (0C N + Sg_strict OR Verb) ;
 	# els reis catalans els faig a partir de
@@ -1965,6 +1968,8 @@ SELECT Prep IF (0 ("durant")) (1 ("molt de temps") OR ("molts dies")) ;
 SELECT Prep IF (-1 >>>) (0 Segons) ;
 	# segons ell
 	# segons el xic
+SELECT Prep IF (-1 CM) (0 Segons) (1 NP OR unknownMajIni) ;
+SELECT Prep IF (-1 CM) (0 Segons) (1C Verb) ;
 REMOVE Prep IF (-1 Det + Def + Pl) (0 Segons) ;
 REMOVE A OR N IF (NOT -1 Det OR A) (0 Segons) (1 Det OR Ant OR Cog) ;
 REMOVE A OR N IF (NOT -2 N) (-1C A OR PP) (0 Segons) (1 Det OR Ant OR Cog) ;
