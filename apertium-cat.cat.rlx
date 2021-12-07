@@ -552,6 +552,7 @@ SELECT Top OR Al IF (-1 ("dins de") OR ("fora de")) ;	# fora d'Israel
 
 SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
+SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 
 SELECT Top IF (0 ("Aragó"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
 SELECT Top IF (0 ("Barcelona"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
