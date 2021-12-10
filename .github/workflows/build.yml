@@ -7,6 +7,5 @@ on:
   pull_request:
 
 jobs:
-  build:
-    call-workflow:
+  call-workflow:
     uses: apertium/github-actions/.github/workflows/monolingual-build.yml@master
