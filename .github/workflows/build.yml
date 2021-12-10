@@ -9,4 +9,4 @@ on:
 jobs:
   build:
     call-workflow:
-    uses: apertium/github-actions/.github/workflows/monolingual-build.yml
+    uses: apertium/github-actions/.github/workflows/monolingual-build.yml@master
