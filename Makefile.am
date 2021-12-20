@@ -20,7 +20,9 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR2).autopgen.bin		\
 	$(LANG1)$(VAR3).autopgen.bin		\
 	$(LANG1)$(VAR1).rlx.bin	\
-	$(LANG1).prefs.rlx.bin \
+	$(LANG1)$(VAR1).prefs.rlx.bin	\
+	$(LANG1)$(VAR2).prefs.rlx.bin	\
+	$(LANG1)$(VAR3).prefs.rlx.bin	\
 	$(LANG1).pre2017_prefs.rlx.bin
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
@@ -89,12 +91,17 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 ## Variant preferences
 ###############################################################################
 
-$(LANG1).prefs.rlx.bin: $(BASENAME).$(LANG1).prefs.rlx
+$(LANG1)$(VAR1).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR1).prefs.rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR2).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR2).prefs.rlx
+	cg-comp $< $@
+
+$(LANG1)$(VAR3).prefs.rlx.bin: $(BASENAME).$(LANG1)$(VAR3).prefs.rlx
 	cg-comp $< $@
 
 $(LANG1).pre2017_prefs.rlx.bin: $(BASENAME).$(LANG1).pre2017_prefs.rlx
 	cg-comp $< $@
-
 
 ###############################################################################
 ## Distribution

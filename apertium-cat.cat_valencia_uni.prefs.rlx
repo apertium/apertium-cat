@@ -1,0 +1,5 @@
+# Ignoring variables, pick variants applicable to cat_valencia_uni.
+
+DELIMITERS = ".";
+
+SELECT (v:possessius_u) ;
