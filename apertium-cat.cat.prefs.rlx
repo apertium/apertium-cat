@@ -10,5 +10,8 @@ DELIMITERS = ".";
 SELECT (v:pre2017)      IF (0 (VAR:pre2017)) ;
 REMOVE (v:pre2017) ;
 
-SELECT (v:possessius_u)      IF (0 (VAR:possessius_u)) ;
-REMOVE (v:possessius_u) ;
+SELECT (v:v_u)      IF (0 (VAR:v_u)) ;
+REMOVE (v:v_u) ;
+
+SELECT (v:accents_val)      IF (0 (VAR:accents_val)) ;
+REMOVE (v:accents_val) ;

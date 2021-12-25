@@ -2,7 +2,10 @@
 	<preference id="pre2017">
 		<description lang="cat">Diacrítics anteriors a 2017</description>
 	</preference>
-	<preference id="possessius_u">
-		<description lang="cat">Possessius amb u (meva -> meua)</description>
+	<preference id="v_u">
+		<description lang="cat">v -> u (meva -> meua)</description>
+	</preference>
+	<preference id="accents_val">
+		<description lang="cat">Accentuació valenciana</description>
 	</preference>
 </preferences>

@@ -2,4 +2,4 @@
 
 DELIMITERS = ".";
 
-SELECT (v:possessius_u) ;
+SELECT (v:v_u) ;
