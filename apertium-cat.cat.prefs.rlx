@@ -15,3 +15,6 @@ REMOVE (v:v_u) ;
 
 SELECT (v:accents_val)      IF (0 (VAR:accents_val)) ;
 REMOVE (v:accents_val) ;
+
+SELECT (v:numerals_val)      IF (0 (VAR:numerals_val)) ;
+REMOVE (v:numerals_val) ;
