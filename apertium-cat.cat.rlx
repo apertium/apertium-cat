@@ -560,6 +560,9 @@ SELECT Top IF (0 ("València"));	# opció per defecte si no s'ha pogut determina
 
 REMOVE Cog IF (0 ("He")) (1 PP) ;	# "He" amb majúscula pot ser un cognom i dóna molts problemes a inici de frase
 REMOVE Cog IF (0 ("Pompeu")) (NOT -1 Ant) ;
+REMOVE Ant IF (0 ("Europa")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
+REMOVE Ant IF (0 ("Àsia")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
+REMOVE Ant IF (0 ("Àfrica")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
 
 SELECT:marc_n N IF (0 ("marc")) (-1 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 SELECT:marc_n N IF (1 ("marc")) (0 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
