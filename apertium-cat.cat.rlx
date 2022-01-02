@@ -680,6 +680,7 @@ SELECT Itg (-1 ("preguntar") OR ("demanar") OR ("explicar")) (0 Rel OR Itg) ;	# 
 	# cal explicar com es fa
 
 SELECT Rel IF (-2 Noun_Adj) (-1 Prep) (0 ("què")) ;	# l'hora en què
+SELECT Rel IF (-3 Noun_Adj) (-2 CM) (-1 Prep) (0 ("què")) ;	# l'hora, en què
 
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1C N) ;
 SELECT Verb (-1 Rel OR CnjSub) (0C Verb OR N) (1 Det) (2C N) ;
