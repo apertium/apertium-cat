@@ -5,3 +5,4 @@ DELIMITERS = ".";
 SELECT (v:v_u) ;
 SELECT (v:accents_val) ;
 SELECT (v:numerals_val) ;
+SELECT (v:pronoms_val) ;
