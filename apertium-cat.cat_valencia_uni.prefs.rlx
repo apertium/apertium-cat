@@ -4,3 +4,4 @@ DELIMITERS = ".";
 
 SELECT (v:v_u) ;
 SELECT (v:pronoms_val) ;
+SELECT (v:verbs_val) ;
