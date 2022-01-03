@@ -2188,6 +2188,8 @@ SELECT Prep IF (0 Fins) (1 Det) (2 N) ;	# fins una estrella [no funcionava amb e
 SELECT N + Masc IF (-2 ("objecte") OR ("objectiu")) (-1 ("i")) (0 Fins) ;
 SELECT N + Masc IF (-2 ("objecte") OR ("objectiu")) (-1 ("i")) (0 Fi) ;
 SELECT N + Masc IF (-2 ("<fi>"i)) (-1 ("o")) (0 Fins) ;		# el fi o fins
+SELECT N + Masc IF (-1 Det + MascPl) (0 Fins) ;		# els fins
+SELECT N + Fem IF (-1 Det + FemPl) (0 Fins) ;		# els fins
 
 SELECT N IF (-2 ("<fruits>"i) OR ("<fruites>"i)) (-1 ("i")) (0 ("<llavors>"i)) ;
 SELECT N IF (2 ("<fruits>"i) OR ("<fruites>"i)) (1 ("i")) (0 ("<llavors>"i)) ;
