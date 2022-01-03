@@ -1545,6 +1545,8 @@ SELECT P1 IF (NOT -6 Prep) (-5 ("jo")) (-4 Adv) (-3 Adv) (-2 Pro) (-1 Pro) (0 Ve
 # NOM / VERB
 
 REMOVE Verb IF (-1 Det + Pos + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# la seva guarda personal
+REMOVE Verb + Pers IF (-2C Prep) (-1 Det + &&ConcordaGN) (0 N + &&ConcordaGN) ;		# amb el projecte
+REMOVE Verb + Pers IF (-1C Prep) (-1/* Det + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# pel projecte
 
 SELECT Verb IF (-2 ("es") + Pro) (-1 Pro) ;	# se la menja
 SELECT Verb IF (-1 PronPers + &&ConcordaGV) (0 Verb + &&ConcordaGV) ;			# tu estimes, ell estima	NO FUNCIONA
