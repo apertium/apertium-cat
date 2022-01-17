@@ -1845,6 +1845,9 @@ SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + FemPl) (-1C Adv) (0 A + FemPl LINK N
 REMOVE PP IF (-1 N + &&ConcordaGN) (0 ("obert") + &&ConcordaGN) (NOT 1 ("per") OR ("a")) ;
 REMOVE PP IF (-1 N + &&ConcordaGN) (0 ("tancat") + &&ConcordaGN) (NOT 1 ("per") OR ("a")) ;
 
+SELECT A + &&ConcordaGN IF (0 ("determinat") + &&ConcordaGN) (1 N + &&ConcordaGN) ;	# determinades regles
+SELECT V OR N + &&ConcordaGN IF (-1 ("determinat") + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# determinades regles
+
 # COORDINACIÓN
 
 # REMOVE A IF (0 A) (0 PP) (1 ("per")) ;	# millora sensiblment el cat>ita però afecta poc (i més aviat negativament) al cat>spa
