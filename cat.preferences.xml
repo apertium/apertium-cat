@@ -8,4 +8,13 @@
 	<preference id="accents_val">
 		<description lang="cat">Accentuació valenciana</description>
 	</preference>
+	<preference id="numerals_val">
+		<description lang="cat">Numerals valencians</description>
+	</preference>
+	<preference id="pronoms_val">
+		<description lang="cat">Combinacions de pronoms valencianes</description>
+	</preference>
+	<preference id="verbs_val">
+		<description lang="cat">Formes verbals valencianes</description>
+	</preference>
 </preferences>
