@@ -24,3 +24,6 @@ REMOVE (v:pronoms_val) ;
 
 SELECT (v:verbs_val)      IF (0 (VAR:verbs_val)) ;
 REMOVE (v:verbs_val) ;
+
+SELECT (v:lexic_val)      IF (0 (VAR:lexic_val)) ;
+REMOVE (v:lexic_val) ;
