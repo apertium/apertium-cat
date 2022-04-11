@@ -22,6 +22,6 @@ rev | sed -E 's/:<:|:/\t/'| rev |
 sort -t$'\t' -bk 2 |
 sed -E 's/(<[^ ]*>)([^\t]*\t.*)/\1\2\t\1/' |
 uniq -f 1 -D |
-awk -F $'\t' '{print $2 "   --------->   " $1}' > testvoc-errors.$LANG1.txt
+awk -F $'\t' '{print $2 "   --------->   " $1}' > duplicates.$LANG1.txt
 
 exit 0

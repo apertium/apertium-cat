@@ -17,4 +17,4 @@
 /.d
 /.deps
 /test/*-output.txt
-/dev/testvoc/testvoc-errors.*.txt
+/dev/testvoc/duplicates.*.txt
