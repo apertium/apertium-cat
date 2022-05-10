@@ -493,6 +493,8 @@ REMOVE (acr) IF (-1 BOS OR AllUpper) (0 ("<A>")) ;
 
 SELECT N IF (0 ("sant")) (1 NP) ;
 
+SELECT N IF (0 ("representant") + Sg) (1 A + Sg) ; #representant legal, comercial
+
 REMOVE NP IF (0 ("Serra") + FemSg) (-1/* Det + FemSg); # la Serra A...
 REMOVE NP IF (0 ("Mestre") + MascSg) (-1/* Det + MascSg); # el Mestre A...
 REMOVE NP IF (0 ("Mestre")) (1 ("internacional"));
