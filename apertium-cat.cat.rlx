@@ -587,9 +587,11 @@ REMOVE NP IF (0 ("Podem")) (1 Adv) (2 Adv) (3 Inf) ;
 
 SELECT NP IF (0 NP LINK NOT 0 Prep OR Pron OR Det OR Num) (-1 BOS)
 	(NOT 0 ("just") OR ("fort") OR ("bon") OR ("ben") OR ("fidel") OR ("<Nova>") OR ("<Mar>") OR ("<Van>") OR ("<Cal>")
-	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà") OR ("<Quart>")) ;
+	OR ("català") OR ("aragonès") OR ("espanyol") OR ("castellà") OR ("<Quart>") OR ("<Pla>")) ;
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1C Verb) ;		# Pujol diu
 #SELECT NP IF (0 NP) (0 N OR A) (-1 >>>) (1 Adv) (2C Verb) ;	# Pujol no diu
+
+REMOVE NP IF (0 ("Pla")) (1 ("de")) (2C N) ;	# Pla d'inversions
 
 SELECT N IF (-1 ("<santes>")) (0 ("<creus>")) ;
 SELECT N IF (-1 ("<Santes>")) (0 ("<Creus>")) ;
