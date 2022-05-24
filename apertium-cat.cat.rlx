@@ -500,6 +500,7 @@ REMOVE NP IF (0 ("Mestre") + MascSg) (-1/* Det + MascSg); # el Mestre A...
 REMOVE NP IF (0 ("Mestre")) (1 ("internacional"));
 
 
+REMOVE Cog IF (0 ("<XI>")) ;
 SELECT Ant IF (0 Ant) (1C Ant) ;
         # Rosa Maria
 SELECT Ant IF (-1 ("sant")) (0 Ant) (0 Cog OR Top) ;
