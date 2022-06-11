@@ -8,3 +8,4 @@ SELECT (v:numerals_val) ;
 SELECT (v:pronoms_val) ;
 SELECT (v:verbs_val) ;
 SELECT (v:lexic_val) ;
+SELECT (v:inf_indre) ;

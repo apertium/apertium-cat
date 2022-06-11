@@ -14,10 +14,13 @@
 	<preference id="pronoms_val">
 		<description lang="cat">Combinacions de pronoms valencianes</description>
 	</preference>
+	<preference id="lexic_val">
+		<description lang="cat">Lèxic valencià</description>
+	</preference>
 	<preference id="verbs_val">
 		<description lang="cat">Formes verbals valencianes</description>
 	</preference>
-	<preference id="lexic_val">
-		<description lang="cat">Lèxic valencià</description>
+	<preference id="inf_indre">
+		<description lang="cat">-enir -> -indre (venir -> vindre)</description>
 	</preference>
 </preferences>
