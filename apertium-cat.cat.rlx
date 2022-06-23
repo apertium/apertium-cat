@@ -498,10 +498,16 @@ SELECT N IF (0 ("representant") + Sg) (1 A + Sg) ; #representant legal, comercia
 REMOVE NP IF (0 ("Serra") + FemSg) (-1/* Det + FemSg); # la Serra A...
 REMOVE NP IF (0 ("Mestre") + MascSg) (-1/* Det + MascSg); # el Mestre A...
 REMOVE NP IF (0 ("Mestre")) (1 ("internacional"));
+REMOVE NP IF (0 ("Camp")) (1 ("de")) (2 ("Mart")) ;
+REMOVE NP IF (0 ("Cantó")) (1 ("de"));
+REMOVE NP IF (0 ("Illa")) (1 ("de"));
 REMOVE NP IF (0 ("Compromís")) (1 ("de"));
 REMOVE NP IF (0 ("Ciutadans")) (-1/* Det);
 REMOVE NP IF (0 ("Total")) (-1 BOS);
 
+
+REMOVE Cog IF (0 ("Virgili")) (NOT -1 Ant OR Cog OR ("i"));
+REMOVE Cog IF (0 ("Virgili")) (-1 ("i")) (NOT -2 Cog) ;
 
 REMOVE Cog IF (0 ("<XI>")) ;
 SELECT Ant IF (0 Ant) (1C Ant) ;
