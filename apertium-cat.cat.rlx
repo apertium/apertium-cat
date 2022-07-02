@@ -967,7 +967,7 @@ SELECT A IF (-1C Noun_Adj + MascSg) (0 ("<dur>"i)) ;	# el nucli dur del govern
 
 # en/n' (article personal)
 SELECT Det IF (0 ("el") + Det) (0 Pro) (1C Ant OR Cog) ;
-REMOVE Det IF (0 ("el") + Det) (0 Pro) ;
+REMOVE Det IF (0 ("el") + Det) (0 Pro) (0 Prep) ;
 
 # aquell
 SELECT Pron IF (0 ("aquell") + &&ConcordaGN) (1 PP + &&ConcordaGN) (NOT 1 Noun_Adj + &&ConcordaGN) ;	# aquells acostumats al clima / aquelles despeses
