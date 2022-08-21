@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Catalan], [2.10.2], [xavi.ivars@gmail.com], [apertium-cat], [https://wiki.apertium.org/wiki/Apertium-cat])
+AC_INIT([Apertium Catalan], [2.10.3], [xavi.ivars@gmail.com], [apertium-cat], [https://wiki.apertium.org/wiki/Apertium-cat])
 AM_INIT_AUTOMAKE
 
 PKG_CHECK_MODULES(APERTIUM, apertium >= 3.7.1)
