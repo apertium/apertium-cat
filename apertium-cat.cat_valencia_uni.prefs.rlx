@@ -6,3 +6,5 @@ SELECT (v:v_u) ;
 SELECT (v:pronoms_val) ;
 SELECT (v:verbs_val) ;
 SELECT (v:lexic_val) ;
+SELECT (v:motle) ;
+SELECT (v:redo) ;

@@ -28,5 +28,11 @@ REMOVE (v:verbs_val) ;
 SELECT (v:lexic_val)      IF (0 (VAR:lexic_val)) ;
 REMOVE (v:lexic_val) ;
 
+SELECT (v:motle)      IF (0 (VAR:motle)) ;
+REMOVE (v:motle) ;
+
+SELECT (v:redo)      IF (0 (VAR:redo)) ;
+REMOVE (v:redo) ;
+
 SELECT (v:inf_indre)      IF (0 (VAR:inf_indre)) ;
 REMOVE (v:inf_indre) ;
