@@ -11,3 +11,4 @@ SELECT (v:lexic_val) ;
 SELECT (v:motle) ;
 SELECT (v:redo) ;
 SELECT (v:inf_indre) ;
+SELECT (v:hui) ;

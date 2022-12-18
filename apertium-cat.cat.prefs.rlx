@@ -36,3 +36,6 @@ REMOVE (v:redo) ;
 
 SELECT (v:inf_indre)      IF (0 (VAR:inf_indre)) ;
 REMOVE (v:inf_indre) ;
+
+SELECT (v:hui)      IF (0 (VAR:hui)) ;
+REMOVE (v:hui) ;
