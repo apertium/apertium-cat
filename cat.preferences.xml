@@ -17,10 +17,37 @@
 	<preference id="lexic_val">
 		<description lang="cat">Lèxic valencià</description>
 	</preference>
+	<preference id="motle">
+		<description lang="cat">Lèxic: motlle -> motle (i similars)</description>
+	</preference>
+	<preference id="redo">
+		<description lang="cat">Lèxic: rodó -> redó (i similars)</description>
+	</preference>
+	<preference id="hui">
+		<description lang="cat">Lèxic: avui -> hui</description>
+	</preference>
 	<preference id="verbs_val">
-		<description lang="cat">Formes verbals valencianes</description>
+		<description lang="cat">Verbs: formes valencianes</description>
+	</preference>
+	<preference id="verbs_caient-caent">
+		<description lang="cat">Verbs: caient -> caent (i similars)</description>
+	</preference>
+	<preference id="verbs_correm-correguem">
+		<description lang="cat">Verbs: correm -> correguem</description>
+	</preference>
+	<preference id="verbs_mori-mora">
+		<description lang="cat">Verbs: mori -> mora</description>
+	</preference>
+	<preference id="verbs_mori-muira">
+		<description lang="cat">Verbs: mori -> muira</description>
+	</preference>
+	<preference id="verbs_vesteixo-vestisc">
+		<description lang="cat">Verbs: -isc (vesteixo -> vestisc)</description>
+	</preference>
+	<preference id="verbs_vesteixo-vist">
+		<description lang="cat">Verbs: formes pures (vesteixo -> vist)</description>
 	</preference>
 	<preference id="inf_indre">
-		<description lang="cat">-enir -> -indre (venir -> vindre)</description>
+		<description lang="cat">Verbs: infinitius en -indre (venir -> vindre)</description>
 	</preference>
 </preferences>

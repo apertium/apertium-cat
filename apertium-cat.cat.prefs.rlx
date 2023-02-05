@@ -7,35 +7,21 @@
 
 DELIMITERS = ".";
 
-SELECT (v:pre2017)      IF (0 (VAR:pre2017)) ;
-REMOVE (v:pre2017) ;
-
-SELECT (v:v_u)      IF (0 (VAR:v_u)) ;
-REMOVE (v:v_u) ;
-
-SELECT (v:accents_val)      IF (0 (VAR:accents_val)) ;
-REMOVE (v:accents_val) ;
-
-SELECT (v:numerals_val)      IF (0 (VAR:numerals_val)) ;
-REMOVE (v:numerals_val) ;
-
-SELECT (v:pronoms_val)      IF (0 (VAR:pronoms_val)) ;
-REMOVE (v:pronoms_val) ;
-
-SELECT (v:verbs_val)      IF (0 (VAR:verbs_val)) ;
-REMOVE (v:verbs_val) ;
-
-SELECT (v:lexic_val)      IF (0 (VAR:lexic_val)) ;
-REMOVE (v:lexic_val) ;
-
-SELECT (v:motle)      IF (0 (VAR:motle)) ;
-REMOVE (v:motle) ;
-
-SELECT (v:redo)      IF (0 (VAR:redo)) ;
-REMOVE (v:redo) ;
-
-SELECT (v:inf_indre)      IF (0 (VAR:inf_indre)) ;
-REMOVE (v:inf_indre) ;
-
-SELECT (v:hui)      IF (0 (VAR:hui)) ;
-REMOVE (v:hui) ;
+IFF (v:pre2017) (0 (VAR:pre2017)) ;
+IFF (v:v_u) (0 (VAR:v_u)) ;
+IFF (v:accents_val) (0 (VAR:accents_val)) ;
+IFF (v:numerals_val) (0 (VAR:numerals_val)) ;
+IFF (v:pronoms_val) (0 (VAR:pronoms_val)) ;
+IFF (v:verbs_val) (0 (VAR:verbs_val)) ;
+IFF (v:verbs_correm-correguem) (0 (VAR:verbs_correm-correguem)) ;
+IFF (v:verbs_caient-caent) (0 (VAR:verbs_caient-caent)) ;
+IFF (v:verbs_mori-mora) (0 (VAR:verbs_mori-mora)) ;
+IFF (v:verbs_mori-muira) (0 (VAR:verbs_mori-muira)) ;
+IFF (v:verbs_vesteixo-vestisc) (0 (VAR:verbs_vesteixo-vestisc)) ;
+IFF (v:verbs_vesteixo-vist) (0 (VAR:verbs_vesteixo-vist)) ;
+IFF (v:verbs_indre) (0 (VAR:verbs_indre)) ;
+IFF (v:lexic_val) (0 (VAR:lexic_val)) ;
+IFF (v:motle) (0 (VAR:motle)) ;
+IFF (v:nadar) (0 (VAR:nadar)) ;
+IFF (v:redo) (0 (VAR:redo)) ;
+IFF (v:hui) (0 (VAR:hui)) ;
