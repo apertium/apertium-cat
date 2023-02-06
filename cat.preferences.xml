@@ -29,9 +29,6 @@
 	<preference id="verbs_val">
 		<description lang="cat">Verbs: formes valencianes</description>
 	</preference>
-	<preference id="verbs_caient-caent">
-		<description lang="cat">Verbs: caient -> caent (i similars)</description>
-	</preference>
 	<preference id="verbs_correm-correguem">
 		<description lang="cat">Verbs: correm -> correguem</description>
 	</preference>

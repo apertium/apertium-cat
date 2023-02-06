@@ -5,7 +5,6 @@ DELIMITERS = ".";
 SELECT (v:v_u) ;
 SELECT (v:pronoms_val) ;
 SELECT (v:verbs_val) ;
-SELECT (v:verbs_caient-caent) ;
 SELECT (v:verbs_mori-mora) ;
 SELECT (v:verbs_vesteixo-vestisc) ;
 SELECT (v:lexic_val) ;
