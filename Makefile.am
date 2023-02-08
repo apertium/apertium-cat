@@ -44,26 +44,21 @@ $(LANG1)$(VAR1).automorf.bin: .deps/$(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1
 	apertium-validate-dictionary $<
 	apertium-genvdix cat $< >$@
 
-.deps/$(BASENAME).$(LANG1).val_gva.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
+.deps/$(BASENAME).$(LANG1).val.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
 	apertium-validate-dictionary $<
 	apertium-genvdix val_gva $< >$@
-
-.deps/$(BASENAME).$(LANG1).val_uni.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
-	apertium-validate-dictionary $<
-	apertium-genvdix val_uni $< >$@
 
 
 $(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).cat.dix
 	apertium-validate-dictionary $<
 	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
 
-$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val_gva.dix
+$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val.dix
 	apertium-validate-dictionary $<
 	lt-comp -v val_gva rl $< $@ $(BASENAME).$(LANG1).acx
 
-$(LANG1)$(VAR3).autogen.bin: .deps/$(BASENAME).$(LANG1).val_uni.dix
-	apertium-validate-dictionary $<
-	lt-comp -v val_uni rl $< $@ $(BASENAME).$(LANG1).acx
+$(LANG1)$(VAR3).autogen.bin: $(LANG1)$(VAR2).autogen.bin
+	cp $< $@
 
 $(LANG1)$(VAR1).autogen.att.gz: $(LANG1).autogen.bin
 	lt-print $< | gzip -9 -c -n > $@
