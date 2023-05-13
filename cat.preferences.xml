@@ -44,7 +44,7 @@
 	<preference id="verbs_vesteixo-vist">
 		<description lang="cat">Verbs: formes pures (vesteixo -> vist)</description>
 	</preference>
-	<preference id="inf_indre">
+	<preference id="verbs_indre">
 		<description lang="cat">Verbs: infinitius en -indre (venir -> vindre)</description>
 	</preference>
 </preferences>
