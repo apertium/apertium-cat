@@ -1333,6 +1333,10 @@ REMOVE PreDet IF (0 Tot + Det) (NOT 1 Det) ;			# de tota mena [cat-spa no té 't
 REMOVE Det IF (1C Verb + Pers) ;	# el va deixar
 REMOVE DetNT IF (1C Verb + Pers) ;	# el va deixar
 REMOVE Det IF (0 Det + Pos OR Pron + Pos) (1 CnjCoo);	# tenia la meva mà en la seva i semblava
+REMOVE Det IF (0 Pron + &&ConcordaSP) (1C Verb + Pers) (1 Verb + P3 + &&ConcordaSP) ;	# aquests han desaparegut
+REMOVE Det IF (0 Pron + &&ConcordaSP) (1C Adv OR Pro) (2C Verb + Pers) (2 Verb + P3 + &&ConcordaSP) ;	# aquests ja han desaparegut ; aquests li han dit
+REMOVE Det IF (0 Pron + &&ConcordaSP) (1C Adv OR Pro) (2C Adv OR Pro) (3 Verb + P3 + &&ConcordaSP) ;	# aquests ja li han dit
+
 
 SELECT Interj IF (0 ("adéu")) (NOT -1 Det OR A);
 
