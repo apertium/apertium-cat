@@ -1433,7 +1433,7 @@ REMOVE Ger IF (-2C Rel) (-1 Adv) (0 Ger LINK 0 Pers) ;
 
 #REMOVE Det IF (-1C/* Det) (0 Det OR A OR Pron) ;			# els altres, dels altres
 
-REMOVE Det IF (0 A OR Adv OR Pron) (1 CM OR EOS) ;	# son certs
+REMOVE Det IF (0 A OR Adv OR Pron) (0 ("cert")) (1 CM OR EOS) ;	# són certs
 REMOVE Det IF (0 ("cert")) (1 ("que")) ;	# és cert que
 
 REMOVE N IF (-1 DetDef + Sg_strict) (0C N + Pl_strict OR Verb) ;
