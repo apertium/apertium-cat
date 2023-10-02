@@ -16,3 +16,5 @@ SELECT (v:motle) ;
 SELECT (v:nadar) ;
 SELECT (v:redo) ;
 SELECT (v:hui) ;
+SELECT (v:este) ;
+SELECT (v:eixe) ;
