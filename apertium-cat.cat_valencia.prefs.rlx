@@ -1,0 +1,18 @@
+# Ignoring variables, pick variants applicable to cat_valencia_gva.
+
+DELIMITERS = ".";
+
+SELECT (v:v_u) ;
+SELECT (v:accents_val) ;
+SELECT (v:numerals_val) ;
+SELECT (v:pronoms_val) ;
+SELECT (v:verbs_val) ;
+SELECT (v:verbs_correm-correguem) ;
+SELECT (v:verbs_mori-muira) ;
+SELECT (v:verbs_vesteixo-vist) ;
+SELECT (v:verbs_indre) ;
+SELECT (v:lexic_val) ;
+SELECT (v:motle) ;
+SELECT (v:nadar) ;
+SELECT (v:redo) ;
+SELECT (v:hui) ;
