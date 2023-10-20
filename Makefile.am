@@ -76,8 +76,8 @@ $(LANG1)$(VAR1).automorf.att.gz: $(LANG1).automorf.bin
 $(LANG1)$(VAR1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	lt-comp -a cat lr $< $@
 
-$(LANG1)$(VAR2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
-	lt-comp -a val_gva lr $< $@
+$(LANG1)$(VAR2).autopgen.bin: $(LANG1)$(VAR3).autopgen.bin
+	cp $< $@
 
 $(LANG1)$(VAR3).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	lt-comp -a val_gva lr $< $@
