@@ -418,6 +418,7 @@ REMOVE:nom_propicomu NP IF (0 NomPropiComu) (NOT -1C (ant) OR (cog) OR unknownMa
 REMOVE:mar NP IF (0 ("mar")) (1 ("bàltic") OR ("mediterrani") OR ("negre"));
 REMOVE:marina NP IF (0 ("Marina")) (1 ("reial") OR ("mercant") OR ("britànic"));
 REMOVE:costa NP IF (0 ("Costa")) (1 ("blau") OR ("brau") OR ("blanc"));
+REMOVE:carlina NP IF (0 ("Carlina")) (-1 N + FemSg) ;	# Guerra Carlina
 REMOVE:li_nonompropi NP IF (0 ("Li")) (1 Verb + Pers) (NOT -1 MinIni) (NOT -1 (ant) OR (cog) OR unknownMajIni);
 
 # Per a evitar la traducció de cognoms
