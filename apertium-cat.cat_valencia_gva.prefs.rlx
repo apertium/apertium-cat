@@ -18,3 +18,4 @@ SELECT (v:redo) ;
 SELECT (v:hui) ;
 SELECT (v:este) ;
 SELECT (v:eixe) ;
+SELECT (v:verbs_incoatius) ;

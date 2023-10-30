@@ -27,6 +27,7 @@ IFF (v:redo) (0 (VAR:redo)) ;
 IFF (v:hui) (0 (VAR:hui)) ;
 IFF (v:este) (0 (VAR:este)) ;
 IFF (v:eixe) (0 (VAR:eixe)) ;
+IFF (v:verbs_incoatius) (0 (VAR:verbs_incoatius)) ;
 SELECT (v:aqueix_aquest) ;
 
 
