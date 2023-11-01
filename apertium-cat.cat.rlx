@@ -48,6 +48,7 @@ SET CM = (cm) OR (lpar) OR (rpar) OR ("<;>") ;
 LIST Guio = (guio) ;
 LIST Excl = "!" ;
 
+SET Nom_Adj = N OR A ;
 SET Verb = Vblex OR Vbmod OR Vbhaver OR Copula ;
 SET Cnj = CnjCoo OR CnjSub OR CnjAdv ;
 
@@ -561,9 +562,7 @@ REMOVE Cog IF (-1/* Det + Def + Sg) (0 Ant OR Top OR Al) ;
 SELECT Top IF (-2 ("anar") OR ("viatjar") OR ("tornar")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 SELECT Top IF (-2 ("anada") OR ("viatge") OR ("tornada") OR ("camí") OR ("vol")) (-1 ("a")) (0 Ant OR Cog OR Top) ;
 SELECT Top IF (-2 ("ser") OR ("viure") OR ("residir") OR ("treballar") OR ("publicar")) (-1 ("a")) ;	# és a Salamanca ; s'ha publicat a Salamaca
-REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (NOT -1/* Det) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0 Ant OR Cog OR Top) ;
-REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant OR Cog OR Top) ;
 SELECT Top IF (-2 NP) (-1 ("de")) (0 Ant OR Cog OR Top) ;
 SELECT Top OR Al IF (-1 ("fundar")) (0 Ant OR Cog OR Top OR Al) ;
 SELECT Top OR Al IF (-1 ("dins de") OR ("fora de")) ;	# fora d'Israel
@@ -572,9 +571,16 @@ SELECT Top IF (-2C Top) (-1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant);
 SELECT Top IF (2 Top) (1 CM OR CnjCoo) (0 Top) (0 Cog OR Ant) (NOT -1 Cog OR Ant);
 SELECT Top IF (-1 Lpar) (0 Cog) (1 Rpar);
 
-SELECT Top IF (0 ("Aragó"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
-SELECT Top IF (0 ("Barcelona"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
-SELECT Top IF (0 ("València"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+REMOVE Cog (-1 Nom_Adj + MascSg + MajIni) (0 ("Mitjà"));	# el Paleolític Mitjà
+SELECT Top IF (0 ("Guadalupe")) (NOT 1 Ant OR Cog) ;
+SELECT Top IF (-1/* Det + Def + MascSg) (0 ("Nil")) (NOT 1 Ant OR Cog) ;
+SELECT Top IF (NOT -1 Ant OR Cog) (0 ("Aragó"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (NOT -1 Ant OR Cog) (0 ("Barcelona"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (NOT -1 Ant OR Cog) (0 ("València"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (NOT -1 Ant OR Cog) (0 ("Labrador"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+SELECT Top IF (NOT -1 Ant OR Cog) (0 ("Terranova"));	# opció per defecte si no s'ha pogut determinar si era Top o Cog
+REMOVE Top IF (NOT -2 ("anar") OR ("viatjar")) (-1 ("a")) (NOT -1/* Det) (0C Ant OR Cog OR Top) ;
+REMOVE Top IF (NOT -3 ("anar") OR ("viatjar")) (-2 ("a")) (-1 Det + Def) (0C Ant OR Cog OR Top) ;
 
 REMOVE Cog IF (0 ("He")) (1 PP) ;	# "He" amb majúscula pot ser un cognom i dóna molts problemes a inici de frase
 REMOVE Cog IF (0 ("Pompeu")) (NOT -1 Ant) ;
@@ -651,7 +657,7 @@ SELECT N IF (-1 ("en")) (0 ("Català")) ;
 SELECT N IF (-1 ("en")) (0 ("Anglés") OR ("Anglès")) ;
 SELECT N IF (-1 ("en")) (0 ("Corts")) ;
 SELECT N IF (0 ("Just")) (1 ("entre")) (2 ("el")) (3 ("nació")) ;
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra") OR ("Gener") OR ("Abril") OR ("Germànic")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra") OR ("Gener") OR ("Abril") OR ("Germànic") OR ("Mitjà") OR ("Quaresma")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT NP IF (0 NP) (0 N OR A) (NOT -1 BOS OR N OR A OR Det OR (META:/["«“'‘]/r)) (1 AccionsPers + P3) ;		# a vegades Nadal diu
