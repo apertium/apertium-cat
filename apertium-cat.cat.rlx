@@ -1159,6 +1159,9 @@ SELECT So IF (0 So OR Son + Pl) ;
 
 SELECT N IF (0 ("prova")) (1 ("<reina>"i)) ;
 
+REMOVE Adv IF (0 ("entre d'altres")) (1 Nom_Adj + Pl) ;	# entre d'altres coses
+REMOVE SUB:1 Prep IF (0 ("entre d'altres")) (NOT 1 Nom_Adj + Pl) ;
+
 REMOVE N IF (-1C PreAdv) ;	# tan sol
 REMOVE Interj IF (-1C PreAdv) ;	# tan bé
 
