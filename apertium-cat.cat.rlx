@@ -1440,6 +1440,7 @@ SELECT A OR PP IF (-1 VAdj OR ("estimar")) (0C Noun_Adj_PP OR Ger) (NOT 1 Prep) 
 SELECT A IF (-1 VAdj OR ("estimar")) (0C Adj_PP) (NOT 1 Prep) ;			# sembla blanc/espavilat
 
 REMOVE Adv IF (0 A_la_meitat) (1 Adj_PP + FemSg) ;
+SELECT Adj_PP + FemSg IF (-1 ("<a la meitat>"i)) (0 Adj_PP + FemSg) ;
 SELECT Adv IF (0 A_la_meitat) (NOT 1 Adj_PP + FemSg) ;
 
 REMOVE Ger IF (-1C Rel) (0 Ger LINK 0 Pers) ;
