@@ -1899,6 +1899,9 @@ REMOVE PP IF (-1 N + &&ConcordaGN) (0 ("tancat") + &&ConcordaGN) (NOT 1 ("per") 
 SELECT A + &&ConcordaGN IF (0 ("determinat") + &&ConcordaGN) (1 N + &&ConcordaGN) ;	# determinades regles
 SELECT V OR N + &&ConcordaGN IF (-1 ("determinat") + &&ConcordaGN) (0 N + &&ConcordaGN) ;	# determinades regles
 
+SELECT A IF (-1 ("estar")) (0 ("embarassat") + Fem) ;
+SELECT A IF (-2 ("estar")) (-1 Adv) (0 ("embarassat") + Fem) ;
+
 # COORDINACIÓN
 
 # REMOVE A IF (0 A) (0 PP) (1 ("per")) ;	# millora sensiblment el cat>ita però afecta poc (i més aviat negativament) al cat>spa
