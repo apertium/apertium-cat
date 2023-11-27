@@ -1696,6 +1696,11 @@ REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN
 REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Copula) (NOT 1 ("estat")) (NOT -1 DetDef) ;
 REMOVE A OR PP IF (-2 Com) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 CM OR CnjCoo) (2 Barrera_Final_Estrict_SN) (NOT -1 DetDef) ;
 
+REMOVE Verb + Pers IF (-2 Vblex + Pers OR Vblex + Inf OR Vblex + Ger) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) ;	# organitzar la defensa
+REMOVE Verb + Pers IF (-3 Vblex + Pers OR Vblex + Inf) (-2 Adv OR Vblex + Ger) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) ;	# organitzar millor la defensa
+REMOVE Verb + Pers IF (-3 Haver) (-2 PP) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) ;	# ha organitzat la defensa
+REMOVE Verb + Pers IF (-4 Haver) (-2 PP) (-2 Adv) (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) ;	# ha organitzat millor la defensa
+
 SELECT N IF (-1 Det + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK NOT 0 NP) (1 <<< OR Prep OR Det) ;
 	# la ofensiva de pascua
 	# la política del gobierno (per error, es veu Det i no Prep)
