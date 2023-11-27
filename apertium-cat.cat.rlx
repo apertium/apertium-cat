@@ -822,6 +822,37 @@ SELECT Imp IF (-1 >>>) (0C Imp OR PRS OR PIS) ;					# vegeu la informació
 REMOVE Imp IF (0 ("portar")) (1 Ger) ;			# porten preparant-se
 
 # elección de subjuntivo después de "que"
+REMOVE PRS (-2 Tn + P2 + Sg) (-1 Que) (0 Verb + PRI + P2 + Sg) ;	# tu que portes el tema
+REMOVE PRS (-2 Tn + P3 + Sg) (-1 Que) (0 Verb + PRI + P3 + Sg) ;	# ell que porta el tema
+REMOVE PRS (-2 Tn + P1 + Pl) (-1 Que) (0 Verb + PRI + P1 + Pl) ;	# nosaltres que portem el tema
+REMOVE PRS (-2 Tn + P2 + Pl) (-1 Que) (0 Verb + PRI + P2 + Pl) ;	# vosaltres que porteu el tema
+REMOVE PRS (-2 Tn + P3 + Pl) (-1 Que) (0 Verb + PRI + P3 + Pl) ;	# ells que porten el tema
+REMOVE PRS (-3 Tn + P2 + Sg) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Sg) ;	# tu que li portes el tema
+REMOVE PRS (-3 Tn + P3 + Sg) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Sg) ;	# ell que li porta el tema
+REMOVE PRS (-3 Tn + P1 + Pl) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P1 + Pl) ;	# nosaltres que li portem el tema
+REMOVE PRS (-3 Tn + P2 + Pl) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Pl) ;	# vosaltres que li porteu el tema
+REMOVE PRS (-3 Tn + P3 + Pl) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Pl) ;	# ells que li porten el tema
+REMOVE PRS (-4 Tn + P2 + Sg) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Sg) ;	# tu que li ho portes
+REMOVE PRS (-4 Tn + P3 + Sg) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Sg) ;	# ell que li ho porta
+REMOVE PRS (-4 Tn + P1 + Pl) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P1 + Pl) ;	# nosaltres que li ho portem
+REMOVE PRS (-4 Tn + P2 + Pl) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Pl) ;	# vosaltres que li ho porteu
+REMOVE PRS (-4 Tn + P3 + Pl) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Pl) ;	# ells que li ho porten
+REMOVE PRS (-3 Tn + P2 + Sg) (-2 CM) (-1 Que) (0 Verb + PRI + P2 + Sg) ;	# tu, que portes el tema
+REMOVE PRS (-3 Tn + P3 + Sg) (-2 CM) (-1 Que) (0 Verb + PRI + P3 + Sg) ;	# ell, que porta el tema
+REMOVE PRS (-3 Tn + P1 + Pl) (-2 CM) (-1 Que) (0 Verb + PRI + P1 + Pl) ;	# nosaltres, que portem el tema
+REMOVE PRS (-3 Tn + P2 + Pl) (-2 CM) (-1 Que) (0 Verb + PRI + P2 + Pl) ;	# vosaltres, que porteu el tema
+REMOVE PRS (-3 Tn + P3 + Pl) (-2 CM) (-1 Que) (0 Verb + PRI + P3 + Pl) ;	# ells, que porten el tema
+REMOVE PRS (-4 Tn + P2 + Sg) (-3 CM) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Sg) ;	# tu, que li portes el tema
+REMOVE PRS (-4 Tn + P3 + Sg) (-3 CM) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Sg) ;	# ell, que li porta el tema
+REMOVE PRS (-4 Tn + P1 + Pl) (-3 CM) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P1 + Pl) ;	# nosaltres, que li portem el tema
+REMOVE PRS (-4 Tn + P2 + Pl) (-3 CM) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Pl) ;	# vosaltres, que li porteu el tema
+REMOVE PRS (-4 Tn + P3 + Pl) (-3 CM) (-2 Que) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Pl) ;	# ells, que li porten el tema
+REMOVE PRS (-5 Tn + P2 + Sg) (-4 CM) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Sg) ;	# tu, que li ho portes
+REMOVE PRS (-5 Tn + P3 + Sg) (-4 CM) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Sg) ;	# ell, que li ho porta
+REMOVE PRS (-5 Tn + P1 + Pl) (-4 CM) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P1 + Pl) ;	# nosaltres, que li ho portem
+REMOVE PRS (-5 Tn + P2 + Pl) (-4 CM) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P2 + Pl) ;	# vosaltres, que li ho porteu
+REMOVE PRS (-5 Tn + P3 + Pl) (-4 CM) (-3 Que) (-2 Pro OR Adv) (-1 Pro OR Adv) (0 Verb + PRI + P3 + Pl) ;	# ells, que li ho porten
+
 SELECT PRS (*-1 Que BARRIER Cnj_Rel_End) (*-1 VerbSubj LINK NOT 1 Inf) (0C Verb) (NOT 0 ("<poden>")) ;
 	# Compte: quiero decirle que me parece muy bien
 REMOVE Imp (*-1 Que BARRIER Cnj_Rel_End) (0C Verb) ;
