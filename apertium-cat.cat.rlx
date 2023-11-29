@@ -1500,9 +1500,13 @@ SELECT Num IF (0 Deu) (1 N) (2 ("abans") OR ("després")) ;
 SELECT Num IF (0 Deu) (1 A) (2 N) (3 ("abans") OR ("després")) ;
 SELECT Num IF (0 Deu) (1 N) (2 A) (3 ("abans") OR ("després")) ;
 
-SELECT Num IF (0 ("<I>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
-SELECT Num IF (0 ("<V>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
-SELECT Num IF (0 ("<X>")) (1 ("república") OR ("congrés") OR ("conferència")) ;
+SELECT Num IF (0 ("<I>")) (1 ("república") OR ("congrés") OR ("conferència") OR ("dinastia")) ;
+SELECT Num IF (0 ("<V>")) (1 ("república") OR ("congrés") OR ("conferència") OR ("dinastia")) ;
+SELECT Num IF (0 ("<X>")) (1 ("república") OR ("congrés") OR ("conferència") OR ("dinastia")) ;
+SELECT Num IF (0 ("<I>")) (-1 ("dinastia")) ;
+SELECT Num IF (0 ("<V>")) (-1 ("dinastia")) ;
+SELECT Num IF (0 ("<X>")) (-1 ("dinastia")) ;
+SELECT Num IF (0 ("<I>")) (1 CnjCoo) (2 ("<II>")) ;
 
 SELECT CnjCoo IF (-1 >>>) (0 ("<I>")) (NOT 1 Rpar OR <<< OR ("<aC>") OR ("<dC>")) ;
 SELECT Num IF (-1 >>>) (0 ("<I>")) (1 Rpar OR <<< OR <<< OR ("<aC>") OR ("<dC>")) ;
