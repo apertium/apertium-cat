@@ -19,4 +19,3 @@ SELECT (v:hui) ;
 SELECT (v:este) ;
 SELECT (v:eixe) ;
 SELECT (v:verbs_ix) ;
-SELECT (v:lexic_gva) ;
