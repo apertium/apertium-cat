@@ -2381,3 +2381,6 @@ REMOVE ("com ara") IF (0 ("com ara")) (1 Verb) (1 P1 OR P2 OR P3) (NOT 1 N OR PP
 REMOVE ("com ara") IF (0 ("com ara")) (1 Pron) (2 Verb) (2 P1 OR P2 OR P3);
 REMOVE ("com ara") IF (0 ("com ara")) (1 Pron) (2 Pron) (3 Verb) (3 P1 OR P2 OR P3);
 SELECT ("com ara") IF (0 ("com ara"));
+
+# romaní
+REMOVE A (0 ("romaní_gitano")) (0 ("romaní")) (NOT -1 N) ;
