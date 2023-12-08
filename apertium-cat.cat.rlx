@@ -950,6 +950,8 @@ REMOVE ("a fi de") IF (0 ("a fi de")) (NOT 1 Inf);
 SELECT Prep IF (0 ("al costat")) (1 A + MascSg);	# al costat nord
 REMOVE Prep IF (0 ("al costat"));
 
+# marina
+REMOVE ("marinar") IF (-1 N + &&ConcordaGN) (0 ("marí") + &&ConcordaGN) (NOT 1 Det) ;
 
 #animal
 REMOVE A IF (-1 Copula + P3 + Pl) (0 ("animal") + Pl);
