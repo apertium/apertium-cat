@@ -1830,11 +1830,12 @@ REMOVE Noun_Adj_PP IF (-1 Det + FemPl) (0 NP + FemPl) (1 Adj_PP + FemPl) ;
 # elimina la opción "adjetivo" de aquellos adjetivos que sólo pueden anteceder un nombre ("buen", "mal", etc.) y no están delante de uno
 REMOVE A IF (0 PreAdj) (NOT 1 N) ;
 
-REMOVE A OR PP IF (-2 Det + MascSg) (-1C A + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 Barrera_Final_SN OR Ant_Cog) ;
-REMOVE A OR PP IF (-2 Det + FemSg) (-1C A + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 Barrera_Final_SN OR Ant_Cog) ;
-REMOVE A OR PP IF (-2 Det + MascPl) (-1C A + MascPl) (0 Noun_Adj_PP + MascPl LINK 0 N OR NP) (1 Barrera_Final_SN OR Ant_Cog) ;
-REMOVE A OR PP IF (-2 Det + FemPl) (-1C A + FemPl) (0 Noun_Adj_PP + FemPl LINK 0 N OR NP) (1 Barrera_Final_SN OR Ant_Cog) ;
-## PERO: una densa doble capa de pelo
+REMOVE A OR PP IF (-2 Det + &&ConcordaGN) (-1C A + &&ConcordaGN) (0 Noun_Adj_PP + &&ConcordaGN LINK 0 N OR NP) (1 Barrera_Final_SN OR Ant_Cog LINK NOT 0 N + &&ConcordaGN) ;
+
+SELECT N + &&ConcordaGN IF (-2 Det + &&ConcordaGN) (-1C A + &&ConcordaGN) (0 N + &&ConcordaGN LINK NOT 0 Pro) ;	# els primers termes
+SELECT N + &&ConcordaGN IF (-2 Det + &&ConcordaGN) (-1 AdjPrefAmb + &&ConcordaGN) (0 N + &&ConcordaGN LINK NOT 0 Pro) ;	# els grans termes
+SELECT N + &&ConcordaGN IF (-3 Det + &&ConcordaGN) (-2 Num) (-1C A + &&ConcordaGN) (0 N + &&ConcordaGN LINK NOT 0 Pro) ;	# els vint primers termes
+SELECT N + &&ConcordaGN IF (-3 Det + &&ConcordaGN) (-2 Num) (-1 AdjPrefAmb + &&ConcordaGN) (0 N + &&ConcordaGN LINK NOT 0 Pro) ;	# els vint grans termes
 
 REMOVE A OR PP IF (-2 Det + MascSg) (-1C A + MascSg) (0 Noun_Adj_PP + MascSg LINK 0 N OR NP) (1 CM) (2 Barrera_Final_Estrict_SN) ;
 REMOVE A OR PP IF (-2 Det + FemSg) (-1C A + FemSg) (0 Noun_Adj_PP + FemSg LINK 0 N OR NP) (1 CM) (2 Barrera_Final_Estrict_SN) ;
