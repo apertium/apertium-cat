@@ -1943,6 +1943,8 @@ SELECT A IF (-3 Barrera_Inicial_SN) (-2 N + FemPl) (-1C Adv) (0 A + FemPl LINK N
 
 # ADJ O PP
 
+REMOVE A IF (-1/* Det + &&ConcordaGN) (0 PP + &&ConcordaGN) (1 ("per")) ;	# el definit per
+
 REMOVE PP IF (-1 N + &&ConcordaGN) (0 ("obert") + &&ConcordaGN) (NOT 1 ("per") OR ("a")) ;
 REMOVE PP IF (-1 N + &&ConcordaGN) (0 ("tancat") + &&ConcordaGN) (NOT 1 ("per") OR ("a")) ;
 
