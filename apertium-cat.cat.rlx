@@ -589,6 +589,10 @@ REMOVE Ant IF (0 ("Europa")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
 REMOVE Ant IF (0 ("Àsia")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
 REMOVE Ant IF (0 ("Àfrica")) (NOT -1 Det) (NOT -1 Ant_Cog) (NOT 1 Ant_Cog) ;
 
+SELECT Ant IF (0 ("Cràter")) (1 De) (2 ("Macedònia") OR ("<Orèstia>")) ;
+REMOVE Ant IF (0 ("Cràter")) (1 De) ;
+SELECT Ant IF (0 ("Cràter")) (NOT 1 De) ;
+
 SELECT:marc_n N IF (0 ("marc")) (-1 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 SELECT:marc_n N IF (1 ("marc")) (0 ("programa") OR ("conveni") OR ("acord") OR ("contracte") OR ("política") OR ("sistema") OR ("document") OR ("projecte"));
 REMOVE:pla_n NP IF (0 ("Pla")) (1 ("internacional") OR ("nacional") OR ("europeu") OR ("espanyol") OR ("català") OR ("valencià") OR ("balear") OR ("municipal") OR ("autonòmic"));
@@ -658,7 +662,7 @@ SELECT N IF (-1 ("en")) (0 ("Català")) ;
 SELECT N IF (-1 ("en")) (0 ("Anglés") OR ("Anglès")) ;
 SELECT N IF (-1 ("en")) (0 ("Corts")) ;
 SELECT N IF (0 ("Just")) (1 ("entre")) (2 ("el")) (3 ("nació")) ;
-SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra") OR ("Gener") OR ("Abril") OR ("Alemany") OR ("Germànic") OR ("Mitjà") OR ("Quaresma")) ;
+SELECT NP IF (0 NP) (NOT -1 >>>) (NOT 0 ("I") OR ("Sol") OR ("Nadal") OR ("Parlament") OR ("Consell") OR ("Guerra") OR ("Civil") OR ("Pla") OR ("Corona") OR ("Comte") OR ("Marquès") OR ("Príncep") OR ("Rei") OR ("Reis") OR ("Casa") OR ("Justícia") OR ("Batalla") OR ("Palau") OR ("Pau") OR ("Conca") OR ("Planeta") OR ("Terra") OR ("Gener") OR ("Abril") OR ("Alemany") OR ("Germànic") OR ("Mitjà") OR ("Quaresma") OR ("Cràter")) ;
 	# Exceptuem paraules que, per una raó o altra, es posen en majúscules sense ser NP
 
 SELECT A IF (-1 N + MajIni + &&ConcordaGN) (0 ("Alemany") + &&ConcordaGN) ;
