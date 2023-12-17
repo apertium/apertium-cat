@@ -657,6 +657,9 @@ REMOVE NP IF (0 ("<Set>")) (1 MajIni) ;
 REMOVE NP IF (-1 N + MajIni) (0 ("<Gai>")) ;		# Front d'Alliberament Gai
 REMOVE NP IF (0 ("<Gai>")) (1 ("saber")) ;
 
+SELECT Fem_strict IF (-1 ("<de>")) (0 ("guàrdia") + Sg) (NOT 1 Masc_strict) ;	# metge de guàrdia
+SELECT Fem_strict IF (NOT 1 Masc_strict) (0 ("guàrdia municipal")) (NOT 1 Fem_strict) ;
+
 SELECT A IF (-1 ("guàrdia")) (0 ("urbà") + FemSg) ;	# la Guàrdia Urbana
 SELECT N IF (-1 ("en")) (0 ("Català")) ;
 SELECT N IF (-1 ("en")) (0 ("Anglés") OR ("Anglès")) ;
