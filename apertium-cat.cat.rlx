@@ -1716,6 +1716,8 @@ REMOVE N IF (-1 ("romandre") LINK NOT 0 VSer) (0 Adj_PP) ;
 REMOVE P1 OR P2 OR P3 (-1C Estar) (0 N OR A OR Ger LINK 0 Pers) ;	# està subjecte a
 REMOVE N IF (-2 Estar LINK NOT 0 VSer) (-1C Adv OR PreAdv OR A) (0 Adj_PP) ;	# estan molt retallades ; estar mig retallades
 REMOVE N IF (-2 ("romandre") LINK NOT 0 VSer) (-1C Adv OR PreAdv OR A) (0 Adj_PP) ;
+SELECT A IF (-1 ("anar")) (0 ("gat")) ;
+SELECT A IF (-2 ("anar")) (-1 Adv) (0 ("gat")) ;
 
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
