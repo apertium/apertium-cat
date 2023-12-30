@@ -1036,6 +1036,9 @@ REMOVE Det IF (0 ("el") + Det) (0 Pro) (0 Prep) ;
 
 # aquell
 SELECT Pron IF (0 ("aquell") + &&ConcordaGN) (1 PP + &&ConcordaGN) (NOT 1 Noun_Adj + &&ConcordaGN) ;	# aquells acostumats al clima / aquelles despeses
+SELECT Pron IF (0 ("aquell")) (1C Prep OR Que) ;
+SELECT Pron IF (0 ("algun")) (1C Prep OR Que) ;
+SELECT Pron IF (0 ("un")) (1C Prep OR Que) ;
 
 # cap
 REMOVE Det IF (-1 Det + Sg) (0 ("cap") + Sg) ;
@@ -1167,8 +1170,8 @@ SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 PP) ;
 SELECT VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Adv) (2 PP) ;
 REMOVE VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Ger) ;
 REMOVE VSer IF (-1 Vbhaver) (0 ("ser") OR ("estar")) (1 Adv) (2 Ger) ;
-SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1 Det) ;
-	# han estat les de marxa atlètica
+SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1 Det) ;	# han estat les de marxa atlètica
+SELECT VSer IF (-1 Vbhaver) (0 ("<estat>")) (1C Pron + Tn) ;	# han estat aquells
 
 # caldre i calar (p.ex. calen)
 SELECT Calar IF (-1 Pro + Ref) (0C ("caldre") OR ("calar")) ;
@@ -1698,6 +1701,8 @@ SELECT PP (-2 ("un")) (-1 ("vegada") OR ("cop") OR ("volta")) (0 PP + &&Concorda
 REMOVE Noun_Adj_PP IF (-2 Det + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves fem tard
 REMOVE Noun_Adj_PP IF (-3 Det + &&ConcordaGN) (-2 Noun_Adj_PP + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves discrets fem tard
 REMOVE Noun_Adj_PP IF (-4 Det + &&ConcordaGN) (-3 Noun_Adj_PP + &&ConcordaGN) (-2 Adv_PreAdv) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves molt discrets fem tard
+REMOVE Noun_Adj_PP IF (-1C CnjAdv OR CnjSub LINK NOT 0 ("per exemple")) (0 Verb + Pers) ;	# si falla
+
 
 # NOM / ADJ
 
@@ -2335,6 +2340,9 @@ SELECT Pron IF (-1 Prep) (0 ("si")) (1 ("mateix")) ;	# depenent de si mateix/a/o
 SELECT Pron IF (-1 ("entre")) (0 ("si")) (NOT 1 Verb) ;	# tant entre si com amb companys
 SELECT Pron IF (-1 ("amb")) (0 ("si")) (NOT 1 Verb) ;
 SELECT Pron IF (-1 ("contra")) (0 ("si")) (NOT 1 Verb) ;
+REMOVE Pron IF (NOT -1 Prep) (0 ("si")) ;
+SELECT CnjAdv IF (0 ("si")) (1 ("i")) (2 ("només")) (3 ("si")) ;
+SELECT CnjAdv IF (-3 ("si")) (-2 ("i")) (-1 ("només")) (0 ("si")) ;
 
 SELECT Prep (0 ("entre")) (1 PreDet OR Det OR Num OR N OR NP OR Tn OR Inf OR Rel OR unknown OR A) ;
 SELECT Prep (0 ("entre")) (1 ("el que") OR ("el qual") OR ("<altres>")) ;
@@ -2385,6 +2393,7 @@ REMOVE Prep IF (0 ("tot i")) ;
 	# tot i les reivindicacions
 
 SELECT Prep IF (0/* N) (1 Det OR ("determinat")) ;	# tret de la presència; tret d'escopeta
+SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1C Pron + Tn) ;	# tret d'un dels dos
 SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1C Num) ;	# tret de dos
 SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1 NP OR unknownMajIni) ;
 SELECT Prep IF (0 ("tret de") OR ("llevat de")) (1 ("<excepcions>"i) OR ("<casos">i)) ;
