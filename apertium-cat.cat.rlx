@@ -1724,6 +1724,8 @@ REMOVE N IF (-2 ("romandre") LINK NOT 0 VSer) (-1C Adv OR PreAdv OR A) (0 Adj_PP
 SELECT A IF (-1 ("anar")) (0 ("gat")) ;
 SELECT A IF (-2 ("anar")) (-1 Adv) (0 ("gat")) ;
 
+REMOVE N IF (-2 ("altre") + Pl + &&ConcordaGN) (-1 ("<de>")) (0 A + &&ConcordaGN) ;	# altres de menors ; altres de nous
+
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1/* Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 EOS OR Prep OR Det OR CnjSub) ;
 REMOVE A OR PP IF (-1 Prep) (0 Noun_Adj_PP LINK 0 N OR NP) (NOT 0 Num OR ("passat") OR ("passada")) (1 CM) (2 Prep OR Det OR CnjSub OR CnjCoo) ;
