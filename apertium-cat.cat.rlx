@@ -946,6 +946,10 @@ SELECT:riu N IF (0 ("riu")) (1 MajIni OR unknownMajIni);
 #model
 SELECT:model MF IF (0 ("model")) (1 MajIni OR unknownMajIni);
 
+# nus
+REMOVE N + ("nu") IF (NOT -1 Pl_strict) (0 ("nus")) (NOT 1 Pl_strict) ;	# nus de comunicacions
+REMOVE A + ("nu") IF (NOT -1 Pl OR Adv OR PreAdv) (0 ("nus")) (NOT 1 Pl) ;
+
 #pes
 SELECT:pes ("pes") IF (NOT -1 Det + FemPl) (0 ("<pes>"i)) ;
 
@@ -1078,7 +1082,7 @@ SELECT Det IF (-2C Verb) (-1 Adv) (0 ("cap")) (1C A) (2C N) ;
 
 REMOVE N IF (0 ("sobretot")) (NOT -1/* Det) ;
 
-SELECT A IF (-1 ("pre") OR ("post")) (0 ("velar")) ;	# no normatiu, peròs es troba
+SELECT A IF (-1 ("pre") OR ("post")) (0 ("velar")) ;	# no normatiu, però es troba
 
 SELECT A IF (0 ("que ve")) (-1 DiaSetmana OR ("setmana") OR ("mes") OR ("any") OR ("dècada") OR ("segle") OR ("mil·leni")) ;
 REMOVE A IF (0 ("que ve")) ;
