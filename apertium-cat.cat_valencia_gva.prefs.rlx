@@ -20,3 +20,4 @@ SELECT (v:este) ;
 SELECT (v:eixe) ;
 SELECT (v:verbs_ix) ;
 SELECT (v:dos) ;
+SELECT (v:orde) ;

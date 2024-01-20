@@ -29,6 +29,7 @@ IFF (v:este) (0 (VAR:este)) ;
 IFF (v:eixe) (0 (VAR:eixe)) ;
 IFF (v:verbs_ix) (0 (VAR:verbs_ix)) ;
 IFF (v:dos) (0 (VAR:dos)) ;
+IFF (v:orde) (0 (VAR:orde)) ;
 SELECT (v:aqueix_aquest) ;
 
 
