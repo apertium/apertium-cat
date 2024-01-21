@@ -454,6 +454,11 @@ REMOVE:prep_det_VbN Verb + Pers IF (0 Verb + Pers) (-2C Prep) (-1 Det + FemPl) (
 REMOVE:deu_num N IF (0 ("deu")) (1 ("mil"));
 REMOVE:deu_num N IF (0 ("deu")) (-1 ("a") OR ("amb")) (-2 Num);
 
+# orde/ordre
+REMOVE ("orde") IF (0 ("orde")) (1 ("alfabètic") OR ("cronològic") OR ("socioecònomic") OR ("social") OR ("econòmic") OR ("públic"));
+REMOVE ("orde") IF (0 ("orde")) (1 ("de")) (2 ("registre") OR ("entrada"));
+REMOVE ("orde") IF (0 ("orde")) (-1 ("bon"));
+
 # sent (ser/sentir)
 SELECT Sentir IF (0 Copula) (1 ("dolor") OR ("mal") OR ("compassió") OR ("tristesa") OR ("tristor") OR ("alegria") OR ("simpatia") OR ("antipatia") OR ("enuig") OR ("amor") OR ("odi") OR ("aversió") OR ("por") OR ("temor") OR ("orgull") OR ("recança") OR ("remordiment") OR ("vergonya") OR ("fàstic") OR ("crit") + Pl OR ("veu") + Pl OR ("soroll") OR ("fressa")) ;
 REMOVE Sentir IF (0 Copula) (1 (".*tor"ri)) ;
@@ -2425,5 +2430,3 @@ SELECT ("com ara") IF (0 ("com ara"));
 # romaní
 REMOVE A (0 ("romaní_gitano")) (0 ("romaní")) (NOT -1 N) ;
 
-# orde/ordre
-remove ("orde") IF (0 ("orde")) (1 ("alfabètic") OR ("cronològic") OR ("socioecònomic") OR ("social") OR ("econòmic") OR ("públic"));
