@@ -2424,3 +2424,6 @@ SELECT ("com ara") IF (0 ("com ara"));
 
 # romaní
 REMOVE A (0 ("romaní_gitano")) (0 ("romaní")) (NOT -1 N) ;
+
+# orde/ordre
+remove ("orde") IF (0 ("orde")) (1 ("alfabètic") OR ("cronològic") OR ("socioecònomic") OR ("social") OR ("econòmic") OR ("públic"));
