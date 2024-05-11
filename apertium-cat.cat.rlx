@@ -1712,7 +1712,8 @@ SELECT PP (-2 ("un")) (-1 ("vegada") OR ("cop") OR ("volta")) (0 PP + &&Concorda
 REMOVE Noun_Adj_PP IF (-2 Det + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves fem tard
 REMOVE Noun_Adj_PP IF (-3 Det + &&ConcordaGN) (-2 Noun_Adj_PP + &&ConcordaGN) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves discrets fem tard
 REMOVE Noun_Adj_PP IF (-4 Det + &&ConcordaGN) (-3 Noun_Adj_PP + &&ConcordaGN) (-2 Adv_PreAdv) (-1 Noun_Adj_PP + &&ConcordaGN) (0 Verb + Pers OR Verb + Ger) (NOT 0 Noun_Adj_PP + &&ConcordaGN) ;	# amb els joves molt discrets fem tard
-REMOVE Noun_Adj_PP IF (-1C CnjAdv OR CnjSub LINK NOT 0 ("per exemple")) (0 Verb + Pers) ;	# si falla
+REMOVE Verb + Sg2 IF (-1C CnjAdv OR CnjSub OR ("així com") LINK NOT 0 ("per exemple")) (0 Verb + Sg2) (0 N + Pl) (1 De) ;	# així com barreges de diversos idiomes ; mentre que plantes d'extracció en produïen
+REMOVE Noun_Adj_PP IF (-1C CnjAdv OR CnjSub OR ("així com") LINK NOT 0 ("per exemple")) (0 Verb + Pers) ;	# si falla
 
 
 # NOM / ADJ
