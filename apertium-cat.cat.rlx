@@ -1333,6 +1333,8 @@ SELECT A IF (NOT -1 Det + FemSg) (0 ("quin") + FemSg) (1 N + FemSg) (2 Pro) (3 V
 SELECT A IF (NOT -1 Det + FemPl) (0 ("quin") + FemPl) (1 N + FemPl) (2 Pro) (3 Verb) (NOT 3 Copula) ;	# quines cases es diuen
 REMOVE N IF (-1 CM OR CnjCoo) (0 ("quina")) (-1* ("quin")) ;
 
+SELECT Pron IF (0 ("quin"i) + (prn itg)) (1 Prep + ("de"i)) ;
+
 SELECT N IF (-1 ("quin") + Fem) (0 ("massa")) ;
 SELECT N IF (0 ("massa")) (1 ("inercial") OR ("gravitacional")) ;
 SELECT N IF (-2 ("partícula")) (-1 Prep) (0 ("massa")) ;
