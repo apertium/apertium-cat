@@ -31,7 +31,7 @@ def word(e):
             word = part.text
     if word is None:
         p = e.find("p")
-        if p:
+        if p is not None:
             l = p.find("l")
             word = l.text
     if word is None:
@@ -42,22 +42,22 @@ def isMultiword(e):
     for part in e:
         if part.tag == "i":
             b = part.find("b")
-            if b:
+            if b is not None:
                 return True
     p = e.find("p")
-    if p:
+    if p is not None:
         l=p.find("l")
-        if l:
+        if l is not None:
             g = l.find("g")
-            if g:
+            if g is not None:
                 return True
             b = l.find("b")
             if b is not None:
                 return True
         r=p.find("r")
-        if r:
+        if r is not None:
             g = r.find("g")
-            if g:
+            if g is not None:
                 return True
             b = r.find("b")
             if b is not None:
@@ -88,11 +88,11 @@ for e in mainsection.iter(tag='e'):
     par = e.find('par')
     if par is None:
         p = e.find('p')
-        if p:
+        if p is not None:
             par = p.find('r').find('s')
         if par is None:
             i = e.find('i')
-            if i:
+            if i is not None:
                 par = i.find('s')
         if par is None:
             continue
