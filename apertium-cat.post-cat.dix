@@ -8,78 +8,30 @@
   <pardefs>
 
     <pardef n="caracter_general">
-      <e>
-        <i>;</i>
-      </e>
-      <e>
-        <i>#</i>
-      </e>
-      <e>
-        <i>)</i>
-      </e>
-      <e>
-        <i>:</i>
-      </e>
-      <e>
-        <i>(</i>
-      </e>
-      <e>
-        <i>[</i>
-      </e>
-      <e>
-        <i>]</i>
-      </e>
-      <e>
-        <i>"</i>
-      </e>
-      <e>
-        <i>'</i>
-      </e>
-      <e>
-        <i>*</i>
-      </e>
-      <e>
-        <i>@</i>
-      </e>
-      <e>
-        <i>«</i>
-      </e>
-      <e>
-        <i>-</i>
-      </e>
-      <e>
-        <i>,</i>
-      </e>
-      <e>
-        <i>?</i>
-      </e>
-      <e>
-        <i>/</i>
-      </e>
-      <e>
-        <i>`</i>
-      </e>
-      <e>
-        <i>±</i>
-      </e>
-      <e>
-        <i>­</i>
-      </e>
-      <e>
-        <i>$</i>
-      </e>
-      <e>
-        <i>)</i>
-      </e>
-      <e>
-        <i>:</i>
-      </e>
-      <e>
-        <i>.</i>
-      </e>
-      <e>
-        <i><b/></i>
-      </e>
+      <e><i>;</i></e>
+      <e><i>#</i></e>
+      <e><i>)</i></e>
+      <e><i>:</i></e>
+      <e><i>(</i></e>
+      <e><i>[</i></e>
+      <e><i>]</i></e>
+      <e><i>"</i></e>
+      <e><i>'</i></e>
+      <e><i>*</i></e>
+      <e><i>@</i></e>
+      <e><i>«</i></e>
+      <e><i>-</i></e>
+      <e><i>,</i></e>
+      <e><i>?</i></e>
+      <e><i>/</i></e>
+      <e><i>`</i></e>
+      <e><i>±</i></e>
+      <e><i>­</i></e>
+      <e><i>$</i></e>
+      <e><i>)</i></e>
+      <e><i>:</i></e>
+      <e><i>.</i></e>
+      <e><i><b/></i></e>
 
     </pardef>
 
@@ -99,180 +51,72 @@
 </pardef>
 
     <pardef n="numeros">
-      <e>
-        <i>1</i>
-      </e>
-      <e>
-        <i>2</i>
-      </e>
-      <e>
-        <i>3</i>
-      </e>
-      <e>
-        <i>4</i>
-      </e>
-      <e>
-        <i>5</i>
-      </e>
-      <e>
-        <i>6</i>
-      </e>
-      <e>
-        <i>7</i>
-      </e>
-      <e>
-        <i>8</i>
-      </e>
-      <e>
-        <i>9</i>
-      </e>
-      <e>
-        <i>0</i>
-      </e>
+      <e><i>1</i></e>
+      <e><i>2</i></e>
+      <e><i>3</i></e>
+      <e><i>4</i></e>
+      <e><i>5</i></e>
+      <e><i>6</i></e>
+      <e><i>7</i></e>
+      <e><i>8</i></e>
+      <e><i>9</i></e>
+      <e><i>0</i></e>
     </pardef>
 
     <pardef n="numeros_menys_1">
-      <e>
-        <i>2</i>
-      </e>
-      <e>
-        <i>3</i>
-      </e>
-      <e>
-        <i>4</i>
-      </e>
-      <e>
-        <i>5</i>
-      </e>
-      <e>
-        <i>6</i>
-      </e>
-      <e>
-        <i>7</i>
-      </e>
-      <e>
-        <i>8</i>
-      </e>
-      <e>
-        <i>9</i>
-      </e>
-      <e>
-        <i>0</i>
-      </e>
+      <e><i>2</i></e>
+      <e><i>3</i></e>
+      <e><i>4</i></e>
+      <e><i>5</i></e>
+      <e><i>6</i></e>
+      <e><i>7</i></e>
+      <e><i>8</i></e>
+      <e><i>9</i></e>
+      <e><i>0</i></e>
     </pardef>
 
     <pardef n="consonants_reduit">
-      <e>
-        <i>b</i>
-      </e>
-      <e>
-        <i>ç</i>
-      </e>
-      <e>
-        <i>f</i>
-      </e>
-      <e>
-        <i>g</i>
-      </e>
-      <e>
-        <i>j</i>
-      </e>
-      <e>
-        <i>k</i>
-      </e>
-      <e>
-        <i>m</i>
-      </e>
-      <e>
-        <i>n</i>
-      </e>
-      <e>
-        <i>p</i>
-      </e>
-      <e>
-        <i>q</i>
-      </e>
-      <e>
-        <i>r</i>
-      </e>
-      <e>
-        <i>t</i>
-      </e>
-      <e>
-        <i>v</i>
-      </e>
-      <e>
-        <i>w</i>
-      </e>
-      <e>
-        <i>x</i>
-      </e>
-      <e>
-        <i>y</i>
-      </e>
-      <!--<e>
-        <i>z</i>
-      </e>-->
+      <e><i>b</i></e>
+      <e><i>ç</i></e>
+      <e><i>f</i></e>
+      <e><i>g</i></e>
+      <e><i>j</i></e>
+      <e><i>k</i></e>
+      <e><i>m</i></e>
+      <e><i>n</i></e>
+      <e><i>p</i></e>
+      <e><i>q</i></e>
+      <e><i>r</i></e>
+      <e><i>t</i></e>
+      <e><i>v</i></e>
+      <e><i>w</i></e>
+      <e><i>x</i></e>
+      <e><i>y</i></e>
+      <!--<e><i>z</i></e>-->
     </pardef>
 
     <pardef n="consonant_menys_d">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>z</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+      <e><i>z</i></e>
     </pardef>
 
     <pardef n="consonant">
-      <e>
-        <par n="consonant_menys_d"/>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>ia</i>
-      </e>
-      <e>
-        <i>ie</i>
-      </e>
-      <e>
-        <i>io</i>
-      </e>
-      <e>
-        <i>iu</i>
-      </e>
-      <e>
-        <i>hia</i>
-      </e>
-      <e>
-        <i>hie</i>
-      </e>
-      <e>
-        <i>hio</i>
-      </e>
-      <e>
-        <i>hiu</i>
-      </e> 
-      <e>
-        <i>hui</i>
-      </e>
+      <e><par n="consonant_menys_d"/></e>
+      <e><i>d</i></e>
+      <e><i>ia</i></e>
+      <e><i>ie</i></e>
+      <e><i>io</i></e>
+      <e><i>iu</i></e>
+      <e><i>hia</i></e>
+      <e><i>hie</i></e>
+      <e><i>hio</i></e>
+      <e><i>hiu</i></e> 
+      <e><i>hui</i></e>
       <e><i>Haifa</i></e>
       <e><i>Heidelberg</i></e>
       <e><i>Hitchcock</i></e>
@@ -300,311 +144,112 @@
 
 
     <pardef n="vocals">
-      <e>
-        <i>a</i>
-      </e>
-      <e>
-        <i>e</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>o</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>é</i>
-      </e>
-      <e>
-        <i>í</i>
-      </e>
-      <e>
-        <i>ó</i>
-      </e>
-      <e>
-        <i>ú</i>
-      </e>
-      <e>
-        <i>à</i>
-      </e>
-      <e>
-        <i>á</i>
-      </e>
-      <e>
-        <i>è</i>
-      </e>
-      <e>
-        <i>ò</i>
-      </e>
+      <e><i>a</i></e>
+      <e><i>e</i></e>
+      <e><i>i</i></e>
+      <e><i>o</i></e>
+      <e><i>u</i></e>
+      <e><i>é</i></e>
+      <e><i>í</i></e>
+      <e><i>ó</i></e>
+      <e><i>ú</i></e>
+      <e><i>à</i></e>
+      <e><i>á</i></e>
+      <e><i>è</i></e>
+      <e><i>ò</i></e>
     </pardef>
 
     <pardef n="vocal_general">
-      <e>
-        <par n="vocals"/>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
-<!-- GRS: REVISAR SI TÉ SENTIT    <e>
-        <i>@</i>
-	<par n="consonant"/>
-      </e>
-      <e>
-        <i>@</i>
-	<par n="vocals"/>
-      </e>
+      <e><par n="vocals"/></e>
+      <e><i>h</i></e>
+<!-- GRS: REVISAR SI TÉ SENTIT    <e><i>@</i>
+	<par n="consonant"/></e>
+      <e><i>@</i>
+	<par n="vocals"/></e>
 -->
-      <e>
-        <i>1<b/></i>
-      </e>
-      <e>
-        <i>11<b/></i>
-      </e>
-      <e>
-        <i>1%</i>
-      </e>
-      <e>
-        <i>11%</i>
-      </e>
-      <e>
-        <i>I<b/></i>
-      </e>
-      <e>
-        <i>XI<b/></i>
-      </e>
-      <e>
-        <i>I</i>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <i>XI</i>
-        <par n="caracter_general"/>
-      </e> 
-      <e c="d'1.2 metres">
-        <i>1.</i>
-        <par n="numeros"/>
-        <par n="caracter_general"/>
-      </e>
-      <e c="d'11.2 metres">
-        <i>11.</i>
-        <par n="numeros"/>
-        <par n="caracter_general"/>
-      </e>
-      <e c="d'1.34 metres">
-        <i>1.</i>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <par n="caracter_general"/>
-      </e>
-      <e c="d'1.000.000 d'euros">
-        <i>1.</i>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <i>.</i>
-        <par n="numeros"/>
-        <par n="caracter_general"/>
-      </e>
-      <e c="d'11.34 metres">
-        <i>11.</i>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <par n="caracter_general"/>
-      </e>
+      <e><i>1<b/></i></e>
+      <e><i>11<b/></i></e>
+      <e><i>1%</i></e>
+      <e><i>11%</i></e>
+      <e><i>I<b/></i></e>
+      <e><i>XI<b/></i></e>
+      <e><i>I</i><par n="caracter_general"/></e>
+      <e><i>XI</i><par n="caracter_general"/></e> 
+      <e c="d'1.2 metres"><i>1.</i><par n="numeros"/><par n="caracter_general"/></e>
+      <e c="d'11.2 metres"><i>11.</i><par n="numeros"/><par n="caracter_general"/></e>
+      <e c="d'1.34 metres"><i>1.</i><par n="numeros"/><par n="numeros"/><par n="caracter_general"/></e>
+      <e c="d'1.000.000 d'euros"><i>1.</i><par n="numeros"/><par n="numeros"/><par n="numeros"/><i>.</i><par n="numeros"/><par n="caracter_general"/></e>
+      <e c="d'11.34 metres"><i>11.</i><par n="numeros"/><par n="numeros"/><par n="caracter_general"/></e>
 
-      <e c="d'1.000.000 d'euros">
-        <i>1.</i>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <i>.</i>
-        <par n="numeros"/>
-      </e>
-      <e c="d'11.000.000 d'euros">
-        <i>11.</i>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <par n="numeros"/>
-        <i>.</i>
-        <par n="numeros"/>
-      </e>
+      <e c="d'1.000.000 d'euros"><i>1.</i><par n="numeros"/><par n="numeros"/><par n="numeros"/><i>.</i><par n="numeros"/></e>
+      <e c="d'11.000.000 d'euros"><i>11.</i><par n="numeros"/><par n="numeros"/><par n="numeros"/><i>.</i><par n="numeros"/></e>
     </pardef>
 
 <pardef n="sigles">
 <!--consonants que comencen per vocal i s'han d'apostrofar si són la primera d'una sigla tipus d'FM-->
-      <e>
-        <i>F</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>H</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>L</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>M</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>N</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>R</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>S</i>
-        <par n="consonant"/>
-      </e>
+      <e><i>F</i><par n="consonant"/></e>
+      <e><i>H</i><par n="consonant"/></e>
+      <e><i>L</i><par n="consonant"/></e>
+      <e><i>M</i><par n="consonant"/></e>
+      <e><i>N</i><par n="consonant"/></e>
+      <e><i>R</i><par n="consonant"/></e>
+      <e><i>S</i><par n="consonant"/></e>
 </pardef>
 
 
     <pardef n="no_apostrofa">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <par n="vocals"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><par n="vocals"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>h</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
     </pardef>
 
     <pardef n="no_apostrofa_menys_d">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <par n="vocals"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><par n="vocals"/></e>
+      <e><i>c</i></e>
+      <e><i>h</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
     </pardef>
 
     <pardef n="consonantic">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>h</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+      <e><i>i</i></e>
+      <e><i>u</i></e>
     </pardef>
 
     <pardef n="no_apostrofa_menys_ie">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>a</i>
-      </e>
-      <e>
-        <i>o</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>ó</i>
-      </e>
-      <e>
-        <i>ú</i>
-      </e>
-      <e>
-        <i>à</i>
-      </e>
-      <e>
-        <i>á</i>
-      </e>
-      <e>
-        <i>ò</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>h</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+      <e><i>a</i></e>
+      <e><i>o</i></e>
+      <e><i>u</i></e>
+      <e><i>ó</i></e>
+      <e><i>ú</i></e>
+      <e><i>à</i></e>
+      <e><i>á</i></e>
+      <e><i>ò</i></e>
     </pardef>
 
     <pardef n="vocals_per_a_la">
@@ -633,153 +278,59 @@
       <e><i>FBI</i></e>
       <e><i>una</i></e>
 
-      <e>
-        <i>a</i>
-      </e>
-      <e>
-        <i>à</i>
-      </e>
-      <e>
-        <i>á</i>
-      </e>
-      <e>
-        <i>e</i>
-      </e>
-      <e>
-        <i>é</i>
-      </e>
-      <e>
-        <i>è</i>
-      </e>
-      <e>
-        <i>o</i>
-      </e>
-      <e>
-        <i>ó</i>
-      </e>
-      <e>
-        <i>ò</i>
-      </e>
-      <e>
-        <i>í</i>
-      </e>
-      <e>
-        <i>ha</i>
-      </e>
-      <e>
-        <i>he</i>
-      </e>
-      <e>
-        <i>ho</i>
-      </e>
-      <e>
-        <i>hà</i>
-      </e>
-      <e>
-        <i>há</i>
-      </e>
-      <e>
-        <i>hè</i>
-      </e>
-      <e>
-        <i>hò</i>
-      </e>
-      <e>
-        <i>hé</i>
-      </e>
-      <e>
-        <i>hí</i>
-      </e>
-      <e>
-        <i>hó</i>
-      </e>
-      <e>
-        <i>hú</i>
-      </e>
-      <e>
-        <i>ú</i>
-      </e>
+      <e><i>a</i></e>
+      <e><i>à</i></e>
+      <e><i>á</i></e>
+      <e><i>e</i></e>
+      <e><i>é</i></e>
+      <e><i>è</i></e>
+      <e><i>o</i></e>
+      <e><i>ó</i></e>
+      <e><i>ò</i></e>
+      <e><i>í</i></e>
+      <e><i>ha</i></e>
+      <e><i>he</i></e>
+      <e><i>ho</i></e>
+      <e><i>hà</i></e>
+      <e><i>há</i></e>
+      <e><i>hè</i></e>
+      <e><i>hò</i></e>
+      <e><i>hé</i></e>
+      <e><i>hí</i></e>
+      <e><i>hó</i></e>
+      <e><i>hú</i></e>
+      <e><i>ú</i></e>
     </pardef>
 
     <pardef n="vocal_general_menys_ae">
-      <e>
-        <i>à</i>
-      </e>
-      <e>
-        <i>á</i>
-      </e>
-      <e>
-        <i>è</i>
-      </e>
-      <e>
-        <i>é</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>í</i>
-      </e>
-      <e>
-        <i>o</i>
-      </e>
-      <e>
-        <i>ò</i>
-      </e>
-      <e>
-        <i>ó</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>ú</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
+      <e><i>à</i></e>
+      <e><i>á</i></e>
+      <e><i>è</i></e>
+      <e><i>é</i></e>
+      <e><i>i</i></e>
+      <e><i>í</i></e>
+      <e><i>o</i></e>
+      <e><i>ò</i></e>
+      <e><i>ó</i></e>
+      <e><i>u</i></e>
+      <e><i>ú</i></e>
+      <e><i>h</i></e>
     </pardef>
 
     <pardef n="vocal_general_menys_e">
-      <e>
-        <i>a</i>
-      </e>
-      <e>
-        <i>à</i>
-      </e>
-      <e>
-        <i>á</i>
-      </e>
-      <e>
-        <i>è</i>
-      </e>
-      <e>
-        <i>é</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>í</i>
-      </e>
-      <e>
-        <i>o</i>
-      </e>
-      <e>
-        <i>ò</i>
-      </e>
-      <e>
-        <i>ó</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>ú</i>
-      </e>
-      <e>
-        <i>h</i>
-      </e>
+      <e><i>a</i></e>
+      <e><i>à</i></e>
+      <e><i>á</i></e>
+      <e><i>è</i></e>
+      <e><i>é</i></e>
+      <e><i>i</i></e>
+      <e><i>í</i></e>
+      <e><i>o</i></e>
+      <e><i>ò</i></e>
+      <e><i>ó</i></e>
+      <e><i>u</i></e>
+      <e><i>ú</i></e>
+      <e><i>h</i></e>
     </pardef>
 
     <pardef n="consonants_per_a_la">
@@ -809,2602 +360,569 @@
       <e><i>usav</i></e>
       <e><i>usam</i></e>
 
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>h</i>
-        <par n="consonantic"/>
-      </e>
-      <e>
-        <i>Haifa</i>
-      </e>
-      <e>
-        <i>Heidelberg</i>
-      </e>
-      <e>
-        <i>Hollywood</i>
-      </e>
-      <e>
-        <i>hooligan</i>
-      </e>
-      <e>
-        <i>hacker</i>
-      </e>
-      <e>
-        <i>Houston</i>
-      </e>
-      <e>
-        <i>Händel</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+      <e><i>i</i></e>
+      <e><i>u</i></e>
+      <e><i>h</i><par n="consonantic"/></e>
+      <e><i>Haifa</i></e>
+      <e><i>Heidelberg</i></e>
+      <e><i>Hollywood</i></e>
+      <e><i>hooligan</i></e>
+      <e><i>hacker</i></e>
+      <e><i>Houston</i></e>
+      <e><i>Händel</i></e>
     </pardef>
 
     <pardef n="duplica_apostrofa_la">
-      <e>
-        <p>
-          <l>a<b/></l>
-          <r>'</r>
-        </p>
-        <par n="vocals_per_a_la"/>
-      </e>
-      <e>
-        <i>a<b/></i>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <i>a</i>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <p>
-          <l>a<b/><a/></l>
-          <r>a<b/></r>
-        </p>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <i>es<b/></i>
-      </e>
-      <e>
-        <i>i<b/></i>
-      </e>
+      <e><p><l>a<b/></l><r>'</r></p><par n="vocals_per_a_la"/></e>
+      <e><i>a<b/></i><par n="consonants_per_a_la"/></e>
+      <e><i>a</i><par n="consonants_per_a_la"/></e>
+      <e><p><l>a<b/><a/></l><r>a<b/></r></p><par n="consonants_per_a_la"/></e>
+      <e><i>es<b/></i></e>
+      <e><i>i<b/></i></e>
     </pardef>
 
     <pardef n="duplica_marcats_no_apostrofen">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros_menys_1"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>l</i>
-        <par n="duplica_apostrofa_la"/>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros_menys_1"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>s</i></e>
+      <e><i>l</i><par n="duplica_apostrofa_la"/></e>
     </pardef>
 
     <pardef n="duplica_contrac2_2">
-      <e>
-        <p>
-          <l/>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>de</l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
+      <e><p><l/><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>l<b/></r></p><par n="consonant"/></e>
+      <e><p><l><a/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><a/>de</l><r>l<b/></r></p><par n="consonant"/></e>
     </pardef>
 
     <pardef n="duplica_contrac_2">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <p>
-          <l>l<b/></l>
-          <r/>
-        </p>
-        <par n="duplica_contrac2_2"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>es<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>ll<b/></l>
-          <r><b/>ell<b/></r>
-        </p>
-      </e>
+      <e><i>ls<b/></i></e>
+      <e><p><l>l<b/></l><r/></p><par n="duplica_contrac2_2"/></e>
+      <e><p><l>m<b/></l><r><b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l>m<b/></l><r><b/>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l>t<b/></l><r><b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l>t<b/></l><r><b/>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l>s<b/></l><r><b/>s'</r></p><par n="vocal_general"/></e>
+      <e><p><l>s<b/></l><r><b/>es<b/></r></p><par n="consonant"/></e>
+      <e><p><l>ll<b/></l><r><b/>ell<b/></r></p></e>
     </pardef>
 
     <pardef n="duplica_de2">
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>de</r>
-        </p>
-        <par n="duplica_contrac_2"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="duplica_marcats_no_apostrofen"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>de</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>de</r></p><par n="duplica_contrac_2"/></e>
+      <e><p><l><b/><a/></l><r>d'</r></p><par n="vocal_general_menys_e"/></e>
+      <e><p><l><b/><a/></l><r>de<b/></r></p><par n="duplica_marcats_no_apostrofen"/></e>
+      <e><p><l/><r>de</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>de<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>d'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="duplica_contrac2">
-      <e>
-        <p>
-          <l><b/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>l</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant_menys_d"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>l<b/></r>
-        </p>
-        <par n="duplica_de2"/>
-      </e>
+      <e><p><l><b/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/></l><r>l<b/></r></p><par n="consonant"/></e>
+      <e><p><l/><r>l</r></p><par n="consonant"/></e>
+      <e><p><l><b/><a/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/></l><r>l<b/></r></p><par n="consonant_menys_d"/></e>
+      <e><p><l><b/><a/>de</l><r>l<b/></r></p><par n="duplica_de2"/></e>
     </pardef>
 
     <pardef n="duplica_contrac">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <p>
-          <l>l</l>
-          <r/>
-        </p>
-        <par n="duplica_contrac2"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <i>s<b/></i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>s</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>ll<b/></l>
-          <r><b/>ell<b/></r>
-        </p>
-      </e>
+      <e><i>ls<b/></i></e>
+      <e><p><l>l</l><r/></p><par n="duplica_contrac2"/></e>
+      <e><p><l>m<b/></l><r><b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l>m<b/></l><r><b/>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l>t<b/></l><r><b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l>t<b/></l><r><b/>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l>s<b/></l><r><b/>s'</r></p><par n="vocal_general"/></e>
+      <e><i>s<b/></i><par n="consonant"/></e>
+      <e><i>s</i><par n="consonant"/></e>
+      <e><p><l>ll<b/></l><r><b/>ell<b/></r></p></e>
     </pardef>
 
     <pardef n="duplica_de">
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>de</r>
-        </p>
-        <par n="duplica_contrac"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="duplica_marcats_no_apostrofen"/>
-      </e>
-   <!--   <e>
-        <p>
-          <l/>
-          <r>de</r>
-        </p>
-        <par n="consonant"/>
-      </e> eliminat per MG, canviava 'de a.' per 'de.'"-->
-      <e>
-        <p>
-          <l><b/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>de</r></p><par n="duplica_contrac"/></e>
+      <e><p><l><b/><a/></l><r>d'</r></p><par n="vocal_general_menys_e"/></e>
+      <e><p><l><b/><a/></l><r>de<b/></r></p><par n="duplica_marcats_no_apostrofen"/></e>
+   <!--   <e><p><l/><r>de</r></p><par n="consonant"/></e> eliminat per MG, canviava 'de a.' per 'de.'"-->
+      <e><p><l><b/></l><r>de<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>d'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="marcats_per_a_la">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <p>
-          <l>de</l>
-          <r/>
-        </p>
-        <par n="duplica_de"/>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>
-      <e>
-        <i>h</i>
-        <par n="consonantic"/>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><p><l>de</l><r/></p><par n="duplica_de"/></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+      <e><i>i</i></e>
+      <e><i>u</i></e>
+      <e><i>h</i><par n="consonantic"/></e>
     </pardef>
 
     <pardef n="consonants_per_a_la_menys_d">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-<!--      <e>
-        <i>i</i>
-      </e>
-      <e>
-        <i>u</i>
-      </e>-->
-      <e>
-        <i>h</i>
-        <par n="consonantic"/>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>l</i></e>
+      <e><i>s</i></e>
+<!--      <e><i>i</i></e>
+      <e><i>u</i></e>-->
+      <e><i>h</i><par n="consonantic"/></e>
     </pardef>
 
     <pardef n="apostrofa_la">
-      <e>
-        <p>
-          <l>a<b/></l>
-          <r>'</r>
-        </p>
-        <par n="vocals_per_a_la"/>
-      </e>
-      <e>
-        <i>a<b/></i>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <i>a</i>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <p>
-          <l>a<b/><a/></l>
-          <r>a<b/></r>
-        </p>
-        <par n="marcats_per_a_la"/>
-      </e>
-      <e>
-        <i>es<b/></i>
-      </e>
-      <e>
-        <i>i<b/></i>
-      </e>
+      <e><p><l>a<b/></l><r>'</r></p><par n="vocals_per_a_la"/></e>
+      <e><i>a<b/></i><par n="consonants_per_a_la"/></e>
+      <e><i>a</i><par n="consonants_per_a_la"/></e>
+      <e><p><l>a<b/><a/></l><r>a<b/></r></p><par n="marcats_per_a_la"/></e>
+      <e><i>es<b/></i></e>
+      <e><i>i<b/></i></e>
     </pardef>
 
     <pardef n="no_apostrofat_blanc_menys_ae">
-      <e>
-        <p>
-          <l>i</l>
-          <r><b/>i</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>o</l>
-          <r><b/>o</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>u</l>
-          <r><b/>u</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>à</l>
-          <r><b/>à</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>á</l>
-          <r><b/>á</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>í</l>
-          <r><b/>í</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>ú</l>
-          <r><b/>ú</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>ó</l>
-          <r><b/>ó</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>ò</l>
-          <r><b/>ò</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>è</l>
-          <r><b/>è</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>é</l>
-          <r><b/>é</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>b</l>
-          <r><b/>b</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>c</l>
-          <r><b/>c</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>ç</l>
-          <r><b/>ç</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>d</l>
-          <r><b/>d</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>f</l>
-          <r><b/>f</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>g</l>
-          <r><b/>g</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>h</l>
-          <r><b/>h</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>j</l>
-          <r><b/>j</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>k</l>
-          <r><b/>k</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>m</l>
-          <r><b/>m</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>n</l>
-          <r><b/>n</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>p</l>
-          <r><b/>p</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>q</l>
-          <r><b/>q</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>r</l>
-          <r><b/>r</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>s</l>
-          <r><b/>s</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>t</l>
-          <r><b/>t</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>v</l>
-          <r><b/>v</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>w</l>
-          <r><b/>w</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>x</l>
-          <r><b/>x</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>y</l>
-          <r><b/>y</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>z</l>
-          <r><b/>z</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>l</l>
-          <r><b/>l</r>
-        </p>
-        <par n="apostrofa_la"/>
-      </e>
-      <e>
-        <p>
-          <l>1</l>
-          <r><b/>1</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>2</l>
-          <r><b/>2</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>3</l>
-          <r><b/>3</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>4</l>
-          <r><b/>4</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>5</l>
-          <r><b/>5</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>6</l>
-          <r><b/>6</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>7</l>
-          <r><b/>7</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>8</l>
-          <r><b/>8</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>9</l>
-          <r><b/>9</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>0</l>
-          <r><b/>0</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>'</l>
-          <r><b/>'</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>*</l>
-          <r><b/>*</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>@</l>
-          <r><b/>@</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>#</l>
-          <r><b/>#</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>"</l>
-          <r><b/>"</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>-</l>
-          <r><b/>-</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>,</l>
-          <r><b/>,</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>;</l>
-          <r><b/>;</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>?</l>
-          <r><b/>?</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>«</l>
-          <r><b/>«</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>`</l>
-          <r><b/>`</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>)</l>
-          <r><b/>)</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>:</l>
-          <r><b/>:</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>(</l>
-          <r><b/>(</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>±</l>
-          <r><b/>±</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>­</l>
-          <r><b/>­</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>/</l>
-          <r><b/>/</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>)</l>
-          <r><b/><b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>$</l>
-          <r><b/>$</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>[</l>
-          <r><b/>[</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>]</l>
-          <r><b/>]</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>.</l>
-          <r><b/>.</r>
-        </p>
-      </e>
+      <e><p><l>i</l><r><b/>i</r></p></e>
+      <e><p><l>o</l><r><b/>o</r></p></e>
+      <e><p><l>u</l><r><b/>u</r></p></e>
+      <e><p><l>à</l><r><b/>à</r></p></e>
+      <e><p><l>á</l><r><b/>á</r></p></e>
+      <e><p><l>í</l><r><b/>í</r></p></e>
+      <e><p><l>ú</l><r><b/>ú</r></p></e>
+      <e><p><l>ó</l><r><b/>ó</r></p></e>
+      <e><p><l>ò</l><r><b/>ò</r></p></e>
+      <e><p><l>è</l><r><b/>è</r></p></e>
+      <e><p><l>é</l><r><b/>é</r></p></e>
+      <e><p><l>b</l><r><b/>b</r></p></e>
+      <e><p><l>c</l><r><b/>c</r></p></e>
+      <e><p><l>ç</l><r><b/>ç</r></p></e>
+      <e><p><l>d</l><r><b/>d</r></p></e>
+      <e><p><l>f</l><r><b/>f</r></p></e>
+      <e><p><l>g</l><r><b/>g</r></p></e>
+      <e><p><l>h</l><r><b/>h</r></p></e>
+      <e><p><l>j</l><r><b/>j</r></p></e>
+      <e><p><l>k</l><r><b/>k</r></p></e>
+      <e><p><l>m</l><r><b/>m</r></p></e>
+      <e><p><l>n</l><r><b/>n</r></p></e>
+      <e><p><l>p</l><r><b/>p</r></p></e>
+      <e><p><l>q</l><r><b/>q</r></p></e>
+      <e><p><l>r</l><r><b/>r</r></p></e>
+      <e><p><l>s</l><r><b/>s</r></p></e>
+      <e><p><l>t</l><r><b/>t</r></p></e>
+      <e><p><l>v</l><r><b/>v</r></p></e>
+      <e><p><l>w</l><r><b/>w</r></p></e>
+      <e><p><l>x</l><r><b/>x</r></p></e>
+      <e><p><l>y</l><r><b/>y</r></p></e>
+      <e><p><l>z</l><r><b/>z</r></p></e>
+      <e><p><l>l</l><r><b/>l</r></p><par n="apostrofa_la"/></e>
+      <e><p><l>1</l><r><b/>1</r></p></e>
+      <e><p><l>2</l><r><b/>2</r></p></e>
+      <e><p><l>3</l><r><b/>3</r></p></e>
+      <e><p><l>4</l><r><b/>4</r></p></e>
+      <e><p><l>5</l><r><b/>5</r></p></e>
+      <e><p><l>6</l><r><b/>6</r></p></e>
+      <e><p><l>7</l><r><b/>7</r></p></e>
+      <e><p><l>8</l><r><b/>8</r></p></e>
+      <e><p><l>9</l><r><b/>9</r></p></e>
+      <e><p><l>0</l><r><b/>0</r></p></e>
+      <e><p><l>'</l><r><b/>'</r></p></e>
+      <e><p><l>*</l><r><b/>*</r></p></e>
+      <e><p><l>@</l><r><b/>@</r></p></e>
+      <e><p><l>#</l><r><b/>#</r></p></e>
+      <e><p><l>"</l><r><b/>"</r></p></e>
+      <e><p><l>-</l><r><b/>-</r></p></e>
+      <e><p><l>,</l><r><b/>,</r></p></e>
+      <e><p><l>;</l><r><b/>;</r></p></e>
+      <e><p><l>?</l><r><b/>?</r></p></e>
+      <e><p><l>«</l><r><b/>«</r></p></e>
+      <e><p><l>`</l><r><b/>`</r></p></e>
+      <e><p><l>)</l><r><b/>)</r></p></e>
+      <e><p><l>:</l><r><b/>:</r></p></e>
+      <e><p><l>(</l><r><b/>(</r></p></e>
+      <e><p><l>±</l><r><b/>±</r></p></e>
+      <e><p><l>­</l><r><b/>­</r></p></e>
+      <e><p><l>/</l><r><b/>/</r></p></e>
+      <e><p><l>)</l><r><b/><b/></r></p></e>
+      <e><p><l>$</l><r><b/>$</r></p></e>
+      <e><p><l>[</l><r><b/>[</r></p></e>
+      <e><p><l>]</l><r><b/>]</r></p></e>
+      <e><p><l>.</l><r><b/>.</r></p></e>
     </pardef>
 
     <pardef n="no_apostrofat_blanc_menys_e">
-      <e>
-        <par n="no_apostrofat_blanc_menys_ae"/>
-      </e>
-      <e>
-        <p>
-          <l>a</l>
-          <r><b/>a</r>
-        </p>
-      </e>
+      <e><par n="no_apostrofat_blanc_menys_ae"/></e>
+      <e><p><l>a</l><r><b/>a</r></p></e>
     </pardef>
 
     <pardef n="marcats_no_apostrofen">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros_menys_1"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>c</i>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
-      <e>
-        <i>s</i>
-      </e>
-      <e>
-        <i>l</i>
-        <par n="apostrofa_la"/>
-      </e>
-    <!--  <e>
-        <i>io</i>
-      </e> mireia -->
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros_menys_1"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>c</i></e>
+      <e><i>d</i></e>
+      <e><i>s</i></e>
+      <e><i>l</i><par n="apostrofa_la"/></e>
+    <!--  <e><i>io</i></e> mireia -->
 
     </pardef>
 
     <pardef n="consonant_menys_s_reduit">
-      <e>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <par n="numeros_menys_1"/>
-      </e>
-      <e>
-        <par n="consonants_reduit"/>
-      </e>
-      <e>
-        <i>d</i>
-      </e>
+      <e><par n="caracter_general"/></e>
+      <e><par n="numeros_menys_1"/></e>
+      <e><par n="consonants_reduit"/></e>
+      <e><i>d</i></e>
     </pardef>
 
     <pardef n="consonant_menys_s">
-      <e>
-        <par n="consonant_menys_s_reduit"/>
-      </e>
-      <e>
-        <i>l</i>
-      </e>
+      <e><par n="consonant_menys_s_reduit"/></e>
+      <e><i>l</i></e>
     </pardef>
 
     <pardef n="consonant_menys_s_marcat">
-      <e>
-        <par n="consonant_menys_s_reduit"/>
-      </e>
-      <e>
-        <i>l</i>
-        <par n="apostrofa_la"/>
-      </e>
+      <e><par n="consonant_menys_s_reduit"/></e>
+      <e><i>l</i><par n="apostrofa_la"/></e>
     </pardef>
 
     <pardef n="contrac2_2">
-      <e>
-        <p>
-          <l/>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>de</l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
+      <e><p><l/><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>l<b/></r></p><par n="consonant"/></e>
+      <e><p><l><a/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><a/>de</l><r>l<b/></r></p><par n="consonant"/></e>
     </pardef>
 
     <pardef n="contrac_2">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <p>
-          <l>l<b/></l>
-          <r/>
-        </p>
-        <par n="contrac2_2"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>es<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>ll<b/></l>
-          <r><b/>ell<b/></r>
-        </p>
-      </e>
+      <e><i>ls<b/></i></e>
+      <e><p><l>l<b/></l><r/></p><par n="contrac2_2"/></e>
+      <e><p><l>m<b/></l><r><b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l>m<b/></l><r><b/>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l>t<b/></l><r><b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l>t<b/></l><r><b/>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l>s<b/></l><r><b/>s'</r></p><par n="vocal_general"/></e>
+      <e><p><l>s<b/></l><r><b/>es<b/></r></p><par n="consonant"/></e>
+      <e><p><l>ll<b/></l><r><b/>ell<b/></r></p></e>
     </pardef>
 
     <pardef n="de2">
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>de</r>
-        </p>
-        <par n="contrac_2"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general_menys_ae"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>a</l>
-          <r/>
-        </p>
-        <par n="duplica_de"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="marcats_no_apostrofen"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>de</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>de</r></p><par n="contrac_2"/></e>
+      <e><p><l><b/><a/></l><r>d'</r></p><par n="vocal_general_menys_ae"/></e>
+      <e><p><l><b/><a/>a</l><r/></p><par n="duplica_de"/></e>
+      <e><p><l><b/><a/></l><r>de<b/></r></p><par n="marcats_no_apostrofen"/></e>
+      <e><p><l/><r>de</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>de<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>d'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="contrac2">
-      <e>
-        <p>
-          <l><b/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>l</r>
-        </p>
-        <par n="caracter_general"/>  <!-- GRS era consonant, generava contraccions impossibles tipus ~a ~elia:alia-->
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant_menys_d"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>l<b/></r>
-        </p>
-        <par n="de2"/>
-      </e>
+      <e><p><l><b/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/></l><r>l<b/></r></p><par n="consonant"/></e>
+      <e><p><l/><r>l</r></p><par n="caracter_general"/>  <!-- GRS era consonant, generava contraccions impossibles tipus ~a ~elia:alia--></e>
+      <e><p><l><b/><a/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/></l><r>l<b/></r></p><par n="consonant_menys_d"/></e>
+      <e><p><l><b/><a/>de</l><r>l<b/></r></p><par n="de2"/></e>
     </pardef>
 
     <pardef n="contrac">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <p>
-          <l>l</l>
-          <r/>
-        </p>
-        <par n="contrac2"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r><b/>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r><b/>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r><b/>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <i>s<b/></i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <i>s</i>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>ll<b/></l>
-          <r><b/>ell<b/></r>
-        </p>
-      </e>
+      <e><i>ls<b/></i></e>
+      <e><p><l>l</l><r/></p><par n="contrac2"/></e>
+      <e><p><l>m<b/></l><r><b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l>m<b/></l><r><b/>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l>t<b/></l><r><b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l>t<b/></l><r><b/>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l>s<b/></l><r><b/>s'</r></p><par n="vocal_general"/></e>
+      <e><i>s<b/></i><par n="consonant"/></e>
+      <e><i>s</i><par n="consonant"/></e>
+      <e><p><l>ll<b/></l><r><b/>ell<b/></r></p></e>
     </pardef>
 
     <pardef n="contrac2_per">
-      <e>
-        <p>
-          <l/>
-          <r>r<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r>r<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r>l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
+      <e><p><l/><r>r<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>l<b/></r></p><par n="consonant"/></e>
+      <e><p><l><a/></l><r>r<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><a/></l><r>l<b/></r></p><par n="consonant"/></e>
     </pardef>
 
     <pardef n="contrac_per">
-      <e>
-        <i>ls<b/></i>
-      </e>
-      <e>
-        <p>
-          <l>l<b/></l>
-          <r/>
-        </p>
-        <par n="contrac2_per"/>
-      </e>
-      <e>
-        <p>
-          <l>l/</l>
-          <r>r<b/>el/</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r>r<b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>m<b/></l>
-          <r>r<b/>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r>r<b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r>r<b/>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>s<b/></l>
-          <r>r<b/>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-<!--      <e>
-        <i>s<b/></i>
-        <par n="consonant"/>
-      </e>-->
-      <e>
-        <p>
-          <l>ll<b/></l>
-          <r>r<b/>ell<b/></r>
-        </p>
-      </e>
+      <e><i>ls<b/></i></e>
+      <e><p><l>l<b/></l><r/></p><par n="contrac2_per"/></e>
+      <e><p><l>l/</l><r>r<b/>el/</r></p></e>
+      <e><p><l>m<b/></l><r>r<b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l>m<b/></l><r>r<b/>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l>t<b/></l><r>r<b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l>t<b/></l><r>r<b/>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l>s<b/></l><r>r<b/>s'</r></p><par n="vocal_general"/></e>
+<!--      <e><i>s<b/></i><par n="consonant"/></e>-->
+      <e><p><l>ll<b/></l><r>r<b/>ell<b/></r></p></e>
     </pardef>
 
     <pardef n="a">
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>a</r>
-        </p>
-        <par n="contrac"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>a<b/></r>
-        </p>
-        <par n="de2"/>
-      </e>
-
-
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>a</r>
-        </p>
-        <par n="no_apostrofat_blanc_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>a<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>a</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>a</r></p><par n="contrac"/></e>
+      <e><p><l><b/><a/>de</l><r>a<b/></r></p><par n="de2"/></e>
+      <e><p><l><b/><a/></l><r>a</r></p><par n="no_apostrofat_blanc_menys_e"/></e>
+      <e><p><l><b/></l><r>a<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l/><r>a</r></p><par n="no_apostrofa"/></e>
     </pardef>
 
     <pardef n="de"> 
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>de</r>
-        </p>
-        <par n="contrac"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general_menys_ae"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>d'</r>
-        </p>
-        <par n="sigles"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>a</l>
-          <r/>
-        </p>
-        <par n="duplica_de"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="marcats_no_apostrofen"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>de</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>de<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <!--<e>
-        <p>
-          <l><b/>entre<b/></l>
-          <r>de<b/></r>
-        </p>
-      </e>-->
-      <e>
-        <p>
-          <l><b/></l>
-          <r>d'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>de</r></p><par n="contrac"/></e>
+      <e><p><l><b/><a/></l><r>d'</r></p><par n="vocal_general_menys_ae"/></e>
+      <e><p><l><b/><a/></l><r>d'</r></p><par n="sigles"/></e>
+      <e><p><l><b/><a/>a</l><r/></p><par n="duplica_de"/></e>
+      <e><p><l><b/><a/></l><r>de<b/></r></p><par n="marcats_no_apostrofen"/></e>
+      <e><p><l/><r>de</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>de<b/></r></p><par n="consonant"/></e>
+      <!--<e><p><l><b/>entre<b/></l><r>de<b/></r></p></e>-->
+      <e><p><l><b/></l><r>d'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>el/la</l><r>de<b/><a/>el/la</r></p></e>
+      <e><p><l><b/><a/>els/les</l><r>d'els/les</r></p></e>
     </pardef>
 
     <pardef n="per">
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>pe</r>
-        </p>
-        <par n="contrac_per"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>per</r>
-        </p>
-        <par n="no_apostrofat_blanc_menys_ae"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>a</l>
-          <r>per<b/></r>
-        </p>
-        <par n="a"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>per<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>per</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
+      <e><p><l><b/><a/>e</l><r>pe</r></p><par n="contrac_per"/></e>
+      <e><p><l><b/><a/></l><r>per</r></p><par n="no_apostrofat_blanc_menys_ae"/></e>
+      <e><p><l><b/><a/>a</l><r>per<b/></r></p><par n="a"/></e>
+      <e><p><l><b/></l><r>per<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l/><r>per</r></p><par n="no_apostrofa"/></e>
     </pardef>
 
     <pardef n="el">
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l'</r>
-        </p>
-        <par n="sigles"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>el<b/></r>
-        </p>
-        <par n="de"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>el<b/></r>
-        </p>
-        <par n="consonant_menys_d"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-        <par n="quotes"/>
-        <par n="vocal_general"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-       <par n="inicia-s"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-        <par n="quotes"/>
-       <par n="inicia-s"/>
-      </e>
-
-
-      <e>
-        <p>
-          <l/>
-          <r>el</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>el<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
+      <e><p><l><b/><a/></l><r>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/></l><r>l'</r></p><par n="sigles"/></e>
+      <e><p><l><b/><a/>de</l><r>el<b/></r></p><par n="de"/></e>
+      <e><p><l><b/><a/></l><r>el<b/></r></p><par n="consonant_menys_d"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="quotes"/><par n="vocal_general"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="inicia-s"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="quotes"/><par n="inicia-s"/></e>
+      <e><p><l/><r>el</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>el<b/></r></p><par n="consonant"/></e>
     </pardef>
 
     <pardef n="la">
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l'</r>
-        </p>
-        <par n="vocals_per_a_la"/>
-      </e>
+      <e><p><l><b/><a/></l><r>l'</r></p><par n="vocals_per_a_la"/></e>
+      <e><p><l><b/><a/></l><r>l'</r></p><par n="sigles"/></e>
+      <e><p><l><b/><a/>de</l><r>la<b/></r></p><par n="de"/></e>
+      <e><p><l><b/><a/></l><r>la<b/></r></p><par n="consonants_per_a_la_menys_d"/></e>
+      <e><p><l><b/><a/>u</l><r>l'u</r></p></e>
+      <e><p><l><b/><a/>i</l><r>l'i</r></p></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="vocals_per_a_la"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="quotes"/><par n="vocals_per_a_la"/></e>
+      <e><p><l><b/></l><r>la<b/></r></p><par n="quotes"/><par n="consonants_per_a_la"/></e>
+      <e><p><l></l><r>la</r></p><par n="quotes"/><par n="consonants_per_a_la"/></e>
+      <e><p><l><b/></l><r>la<b/></r></p><par n="consonants_per_a_la"/></e>
+      <e><p><l/><r>la</r></p><par n="consonants_per_a_la"/></e>
+    </pardef>
 
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>l'</r>
-        </p>
-        <par n="sigles"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>la<b/></r>
-        </p>
-        <par n="de"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>la<b/></r>
-        </p>
-        <par n="consonants_per_a_la_menys_d"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>u</l>
-          <r>l'u</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>i</l>
-          <r>l'i</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-        <par n="vocals_per_a_la"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>l'</r>
-        </p>
-        <par n="quotes"/>
-        <par n="vocals_per_a_la"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>la<b/></r>
-        </p>
-        <par n="quotes"/>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <p>
-          <l></l>
-          <r>la</r>
-        </p>
-        <par n="quotes"/>
-        <par n="consonants_per_a_la"/>
-      </e>
-
-      <e>
-        <p>
-          <l><b/></l>
-          <r>la<b/></r>
-        </p>
-        <par n="consonants_per_a_la"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>la</r>
-        </p>
-        <par n="consonants_per_a_la"/>
-      </e>
+    <pardef n="el/la">
+      <e><p><l><b/><a/></l><r>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>de</l><r>el/la<b/></r></p><par n="de"/></e>
+      <e><p><l><b/><a/></l><r>el/la<b/></r></p><par n="consonant_menys_d"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/></l><r>l'</r></p><par n="quotes"/><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="els">
-      <e>
-        <p>
-          <l><b/></l>
-          <r>els<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>els<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>els</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>els<b/></r>
-        </p>
-        <par n="de"/>
-      </e>
+      <e><p><l><b/></l><r>els<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/><a/></l><r>els<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l/><r>els</r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/><a/>de</l><r>els<b/></r></p><par n="de"/></e>
     </pardef>
 
     <pardef n="les">
-      <e>
-        <p>
-          <l><b/></l>
-          <r>les<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>les</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de</l>
-          <r>les<b/></r>
-        </p>
-        <par n="de"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>les<b/></r>
-        </p>
-        <par n="no_apostrofa_menys_d"/>
-      </e>
+      <e><p><l><b/></l><r>les<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l/><r>les</r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/><a/>de</l><r>les<b/></r></p><par n="de"/></e>
+      <e><p><l><b/><a/></l><r>les<b/></r></p><par n="no_apostrofa_menys_d"/></e>
     </pardef>
 
     <pardef n="combina_el-els-et-en">
-      <e>
-        <p>
-          <l>l<b/></l>
-          <r>'l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>l<b/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>l<b/><a/></l>
-          <r>'l<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>l<b/><a/></l>
-          <r><b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>ls<b/></l>
-          <r>'ls<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>t<b/></l>
-          <r>'t<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l>n<b/></l>
-          <r>'n<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>n<b/></l>
-          <r><b/>n'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l>n<b/><a/></l>
-          <r>'n<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l>n<b/><a/></l>
-          <r><b/>n'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l>l<b/></l><r>'l<b/></r></p><par n="consonant"/></e>
+      <e><p><l>l<b/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l>l<b/><a/></l><r>'l<b/></r></p><par n="consonant"/></e>
+      <e><p><l>l<b/><a/></l><r><b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l>ls<b/></l><r>'ls<b/></r></p></e>
+      <e><p><l>t<b/></l><r>'t<b/></r></p></e>
+      <e><p><l>n<b/></l><r>'n<b/></r></p><par n="consonant"/></e>
+      <e><p><l>n<b/></l><r><b/>n'</r></p><par n="vocal_general"/></e>
+      <e><p><l>n<b/><a/></l><r>'n<b/></r></p><par n="consonant"/></e>
+      <e><p><l>n<b/><a/></l><r><b/>n'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="mi">
-      <e>
-        <p>
-          <l/>
-          <r>'m<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r>'m<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r><b/>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l/><r>'m<b/></r></p><par n="consonant"/></e>
+      <e><p><l/><r><b/>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l><a/></l><r>'m<b/></r></p><par n="consonant"/></e>
+      <e><p><l><a/></l><r><b/>m'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="ti">
-      <e>
-        <p>
-          <l/>
-          <r>'t<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r>'t<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><a/></l>
-          <r><b/>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l/><r>'t<b/></r></p><par n="consonant"/></e>
+      <e><p><l/><r><b/>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l><a/></l><r>'t<b/></r></p><par n="consonant"/></e>
+      <e><p><l><a/></l><r><b/>t'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="em">
-      <e>
-        <p>
-          <l><b/></l>
-          <r>m'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>em</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>em<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>m'</r>
-        </p>
-        <par n="vocal_general_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>me<b/></r>
-        </p>
-        <par n="marcats_no_apostrofen"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>me</r>
-        </p>
-        <par n="combina_el-els-et-en"/>
-      </e>
+      <e><p><l><b/></l><r>m'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>em</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>em<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/><a/></l><r>m'</r></p><par n="vocal_general_menys_e"/></e>
+      <e><p><l><b/><a/></l><r>me<b/></r></p><par n="marcats_no_apostrofen"/></e>
+      <e><p><l><b/><a/>e</l><r>me</r></p><par n="combina_el-els-et-en"/></e>
     </pardef>
 
     <pardef n="et">
-      <e>
-        <p>
-          <l><b/></l>
-          <r>t'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>et</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>et<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>t'</r>
-        </p>
-        <par n="vocal_general_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>te<b/></r>
-        </p>
-        <par n="marcats_no_apostrofen"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>te</r>
-        </p>
-        <par n="combina_el-els-et-en"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>em<b/></l>
-          <r>te</r>
-        </p>
-        <par n="mi"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>ens<b/></l>
-          <r>te'ns<b/></r>
-        </p>
-      </e>
+      <e><p><l><b/></l><r>t'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>et</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>et<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/><a/></l><r>t'</r></p><par n="vocal_general_menys_e"/></e>
+      <e><p><l><b/><a/></l><r>te<b/></r></p><par n="marcats_no_apostrofen"/></e>
+      <e><p><l><b/><a/>e</l><r>te</r></p><par n="combina_el-els-et-en"/></e>
+      <e><p><l><b/><a/>em<b/></l><r>te</r></p><par n="mi"/></e>
+      <e><p><l><b/><a/>ens<b/></l><r>te'ns<b/></r></p></e>
     </pardef>
 
     <pardef n="es">
-      <e>
-        <p>
-          <l><b/></l>
-          <r>s'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l/>
-          <r>es</r>
-        </p>
-        <par n="consonant_menys_s"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>es<b/></r>
-        </p>
-        <par n="consonant_menys_s"/>
-      </e>
-      <e>
-        <p>
-          <l><b/>ce</l>
-          <r>se<b/>ce</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>ci</l>
-          <r>se<b/>ci</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>cé</l>
-          <r>se<b/>cé</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>cí</l>
-          <r>se<b/>cí</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>cè</l>
-          <r>se<b/>cè</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>c</l>
-          <r>es<b/>c</r>
-        </p>
-        <par n="no_apostrofa_menys_ie"/>
-      </e>
-      <e>
-        <p>
-          <l><b/>s</l>
-          <r>se<b/>s</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/>z</l>
-          <r>se<b/>z</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>c</l>
-          <r>se<b/>c</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>s</l>
-          <r>se<b/>s</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>s'</r>
-        </p>
-        <par n="vocal_general_menys_e"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>se<b/></r>
-        </p>
-        <par n="consonant_menys_s_marcat"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>e</l>
-          <r>se</r>
-        </p>
-        <par n="combina_el-els-et-en"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>em<b/></l>
-          <r>se</r>
-        </p>
-        <par n="mi"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>et<b/></l>
-          <r>se</r>
-        </p>
-        <par n="ti"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>ens<b/></l>
-          <r>se'ns<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>us<b/></l>
-          <r>se<b/>us<b/></r>
-        </p>
-      </e>
+      <e><p><l><b/></l><r>s'</r></p><par n="vocal_general"/></e>
+      <e><p><l/><r>es</r></p><par n="consonant_menys_s"/></e>
+      <e><p><l><b/></l><r>es<b/></r></p><par n="consonant_menys_s"/></e>
+      <e><p><l><b/>ce</l><r>se<b/>ce</r></p></e>
+      <e><p><l><b/>ci</l><r>se<b/>ci</r></p></e>
+      <e><p><l><b/>cé</l><r>se<b/>cé</r></p></e>
+      <e><p><l><b/>cí</l><r>se<b/>cí</r></p></e>
+      <e><p><l><b/>cè</l><r>se<b/>cè</r></p></e>
+      <e><p><l><b/>c</l><r>es<b/>c</r></p><par n="no_apostrofa_menys_ie"/></e>
+      <e><p><l><b/>s</l><r>se<b/>s</r></p></e>
+      <e><p><l><b/>z</l><r>se<b/>z</r></p></e>
+      <e><p><l><b/><a/>c</l><r>se<b/>c</r></p></e>
+      <e><p><l><b/><a/>s</l><r>se<b/>s</r></p></e>
+      <e><p><l><b/><a/></l><r>s'</r></p><par n="vocal_general_menys_e"/></e>
+      <e><p><l><b/><a/></l><r>se<b/></r></p><par n="consonant_menys_s_marcat"/></e>
+      <e><p><l><b/><a/>e</l><r>se</r></p><par n="combina_el-els-et-en"/></e>
+      <e><p><l><b/><a/>em<b/></l><r>se</r></p><par n="mi"/></e>
+      <e><p><l><b/><a/>et<b/></l><r>se</r></p><par n="ti"/></e>
+      <e><p><l><b/><a/>ens<b/></l><r>se'ns<b/></r></p></e>
+      <e><p><l><b/><a/>us<b/></l><r>se<b/>us<b/></r></p></e>
     </pardef>
 
     <pardef n="us">
-      <e>
-        <p>
-          <l/>
-          <r>us</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>us<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>us<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>us<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>us<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
+      <e><p><l/><r>us</r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/></l><r>us<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/><a/>el<b/></l><r>us<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>la<b/></l><r>us<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/></l><r>us<b/></r></p><par n="no_apostrofa"/></e>
     </pardef>
 
     <pardef n="ens">
-      <e>
-        <p>
-          <l/>
-          <r>ens</r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>ens<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>ens<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>ens<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/></l>
-          <r>ens<b/></r>
-        </p>
-        <par n="no_apostrofa"/>
-      </e>
+      <e><p><l/><r>ens</r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/></l><r>ens<b/></r></p><par n="no_apostrofa"/></e>
+      <e><p><l><b/><a/>el<b/></l><r>ens<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>la<b/></l><r>ens<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/></l><r>ens<b/></r></p><par n="no_apostrofa"/></e>
     </pardef>
 
     <pardef n="li">
-      <e>
-        <p>
-          <l/>
-          <r>li</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>li<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>li<b/></r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e alt="cat">
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>l'hi<b/></r>
-        </p>
-      </e>
-      <e alt="val_gva">
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>li'l<b/></r>
-        </p>
-      </e>
-      <e alt="val_uni">
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>li'l<b/></r>
-        </p>
-      </e>
-      <e alt="val_gva">
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>li<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e alt="val_uni">
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>li<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e alt="cat">
-        <p>
-          <l><b/><a/>els<b/></l>
-          <r>els<b/>hi<b/></r>
-        </p>
-      </e>
-      <e alt="val_gva">
-        <p>
-          <l><b/><a/>els<b/></l>
-          <r>li'ls<b/></r>
-        </p>
-      </e>
-      <e alt="val_uni">
-        <p>
-          <l><b/><a/>els<b/></l>
-          <r>li'ls<b/></r>
-        </p>
-      </e>
-      <e alt="cat">
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>la<b/>hi<b/></r>
-        </p>
-      </e>
-      <e alt="val_gva">
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>li<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e alt="val_uni">
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>li<b/>l'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e alt="cat">
-        <p>
-          <l><b/><a/>les<b/></l>
-          <r>les<b/>hi<b/></r>
-        </p>
-      </e>
-      <e alt="val_gva">
-        <p>
-          <l><b/><a/>les<b/></l>
-          <r>li<b/>les<b/></r>
-        </p>
-      </e>
-      <e alt="val_uni">
-        <p>
-          <l><b/><a/>les<b/></l>
-          <r>li<b/>les<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>en<b/></l>
-          <r>li'n<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>en<b/></l>
-          <r>li<b/>n'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>en<b/><a/></l>
-          <r>li'n<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>h</l>
-          <r>li<b/>h</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>en<b/><a/></l>
-          <r>li<b/>n'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
+      <e><p><l/><r>li</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>li<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>li<b/></r></p><par n="vocal_general"/></e>
+      <e alt="cat"><p><l><b/><a/>el<b/></l><r>l'hi<b/></r></p></e>
+      <e alt="val_gva"><p><l><b/><a/>el<b/></l><r>li'l<b/></r></p></e>
+      <e alt="val_uni"><p><l><b/><a/>el<b/></l><r>li'l<b/></r></p></e>
+      <e alt="val_gva"><p><l><b/><a/>el<b/></l><r>li<b/>l'</r></p><par n="vocal_general"/></e>
+      <e alt="val_uni"><p><l><b/><a/>el<b/></l><r>li<b/>l'</r></p><par n="vocal_general"/></e>
+      <e alt="cat"><p><l><b/><a/>els<b/></l><r>els<b/>hi<b/></r></p></e>
+      <e alt="val_gva"><p><l><b/><a/>els<b/></l><r>li'ls<b/></r></p></e>
+      <e alt="val_uni"><p><l><b/><a/>els<b/></l><r>li'ls<b/></r></p></e>
+      <e alt="cat"><p><l><b/><a/>la<b/></l><r>la<b/>hi<b/></r></p></e>
+      <e alt="val_gva"><p><l><b/><a/>la<b/></l><r>li<b/>l'</r></p><par n="vocal_general"/></e>
+      <e alt="val_uni"><p><l><b/><a/>la<b/></l><r>li<b/>l'</r></p><par n="vocal_general"/></e>
+      <e alt="cat"><p><l><b/><a/>les<b/></l><r>les<b/>hi<b/></r></p></e>
+      <e alt="val_gva"><p><l><b/><a/>les<b/></l><r>li<b/>les<b/></r></p></e>
+      <e alt="val_uni"><p><l><b/><a/>les<b/></l><r>li<b/>les<b/></r></p></e>
+      <e><p><l><b/><a/>en<b/></l><r>li'n<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/><a/>en<b/></l><r>li<b/>n'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>en<b/><a/></l><r>li'n<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/><a/>h</l><r>li<b/>h</r></p></e>
+      <e><p><l><b/><a/>en<b/><a/></l><r>li<b/>n'</r></p><par n="vocal_general"/></e>
     </pardef>
 
     <pardef n="en">
-      <e>
-        <p>
-          <l/>
-          <r>en</r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="consonant"/>
-      </e>
-      <e>
-        <p>
-          <l><b/></l>
-          <r>n'</r>
-        </p>
-        <par n="vocal_general"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>de<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="de"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>per<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="per"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>a<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="a"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>em<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="em"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>et<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="et"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>es<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="es"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>us<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="us"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>ens<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="ens"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>el<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="el"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>els<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="els"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>la<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="la"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>les<b/></l>
-          <r>en<b/></r>
-        </p>
-        <par n="les"/>
-      </e>
-      <e>
-        <p>
-          <l><b/><a/>h</l>
-          <r>n'h</r>
-        </p>
-      </e>
+      <e><p><l/><r>en</r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>en<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>n'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>de<b/></l><r>en<b/></r></p><par n="de"/></e>
+      <e><p><l><b/><a/>per<b/></l><r>en<b/></r></p><par n="per"/></e>
+      <e><p><l><b/><a/>a<b/></l><r>en<b/></r></p><par n="a"/></e>
+      <e><p><l><b/><a/>em<b/></l><r>en<b/></r></p><par n="em"/></e>
+      <e><p><l><b/><a/>et<b/></l><r>en<b/></r></p><par n="et"/></e>
+      <e><p><l><b/><a/>es<b/></l><r>en<b/></r></p><par n="es"/></e>
+      <e><p><l><b/><a/>us<b/></l><r>en<b/></r></p><par n="us"/></e>
+      <e><p><l><b/><a/>ens<b/></l><r>en<b/></r></p><par n="ens"/></e>
+      <e><p><l><b/><a/>el<b/></l><r>en<b/></r></p><par n="el"/></e>
+      <e><p><l><b/><a/>els<b/></l><r>en<b/></r></p><par n="els"/></e>
+      <e><p><l><b/><a/>la<b/></l><r>en<b/></r></p><par n="la"/></e>
+      <e><p><l><b/><a/>les<b/></l><r>en<b/></r></p><par n="les"/></e>
+      <e><p><l><b/><a/>h</l><r>n'h</r></p></e>
     </pardef>
 
   </pardefs>
 
   <section id="main" type="standard">
-      <e>
-        <p>
-          <l><a/>a</l>
-          <r/>
-        </p>
-        <par n="a"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>de</l>
-          <r/>
-        </p>
-        <par n="de"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>a<b/><a/>per</l>
-          <r></r>
-        </p>
-        <par n="per"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>per</l>
-          <r/>
-        </p>
-        <par n="per"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>el</l>
-          <r/>
-        </p>
-        <par n="el"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>la</l>
-          <r/>
-        </p>
-        <par n="la"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>els</l>
-          <r/>
-        </p>
-        <par n="els"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>els<b/>hi<b/>ha</l>
-          <r>n'hi<b/>ha</r>
-        </p>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>les</l>
-          <r/>
-        </p>
-        <par n="les"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>les<b/>hi<b/>ha</l>
-          <r>n'hi<b/>ha</r>
-        </p>
-        <par n="caracter_general"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>em</l>
-          <r/>
-        </p>
-        <par n="em"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>et</l>
-          <r/>
-        </p>
-        <par n="et"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>es</l>
-          <r/>
-        </p>
-        <par n="es"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>us</l>
-          <r/>
-        </p>
-        <par n="us"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>ens</l>
-          <r/>
-        </p>
-        <par n="ens"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>li</l>
-          <r/>
-        </p>
-        <par n="li"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>en</l>
-          <r/>
-        </p>
-        <par n="en"/>
-      </e>
-      <e>
-        <p>
-          <l><a/>hi</l>
-          <r>hi</r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><a/>ho</l>
-          <r>ho</r>
-        </p>
-      </e> 
-      <!--<e>
-        <p>
-          <l><a/>ex<b/></l>
-          <r>ex</r>
-        </p>
-        <par n="consonant"/>
-      </e>-->
-      <e>
-        <p>
-          <l><a/>mitjan<b/><a/>el<b/></l>
-          <r>mitjan<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><a/>mitjan<b/><a/>la<b/></l>
-          <r>mitjan<b/></r>
-        </p>
-      </e>
-      <e>
-        <p>
-          <l><a/>mitjan<b/><a/>els<b/></l>
-          <r>mitjan<b/></r>
-        </p>
-      </e>
-
-      <e>
-        <p>
-          <l><a/>mitjan<b/><a/>les<b/></l>
-          <r>mitjan<b/></r>
-        </p>
-      </e>
+      <e><p><l><a/>a</l><r/></p><par n="a"/></e>
+      <e><p><l><a/>de</l><r/></p><par n="de"/></e>
+      <e><p><l><a/>a<b/><a/>per</l><r></r></p><par n="per"/></e>
+      <e><p><l><a/>per</l><r/></p><par n="per"/></e>
+      <e><p><l><a/>el/la</l><r/></p><par n="el/la"/></e>
+      <e><p><l><a/>el</l><r/></p><par n="el"/></e>
+      <e><p><l><a/>la</l><r/></p><par n="la"/></e>
+      <e><p><l><a/>els</l><r/></p><par n="els"/></e>
+      <e><p><l><a/>els<b/>hi<b/>ha</l><r>n'hi<b/>ha</r></p><par n="caracter_general"/></e>
+      <e><p><l><a/>les</l><r/></p><par n="les"/></e>
+      <e><p><l><a/>les<b/>hi<b/>ha</l><r>n'hi<b/>ha</r></p><par n="caracter_general"/></e>
+      <e><p><l><a/>em</l><r/></p><par n="em"/></e>
+      <e><p><l><a/>et</l><r/></p><par n="et"/></e>
+      <e><p><l><a/>es</l><r/></p><par n="es"/></e>
+      <e><p><l><a/>us</l><r/></p><par n="us"/></e>
+      <e><p><l><a/>ens</l><r/></p><par n="ens"/></e>
+      <e><p><l><a/>li</l><r/></p><par n="li"/></e>
+      <e><p><l><a/>en</l><r/></p><par n="en"/></e>
+      <e><p><l><a/>hi</l><r>hi</r></p></e>
+      <e><p><l><a/>ho</l><r>ho</r></p></e> 
+      <!--<e><p><l><a/>ex<b/></l><r>ex</r></p><par n="consonant"/></e>-->
+      <e><p><l><a/>mitjan<b/><a/>el<b/></l><r>mitjan<b/></r></p></e>
+      <e><p><l><a/>mitjan<b/><a/>la<b/></l><r>mitjan<b/></r></p></e>
+      <e><p><l><a/>mitjan<b/><a/>els<b/></l><r>mitjan<b/></r></p></e>
+      <e><p><l><a/>mitjan<b/><a/>les<b/></l><r>mitjan<b/></r></p></e>
  
      <!-- Això cal resoldre-ho en la traducció.
-     <e>
-        <p>
-          <l><a/>e<b/>i</l>
-          <r>i<b/>i</r>
-        </p>
-      </e>
+     <e><p><l><a/>e<b/>i</l><r>i<b/>i</r></p></e>
  
-     <e>
-        <p>
-          <l><a/>u<b/>o</l>
-          <r>o<b/>o</r>
-        </p>
-      </e>
+     <e><p><l><a/>u<b/>o</l><r>o<b/>o</r></p></e>
  
       <e>
 		<p>
 			<l><a/>de<b/>a<b/>dalt</l>
 			<r>de<b/>dalt</r>
-		</p>
-      </e>
+		</p></e>
       <e>
 		<p>
 			<l><a/>de<b/>a<b/>baix</l>
 			<r>de<b/>baix</r>
-		</p>
-      </e>
+		</p></e>
       <e>
 		<p>
 			<l><a/>de<b/>a<b/>prop</l>
 			<r>de<b/>prop</r>
-		</p>
-      </e>-->
+		</p></e>-->
 
  </section>
 
