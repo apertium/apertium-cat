@@ -682,8 +682,10 @@
       <e><p><l><b/></l><r>de<b/></r></p><par n="consonant"/></e>
       <!--<e><p><l><b/>entre<b/></l><r>de<b/></r></p></e>-->
       <e><p><l><b/></l><r>d'</r></p><par n="vocal_general"/></e>
-      <e><p><l><b/><a/>el/la</l><r>de<b/><a/>el/la</r></p></e>
-      <e><p><l><b/><a/>els/les</l><r>d'els/les</r></p></e>
+      <e><p><l><b/><a/>el/la</l><r>del/la</r></p></e>
+      <e><p><l><b/><a/>el/la<b/></l><r>de<b/>l'</r></p><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>el/la<b/></l><r>de<b/>l'</r></p><par n="quotes"/><par n="vocal_general"/></e>
+      <e><p><l><b/><a/>els/les</l><r>dels/les</r></p></e>
     </pardef>
 
     <pardef n="per">
@@ -882,6 +884,7 @@
       <e><p><l><a/>a<b/><a/>per</l><r></r></p><par n="per"/></e>
       <e><p><l><a/>per</l><r/></p><par n="per"/></e>
       <e><p><l><a/>el/la</l><r/></p><par n="el/la"/></e>
+      <e><p><l>/<a/>a<b/><a/>el/la</l><r>/a<b/><a/>el/la</r></p></e>
       <e><p><l><a/>el</l><r/></p><par n="el"/></e>
       <e><p><l><a/>la</l><r/></p><par n="la"/></e>
       <e><p><l><a/>els</l><r/></p><par n="els"/></e>
