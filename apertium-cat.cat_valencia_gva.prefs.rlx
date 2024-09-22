@@ -21,3 +21,4 @@ SELECT (v:eixe) ;
 SELECT (v:verbs_ix) ;
 SELECT (v:dos) ;
 SELECT (v:orde) ;
+SELECT (v:calfar) ;

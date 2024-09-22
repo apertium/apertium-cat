@@ -12,3 +12,4 @@ SELECT (v:motle) ;
 SELECT (v:nadar) ;
 SELECT (v:redo) ;
 SELECT (v:aqueix_aquest) ;
+SELECT (v:calfar) ;
