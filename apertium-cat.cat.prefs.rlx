@@ -25,6 +25,7 @@ IFF (v:motle) (0 (VAR:motle)) ;
 IFF (v:nadar) (0 (VAR:nadar)) ;
 IFF (v:redo) (0 (VAR:redo)) ;
 IFF (v:hui) (0 (VAR:hui)) ;
+IFF (v:aci) (0 (VAR:aci)) ;
 IFF (v:este) (0 (VAR:este)) ;
 IFF (v:eixe) (0 (VAR:eixe)) ;
 IFF (v:verbs_ix) (0 (VAR:verbs_ix)) ;

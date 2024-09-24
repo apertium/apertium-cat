@@ -23,8 +23,14 @@
 	<preference id="redo">
 		<description lang="cat">Lèxic: rodó -> redó (i similars)</description>
 	</preference>
+	<preference id="calfar">
+		<description lang="cat">Lèxic: escalfar -> calfar (i similars)</description>
+	</preference>
 	<preference id="hui">
 		<description lang="cat">Lèxic: avui -> hui</description>
+	</preference>
+	<preference id="aci">
+		<description lang="cat">Lèxic: aquí -> ací</description>
 	</preference>
 	<preference id="verbs_val">
 		<description lang="cat">Verbs: formes valencianes</description>
