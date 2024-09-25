@@ -19,5 +19,7 @@ SELECT (v:hui) ;
 SELECT (v:aci) ;
 SELECT (v:eixe) ;
 SELECT (v:calfar) ;
+SELECT (v:avant) ;
+SELECT (v:arrere) ;
 
 

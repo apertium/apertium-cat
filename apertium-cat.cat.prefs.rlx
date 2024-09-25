@@ -32,6 +32,8 @@ IFF (v:verbs_ix) (0 (VAR:verbs_ix)) ;
 IFF (v:dos) (0 (VAR:dos)) ;
 IFF (v:orde) (0 (VAR:orde)) ;
 IFF (v:calfar) (0 (VAR:calfar)) ;
+IFF (v:avant) (0 (VAR:avant)) ;
+IFF (v:arrere) (0 (VAR:arrere)) ;
 SELECT (v:aqueix_aquest) ;
 
 

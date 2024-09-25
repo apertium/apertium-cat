@@ -32,6 +32,12 @@
 	<preference id="aci">
 		<description lang="cat">Lèxic: aquí -> ací</description>
 	</preference>
+	<preference id="avant">
+		<description lang="cat">Lèxic: endavant -> avant</description>
+	</preference>
+	<preference id="arrere">
+		<description lang="cat">Lèxic: enrere -> arrere</description>
+	</preference>
 	<preference id="verbs_val">
 		<description lang="cat">Verbs: formes valencianes</description>
 	</preference>
