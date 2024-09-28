@@ -14,9 +14,6 @@ TARGETS_COMMON =			\
 	$(LANG1)$(VAR1).automorf.bin		\
 	$(LANG1)$(VAR1).automorf.att.gz	\
 	$(LANG1)$(VAR1).autogen.bin		\
-	$(LANG1)$(VAR2).autogen.bin		\
-	$(LANG1)$(VAR3).autogen.bin		\
-	$(LANG1)$(VAR4).autogen.bin		\
 	$(LANG1)$(VAR1).autogen.att.gz		\
 	$(LANG1)$(VAR1).autopgen.bin		\
 	$(LANG1)$(VAR2).autopgen.bin		\
@@ -55,17 +52,7 @@ $(LANG1)$(VAR1).automorf.bin: .deps/$(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1
 
 $(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).cat.dix
 	apertium-validate-dictionary $<
-	lt-comp -v cat rl $< $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1)$(VAR2).autogen.bin: .deps/$(BASENAME).$(LANG1).val.dix
-	apertium-validate-dictionary $<
-	lt-comp -v val_gva rl $< $@ $(BASENAME).$(LANG1).acx
-
-$(LANG1)$(VAR3).autogen.bin: $(LANG1)$(VAR2).autogen.bin
-	cp $< $@
-
-$(LANG1)$(VAR4).autogen.bin: $(LANG1)$(VAR2).autogen.bin
-	cp $< $@
+	lt-comp rl $< $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1)$(VAR1).autogen.att.gz: $(LANG1).autogen.bin
 	lt-print $< | gzip -9 -c -n > $@
