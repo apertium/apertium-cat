@@ -41,16 +41,7 @@ $(LANG1)$(VAR1).automorf.bin: .deps/$(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1
 	apertium-validate-dictionary $<
 	lt-comp lr .deps/$(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
-.deps/$(BASENAME).$(LANG1).cat.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
-	apertium-validate-dictionary $<
-	apertium-genvdix cat $< >$@
-
-.deps/$(BASENAME).$(LANG1).val.dix: .deps/$(BASENAME).$(LANG1).dix .deps/.d
-	apertium-validate-dictionary $<
-	apertium-genvdix val_gva $< >$@
-
-
-$(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).cat.dix
+$(LANG1)$(VAR1).autogen.bin: .deps/$(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $<
 	lt-comp rl $< $@ $(BASENAME).$(LANG1).acx
 
