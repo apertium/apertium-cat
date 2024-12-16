@@ -35,6 +35,7 @@ IFF (v:calfar) (0 (VAR:calfar)) ;
 IFF (v:avant) (0 (VAR:avant)) ;
 IFF (v:arrere) (0 (VAR:arrere)) ;
 IFF (v:dintre) (0 (VAR:dintre)) ;
+IFF (v:homens) (0 (VAR:homens)) ;
 SELECT (v:aqueix_aquest) ;
 
 
