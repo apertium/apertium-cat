@@ -25,4 +25,4 @@ SELECT (v:orde) ;
 SELECT (v:calfar) ;
 SELECT (v:avant) ;
 SELECT (v:arrere) ;
-SELECT (v:homens) ;
+SELECT (v:plurals_gva) ;

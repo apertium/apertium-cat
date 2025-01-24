@@ -36,6 +36,7 @@ IFF (v:avant) (0 (VAR:avant)) ;
 IFF (v:arrere) (0 (VAR:arrere)) ;
 IFF (v:dintre) (0 (VAR:dintre)) ;
 IFF (v:homens) (0 (VAR:homens)) ;
+IFF (v:plurals_gva) (0 (VAR:plurals_gva)) ;
 SELECT (v:aqueix_aquest) ;
 
 
