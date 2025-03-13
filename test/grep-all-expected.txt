@@ -1,4 +1,87 @@
-[47DEQpj8HBSa#0] apertium-cat.cat.metadix:<e lm="que " r="RL">     <i>que<b/></i><par n="que__cnjsub"/></e> <!-- "que" afegit en castellà-->
+[47DEQpj8HBSa#0] apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/></l><r>un<b/>quart<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>5<b/></l><r>un<b/>quart<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>10<b/></l><r>un<b/>quart<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/></l><r>un<b/>quart<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/>passat<b/></l><r>un<b/>quart<b/>i<b/>mig<b/>passat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/>ben<b/>passat<b/></l><r>un<b/>quart<b/>i<b/>mig<b/>ben<b/>passat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>tocat<b/></l><r>un<b/>quart<b/>tocat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>ben<b/>tocat<b/></l><r>un<b/>quart<b/>ben<b/>tocat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/></l><r>dos<b/>quarts<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>5<b/></l><r>dos<b/>quarts<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>10<b/></l><r>dos<b/>quarts<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/>passats<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>tocats<b/></l><r>dos<b/>quarts<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>ben<b/>tocats<b/></l><r>dos<b/>quarts<b/>ben<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/></l><r>tres<b/>quarts<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>5<b/></l><r>tres<b/>quarts<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>10<b/></l><r>tres<b/>quarts<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/>passats<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>tocats<b/></l><r>tres<b/>quarts<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>ben<b/>tocats<b/></l><r>tres<b/>quarts<b/>ben<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/></l><r>un<b/>quart<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>5<b/></l><r>un<b/>quart<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>10<b/></l><r>un<b/>quart<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/></l><r>un<b/>quart<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/>passat<b/></l><r>un<b/>quart<b/>i<b/>mig<b/>passat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>i<b/>mig<b/>ben<b/>passat<b/></l><r>un<b/>quart<b/>i<b/>mig<b/>ben<b/>passat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>tocat<b/></l><r>un<b/>quart<b/>tocat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>1<b/>quart<b/>ben<b/>tocat<b/></l><r>un<b/>quart<b/>ben<b/>tocat<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/></l><r>dos<b/>quarts<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>5<b/></l><r>dos<b/>quarts<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>10<b/></l><r>dos<b/>quarts<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/>passats<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></l><r>dos<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>tocats<b/></l><r>dos<b/>quarts<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>2<b/>quarts<b/>ben<b/>tocats<b/></l><r>dos<b/>quarts<b/>ben<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/></l><r>tres<b/>quarts<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>5<b/></l><r>tres<b/>quarts<b/>i<b/>cinc<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>10<b/></l><r>tres<b/>quarts<b/>i<b/>deu<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/>passats<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></l><r>tres<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>tocats<b/></l><r>tres<b/>quarts<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e r="LR"><p><l>3<b/>quarts<b/>ben<b/>tocats<b/></l><r>tres<b/>quarts<b/>ben<b/>tocats<b/></r></p></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>i<b/>cinc<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>i<b/>deu<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>i<b/>mig<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>i<b/>mig<b/>passat<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>i<b/>mig<b/>ben<b/>passat<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>tocat<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>un<b/>quart<b/>ben<b/>tocat<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>i<b/>cinc<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>i<b/>deu<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>i<b/>mig<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>i<b/>mig<b/>passats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>tocats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>dos<b/>quarts<b/>ben<b/>tocats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>i<b/>cinc<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>i<b/>deu<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>i<b/>mig<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>i<b/>mig<b/>passats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>i<b/>mig<b/>ben<b/>passats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>tocats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>tres<b/>quarts<b/>ben<b/>tocats<b/></i></e>
+apertium-cat.cat.metadix:  <e>       <i>quarts<b/></i></e>
+apertium-cat.cat.metadix:<e lm="que " r="RL">     <i>que<b/></i><par n="que__cnjsub"/></e> <!-- "que" afegit en castellà-->
 apertium-cat.cat.metadix:<e r="RL" lm="no tenir raó"><i>no<b/></i><par n="/tenir__vblex"/><p><l><b/>raó</l><r><g><b/>raó</g></r></p></e>
 apertium-cat.cat.metadix:<e lm="no tenir res a veure"><i>no<b/></i><par n="abs/tenir__vblex"/><p><l><b/>res<b/>a<b/>veure</l><r><g><b/>res<b/>a<b/>veure</g></r></p></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <par n="hores_campanar(1)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="atletisme__n"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <par n="hores_campanar(2)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="afores__n"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(1)"/><i>d'</i><par n="hores_numerals(1)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(1)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(2)"/><i>d'</i><par n="hores_numerals(1)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(2)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>la<b/></i><par n="hores_numerals(1)"/><par n="hores_rellotge"/><par n="q__n"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>les<b/></i><par n="hores_numerals(2)"/><par n="hores_rellotge"/><par n="escombraries__n"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>a<b/>la<b/></i><par n="hores_numerals(1)"/><par n="hores_rellotge"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>a<b/>les<b/></i><par n="hores_numerals(2)"/><par n="hores_rellotge"/><par n="ahir__adv"/></e>
 [/47DEQpj8HBSa]
