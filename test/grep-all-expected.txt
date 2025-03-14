@@ -77,11 +77,15 @@ apertium-cat.cat.metadix:<e lm="no tenir res a veure"><i>no<b/></i><par n="abs/t
 apertium-cat.cat.metadix:<e lm="hores campanar">  <par n="hores_campanar(1)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="atletisme__n"/></e>
 apertium-cat.cat.metadix:<e lm="hores campanar">  <par n="hores_campanar(2)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="afores__n"/></e>
 apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(1)"/><i>d'</i><par n="hores_numerals(1)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(1)"/><i>d'</i><par n="hores_numerals(11)"/><par n="ahir__adv"/></e>
 apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(1)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="ahir__adv"/></e>
 apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(2)"/><i>d'</i><par n="hores_numerals(1)"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(2)"/><i>d'</i><par n="hores_numerals(11)"/><par n="ahir__adv"/></e>
 apertium-cat.cat.metadix:<e lm="hores campanar">  <i>a<b/></i><par n="hores_campanar(2)"/><i>de<b/></i><par n="hores_numerals(2)"/><par n="ahir__adv"/></e>
 apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>la<b/></i><par n="hores_numerals(1)"/><par n="hores_rellotge"/><par n="q__n"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>les<b/></i><par n="hores_numerals(11)"/><par n="hores_rellotge"/><par n="escombraries__n"/></e>
 apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>les<b/></i><par n="hores_numerals(2)"/><par n="hores_rellotge"/><par n="escombraries__n"/></e>
 apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>a<b/>la<b/></i><par n="hores_numerals(1)"/><par n="hores_rellotge"/><par n="ahir__adv"/></e>
+apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>a<b/>les<b/></i><par n="hores_numerals(11)"/><par n="hores_rellotge"/><par n="ahir__adv"/></e>
 apertium-cat.cat.metadix:<e lm="hores rellotge">  <i>a<b/>les<b/></i><par n="hores_numerals(2)"/><par n="hores_rellotge"/><par n="ahir__adv"/></e>
 [/47DEQpj8HBSa]
