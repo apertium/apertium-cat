@@ -78,12 +78,16 @@
     <tags-item tags="n.mf.*"/>
   </def-label>
   <def-label name="ANTROPONIM">
+    <tags-item tags="np.ant.*"/>
     <tags-item tags="np.ant"/>
+    <tags-item tags="np.cog.*"/>
   </def-label>
   <def-label name="TOPONIM">
+    <tags-item tags="np.top.*"/>
     <tags-item tags="np.loc"/>
   </def-label>
   <def-label name="NPALTRES">
+    <tags-item tags="np.al.*"/>
     <tags-item tags="np.al"/>
   </def-label>
   <def-label name="NUM" closed="true">
@@ -226,11 +230,15 @@
   </def-label>
   <def-label name="ADJF">
     <tags-item tags="adj.f.*"/>
+    <tags-item tags="adj.ord.f.*"/>
+    <tags-item tags="adj.ord.sup.f.*"/>
     <tags-item tags="adj.ind.f.*"/>
     <tags-item tags="adj.sup.f.*"/>
   </def-label>
   <def-label name="ADJM">
     <tags-item tags="adj.m.*"/>    
+    <tags-item tags="adj.ord.m.*"/>
+    <tags-item tags="adj.ord.sup.m.*"/>
     <tags-item tags="adj.ind.m.*"/>
     <tags-item tags="adj.sup.m.*"/>
   </def-label>
@@ -245,6 +253,9 @@
  <def-label name="ADJPOS" closed="true">
     <tags-item tags="adj.pos.*"/>
   </def-label>
+ <def-label name="ADJORD" closed="true">
+    <tags-item tags="adj.ord.*"/>
+  </def-label>
   <def-label name="REL" closed="true">
     <tags-item tags="rel.an.*"/>
     <tags-item tags="rel.aa.*"/>
@@ -253,6 +264,13 @@
   <def-label name="RELADV" closed="true">
     <tags-item tags="rel.adv"/>
   </def-label>
+  <def-label name="GUIO" closed="true">
+    <tags-item tags="guio"/>
+  </def-label>
+  <def-label name="APOSTROF" closed="true">
+    <tags-item tags="apos"/>
+  </def-label>
+
   <def-mult name="PREPDET" closed="true">
     <sequence>
       <label-item label="PREP"/>
@@ -1534,8 +1552,6 @@
       <label-item label="VLEXIMP"/>
       <label-item label="VSERIMP"/>
     </label-sequence>
-
-  
   </forbid>
 
   <enforce-rules>
@@ -1558,9 +1574,8 @@
 	<label-item label="VOLERMOD"/>
 	<label-item label="VOLERLEX"/>
       </label-set>
-    </enforce-after>  
-  
-  <enforce-after label="MOLTPREADV">
+    </enforce-after>
+    <enforce-after label="MOLTPREADV">
       <label-set>
         <label-item label="ADV"/>
         <label-item label="ADJM"/>
@@ -1572,7 +1587,7 @@
 	<label-item label="VOLERLEX"/>
 	<label-item label="PREADV"/>
       </label-set>
-     </enforce-after> <!--Afegit 11/11/05 MG -->
+    </enforce-after> <!--Afegit 11/11/05 MG -->
   </enforce-rules>
 
   <preferences>
