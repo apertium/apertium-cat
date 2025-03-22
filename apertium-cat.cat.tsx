@@ -150,6 +150,9 @@
     <tags-item tags="vblex.pis.*"/>
     <tags-item tags="vblex.fts.*"/>
   </def-label>
+  <def-label name="VLEXPRI">
+    <tags-item tags="vblex.pri.*"/>
+  </def-label>
   <def-label name="VLEXIMP">
     <tags-item tags="vblex.imp.*"/>
   </def-label>
@@ -274,13 +277,106 @@
   <def-mult name="PREPDET" closed="true">
     <sequence>
       <label-item label="PREP"/>
-      <tags-item tags="det.def.m.*"/>
+      <tags-item tags="det.*.m.*"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="PREPPRNTN" closed="true">
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="PRNTN"/>
     </sequence>
   </def-mult>
   <def-mult name="PREPREL" closed="true">
     <sequence>
       <label-item label="PREP"/>
       <tags-item tags="rel.m.*"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="PREPTOPONIM" closed="true">
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="TOPONIM"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="NOMFDETM" closed="true">
+    <sequence>
+      <label-item label="NOMF"/>
+      <label-item label="DETM"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="NOMPREP" closed="true">
+    <sequence>
+      <label-item label="NOMM"/>
+      <label-item label="PREP"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMF"/>
+      <label-item label="PREP"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMMF"/>
+      <label-item label="PREP"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="NOMCNJSUBS" closed="true">
+    <sequence>
+      <label-item label="NOMM"/>
+      <label-item label="CNJSUBS"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMF"/>
+      <label-item label="CNJSUBS"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMMF"/>
+      <label-item label="CNJSUBS"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="NOMREL" closed="true">
+    <sequence>
+      <label-item label="NOMM"/>
+      <label-item label="REL"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMF"/>
+      <label-item label="REL"/>
+    </sequence>
+    <sequence>
+      <label-item label="NOMMF"/>
+      <label-item label="REL"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="PREPNOM" closed="true">
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="NOMM"/>
+    </sequence>
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="NOMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="DETFNUM" closed="true">
+    <sequence>
+      <label-item label="DETF"/>
+      <label-item label="NUM"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="PREPDETFNUM" closed="true">
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="DETF"/>
+      <label-item label="NUM"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="PRNTNCNJCOORD" closed="true">
+    <sequence>
+      <label-item label="PRNTN"/>
+      <label-item label="CNJCOORD"/>
     </sequence>
   </def-mult>
  <!--  <def-mult name="PREPPOS" closed="true">
@@ -295,7 +391,6 @@
       <tags-item tags="prn.tn.pos.*"/> 
     </sequence>
   </def-mult> --><!--Per ara no serveix, potser amb un nou corpus etiquetat desambiguaria correctament -->
- 
   <def-mult name="INFLEXPRNENC">
     <sequence>
       <label-item label="VLEXINF"/>
@@ -415,6 +510,148 @@
       <label-item label="VMODALIMP"/>
       <label-item label="PRNENC"/>
       <label-item label="PRNENC"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VLEXPRICNJSUBS" closed="true">
+    <sequence>
+      <label-item label="VLEXPRI"/>
+      <label-item label="CNJSUBS"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERINFVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="PRNENC"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERGERVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="PRNENC"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERPARTPIVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERPARTPI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERPFCIVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERPFCI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERIPIVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERIPI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERSUBJVSERPARTPIADJMF" closed="true">
+    <sequence>
+      <label-item label="VHABERSUBJ"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="ADJMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERINFVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERINF"/>
+      <label-item label="PRNENC"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERGERVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+    <sequence>
+      <label-item label="VHABERGER"/>
+      <label-item label="PRNENC"/>
+      <label-item label="PRNENC"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERPARTPIVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERPARTPI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERPFCIVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERPFCI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERIPIVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERIPI"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="VHABERSUBJVSERPARTPINOMMF" closed="true">
+    <sequence>
+      <label-item label="VHABERSUBJ"/>
+      <label-item label="VSERPARTPI"/>
+      <label-item label="NOMMF"/>
     </sequence>
   </def-mult>
 </tagset>

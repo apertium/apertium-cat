@@ -22,7 +22,7 @@ $(TAGGER)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(PREFIX).automorf.bin
 	apertium-validate-dictionary .deps/$(BASENAME).$(LANG).dix
 	apertium-validate-tagger $(BASENAME).$(LANG).tsx
 	lt-expand .deps/$(BASENAME).$(LANG).dix | grep -v "__REGEXP__" | grep -v ":<:" |\
-	awk 'BEGIN{FS=":>:|:"}{print $$1 ".";}' | apertium-destxt -n > $(LANG).dic.expanded
+	awk 'BEGIN{FS=":>:|:"}{print $$1;}' | sed -e 's/@/\\@/g' > $(LANG).dic.expanded
 	@echo "." >>$(LANG).dic.expanded
 	@echo "?" >>$(LANG).dic.expanded
 	@echo ";" >>$(LANG).dic.expanded
@@ -38,7 +38,7 @@ $(TAGGER)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(PREFIX).automorf.bin
 	@echo "¡" >>$(LANG).dic.expanded
 	lt-proc -a $(PREFIX).automorf.bin <$(LANG).dic.expanded | \
 	apertium-filter-ambiguity $(BASENAME).$(LANG).tsx > $@
-	## rm $(LANG).dic.expanded;
+	rm $(LANG).dic.expanded;
 
 $(TAGGER)/$(LANG).crp: $(PREFIX).automorf.bin $(TAGGER)/$(LANG).crp.txt
 	apertium-destxt -n < $(TAGGER)/$(LANG).crp.txt | lt-proc $(PREFIX).automorf.bin > $(TAGGER)/$(LANG).crp; \
@@ -52,7 +52,7 @@ $(TAGGER)/$(LANG).tagged:
 	exit 1
 
 $(TAGGER)/$(LANG).untagged: $(TAGGER)/$(LANG).tagged.txt $(PREFIX).automorf.bin
-	cat $(TAGGER)/$(LANG).tagged.txt | apertium-destxt -n | lt-proc $(PREFIX).automorf.bin  > $@; 
+	cat $(TAGGER)/$(LANG).tagged.txt | lt-proc $(PREFIX).automorf.bin  > $@; 
 
 clean: 
-	rm -f $(PREFIX).prob
+	rm -f $(TAGGER)/$(LANG).dic
