@@ -1,24 +1,7 @@
 * text=auto !eol
-/AUTHORS -text
-/COPYING -text
-/ChangeLog -text
-/Jenkinsfile -text
-/Makefile.am -text
-/NEWS -text
-/README -text
-/apertium-cat.cat.acx -text
-/apertium-cat.cat.dix -text
-/apertium-cat.cat.rlx -text
-/apertium-cat.cat.tsx -text
-/apertium-cat.pc.in -text
-/apertium-cat.post-cat.dix -text
-/autogen.sh -text
-/cat.prob -text svneol=unset#unset
-/configure.ac -text
-/genvdix.py -text
-/modes.xml -text
-texts/miscellaneous.tagged.txt -text
+*.prob binary
 *.dix linguist-language=XML linguist-detectable=true
+*.metadix linguist-language=XML linguist-detectable=true
 *.lrx linguist-language=XML linguist-detectable=true
 *.lsx linguist-language=XML linguist-detectable=true
 *.tsx linguist-language=XML linguist-detectable=true
