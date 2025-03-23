@@ -274,6 +274,18 @@
     <tags-item tags="apos"/>
   </def-label>
 
+  <def-mult name="PREPADV" closed="true">
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="ADV"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="RELADVADV" closed="true">
+    <sequence>
+      <label-item label="RELADV"/>
+      <label-item label="ADV"/>
+    </sequence>
+  </def-mult>
   <def-mult name="PREPDET" closed="true">
     <sequence>
       <label-item label="PREP"/>

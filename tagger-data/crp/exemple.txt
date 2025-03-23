@@ -1,0 +1,1 @@
+Això és un text d'exemple per a entrenament no supervisat.
