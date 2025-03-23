@@ -27,19 +27,19 @@ $(TAGGERDIR)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(LANG).automorf.bin
 	apertium-validate-tagger $(BASENAME).$(LANG).tsx
 	lt-expand .deps/$(BASENAME).$(LANG).dix | grep -v "__REGEXP__" | grep -v ":<:" |\
 	awk 'BEGIN{FS=":>:|:"}{print $$1;}' | sed -e 's/@/\\@/g' > $(TAGGERDIR)/$(LANG).dic.expanded
-	@echo "." >>$(LANG).dic.expanded
-	@echo "?" >>$(LANG).dic.expanded
-	@echo ";" >>$(LANG).dic.expanded
-	@echo ":" >>$(LANG).dic.expanded
-	@echo "!" >>$(LANG).dic.expanded
-	@echo "42" >>$(LANG).dic.expanded
-	@echo "," >>$(LANG).dic.expanded
-	@echo "(" >>$(LANG).dic.expanded
-	@echo "\\[" >>$(LANG).dic.expanded
-	@echo ")" >>$(LANG).dic.expanded
-	@echo "\\]" >>$(LANG).dic.expanded
-	@echo "¿" >>$(LANG).dic.expanded
-	@echo "¡" >>$(LANG).dic.expanded
+	@echo "." >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "?" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo ";" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo ":" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "!" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "42" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "," >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "(" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "\\[" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo ")" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "\\]" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "¿" >> $(TAGGERDIR)/$(LANG).dic.expanded
+	@echo "¡" >> $(TAGGERDIR)/$(LANG).dic.expanded
 	lt-proc -a $(LANG).automorf.bin < $(TAGGERDIR)/$(LANG).dic.expanded |\
 	apertium-filter-ambiguity $(BASENAME).$(LANG).tsx > $@
 	rm $(TAGGERDIR)/$(LANG).dic.expanded;
