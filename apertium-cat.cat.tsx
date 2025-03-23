@@ -279,6 +279,11 @@
       <label-item label="PREP"/>
       <tags-item tags="det.*.m.*"/>
     </sequence>
+    <sequence>
+      <label-item label="PREP"/>
+      <label-item label="PREP"/>
+      <tags-item tags="det.*.mf.*"/>
+    </sequence>
   </def-mult>
   <def-mult name="PREPPRNTN" closed="true">
     <sequence>
@@ -289,7 +294,7 @@
   <def-mult name="PREPREL" closed="true">
     <sequence>
       <label-item label="PREP"/>
-      <tags-item tags="rel.m.*"/>
+      <label-item label="REL"/>
     </sequence>
   </def-mult>
   <def-mult name="PREPTOPONIM" closed="true">
@@ -344,6 +349,23 @@
     <sequence>
       <label-item label="NOMMF"/>
       <label-item label="REL"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="DETNOMPREP" closed="true">
+    <sequence>
+      <label-item label="DETM"/>
+      <label-item label="NOMM"/>
+      <label-item label="PREP"/>
+    </sequence>
+    <sequence>
+      <label-item label="DETF"/>
+      <label-item label="NOMF"/>
+      <label-item label="PREP"/>
+    </sequence>
+    <sequence>
+      <label-item label="DETMF"/>
+      <label-item label="NOMMF"/>
+      <label-item label="PREP"/>
     </sequence>
   </def-mult>
   <def-mult name="PREPNOM" closed="true">

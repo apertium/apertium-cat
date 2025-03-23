@@ -41,18 +41,31 @@ $(TAGGER)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(PREFIX).automorf.bin
 	rm $(LANG).dic.expanded;
 
 $(TAGGER)/$(LANG).crp: $(PREFIX).automorf.bin $(TAGGER)/$(LANG).crp.txt
-	apertium-destxt -n < $(TAGGER)/$(LANG).crp.txt | lt-proc $(PREFIX).automorf.bin > $(TAGGER)/$(LANG).crp; \
+	cat $(TAGGER)/$(LANG).crp.txt | lt-proc $(PREFIX).automorf.bin > $(TAGGER)/$(LANG).crp;
 
 $(TAGGER)/$(LANG).crp.txt:
-	touch $(TAGGER)/$(LANG).crp.txt
+	touch $(TAGGER)/$(LANG).crp.txt;
 
 $(TAGGER)/$(LANG).tagged:
-	@echo "Error: File '"$@"' is needed to perform a supervised tagger training" 1>&2
-	@echo "This file should exist. It is the result of solving the ambiguity from the '"$(TAGGER)/$(LANG).tagged.txt"' file" 1>&2
-	exit 1
+	cat $(TAGGER)/tagged/*.tagged > $@;
+
+$(TAGGER)/$(LANG).tagged.txt: $(TAGGER)/$(LANG).tagged
+	cat $(TAGGER)/$(LANG).tagged | cut -f2 -d'^' | cut -f1 -d'/' > $@;
 
 $(TAGGER)/$(LANG).untagged: $(TAGGER)/$(LANG).tagged.txt $(PREFIX).automorf.bin
 	cat $(TAGGER)/$(LANG).tagged.txt | lt-proc $(PREFIX).automorf.bin  > $@; 
 
 clean: 
-	rm -f $(TAGGER)/$(LANG).dic
+	rm -f $(TAGGER)/$(LANG).dic;
+	rm -f $(TAGGER)/$(LANG).tagged;
+	rm -f $(TAGGER)/$(LANG).tagged.txt;
+	rm -f $(TAGGER)/$(LANG).untagged;
+	rm -f $(TAGGER)/$(LANG).crp;
+	rm -f $(TAGGER)/$(LANG).crp.txt;
+
+clean-corpora: 
+	rm -f $(TAGGER)/$(LANG).tagged;
+	rm -f $(TAGGER)/$(LANG).tagged.txt;
+	rm -f $(TAGGER)/$(LANG).untagged;
+	rm -f $(TAGGER)/$(LANG).crp;
+	rm -f $(TAGGER)/$(LANG).crp.txt;
