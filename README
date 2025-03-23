@@ -1,84 +1,94 @@
-Catalan
+# Catalan: apertium-cat
 
-apertium-cat
-===============================================================================
-
-This is an Apertium monolingual language package for Catalan. What
-you can use this language package for:
+This is an Apertium monolingual language package for Catalan. What you can use this language package for:
 
 * Morphological analysis of Catalan
 * Morphological generation of Catalan
 * Part-of-speech tagging of Catalan
 
-Requirements
-===============================================================================
+## Requirements
 
 You will need the following software installed:
 
-* lttoolbox (>= 3.3.0)
-* apertium (>= 3.3.0)
-* vislcg3 (>= 0.9.9.10297)
+* lttoolbox (>= 3.7.1)
+* apertium (>= 3.8.3)
+* vislcg3 (>= 1.3.9)
 
-If this does not make any sense, we recommend you look at: apertium.org
+If this does not make any sense, we recommend you look at: https://apertium.org
 
-Compiling
-===============================================================================
+## Compiling
 
 Given the requirements being installed, you should be able to just run:
 
-$ ./configure
+```console
+$ ./autogen.sh
 $ make
+```
 
-You can use ./autogen.sh instead of ./configure if you're compiling
-from SVN.
+If you're doing development, you don't have to install the data, you can use it directly from this directory.
 
-If you're doing development, you don't have to install the data, you
-can use it directly from this directory.
+If you are installing this language package as a prerequisite for an Apertium translation pair, then do (typically as root / with sudo):
 
-If you are installing this language package as a prerequisite for an
-Apertium translation pair, then do (typically as root / with sudo):
-
+```console
 # make install
+```
 
-You can give a --prefix to ./configure to install as a non-root user,
-but make sure to use the same prefix when installing the translation
-pair and any other language packages.
+You can give a `--prefix` to `./autogen.sh` to install as a non-root user, but make sure to use the same prefix when installing the translation pair and any other language packages.
 
-Testing
-===============================================================================
+If any of this doesn't make sense or doesn't work, see https://wiki.apertium.org/wiki/Install_language_data_by_compiling
 
-If you are in the source directory after running make, the following
-commands should work:
+## Testing
 
-$  echo "TODO: test sentence" | apertium -d . cat-morph
-TODO: test analysis result
+If you are in the source directory after running make, the following commands should work:
 
-$ echo "TODO: test sentence" | apertium -d . cat-tagger
-TODO: test tagger result
+```console
+$ echo "la casa" | apertium -d . cat-morph
+^la/la<n><m><sp>/el<det><def><f><sg>/el<prn><pro><p3><f><sg>/prpers<prn><pro><p3><f><sg>$ ^casa/casa<n><f><sg>/casar<vblex><pri><p3><sg>/casar<vblex><imp><p2><sg>$^./.<sent>$
 
-Files and data
-===============================================================================
+$ echo "la casa" | apertium -d . cat-tagger
+^el<det><def><f><sg>$ ^casa<n><f><sg>$^.<sent>$
+```
 
-* apertium-cat.cat.dix            - Monolingual dictionary
-* cat.prob                        - Tagger model
-* apertium-cat.cat.rlx            - Constraint Grammar disambiguation rules
-* apertium-cat.post-cat.dix       - Post-generator
-* modes.xml                       - Translation modes
+## Tagger model training
 
-For more information
-===============================================================================
+To train the tagger model, do one of the following:
+
+Supervised training:
+```console
+$ make -f tagger.supervised.make
+```
+
+Unsupervised training
+```console
+$ make -f tagger.unsupervised.make
+```
+
+For details on the corpora used in training, check the [corpora information](tagger-data/README.md).
+
+For more information, see https://wiki.apertium.org/wiki/Tagger_training
+
+## Files and data
+
+* [`apertium-cat.cat.metadix`](apertium-cat.cat.metadix) - Monolingual dictionary
+* [`cat.prob`](cat.prob) - Tagger model
+* [`apertium-cat.cat.rlx`](apertium-cat.cat.rlx) - Constraint Grammar disambiguation rules
+* [`apertium-cat.post-cat.dix`](apertium-cat.post-cat.dix) - Post-generator
+* [`modes.xml`](modes.xml) - Translation modes
+* [`apertium-cat.cat.prefs.rlx`](apertium-cat.cat.prefs.rlx) - Generator preference rules 
+* [`cat.preferences.xml`](cat.preferences.xml) - Generator preference list 
+
+## For more information
 
 * https://wiki.apertium.org/wiki/Installation
 * https://wiki.apertium.org/wiki/apertium-cat
 * https://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
 
-Help and support
-===============================================================================
+## Help and support
 
 If you need help using this language pair or data, you can contact:
 
-* Mailing list: apertium-stuff@lists.sourceforge.net
-* IRC: #apertium on irc.oftc.net
+* Mailing list (Catalan): apertium-catala@lists.sourceforge.net
+* Mailing list (general): apertium-stuff@lists.sourceforge.net
+* IRC: #apertium on irc.oftc.net (irc://irc.oftc.net/#apertium)
 
-See also the file AUTHORS included in this distribution.
-
+See also the file [`AUTHORS`](AUTHORS), included in this distribution.
