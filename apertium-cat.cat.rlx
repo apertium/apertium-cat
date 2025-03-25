@@ -939,6 +939,10 @@ REMOVE:sabeu_no_adj A IF (0 ("sabeu") + MascSg) (NOT -1 MascSg);
 REMOVE N IF (0 ("creu")) (1C Adj_PP + Masc_strict) ;
 REMOVE N IF (0 ("<creu>")) (1C Adj_PP + Pl_strict) ;
 REMOVE N IF (0 ("<creus>")) (1C Adj_PP + Sg_strict) ;
+SELECT N IF (0 ("creu")) (0/-1 ("que")) (-1 Det + Fem OR Num + Fem) ;
+SELECT N IF (0 ("creu")) (0/-1 ("que")) (-2 Det + Fem OR Num + Fem) (-1 A + Fem) ;
+REMOVE N IF (0 ("creu")) (0/-1 ("que")) ;
+
 
 #veu
 REMOVE N IF (0 ("veu")) (1C Adj_PP + Masc_strict) ;
