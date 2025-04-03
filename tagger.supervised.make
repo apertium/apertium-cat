@@ -47,10 +47,10 @@ $(TAGGERDIR)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(LANG).automorf.bin
 $(TAGGERDIR)/$(LANG).crp: $(LANG).automorf.bin $(TAGGERDIR)/$(LANG).crp.txt
 	cat $(TAGGERDIR)/$(LANG).crp.txt | lt-proc $(LANG).automorf.bin > $(TAGGERDIR)/$(LANG).crp;
 
-$(TAGGERDIR)/$(LANG).crp.txt:
+$(TAGGERDIR)/$(LANG).crp.txt: $(TAGGERDIR)/crp/$(wildcard *.txt)
 	cat $(TAGGERDIR)/crp/*.txt > $@;
 
-$(TAGGERDIR)/$(LANG).tagged:
+$(TAGGERDIR)/$(LANG).tagged: $(TAGGERDIR)/tagged/$(wildcard *.tagged)
 	cat $(TAGGERDIR)/tagged/*.tagged > $@;
 
 $(TAGGERDIR)/$(LANG).tagged.txt: $(TAGGERDIR)/$(LANG).tagged
