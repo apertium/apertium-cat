@@ -11,8 +11,11 @@
 
   <mode name="cat-gener" install="yes">
     <pipeline>
-      <program name="lt-proc -g">
+      <program name="lt-proc -b">
         <file name="cat.autogen.bin"/>
+      </program>
+      <program name="cg-proc -n -g" debug-suff="prefs">
+        <file name="cat.prefs.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -39,6 +42,48 @@
       <program name="cg-conv -a -l" />
       <program name="vislcg3 --trace -g">
         <file name="apertium-cat.cat.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="cat_valencia-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -b">
+        <file name="cat.autogen.bin"/>
+      </program>
+      <program name="cg-proc" debug-suff="valencia_prefs">
+        <file name="cat_valencia.prefs.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -g" debug-suff="prefs">
+        <file name="cat.prefs.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="cat_valencia_gva-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -b">
+        <file name="cat.autogen.bin"/>
+      </program>
+      <program name="cg-proc" debug-suff="valencia_gva_prefs">
+        <file name="cat_valencia_gva.prefs.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -g" debug-suff="prefs">
+        <file name="cat.prefs.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="cat_valencia_uni-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -b">
+        <file name="cat.autogen.bin"/>
+      </program>
+      <program name="cg-proc" debug-suff="valencia_uni_prefs">
+        <file name="cat_valencia_uni.prefs.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -g" debug-suff="prefs">
+        <file name="cat.prefs.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
