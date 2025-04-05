@@ -18,7 +18,7 @@ $(LANG).prob: $(BASENAME).$(LANG).tsx $(TAGGERDIR)/$(LANG).dic $(TAGGERDIR)/$(LA
                            $(BASENAME).$(LANG).tsx \
                            $(LANG).prob;
 
-$(TAGGERDIR)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(LANG).automorf.bin
+$(TAGGERDIR)/$(LANG).dic: .deps/$(BASENAME).$(LANG).dix $(LANG).automorf.bin $(BASENAME).$(LANG).tsx
 	@echo "Generating $@";
 	@echo "This may take some time. Please, take a cup of coffee and come back later.";
 	apertium-validate-dictionary .deps/$(BASENAME).$(LANG).dix
