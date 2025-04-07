@@ -108,7 +108,13 @@
     <pardef n="consonant">
       <e><par n="consonant_menys_d"/></e>
       <e><i>d</i></e>
-      <e><i>ia</i></e>
+      <!-- 6 prefixos que existeixen en el diccionari que comencen per ia-..., exceptuant IA -->
+      <e><i>iac</i></e>
+      <e><i>iai</i></e>
+      <e><i>iam</i></e>
+      <e><i>ian</i></e>
+      <e><i>iar</i></e>
+      <e><i>iat</i></e>
       <e><i>ie</i></e>
       <e><i>io</i></e>
       <e><i>iu</i></e>
