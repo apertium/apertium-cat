@@ -38,6 +38,9 @@
 	<preference id="arrere">
 		<description lang="cat">Lèxic: enrere -> arrere</description>
 	</preference>
+	<preference id="rajos">
+		<description lang="cat">Lèxic: raigs -> rajos</description>
+	</preference>
 	<preference id="verbs_val">
 		<description lang="cat">Verbs: formes valencianes</description>
 	</preference>

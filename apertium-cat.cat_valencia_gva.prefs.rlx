@@ -25,4 +25,5 @@ SELECT (v:orde) ;
 SELECT (v:calfar) ;
 SELECT (v:avant) ;
 SELECT (v:arrere) ;
+SELECT (v:rajos) ;
 SELECT (v:plurals_gva) ;
