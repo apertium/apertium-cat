@@ -384,8 +384,20 @@
       <e><i>Hollywood</i></e>
       <e><i>hooligan</i></e>
       <e><i>hacker</i></e>
+      <e><i>hawaiana</i></e>
+      <e><i>hippy</i></e>
+      <e><i>homeless</i></e>
       <e><i>Houston</i></e>
       <e><i>Händel</i></e>
+    </pardef>
+
+    <pardef n="h_aspirada_el">
+      <e><i>hall</i></e>
+      <e><i>hawaià</i></e>
+      <e><i>hawaiana</i></e>
+      <e><i>hippy</i></e>
+      <e><i>hobby</i></e>
+      <e><i>homeless</i></e>
     </pardef>
 
     <pardef n="duplica_apostrofa_la">
@@ -715,7 +727,9 @@
       <e><p><l><b/></l><r>l'</r></p><par n="inicia-s"/></e>
       <e><p><l><b/></l><r>l'</r></p><par n="quotes"/><par n="inicia-s"/></e>
       <e><p><l/><r>el</r></p><par n="consonant"/></e>
+      <e><p><l/><r>el</r></p><par n="h_aspirada_el"/></e>
       <e><p><l><b/></l><r>el<b/></r></p><par n="consonant"/></e>
+      <e><p><l><b/></l><r>el<b/></r></p><par n="h_aspirada_el"/></e>
     </pardef>
 
     <pardef n="la">

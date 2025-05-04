@@ -3,9 +3,11 @@
 <!-- Make apostrophe variants equal ' -->
   <char value="'">
     <equiv-char value="&#x2019;"/>
+    <equiv-char value="&#x2018;"/>
     <equiv-char value="&#x2BC;"/>
-    <equiv-char value="&#8217;"/>
-    <equiv-char value="&#39;"/>
+    <equiv-char value="&#xB4;"/>
+    <equiv-char value="&#x60;"/>
+    <equiv-char value="&#x27;"/>
   </char>
   <char value="&#183;">
     <equiv-char value="."/>
