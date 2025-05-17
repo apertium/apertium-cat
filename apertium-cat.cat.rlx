@@ -274,6 +274,9 @@ SET VAdj = ("considerar") OR ("creure") OR ("opinar") OR ("trobar") OR ("resulta
 # coincidències nom propi/comú
 SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia");
 
+# adverbis acabats en -ment
+SET AdvMent = (".+ment"r) + Adv ;
+
 ###############################################################################
 #  Morphological disambiguation
 #
@@ -798,10 +801,10 @@ REMOVE Ger (-1 ("més") OR ("menys")) (0 A OR Adv OR PP) (0 Ger) ;	# més import
 REMOVE Adv (-1 Copula) (0 A LINK 0 Adv) (NOT 1 A OR EOS) ;
 REMOVE Adv (-1C N) (0 A LINK 0 Adv) (NOT 1 A) (NOT 1 Verb) (NOT 1 Prep) ;
 REMOVE Adv (-1C A) (0 A LINK 0 Adv) (NOT 1 Verb) (NOT 0 ("prou")) ;
-REMOVE A (-1C N + MascSg) (0 A LINK 0 Adv) (1C A + MascSg) ;
-REMOVE A (-1C N + FemSg) (0 A LINK 0 Adv) (1C A + FemSg) ;
-REMOVE A (-1C N + MascPl) (0 A LINK 0 Adv) (1C A + MascPl) ;
-REMOVE A (-1C N + FemPl) (0 A LINK 0 Adv) (1C A + FemPl) ;
+REMOVE A (-1C N + MascSg) (0 A LINK 0 Adv) (1C A + MascSg) (NOT 0 AdvMent) ;
+REMOVE A (-1C N + FemSg) (0 A LINK 0 Adv) (1C A + FemSg) (NOT 0 AdvMent) ;
+REMOVE A (-1C N + MascPl) (0 A LINK 0 Adv) (1C A + MascPl) (NOT 0 AdvMent) ;
+REMOVE A (-1C N + FemPl) (0 A LINK 0 Adv) (1C A + FemPl) (NOT 0 AdvMent) ;
 SELECT Adv (-1C N + MascSg) (0 ("poc")) (1 A + MascSg) ;
 SELECT Adv (-1C N + FemSg) (0 ("poc")) (1 A + FemSg) ;
 SELECT Adv (-1C N + MascPl) (0 ("poc")) (1 A + MascPl) ;
@@ -1996,6 +1999,12 @@ SELECT A IF (-1 ("estar")) (0 ("embarassat") + Fem) ;
 SELECT A IF (-2 ("estar")) (-1 Adv) (0 ("embarassat") + Fem) ;
 
 # COORDINACIÓN
+
+# Adverbis que acaben en -ment en forma abreujada ("qualitativament y raonada")
+SELECT:adv_ment Adv IF (-2C AdvMent) (-1 CnjCoo) (0 AdvMent) ;
+SELECT:adv_ment Adv IF (-3 Adv OR PreAdv) (-2C AdvMent) (-1 CnjSub OR CnjAdv) (0 AdvMent) ;
+SELECT:adv_ment Adv IF (-2C AdvMent) (-1 CM) (0 AdvMent) ;
+REMOVE:adv_ment Adv IF (NOT -2 AdvMent) (0 AdvMent) ;
 
 # REMOVE A IF (0 A) (0 PP) (1 ("per")) ;	# millora sensiblment el cat>ita però afecta poc (i més aviat negativament) al cat>spa
 
