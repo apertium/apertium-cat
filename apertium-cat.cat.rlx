@@ -2442,7 +2442,7 @@ SELECT ("com ara") IF (0 ("com ara"));
 # romaní
 REMOVE A (0 ("romaní_gitano")) (0 ("romaní")) (NOT -1 N) ;
 
-# Expressions amb horas (les dues, les tres, etc.)
+# Expressions amb hores (les dues, les tres, etc.)
 SELECT:hores DetDef IF (0 N + FemPl) (0 DetDef + FemPl) (0/-1 Num) (1 N + FemPl);
 SELECT:hores DetDef IF (0 N + FemPl) (0 DetDef + FemPl) (0/-1 Num) (1 A + FemPl) (2 N + FemPl);
 SELECT:hores N IF (0 N + FemPl) (0 DetDef + FemPl) (0/-1 Num) (-1 Ser);
@@ -2450,3 +2450,6 @@ REMOVE:hores N IF (0 N + FemPl) (0 DetDef + FemPl) (0/-1 Num);
 SELECT:hores ("a") IF (0 Adv) (0 ("a")) (0/-2 DetDef + FemPl) (0/-1 Num) (1 N + FemPl);
 SELECT:hores ("a") IF (0 Adv) (0 ("a")) (0/-2 DetDef + FemPl) (0/-1 Num) (1 A + FemPl) (2 N + FemPl);
 REMOVE:hores Adv IF (0 Adv) (0 ("a")) (0/-2 DetDef + FemPl) (0/-1 Num);
+
+# fem
+SELECT:fem Vblex IF (0 N + ("fem")) (0 Vblex) (-1 CnjSub OR Rel);
