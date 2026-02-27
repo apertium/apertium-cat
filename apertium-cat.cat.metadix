@@ -58018,7 +58018,6 @@
 <e lm="rocós" a="prompsit2adn"><i>roc</i><par n="aliment/ós__adj"/></e>
 <e lm="rodant">          <i>rodant</i><par n="abdominal__adj"/></e>
 <e lm="rodó">            <i>rod</i><par n="amfitri/ó__adj"/></e>
-<e lm="rogenc">          <i>rogen</i><par n="acadèmi/c__adj"/></e>
 <e lm="roig">            <i>ro</i><par n="bo/ig__adj"/></e>
 <e lm="roí">             <i>ro</i><par n="ro/í__adj"/></e>
 <e lm="romà">            <i>rom</i><par n="afric/à__adj"/></e>
@@ -58844,7 +58843,8 @@
 <e lm="verificador">     <i>verificador</i><par n="absolut__adj"/></e>
 <e lm="verinós" a="alseoane@gmail.com"><i>verin</i><par n="afectu/ós__adj"/></e>
 <e lm="veritable">       <i>veritable</i><par n="abdominal__adj"/></e>
-<e lm="vermellós">       <i>vermell</i><par n="aliment/ós__adj"/></e>
+<e lm="vermellós" c= "V vermellós" a="GVA">         <i>vermell</i><par n="aliment/ós__adj"/></e>
+<e lm="rogenc" c= "V vermellós" a="GVA">          <i>rogen</i><par n="acadèmi/c__adj"/></e>
 <e lm="vermell">         <i>vermell</i><par n="alt__adj"/></e>
 <e lm="vernacle" a="prompsit"><i>vernacl</i><par n="adept/e__adj"/></e>
 <e r="LR" lm="verrucós" a="prompsit"><i>verruc</i><par n="aliment/ós__adj"/></e>
@@ -63263,7 +63263,8 @@
 <e lm="burgesia">        <i>burgesi</i><par n="abell/a__n"/></e>
 <e lm="burgès">          <i>burg</i><par n="angl/ès__n"/></e>
 <e lm="burí">            <i>bur</i><par n="boc/í__n"/></e>
-<e lm="burilla">         <i>burill</i><par n="abell/a__n"/></e>
+<e lm="burilla" c="V burilla" a="GVA">      	    <i>burill</i><par n="abell/a__n"/></e>
+<e lm="punta de cigarret" c="V burilla" a="GVA">    <i>punt</i><par n="abell/a__n"/><p><l><b/>de<b/>cigarret</l><r><g><b/>de<b/>cigarret</g></r></p></e>
 <e lm="burla">           <i>burl</i><par n="abell/a__n"/></e>
 <e lm="burocràcia">      <i>burocràci</i><par n="abell/a__n"/></e>
 <e lm="buròcrata">       <i>buròcrat</i><par n="accionist/a__n"/></e>
@@ -63397,7 +63398,8 @@
 <e lm="calcetí">         <i>calcet</i><par n="boc/í__n"/></e>
 <e lm="calç">            <i>calç</i><par n="accessibilitat__n"/></e>
 <e lm="calcificació" a="prompsit2uoc"><i>calcificaci</i><par n="acci/ó__n"/></e>
-<e lm="calcigament">     <i>calcigament</i><par n="abric__n"/></e>
+<e lm="calcigament" c="V calcigament" a="GVA">  <i>calcigament</i><par n="abric__n"/></e>
+<e lm="xafada" c="V calcigament" a="GVA">       <i>xafad</i><par n="abell/a__n"/></e>
 <e lm="calci">           <i>calci</i><par n="abric__n"/></e>
 <e lm="calcinació" a="prompsit2adn"><i>calcinaci</i><par n="acci/ó__n"/></e>
 <e lm="calcita" a="prompsit2uoc"><i>calcit</i><par n="abell/a__n"/></e>
@@ -67131,7 +67133,8 @@
 <e lm="erupció">         <i>erupci</i><par n="acci/ó__n"/></e>
 <e lm="esbalaïment">     <i>esbalaïment</i><par n="abric__n"/></e>
 <e lm="esbandida">       <i>esbandid</i><par n="abell/a__n"/></e>
-<e lm="esbarjo">         <i>esbarjo</i><par n="abric__n"/></e>
+<e lm="esbarjo" c="V esbarjo" a="GVA">          <i>esbarjo</i><par n="abric__n"/></e>
+<e lm="esbargiment" c="V esbarjo" a="GVA">      <i>esbargiment</i><par n="abric__n"/></e>
 <e lm="esbart">          <i>esbart</i><par n="abric__n"/></e>
 <e lm="esbarzer" a="prompsit"><i>esbarzer</i><par n="abric__n"/></e>
 <e lm="esbarzerar">      <i>esbarzerar</i><par n="abric__n"/></e>
@@ -67234,8 +67237,10 @@
 <e lm="escolta">         <i>escolt</i><par n="accionist/a__n"/></e>
 <e lm="escolta">         <i>escolt</i><par n="abell/a__n"/></e>
 <e lm="escombrariaire">  <i>escombrariaire</i><par n="acompanyant__n"/></e>
-<e lm="escombraries">    <i>escombraries</i><par n="escombraries__n"/></e>
-<e lm="escombratge" a="prompsit2uoc"><i>escombratge</i><par n="abric__n"/></e>
+<e lm="escombraries" c="V escombraries" a="GVA">        <i>escombraries</i><par n="escombraries__n"/></e>
+<e r="LR" lm="fem" c="V escombraries" a="GVA">          <i>fem</i><par n="abric__n"/></e>
+<e lm="escombratge" c="V escombratge" a="GVA">         <i>escombratge</i><par n="abric__n"/></e>
+<e lm="agranament" c="V escombratge" a="GVA">          <i>agranament</i><par n="abric__n"/></e>
 <e lm="escombra" c="V escombra"><i>escombr</i><par n="abell/a__n"/></e>
 <e lm="escombreta">      <i>escombret</i><par n="abell/a__n"/></e>
 <e lm="escombriaire">    <i>escombriaire</i><par n="acompanyant__n"/></e>
@@ -75517,7 +75522,8 @@
 <e lm="riallada">        <i>riallad</i><par n="abell/a__n"/></e>
 <e lm="rialla">          <i>riall</i><par n="abell/a__n"/></e>
 <e lm="rialleta" a="prompsit2uoc"><i>riallet</i><par n="abell/a__n"/></e>
-<e lm="riba">            <i>rib</i><par n="abell/a__n"/></e>
+<e lm="riba" c="V riba" a="GVA">      <i>rib</i><par n="abell/a__n"/></e>
+<e lm="vora" c="V riba" a="GVA">      <i>vor</i><par n="abell/a__n"/></e>
 <e lm="ribera">          <i>riber</i><par n="abell/a__n"/></e>
 <e lm="ribonucleòtid" a="eleka"><i>ribonucleòtid</i><par n="abric__n"/></e>
 <e lm="ribosoma" a="prompsit2uoc"><i>ribosom</i><par n="carism/a__n"/></e>
@@ -78190,7 +78196,6 @@
 <e lm="vòmit">           <i>vòmit</i><par n="abric__n"/></e>
 <e lm="voracitat" a="prompsit2adn"><i>voracitat</i><par n="accessibilitat__n"/></e>
 <e lm="vorada">          <i>vorad</i><par n="abell/a__n"/></e>
-<e lm="vora">            <i>vor</i><par n="abell/a__n"/></e>
 <e lm="voral">           <i>voral</i><par n="abric__n"/></e>
 <e lm="voravia">         <i>voravi</i><par n="abell/a__n"/></e>
 <e lm="vorell" a="prompsit2uoc"><i>vorell</i><par n="abric__n"/></e>
@@ -151863,6 +151868,22 @@
 <e a="GVA" lm="Direcció General de Medi Natural i Animal"><i>Direcció<b/>General<b/>de<b/>Medi<b/>Natural<b/>i<b/>Animal</i><par n="Wikipedia__np"/></e>
 <e a="GVA" lm="floricol">        <i>floricol</i><par n="accessibilitat__n"/></e>
 <e a="GVA" lm="botaones">        <i>botaones</i><par n="guardaespatlles__n"/></e>
+<e a="GVA" lm="bioeconomia">     <i>bioeconomi</i><par n="abell/a__n"/></e>
+<e a="GVA" lm="complement de penositat"><i>complement</i><par n="abric__n"/><p><l><b/>de<b/>penositat</l><r><g><b/>de<b/>penositat</g></r></p></e>
+<e a="GVA" lm="delimitació i fitació"><i>delimitaci</i><par n="acci/ó__n"/><p><l><b/>i<b/>fitació</l><r><g><b/>i<b/>fitació</g></r></p></e>
+<e a="GVA" lm="efecte dòmino">   <i>efecte</i><par n="abric__n"/><p><l><b/>dòmino</l><r><g><b/>dòmino</g></r></p></e>
+<e a="GVA" lm="lliurament d'ajudes"><i>lliurament</i><par n="abric__n"/><p><l><b/>d'ajudes</l><r><g><b/>d'ajudes</g></r></p></e>
+<e a="GVA" lm="lliurament de fons"><i>lliurament</i><par n="abric__n"/><p><l><b/>de<b/>fons</l><r><g><b/>de<b/>fons</g></r></p></e>
+<e a="GVA" lm="lliurament de pagaments"><i>lliurament</i><par n="abric__n"/><p><l><b/>de<b/>pagaments</l><r><g><b/>de<b/>pagaments</g></r></p></e>
+<e a="GVA" lm="lliurament de subvencions"><i>lliurament</i><par n="abric__n"/><p><l><b/>de<b/>subvencions</l><r><g><b/>de<b/>subvencions</g></r></p></e>
+<e a="GVA" lm="lliurament d'imports"><i>lliurament</i><par n="abric__n"/><p><l><b/>d'imports</l><r><g><b/>d'imports</g></r></p></e>
+<e a="GVA" lm="mareografia">     <i>mareografi</i><par n="abell/a__n"/></e>
+<e a="GVA" lm="mareogràfic">     <i>mareogràfi</i><par n="acadèmi/c__adj"/></e>
+<e a="GVA" lm="metagenòmica">    <i>metagenòmi</i><par n="acústi/ca__n"/></e>
+<e a="GVA" lm="morfosedimentari"><i>morfosediment</i><par n="adjudicat/ari__adj"/></e>
+<e a="GVA" lm="palissada">       <i>palissad</i><par n="abell/a__n"/></e>
+<e a="GVA" lm="precarregar">     <i>precarreg</i><par n="afalag/ar__vblex"/></e>
+<e a="GVA" lm="subcriteri">      <i>subcriteri</i><par n="abric__n"/></e>
 <e a="GVA" lm="Benimaclet">      <i>Benimaclet</i><par n="Iran__np"/></e>
 <e a="GVA" lm="Benimàmet">       <i>Benimàmet</i><par n="Iran__np"/></e>
 <e a="GVA" lm="Berdiansk">       <i>Berdiansk</i><par n="Iran__np"/></e>
