@@ -278,6 +278,13 @@ SET NomPropiComu = ("Sala") OR ("Guerra") OR ("Costa") OR ("Fons") OR ("Guàrdia
 SET AdvMentComplet = ("<.+ment>"ri) + Adv ;
 SET AdvMentAbreujat = (".+ment"ri) + Adv ;
 
+# Verbs pronominals
+SET VblexPronEsEn = (vblex pron_es_en) ;
+SET PrnEncEs = ("es" prn enc ref p3 mf sp) ;
+SET PrnEncEn = ("en" prn enc adv) ;
+SET PrnEncPron = ("em" prn enc p1 mf sg) OR ("nos" prn enc p1 mf pl) OR ("et" prn enc p2 mf sg) OR ("vos" prn enc p2 mf pl) OR ("es" prn enc ref p3 mf sp) ;
+SET PrnProEn = ("en" prn pro adv) ;
+
 ###############################################################################
 #  Morphological disambiguation
 #
@@ -1124,18 +1131,18 @@ SELECT N IF (0 ("estat")) (1 De) (2 Top) ;	# estat de Nova York
 SELECT Anar IF (0 ("<va>"i)) (1/* Inf) ;
 	# Boas va anar ("Boas" = paraula desconeguda, tria l'adjectiu "va")
 	# una data festiva alternativa va produir-se, entre altres coses (per alguna raó desconeguda, (1 Inf) no funciona amb cat-tagger)
-SELECT Anar IF (0 ("<va>"i)) (1 Adv) ;	# Va més ràpidament
-SELECT Anar IF (0 ("<va>"i)) (1 PP) ;	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista ; com va vestit?
+SELECT Anar IF (0C ("anar") OR ("va")) (1 Adv) ;	# Va més ràpidament
+SELECT Anar IF (0C ("anar") OR ("va")) (1 PP) ;	# L'escultura del Renaixement a la Corona d'Aragó va lligada a la cultura humanista ; com va vestit?
 SELECT Anar IF (0C ("anar") OR ("va")) (1C Ger) ;	# la pedra va caient
 SELECT Anar IF (0C ("anar") OR ("va")) (1 ("a") OR ("cap a") OR ("per") OR ("contra") OR ("a favor de")) ;
 SELECT Anar IF (-1 NP) (0C ("anar") OR ("va")) ;
-SELECT Anar IF (NOT -1 ("en") OR Noun_Adj + MascSg OR Ser + Sg OR ("considerar") OR ("com") OR ("com a")) (0 ("<va>"i)) ;
+SELECT Anar IF (NOT -1 ("en") OR Noun_Adj + MascSg OR Ser + Sg OR ("considerar") OR ("com") OR ("com a")) (0C ("anar") OR ("va")) ;
 
 # "van" en balear pot ser vanar<vblex><pri><p1><sg> (el verb, però, és vanar-se)
 # desfem l'ambigüitat amb anar<vblex><pri><p3><pl>
-SELECT Anar IF (0 ("vanar") OR ("anar")) (0 P1) (NOT -1 ("em")) ;
+SELECT Anar IF (0 ("vanar")) (0 ("anar")) (0 P1) (NOT -1 ("em")) ;
 	# si no va precedit per "em" triem "anar"
-SELECT Vanar IF (0 ("vanar") OR ("anar")) (0 P1) (-1 ("em")) ;
+SELECT Vanar IF (0 ("vanar")) (0 ("anar")) (0 P1) (-1 ("em")) ;
 	# si va precedit per "em" triem "vanar"
 
 # voler i volar (p.ex. volen)
@@ -2453,3 +2460,36 @@ REMOVE:hores Adv IF (0 Adv) (0 ("a")) (0/-2 DetDef + FemPl) (0/-1 Num);
 
 # fem
 SELECT:fem Vblex IF (0 N + ("fem")) (0 Vblex) (-1 CnjSub OR Rel);
+
+
+# VERBS PRONOMINALS
+
+REMOVE VblexPronEsEn IF (0 Anar) ((1 Verb + Inf) OR (1 Verb + Ger)) ;	# Verb "anar" com a auxiliar, no pot ser mai "anar-se'n"
+SELECT VblexPronEsEn IF (0 VblexPronEsEn) (0/1 PrnEncPron) (0/2 PrnEncEn) (NOT -1 Anar ) ;	# Verbs sols, sense auxiliar
+
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Sg1) (-1/0 Pro + Sg1) (-1/1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Sg1) (-2 Pro + Sg1) (-1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Pl1) (-1/0 Pro + Pl1) (-1/1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Pl1) (-2 Pro + Pl1) (-1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Sg2) (-1/0 Pro + Sg2) (-1/1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Sg2) (-2 Pro + Sg2) (-1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Pl2) (-1/0 Pro + Pl2) (-1/1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + Pl2) (-2 Pro + Pl2) (-1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + P3) (-1/0 Pro + P3) (-1/1 PrnProEn) ;
+SELECT VblexPronEsEn IF (0 VblexPronEsEn + P3) (-2 Pro + P3) (-1 PrnProEn) ;
+REMOVE VblexPronEsEn ;
+
+REMCOHORT Pro IF (0 Sg1) (0/1 PrnProEn) (1C VblexPronEsEn + Sg1) ;
+REMCOHORT Pro IF (0 Sg1) (2C VblexPronEsEn + Sg1) ;
+REMCOHORT Pro IF (0 Pl1) (0/1 PrnProEn) (1C VblexPronEsEn + Pl1) ;
+REMCOHORT Pro IF (0 Pl1) (2C VblexPronEsEn + Pl1) ;
+REMCOHORT Pro IF (0 Sg2) (0/1 PrnProEn) (1C VblexPronEsEn + Sg2) ;
+REMCOHORT Pro IF (0 Pl2) (0/1 PrnProEn) (1C VblexPronEsEn + Pl2) ;
+REMCOHORT Pro IF (0 P3) (0/1 PrnProEn) (1C VblexPronEsEn + P3) ;
+REMCOHORT Pro IF (0 PrnProEn) (1C VblexPronEsEn) ;
+
+
+#SELECT:vbpron VblexPronEsEn IF (0 VblexPronEsEn) (0/1 PrnEncEs) (0/2 PrnEncEn) ;
+#REPLACE:vbpron SUB:2 ("") PrnEncEn (0 VblexPronEsEn);
+#REPLACE:vbpron SUB:1 ("") PrnEncEs (0 VblexPronEsEn);
+#SPLITCOHORT ("anar-se'n" vblex "en" prn enc) VblexPronEsEn;

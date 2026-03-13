@@ -85,6 +85,7 @@
     <sdef n="web" />
     <sdef n="guio" />
     <sdef n="apos" />
+    <sdef n="pron_es_en" />
 
     <sdef n="v:pre2017" c="Variant: diacrítics pre2017" />
     <sdef n="v:v_u" c="Variant: v -> u" />
@@ -953,6 +954,13 @@
 
   <e>       <p><l>-vos</l>      <r>us<s n="prn"/><s n="enc"/><s n="p2"/><s n="mf"/><s n="pl"/><j/></r></p><par n="S__anant-vos"/></e>
 
+</pardef>
+<pardef n="S__anant-se'n">
+  <e>       <p><l>-me'n</l>     <r><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+  <e>       <p><l>-nos-en</l>   <r><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+  <e>       <p><l>-te'n</l>     <r><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+  <e>       <p><l>-vos-en</l>   <r><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+  <e>       <p><l>-se'n</l>     <r><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
 </pardef>
 <pardef n="S__aclareix">
   <e>       <p><l>-les</l>      <r>el<s n="prn"/><s n="enc"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
@@ -7597,6 +7605,95 @@
 
   <e>       <p><l>vaja</l><r>anar<s n="vblex"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
 
+</pardef>
+<pardef n="/anar-se'n__vblex">
+  <e>       <p><l>aniríem</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aniria</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>aniríeu</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aniries</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anirien</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aniria</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="cni"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anirem</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aniré</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anireu</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aniràs</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>aniran</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anirà</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fti"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l>anàssim</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="RL"><p><l>anàs</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l>anàssiu</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="RL"><p><l>anassis</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e r="RL"><p><l>anassin</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e r="RL"><p><l>anàs</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="fts"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anant</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ger"/></r></p></e>
+  <e>       <p><l>anant</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ger"/></r></p><par n="S__anant-se'n"/></e>
+  <e r="LR"><p><l>anàrem</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>aní</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>anàreu</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anares</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e r="LR"><p><l>anaren</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anà</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="ifi"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anem-nos-en</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anam-nos-en</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>aneu-vos-en</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anau-vos-en</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>ves-te'n</l>  <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>vés-te'n</l>  <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p2"/><s n="sg"/></r></p><par n="v:pre2017"/></e>
+  <e>       <p><l>vagin</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vagen</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>vagin-se'n</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vagen-se'n</l><r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>vagi-se'n</l> <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>vaja-se'n</l> <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="imp"/><s n="p3"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anar</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="inf"/></r></p></e>
+  <e>       <p><l>anar</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="inf"/></r></p><par n="S__anant-se'n"/></e>
+  <e>       <p><l>anàvem</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anava</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anàveu</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anaves</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anaven</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anava</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pii"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anéssim</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anàrem</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p1"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anés</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anara</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p1"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anéssiu</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anàreu</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p2"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anessis</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anares</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p2"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anessin</l>   <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anaren</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p3"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anés</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anara</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pis"/><s n="p3"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>anades</l>    <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anada</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anats</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+  <e>       <p><l>anat</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anem</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anam</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vam</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vàrem</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vaig</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>aneu</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>anau</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vau</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vàreu</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vas</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>van</l>       <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>varen</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>va</l>        <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>anem</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vagem</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p1"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vagi</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p1"/><s n="sg"/></r></p></e>
+  <e>       <p><l>vaja</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p1"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>aneu</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e r="LR"><p><l>vageu</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p2"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vagis</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p2"/><s n="sg"/></r></p></e>
+  <e>       <p><l>vages</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p2"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>vagin</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p3"/><s n="pl"/></r></p></e>
+  <e>       <p><l>vagen</l>     <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p3"/><s n="pl"/></r></p><par n="v:verbs_val"/></e>
+  <e>       <p><l>vagi</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p></e>
+  <e>       <p><l>vaja</l>      <r>anar-se'n<s n="vblex"/><s n="pron_es_en"/><s n="prs"/><s n="p3"/><s n="sg"/></r></p><par n="v:verbs_val"/></e>
 </pardef>
 <pardef n="m/oldre__vblex">
   <e>       <p><l>oldríem</l>   <r>oldre<s n="vblex"/><s n="cni"/><s n="p1"/><s n="pl"/></r></p></e>
@@ -93443,6 +93540,7 @@
 <e lm="anar plegats">    <par n="/anar__vblex"/><p><l><b/>plegats</l><r><g><b/>plegats</g></r></p></e>
 <e lm="anar a">          <par n="/anar__vblex"/><p><l><b/>a</l><r><g><b/>a</g></r></p></e>
 <e lm="anar avançat" a="hector"><par n="/anar__vblex"/><p><l><b/>avançat</l><r><g><b/>avançat</g></r></p></e>
+<e lm="anar-se'n">       <par n="/anar-se'n__vblex"/></e>
 <e lm="ancorar">         <i>ancor</i><par n="abander/ar__vblex"/></e>
 <e lm="anellar" a="prompsit"><i>anell</i><par n="abander/ar__vblex"/></e>
 <e lm="anestesiar">      <i>anestesi</i><par n="acarici/ar__vblex"/></e>
