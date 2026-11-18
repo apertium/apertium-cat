@@ -85847,7 +85847,7 @@
 <e lm="a sota">          <i>a<b/>sota</i><par n="ahir__adv"/></e>
 <e lm="asprament">       <i>aspra</i><par n="abismal/ment__adv"/></e>
 <e lm="assaltantment">   <i>assaltant</i><par n="abismal/ment__adv"/></e>
-<e lm="assatgísticament"><i>assatgística</i><par n="abismal/ment__adv"/></e>
+
 <e lm="assedegadament">  <i>assedegada</i><par n="abismal/ment__adv"/></e>
 <e lm="assembleàriament"><i>assembleària</i><par n="abismal/ment__adv"/></e>
 <e lm="assenyadament">   <i>assenyada</i><par n="abismal/ment__adv"/></e>
@@ -154559,5 +154559,9 @@
 <e>                      <par n="apostrof"/></e>
 <e lm="al-"><i>al-</i><par n="Saussure__np"/></e>
 <e lm="el-"><i>el-</i><par n="Saussure__np"/></e>
-  </section>
+  
+<e r="RL" lm="Corts Valencianes"><p><l>Corts<b/>Valencianes</l><r>Corts<b/>Valencianes<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+<e lm="Kerzhakov"><i>Kerzhakov</i><par n="Saussure__np"/></e>
+<e lm="assagísticament"><i>assagística</i><par n="abismal/ment__adv"/></e>
+</section>
 </dictionary>
